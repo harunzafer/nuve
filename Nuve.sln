@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuve", "Nuve\Nuve.csproj", "{BCC4C1C8-5F64-4A5C-9079-0272498745C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuve.Gui", "Nuve.Gui\Nuve.Gui.csproj", "{C8141D31-A491-40D3-AE6B-7035BF9C4668}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuve.Test", "Nuve.Test\Nuve.Test.csproj", "{886838AB-25EA-41AE-9AAA-D5B60420BB5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCC4C1C8-5F64-4A5C-9079-0272498745C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC4C1C8-5F64-4A5C-9079-0272498745C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCC4C1C8-5F64-4A5C-9079-0272498745C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC4C1C8-5F64-4A5C-9079-0272498745C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8141D31-A491-40D3-AE6B-7035BF9C4668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8141D31-A491-40D3-AE6B-7035BF9C4668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8141D31-A491-40D3-AE6B-7035BF9C4668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8141D31-A491-40D3-AE6B-7035BF9C4668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886838AB-25EA-41AE-9AAA-D5B60420BB5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886838AB-25EA-41AE-9AAA-D5B60420BB5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886838AB-25EA-41AE-9AAA-D5B60420BB5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886838AB-25EA-41AE-9AAA-D5B60420BB5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

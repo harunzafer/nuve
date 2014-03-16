@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCC4C1C8-5F64-4A5C-9079-0272498745C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nuve</RootNamespace>
+    <AssemblyName>Nuve</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="QuickGraph">
+      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickGraph.Data">
+      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickGraph.Graphviz">
+      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Graphviz.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickGraph.Serialization">
+      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Condition\ConditionBase.cs" />
+    <Compile Include="Condition\ConditionContainer.cs" />
+    <Compile Include="Condition\ConditionFactory.cs" />
+    <Compile Include="Condition\EndsWithConsonant.cs" />
+    <Compile Include="Condition\EndsWithVowel.cs" />
+    <Compile Include="Condition\FirstLetterEquals.cs" />
+    <Compile Include="Condition\HasLabel.cs" />
+    <Compile Include="Condition\HasNotLabel.cs" />
+    <Compile Include="Condition\IsLastMorpheme.cs" />
+    <Compile Include="Condition\LastLetterEquals.cs" />
+    <Compile Include="Condition\LastVowelEquals.cs" />
+    <Compile Include="Condition\MorphemeEquals.cs" />
+    <Compile Include="Condition\MorphemeExists.cs" />
+    <Compile Include="Condition\MorphemeNotEquals.cs" />
+    <Compile Include="Condition\MorphemeSequenceEquals.cs" />
+    <Compile Include="Condition\PenultVowelEquals.cs" />
+    <Compile Include="Condition\StartsWithConsonant.cs" />
+    <Compile Include="Condition\StartsWithVowel.cs" />
+    <Compile Include="Disambiguator\Model.cs" />
+    <Compile Include="Disambiguator\SolutionFrequency.cs" />
+    <Compile Include="Distance\BinarizedDistance.cs" />
+    <Compile Include="Distance\DamerauLevenshteinDistance.cs" />
+    <Compile Include="Distance\EuclideanDistance.cs" />
+    <Compile Include="Distance\HammingDistance.cs" />
+    <Compile Include="Distance\IDistance.cs" />
+    <Compile Include="Distance\JaccardDistance.cs" />
+    <Compile Include="Distance\LevenshteinDistance.cs" />
+    <Compile Include="Lang\Language.cs" />
+    <Compile Include="Lang\Language.Property.cs" />
+    <Compile Include="Lang\RootSurfacePair.cs" />
+    <Compile Include="Lang\WordAnalyzer.cs" />
+    <Compile Include="Lexicon\IPrefixMatcher.cs" />
+    <Compile Include="Lexicon\PrefixMatcher.cs" />
+    <Compile Include="Lexicon\RootDictionary.cs" />
+    <Compile Include="Lexicon\SuffixDictionary.cs" />
+    <Compile Include="Lexicon\SuffixTrie.cs" />
+    <Compile Include="Lexicon\Trie.cs" />
+    <Compile Include="Lexicon\TrieNode.cs" />
+    <Compile Include="Morphologic\Morphotactics.cs" />
+    <Compile Include="Morphologic\Structure\Allomorph.cs" />
+    <Compile Include="Morphologic\Structure\Morpheme.cs" />
+    <Compile Include="Morphologic\Structure\MorphemeFlags.cs" />
+    <Compile Include="Morphologic\Structure\Root.cs" />
+    <Compile Include="Morphologic\Structure\Suffix.cs" />
+    <Compile Include="Morphologic\Structure\Word.cs" />
+    <Compile Include="Morphologic\Transition.cs" />
+    <Compile Include="Orthographic\Action\ActionFactory.cs" />
+    <Compile Include="Orthographic\Action\AppendAction.cs" />
+    <Compile Include="Orthographic\Action\AppendTamlamaSuffix.cs" />
+    <Compile Include="Orthographic\Action\BaseAction.cs" />
+    <Compile Include="Orthographic\Action\DeleteFirstLetter.cs" />
+    <Compile Include="Orthographic\Action\DeleteFirstVowel.cs" />
+    <Compile Include="Orthographic\Action\DeleteLastLetter.cs" />
+    <Compile Include="Orthographic\Action\DeleteLastVowel.cs" />
+    <Compile Include="Orthographic\Action\DoubleLastLetter.cs" />
+    <Compile Include="Orthographic\Action\LexicalToSurface.cs" />
+    <Compile Include="Orthographic\Action\ReplaceAction.cs" />
+    <Compile Include="Orthographic\Alphabet.cs" />
+    <Compile Include="Orthographic\CharSet.cs" />
+    <Compile Include="Orthographic\Orthography.cs" />
+    <Compile Include="Orthographic\OrthographyRule.cs" />
+    <Compile Include="Orthographic\StringExtensions.cs" />
+    <Compile Include="Orthographic\Transformation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reader\EmbeddedResourceReader.cs" />
+    <Compile Include="Reader\ExcelRootReader.cs" />
+    <Compile Include="Reader\ExcelSuffixReader.cs" />
+    <Compile Include="Reader\LabelSet.cs" />
+    <Compile Include="Reader\MorphotacticsReader.cs" />
+    <Compile Include="Reader\MyXmlResolver.cs" />
+    <Compile Include="Reader\OrthographyReader.cs" />
+    <Compile Include="Reader\PropertySet.cs" />
+    <Compile Include="Reader\TextRootReader.cs" />
+    <Compile Include="Reader\TextSuffixReader.cs" />
+    <Compile Include="Reader\TextToDataset.cs" />
+    <Compile Include="SampleClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Resources\dictionary_tr.xlsx" />
+    <EmbeddedResource Include="Resources\orthography.dtd" />
+    <None Include="Resources\suffix_tr.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\abbrv_tr.txt" />
+    <EmbeddedResource Include="Resources\morphotactics_tr.xml" />
+    <EmbeddedResource Include="Resources\name_tr.txt" />
+    <EmbeddedResource Include="Resources\orthography_tr.xml" />
+    <EmbeddedResource Include="Resources\root_tr.txt" />
+    <EmbeddedResource Include="Resources\suffix_tr.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

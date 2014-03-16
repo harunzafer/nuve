@@ -1,0 +1,630 @@
+root	surfaces	lex	active	Id	flags	rules	Anlam
+AA		aa		KISALTMA	kısaltma	D_OKUNUSDAN_YAZILISA	Anadolu Ajansı
+Google		guugıl		ALINTI	alıntı	D_OKUNUSDAN_YAZILISA	
+AB		abe		KISALTMA	kısaltma	D_OKUNUSDAN_YAZILISA	Avrupa Birliği
+AAFSE		aafesee	F	KISALTMA		D_OKUNUSDAN_YAZILISA	Güney Avrupa Müttefik Hava Kuvvetleri (Allied Air Forces Southern Europe)
+AAM		aame	F	KISALTMA		D_OKUNUSDAN_YAZILISA	Atatürk Araştırma Merkezi
+ABD		abede		KISALTMA		D_OKUNUSDAN_YAZILISA	Amerika Birleşik Devletleri
+ABS		abese		KISALTMA		D_OKUNUSDAN_YAZILISA	Motorlu taşıtlarda fren sistemi (Antilock Braking System)
+ADSL		eydiesel		KISALTMA		D_OKUNUSDAN_YAZILISA	Asimetrik sayısal abone hattı (Asymmetric Digital Subscriber Line)
+AET		aete		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Ekonomik Topluluğu
+AFP		afepe		KISALTMA		D_OKUNUSDAN_YAZILISA	Fransız Basın Ajansı (Agence France Press)
+age.		adı geçen eser		NOKTALI			Adı geçen eser
+AGİK		agik		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Güvenlik ve İş Birliği Konferansı
+AGİT		agit		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Güvenlik ve İş Birliği Teşkilatı
+agm.		adı geçen makale		NOKTALI		D_OKUNUSDAN_YAZILISA	Adı geçen makale
+agy.		adı geçen yayın		NOKTALI			Adı geçen yayın
+AI			F	KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Af Teşkilatı (Amnesty International)
+AID			F	KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Kalkınma Ajansı (Agency for International Development)
+AIDS		eyts		KISALTMA		D_OKUNUSDAN_YAZILISA	Edinilmiş bağışıklık yetersizliği belirtisi (Acquired immune deficiency syndrome)
+AİHM		aiheme		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa İnsan Hakları Mahkemesi
+AİHS		aihese		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa İnsan Hakları Sözleşmesi
+AK		ake		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Konseyi
+AKBİL		akbil		KISALTMA		D_OKUNUSDAN_YAZILISA	Akıllı bilet
+AKDTYK		akedeteyeka	F	KISALTMA		D_OKUNUSDAN_YAZILISA	Atatürk Kültür, Dil ve Tarih Yüksek Kurumu
+AKM		akeme		KISALTMA		D_OKUNUSDAN_YAZILISA	Atatürk Kültür Merkezi
+AKPM		akepeme		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Konseyi Parlamenterler Meclisi
+AKUT		akut		KISALTMA		D_OKUNUSDAN_YAZILISA	Arama Kurtarma Teşkilatı
+Alb.		albay		NOKTALI			Albay
+Alm.		almanca		NOKTALI			Almanca
+anat.		anatomi	F	NOKTALI			Anatomi
+ant.		antropoloji		NOKTALI			Antropoloji
+AO		ao		KISALTMA		D_OKUNUSDAN_YAZILISA	Anonim ortaklık
+AOÇ		aoçe		KISALTMA		D_OKUNUSDAN_YAZILISA	Atatürk Orman Çiftliği
+AÖF		aöfe		KISALTMA		D_OKUNUSDAN_YAZILISA	Açıköğretim Fakültesi
+AP		ape		KISALTMA		D_OKUNUSDAN_YAZILISA	ABD Haber Ajansı (Associated Press)
+APS		apese		KISALTMA		D_OKUNUSDAN_YAZILISA	Acele Posta Servisi
+Apt.		apartmanı		NOKTALI			Apartman, apartmanı
+Ar.		arapça		NOKTALI			Arapça
+ARGE		arge		KISALTMA		D_OKUNUSDAN_YAZILISA	Araştırma geliştirme
+Arş. Gör.		Araştırma Görevlisi		NOKTALI			Araştırma Görevlisi
+ark.		Arkeoloji		NOKTALI			Arkeoloji
+As.		askerî		NOKTALI			Asker, askerî, askerlik
+Asb.		Astsubay		NOKTALI			Astsubay
+ASELSAN		aselsan		KISALTMA		D_OKUNUSDAN_YAZILISA	Askerî Elektronik Sanayii
+As. İz.		Askerî İnzibat		NOKTALI			Askerî İnzibat
+ASKİ		aski		KISALTMA		D_OKUNUSDAN_YAZILISA	Ankara Su ve Kanalizasyon İdaresi
+ASO		aso		KISALTMA		D_OKUNUSDAN_YAZILISA	Ankara Sanayi Odası
+AST		asete		KISALTMA		D_OKUNUSDAN_YAZILISA	Ankara Sanat Tiyatrosu
+astr.		Astronomi		NOKTALI			Astronomi
+astrol.		Astroloji		NOKTALI			Astroloji
+AŞ		aşe		KISALTMA		D_OKUNUSDAN_YAZILISA	Anonim şirket
+AŞTİ		aşti		KISALTMA		D_OKUNUSDAN_YAZILISA	Ankara Şehirler Arası Terminal İşletmesi
+AT		ate		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Topluluğu
+Atğm.		Asteğmen		NOKTALI			Asteğmen
+atm.		Atmosfer		NOKTALI			Atmosfer
+ATO		ato		KISALTMA		D_OKUNUSDAN_YAZILISA	Ankara Ticaret Odası
+AÜ		aü		KISALTMA		D_OKUNUSDAN_YAZILISA	Anadolu Üniversitesi, Ankara Üniversitesi, Atatürk Üniversitesi
+Av.		Avukat		NOKTALI			Avukat
+BAE		beae		KISALTMA		D_OKUNUSDAN_YAZILISA	Birleşik Arap Emirlikleri
+bağ.		Bağlaç		NOKTALI			Bağlaç
+BAĞ-KUR		bağkur		KISALTMA		D_OKUNUSDAN_YAZILISA	Esnaf ve Sanatkârlar ve Diğer Bağımsız Çalışanlar Sosyal Sigortalar Kurumu
+BBC		bibisi		KISALTMA		D_OKUNUSDAN_YAZILISA	İngiliz Radyo Televizyon Kurumu (British Broadcasting Corporation)
+BCG		becege		KISALTMA		D_OKUNUSDAN_YAZILISA	Verem aşısı (Bacillus Calmette Guèrin)
+Bçvş.		Başçavuş		NOKTALI			Başçavuş
+BDDK		bededeka		KISALTMA		D_OKUNUSDAN_YAZILISA	Bankacılık Düzenleme ve Denetleme Kurulu
+BDT		bedete		KISALTMA		D_OKUNUSDAN_YAZILISA	Bağımsız Devletler Topluluğu
+bitb.		Bitki bilimi		NOKTALI			Bitki bilimi
+biy.		Biyoloji		NOKTALI			Biyoloji
+bk.		Bakınız		NOKTALI			Bakınız
+Bl.		Bölük		NOKTALI			Bölük
+bl.		Bilişim		NOKTALI			Bilişim
+BM		beme		KISALTMA		D_OKUNUSDAN_YAZILISA	Birleşmiş Milletler
+Bn.		Bayan		NOKTALI			Bayan
+Bnb.		Binbaşı		NOKTALI			Binbaşı
+bot.		Botanik		NOKTALI			Botanik
+BOTAŞ		botaş		KISALTMA		D_OKUNUSDAN_YAZILISA	Boru Hatları ile Petrol Taşıma Anonim Şirketi
+Böl.		Bölüm		NOKTALI			Bölüm
+bs.		basım		NOKTALI			Baskı, basım
+Bşk.		başkanlığı		NOKTALI			Başkan, başkanlık, başkanı, başkanlığı
+BUE		beue	F	KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Birliği Bankası (Bank of Union European)
+Bul.		bulvarı		NOKTALI			Bulvar, bulvarı
+Bulg.		Bulgarca		NOKTALI			Bulgarca
+BÜ		beü		KISALTMA		D_OKUNUSDAN_YAZILISA	Boğaziçi Üniversitesi
+Cad.		Cadde, caddesi		NOKTALI			Cadde, caddesi
+CAEC			F	KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Konseyi Parlamenter Meclisi (Consultative Assembly of European Council)
+cal		kalori		KISALTMA	birim	D_OKUNUSDAN_YAZILISA	Kalori
+CAO				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Sivil Havacılık Örgütü (Civil Aviation Organization)
+CC			F	KISALTMA		D_OKUNUSDAN_YAZILISA	Konsolosluk birimi (Corps Consulaire)
+CD			F	KISALTMA		D_OKUNUSDAN_YAZILISA	Kordiplomatik (Corps Diplomatique)
+CDH			F	KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa İnsan Hakları Adalet Divanı (Cour Europeenne des Droits de l’Homme)
+CE			F	KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Konseyi (Council of Europe)
+CENTO				KISALTMA		D_OKUNUSDAN_YAZILISA	Merkezî Antlaşma Örgütü (Central Treaty Organization)
+CIA		siayey		KISALTMA		D_OKUNUSDAN_YAZILISA	ABD Merkezî Haber Alma Teşkilatı (Central Intelligence Agency)
+CIF				KISALTMA		D_OKUNUSDAN_YAZILISA	Maliyet-sigorta-navlun (cost, insurance, freight)
+CIOS				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Bilimsel Organizasyon Konseyi (Conseil International pour l’Organisation Scientifique)
+CIP				KISALTMA		D_OKUNUSDAN_YAZILISA	Taşıma ve sigorta bedeli ödenmiş olarak teslim
+CIP				KISALTMA		D_OKUNUSDAN_YAZILISA	Ticaretle uğraşan önemli kişiler (Commercially Important Person)
+cm		Santimetre		KISALTMA		D_OKUNUSDAN_YAZILISA	Santimetre
+CMUK		cımuk		KISALTMA		D_OKUNUSDAN_YAZILISA	Ceza Muhakemeleri Usulü Kanunu
+CNRS				KISALTMA		D_OKUNUSDAN_YAZILISA	Ulusal Bilimsel Araştırma Merkezi (Centre National de la Recherche Scientifique)
+coğ.		Coğrafya		NOKTALI			Coğrafya
+COMECON				KISALTMA		D_OKUNUSDAN_YAZILISA	Doğu Bloku Ülkeleri Karşılıklı Ekonomik Yardım Konseyi (Council for Mutual Economic Asistance)
+cos		Kosinüs		KISALTMA		D_OKUNUSDAN_YAZILISA	Kosinüs
+CSO		ceseo		KISALTMA		D_OKUNUSDAN_YAZILISA	Cumhurbaşkanlığı Senfoni Orkestrası
+Cum. Bşk.		Cumhurbaşkanı, Cumhurbaşkanlığı		NOKTALI			Cumhurbaşkanı, Cumhurbaşkanlığı
+CÜ		ceü		KISALTMA		D_OKUNUSDAN_YAZILISA	Cumhuriyet Üniversitesi
+ÇAYKUR		çaykur		KISALTMA		D_OKUNUSDAN_YAZILISA	Çay İşletmeleri Genel Müdürlüğü
+çev.		Çeviren		NOKTALI			Çeviren
+ÇS		çese		KISALTMA		D_OKUNUSDAN_YAZILISA	Çimento Sanayisi
+ÇUKOBİRLİK		çukobirlik		KISALTMA		D_OKUNUSDAN_YAZILISA	Çukurova Pamuk Tarım Satış Kooperatifleri Birliği
+ÇÜ		çeü		KISALTMA		D_OKUNUSDAN_YAZILISA	Çankaya Üniversitesi, Çukurova Üniversitesi
+Çvş.		Çavuş		NOKTALI			Çavuş
+D		doğu		KISALTMA		D_OKUNUSDAN_YAZILISA	Doğu
+dal		dekalitre		KISALTMA		D_OKUNUSDAN_YAZILISA	Dekalitre
+dam		dekametre		KISALTMA		D_OKUNUSDAN_YAZILISA	Dekametre
+DAP		dap		KISALTMA		D_OKUNUSDAN_YAZILISA	Doğu Anadolu Projesi
+db.		Dil bilimi		NOKTALI			Dil bilimi
+dbl.		Dil bilgisi		NOKTALI			Dil bilgisi
+DDT		dedete		KISALTMA		D_OKUNUSDAN_YAZILISA	Böcek öldü¬rücü (Dichloro-diphenol-trichloro-ethane)
+DDY		dedeye		KISALTMA		D_OKUNUSDAN_YAZILISA	Devlet Deniz Yolları
+DEÜ		deü		KISALTMA		D_OKUNUSDAN_YAZILISA	Dokuz Eylül Üniversitesi
+dg		desigram		KISALTMA		D_OKUNUSDAN_YAZILISA	Desigram
+DGM		degeme		KISALTMA		D_OKUNUSDAN_YAZILISA	Devlet Güvenlik Mahkemesi
+DGS		degese		KISALTMA		D_OKUNUSDAN_YAZILISA	Dikey geçiş sınavı
+DHMİ		dehemei		KISALTMA		D_OKUNUSDAN_YAZILISA	Devlet Hava Meydanları İşletmesi
+DİE		deie		KISALTMA		D_OKUNUSDAN_YAZILISA	Devlet İstatistik Enstitüsü
+dk.		dakika		NOKTALI			Dakika
+dl		desilitre		KISALTMA		D_OKUNUSDAN_YAZILISA	Desilitre
+DLH				KISALTMA		D_OKUNUSDAN_YAZILISA	Demiryolları Limanlar Hava Meydanları İnşaatı (Genel Müdürlüğü)
+dm		desimetre		KISALTMA		D_OKUNUSDAN_YAZILISA	Desimetre
+DMO		demeo		KISALTMA		D_OKUNUSDAN_YAZILISA	Devlet Malzeme Ofisi
+DNA		denea		KISALTMA		D_OKUNUSDAN_YAZILISA	Deoksirübo nükleik asit
+Doç.		Doçent		NOKTALI			Doçent
+doğ.		Doğum tarihi		NOKTALI			Doğum tarihi
+DPT		depete		KISALTMA		D_OKUNUSDAN_YAZILISA	Devlet Planlama Teşkilatı
+Dr.		Doktor		NOKTALI			Doktor
+drl.		Derleyen		NOKTALI			Derleyen
+DSİ		desei		KISALTMA		D_OKUNUSDAN_YAZILISA	Devlet Su İşleri
+DSÖ		deseö		KISALTMA		D_OKUNUSDAN_YAZILISA	Dünya Sağlık Örgütü (World Health Organization)
+DT		dete		KISALTMA		D_OKUNUSDAN_YAZILISA	Devlet Tiyatroları
+DTCF		detecefe		KISALTMA		D_OKUNUSDAN_YAZILISA	Dil ve Tarih-Coğrafya Fakültesi
+DTÖ		deteö		KISALTMA		D_OKUNUSDAN_YAZILISA	Dünya Ticaret Örgütü (World Trade Organization)
+DÜ		deü		KISALTMA		D_OKUNUSDAN_YAZILISA	Dicle Üniversitesi
+Dz. Kuv.		Deniz Kuvvetleri		NOKTALI			Deniz Kuvvetleri
+Dz. Kuv. K.		Deniz Kuvvetleri Komutanı, Komutanlığı		NOKTALI			Deniz Kuvvetleri Komutanı, Komutanlığı
+dzl.		Düzenleyen		NOKTALI			Düzenleyen
+e.		Edat		NOKTALI			Edat
+EAC				KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa İş Birliği Örgütü (European Association for Cooperation)
+EAT				KISALTMA		D_OKUNUSDAN_YAZILISA	Eski Anadolu Türkçesi
+EBU				KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Yayın Birliği (European Broadcasting Union)
+Ecz.		Eczacı		NOKTALI			Eczacı
+ed.		Edebiyat, editör		NOKTALI			Edebiyat, editör
+EEG		eege		KISALTMA		D_OKUNUSDAN_YAZILISA	Beyin akım grafiği (Elektroensefalogram)
+EFT		efete		KISALTMA		D_OKUNUSDAN_YAZILISA	Elektronik fon transferi
+EFTA		efetea		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Serbest Ticaret Bölgesi/Birliği (European Free Trade Area/Association)
+EGO		ego		KISALTMA		D_OKUNUSDAN_YAZILISA	Elektrik, Gaz, Otobüs İşletmeleri (Ankara Belediyesi)
+EİEİ				KISALTMA		D_OKUNUSDAN_YAZILISA	Elektrik İşleri Etüt İdaresi
+EKG		ekage		KISALTMA		D_OKUNUSDAN_YAZILISA	Kalp akım grafiği (Elektrokardiyogram)
+ekon.		Ekonomi		NOKTALI			Ekonomi
+EMG		emege		KISALTMA		D_OKUNUSDAN_YAZILISA	Kas akım grafiği (Electromyographie)
+EMK		emeka		KISALTMA		D_OKUNUSDAN_YAZILISA	Elektromotor kuvvet
+Ens.		Enstitü, enstitüsü		NOKTALI			Enstitü, enstitüsü
+EPA		epea		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Parlamenterler Örgütü (European Parliamentary Association)
+EPDK		epedeka		KISALTMA		D_OKUNUSDAN_YAZILISA	Enerji Piyasası Düzenleme Kurulu
+ERDEMİR		erdemir		KISALTMA		D_OKUNUSDAN_YAZILISA	Ereğli Demir Çelik Fabrikaları
+Erm.		Ermenice		NOKTALI			Ermenice
+ESA		esa		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Uzay Ajansı (European Space Agency)
+ESHOT		eshot		KISALTMA		D_OKUNUSDAN_YAZILISA	Elektrik, Su, Hava Gazı, Otobüs, Tramvay İşletmeleri (İzmir Belediyesi)
+ET				KISALTMA		D_OKUNUSDAN_YAZILISA	Eski Türkçe
+EÜ		eü		KISALTMA		D_OKUNUSDAN_YAZILISA	Ege Üniversitesi
+f.		Fiil		NOKTALI			Fiil
+Fak.		Fakülte		NOKTALI			Fakülte
+FAO				KISALTMA		D_OKUNUSDAN_YAZILISA	BM Gıda ve Tarım Teşkilatı (Food and Agriculture Organization)
+Far.		Farsça		NOKTALI			Farsça
+FBI		efbiay		KISALTMA		D_OKUNUSDAN_YAZILISA	ABD Federal Araştırma Bürosu (Federal Bureau of Investigation)
+fel.		Felsefe		NOKTALI			Felsefe
+FIBA		fiba		KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Basketbol Federasyonu (Federation Internationale de Basketball Association)
+FIDE		fide		KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Satranç  Federasyonu (Federation Internationale des Eches)
+FIFA		fifa		KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Futbol Federasyonu (Federation Internationale des Football Associations)
+FILA		fila		KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Amatör Güreş Federasyonu (Federation Internationale de Lutte Amateur)
+FIR				KISALTMA		D_OKUNUSDAN_YAZILISA	Uçuş hattı düzenlemesi (Flight Information Region)
+fil.		Filoloji, filolojisi		NOKTALI			Filoloji, filolojisi
+FİSKOBİRLİK		fiskobirlik		KISALTMA		D_OKUNUSDAN_YAZILISA	Fındık Tarım Satış Kooperatifleri Birliği
+fiz.		Fizik		NOKTALI			Fizik
+fizy.		Fizyoloji		NOKTALI			Fizyoloji
+FKB		fekabe		KISALTMA		D_OKUNUSDAN_YAZILISA	Fizik, kimya, biyoloji
+FM		efem		KISALTMA		D_OKUNUSDAN_YAZILISA	Frekans Modülasyonu (Frequency Modulation)
+Fr.		Fransızca		NOKTALI			Fransızca
+FÜ		feü		KISALTMA		D_OKUNUSDAN_YAZILISA	Fırat Üniversitesi
+G				KISALTMA		D_OKUNUSDAN_YAZILISA	Güney
+g		gram		KISALTMA		D_OKUNUSDAN_YAZILISA	Gram
+GAP		gap		KISALTMA		D_OKUNUSDAN_YAZILISA	Güneydoğu Anadolu Projesi
+GATA		gata		KISALTMA		D_OKUNUSDAN_YAZILISA	Gülhane Askerî Tıp Akademisi
+GAZÜ		gazü		KISALTMA		D_OKUNUSDAN_YAZILISA	Gaziantep Üniversitesi
+GB		gigabayt		KISALTMA		D_OKUNUSDAN_YAZILISA	Bilgisayarda bellek birimi (Gigabyte)
+GB				KISALTMA		D_OKUNUSDAN_YAZILISA	Güneybatı
+GB				KISALTMA		D_OKUNUSDAN_YAZILISA	Gümrük Birliği
+GD				KISALTMA		D_OKUNUSDAN_YAZILISA	Güneydoğu
+Gen.		general		NOKTALI			General
+geom.		geometri		NOKTALI			Geometri
+gn.		genel		NOKTALI			Genel
+Gnkur.		genelkurmay		NOKTALI			Genelkurmay
+GOÜ		geoü		KISALTMA		D_OKUNUSDAN_YAZILISA	Gazi Osmanpaşa Üniversitesi
+Gön.		Gönderen		NOKTALI			Gönderen
+gr.		Gramer		NOKTALI			Gramer
+Grt		groston		KISALTMA		D_OKUNUSDAN_YAZILISA	Groston
+GSM		geseme		KISALTMA		D_OKUNUSDAN_YAZILISA	Mobil cep telefonu (Global System for Mobile Communications)
+GSMH		gesemehe	F	KISALTMA		D_OKUNUSDAN_YAZILISA	Gayrisafi millî hasıla
+GSYH		geseyehe	F	KISALTMA		D_OKUNUSDAN_YAZILISA	Gayrisafi yurt içi hasıla
+GÜ		geü		KISALTMA		D_OKUNUSDAN_YAZILISA	Gazi Üniversitesi
+H				KISALTMA		D_OKUNUSDAN_YAZILISA	Hicri
+HA				KISALTMA		D_OKUNUSDAN_YAZILISA	Harp Akademisi
+HABITAT		habitat		KISALTMA		D_OKUNUSDAN_YAZILISA	Birleşmiş Milletler İnsan Yerleşimleri Konferansı (Centre for Human Settlements)
+HAVAŞ		havaş		KISALTMA		D_OKUNUSDAN_YAZILISA	Hava Alanları ve Yer Hizmetleri Genel Müdürlüğü
+HDD		eyçdidi		KISALTMA		D_OKUNUSDAN_YAZILISA	Ana bellek sürücüsü (Hard Disk Drive)
+hek.		Hekimlik, hekim, hekimi		NOKTALI			Hekimlik, hekim, hekimi
+HIV		eyçayvi		KISALTMA		D_OKUNUSDAN_YAZILISA	AIDS hastalığına neden olan virüs (Human Immunodeficiency Virus)
+hl		hektolitre		KISALTMA		D_OKUNUSDAN_YAZILISA	Hektolitre
+hlk.		halk ağzı		NOKTALI			Halk ağzı
+hm		hektometre		KISALTMA		D_OKUNUSDAN_YAZILISA	Hektometre
+HMUK				KISALTMA		D_OKUNUSDAN_YAZILISA	Hukuk Muhakemeleri Usulü Kanunu
+HO				KISALTMA		D_OKUNUSDAN_YAZILISA	Harp Okulu
+Hst.		Hastane, hastanesi		NOKTALI			Hastane, hastanesi
+Hs. Uzm.		Hesap Uzmanı		NOKTALI			Hesap Uzmanı
+huk.		Hukuk		NOKTALI			Hukuk
+HÜ		heü		KISALTMA		D_OKUNUSDAN_YAZILISA	Hacettepe Üniversitesi
+Hv. Kuv.		Hava Kuvvetleri		NOKTALI			Hava Kuvvetleri
+Hv. Kuv. K.		Hava Kuvvetleri Komutanı, Komutanlığı		NOKTALI			Hava Kuvvetleri Komutanı, Komutanlığı
+Hz.		Hazret		NOKTALI			Hazret
+Hz.		Hizmet, hizmette		NOKTALI			Hizmet, hizmette
+hzl.		Hazırlayan		NOKTALI			Hazırlayan
+Hz. öz.		Hizmete özel		NOKTALI			Hizmete özel
+IAAF				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Amatör Atletizm Federasyonu (International Amateur Athletic Federation)
+IAEA				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Atom Enerjisi Ajansı (International Atomic Energy Agency)
+IATA				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Hava Taşımacılığı Birliği (International Air Transport Association)
+ICAO				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Sivil Havacılık Örgütü (International Civil Aviation Organization)
+ICJ				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Adalet Divanı (International Court of Justice)
+ICRC				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Kızılhaç Komitesi (International Committee of the Red Cross)
+IDA				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Kalkınma Bankası
+IDB				KISALTMA		D_OKUNUSDAN_YAZILISA	İslam Kalkınma Bankası (Islamic Development Bank)
+ILO				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Çalışma Teşkilatı (International Labor Organization)
+IMF		imefe		KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Para Fonu (International Monetary Fund)
+INTERPOL		interpol		KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Cinayet Polisi Komisyonu (International Criminal Police Commission)
+IOC				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Olimpiyat Komitesi (International Olympic Committee)
+IPI				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Basın Enstitüsü (International Press Institute)
+IRO				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Mülteci Teşkilatı (International Refugee Organization)
+ISBN		ayesbien		KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Standart Kitap Numarası (International Standard Book Number)
+ISMN				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Standart Müzik Numarası (International Standard Music Number)
+ISO		iso		KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Standartlar Örgütü (International Organization for Standardization)
+ISSN				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Standart Dizi Numarası (International Standard Serial Number)
+ITO		ito		KISALTMA		D_OKUNUSDAN_YAZILISA	Birleşmiş Milletler Uluslararası Ticaret Birliği (International Trade Organization)
+İbr.		İbranice		NOKTALI			İbranice
+İETT		ietete		KISALTMA		D_OKUNUSDAN_YAZILISA	İstanbul Elektrik, Tünel, Tramvay İşletmesi
+İKÖ		ikö		KISALTMA		D_OKUNUSDAN_YAZILISA	İslam Konferansı Örgütü
+İMKB		imekabe		KISALTMA		D_OKUNUSDAN_YAZILISA	İstanbul Menkul Kıymetler Borsası
+İng.		İngilizce		NOKTALI			İngilizce
+is.		İsim		NOKTALI			İsim
+İSDEMİR		isdemir		KISALTMA		D_OKUNUSDAN_YAZILISA	İskenderun Demir Çelik Fabrikaları
+İSKİ		iski		KISALTMA		D_OKUNUSDAN_YAZILISA	İstanbul Su ve Kanalizasyon İdaresi
+İSO		iso		KISALTMA		D_OKUNUSDAN_YAZILISA	İstanbul Sanayi Odası
+İsp.		İspanyolca		NOKTALI			İspanyolca
+İŞKUR		işkur		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye İş Kurumu
+işl.		İşleyen		NOKTALI			İşleyen
+İŞOT				KISALTMA		D_OKUNUSDAN_YAZILISA	İstanbul Şehirler Arası Otobüs Terminali
+İt.		İtalyanca		NOKTALI			İtalyanca
+İTB				KISALTMA		D_OKUNUSDAN_YAZILISA	İstanbul Ticaret Borsası
+İTO		ito		KISALTMA		D_OKUNUSDAN_YAZILISA	İstanbul Ticaret Odası
+İTÜ		itü		KISALTMA		D_OKUNUSDAN_YAZILISA	İstanbul Teknik Üniversitesi
+İÜ		iü		KISALTMA		D_OKUNUSDAN_YAZILISA	İstanbul Üniversitesi
+İZTB				KISALTMA		D_OKUNUSDAN_YAZILISA	İzmir Ticaret Borsası
+İZTO				KISALTMA		D_OKUNUSDAN_YAZILISA	İzmir Ticaret Odası
+J				KISALTMA		D_OKUNUSDAN_YAZILISA	Jandarma
+JAL				KISALTMA		D_OKUNUSDAN_YAZILISA	Japon Hava Yolları (Japan Airlines)
+Jap.		Japonca	F	NOKTALI			Japonca
+jeol.		Jeoloji	F	NOKTALI			Jeoloji
+JGK		jegeka		KISALTMA		D_OKUNUSDAN_YAZILISA	Jandarma Genel Komutanlığı
+KARDEMİR		kardemir		KISALTMA		D_OKUNUSDAN_YAZILISA	Karabük Demir Çelik Fabrikaları
+KB			?	KISALTMA		D_OKUNUSDAN_YAZILISA	Kuzeybatı
+KBB		kabebe		KISALTMA		D_OKUNUSDAN_YAZILISA	Kulak, Burun, Boğaz
+KD			?	KISALTMA		D_OKUNUSDAN_YAZILISA	Kuzeydoğu
+KDV		kadeve		KISALTMA		D_OKUNUSDAN_YAZILISA	Katma değer vergisi
+KEİ				KISALTMA		D_OKUNUSDAN_YAZILISA	Karadeniz Ekonomik İş Birliği
+kg		kilogram		KISALTMA	birim	D_OKUNUSDAN_YAZILISA	Kilogram
+KGB		kagebe		KISALTMA		D_OKUNUSDAN_YAZILISA	Sovyet Gizli Haber Alma Teşkilatı (Komitet Gossudarrstvennoi Bezopastnosti)
+KHK				KISALTMA		D_OKUNUSDAN_YAZILISA	Kanun hükmünde kararname
+KİK				KISALTMA		D_OKUNUSDAN_YAZILISA	Kamu İhale Kurumu
+kim.		Kimya		NOKTALI			Kimya
+KİT				KISALTMA		D_OKUNUSDAN_YAZILISA	Kamu İktisadi Teşekkülü
+KKK		kakaka		KISALTMA		D_OKUNUSDAN_YAZILISA	Kara Kuvvetleri Komutanlığı
+KKTC		kakatece		KISALTMA		D_OKUNUSDAN_YAZILISA	Kuzey Kıbrıs Türk Cumhuriyeti
+km		kilometre		KISALTMA		D_OKUNUSDAN_YAZILISA	Kilometre
+KMS				KISALTMA		D_OKUNUSDAN_YAZILISA	Kurumlar İçi Merkezî Eleme Sınavı
+KOBİ		kobi		KISALTMA		D_OKUNUSDAN_YAZILISA	Küçük ve Orta Boy (Ölçekli) İşletme
+KOİ				KISALTMA		D_OKUNUSDAN_YAZILISA	Kamu Ortaklığı İdaresi
+koor.		Koordinasyon		NOKTALI			Koordinasyon
+Kor.		Kolordu		NOKTALI			Kolordu
+Kora.		Koramiral		NOKTALI			Koramiral
+Korg.		Korgeneral		NOKTALI			Korgeneral
+KOSGEB		kosgeb		KISALTMA		D_OKUNUSDAN_YAZILISA	Küçük ve Orta Ölçekli Sanayiyi Geliştirme ve Destekleme İdaresi Başkanlığı
+KPDS		kapedese		KISALTMA		D_OKUNUSDAN_YAZILISA	Kamu Personeli Yabancı Dil Tespit Sınavı
+krş.		Karşılaştırınız		NOKTALI			Karşılaştırınız
+KTÜ		katü		KISALTMA		D_OKUNUSDAN_YAZILISA	Karadeniz Teknik Üniversitesi
+Kur.		Kurmay		NOKTALI			Kurmay
+Kur. Bşk.		Kurmay Başkanı, Başkanlığı		NOKTALI			Kurmay Başkanı, Başkanlığı
+KÜ				KISALTMA		D_OKUNUSDAN_YAZILISA	Kırıkkale Üniversitesi
+l		litre		KISALTMA		D_OKUNUSDAN_YAZILISA	Litre
+Lat.		Latince		NOKTALI			Latince
+LCV				KISALTMA		D_OKUNUSDAN_YAZILISA	Lütfen cevap veriniz
+LES				KISALTMA		D_OKUNUSDAN_YAZILISA	Lisansüstü Eğitim Giriş Sınavı
+LİBOR				KISALTMA		D_OKUNUSDAN_YAZILISA	Londra bankaları gecelik faiz oranı
+LP				KISALTMA		D_OKUNUSDAN_YAZILISA	Uzunçalar (Long play)
+LPG		lepege		KISALTMA		D_OKUNUSDAN_YAZILISA	Sıvılaştırılmış Petrol Gazı (Liquified Petroleum Gas)
+Ltd.		Limitet		NOKTALI			Limitet
+M				KISALTMA		D_OKUNUSDAN_YAZILISA	Miladi
+m		metre		KISALTMA		D_OKUNUSDAN_YAZILISA	Metre
+Mac.		Macarca		NOKTALI			Macarca
+Mah.		Mahalle, mahallesi		NOKTALI			Mahalle, mahallesi
+Mah.		Mahkeme, mahkemesi		NOKTALI			Mahkeme, mahkemesi
+man.		Mantık		NOKTALI			Mantık
+mat.		Matematik		NOKTALI			Matematik
+MB				KISALTMA		D_OKUNUSDAN_YAZILISA	Bilgisayarda bellek birimi (megabyte)
+MD.		Müdür, müdürlük, müdürlüğü		NOKTALI			Müdür, müdürlük, müdürlüğü
+MEB		meb		KISALTMA		D_OKUNUSDAN_YAZILISA	Millî Eğitim Bakanlığı
+mec.		Mecaz		NOKTALI			Mecaz
+MGK		megeka		KISALTMA		D_OKUNUSDAN_YAZILISA	Millî Güvenlik Kurulu
+mim.		Mimarlık		NOKTALI			Mimarlık
+min.		Mineraloji		NOKTALI			Mineraloji
+MİT		mit		KISALTMA		D_OKUNUSDAN_YAZILISA	Millî İstihbarat Teşkilatı
+MK				KISALTMA		D_OKUNUSDAN_YAZILISA	Medeni Kanun
+MKE		mekae		KISALTMA		D_OKUNUSDAN_YAZILISA	Makine ve Kimya Endüstrisi Kurumu
+MKS		mekase		KISALTMA		D_OKUNUSDAN_YAZILISA	Metre-Kilogram-Saat
+MKYK		mekeyeka		KISALTMA		D_OKUNUSDAN_YAZILISA	Merkez Karar Yönetim Kurulu
+mm		milimetre		KISALTMA		D_OKUNUSDAN_YAZILISA	Milimetre
+MOSSAD		mossad		KISALTMA		D_OKUNUSDAN_YAZILISA	İsrail Gizli Haber Alma Örgütü
+MÖ				KISALTMA		D_OKUNUSDAN_YAZILISA	Milattan önce
+MPİ				KISALTMA		D_OKUNUSDAN_YAZILISA	Millî Piyango İdaresi Genel Müdürlüğü
+MPM				KISALTMA		D_OKUNUSDAN_YAZILISA	Millî Prodüktivite Merkezi
+MS				KISALTMA		D_OKUNUSDAN_YAZILISA	Milattan sonra
+MSÜ				KISALTMA		D_OKUNUSDAN_YAZILISA	Mimar Sinan Üniversitesi
+MTA		metea		KISALTMA		D_OKUNUSDAN_YAZILISA	Maden Tetkik ve Arama Genel Müdürlüğü
+MÜ				KISALTMA		D_OKUNUSDAN_YAZILISA	Marmara Üniversitesi
+Müh.		Mühendis, mühendisi, mühendislik		NOKTALI			Mühendis, mühendisi, mühendislik
+Mür.		Müracaat		NOKTALI			Müracaat
+müz.		Müzik		NOKTALI			Müzik
+MYK		meyeka		KISALTMA		D_OKUNUSDAN_YAZILISA	Merkez Yönetim Kurulu
+NASA		nasa		KISALTMA		D_OKUNUSDAN_YAZILISA	Amerikan Ulusal Havacılık ve Uzay Araştırmaları Merkezi (National Aeronautics and Space Administration)
+NATO		nato		KISALTMA		D_OKUNUSDAN_YAZILISA	Kuzey Atlantik Antlaşması Teşkilatı (North Atlantic Treaty Organization)
+NOTAM				KISALTMA		D_OKUNUSDAN_YAZILISA	Havacılar ve denizciler için uyarı bildirimi (Notice to Airmen)
+Nö.		Nöbet, nöbetçi		NOKTALI			Nöbet, nöbetçi
+Nö. Sb.		Nöbetçi subayı		NOKTALI			Nöbetçi subayı
+Nu.		Numara		NOKTALI			Numara
+OAPEC				KISALTMA		D_OKUNUSDAN_YAZILISA	Petrol İhraç Eden Arap Ülkeleri Örgütü
+ODTÜ		odtü		KISALTMA		D_OKUNUSDAN_YAZILISA	Orta Doğu Teknik Üniversitesi
+OECD		oesidi		KISALTMA		D_OKUNUSDAN_YAZILISA	Ekonomik İş Birliği ve Kalkınma Teşkilatı (Organization for Economic Cooperation and Development)
+Okt.		Okutman		NOKTALI			Okutman
+Onb.		Onbaşı		NOKTALI			Onbaşı
+OPEC		opek		KISALTMA		D_OKUNUSDAN_YAZILISA	Petrol İhraç Eden Ülkeler Teşkilatı (Organization of Petroleum Exporting Countries)
+Opr.		Operatör		NOKTALI			Operatör
+Or.		Ordu		NOKTALI			Ordu
+Ora.		Oramiral		NOKTALI			Oramiral
+Ord.		Ordinaryüs		NOKTALI			Ordinaryüs
+Org.		Orgeneral		NOKTALI			Orgeneral
+Ort.		Ortaklık, ortakları, ortaklığı		NOKTALI			Ortaklık, ortakları, ortaklığı
+OSB				KISALTMA		D_OKUNUSDAN_YAZILISA	Organize Sanayi Bölgesi
+Osm. T.		Osmanlı Türkçesi		NOKTALI			Osmanlı Türkçesi
+OYAK		oyak		KISALTMA		D_OKUNUSDAN_YAZILISA	Ordu Yardımlaşma Kurumu
+ÖİB				KISALTMA		D_OKUNUSDAN_YAZILISA	Özelleştirme İdaresi Başkanlığı
+öl.		Ölüm tarihi		NOKTALI			Ölüm tarihi
+ör.		Örnek		NOKTALI			Örnek
+ÖSS		ösese		KISALTMA		D_OKUNUSDAN_YAZILISA	Öğrenci Seçme Sınavı
+ÖSYM		öseyeme		KISALTMA		D_OKUNUSDAN_YAZILISA	Öğrenci Seçme Yerleştirme Merkezi
+ÖTV		öteve		KISALTMA		D_OKUNUSDAN_YAZILISA	Özel tüketim vergisi
+ÖYK		öyeka		KISALTMA		D_OKUNUSDAN_YAZILISA	Özelleştirme Yüksek Kurulu
+ÖYS		öyese		KISALTMA		D_OKUNUSDAN_YAZILISA	Öğrenci Yerleştirme Sınavı
+öz.		Özel		NOKTALI			Özel
+ped.		Pedagoji		NOKTALI			Pedagoji
+PEN				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Yazarlar Birliği (International Association of Poets, Playwrights, Editors, Essayists and Novelists)
+PETKİM		petkim		KISALTMA		D_OKUNUSDAN_YAZILISA	Petrokimya Endüstrisi Genel Müdürlüğü
+PK		peka		KISALTMA		D_OKUNUSDAN_YAZILISA	Posta kutusu
+PO		po		KISALTMA		D_OKUNUSDAN_YAZILISA	Petrol Ofisi
+POAŞ		poaş		KISALTMA		D_OKUNUSDAN_YAZILISA	Petrol Ofisi Anonim Şirketi
+Port.		Portekizce		NOKTALI			Portekizce
+Prof.		Profesör		NOKTALI			Profesör
+psikol.		Psikoloji		NOKTALI			Psikoloji
+PTT		petete		KISALTMA		D_OKUNUSDAN_YAZILISA	Posta ve Telgraf Teşkilatı Genel Müdürlüğü
+RAM		rem		KISALTMA		D_OKUNUSDAN_YAZILISA	Bilgisayarda okunabilir ve yazılabilir bellek (Random Access Memory)
+RC				KISALTMA		D_OKUNUSDAN_YAZILISA	Kızılhaç (Red Cross)
+RCD				KISALTMA		D_OKUNUSDAN_YAZILISA	Kalkınma İçin Bölgesel İş Birliği (Regional Cooperation for Development)
+RNA		renea		KISALTMA		D_OKUNUSDAN_YAZILISA	Ribo nükleik asit
+ROM		rom		KISALTMA		D_OKUNUSDAN_YAZILISA	Bilgisayarda yalnızca okunabilir bellek (Read-Only Memory)
+Ro-Ro		roro		KISALTMA		D_OKUNUSDAN_YAZILISA	Gemiye taşıt indirme bindirme (rolon-roloff)
+RTÜK		rütük		KISALTMA		D_OKUNUSDAN_YAZILISA	Radyo ve Televizyon Üst Kurulu
+Rum.		Rumence		NOKTALI			Rumence
+Rus.		Rusça		NOKTALI			Rusça
+S				KISALTMA		D_OKUNUSDAN_YAZILISA	Sayı
+s.		Sayfa		NOKTALI			Sayfa
+sa.		Saat		NOKTALI			Saat
+SALT				KISALTMA		D_OKUNUSDAN_YAZILISA	Stratejik Silahların Sınırlandırılması Görüşmeleri (Strategic Arms Limitation Talks)
+SAS		sas		KISALTMA		D_OKUNUSDAN_YAZILISA	Su Altı Savunma (Komandoları)
+SAT		sat		KISALTMA		D_OKUNUSDAN_YAZILISA	Su Altı Taarruz (Komandoları)
+Sb.		Subay		NOKTALI			Subay
+SBF		sebefe		KISALTMA		D_OKUNUSDAN_YAZILISA	Siyasal Bilgiler Fakültesi
+SEK		sek		KISALTMA		D_OKUNUSDAN_YAZILISA	Süt Endüstrisi Kurumu AŞ
+SEKA		seka		KISALTMA		D_OKUNUSDAN_YAZILISA	Selüloz ve Kâğıt Sanayii Kurumu
+sf.		Sıfat		NOKTALI			Sıfat
+SHÇEK				KISALTMA		D_OKUNUSDAN_YAZILISA	Sosyal Hizmetler ve Çocuk Esirgeme Kurumu
+SKT		sekate		KISALTMA		D_OKUNUSDAN_YAZILISA	Son kullanma tarihi
+Sl.		Slavca		NOKTALI			Slavca
+Sn.		Sayın		NOKTALI			Sayın
+sn.		Saniye		NOKTALI			Saniye
+snt.		Santral		NOKTALI			Santral
+Sok.		Sokak		NOKTALI			Sokak
+sos.		Sosyoloji		NOKTALI			Sosyoloji
+SOS				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası yardım isteme uyarısı (Save Our Souls)
+sp.		Spor		NOKTALI			Spor
+SPK		sepeka		KISALTMA		D_OKUNUSDAN_YAZILISA	Sermaye Piyasası Kurulu
+SSCB		sesecebe		KISALTMA		D_OKUNUSDAN_YAZILISA	Sovyet Sosyalist Cumhuriyetleri Birliği
+SSK		seseka		KISALTMA		D_OKUNUSDAN_YAZILISA	Sosyal Sigortalar Kurumu
+STK		seteka		KISALTMA		D_OKUNUSDAN_YAZILISA	Sivil Toplum Kuruluşu
+STÖ		seteö		KISALTMA		D_OKUNUSDAN_YAZILISA	Sivil Toplum Örgütü
+SÜ				KISALTMA		D_OKUNUSDAN_YAZILISA	Selçuk Üniversitesi
+Ş				KISALTMA		D_OKUNUSDAN_YAZILISA	Şirket
+Şb.		Şube		NOKTALI			Şube
+T.		Türkçe		NOKTALI			Türkçe
+t		ton		KISALTMA		D_OKUNUSDAN_YAZILISA	Ton
+TAEK		taek		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Atom Enerjisi Kurumu
+TAI				KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Havacılık Sanayii (Turkish Aerospace Industry)
+TAO				KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Anonim Ortaklığı
+tar.		Tarih		NOKTALI			Tarih
+TARİŞ		tariş		KISALTMA		D_OKUNUSDAN_YAZILISA	Tarım Satış Kooperatifleri Birliği
+TASS				KISALTMA		D_OKUNUSDAN_YAZILISA	Sovyetler Birliği Telgraf Ajansı (Telegrafnoe Agentstvo Sovetskogo Soyuza)
+TAŞ				KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Anonim Şirketi
+Tb.		Tabur		NOKTALI			Tabur
+TBB				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Barolar Birliği
+TBMM		tebememe		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Büyük Millet Meclisi
+T.C.		Türkiye Cumhuriyeti		NOKTALI			Türkiye Cumhuriyeti
+TCDD		tecedede		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Cumhuriyeti Devlet Demiryolları
+TCK		teceka		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Cumhuriyeti Karayolları
+TCK		teceka		KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Ceza Kanunu
+TCMB		tecemebe		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Cumhuriyet Merkez Bankası
+TCZB		tecezebe		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Cumhuriyeti Ziraat Bankası
+TDÇİ				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Demir Çelik İşletmeleri
+TDİ				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Denizcilik İşletmeleri
+TDK		tedeka		KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Dil Kurumu
+TEAŞ		teaş		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Elektrik Üretim AŞ
+TEDAŞ		tedaş		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Elektrik Dağıtım Anonim Şirketi
+TEFE		tefe		KISALTMA		D_OKUNUSDAN_YAZILISA	Toptan eşya fiyatları endeksi
+TEİAŞ				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Elektrik İletim AŞ
+tek.		Teknik, teknoloji		NOKTALI			Teknik, teknoloji
+TEK				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Elektrik Kurumu
+telg.		Telgraf		NOKTALI			Telgraf
+TEM		tem		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Transit Kara Yolu (Trans European Motor Way)
+TETAŞ		tetaş		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Elektrik, Ticaret ve Taahhüt AŞ
+TGC				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Gazeteciler Cemiyeti
+TGS				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Gazeteciler Sendikası
+Tğm.		Teğmen		NOKTALI			Teğmen
+THA				KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Haberler Ajansı
+THK		teheka		KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Hava Kurumu
+THK				KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Hukuk Kurumu
+THY		teheye		KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Hava Yolları
+TIR		tır		KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Kara Yolu Taşımacılığı (Transport International Routier)
+tic.		Ticaret		NOKTALI			Ticaret
+TİGEM		tigem		KISALTMA		D_OKUNUSDAN_YAZILISA	Tarım İşletmeleri Genel Müdürlüğü
+TİKA		tika		KISALTMA		D_OKUNUSDAN_YAZILISA	Türk İşbirliği ve Kalkınma İdaresi Başkanlığı
+TİM		tim		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye İhracatçılar Merkezi
+TİSK		tisk		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye İşverenler Sendikası Konfederasyonu
+tiy.		Tiyatro		NOKTALI			Tiyatro
+TKAE				KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Kültürünü Araştırma Enstitüsü
+TKB				KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Kadınlar Birliği
+TKF				KISALTMA		D_OKUNUSDAN_YAZILISA	Toplu Konut Fonu
+TKİ				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Kömür İşletmeleri
+TL		tele		KISALTMA		D_OKUNUSDAN_YAZILISA	Türk lirası
+tel.		Telefon		NOKTALI			Telefon
+tlks.		Teleks		NOKTALI			Teleks
+tls.		Telsiz		NOKTALI			Telsiz
+TM		teme		KISALTMA		D_OKUNUSDAN_YAZILISA	Türk malı
+TMMOB				KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Mühendis ve Mimar Odaları Birliği
+TMO		temeo		KISALTMA		D_OKUNUSDAN_YAZILISA	Toprak Mahsulleri Ofisi
+TOBB		tob		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Odalar ve Borsalar Birliği
+TODAİE				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye ve Orta Doğu Amme İdaresi Enstitüsü
+TOEFL		tofıl		KISALTMA		D_OKUNUSDAN_YAZILISA	Yabancı dil olarak İngilizce testi (Test of English as a Foreign Language)
+TOKİ		toki		KISALTMA		D_OKUNUSDAN_YAZILISA	Toplu Konut İdaresi Başkanlığı
+Top.		Topçu		NOKTALI			Topçu
+TP		tepe		KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Petrolleri
+TPAO		tepeao		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Petrolleri Anonim Ortaklığı
+TR		tere		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye
+TRT		terete		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Radyo Televizyon Kurumu
+TSE		tesee		KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Standartları Enstitüsü
+TSİ		tesei		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye saati ile
+TSK		teseka		KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Silahlı Kuvvetleri
+TT				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Türkçesi
+TTB				KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Tabipleri Birliği
+TTOK				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Turing ve Otomobil Kurumu
+TTKB				KISALTMA		D_OKUNUSDAN_YAZILISA	Talim ve Terbiye Kurulu Başkanlığı
+TTK				KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Tarih Kurumu
+Tug.		Tugay		NOKTALI			Tugay
+Tuğa.		Tuğamiral		NOKTALI			Tuğamiral
+Tuğg.		Tuğgeneral		NOKTALI			Tuğgeneral
+TUS		tus		KISALTMA		D_OKUNUSDAN_YAZILISA	Tıpta Uzmanlık Sınavı
+TÜ				KISALTMA		D_OKUNUSDAN_YAZILISA	Trakya Üniversitesi
+TÜBA		tüba		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Bilimler Akademisi
+TÜBİTAK		tübitak		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Bilimsel ve Teknik Araştırma Kurumu
+TÜFE		tüfe		KISALTMA		D_OKUNUSDAN_YAZILISA	Tüketici fiyatları endeksi
+Tüm.		Tümen		NOKTALI			Tümen
+Tüma.		Tümamiral		NOKTALI			Tümamiral
+Tümg.		Tümgeneral		NOKTALI			Tümgeneral
+TÜPRAŞ		Tüpraş		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Petrol Rafinerileri Anonim Şirketi
+TÜRDOK				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Dokümantasyon Merkezi
+TÜRKSAT		türksat		KISALTMA		D_OKUNUSDAN_YAZILISA	Türk uydusu (Turkish satellite)
+TÜRSAB		türsab		KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Seyahat Acenteleri Birliği
+TÜTAV		tütav		KISALTMA		D_OKUNUSDAN_YAZILISA	Türk Tanıtma Vakfı
+TV		tivi		KISALTMA		D_OKUNUSDAN_YAZILISA	Televizyon
+TZDK				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Zirai Donatım Kurumu
+TZOB				KISALTMA		D_OKUNUSDAN_YAZILISA	Türkiye Ziraat Odaları Birliği
+UEFA		uefa		KISALTMA		D_OKUNUSDAN_YAZILISA	Avrupa Futbol Federasyonları Birliği (Union of European Football Associations)
+UFO		ufo		KISALTMA		D_OKUNUSDAN_YAZILISA	Tanımlanmamış Uçan Nesne (Unidentified Flying Object)
+UHF				KISALTMA		D_OKUNUSDAN_YAZILISA	Ultra yüksek frekans (Ultra High Frequency)
+UK				KISALTMA		D_OKUNUSDAN_YAZILISA	Birleşik Krallık, İngiltere
+UN				KISALTMA		D_OKUNUSDAN_YAZILISA	Birleşmiş Milletler (United Nations)
+UNAC				KISALTMA		D_OKUNUSDAN_YAZILISA	Birleşmiş Milletler Çocuklara Yardım Teşkilatı (United Nations Aid to Children)
+UNESCO		unesko		KISALTMA		D_OKUNUSDAN_YAZILISA	Birleşmiş Milletler Eğitim, Bilim ve Kültür Teşkilatı (United Nations Educational, Scientific and Cultural Organization)
+UNICEF		unisef		KISALTMA		D_OKUNUSDAN_YAZILISA	Birleşmiş Milletler Uluslararası Çocuklara Yardım Fonu (United Nations International Children's Emergency Fund)
+UNO				KISALTMA		D_OKUNUSDAN_YAZILISA	Birleşmiş Milletler Teşkilatı (United Nations Organization)
+UPI				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Basın Birliği (United Press International)
+UPU				KISALTMA		D_OKUNUSDAN_YAZILISA	Uluslararası Posta Birliği (Universal Postal Union)
+USA		yuesey		KISALTMA		D_OKUNUSDAN_YAZILISA	Amerika Birleşik Devletleri
+USAŞ				KISALTMA		D_OKUNUSDAN_YAZILISA	Uçak Sanayi AŞ
+UÜ				KISALTMA		D_OKUNUSDAN_YAZILISA	Uludağ Üniversitesi
+Uzm.		Uzman		NOKTALI			Uzman
+Ü				KISALTMA		D_OKUNUSDAN_YAZILISA	Üniversite
+Üçvş.		Üstçavuş		NOKTALI			Üstçavuş
+ÜDS		üdese		KISALTMA		D_OKUNUSDAN_YAZILISA	Üniversiteler Arası Kurul Yabancı Dil Sınavı
+ÜFE		üfe		KISALTMA		D_OKUNUSDAN_YAZILISA	Üretici fiyatları endeksi
+ünl.		Ünlem		NOKTALI			Ünlem
+Ütğm.		Üsteğmen		NOKTALI			Üsteğmen
+ÜT				KISALTMA		D_OKUNUSDAN_YAZILISA	Üretim tarihi
+vb.		Ve başkası, ve başkaları, ve benzeri, ve benzerleri, ve bunun gibi		NOKTALI			Ve başkası, ve başkaları, ve benzeri, ve benzerleri, ve bunun gibi
+vd.		Ve devamı, ve diğerleri		NOKTALI			Ve devamı, ve diğerleri
+VDMK				KISALTMA		D_OKUNUSDAN_YAZILISA	Varlığa Dayalı Menkul Kıymetler
+Vet.		Veteriner		NOKTALI			Veteriner
+VHF				KISALTMA		D_OKUNUSDAN_YAZILISA	Çok yüksek frekans (Very High Frequency)
+VIP		viaypi		KISALTMA		D_OKUNUSDAN_YAZILISA	Çok önemli kişi (Very Important Person)
+vs.		Vesaire		NOKTALI			Vesaire
+w		vat		KISALTMA		D_OKUNUSDAN_YAZILISA	Elektrik güç birimi (Watt)
+WAP		vap		KISALTMA		D_OKUNUSDAN_YAZILISA	"Kablosuz uygulama protokolü; İnternet sistemine kablosuz erişim (Wireless Application Protocol)"
+WB				KISALTMA		D_OKUNUSDAN_YAZILISA	Dünya Bankası (World Bank)
+WHO		hu		KISALTMA		D_OKUNUSDAN_YAZILISA	Dünya Sağlık Örgütü (World Health Organization)
+WTO				KISALTMA		D_OKUNUSDAN_YAZILISA	Dünya Ticaret Örgütü (World Trade Organization)
+Yrd. Doç.		Yardımcı Doçent		NOKTALI			Yardımcı Doçent
+Yay.		Yayını, yayınları		NOKTALI			Yayını, yayınları
+Yb.		Yarbay		NOKTALI			Yarbay
+YDS		yedese		KISALTMA		D_OKUNUSDAN_YAZILISA	Yabancı Dil Sınavı
+Yd. Sb.		Yedek subay		NOKTALI			Yedek subay
+YKr		yeni kuruş		KISALTMA		D_OKUNUSDAN_YAZILISA	Yeni kuruş
+YÖK		yök		KISALTMA		D_OKUNUSDAN_YAZILISA	Yükseköğretim Kurulu
+YÖS		yös		KISALTMA		D_OKUNUSDAN_YAZILISA	Yabancı Uyruklu Öğrenci Sınavı
+YSE				KISALTMA		D_OKUNUSDAN_YAZILISA	Yol, Su, Elektrik Genel Müdürlüğü
+YSK		yeseka		KISALTMA		D_OKUNUSDAN_YAZILISA	Yüksek Seçim Kurulu
+YTL		yetele		KISALTMA		D_OKUNUSDAN_YAZILISA	Yeni Türk lirası
+YTÜ		yeteü		KISALTMA		D_OKUNUSDAN_YAZILISA	Yıldız Teknik Üniversitesi
+Yun.		Yunanca		NOKTALI			Yunanca
+YURTKUR		yurtkur		KISALTMA		D_OKUNUSDAN_YAZILISA	Yükseköğrenim Kredi ve Yurtlar Kurumu
+Y. Mim.		Yüksek mimar		NOKTALI			Yüksek mimar
+Y. Müh.		Yüksek mühendis		NOKTALI			Yüksek mühendis
+yy.		Yüzyıl		NOKTALI			Yüzyıl
+YYÜ				KISALTMA		D_OKUNUSDAN_YAZILISA	Yüzüncü Yıl Üniversitesi
+Yzb.		Yüzbaşı		NOKTALI			Yüzbaşı
+zf.		Zarf		NOKTALI			Zarf
+ZF				KISALTMA		D_OKUNUSDAN_YAZILISA	Ziraat Fakültesi
+zm.		Zamir		NOKTALI			Zamir
+ZMO				KISALTMA		D_OKUNUSDAN_YAZILISA	Ziraat Mühendisleri Odası
+zool.		Zooloji		NOKTALI			Zooloji
+A		a		HARF		D_OKUNUSDAN_YAZILISA	
+B		be		HARF		D_OKUNUSDAN_YAZILISA	
+C		ce		HARF		D_OKUNUSDAN_YAZILISA	
+Ç		çe		HARF		D_OKUNUSDAN_YAZILISA	
+D		de		HARF		D_OKUNUSDAN_YAZILISA	
+E		e		HARF		D_OKUNUSDAN_YAZILISA	
+F		fe		HARF		D_OKUNUSDAN_YAZILISA	
+G		ge		HARF		D_OKUNUSDAN_YAZILISA	
+Ğ		yumuşak ge		HARF		D_OKUNUSDAN_YAZILISA	
+H		he		HARF		D_OKUNUSDAN_YAZILISA	
+İ		i		HARF		D_OKUNUSDAN_YAZILISA	
+I		ı		HARF		D_OKUNUSDAN_YAZILISA	
+J		je		HARF		D_OKUNUSDAN_YAZILISA	
+K		ke		HARF		D_OKUNUSDAN_YAZILISA	
+L		le		HARF		D_OKUNUSDAN_YAZILISA	
+M		me		HARF		D_OKUNUSDAN_YAZILISA	
+N		ne		HARF		D_OKUNUSDAN_YAZILISA	
+O		o		HARF		D_OKUNUSDAN_YAZILISA	
+Ö		ö		HARF		D_OKUNUSDAN_YAZILISA	
+P		pe		HARF		D_OKUNUSDAN_YAZILISA	
+R		re		HARF		D_OKUNUSDAN_YAZILISA	
+S		se		HARF		D_OKUNUSDAN_YAZILISA	
+Ş		şe		HARF		D_OKUNUSDAN_YAZILISA	
+T		te		HARF		D_OKUNUSDAN_YAZILISA	
+U		u		HARF		D_OKUNUSDAN_YAZILISA	
+Ü		ü		HARF		D_OKUNUSDAN_YAZILISA	
+V		ve		HARF		D_OKUNUSDAN_YAZILISA	
+Y		ye		HARF		D_OKUNUSDAN_YAZILISA	
+Z		ze		HARF		D_OKUNUSDAN_YAZILISA	
+a		a		HARF		D_OKUNUSDAN_YAZILISA	
+b		be		HARF		D_OKUNUSDAN_YAZILISA	
+c		ce		HARF		D_OKUNUSDAN_YAZILISA	
+ç		çe		HARF		D_OKUNUSDAN_YAZILISA	
+d		de		HARF		D_OKUNUSDAN_YAZILISA	
+e		e		HARF		D_OKUNUSDAN_YAZILISA	
+f		fe		HARF		D_OKUNUSDAN_YAZILISA	
+g		ge		HARF		D_OKUNUSDAN_YAZILISA	
+ğ		yumuşak ge		HARF		D_OKUNUSDAN_YAZILISA	
+h		he		HARF		D_OKUNUSDAN_YAZILISA	
+i		i		HARF		D_OKUNUSDAN_YAZILISA	
+ı		ı		HARF		D_OKUNUSDAN_YAZILISA	
+j		je		HARF		D_OKUNUSDAN_YAZILISA	
+k		ke		HARF		D_OKUNUSDAN_YAZILISA	
+l		le		HARF		D_OKUNUSDAN_YAZILISA	
+m		me		HARF		D_OKUNUSDAN_YAZILISA	
+n		ne		HARF		D_OKUNUSDAN_YAZILISA	
+o		o		HARF		D_OKUNUSDAN_YAZILISA	
+ö		ö		HARF		D_OKUNUSDAN_YAZILISA	
+p		pe		HARF		D_OKUNUSDAN_YAZILISA	
+r		re		HARF		D_OKUNUSDAN_YAZILISA	
+s		se		HARF		D_OKUNUSDAN_YAZILISA	
+ş		şe		HARF		D_OKUNUSDAN_YAZILISA	
+t		te		HARF		D_OKUNUSDAN_YAZILISA	
+u		u		HARF		D_OKUNUSDAN_YAZILISA	
+ü		ü		HARF		D_OKUNUSDAN_YAZILISA	
+v		ve		HARF		D_OKUNUSDAN_YAZILISA	
+y		ye		HARF		D_OKUNUSDAN_YAZILISA	
+z		ze		HARF		D_OKUNUSDAN_YAZILISA	
