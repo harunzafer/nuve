@@ -33,7 +33,7 @@ Nuve is used for its morphologic generation ability in this project: http://fiil
 
 ### Add to your project
 
-The easiest way to add Nuve in to your project is [Nuget] (http://www.nuget.org/packages/Nuve/)
+The easiest way to add Nuve in to your project is [NuGet] (http://www.nuget.org/packages/Nuve/)
 
 In Visual Studio open [Package Manager Console] (http://docs.nuget.org/docs/start-here/using-the-package-manager-console) and run the following command:
      
