@@ -4,7 +4,7 @@ Nuve is a Natural Language Processing Library for Turkish. Currently it supports
 Morphologic Analysis is demonstrated here: http://nuvedemo.apphb.com/
 Nuve is used for its morphologic generation ability in this project: http://fiilcek.apphb.com/
 
-## Usage for Morphologic Analysis and Generation:
+### Usage for Morphologic Analysis and Generation:
      
      Language tr = Language.Turkish;
      
@@ -31,9 +31,11 @@ Nuve is used for its morphologic generation ability in this project: http://fiil
      
      return word.GetSurface();
 
-## Add to your project
+### Add to your project
 
 The easiest way to add Nuve in to your project is [Nuget] (http://www.nuget.org/packages/Nuve/)
 
 In Visual Studio open [Package Manager Console] (http://docs.nuget.org/docs/start-here/using-the-package-manager-console) and run the following command:
+     
      PM> Install-Package Nuve
+
