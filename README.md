@@ -3,11 +3,9 @@ nuve
 Nuve is a Natural Language Processing Library for Turkish. Currently it supports morphologic analysis and generation. Morphologic Analysis is demonstrated here: http://nuvedemo.apphb.com/
 
 Usage for Morphologic Analysis and Generation:
-
      
      Language tr = Language.Turkish;
      
-
      //Analysis
      WordAnalyzer _analyzer = new WordAnalyzer(tr);
      
@@ -17,7 +15,6 @@ Usage for Morphologic Analysis and Generation:
      {    
           Console.WriteLine("\t{0}\n", solution);
      }
-
 
      //Generation
      Root root = tr.Roots.Get("kitap")[0];
