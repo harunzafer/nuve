@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Nuve.Reader
 {
-    internal class LabelSet
+    internal static class LabelSet
     {
         private static readonly IDictionary<string, int> map =
             new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase)

@@ -2,7 +2,7 @@
 
 namespace Nuve.Orthographic
 {
-    class CharSet
+    static class CharSet
     {
          public static readonly IList<char> TurkishConsonants = new List<char>("bcçdfgğhjklmnprsştvyz".ToCharArray());
          public static readonly IList<char> TurkishVowels = new List<char>("aeıioöuü".ToCharArray());

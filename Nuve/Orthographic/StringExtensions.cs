@@ -173,7 +173,7 @@ namespace Nuve.Orthographic
 
         public static string RemoveParentheses(this string str)
         {           
-            Regex rgx = new Regex(@"(\(|\))");
+            var rgx = new Regex(@"(\(|\))");
             return rgx.Replace(str, "");
         }
 
@@ -203,14 +203,15 @@ namespace Nuve.Orthographic
             return new string(a);
         }
 
-        public static IList<string> ToAnalyses(this IList<Word> words)
+        public static IList<string> ToAnalyses(this IEnumerable<Word> words)
         {
-            IList<string> analyses = new List<string>();
-            foreach (Word word in words)
-            {
-                analyses.Add(word.Analysis);
-            }
-            return analyses;
+            //IList<string> analyses = new List<string>();
+            //foreach (Word word in words)
+            //{
+            //    analyses.Add(word.Analysis);
+            //}
+            //return analyses;
+            return words.Select(word => word.Analysis).ToList();
         }
     }
 }

@@ -9,7 +9,7 @@ using QuickGraph;
 
 namespace Nuve.Reader
 {
-    internal class MorphotacticsReader
+    internal static class MorphotacticsReader
     {
         private class SuffixGroupElement
         {

@@ -9,16 +9,6 @@ namespace Nuve
 {
     public class SampleClass
     {
-        public bool ReturnTrue()
-        {
-            return true;
-        }
-
-        internal bool InternalReturnTrue()
-        {
-            return true;
-        }
-
         public static void Test()
         {
             var graph = new AdjacencyGraph<string, Edge<string>>(true);
@@ -58,12 +48,9 @@ namespace Nuve
             
             foreach (Edge<string> edge in list)
             {
-                
                 graph.AddEdge(new Edge<string>("E", edge.Target));
                 Console.WriteLine(edge);
             }
-
-            
 
         }
     }

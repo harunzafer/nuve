@@ -12,7 +12,7 @@ namespace Nuve.Gui
     class AnalysisHelper
     {
 
-        public static void Analyze(WordAnalyzer analyzer, string[] words)
+        public static void Analyze(WordAnalyzer analyzer, IEnumerable<string> words)
         {
             foreach (var test in words)
             {
@@ -23,6 +23,22 @@ namespace Nuve.Gui
                     Console.WriteLine("\t{0}\n", solution);
                 }
             }
+        }
+
+        public static void AnalyzeTokensToFile(WordAnalyzer analyzer, IEnumerable<string> words, string undefinedOutputFilename)
+        {
+            IList<string> lines = new List<string>();
+            foreach (string word in words)
+            {
+                string line = word;
+                IList<Word> solutions = analyzer.Analyze(word);
+                foreach (var solution in solutions)
+                {
+                    line += "\t" + solution;
+                }
+                lines.Add(line);
+            }
+            File.WriteAllLines(undefinedOutputFilename, lines);
         }
 
         public static void Analyze(WordAnalyzer analyzer, string inputFilename, string undefinedOutputFilename)

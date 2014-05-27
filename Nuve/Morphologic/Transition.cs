@@ -5,20 +5,20 @@ namespace Nuve.Morphologic
 {
     class Transition<TVertex> : Edge<TVertex>
     {
-        private readonly ConditionContainer conditionContainer;
+        private readonly ConditionContainer _conditionContainer;
         public Transition(TVertex source, TVertex target, ConditionContainer conditionContainer)
         : base(source, target)
         {
-            this.conditionContainer = conditionContainer;
+            _conditionContainer = conditionContainer;
         }
 
         public Transition(TVertex source, TVertex target)
             : base(source, target)
         {
-            this.conditionContainer = ConditionContainer.EmptyContainer();
+            _conditionContainer = ConditionContainer.EmptyContainer();
         }
 
-        public ConditionContainer Conditions { get { return conditionContainer; } }
+        public ConditionContainer Conditions { get { return _conditionContainer; } }
 
     }
 }

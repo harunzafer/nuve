@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Nuve.Lang;
@@ -21,14 +22,9 @@ namespace Nuve.Gui
         [STAThread]
         private static void Main()
         {
-            test();
-            //IList<Suffix> suff= Language.Turkish.Suffixes.GetSuffixesStartWith("m");
-            //foreach (Suffix s in suff)
-            //{
-            //    Console.WriteLine(s.Id);
-
-            //}
-            //createStemDict();
+            //test();           
+            IList<string> tokens = ReadWords("../../../../data/303.txt");
+            AnalysisHelper.AnalyzeTokensToFile(_analyzer, tokens, "../../../../data/deneme.txt");
         }
 
         public static void test()
@@ -53,6 +49,12 @@ namespace Nuve.Gui
             {
                 MessageBox.Show(exception.InnerException.ToString());
             }
+        }
+
+        private static IList<string> ReadWords(string filename)
+        {
+            string[] tokens = File.ReadAllText(filename, Encoding.UTF8).Split(null);
+            return tokens.ToList();
         }
 
         public static void createStemDict()

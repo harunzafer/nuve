@@ -9,7 +9,7 @@ using Nuve.Orthographic;
 
 namespace Nuve.Reader
 {
-    internal class ExcelSuffixReader
+    internal static class ExcelSuffixReader
     {
         private static Orthography _orthography;
 

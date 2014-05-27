@@ -20,7 +20,7 @@ namespace Nuve.Orthographic
 
         public static readonly Alphabet Turkish = new Alphabet(CharSet.TurkishConsonants, CharSet.TurkishVowels);
 
-        public bool Contains(char ch)
+        private bool Contains(char ch)
         {
             return consonants.Contains(ch) || vowels.Contains(ch);
         }
