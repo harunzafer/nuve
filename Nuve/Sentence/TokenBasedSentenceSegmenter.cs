@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Nuve.Orthographic;
 using Nuve.Tokenizers;
 
 namespace Nuve.Sentence
@@ -678,8 +679,7 @@ namespace Nuve.Sentence
                 return false;
             }
             if (curr == "\"" && !EosCandidateTokens.Contains(prev))
-            {
-             
+            {             
                 return false;
             }
 
@@ -692,6 +692,10 @@ namespace Nuve.Sentence
                         return false;
                     }
                 }
+            }
+            if (prev.RomanNumeralToArabic() > 0)
+            {
+                return false;
             }
 
             return true;

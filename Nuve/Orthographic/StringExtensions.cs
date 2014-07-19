@@ -250,5 +250,24 @@ namespace Nuve.Orthographic
             }
             return s;
         }
+
+        public static int RomanNumeralToArabic(this string number)
+        {
+            if (number == string.Empty) return 0;
+            if (number.StartsWith("M")) return 1000 + RomanNumeralToArabic(number.Remove(0, 1));
+            if (number.StartsWith("CM")) return 900 + RomanNumeralToArabic(number.Remove(0, 2));
+            if (number.StartsWith("D")) return 500 + RomanNumeralToArabic(number.Remove(0, 1));
+            if (number.StartsWith("CD")) return 400 + RomanNumeralToArabic(number.Remove(0, 2));
+            if (number.StartsWith("C")) return 100 + RomanNumeralToArabic(number.Remove(0, 1));
+            if (number.StartsWith("XC")) return 90 + RomanNumeralToArabic(number.Remove(0, 2));
+            if (number.StartsWith("L")) return 50 + RomanNumeralToArabic(number.Remove(0, 1));
+            if (number.StartsWith("XL")) return 40 + RomanNumeralToArabic(number.Remove(0, 2));
+            if (number.StartsWith("X")) return 10 + RomanNumeralToArabic(number.Remove(0, 1));
+            if (number.StartsWith("IX")) return 9 + RomanNumeralToArabic(number.Remove(0, 2));
+            if (number.StartsWith("V")) return 5 + RomanNumeralToArabic(number.Remove(0, 1));
+            if (number.StartsWith("IV")) return 4 + RomanNumeralToArabic(number.Remove(0, 2));
+            if (number.StartsWith("I")) return 1 + RomanNumeralToArabic(number.Remove(0, 1));
+            return -1; // Not a valid roman number
+        }
     }
 }

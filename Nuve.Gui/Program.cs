@@ -32,25 +32,14 @@ namespace Nuve.Gui
         private static void Main()
         {
 
-            Language tr = Language.Turkish;
-
-            //Analysis
-            var analyzer = new WordAnalyzer(tr);
-
-            IList<Word> solutions = analyzer.Analyze("deneme");
-
-            foreach (var solution in solutions)
+            var paragraph = "Uluslar, bu ekonomik buhran sonucunda 2. Dünya Savaşı’nı yaşamıştır. Bu sezon kaybedilen maç sayısı 2. Dünya Kupası’na katılma şansı azalıyor. Cumhuriyetimizin 75. yılı coşkuyla kutlandı. Tahta çıkan IV. Murat emirler yağdırdı. Uzun zamandır çalışan Ahmet koşuda 2. uzun atlamada ise ancak 4. olabildi. A. Mehmet YILDIZ size uğradı. Alfabenin ilk harfi A. Mehmet’e bunu öğretmeniz gerekiyor. Genel Müdür Mehmet Bey her fırsatta muhteşem! faaliyetlerini anlatıyor. Devlet içinde devlet olmuşlar, devlet adına çalışıyorlar, devlet adamlarıyla ahbap çavuşlar.. şu, bu! Cumartesi akşam 5 p.m.’de geldi. www.cs.hun.edu.tr okulumuzun web sitesidir. E-posta adresi bilgi@cs.deu.edu.tr'dir. Prof. Dr. Ahmet Bey ile görüsecegiz. Daha sonra Arş. Gör. Özlem hanım da katılacak bize.  Enflasyonda 1.6 oranında artıs var.";
+            Splitter splitter = new RegexSplitter(RegexSplitter.ClassicPattern);
+            var segmenter = new TokenBasedSentenceSegmenter(splitter);
+            var sentences = segmenter.GetSentences(paragraph);
+            foreach (string sentence in sentences)
             {
-                Console.WriteLine("\t{0}\n", solution);
-                Console.WriteLine("\toriginal:{0} stem:{1}\n", solution.GetSurface(), solution.GetStem().GetSurface());
-            }
-
-            //Splitter splitter = new RegexSplitter(RegexSplitter.ClassicPattern);
-            //var segmenter = new TokenBasedSentenceSegmenter(splitter);
-            //EvaluateSbd(segmenter);
-            //var untaggedParagraphs = File.ReadAllLines(UntaggedInput);
-            //PrintSentences(segmenter, "alıntı kelimelerdir.[7] Türk yazı dilleri için");
-            //PrintSentences(segmenter, "yola devam edeceğim\" dedi. Tecrübeli hocanın");
+                Console.WriteLine(sentence);
+            }                       
 
         }
 
