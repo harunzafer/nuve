@@ -3,39 +3,77 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
+using Nuve.Orthographic;
+using Nuve.Sentence;
+using Nuve.Tokenizers;
+using Splitter = Nuve.Tokenizers.Splitter;
 
 namespace Nuve.Gui
 {
-    static class Program
+    internal static class Program
     {
-        private static WordAnalyzer _analyzer = new WordAnalyzer(Language.Turkish);
+        //private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
+        const string TaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcSentencedNormalized.txt";
+        const string UntaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalized.txt";
+
+
+        private static readonly WordAnalyzer Analyzer = null;
 
         /// <summary>
-        /// The main entry point for the application.
+        ///     The main entry point for the application.
         /// </summary>
-        /// 
         [STAThread]
         private static void Main()
         {
-            //test();           
-            IList<string> tokens = ReadWords("../../../../data/303.txt");
-            AnalysisHelper.AnalyzeTokensToFile(_analyzer, tokens, "../../../../data/deneme.txt");
+            Splitter splitter = new RegexSplitter(RegexSplitter.ClassicPattern);
+            var segmenter = new TokenBasedSentenceSegmenter(splitter);
+            EvaluateSbd(segmenter);
+            var untaggedParagraphs = File.ReadAllLines(UntaggedInput);
+            PrintSentences(segmenter, "alıntı kelimelerdir.[7] Türk yazı dilleri için");
+            PrintSentences(segmenter, "yola devam edeceğim\" dedi. Tecrübeli hocanın");
+
         }
+
+        public static void EvaluateSbd(SentenceSegmenter segmenter)
+        {            
+            var taggedParagraphs = File.ReadAllLines(TaggedInput);
+            var evaluations = segmenter.Evaluate(taggedParagraphs);
+            SentenceSegmenterEvaluator.GetTotalReport(evaluations,printFalseAlarms:true);
+        }
+
+        public static void PrintSentences(SentenceSegmenter segmenter, IEnumerable<string> paragraphs)
+        {
+            foreach (string paragraph in paragraphs)
+            {
+                PrintSentences(segmenter, paragraph);
+            }
+        }
+
+        public static void PrintSentences(SentenceSegmenter segmenter, string paragraph)
+        {
+            var sentences = segmenter.GetSentences(paragraph);
+            foreach (string sentence in sentences)
+            {
+                Console.WriteLine(sentence);
+            }
+        }
+
 
         public static void test()
         {
-            string[] testStrings = { "bakarım", "gitmem", "baharlık" };
+            string[] testStrings = {"bakarım", "gitmem", "baharlık"};
             //string[] testStrings = SpecialCase.Şapkalı;
             Console.WriteLine(@"mısınız");
 
             try
             {
-                AnalysisHelper.Analyze(_analyzer, testStrings);
+                AnalysisHelper.Analyze(Analyzer, testStrings);
 
                 //string test = TestGenerator.GenerateContainsAnalysisTest(SpecialCase.Şapkalı, "Şapkalı");
                 //string test = TestGenerator.GenerateContainsAnalysesTest(VerbAux.FiilimsiZarfArak, "FiilimsiZarfArak", "FIILIMSI_ZARF_(y)ArAk");
@@ -59,10 +97,12 @@ namespace Nuve.Gui
 
         public static void createStemDict()
         {
-            Stopwatch stopwatch = new Stopwatch();
+            var stopwatch = new Stopwatch();
 
-            List<string> lines = File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\Damla\damla-solr-plugin\unigrams.txt").ToList();
-            IList<string> stops = File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\Damla\damla-solr-plugin\stopwords.txt").ToList();
+            List<string> lines =
+                File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\Damla\damla-solr-plugin\unigrams.txt").ToList();
+            IList<string> stops =
+                File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\Damla\damla-solr-plugin\stopwords.txt").ToList();
 
             stopwatch.Start();
 
@@ -76,7 +116,7 @@ namespace Nuve.Gui
                 }
 
 
-                IList<Word> soluions = _analyzer.Analyze(word);
+                IList<Word> soluions = Analyzer.Analyze(word);
                 if (soluions.Count == 0)
                 {
                     lines.RemoveAt(i);
@@ -100,15 +140,14 @@ namespace Nuve.Gui
                 }
 
                 lines[i] = word + "\t" + soluions[index].GetStem().GetSurface();
-
-
             }
 
             stopwatch.Stop();
-            Console.WriteLine(@"Time:" + stopwatch.ElapsedMilliseconds / 1000);
+            Console.WriteLine(@"Time:" + stopwatch.ElapsedMilliseconds/1000);
             lines.Sort();
 
-            File.WriteAllLines(@"C:\Users\hrzafer\Desktop\workspace\Damla\damla-solr-plugin\nlpt_stemmer_cache_sorted.dict", lines);
+            File.WriteAllLines(
+                @"C:\Users\hrzafer\Desktop\workspace\Damla\damla-solr-plugin\nlpt_stemmer_cache_sorted.dict", lines);
         }
     }
 }

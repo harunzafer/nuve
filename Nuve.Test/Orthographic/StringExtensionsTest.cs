@@ -155,10 +155,39 @@ namespace Nuve.Test.Orthographic
             Assert.IsFalse(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr));
             Assert.IsFalse(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr, notEmptyStr));
             Assert.IsFalse(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr, notEmptyStr, notEmptyStr));
-            
-
-            
             //Assert.IsTrue(StrUtil.IsNullOrEmpty("v")); 
+        }
+
+        [TestCase("babali", 0, 3, Result = "bab")]
+        [TestCase("babali", 0, 0, Result = "")]
+        [TestCase("babali", 0, 6, Result = "babali")]
+        [TestCase("babali", 0, 7, ExpectedException = typeof(ArgumentOutOfRangeException))]
+        public string SubstringJavaTest(string str, int start, int end)
+        {
+            return str.SubstringJava(start, end);
+        }
+
+        [TestCase("''abc''" , Result = "\"abc\"")]
+        [TestCase("“abc”"   , Result = "\"abc\"")]
+        [TestCase("«abc»"   , Result = "\"abc\"")]
+        [TestCase("‘abc’"   , Result = "\'abc\'")]
+        public string Normalize(string str)
+        {
+            const string doubleQuote = "\"";
+            const string singleQuote = "'";
+            var map = new Dictionary<string, string>
+            {
+                
+                {"''", doubleQuote}, 
+                {"”",  doubleQuote},
+                {"“",  doubleQuote},
+                {"»",  doubleQuote},
+                {"«",  doubleQuote},
+                {"’",  singleQuote},
+                {"‘",  singleQuote},
+                
+            };
+            return str.Normalize(map);
         }
       
 

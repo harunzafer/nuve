@@ -133,6 +133,23 @@
     <Compile Include="Reader\TextSuffixReader.cs" />
     <Compile Include="Reader\TextToDataset.cs" />
     <Compile Include="SampleClass.cs" />
+    <Compile Include="Sentence\MockOpenNLPSentenceSegmenter.cs" />
+    <Compile Include="Sentence\MockSentenceSegmenter.cs" />
+    <Compile Include="Sentence\MockZemberekSentenceSegmenter.cs" />
+    <Compile Include="Sentence\SentenceSegmenter.cs" />
+    <Compile Include="Sentence\SimpleEvaluation.cs" />
+    <Compile Include="Sentence\SimpleSentenceSegmenter.cs" />
+    <Compile Include="Sentence\TokenBasedSentenceSegmenter.cs" />
+    <Compile Include="Sentence\ISentenceBoundaryDetector.cs" />
+    <Compile Include="Sentence\SentenceSegmenterEvaluator.cs" />
+    <Compile Include="Sentence\DetailedEvaluation.cs" />
+    <Compile Include="Sentence\SentenceIterator.cs" />
+    <Compile Include="Tokenizers\LowerCaseTokenizer.cs" />
+    <Compile Include="Tokenizers\NGramTokenizer.cs" />
+    <Compile Include="Tokenizers\RegexSplitter.cs" />
+    <Compile Include="Tokenizers\StandartSplitter.cs" />
+    <Compile Include="Tokenizers\Splitter.cs" />
+    <Compile Include="Tokenizers\WhitespaceSplitter.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

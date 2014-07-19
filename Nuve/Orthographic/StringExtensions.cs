@@ -203,6 +203,11 @@ namespace Nuve.Orthographic
             return new string(a);
         }
 
+        public static string SubstringJava(this string s, int start, int end)
+        {
+            return s.Substring(start, end - start);
+        }
+
         public static IList<string> ToAnalyses(this IEnumerable<Word> words)
         {
             //IList<string> analyses = new List<string>();
@@ -212,6 +217,38 @@ namespace Nuve.Orthographic
             //}
             //return analyses;
             return words.Select(word => word.Analysis).ToList();
+        }
+
+        private const string DoubleQuote = "\"";
+        private const string SingleQuote = "'";
+
+        public static readonly IDictionary<string, string> DefaultNormalizationMap = new Dictionary<string, string>
+        {
+                
+            {"''", DoubleQuote}, 
+            {"”",  DoubleQuote},
+            {"“",  DoubleQuote},
+            {"»",  DoubleQuote},
+            {"«",  DoubleQuote},
+            {"’",  SingleQuote},
+            {"‘",  SingleQuote},
+            {"…",  "..."},
+                
+        };
+
+        /// <summary>
+        /// Replaces each key of the map with corresponding value
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="map"></param>
+        /// <returns></returns>
+        public static string Normalize(this string s, IDictionary<string, string> map)
+        {
+            foreach (string key in map.Keys)
+            {
+                s = s.Replace(key, map[key]);
+            }
+            return s;
         }
     }
 }

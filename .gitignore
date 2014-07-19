@@ -8,6 +8,7 @@
 
 # Nuget Packages
 *.nupkg
+*.nuspec
 
 # Build results
 

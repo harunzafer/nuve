@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using NLPT.Distance;
 
-namespace NLPT.Distance
+namespace Nuve.Distance
 {
     /// <summary>
     /// Burada her bir string'i bir nokta olarak kabul ediyoruz.

@@ -66,6 +66,8 @@
     <Compile Include="Orthographic\NounGenerationTest.cs" />
     <Compile Include="Orthographic\StringExtensionsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Segmentation\SentenceSegmentationTest.cs" />
+    <Compile Include="Tokenizers\TokenizerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
