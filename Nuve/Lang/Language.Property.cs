@@ -68,12 +68,11 @@ namespace Nuve.Lang
             internal RootDictionary GetRootDictionary()
             {
                 Stopwatch sw1 = Stopwatch.StartNew();
-                string filename;
                 RootDictionary rd;
 
                 if (UseExcel)
                 {
-                    filename = Resources.ResourcesPath + Resources.RootsFile;
+                    string filename = Resources.ResourcesPath + Resources.RootsFile;
                     rd = ExcelRootReader.Read(filename, _orthography);
                 }
                 else

@@ -7,16 +7,17 @@ Nuve is used for its morphologic generation ability in this project: http://fiil
 ### Usage for Morphologic Analysis and Generation:
      
      Language tr = Language.Turkish;
-     
-     //Analysis
-     WordAnalyzer _analyzer = new WordAnalyzer(tr);
-     
-     IList<Word> solutions = analyzer.Analyze("deneme");
-     
-     foreach (var solution in solutions)
-     {    
-          Console.WriteLine("\t{0}\n", solution);
-     }
+
+            //Analysis
+            var analyzer = new WordAnalyzer(tr);
+
+            IList<Word> solutions = analyzer.Analyze("deneme");
+
+            foreach (var solution in solutions)
+            {
+                Console.WriteLine("\t{0}\n", solution);
+                Console.WriteLine("\toriginal:{0} stem:{1}\n", solution.GetSurface(), solution.GetStem().GetSurface());
+            }
 
      //Generation
      Root root = tr.Roots.Get("kitap")[0];

@@ -52,7 +52,7 @@ namespace Nuve.Reader
 
             foreach (var entry in entries)
             {
-                AddRoots(entry, suffixTrie, suffixes);
+                AddSuffix(entry, suffixTrie, suffixes);
             }
 
             return new SuffixDictionary(suffixes, suffixTrie);
@@ -60,7 +60,7 @@ namespace Nuve.Reader
         }
         
 
-        private static void AddRoots(DictionaryLine entry, SuffixTrie trie, Dictionary<string, Suffix> suffixes)
+        private static void AddSuffix(DictionaryLine entry, SuffixTrie trie, Dictionary<string, Suffix> suffixes)
         {
             //id	lexicalForm	Order	rules	surfaces
 
@@ -77,14 +77,13 @@ namespace Nuve.Reader
             string[] flags = entry.Flags.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
             string[] rulesToken = entry.Rules.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
             Debug.Assert(entry.Surfaces != null, "entry.Surfaces != null");
-            bool emptySurface = entry.EmptySurface == "TRUE" ? true : false;
+            var surfaces = new List<string>(entry.Surfaces.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries));
 
-
-            List<string> surfaces = new List<string>(entry.Surfaces.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries));
-            if (emptySurface)
-            {
-               surfaces.Add("");
-            }   
+            //bool emptySurface = entry.EmptySurface == "TRUE";
+            //if (emptySurface)
+            //{
+            //   surfaces.Add("");//Burada tam olarak ne yapmaya çalışıyoruz? Boş ek meselesini mi çözmeye çalışıyoruz?
+            //}   
 
             List<OrthographyRule> rules = _orthography.GetRules(rulesToken);
             var suffix = new Suffix(id, lex, morphemeType, LabelSet.ConvertLabelNamesToIndexes(flags), rules);
@@ -92,10 +91,6 @@ namespace Nuve.Reader
 
             foreach (var surface in surfaces)
             {
-                if (surface == "")
-                {
-                    Debug.WriteLine(id);
-                }
                 trie.Put(surface, suffix);
             }
             

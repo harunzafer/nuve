@@ -31,12 +31,26 @@ namespace Nuve.Gui
         [STAThread]
         private static void Main()
         {
-            Splitter splitter = new RegexSplitter(RegexSplitter.ClassicPattern);
-            var segmenter = new TokenBasedSentenceSegmenter(splitter);
-            EvaluateSbd(segmenter);
-            var untaggedParagraphs = File.ReadAllLines(UntaggedInput);
-            PrintSentences(segmenter, "alıntı kelimelerdir.[7] Türk yazı dilleri için");
-            PrintSentences(segmenter, "yola devam edeceğim\" dedi. Tecrübeli hocanın");
+
+            Language tr = Language.Turkish;
+
+            //Analysis
+            var analyzer = new WordAnalyzer(tr);
+
+            IList<Word> solutions = analyzer.Analyze("deneme");
+
+            foreach (var solution in solutions)
+            {
+                Console.WriteLine("\t{0}\n", solution);
+                Console.WriteLine("\toriginal:{0} stem:{1}\n", solution.GetSurface(), solution.GetStem().GetSurface());
+            }
+
+            //Splitter splitter = new RegexSplitter(RegexSplitter.ClassicPattern);
+            //var segmenter = new TokenBasedSentenceSegmenter(splitter);
+            //EvaluateSbd(segmenter);
+            //var untaggedParagraphs = File.ReadAllLines(UntaggedInput);
+            //PrintSentences(segmenter, "alıntı kelimelerdir.[7] Türk yazı dilleri için");
+            //PrintSentences(segmenter, "yola devam edeceğim\" dedi. Tecrübeli hocanın");
 
         }
 
