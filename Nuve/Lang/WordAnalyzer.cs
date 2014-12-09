@@ -113,7 +113,7 @@ namespace Nuve.Lang
                 }
                 word.AddSuffix(pair.Value);
                 GetPossibleWords(word, restOfWord.Remove(0, pair.Key.Length), words, checkTransition);
-                word.RemoveSuffix();
+                word.RemoveLastSuffix();
             }
 
         }

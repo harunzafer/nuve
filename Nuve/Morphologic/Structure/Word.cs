@@ -13,8 +13,6 @@ namespace Nuve.Morphologic.Structure
     /// </summary>
     public class Word : IEnumerable<Allomorph>
     {
-       
-
         private readonly LinkedList<Allomorph> _allomorphs = new LinkedList<Allomorph>();
         private string _surface = string.Empty;
 
@@ -23,18 +21,22 @@ namespace Nuve.Morphologic.Structure
         /// </summary>       
         public Allomorph this[int i]
         {
-            get {
-                var node = _allomorphs.First;
-                int counter = 0;
-                if (i < 0 || i >= _allomorphs.Count) {
+            get
+            {                
+                if (i < 0 || i >= _allomorphs.Count)
+                {
                     throw new IndexOutOfRangeException();
                 }
-                while (counter!=i)
+
+                var node = _allomorphs.First;
+                int counter = 0;               
+
+                while (counter != i)
                 {
                     node = node.Next;
                     counter++;
                 }
-                Debug.Assert(node != null, "node != null");
+
                 return node.Value;
             }
         }
@@ -46,10 +48,16 @@ namespace Nuve.Morphologic.Structure
         }
 
         // For IEnumerable<Allomorph>
-        public IEnumerator<Allomorph> GetEnumerator() { return _allomorphs.GetEnumerator(); }
+        public IEnumerator<Allomorph> GetEnumerator()
+        {
+            return _allomorphs.GetEnumerator();
+        }
 
         // For IEnumerable
-        IEnumerator IEnumerable.GetEnumerator() { return GetEnumerator(); }
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
 
         /// <summary>
         /// Kökü "root" olan yeni bir <see cref="Word"/> nesnesi oluşturur.
@@ -68,16 +76,16 @@ namespace Nuve.Morphologic.Structure
         {
             Root = source.Root;
             IEnumerator<Allomorph> it = source._allomorphs.GetEnumerator();
-            it.MoveNext();//skip root
+            it.MoveNext(); //skip root
             while (it.MoveNext())
             {
-                AddSuffix((Suffix)it.Current.Morpheme);
+                AddSuffix((Suffix) it.Current.Morpheme);
             }
         }
 
         public Root Root
         {
-            get { return (Root)_allomorphs.First.Value.Morpheme; }
+            get { return (Root) _allomorphs.First.Value.Morpheme; }
             set
             {
                 var allomorph = new Allomorph(value);
@@ -126,11 +134,11 @@ namespace Nuve.Morphologic.Structure
         /// <summary>
         /// Kelimedeki en son eki kaldırır ve true döndürür. Kelimede ek yok ise false dönrürür
         /// </summary>
-        public bool RemoveSuffix()
+        public bool RemoveLastSuffix()
         {
-            if (_allomorphs.Count <= 1) 
+            if (_allomorphs.Count <= 1)
                 return false;
-            
+
             _allomorphs.RemoveLast();
             ResetSurface();
             return true;
@@ -139,6 +147,16 @@ namespace Nuve.Morphologic.Structure
         public bool HasSuffix(string suffixId)
         {
             return _allomorphs.Any(allomorph => allomorph.Morpheme.Id == suffixId);
+        }
+
+        public bool HasSuffixAt(string suffixId, int i)
+        {
+            return _allomorphs.Count > i && this[i].Morpheme.Id == suffixId;
+        }
+
+        public bool LastSuffixEquals(string suffixId)
+        {
+            return Last.Morpheme.Id == suffixId;
         }
 
         public Allomorph Last
@@ -174,7 +192,7 @@ namespace Nuve.Morphologic.Structure
             {
                 sb.Append(allomorph.Surface);
             }
-            
+
             _surface = sb.ToString();
         }
 
@@ -184,8 +202,8 @@ namespace Nuve.Morphologic.Structure
             {
                 allomorph.ProcessRules(morphemeType);
             }
-        }      
-         
+        }
+
         public string GetLexicalForm()
         {
             var sb = new StringBuilder();
@@ -194,6 +212,14 @@ namespace Nuve.Morphologic.Structure
                 sb.Append(allomorph.Morpheme.LexicalForm).Append(" ");
             }
             return sb.ToString().TrimEnd();
+        }
+
+        public IList<string> GetMorphemeIds()
+        {
+            var ids = _allomorphs.Select(allomorph => allomorph.Morpheme.Id).ToList();
+            //ids.RemoveAt(0);
+            ids.Insert(0, Root.LexicalForm);
+            return ids;
         }
 
         public override string ToString()
@@ -225,26 +251,31 @@ namespace Nuve.Morphologic.Structure
         }
 
 
-
         public string Analysis
         {
             get { return ToString(); }
         }
 
+        /// <summary>
+        /// Returns a new word object which contains only derivational suffixes of this word.
+        /// </summary>
+        /// <returns>The stem of this word as a new word object</returns>
         public Word GetStem()
         {
-           Word stem = new Word(Root);
+            var stem = new Word(Root);
+
             foreach (var allomorph in _allomorphs)
             {
                 if (allomorph.Morpheme.Type == MorphemeType.D)
                 {
-                    stem.AddSuffix((Suffix)allomorph.Morpheme);
+                    stem.AddSuffix((Suffix) allomorph.Morpheme);
                 }
                 else if (allomorph.Morpheme.Type == MorphemeType.I)
                 {
                     break;
                 }
             }
+
             return stem;
         }
     }

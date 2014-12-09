@@ -82,7 +82,7 @@ namespace Nuve.Reader
             //bool emptySurface = entry.EmptySurface == "TRUE";
             //if (emptySurface)
             //{
-            //   surfaces.Add("");//Burada tam olarak ne yapmaya çalışıyoruz? Boş ek meselesini mi çözmeye çalışıyoruz?
+            //   surfaces.AddSequence("");//Burada tam olarak ne yapmaya çalışıyoruz? Boş ek meselesini mi çözmeye çalışıyoruz?
             //}   
 
             List<OrthographyRule> rules = _orthography.GetRules(rulesToken);

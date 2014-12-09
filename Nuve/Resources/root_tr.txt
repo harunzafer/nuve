@@ -63,6 +63,7 @@ abuhava					ISIM	isim			coğrafya	Farsça	Hayır
 abuk	abuğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
 abuli					ISIM	isim			ruh bilimi	Fransızca	Hayır				
 abullabut					SIFAT	sıfat				Arapça	Hayır				
+abur					ISIM	ikileme									
 abus					SIFAT	sıfat				Arapça	Hayır				
 abuzambak	abuzambağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Fa-Ar	Hayır				
 acaba					ZARF	zarf				Arapça	Hayır				
@@ -92,6 +93,7 @@ acıklı					SIFAT	sıfat				Türkçe	Hayır
 acılan					FIIL	fiil				Türkçe					
 acımık	acımığ				ISIM	isim	R_YUMUSAMA_kğ	ğı	bitki bilimi	Türkçe	Hayır				
 acımtırak	acımtırağ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
+acın					FIIL	fiil									
 Acıpayam					OZEL	özel			ilçe	Tr-Fa	Evet				
 acırak	acırağ			F	SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
 acırga					ISIM	isim				Türkçe	Hayır				
@@ -121,6 +123,7 @@ açıkla	açıklı				FIIL	fiil				Türkçe
 açıklıkölçer					ISIM	isim			fizik	Türkçe	Hayır				
 açılım					ISIM	isim									
 açım				F	ISIM	isim									
+açım					ISIM	isim									
 açımla	açımlı			F	FIIL	fiil				Türkçe					
 açın					FIIL	fiil			biyoloji	Türkçe					
 açınım				F	ISIM	isim									
@@ -130,12 +133,14 @@ açıölçer					ISIM	isim			matematik	Türkçe	Hayır
 açıt					ISIM	isim			mimarlık	Türkçe	Hayır				
 açkı					ISIM	isim				Türkçe	Hayır				
 açkıla	açkılı				FIIL	fiil				Türkçe					
+açmaz					ISIM	isim									
 açval					ISIM	isim			teknik	Türkçe	Hayır				
 ad	add				ISIM	isim	R_CIFTLESME_SON_UNSUZ	ddi		Arapça	Hayır				
 ad					ISIM	isim				Türkçe	Hayır				
 ada					ISIM	isim			coğrafya	Türkçe	Hayır				
 ada	adı				FIIL	fiil				Türkçe					
 adabımuaşeret					ISIM	isim			toplum bilimi	Arapça	Hayır				
+adak	adağ				ISIM	isim	R_YUMUSAMA_kğ								
 adaklan				F	FIIL	fiil				Türkçe					
 Adaklı					OZEL	özel			ilçe	Türkçe	Evet				
 Adalar					OZEL	özel			ilçe	Türkçe	Evet				
@@ -157,6 +162,7 @@ adavet					ISIM	isim				Arapça	Hayır
 aday					ISIM	isim				Türkçe	Hayır				
 adayavru					TAMLAMA	isim				Türkçe	Hayır				
 addet	added				FIIL	fiil, genis_Ar	R_YUMUSAMA_td	der		Ar-Tr					
+addolun					FIIL	fiil, edilgen									
 adedi		adedî			ZARF	zarf, şapkasız	D_SAPKA_DUSUR_I			Arapça	Hayır				
 adedî					ZARF	zarf, şapkalı				Arapça	Hayır				
 adedimürettep	adedimüretteb				ISIM	isim	R_YUMUSAMA_pb	bi	matematik	Arapça	Hayır				
@@ -220,6 +226,7 @@ affet	affed				FIIL	fiil, genis_Ar	R_YUMUSAMA_td, 	der		Türkçe	Hayır		E	Evet
 affet	affed				FIIL	fiil, genis_Ar	R_YUMUSAMA_td	der		Ar-Tr					
 affettuoso					ZARF	zarf			müzik	İtalyanca	Hayır				
 affeyle	affeyli				FIIL	fiil				Ar-Tr					
+affolun					FIIL	fiil, edilgen									
 Afgan					OZEL	özel			halk	Türkçe	Evet				
 Afganistan					OZEL	özel			ülke						
 afi					ISIM	isim				Yunanca	Hayır				
@@ -234,6 +241,7 @@ aforizm					ISIM	isim				Fransızca	Hayır
 aforizma					ISIM	isim				Fransızca	Hayır				
 aforoz					ISIM	isim			din bilgisi	Rumca	Hayır				
 aforozla	aforozlu				FIIL	fiil									
+afra					ISIM	ikileme									
 Afrika					OZEL	özel			kıta	Arapça	Evet				
 Afrikaans					ISIM	isim, sıfat			lisan		Evet				
 afrodizyak	afrodizyağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Fransızca	Hayır				
@@ -451,6 +459,7 @@ akçakavak	akçakavağ				ISIM	isim	R_YUMUSAMA_kğ	ğı	bitki bilimi	Türkçe	Ha
 Akçakent					OZEL	özel			ilçe	Tr-Soğd	Evet				
 akçakesme					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 Akçakoca					OZEL	özel			ilçe	Türkçe	Evet				
+akçe					ISIM	isim									
 akçıl					SIFAT	sıfat				Türkçe	Hayır				
 akçıllan					FIIL	fiil				Türkçe					
 akçöpleme					ISIM	isim			bitki bilimi	Türkçe	Hayır				
@@ -479,6 +488,7 @@ akındırık	akındırığ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır
 akınkaya					TAMLAMA	isim			hayvan bilimi	Türkçe	Hayır				
 akıntı					ISIM	isim				Türkçe	Hayır				
 akıntıölçer					ISIM	isim			coğrafya	Türkçe	Hayır				
+akış					FIIL	fiil									
 akışkan					SIFAT	sıfat			fizik	Türkçe	Hayır				
 akışmaz					SIFAT	sıfat, kök_değil									
 akıt				F	FIIL	fiil				Türkçe					
@@ -546,6 +556,7 @@ akropol		akropól			ISIM	isim	D_OZEL_INCELME_O	lü		Fransızca	Hayır
 akrostiş					ISIM	isim			edebiyat	Fransızca	Hayır				
 aks					ISIM	isim				Fransızca	Hayır				
 aksa	aksı				FIIL	fiil				Türkçe	Hayır	E		Evet	
+aksak	aksağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 aksakal					ISIM	isim				Türkçe	Hayır				
 aksam					ISIM	isim				Arapça	Hayır				
 aksan					ISIM	isim				Fransızca	Hayır				
@@ -561,6 +572,7 @@ akseptans					ISIM	isim			eğitim bilimi	Fransızca	Hayır
 aksesuar					ISIM	isim				Fransızca	Hayır				
 akset	aksed				FIIL	fiil, genis_Ar	R_YUMUSAMA_td	der		Ar-Tr					
 aksır					FIIL	fiil, ettirgen_t				Türkçe					
+aksırık	aksırığ				ISIM	isim	R_YUMUSAMA_kğ								
 aksi					SIFAT	sıfat				Arapça	Hayır				
 aksilen					FIIL	fiil									
 aksiseda					ISIM	isim				Arapça	Hayır				
@@ -580,6 +592,7 @@ akşam					ISIM	isim, zaman				Türkçe	Hayır
 akşamla	akşamlı				FIIL	fiil				Türkçe					
 akşamleyin					ZARF	zarf				Türkçe	Hayır				
 akşamsefa					TAMLAMA	isim			bitki bilimi		Hayır				
+akşamüst					TAMLAMA	zarf									
 akşamüzer					TAMLAMA	zarf				Türkçe	Hayır				
 Akşehir					OZEL	özel			ilçe	Tr-Fa	Evet				
 akşın					SIFAT	sıfat				Türkçe	Hayır				
@@ -640,6 +653,7 @@ alabora					ISIM	isim			denizcilik	İtalyanca	Hayır
 alabros					SIFAT	sıfat				Fransızca	Hayır				
 Alaca					OZEL	özel			ilçe	Türkçe	Evet				
 alacabalıkçıl					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
+alacak	alacağ				ISIM	isim	R_YUMUSAMA_kğ								
 alacakarga					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 Alacakaya					OZEL	özel			ilçe	Türkçe	Evet				
 alacala	alacalı				FIIL	fiil				Türkçe					
@@ -762,7 +776,9 @@ alıkoy					FIIL	fiil, genis_Ar				Türkçe
 alım					ISIM	isim									
 alın	aln				ISIM	isim	R_DUSME_SON_UNLU	lnı		Türkçe	Hayır				
 alın					FIIL	fiil				Türkçe					
+alındı					ISIM	isim									
 alıngan					SIFAT	sıfat				Türkçe	Hayır				
+alınım					ISIM	isim									
 alıntı					ISIM	isim									
 alıntıla	alıntılı				FIIL	fiil			edebiyat	Türkçe					
 alış					FIIL	fiil				Türkçe	Hayır		E	Hayır	
@@ -872,6 +888,7 @@ altıpas					ISIM	isim			spor	Tr-Fr	Hayır
 altıpatlar					ISIM	isim				Türkçe	Hayır				
 altız					SIFAT	sıfat				Türkçe	Hayır				
 altimetre					ISIM	isim				Fransızca	Hayır				
+altküme					ISIM	isim									
 altla	altlı				FIIL	fiil			mantık	Türkçe					
 altmış					SAYI	sayı									
 altmışaltı					ISIM	isim				Türkçe	Hayır				
@@ -904,6 +921,7 @@ amalierbaa					ISIM	isim				Arapça	Hayır
 aman					UNLEM	ünlem				Arapça	Hayır				
 amanın					UNLEM	ünlem					Hayır				
 amanname					ISIM	isim			tarih	Ar-Fa	Hayır				
+amansız					SIFAT	sıfat									
 Amasra					OZEL	özel			ilçe		Evet				
 Amasya					OZEL	özel			il	Rumca	Evet				
 amatör					SIFAT	sıfat				Fransızca	Hayır				
@@ -920,6 +938,7 @@ amberbu					ISIM	isim				Arapça	Hayır
 ambiyans					ISIM	isim				Fransızca	Hayır				
 amblem					ISIM	isim				Fransızca	Hayır				
 amboli					ISIM	isim			tıp	Fransızca	Hayır				
+ambulans					ISIM	isim									
 amca					ISIM	isim				Türkçe	Hayır				
 amcazade					ISIM	isim				Tr-Fa	Hayır				
 amel					ISIM	isim				Arapça	Hayır				
@@ -957,6 +976,7 @@ amilaz					ISIM	isim			kimya	Fransızca	Hayır
 amin					ISIM	isim			kimya	Fransızca	Hayır				
 amin		âmin			UNLEM	ünlem, şapkasız	D_SAPKA_DUSUR_A		din bilgisi	Arapça	Hayır				
 âmin					UNLEM	ünlem, şapkalı			din bilgisi	Arapça	Hayır				
+aminoasit	aminoasid				ISIM	isim	R_YUMUSAMA_td								
 amip	amib				ISIM	isim	R_YUMUSAMA_pb	bi	hayvan bilimi	Fransızca	Hayır				
 amir					ISIM	isim				Arapça	Hayır				
 amiral		amirál			ISIM	isim	D_OZEL_INCELME_A	li	askerlik	Fransızca	Hayır				
@@ -1000,6 +1020,7 @@ ana					ISIM	isim				Türkçe	Hayır
 anabolizma					ISIM	isim			biyoloji	Fransızca	Hayır				
 anacıl					SIFAT	sıfat				Türkçe	Hayır				
 anaç	anac				SIFAT	sıfat	R_YUMUSAMA_çc	cı		Türkçe	Hayır				
+anadil					ISIM	isim									
 Anadolu					OZEL	özel			coğrafya	Yunanca	Evet				
 anadut					ISIM	isim				Rumca	Hayır				
 anaerkil					SIFAT	sıfat			toplum bilimi	Türkçe	Hayır				
@@ -1031,6 +1052,7 @@ ananas					ISIM	isim			bitki bilimi	Fransızca	Hayır
 ananasgiller					ISIM	isim			bitki bilimi		Hayır				
 anane					ISIM	isim			toplum bilimi	Arapça	Hayır				
 ananevi					SIFAT	sıfat				Arapça	Hayır				
+anaokul					TAMLAMA	isim									
 anapara					ISIM	isim			ekonomi	Tr-Fa	Hayır				
 anarşi					ISIM	isim			toplum bilimi	Fransızca	Hayır				
 anarşik	anarşiğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ği		Fransızca	Hayır				
@@ -1046,6 +1068,7 @@ anatomist					ISIM	isim			tıp	Fransızca	Hayır
 anavaşya					ISIM	isim			denizcilik	Rumca	Hayır				
 anayasa					ISIM	isim			hukuk	Türkçe	Hayır				
 anayasal					SIFAT	sıfat				Türkçe	Hayır				
+anayurt	anayurd				ISIM	isim	R_YUMUSAMA_td								
 anbean					ZARF	zarf				Arapça	Hayır				
 anca					ZARF	zarf				Türkçe	Hayır				
 ancak					ZARF	zarf				Türkçe	Hayır				
@@ -1123,6 +1146,7 @@ anjiyoloji					ISIM	isim			anatomi	Fransızca	Hayır
 Anka					OZEL	özel			efsanevî kuş	Arapça	Evet				
 Ankara					OZEL	özel			il	Grekçe	Evet				
 ankastre					SIFAT	sıfat				Fransızca	Hayır				
+ankesör					ISIM	isim									
 anket					ISIM	isim				Fransızca	Hayır				
 anketör					ISIM	isim				Fransızca	Hayır				
 ankiloz					ISIM	isim			tıp	Fransızca	Hayır				
@@ -1131,7 +1155,9 @@ anla	anlı				FIIL	fiil				Türkçe
 anlam					ISIM	isim				Türkçe	Hayır				
 anlamdaş					SIFAT	sıfat			dil bilgisi	Türkçe	Hayır				
 anlaş					FIIL	fiil				Türkçe					
+anlaşık	anlaşığ				ISIM	isim	R_YUMUSAMA_kğ								
 anlaşılmaz					SIFAT	sıfat, kök_değil									
+anlaşım					ISIM	isim									
 anlat					FIIL	fiil				Türkçe					
 anlatı					ISIM	isim				Türkçe	Hayır				
 anlatım					ISIM	isim									
@@ -1309,6 +1335,7 @@ aragonit					ISIM	isim			jeoloji	Fransızca	Hayır
 arak					ISIM	isim				Arapça	Hayır				
 arak					ISIM	isim				argo	Hayır				
 araka					ISIM	isim			bitki bilimi	Rumca	Hayır				
+arakesit					ISIM	isim									
 arakiye					ISIM	isim				Arapça	Hayır				
 arakla	araklı				FIIL	fiil				Türkçe					
 Araklı					OZEL	özel			ilçe		Evet				
@@ -1335,9 +1362,11 @@ Arasat					OZEL	özel			din bilgisi	Arapça	Evet
 arasta					ISIM	isim				Farsça	Hayır				
 araşit					ISIM	isim			bitki bilimi	Fransızca	Hayır				
 araştır					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
-araştır					FIIL	fiil				Türkçe					
+araştır				F	FIIL	fiil				Türkçe					
 araştırı					ISIM	isim				Türkçe	Hayır				
+araştırma					ISIM	isim, kök_değil									
 araştırman					ISIM	isim				Türkçe	Hayır				
+arayış					ISIM	isim									
 arayüz					ISIM	isim			bilişim	Türkçe	Hayır				
 araz					ISIM	isim			felsefe	Arapça	Hayır				
 araz		âraz			ISIM	isim, şapkasız	D_SAPKA_DUSUR_A			Arapça	Hayır				
@@ -1360,6 +1389,7 @@ Ardeşen					OZEL	özel			ilçe	Türkçe	Evet
 ardıç	ardıc				ISIM	isim	R_YUMUSAMA_çc	cı	bitki bilimi	Türkçe	Hayır				
 ardıl					ISIM	isim				Türkçe	Hayır				
 ardıl					FIIL	fiil				Türkçe					
+ardışık	ardışığ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 ardiye					ISIM	isim				Arapça	Hayır				
 arduvaz					ISIM	isim			mineraloji	Fransızca	Hayır				
 arefe					ISIM	isim				Arapça	Hayır				
@@ -1497,6 +1527,7 @@ artı					ISIM	isim			matematik	Türkçe	Hayır
 artık	artığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 artıkla	artıklı				FIIL	fiil				Türkçe					
 artım				F	ISIM	isim									
+artım					SIFAT	sıfat									
 artın					ISIM	isim			kimya	Türkçe	Hayır				
 artır					FIIL	fiil, ettirtgen_t				Türkçe					
 artırım					ISIM	isim									
@@ -1603,6 +1634,7 @@ aslen					ZARF	zarf				Arapça	Hayır
 aslık	aslığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 asli					SIFAT	sıfat				Arapça	Hayır				
 asliye					ISIM	isim				Arapça	Hayır				
+asma					ISIM	isim									
 asmagiller					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 asmolen					ISIM	isim			mimarlık	Tr-Fr	Hayır				
 asonans					ISIM	isim			edebiyat	Fransızca	Hayır				
@@ -1774,6 +1806,7 @@ atlet					ISIM	isim				Fransızca	Hayır
 atletik	atletiğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Fransızca	Hayır				
 atletizm					ISIM	isim			spor	Fransızca	Hayır				
 atlıkarınca					ISIM	isim				Tr-İt	Hayır				
+atmaca					ISIM	isim									
 atmasyon					SIFAT	sıfat				argo	Hayır				
 atmık	atmığ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 atmosfer					ISIM	isim			gök bilimi	Fransızca	Hayır				
@@ -1902,7 +1935,7 @@ ayın					ISIM	isim				Arapça	Hayır
 ayınga					ISIM	isim				Ermenice	Hayır				
 ayıp	ayıb				ISIM	isim	R_YUMUSAMA_pb			Arapça	Hayır				
 ayıpla	ayıplı				FIIL	fiil									
-ayır					FIIL	fiil, ettirgen_t				Türkçe					
+ayır					FIIL	fiil, ettirgen_t	R_DUSME_SON_UNLU_EDILGEN			Türkçe					
 ayıraç	ayırac				ISIM	isim	R_YUMUSAMA_çc	cı	kimya	Türkçe	Hayır				
 ayırmaç	ayırmac				ISIM	isim	R_YUMUSAMA_çc	cı		Türkçe	Hayır				
 ayırtı					ISIM	isim				Türkçe	Hayır				
@@ -1915,6 +1948,7 @@ aykırı					SIFAT	sıfat				Türkçe	Hayır
 aykırıla	aykırılı				FIIL	fiil				Türkçe					
 ayla					ISIM	isim				Türkçe	Hayır				
 ayla	aylı				FIIL	fiil				Türkçe					
+aylak	aylağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 aylan					FIIL	fiil				Türkçe					
 aylandız					ISIM	isim			bitki bilimi	Çince	Hayır				
 aymaz					SIFAT	sıfat									
@@ -1940,6 +1974,7 @@ Ayrancı					OZEL	özel			ilçe	Türkçe	Evet
 ayrı					SIFAT	sıfat				Türkçe	Hayır				
 ayrıcalık	ayrıcalığ				ISIM	isim	R_YUMUSAMA_kğ								
 ayrıç	ayrıc				ISIM	isim	R_YUMUSAMA_çc	cı		Türkçe	Hayır				
+ayrık	ayrığ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 ayrıl					FIIL	fiil, edilgen				Türkçe	Hayır	E		Hayır	
 ayrıl					FIIL	fiil				Türkçe					
 ayrım					ISIM	isim									
@@ -2100,6 +2135,8 @@ bağıtlan					FIIL	fiil				Türkçe
 bağkesen					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 bağla	bağlı				FIIL	fiil				Türkçe					
 bağlaç	bağlac				ISIM	isim	R_YUMUSAMA_çc	cı	dil bilgisi	Türkçe	Hayır				
+bağlam					ISIM	isim									
+bağlama					ISIM	isim									
 bağlanak	bağlanağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 bağlanım					ISIM	isim									
 bağlantı					ISIM	isim				Türkçe	Hayır				
@@ -2109,11 +2146,12 @@ bağlaşım					ISIM	isim
 bağnaz					SIFAT	sıfat				Türkçe	Hayır				
 bağrıkara					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 bağrış					FIIL	fiil				Türkçe					
+bağrış					ISIM	isim									
 bahadır					ISIM	isim				Farsça	Hayır				
 Bahai					OZEL	özel			din bilgisi	Fa-Ar	Evet				
 Bahama					OZEL	özel			ülke						
 bahane					ISIM	isim				Farsça	Hayır				
-bahar					ISIM	isim			gök bilimi	Farsça	Hayır				
+bahar				F	ISIM	isim			gök bilimi	Farsça	Hayır				
 bahar					ISIM	isim				Arapça	Hayır				
 baharat					ISIM	isim				Arapça	Hayır				
 bahariye					ISIM	isim				Fa-Ar	Hayır				
@@ -2156,6 +2194,7 @@ bakıncak	bakıncağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır
 bakıntı					ISIM	isim				Türkçe	Hayır				
 bakır					ISIM	isim			kimya	Türkçe	Hayır				
 Bakırköy					OZEL	özel			ilçe	Tr-Fa	Evet				
+bakış					FIIL	fiil									
 bakışım				F	ISIM	isim									
 baki					SIFAT	sıfat				Arapça	Hayır				
 bakir					SIFAT	sıfat				Arapça	Hayır				
@@ -2195,6 +2234,7 @@ balar					ISIM	isim				Farsça	Hayır
 balast					ISIM	isim				Fransızca	Hayır				
 balat	balad				ISIM	isim	R_YUMUSAMA_td	dı	edebiyat	Fransızca	Hayır				
 balata					ISIM	isim				Almanca	Hayır				
+balay					TAMLAMA	isim									
 balbal					ISIM	isim				Türkçe	Hayır				
 balçak	balçağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 balçık	balçığ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
@@ -2425,6 +2465,7 @@ basta					ISIM	isim				İtalyanca	Hayır
 bastıbacak	bastıbacağ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 bastır					FIIL	fiil				Türkçe					
 bastırak	bastırağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
+bastırık	bastırığ				ISIM	isim	R_YUMUSAMA_kğ								
 bastırım					ISIM	isim									
 bastika					ISIM	isim			denizcilik	İtalyanca	Hayır				
 baston					ISIM	isim				İtalyanca	Hayır				
@@ -2432,7 +2473,7 @@ basur					ISIM	isim			tıp	Arapça	Hayır
 basübadelmevt					ISIM	isim			din bilgisi	Arapça	Hayır				
 basya					ISIM	isim			bitki bilimi	Latince	Hayır				
 baş					ISIM	isim			anatomi	Türkçe	Hayır				
-baş					ISIM	isim				Türkçe	Hayır				
+baş				F	ISIM	isim				Türkçe	Hayır				
 başağaç	başağac				ISIM	isim	R_YUMUSAMA_çc	cı	bitki bilimi	Türkçe	Hayır				
 başağırlık	başağırlığ				ISIM	isim	R_YUMUSAMA_kğ	ğı	spor	Türkçe	Hayır				
 başağrı					TAMLAMA	isim				Türkçe	Hayır				
@@ -2479,6 +2520,7 @@ başimam					ISIM	isim				Tr-Ar	Hayır
 başka					SIFAT	sıfat				Türkçe	Hayır				
 başkafiye					ISIM	isim			edebiyat	Tr-Ar	Hayır				
 başkahraman					ISIM	isim			edebiyat	Tr-Fa	Hayır				
+başkalaşım					ISIM	isim									
 başkaldır					FIIL	fiil				Türkçe	Hayır		E	Hayır	
 başkaldır					FIIL	fiil				Türkçe					
 başkaldırı					ISIM	isim				Türkçe	Hayır				
@@ -2540,6 +2582,7 @@ baştankara					ISIM	isim			hayvan bilimi	Türkçe	Hayır
 baştankaragiller					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 baştarda					ISIM	isim			denizcilik	İtalyanca	Hayır				
 başteknisyen					ISIM	isim				Tr-Fr	Hayır				
+başuç	başuc				TAMLAMA	isim	R_YUMUSAMA_çc								
 başuzman					ISIM	isim				Türkçe	Hayır				
 başülke					ISIM	isim				Türkçe	Hayır				
 başüstüne					UNLEM	ünlem				Türkçe	Hayır				
@@ -2573,6 +2616,7 @@ batı					ISIM	isim				Türkçe	Hayır
 Batı					OZEL	özel			coğrafya	Türkçe	Evet				
 batık	batığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 batıl					SIFAT	sıfat				Arapça	Hayır				
+batım					ISIM	isim									
 batın	batn				ISIM	isim	R_DUSME_SON_UNLU	tnı		Arapça	Hayır				
 batın		bâtın			ISIM	isim, şapkasız	D_SAPKA_DUSUR_A			Arapça	Hayır				
 bâtın					ISIM	isim, şapkalı				Arapça	Hayır				
@@ -2645,6 +2689,7 @@ Bayrampaşa					OZEL	özel			ilçe	Türkçe	Evet
 bayramüzeri					ZARF	zarf				Türkçe	Hayır				
 bayrı					SIFAT	sıfat				Türkçe	Hayır				
 baysungur					ISIM	isim				Türkçe	Hayır				
+bayt					ISIM	isim			bilgisayar						
 baytar					ISIM	isim				Arapça	Hayır				
 baz					SIFAT	sıfat				Fransızca	Hayır				
 baza					ISIM	isim				İtalyanca	Hayır				
@@ -2735,6 +2780,7 @@ Bekilli					OZEL	özel			ilçe	Türkçe	Evet
 bekin					FIIL	fiil				Türkçe					
 bekit					FIIL	fiil				Türkçe					
 bekle	bekli				FIIL	fiil				Türkçe					
+beklenmedik	beklenmediğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 beklenmez					SIFAT	sıfat, kök_değil									
 beklenti					ISIM	isim				Türkçe	Hayır				
 bekleyekoyma					ISIM	isim				Türkçe	Hayır				
@@ -2742,10 +2788,10 @@ bekri					SIFAT	sıfat				Arapça	Hayır
 Bektaşi					OZEL	özel			din bilgisi	Tr-Ar	Evet				
 bektaşikavuk	bektaşikavuğ				TAMLAMA	isim	R_YUMUSAMA_kğ		bitki bilimi	Türkçe	Hayır				
 bel					ISIM	isim				Türkçe	Hayır				
-bel					ISIM	isim			anatomi	Türkçe	Hayır				
-bel					ISIM	isim			fizyoloji	Türkçe	Hayır				
-bel					ISIM	isim				Farsça	Hayır				
-bel					ISIM	isim			fizik		Hayır				
+bel				F	ISIM	isim			anatomi	Türkçe	Hayır				
+bel				F	ISIM	isim			fizyoloji	Türkçe	Hayır				
+bel				F	ISIM	isim				Farsça	Hayır				
+bel				F	ISIM	isim			fizik		Hayır				
 bela					ISIM	isim				Arapça	Hayır				
 belagat		belagát			ISIM	isim	D_OZEL_INCELME_A	ti		Arapça	Hayır				
 belahet					ISIM	isim		ti		Arapça	Hayır				
@@ -2777,6 +2823,7 @@ belir					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Hayır
 belir					FIIL	fiil				Türkçe					
 belirgi					ISIM	isim			tıp	Türkçe	Hayır				
 belirgin					SIFAT	sıfat				Türkçe	Hayır				
+belirim					ISIM	isim									
 belirle	belirli				FIIL	fiil				Türkçe					
 belirlenim					ISIM	isim									
 belirli					SIFAT	sıfat				Türkçe	Hayır				
@@ -2784,6 +2831,8 @@ belirsiz					SIFAT	sıfat				Türkçe	Hayır
 belirt					FIIL	fiil				Türkçe					
 belirteç	belirtec				ISIM	isim	R_YUMUSAMA_çc	ci	dil bilgisi	Türkçe	Hayır				
 belirti					ISIM	isim				Türkçe	Hayır				
+belirtik	belirtiğ				ISIM	isim	R_YUMUSAMA_kğ								
+belirtim					ISIM	isim									
 belirtke					ISIM	isim				Türkçe	Hayır				
 belirtken					ISIM	isim				Türkçe	Hayır				
 belit					ISIM	isim			mantık	Türkçe	Hayır				
@@ -2794,7 +2843,9 @@ belki					ZARF	zarf				Arapça	Hayır
 belladonna					ISIM	isim			bitki bilimi	İtalyanca	Hayır				
 belle	belli				FIIL	fiil				Türkçe					
 belle	belli				FIIL	fiil									
+bellek	belleğ				ISIM	isim	R_YUMUSAMA_kğ								
 belletmen					ISIM	isim				Türkçe	Hayır				
+belli					SIFAT	sıfat				Türkçe	Hayır				
 belsoğukluk	belsoğukluğ				TAMLAMA	isim	R_YUMUSAMA_kğ		tıp	Türkçe	Hayır				
 bembeyaz					SIFAT	sıfat				Tr-Ar	Hayır				
 bemol		bemól			ISIM	isim	D_OZEL_INCELME_O	lü	müzik	Fransızca	Hayır				
@@ -2840,6 +2891,7 @@ benzol		benzól			ISIM	isim	D_OZEL_INCELME_O	lü	kimya	Fransızca	Hayır
 beraat		beraát			ISIM	isim	D_OZEL_INCELME_A	ti	hukuk	Arapça	Hayır				
 beraatizimmet					ISIM	isim			hukuk	Arapça	Hayır				
 beraber					SIFAT	zarf, sıfat				Farsça	Hayır				
+beraberlik	beraberliğ				ISIM	isim	R_YUMUSAMA_kğ								
 berat					ISIM	isim				Arapça	Hayır				
 berbat					SIFAT	sıfat				Farsça	Hayır				
 berber					ISIM	isim				Farsça	Hayır				
@@ -2867,6 +2919,7 @@ berhudar					SIFAT	sıfat				Farsça	Hayır
 beri					ISIM	isim				Türkçe	Hayır				
 beribenzer					SIFAT	sıfat				Türkçe	Hayır				
 beriberi					ISIM	isim			tıp	Fransızca	Hayır				
+beriki					SIFAT	sıfat									
 beril					ISIM	isim			mineraloji	Fransızca	Hayır				
 berilyum					ISIM	isim			kimya	Fransızca	Hayır				
 berjer					ISIM	isim				Fransızca	Hayır				
@@ -2882,6 +2935,7 @@ berri					SIFAT	sıfat				Arapça	Hayır
 bert					FIIL	fiil, genis_Ar		er		Türkçe					
 bertafsil					ZARF	zarf				Fa-Ar	Hayır				
 bertaraf					ISIM	isim				Fa-Ar	Hayır				
+bertik	bertiğ				ISIM	isim	R_YUMUSAMA_kğ								
 berzah					ISIM	isim			coğrafya	Arapça	Hayır				
 besalet					ISIM	isim				Arapça	Hayır				
 besbedava					SIFAT	sıfat					Hayır				
@@ -3022,6 +3076,7 @@ bıldır					ZARF	zarf				Türkçe	Hayır
 bıldırcın					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 bıngıl					YANSIMA	yansıma				Türkçe	Hayır				
 bıngılda	bıngıldı				FIIL	fiil				Türkçe					
+bıngıldak	bıngıldağ				ISIM	isim	R_YUMUSAMA_kğ								
 bırak					FIIL	fiil				Türkçe					
 bırakım					ISIM	isim									
 bırakıt					ISIM	isim			hukuk	Türkçe	Hayır				
@@ -3057,6 +3112,7 @@ biçenek	biçeneğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır
 biçerbağlar					ISIM	isim				Türkçe	Hayır				
 biçerdöver					ISIM	isim				Türkçe	Hayır				
 biçim					ISIM	isim									
+biçimlenim					ISIM	isim									
 biçki					ISIM	isim				Türkçe	Hayır				
 bidar					SIFAT	sıfat				Farsça	Hayır				
 bidat		bidát			ISIM	isim	D_OZEL_INCELME_A	ti	din bilgisi	Arapça	Hayır				
@@ -3093,6 +3149,7 @@ bilardo					ISIM	isim				İtalyanca	Hayır
 bilasebep					ZARF	zarf				Arapça	Hayır				
 bilavasıta					SIFAT	sıfat				Arapça	Hayır				
 bilcümle					SIFAT	sıfat				Arapça	Hayır				
+bildik	bildiğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 bildir					FIIL	fiil				Türkçe					
 bildirge					ISIM	isim				Türkçe	Hayır				
 bildiri					ISIM	isim				Türkçe	Hayır				
@@ -3129,14 +3186,20 @@ bilimsever					SIFAT	sıfat				Türkçe	Hayır
 bilinç	bilinc				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
 bilinçalt					TAMLAMA	isim			ruh bilimi	Türkçe	Hayır				
 bilinçlen					FIIL	fiil				Türkçe					
+bilindik	bilindiğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
+bilinemez					SIFAT	kök_değil									
+bilinmeyen					SIFAT	sıfat									
 bilinmez					SIFAT	sıfat, kök_değil									
 bilirkişi					ISIM	isim				Türkçe	Hayır				
+bilirlik	bilirliğ				ISIM	isim	R_YUMUSAMA_kğ								
 bilistifade					ZARF	zarf				Arapça	Hayır				
+biliş					FIIL	fiil									
 bilişim					ISIM	isim									
 billahi					ISIM	isim				Arapça	Hayır				
 billur					ISIM	isim				Arapça	Hayır				
 billuri					SIFAT	sıfat				Arapça	Hayır				
 billuriye					SIFAT	sıfat				Arapça	Hayır				
+bilmece					ISIM	isim									
 bilmezle	bilmezli				FIIL	fiil				Türkçe					
 bilmukabele					ZARF	zarf				Arapça	Hayır				
 bilmünasebe					ZARF	zarf				Arapça	Hayır				
@@ -3170,6 +3233,8 @@ bira					ISIM	isim				İtalyanca	Hayır
 birader					ISIM	isim				Farsça	Hayır				
 birahane					ISIM	isim				İt-Fa	Hayır				
 biraz					SIFAT	sıfat, azlık				Türkçe	Hayır				
+birbiri					ZAMIR	zamir									
+birbirleri					ZAMIR	zamir									
 birçok	birçoğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
 birdenbire					ZARF	zarf				Türkçe	Hayır				
 birdirbir					ISIM	isim				Türkçe	Hayır				
@@ -3192,6 +3257,7 @@ birle	birli				FIIL	fiil				Türkçe
 birleş					FIIL	fiil				Türkçe					
 birleşik	birleşiğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 birleşim					ISIM	isim									
+birliktelik	birlikteliğ				ISIM	isim	R_YUMUSAMA_kğ								
 birsam					ISIM	isim			ruh bilimi	Arapça	Hayır				
 birtakım					SIFAT	sıfat				Türkçe	Hayır				
 birun					ISIM	isim			tarih	Farsça	Hayır				
@@ -3216,6 +3282,7 @@ bitek	biteğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır
 bitelge					ISIM	isim				Türkçe	Hayır				
 bitevi					ZARF	zarf				Türkçe	Hayır				
 biteviye					ZARF	zarf				Türkçe	Hayır				
+biteviyelik	biteviyeliğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 bitey					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 bitik	bitiğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 bitim					ISIM	isim									
@@ -3418,7 +3485,7 @@ bot					ISIM	isim				Fransızca	Hayır
 botanik	botaniğ				ISIM	isim	R_YUMUSAMA_kğ	ği	bitki bilimi	Fransızca	Hayır				
 Botsvana					OZEL	özel			ülke						
 boy					ISIM	isim				Türkçe	Hayır				
-boy					ISIM	isim			toplum bilimi	Türkçe	Hayır				
+boy				F	ISIM	isim			toplum bilimi	Türkçe	Hayır				
 boya					ISIM	isim				Türkçe	Hayır				
 boya	boyu				FIIL	fiil				Türkçe					
 Boyabat					OZEL	özel		t'ı	ilçe		Evet				
@@ -3431,6 +3498,7 @@ boydaş					SIFAT	sıfat				Türkçe	Hayır
 boykot					ISIM	isim				Fransızca	Hayır				
 boykotaj					ISIM	isim				Fransızca	Hayır				
 boyla	boylu				FIIL	fiil				Türkçe					
+boylam					ISIM	isim									
 boyler					ISIM	isim				İngilizce	Hayır				
 boyler					ISIM	isim				İngilizce	Hayır				
 boyna					ISIM	isim			denizcilik	İtalyanca	Hayır				
@@ -3441,6 +3509,7 @@ boynuzlugiller					ISIM	isim			hayvan bilimi	Türkçe	Hayır
 boynuzluteke					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 boyoz					ISIM	isim				Latince	Hayır				
 boyun	boyn				ISIM	isim	R_DUSME_SON_UNLU	ynu	anatomi	Türkçe	Hayır				
+boyunca					ZARF	zarf				Türkçe	Hayır				
 boyunduruk	boyunduruğ				ISIM	isim	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır				
 boyut					ISIM	isim				Türkçe	Hayır				
 boz					ISIM	isim				Türkçe	Hayır				
@@ -3463,6 +3532,7 @@ Bozkır					OZEL	özel			ilçe	Türkçe	Evet
 bozkurt	bozkurd				ISIM	isim	R_YUMUSAMA_td	du		Türkçe	Hayır				
 Bozkurt					OZEL	özel		t'u	ilçe	Türkçe	Evet				
 bozla	bozlu				FIIL	fiil				Türkçe					
+bozlak	bozlağ				ISIM	isim	R_YUMUSAMA_kğ								
 Bozova					OZEL	özel			ilçe	Türkçe	Evet				
 bozördek	bozördeğ				ISIM	isim	R_YUMUSAMA_kğ	ği	hayvan bilimi	Türkçe	Hayır				
 bozrak	bozrağ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
@@ -3564,12 +3634,14 @@ Brüksel					OZEL	özel			ülke		Evet
 brülör					ISIM	isim			teknik	Fransızca	Hayır				
 brüt					SIFAT	sıfat				Fransızca	Hayır				
 bu				F	SIFAT	sıfat				Türkçe	Hayır				
+bu	bun				ZAMIR_ISARET	zamir	F_OZEL_o			Türkçe	Hayır				
 buat					ISIM	isim			fizik	Fransızca	Hayır				
 Buca					OZEL	özel			ilçe	Türkçe	Evet				
 bucak	bucağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 Bucak					OZEL	özel		k'ı	ilçe	Türkçe	Evet				
 buçuk	buçuğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır				
 buda	budu				FIIL	fiil				Türkçe					
+budak	budağ				ISIM	isim	R_YUMUSAMA_kğ								
 budaklan					FIIL	fiil				Türkçe					
 budala					SIFAT	sıfat				Arapça	Hayır				
 Budist					OZEL	özel			din bilgisi	Fransızca	Evet				
@@ -3630,7 +3702,9 @@ bulgu					ISIM	isim				Türkçe	Hayır
 bulgula	bulgulu				FIIL	fiil			felsefe	Türkçe					
 bulgur					ISIM	isim				Türkçe	Hayır				
 Bulgurlu					OZEL	özel			semt	Türkçe	Evet				
+bulmaca					ISIM	isim									
 bultak	bultağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
+buluk	buluğ				ISIM	isim	R_YUMUSAMA_kğ								
 bulun					FIIL	fiil				Türkçe					
 bulunak	bulunağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 bulundur					FIIL	fiil				Türkçe					
@@ -3647,9 +3721,9 @@ bumburuşuk	bumburuşuğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır
 bumbuz					SIFAT	sıfat				Türkçe	Hayır				
 bumerang					ISIM	isim				İngilizce	Hayır				
 bumla	bumlu				FIIL	fiil									
-bu	bun				ZAMIR_ISARET	zamir	F_OZEL_o			Türkçe	Hayır				
 bun			sıkıntı	F	ISIM	isim				Türkçe	Hayır				
 buna	bunu				FIIL	fiil				Türkçe					
+bunak	bunağ				ISIM	isim	R_YUMUSAMA_kğ								
 bunal					FIIL	fiil, ettirgen_t				Türkçe					
 bunalım					ISIM	isim									
 bunaltı					ISIM	isim				Türkçe	Hayır				
@@ -3716,6 +3790,7 @@ buz					ISIM	isim				Türkçe	Hayır
 buzağı					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 buzağıla	buzağılı				FIIL	fiil				Türkçe					
 buzçözer					ISIM	isim				Türkçe	Hayır				
+buzdolap	buzdolab				TAMLAMA	isim	R_YUMUSAMA_pb								
 buzhane					ISIM	isim				Tr-Fa	Hayır				
 buzkıran					ISIM	isim				Türkçe	Hayır				
 buzla					ISIM	isim			coğrafya	Türkçe	Hayır				
@@ -3760,6 +3835,7 @@ bürülü					SIFAT	sıfat				Türkçe	Hayır
 bürümcek	bürümceğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 bürümçek	bürümçeğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 bürün					FIIL	fiil				Türkçe			E	Hayır	
+büryan					ISIM	isim									
 büsbütün					ZARF	zarf				Türkçe	Hayır				
 büst					ISIM	isim				Fransızca	Hayır				
 büstiyer					ISIM	isim				Fransızca	Hayır				
@@ -4044,6 +4120,7 @@ cezri		cezrî			SIFAT	sıfat, şapkasız	D_SAPKA_DUSUR_I			Arapça	Hayır
 cezrî					SIFAT	sıfat, şapkalı				Arapça	Hayır				
 cezve					ISIM	isim				Arapça	Hayır				
 cıbıl					YANSIMA	yansıma				Türkçe	Hayır				
+cıbıl					SIFAT	sıfat									
 cıcık	cıcığ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 cıda					ISIM	isim				Moğolca	Hayır				
 cıdağı					ISIM	isim				Türkçe	Hayır				
@@ -4210,6 +4287,7 @@ cuk					ZARF	zarf				Türkçe	Hayır
 cukka					ISIM	isim				Türkçe	Hayır				
 cuma					ISIM	isim				Arapça	Hayır				
 cumaerte					TAMLAMA	isim				Ar-Tr	Hayır				
+cumartesi					ISIM	isim									
 Cumayeri					OZEL	özel			ilçe	Ar-Tr	Evet				
 cumba					ISIM	isim			mimarlık	İtalyanca	Hayır				
 cumbadak					ISIM	isim				Türkçe	Hayır				
@@ -4284,11 +4362,13 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çağılda	çağıldı				FIIL	fiil				Türkçe					
 çağır	çağr				FIIL	fiil, ettirgen_t	R_DUSME_SON_UNLU_EDILGEN			Türkçe					
 çağırım					ISIM	isim									
+çağırışım					ISIM	isim									
 çağırtı					ISIM	isim				Türkçe	Hayır				
 çağırtkan					ISIM	isim				Türkçe	Hayır				
 çağırtmaç	çağırtmac				ISIM	isim	R_YUMUSAMA_çc	cı		Türkçe	Hayır				
 çağla					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 çağla	çağlı				FIIL	fiil				Türkçe					
+çağlayan					ISIM	isim									
 Çağlayancerit					OZEL	özel		t'i	ilçe		Evet				
 çağlayık	çağlayığ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 çağnak	çağnağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
@@ -4323,6 +4403,8 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çakırkeyif	çakırkeyf				SIFAT	sıfat	R_DUSME_SON_UNLU	yfi		Tr-Ar	Hayır				
 çakış					FIIL	fiil				Türkçe					
 çakışık	çakışığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
+çakışım					ISIM	isim									
+çakmak	çakmağ				ISIM	isim	R_YUMUSAMA_kğ								
 çakra					ISIM	isim				Sanskritçe	Hayır				
 çakşır					ISIM	isim				Türkçe	Hayır				
 çaktır					FIIL	fiil				Türkçe					
@@ -4354,9 +4436,11 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çalış					FIIL	fiil				Türkçe					
 çalışım					ISIM	isim									
 çalışkan					SIFAT	sıfat				Türkçe	Hayır				
+çalışma					ISIM	isim, kök_değil									
 çalıştay					ISIM	isim				Tr-Moğ	Hayır				
 çalkağı					ISIM	isim				Türkçe	Hayır				
 çalkala	çalkalı				FIIL	fiil				Türkçe					
+çalkalan					FIIL	fiil, dönüşlü									
 çalkan					FIIL	fiil, dönüşlü				Türkçe					
 çalkantı					ISIM	isim				Türkçe	Hayır				
 çalkar					ISIM	isim				Türkçe	Hayır				
@@ -4493,6 +4577,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çatkı					ISIM	isim				Türkçe	Hayır				
 çatkın					SIFAT	sıfat				Türkçe	Hayır				
 çatla	çatlı				FIIL	fiil				Türkçe					
+çatlak	çatlağ				ISIM	isim	R_YUMUSAMA_kğ								
 çatpat					ISIM	isim				Türkçe	Hayır				
 çav					ISIM	isim				Türkçe	Hayır				
 çav					ISIM	isim				Türkçe	Hayır				
@@ -4637,6 +4722,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çenile	çenili				FIIL	fiil				Türkçe					
 çenk	çeng				ISIM	isim	R_YUMUSAMA_kg	gi	müzik	Farsça	Hayır				
 çent					FIIL	fiil, genis_Ar		er		Türkçe					
+çentik	çentiğ				ISIM	isim	R_YUMUSAMA_kğ								
 çentikle	çentikli				FIIL	fiil				Türkçe					
 çepçevre					SIFAT	sıfat				Türkçe	Hayır				
 çepeçevre					SIFAT	sıfat				Türkçe	Hayır				
@@ -4692,6 +4778,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çevrilgen					SIFAT	sıfat				Türkçe	Hayır				
 çevrilgenlik	çevrilgenliğ				ISIM	isim	R_YUMUSAMA_kğ	ği	ekonomi	Türkçe	Hayır				
 çevrim					ISIM	isim									
+çevrimdışı					ISIM	isim									
 çevrin					FIIL	fiil				Türkçe					
 çevrinti					ISIM	isim				Türkçe	Hayır				
 çeyiz					ISIM	isim				Arapça	Hayır				
@@ -4720,6 +4807,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çıkagel					FIIL	fiil				Türkçe					
 çıkak	çıkağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 çıkar					FIIL	fiil, ettirgen_t				Türkçe	Hayır		E	Evet	
+çıkar					ISIM	isim									
 çıkarım					ISIM	isim									
 çıkarma					ISIM	isim				Türkçe	Hayır				
 çıkarsama					ISIM	isim			felsefe	Türkçe	Hayır				
@@ -4727,6 +4815,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çıkart					FIIL	fiil				Türkçe					
 çıkartı					ISIM	isim				Türkçe	Hayır				
 çıkı					ISIM	isim				Türkçe	Hayır				
+çıkık	çıkığ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
 çıkıla	çıkılı				FIIL	fiil				Türkçe					
 çıkın					ISIM	isim				Türkçe	Hayır				
 çıkınla	çıkınlı				FIIL	fiil				Türkçe					
@@ -4734,8 +4823,10 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çıkış					FIIL	fiil				Türkçe					
 çıkıt					ISIM	isim				Türkçe	Hayır				
 çıkkın					SIFAT	sıfat				Türkçe	Hayır				
+çıkmaz					ISIM	isim									
 çıkra					ISIM	isim				Türkçe	Hayır				
 çıkrık	çıkrığ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
+çıktı					ISIM	isim									
 çılbır					ISIM	isim				Türkçe	Hayır				
 çılbır					ISIM	isim				Türkçe	Hayır				
 Çıldır					OZEL	özel			ilçe	Türkçe	Evet				
@@ -4756,6 +4847,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çıngır					YANSIMA	yansıma				Türkçe	Hayır				
 çıngırak	çıngırağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 çıngırda	çıngırdı				FIIL	fiil				Türkçe					
+çıngırdak	çıngırdağ				ISIM	isim	R_YUMUSAMA_kğ								
 çınla	çınlı				FIIL	fiil				Türkçe					
 çınsabah					ZARF	zarf				Tr-Ar	Hayır				
 çıpa					ISIM	isim			denizcilik	İtalyanca	Hayır				
@@ -4778,6 +4870,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çırpı					ISIM	isim				Türkçe	Hayır				
 çırpın					FIIL	fiil				Türkçe					
 çırpıntı					ISIM	isim				Türkçe	Hayır				
+çırpış					FIIL	fiil									
 çıt					YANSIMA	yansıma				Türkçe	Hayır				
 çıta					ISIM	isim				Türkçe	Hayır				
 çıtak	çıtağ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
@@ -4817,6 +4910,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çiğit	çiğid				ISIM	isim	R_YUMUSAMA_td	di		Türkçe	Hayır				
 Çiğli					OZEL	özel			ilçe	Türkçe	Evet				
 çiğne	çiğni				FIIL	fiil				Türkçe					
+çiğnem					ISIM	isim									
 çiğnemik	çiğnemiğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 çikolata					ISIM	isim				İtalyanca	Hayır				
 çil					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
@@ -4900,6 +4994,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çiyle	çiyli				FIIL	fiil				Türkçe					
 çiz					FIIL	fiil, genis_Ar		er		Türkçe					
 çizelge					ISIM	isim				Türkçe	Hayır				
+çizer					ISIM	isim									
 çizge					ISIM	isim				Türkçe	Hayır				
 çizgi					ISIM	isim				Türkçe	Hayır				
 çizgile	çizgili				FIIL	fiil				Türkçe					
@@ -4946,6 +5041,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çolak	çolağ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 çolpa					SIFAT	sıfat				Tr-Fa	Hayır				
 Çolpan					OZEL	özel			gök bilimi/gezegen	Türkçe	Evet				
+çoluk	çoluğ				ISIM	ikileme	R_YUMUSAMA_kğ								
 çomak	çomağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 çomakla	çomaklı				FIIL	fiil				Türkçe					
 çomar					ISIM	isim				Türkçe	Hayır				
@@ -4983,6 +5079,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çökük	çöküğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğü		Türkçe	Hayır				
 çöküm					ISIM	isim									
 çöküntü					ISIM	isim				Türkçe	Hayır				
+çöküş					FIIL										
 çöl					ISIM	isim				Türkçe	Hayır				
 çöm					FIIL	fiil, genis_Ar		er		Türkçe					
 çömçe					ISIM	isim				Türkçe	Hayır				
@@ -4995,6 +5092,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çördek	çördeğ				ISIM	isim	R_YUMUSAMA_kğ	ği	denizcilik	Türkçe	Hayır				
 çörek	çöreğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 çöreklen					FIIL	fiil				Türkçe					
+çöreot					TAMLAMA	isim									
 çörkü					ISIM	isim			matematik	Türkçe	Hayır				
 çörten					ISIM	isim				Türkçe	Hayır				
 çörtü					ISIM	isim				Türkçe	Hayır				
@@ -5012,6 +5110,7 @@ cüzzam					ISIM	isim			tıp	Arapça	Hayır
 çözümle	çözümli				FIIL	fiil				Türkçe					
 çözün					FIIL	fiil, dönüşlü				Türkçe					
 çözüntü					ISIM	isim				Türkçe	Hayır				
+çözüş					FIIL										
 çubuk	çubuğ				ISIM	isim	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır				
 Çubuk					OZEL	özel		k'u	ilçe	Türkçe	Evet				
 çubukla	çubuklu				FIIL	fiil				Türkçe					
@@ -5077,6 +5176,7 @@ dağlağı					ISIM	isim					Hayır
 dağlıç	dağlıc				ISIM	isim	R_YUMUSAMA_çc	cı	hayvan bilimi	Türkçe	Hayır				
 dah					UNLEM	ünlem				Türkçe	Hayır				
 daha					ZARF	zarf				Türkçe	Hayır				
+dahası					ISIM	isim									
 dahi					BAGLAC	bağlaç				Türkçe	Hayır				
 dahi		dâhi			ISIM	isim, şapkasız	D_SAPKA_DUSUR_A			Arapça	Hayır				
 dâhi					ISIM	isim, şapkalı				Arapça	Hayır				
@@ -5189,6 +5289,7 @@ dangalak	dangalağ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır
 dangır					YANSIMA	yansıma				Türkçe	Hayır				
 danış					ISIM	isim				Türkçe	Hayır				
 danış					FIIL	fiil				Türkçe					
+danışık	danışığ				ISIM	isim	R_YUMUSAMA_kğ								
 danışman					ISIM	isim				Türkçe	Hayır				
 Danimarka					OZEL	özel			ülke		Evet				
 Danimarka					OZEL	özel			ülke						
@@ -5199,6 +5300,7 @@ dans					ISIM	isim				Fransızca	Hayır
 dansör					ISIM	isim				Fransızca	Hayır				
 dansöz					ISIM	isim				Fransızca	Hayır				
 dantel					ISIM	isim				Fransızca	Hayır				
+dantela					ISIM	isim									
 dapdar					SIFAT	sıfat				Türkçe	Hayır				
 dapdaracık	dapdaracığ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
 dar					ISIM	isim				Farsça	Hayır				
@@ -5256,6 +5358,7 @@ davetname					ISIM	isim				Ar-Fa	Hayır
 davlumbaz					ISIM	isim				Ar-Fa	Hayır				
 davran					FIIL	fiil				Türkçe	Hayır		E	Hayır	
 davranım					ISIM	isim									
+davranış					ISIM	isim									
 davudi					SIFAT	sıfat				Arapça	Hayır				
 davul					ISIM	isim			müzik	Arapça	Hayır				
 davya					ISIM	isim				Fransızca	Hayır				
@@ -5269,8 +5372,11 @@ dayan					FIIL	fiil, dönüşlü				Türkçe	Hayır		E	Hayır
 dayan					FIIL	fiil				Türkçe					
 dayanak	dayanağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 dayanç	dayanc				ISIM	isim	R_YUMUSAMA_çc	cı		Türkçe	Hayır				
+dayanıklı					SIFAT	sıfat									
+dayanıksız					SIFAT	sıfat									
 dayanılmaz					SIFAT	sıfat, kök_değil									
 dayanım					ISIM	isim									
+dayanış					FIIL	fiil									
 dayanışma					ISIM	isim									
 dayantı					ISIM	isim				Türkçe	Hayır				
 dayat					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
@@ -5459,9 +5565,11 @@ demografik	demografiğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Fransızca	Hayır
 demokrasi					ISIM	isim			toplum bilimi	Fransızca	Hayır				
 demokrat					SIFAT	sıfat				Fransızca	Hayır				
 demokratik	demokratiğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Fransızca	Hayır				
+demonstrasyon					ISIM	isim									
 denaet					ISIM	isim				Arapça	Hayır				
 denden					ISIM	isim				Farsça	Hayır				
 dene	deni				FIIL	fiil				Türkçe					
+denek	deneğ				ISIM	isim	R_YUMUSAMA_kğ								
 denet					ISIM	isim				Türkçe	Hayır				
 denetim					ISIM	isim									
 denetle	denetli				FIIL	fiil				Türkçe					
@@ -5518,12 +5626,14 @@ denizyıldız					TAMLAMA	isim			hayvan bilimi	Türkçe	Hayır
 denk	deng				ISIM	isim	R_YUMUSAMA_kg	gi		Türkçe	Hayır				
 denk	denğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
 denkle	denkli				FIIL	fiil				Türkçe					
+denklem					ISIM	isim									
 denktaş					SIFAT	sıfat				Türkçe	Hayır				
 denli					EDAT	edat				Türkçe	Hayır				
 denli					SIFAT	sıfat				Türkçe	Hayır				
 densiz					SIFAT	sıfat				Türkçe	Hayır				
 densizlen					FIIL	fiil				Türkçe					
 denşir					FIIL	fiil				Türkçe					
+deontoloji					ISIM	isim									
 depar					ISIM	isim			spor	Fransızca	Hayır				
 departman					ISIM	isim				Fransızca	Hayır				
 depderin					SIFAT	sıfat				Türkçe	Hayır				
@@ -5548,6 +5658,7 @@ derbi					ISIM	isim			spor	İngilizce	Hayır
 derç	derc				ISIM	isim	R_YUMUSAMA_çc	ci		Arapça	Hayır				
 derdest					ISIM	isim				Farsça	Hayır				
 dere					ISIM	isim			coğrafya	Farsça	Hayır				
+derebey					TAMLAMA	isim									
 derebeylik	derebeyliğ				ISIM	isim	R_YUMUSAMA_kğ	ği			Hayır				
 Derebucak					OZEL	özel		k'ı	ilçe	Fa-Tr	Evet				
 derece					ISIM	isim				Arapça	Hayır				
@@ -5634,6 +5745,8 @@ deşifre					SIFAT	sıfat				Fransızca	Hayır
 deşik	deşiğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 detant					ISIM	isim				Fransızca	Hayır				
 detay					ISIM	isim				Fransızca	Hayır				
+detektif					ISIM	isim									
+detektör					ISIM	isim									
 deterjan					ISIM	isim				Fransızca	Hayır				
 determinant					ISIM	isim			matematik	Fransızca	Hayır				
 determinasyon					ISIM	isim			felsefe	Fransızca	Hayır				
@@ -5684,6 +5797,7 @@ devrialem		devriâlem			ISIM	isim, şapkasız	D_SAPKA_DUSUR_A			Arapça	Hayır
 devriâlem					ISIM	isim, şapkalı				Arapça	Hayır				
 devridaim					ISIM	isim				Arapça	Hayır				
 devrihindi					ISIM	isim			müzik	Arapça	Hayır				
+devrik	devriğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 devrikebir					ISIM	isim			müzik	Arapça	Hayır				
 devrim					ISIM	isim									
 devrirevan					ISIM	isim			müzik	Arapça	Hayır				
@@ -5793,6 +5907,7 @@ dil					ISIM	isim				Türkçe	Hayır
 dil					ISIM	isim				Türkçe	Hayır				
 dil					ISIM	isim				Farsça	Hayır				
 dil					FIIL	fiil, genis_Ar		er		Türkçe					
+dilalt					TAMLAMA	isim									
 dilatometre					ISIM	isim			fizik	Fransızca	Hayır				
 dilaver					ISIM	isim				Farsça	Hayır				
 dilbasan					ISIM	isim				Türkçe	Hayır				
@@ -5803,6 +5918,7 @@ dilberdudak	dilberdudağ				TAMLAMA	isim	R_YUMUSAMA_kğ			Fa-Tr	Hayır
 dildaş					ISIM	isim				Türkçe	Hayır				
 dile	dili				FIIL	fiil				Türkçe	Hayır	E		Evet	
 dile	dili				FIIL	fiil				Türkçe					
+dilek	dileğ				ISIM	isim	R_YUMUSAMA_kğ								
 dilekçe					ISIM	isim				Türkçe	Hayır				
 dilemma					ISIM	isim			mantık	Yunanca	Hayır				
 dilen					FIIL	fiil				Türkçe					
@@ -5880,6 +5996,7 @@ diren					FIIL	fiil				Türkçe
 direnç	direnc				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
 direngen					SIFAT	sıfat				Türkçe	Hayır				
 direnim					ISIM	isim									
+direniş					ISIM	isim									
 direnle	direnli				FIIL	fiil				Türkçe					
 direş					FIIL	fiil				Türkçe					
 direşken					SIFAT	sıfat				Türkçe	Hayır				
@@ -5922,6 +6039,7 @@ dişi					SIFAT	sıfat			anatomi	Türkçe	Hayır
 dişil					SIFAT	sıfat			dil bilgisi	Türkçe	Hayır				
 dişindirik	dişindiriğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 dişle	dişli				FIIL	fiil				Türkçe					
+dişlek	dişleğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 dit	did				FIIL	fiil, genis_Ar	R_YUMUSAMA_td	der		Türkçe					
 ditiramp	ditiramb				ISIM	isim	R_YUMUSAMA_pb	bı		Fransızca	Hayır				
 dival					ISIM	isim				Farsça	Hayır				
@@ -5961,17 +6079,20 @@ diyapozitif					ISIM	isim				Fransızca	Hayır
 diyar					ISIM	isim				Arapça	Hayır				
 Diyarbakır					OZEL	özel			il	Arapça	Evet				
 diyarıgurbet					ISIM	isim				Arapça	Hayır				
+diye					ZARF	zarf				Türkçe	Hayır				
 diyet					ISIM	isim			din bilgisi	Arapça	Hayır				
 diyet					ISIM	isim				Fransızca	Hayır				
 diyetisyen					ISIM	isim				Fransızca	Hayır				
 diyez					ISIM	isim			müzik	Fransızca	Hayır				
 diyoptri					ISIM	isim			fizik	Fransızca	Hayır				
 diyorit					ISIM	isim			jeoloji	Fransızca	Hayır				
+diyot					ISIM	isim									
 diz					ISIM	isim			anatomi	Türkçe	Hayır				
 diz					FIIL	fiil, genis_Ar		er		Türkçe					
 dizanteri					ISIM	isim			tıp	Fransızca	Hayır				
 dizayn					ISIM	isim				İngilizce	Hayır				
 dizdar					ISIM	isim			tarih	Farsça	Hayır				
+dize					ISIM	isim									
 dizek	dizeğ				ISIM	isim	R_YUMUSAMA_kğ	ği	müzik	Türkçe	Hayır				
 dizel					ISIM	isim				Almanca	Hayır				
 dizelge					ISIM	isim				Türkçe	Hayır				
@@ -5983,6 +6104,7 @@ dizginle	dizginli				FIIL	fiil				Türkçe
 dizi					ISIM	isim				Türkçe	Hayır				
 dizile	dizili				FIIL	fiil				Türkçe					
 dizili					SIFAT	sıfat				Türkçe	Hayır				
+dizilim					ISIM	isim									
 dizim					ISIM	isim									
 dizin					ISIM	isim				Türkçe	Hayır				
 dizle	dizli				FIIL	fiil				Türkçe					
@@ -5998,6 +6120,7 @@ dogma					ISIM	isim				Fransızca	Hayır
 dogmatik	dogmatiğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ği	felsefe	Fransızca	Hayır				
 dogmatizm					ISIM	isim			felsefe	Fransızca	Hayır				
 doğ					FIIL	fiil, genis_Ar		ar		Türkçe					
+doğa					ISIM	isim									
 doğaç	doğac				ISIM	isim	R_YUMUSAMA_çc	cı	edebiyat	Türkçe	Hayır				
 doğal					SIFAT	sıfat				Türkçe	Hayır				
 doğan					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
@@ -6008,8 +6131,10 @@ Doğanşehir					OZEL	özel			ilçe	Tr-Fa	Evet
 Doğanyol					OZEL	özel			ilçe	Türkçe	Evet				
 Doğanyurt					OZEL	özel		t'u	ilçe	Türkçe	Evet				
 doğasever					SIFAT	sıfat				Türkçe	Hayır				
+doğaüst					TAMLAMA	isim									
 doğra	doğru				FIIL	fiil				Türkçe					
 doğram					ISIM	isim									
+doğrama					ISIM	isim, kök_değil									
 doğru					SIFAT	sıfat				Türkçe	Hayır				
 doğrul					FIIL	fiil, ettirgen_t				Türkçe					
 doğrula	doğrulu				FIIL	fiil				Türkçe					
@@ -6055,8 +6180,9 @@ doküman					ISIM	isim				Fransızca	Hayır
 dokümantasyon					ISIM	isim				Fransızca	Hayır				
 dokümanter					SIFAT	sıfat				Fransızca	Hayır				
 dol					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır	E		Hayır	
-dol					FIIL	fiil, genis_Ar		ar		Türkçe					
+dol				F	FIIL	fiil, genis_Ar		ar		Türkçe					
 dola	dolu				FIIL	fiil				Türkçe					
+dolak	dolağ				ISIM	isim	R_YUMUSAMA_kğ								
 dolam					ISIM	isim									
 dolambaç	dolambac				ISIM	isim	R_YUMUSAMA_çc	cı		Türkçe	Hayır				
 dolamık	dolamığ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
@@ -6070,12 +6196,13 @@ dolaş					FIIL	fiil				Türkçe
 dolaşık	dolaşığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 dolaşım					ISIM	isim									
 dolay					ISIM	isim				Türkçe	Hayır				
-dolayı					SIFAT	sıfat				Türkçe	Hayır				
+dolayı					ZARF	zarf				Türkçe	Hayır				
 doldur					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
 doldur					FIIL	fiil				Türkçe					
 dolgu					ISIM	isim				Türkçe	Hayır				
 dolgun					SIFAT	sıfat				Türkçe	Hayır				
 dolikosefal		dolikosefál			ISIM	isim	D_OZEL_INCELME_A	li	anatomi	Fransızca	Hayır				
+dolmuş					ISIM	isim, kök_değil									
 dolomit					ISIM	isim			jeoloji	Fransızca	Hayır				
 dolu					ISIM	isim				Türkçe	Hayır				
 dolu					SIFAT	sıfat				Türkçe	Hayır				
@@ -6169,6 +6296,7 @@ dönemeç	dönemec				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır
 dönen					FIIL	fiil				Türkçe					
 dönence					ISIM	isim			coğrafya	Türkçe	Hayır				
 dönencel					SIFAT	sıfat				Türkçe	Hayır				
+döner					ISIM	isim									
 döngel					ISIM	isim				Türkçe	Hayır				
 döngü					ISIM	isim			mantık	Türkçe	Hayır				
 dönük	dönüğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğü		Türkçe	Hayır				
@@ -6214,6 +6342,7 @@ dövülgenlik	dövülgenliğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır
 dövün					FIIL	fiil				Türkçe					
 dövüş					FIIL	fiil				Türkçe	Hayır		E	Hayır	
 dövüş					FIIL	fiil				Türkçe					
+dövüş					ISIM	isim, kök_değil									
 dövüşken					SIFAT	sıfat				Türkçe	Hayır				
 dragon					ISIM	isim				Fransızca	Hayır				
 drahmi					ISIM	isim				Yunanca	Hayır				
@@ -6279,6 +6408,7 @@ duru					SIFAT	sıfat				Türkçe	Hayır
 duruk	duruğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır				
 durul					FIIL	fiil, ettirtgen_t				Türkçe					
 durul				F	FIIL	fiil				Türkçe					
+durul					FIIL	fiil									
 durula	durulu				FIIL	fiil				Türkçe					
 durum					ISIM	isim									
 duruşma					ISIM	isim				Türkçe	Hayır				
@@ -6294,6 +6424,9 @@ duy					ISIM	isim				Fransızca	Hayır
 duy					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Evet	
 duy					FIIL	fiil, genis_Ar		ar		Türkçe					
 duyarga					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
+duyarlı					SIFAT	sıfat									
+duyarlık	duyarlığ				ISIM	isim	R_YUMUSAMA_kğ								
+duyarsız					SIFAT	sıfat									
 duygan					SIFAT	sıfat				Türkçe	Hayır				
 duygu					ISIM	isim				Türkçe	Hayır				
 duygudaş					ISIM	isim				Türkçe	Hayır				
@@ -6358,6 +6491,7 @@ dürbün					ISIM	isim			fizik	Farsça	Hayır
 dürt					FIIL	fiil, genis_Ar		er		Türkçe					
 dürtü					ISIM	isim			ruh bilimi	Türkçe	Hayır				
 dürtükle	dürtükli				FIIL	fiil				Türkçe					
+dürtükle	dürtüklü				FIIL	fiil									
 dürtüşle	dürtüşli				FIIL	fiil				Türkçe					
 dürü					ISIM	isim				Türkçe	Hayır				
 dürü					ISIM	isim				Türkçe	Hayır				
@@ -6393,6 +6527,7 @@ düşündür					FIIL	fiil				Türkçe
 düşünsel					SIFAT	sıfat				Türkçe	Hayır				
 düşüntülü					SIFAT	sıfat			felsefe	Türkçe	Hayır				
 düşünüm					ISIM	isim									
+düşünür					ISIM	isim									
 düşür					FIIL	fiil, ettirgen_t				Türkçe					
 düşürüm					ISIM	isim									
 düşüt					ISIM	isim				Türkçe	Hayır				
@@ -6419,6 +6554,7 @@ düzen					ISIM	isim				Türkçe	Hayır
 düzenbaz					SIFAT	sıfat				Tr-Fa	Hayır				
 düzenek	düzeneğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 düzenle	düzenli				FIIL	fiil				Türkçe					
+düzenleme					ISIM	isim, kök_değil									
 düzenleşik	düzenleşiğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 düzenleşim					ISIM	isim									
 düzenleyim					ISIM	isim									
@@ -6432,7 +6568,10 @@ düziko					ISIM	isim					Hayır
 düzine					ISIM	isim				İtalyanca	Hayır				
 Düzköy					OZEL	özel			ilçe	Tr-Fa	Evet				
 düzle	düzli				FIIL	fiil				Türkçe					
+düzlem					ISIM	isim									
+düzmece					SIFAT	sıfat									
 düztaban					ISIM	isim			anatomi	Türkçe	Hayır				
+düzüş					FIIL	fiil									
 ebabil					ISIM	isim			hayvan bilimi	Arapça	Hayır				
 ebat	ebad				ISIM	isim	R_YUMUSAMA_td	dı		Arapça	Hayır				
 ebcet	ebced				ISIM	isim	R_YUMUSAMA_td	di		Arapça	Hayır				
@@ -6478,6 +6617,7 @@ edebiyat					ISIM	isim				Arapça	Hayır
 edebiyatsever					SIFAT	sıfat				Ar-Tr	Hayır				
 edep	edeb				ISIM	isim	R_YUMUSAMA_pb	bi		Arapça	Hayır				
 edeplen					FIIL	fiil									
+eder					ISIM	isim									
 edevat					ISIM	isim				Arapça	Hayır				
 edi					ISIM	isim				Türkçe	Hayır				
 Edi					OZEL	özel					Evet				
@@ -6546,7 +6686,7 @@ egzotik	egzotiğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Fransızca	Hayır
 egzotizm					ISIM	isim				Fransızca	Hayır				
 egzoz					ISIM	isim				İngilizce	Hayır				
 eğ					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Evet	
-eğ					FIIL	fiil, genis_Ar		er		Türkçe					
+eğ				F	FIIL	fiil, genis_Ar		er		Türkçe					
 eğe					ISIM	isim			anatomi	Türkçe	Hayır				
 eğe					ISIM	isim				Türkçe	Hayır				
 eğele	eğeli				FIIL	fiil				Türkçe					
@@ -6567,7 +6707,7 @@ eğir					FIIL	fiil				Türkçe
 Eğirdir					OZEL	özel			ilçe	Türkçe	Evet				
 eğit					FIIL	fiil				Türkçe					
 eğitim					ISIM	isim				Türkçe	Hayır				
-eğitim					ISIM	isim									
+eğitim				F	ISIM	isim									
 eğitmen					ISIM	isim				Türkçe	Hayır				
 eğitsel					SIFAT	sıfat				Türkçe	Hayır				
 eğle	eğli				FIIL	fiil				Türkçe					
@@ -6630,6 +6770,7 @@ ekip	ekib				ISIM	isim	R_YUMUSAMA_pb	bi		Fransızca	Hayır
 ekipman					ISIM	isim				Fransızca	Hayır				
 ekle	ekli				FIIL	fiil				Türkçe					
 eklektik	eklektiğ				SIFAT	sıfat	R_YUMUSAMA_kğ		felsefe	Fransızca	Hayır				
+eklem					ISIM	isim									
 eklemle	eklemli				FIIL	fiil				Türkçe					
 eklenti					ISIM	isim				Türkçe	Hayır				
 ekler					ISIM	isim				Fransızca	Hayır				
@@ -6693,8 +6834,8 @@ ekvatoral		ekvátorál			ISIM	isim	D_OZEL_INCELME_A	li	gök bilimi	Fransızca	Ha
 Ekvatoral		Ekvatorál			SIFAT	sıfat	D_OZEL_INCELME_A	li	coğrafya	Fransızca	Evet				
 ekzotermik	ekzotermiğ				SIFAT	sıfat	R_YUMUSAMA_kğ		kimya	Fransızca	Hayır				
 el					ISIM	isim				Türkçe	Hayır				
-el					ISIM	isim			anatomi	Türkçe	Hayır				
-el					ISIM	isim				Türkçe	Hayır				
+el				F	ISIM	isim			anatomi	Türkçe	Hayır				
+el				F	ISIM	isim				Türkçe	Hayır				
 El Salvador					OZEL	özel			ülke						
 ela					ISIM	isim				Türkçe	Hayır				
 elaman					UNLEM	ünlem				Arapça	Hayır				
@@ -6718,6 +6859,7 @@ ele	eli				FIIL	fiil				Türkçe
 elebaş					TAMLAMA	isim	S_TAMLAMA_OZEL	nı		Türkçe	Hayır				
 eleğimsağma					ISIM	isim			meteoroloji	Arapça	Hayır				
 eleji					ISIM	isim			edebiyat	Fransızca	Hayır				
+elek	eleğ				ISIM	isim	R_YUMUSAMA_kğ								
 elektrifikasyon					ISIM	isim				Fransızca	Hayır				
 elektrik	elektriğ				ISIM	isim	R_YUMUSAMA_kğ	ği	fizik	Fransızca	Hayır				
 elektrikle	elektrikli				FIIL	fiil			fizik						
@@ -6763,6 +6905,8 @@ eleştir					FIIL	fiil				Türkçe
 eleştir					FIIL	fiil, ettirtgen_t									
 eleştirel					SIFAT	sıfat				Türkçe	Hayır				
 eleştiri					ISIM	isim				Türkçe	Hayır				
+eleştirim					ISIM	isim									
+eleştirme					ISIM	isim, kök_değil									
 eleştirmen					ISIM	isim				Türkçe	Hayır				
 elezer					SIFAT	sıfat			ruh bilimi	Türkçe	Hayır				
 elgin					SIFAT	sıfat				Türkçe	Hayır				
@@ -6803,6 +6947,8 @@ eltieltiyeküstü					ISIM	isim			bitki bilimi	Türkçe	Hayır
 elvan					ISIM	isim				Arapça	Hayır				
 elveda					UNLEM	ünlem				Arapça	Hayır				
 elver					FIIL	fiil				Türkçe					
+elverişiz					SIFAT	sıfat									
+elverişli					SIFAT	sıfat									
 elyaf					ISIM	isim				Arapça	Hayır				
 elzem					SIFAT	sıfat				Arapça	Hayır				
 em					ISIM	isim				Türkçe	Hayır				
@@ -6821,6 +6967,7 @@ embriyo					ISIM	isim			anatomi	Fransızca	Hayır
 embriyolog	embriyoloğ				ISIM	isim	R_YUMUSAMA_gğ	ğu		Fransızca	Hayır				
 embriyoloji					ISIM	isim			biyoloji	Fransızca	Hayır				
 embriyolojik	embriyolojiğ				SIFAT	sıfat	R_YUMUSAMA_kğ		biyoloji	Fransızca	Hayır				
+embriyon					ISIM	isim									
 emcek	emceğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 emcik	emciğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 emdir					FIIL	fiil				Türkçe					
@@ -6866,7 +7013,7 @@ emval		emvál			ISIM	isim	D_OZEL_INCELME_A	li		Arapça	Hayır
 emzik	emziğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 emzir					FIIL	fiil, ettirgen_t				Türkçe					
 en					ISIM	isim				Türkçe	Hayır				
-en					ISIM	isim				Türkçe	Hayır				
+en				F	ISIM	isim				Türkçe	Hayır				
 en					ZARF	zarf				Türkçe	Hayır				
 enam					ISIM	isim				Arapça	Hayır				
 enam					ISIM	isim			din bilgisi	Arapça	Hayır				
@@ -6899,6 +7046,7 @@ endüksiyon					ISIM	isim			felsefe	Fransızca	Hayır
 endüstri					ISIM	isim				Fransızca	Hayır				
 endüstriyel					SIFAT	sıfat				Fransızca	Hayır				
 ene	eni				FIIL	fiil				Türkçe					
+enek	eneğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 enerji					ISIM	isim			fizik	Fransızca	Hayır				
 enerjik	enerjiğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Fransızca	Hayır				
 Enez					OZEL	özel			ilçe	Türkçe	Evet				
@@ -6933,6 +7081,7 @@ enjeksiyon					ISIM	isim				Fransızca	Hayır
 enjekte					SIFAT	sıfat				Fransızca	Hayır				
 enjektör					ISIM	isim			tıp	Fransızca	Hayır				
 enkaz					ISIM	isim				Arapça	Hayır				
+enlem					ISIM	isim									
 enöte					ISIM	isim			gök bilimi	Türkçe	Hayır				
 ensar					ISIM	isim			din bilgisi	Arapça	Hayır				
 ense					ISIM	isim			anatomi	Türkçe	Hayır				
@@ -6974,6 +7123,7 @@ eosen					ISIM	isim			jeoloji	Fransızca	Hayır
 epe					ISIM	isim			spor	Fransızca	Hayır				
 eper					ISIM	isim				Türkçe	Hayır				
 epey					ZARF	zarf, ekfiil_alır				Türkçe	Hayır				
+epeyce					SIFAT	sıfat, zarf									
 epeyi					ZARF	zarf				Türkçe	Hayır				
 epidemi					ISIM	isim			tıp	Fransızca	Hayır				
 epidemioloji					ISIM	isim			tıp	Fransızca	Hayır				
@@ -7146,6 +7296,7 @@ esmer					ISIM	isim				Arapça	Hayır
 esna					ISIM	isim				Arapça	Hayır				
 esnaf					ISIM	isim				Arapça	Hayır				
 esne	esni				FIIL	fiil				Türkçe					
+esnek	esneğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 espas					ISIM	isim				Fransızca	Hayır				
 Esperanto					OZEL	özel			yapma lisan	İspanyolca	Evet				
 esperi					ISIM	isim			hayvan bilimi		Hayır				
@@ -7161,6 +7312,7 @@ esrarengiz					SIFAT	sıfat				Ar-Fa	Hayır
 esrarkeş					ISIM	isim				Ar-Fa	Hayır				
 esre					ISIM	isim				Türkçe	Hayır				
 esri					FIIL	fiil				Türkçe					
+esrik	esriğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 essah					SIFAT	sıfat				Arapça	Hayır				
 estağfurullah					UNLEM	ünlem				Arapça	Hayır				
 estamp					ISIM	isim				Fransızca	Hayır				
@@ -7176,8 +7328,10 @@ esvap	esvab				ISIM	isim	R_YUMUSAMA_pb	bı		Arapça	Hayır
 eş					ISIM	isim				Türkçe	Hayır				
 eş					FIIL	fiil, genis_Ar		er		Türkçe					
 eş					FIIL	fiil, genis_Ar		er		Türkçe					
+eşanlı					SIFAT	sıfat									
 eşantiyon					ISIM	isim				Fransızca	Hayır				
 eşarp	eşarb				ISIM	isim	R_YUMUSAMA_pb	bı		Fransızca	Hayır				
+eşdeğer					ISIM	isim									
 eşek	eşeğ				ISIM	isim	R_YUMUSAMA_kğ	ği	hayvan bilimi	Türkçe	Hayır				
 eşekbaşı					ISIM	isim				Türkçe	Hayır				
 eşekkulağı					ISIM	isim			bitki bilimi	Türkçe	Hayır				
@@ -7199,6 +7353,7 @@ eşkıya					ISIM	isim				Arapça	Hayır
 eşkin					ISIM	isim				Türkçe	Hayır				
 eşkin					ISIM	isim				Türkçe	Hayır				
 eşle	eşli				FIIL	fiil				Türkçe					
+eşlem					ISIM	isim									
 eşlenik	eşleniğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 Eşme					OZEL	özel			ilçe		Evet				
 eşofman					ISIM	isim				Fransızca	Hayır				
@@ -7423,6 +7578,7 @@ far					ISIM	isim				Fransızca	Hayır
 faraş					ISIM	isim				Arapça	Hayır				
 faraza					ZARF	zarf				Arapça	Hayır				
 farazi					SIFAT	sıfat				Arapça	Hayır				
+faraziyat					ISIM	isim									
 faraziye					ISIM	isim				Arapça	Hayır				
 farba					ISIM	isim				Fransızca	Hayır				
 farbala					ISIM	isim				Fransızca	Hayır				
@@ -7640,6 +7796,7 @@ fıçıla	fıçılı				FIIL	fiil
 fıkdan					ISIM	isim				Arapça	Hayır				
 fıkıh	fıkh				ISIM	isim	R_DUSME_SON_UNLU	khı		Arapça	Hayır				
 fıkır					YANSIMA	yansıma				Türkçe	Hayır				
+fıkırdak	fıkırdağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 fıkra					ISIM	isim			edebiyat	Arapça	Hayır				
 fıldır					SIFAT	sıfat				Türkçe	Hayır				
 fındık	fındığ				ISIM	isim	R_YUMUSAMA_kğ	ğı	bitki bilimi	Arapça	Hayır				
@@ -7654,6 +7811,7 @@ fırdolayı					ZARF	zarf				Türkçe	Hayır
 fırdöndü					ISIM	isim				Türkçe	Hayır				
 fırfır					ISIM	isim				Türkçe	Hayır				
 fırıl					YANSIMA	yansıma				Türkçe	Hayır				
+fırıldak	fırıldağ				ISIM	isim	R_YUMUSAMA_kğ								
 fırın					ISIM	isim				Rumca	Hayır				
 fırınla	fırınlı				FIIL	fiil									
 fırka					ISIM	isim				Arapça	Hayır				
@@ -7661,6 +7819,8 @@ fırkata					ISIM	isim			denizcilik	İtalyanca	Hayır
 fırkateyn					ISIM	isim			denizcilik	Arapça	Hayır				
 fırla	fırlı				FIIL	fiil				Türkçe	Hayır				
 fırla	fırlı				FIIL	fiil				Türkçe					
+fırlak	fırlağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
+fırlama					SIFAT	sıfat									
 fırsat					ISIM	isim				Arapça	Hayır				
 fırt					ISIM	isim				Türkçe	Hayır				
 fırtına					ISIM	isim				İtalyanca	Hayır				
@@ -7685,6 +7845,7 @@ fışkıla	fışkılı				FIIL	fiil				Türkçe
 fışkın					ISIM	isim				Türkçe	Hayır				
 fışkır					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Hayır	
 fışkırdak	fışkırdağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
+fışkırık	fışkırığ				ISIM	isim	R_YUMUSAMA_kğ								
 fışkırtı					ISIM	isim				Türkçe	Hayır				
 fışla	fışlı				FIIL	fiil				Türkçe					
 fıtık	fıtığ				ISIM	isim	R_YUMUSAMA_kğ	ğı	tıp	Arapça	Hayır				
@@ -7727,6 +7888,7 @@ fikstür					ISIM	isim			spor	İngilizce	Hayır
 fil					ISIM	isim			hayvan bilimi	Arapça	Hayır				
 filaman					ISIM	isim				Fransızca	Hayır				
 filan					ZAMIR	zamir				Arapça	Hayır				
+filanca					ZAMIR	zamir									
 filantrop					SIFAT	sıfat				Fransızca	Hayır				
 filar					ISIM	isim				Rumca	Hayır				
 filariz					ISIM	isim					Hayır				
@@ -7782,6 +7944,7 @@ finansman					ISIM	isim			ekonomi	Fransızca	Hayır
 fincan					ISIM	isim				Arapça	Hayır				
 Fince					ISIM	isim, sıfat			lisan		Evet				
 fingir					YANSIMA	yansıma				Türkçe	Hayır				
+fingirdek	fingirdeğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 fingirdeş					FIIL	fiil				Türkçe					
 Finike					OZEL	özel			ilçe		Evet				
 finiş					ISIM	isim				İngilizce	Hayır				
@@ -7951,6 +8114,7 @@ fosforışıl					SIFAT	sıfat			fizik	Fr-Tr	Hayır
 fosgen					ISIM	isim			kimya	Fransızca	Hayır				
 fosil					ISIM	isim				Fransızca	Hayır				
 fosla	foslu				FIIL	fiil				Türkçe					
+fosseptik	fosseptiğ				ISIM	isim	R_YUMUSAMA_kğ								
 fosur					YANSIMA	yansıma				Türkçe	Hayır				
 fosurda	fosurdı				FIIL	fiil				Türkçe					
 foş					ISIM	isim				Türkçe	Hayır				
@@ -8048,6 +8212,7 @@ futa					ISIM	isim			denizcilik	Rumca	Hayır
 futbol					ISIM	isim			spor	İngilizce	Hayır				
 fuzuli					SIFAT	sıfat				Arapça	Hayır				
 fücceten					ZARF	zarf				Arapça	Hayır				
+fücur					ISIM	isim									
 füg					ISIM	isim			müzik	Fransızca	Hayır				
 fülüs					ISIM	isim				Arapça	Hayır				
 füme					ISIM	isim				Fransızca	Hayır				
@@ -8185,6 +8350,7 @@ gardenya					ISIM	isim			bitki bilimi	Fransızca	Hayır
 gardıfren					ISIM	isim				Fransızca	Hayır				
 gardırop	gardırob				ISIM	isim	R_YUMUSAMA_pb	bu		Fransızca	Hayır				
 gardiyan					ISIM	isim				Fransızca	Hayır				
+garez					ISIM	isim									
 gargar					ISIM	isim					Hayır				
 gargara					ISIM	isim				Arapça	Hayır				
 gariban					SIFAT	sıfat				Arapça	Hayır				
@@ -8308,11 +8474,14 @@ gecesefasıgiller					ISIM	isim			bitki bilimi		Hayır
 gecik					FIIL	fiil				Türkçe	Hayır		E	Hayır	
 geciktirim					ISIM	isim									
 geç					SIFAT	sıfat				Türkçe	Hayır				
-geçen					SIFAT	sıfat				Türkçe	Hayır				
 geç					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Evet	
 geçek	geçeğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
+geçen					SIFAT	sıfat				Türkçe	Hayır				
 geçenek	geçeneğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 geçerle	geçerli				FIIL	fiil				Türkçe					
+geçerli					SIFAT	sıfat									
+geçerlik	geçerliğ				ISIM	isim	R_YUMUSAMA_kğ								
+geçersiz					SIFAT	sıfat									
 geçgeçle	geçgeçli				FIIL	fiil				Türkçe					
 geçim					ISIM	isim									
 geçin					FIIL	fiil								Hayır	
@@ -8336,6 +8505,7 @@ geğrek	geğreğ				ISIM	isim	R_YUMUSAMA_kğ	ği	anatomi	Türkçe	Hayır
 gehgeh					ISIM	isim				Farsça	Hayır				
 gel					FIIL	fiil		ir		Türkçe	Hayır	E		Hayır	
 gelberi					ISIM	isim				Türkçe	Hayır				
+gelecek	geleceğ				ISIM	isim	R_YUMUSAMA_kğ								
 geleğen					SIFAT	sıfat			coğrafya	Türkçe	Hayır				
 gelembe					ISIM	isim				Türkçe	Hayır				
 geleme					ISIM	isim				Türkçe	Hayır				
@@ -8353,6 +8523,7 @@ gelincikgiller					ISIM	isim			bitki bilimi	Türkçe	Hayır
 gelinfener					TAMLAMA	isim			bitki bilimi		Hayır				
 gelinkuşak	gelinkuşağ				TAMLAMA	isim	R_YUMUSAMA_kğ			Türkçe	Hayır				
 gelinparmak	gelinparmağ				TAMLAMA	isim	R_YUMUSAMA_kğ		bitki bilimi	Türkçe	Hayır				
+gelir					ISIM	isim									
 geliş					FIIL	fiil				Türkçe	Hayır		E	Hayır	
 geliş					FIIL	fiil			biyoloji	Türkçe					
 gelişigüzel					SIFAT	sıfat				Türkçe	Hayır				
@@ -8371,6 +8542,7 @@ gen					ISIM	isim			biyoloji	Almanca	Hayır
 gen					SIFAT	sıfat				Türkçe	Hayır				
 gen					SIFAT	sıfat					Hayır				
 gen					SIFAT	sıfat				Türkçe	Hayır				
+gencecik	genceciğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 gencel					FIIL	fiil, ettirgen_t				Türkçe	Hayır	E		Hayır	
 Genç					OZEL	özel		ç'i	ilçe	Türkçe	Evet				
 genç	genc				SIFAT	sıfat	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
@@ -8406,6 +8578,7 @@ ger					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Evet
 Gercüş					OZEL	özel			ilçe		Evet				
 gerçek	gerçeğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 gerçekle	gerçekli				FIIL	fiil				Türkçe					
+gerçekleştirim					ISIM	isim									
 gerçeküstü					ISIM	isim				Türkçe	Hayır				
 gerçi					ZARF	zarf				Farsça	Hayır				
 gerdan					ISIM	isim				Farsça	Hayır				
@@ -8465,7 +8638,9 @@ gevezelen					FIIL	fiil				Türkçe
 gevher					ISIM	isim				Farsça	Hayır				
 geviş					ISIM	isim				Türkçe	Hayır				
 gevre	gevri				FIIL	fiil				Türkçe	Hayır	E		Hayır	
+gevrek	gevreğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 gevşe	gevşi				FIIL	fiil				Türkçe	Hayır	E		Hayır	
+gevşek	gevşeğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 geyik	geyiğ				ISIM	isim	R_YUMUSAMA_kğ	ği	hayvan bilimi	Türkçe	Hayır				
 geyikdil					TAMLAMA	isim			bitki bilimi	Türkçe	Hayır				
 geyikgiller					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
@@ -8521,10 +8696,13 @@ gibi					EDAT_GIBI	edat				Türkçe	Hayır
 giciş					FIIL	fiil				Türkçe					
 gideğen					ISIM	isim			coğrafya	Türkçe	Hayır				
 gider					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
+gider					ISIM	isim									
 giderayak					ZARF	zarf				Türkçe	Hayır				
 gidi					UNLEM	ünlem				Farsça	Hayır				
+gidiş					FIIL	fiil									
 gidişat					ISIM	isim				Tr-Ar	Hayır				
 gidon					ISIM	isim				Fransızca	Hayır				
+gigabayt					ISIM	isim									
 gilaburu					ISIM	isim			bitki bilimi		Hayır				
 gine					ZARF	zarf				Türkçe	Hayır				
 Gine					OZEL	özel			ülke		Evet				
@@ -8533,6 +8711,7 @@ gir					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Hayır
 giranbaha					SIFAT	sıfat				Farsça	Hayır				
 giray					ISIM	isim			tarih	Moğolca	Hayır				
 girdap	girdab				ISIM	isim	R_YUMUSAMA_pb	bı	coğrafya	Farsça	Hayır				
+girdi					ISIM	isim									
 girenle	girenli				FIIL	fiil				Türkçe					
 Giresun					OZEL	özel			il	Rumca	Evet				
 girgin					SIFAT	sıfat				Türkçe	Hayır				
@@ -8542,6 +8721,7 @@ giriftzen					ISIM	isim			müzik	Farsça	Hayır
 girim					ISIM	isim									
 girinti					ISIM	isim				Türkçe	Hayır				
 giriş					FIIL	fiil				Türkçe					
+giriş					ISIM	isim									
 girişik	girişiğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 girişim					ISIM	isim				Türkçe	Hayır				
 girişim					ISIM	isim									
@@ -8582,6 +8762,8 @@ glikozit					ISIM	isim				Fransızca	Hayır
 glikozüri					ISIM	isim			tıp	Fransızca	Hayır				
 gliserin					ISIM	isim			kimya	Fransızca	Hayır				
 global		globál			SIFAT	sıfat	D_OZEL_INCELME_A	li		Fransızca	Hayır				
+globalleşme					ISIM	isim, kök_değil									
+globülin					ISIM	isim			biyoloji						
 glokom					ISIM	isim			tıp	Fransızca	Hayır				
 glokoni					ISIM	isim			jeoloji	Fransızca	Hayır				
 glüten					ISIM	isim				Fransızca	Hayır				
@@ -8605,6 +8787,7 @@ goşizm					ISIM	isim				Fransızca	Hayır
 Got					OZEL	özel					Evet				
 Gotça					ISIM	isim, sıfat			lisan		Evet				
 Gotik					OZEL	özel		ği		Fransızca	Evet				
+gotik	gotiğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 goygoycu					ISIM	isim				Türkçe	Hayır				
 göbek	göbeğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 göbeklen					FIIL	fiil				Türkçe					
@@ -8619,17 +8802,21 @@ göç					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Hayır
 göçebe					SIFAT	sıfat				Türkçe	Hayır				
 göçelge					ISIM	isim				Türkçe	Hayır				
 göçer					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
+göçer					ISIM	isim									
 göçeri					SIFAT	sıfat				Türkçe	Hayır				
 göçerkonar					SIFAT	sıfat				Türkçe	Hayır				
 göçkün					SIFAT	sıfat				Türkçe	Hayır				
 göçmen					SIFAT	sıfat				Türkçe	Hayır				
 göçü					ISIM	isim				Türkçe	Hayır				
 göçük					ISIM	isim, sıfat									
+göçük	göçüğ				ISIM	isim	R_YUMUSAMA_kğ								
+göçük	göçüğ				ISIM	isim	R_YUMUSAMA_kğ								
 göçüm					ISIM	isim									
 göçür					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
 göden					ISIM	isim			anatomi	Türkçe	Hayır				
 gödeş					SIFAT	sıfat				Türkçe	Hayır				
 göğem					ISIM	isim				Türkçe	Hayır				
+göğerti					ISIM	isim									
 göğüs	göğs				ISIM	isim	R_DUSME_SON_UNLU	ğsü		Türkçe	Hayır				
 göğüsle	göğüsli				FIIL	fiil				Türkçe					
 gök	göğ				ISIM	isim	R_YUMUSAMA_kğ	ğü		Türkçe	Hayır				
@@ -8697,14 +8884,18 @@ gönenç	gönenc				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır
 gönül	gönl				ISIM	isim	R_DUSME_SON_UNLU	nlü		Türkçe	Hayır				
 gönüldaş					ISIM	isim				Türkçe	Hayır				
 gönüllen					FIIL	fiil				Türkçe					
+özellikle					ZARF	zarf				Türkçe	Hayır				
 gönye					ISIM	isim				Rumca	Hayır				
 gönyele	gönyeli				FIIL	fiil									
 gör					FIIL	fiil		ür		Türkçe	Hayır		E	Evet	
 gördek	gördeğ				ISIM	isim	R_YUMUSAMA_kğ	ği	hayvan bilimi	Türkçe	Hayır				
 Gördes					OZEL	özel			ilçe		Evet				
 gördür					FIIL	fiil				Türkçe					
-göre					EDAT	edat				Türkçe	Hayır				
+göre					ZARF	zarf				Türkçe	Hayır				
+görece					SIFAT	sıfat									
+göreceli					SIFAT	sıfat									
 Görele					OZEL	özel			ilçe		Evet				
+göreli					SIFAT	sıfat									
 görenek	göreneğ				ISIM	isim	R_YUMUSAMA_kğ	ği	toplum bilimi	Türkçe	Hayır				
 görev					ISIM	isim				Türkçe	Hayır				
 görevdaş					SIFAT	sıfat				Türkçe	Hayır				
@@ -8726,13 +8917,17 @@ görünmez					SIFAT	sıfat, kök_değil
 görüntü					ISIM	isim				Türkçe	Hayır				
 görüntüle	görüntülü				FIIL	fiil				Türkçe					
 görünüm					ISIM	isim									
+görünür					SIFAT	sıfat									
 görüş					FIIL	fiil				Türkçe	Hayır		E	Hayır	
 görüş					FIIL	fiil				Türkçe					
+görüş					ISIM	isim									
+görüşme					ISIM	isim, kök_değil									
 göster					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
 gösterge					ISIM	isim				Türkçe	Hayır				
 göstergeç	göstergec				ISIM	isim	R_YUMUSAMA_çc	ci	fizik	Türkçe	Hayır				
 gösteri					ISIM	isim				Türkçe	Hayır				
 gösterim					ISIM	isim									
+gösteriş					ISIM	isim									
 göt					ISIM	isim				Türkçe	Hayır				
 götür					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
 götürü					SIFAT	sıfat			ticaret	Türkçe	Hayır				
@@ -8753,6 +8948,7 @@ göyük	göyüğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğü		Türkçe	Hayır
 göz					ISIM	isim			anatomi	Türkçe	Hayır				
 gözaltı					ISIM	isim			hukuk	Türkçe	Hayır				
 gözdağı					ISIM	isim					Hayır				
+gözde					SIFAT	sıfat									
 gözdemir					TAMLAMA	isim			denizcilik	Türkçe	Hayır				
 göze					ISIM	isim			anatomi	Türkçe	Hayır				
 göze	gözü				FIIL	fiil				Türkçe	Hayır	E		Evet	
@@ -8768,6 +8964,7 @@ gözgü					ISIM	isim				Türkçe	Hayır
 gözle	gözli				FIIL	fiil				Türkçe	Hayır	E		Evet	
 gözleği					ISIM	isim				Türkçe	Hayır				
 gözlem					ISIM	isim									
+gözleme					ISIM	isim									
 gözlemev					TAMLAMA	isim			gök bilimi	Türkçe	Hayır				
 gözlemle	gözlemli				FIIL	fiil				Türkçe					
 gözük					FIIL	fiil				Türkçe	Hayır		E	Hayır	
@@ -8776,6 +8973,7 @@ graben					ISIM	isim			coğrafya	Almanca	Hayır
 grado					ISIM	isim			kimya	İtalyanca	Hayır				
 grafik	grafiğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Fransızca	Hayır				
 grafit					ISIM	isim			jeoloji	Fransızca	Hayır				
+grafiti					ISIM	isim									
 grafolog	grafoloğ				ISIM	isim	R_YUMUSAMA_gğ	ğu		Fransızca	Hayır				
 grafoloji					ISIM	isim				Fransızca	Hayır				
 grafolojik	grafolojiğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Fransızca	Hayır				
@@ -8877,6 +9075,7 @@ güderihane					ISIM	isim				Mo-Fa	Hayır
 güdü					ISIM	isim				Türkçe	Hayır				
 güdük	güdüğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğü		Türkçe	Hayır				
 Güdül					OZEL	özel			ilçe	Türkçe	Evet				
+güdülenim					ISIM	isim									
 güdüm					ISIM	isim									
 güdümle	güdümli				FIIL	fiil				Türkçe					
 güfte					ISIM	isim				Farsça	Hayır				
@@ -8951,6 +9150,7 @@ günce					ISIM	isim				Türkçe	Hayır
 güncek	günceğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 güncel					SIFAT	sıfat				Türkçe	Hayır				
 gündedün					ISIM	isim				Türkçe	Hayır				
+gündelik	gündeliğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 gündem					ISIM	isim				Türkçe	Hayır				
 gündeş					SIFAT	sıfat				Türkçe	Hayır				
 Gündoğmuş					OZEL	özel			ilçe	Türkçe	Evet				
@@ -8969,19 +9169,21 @@ Güney					OZEL	özel			ilçe	Türkçe	Evet
 Güney Afrika Cumhuriyeti					OZEL	özel			ülke						
 Güneybalığı					OZEL	özel			gök bilimi/takımyıldız	Türkçe	Evet				
 güneybatı					ISIM	isim				Türkçe	Hayır				
+aslında					ZARF	zarf				Türkçe	Hayır				
 güneydoğu					ISIM	isim				Türkçe	Hayır				
 Güneysınır					OZEL	özel			ilçe	Tr-Rum	Evet				
 Güneysu					OZEL	özel			ilçe	Türkçe	Evet				
 Güngören					OZEL	özel			ilçe	Türkçe	Evet				
 güngörmez					SIFAT	sıfat				Türkçe	Hayır				
 güngörmüş					SIFAT	sıfat				Türkçe	Hayır				
+gelişmiş					SIFAT	sıfat				Türkçe	Hayır				
 günısı					ISIM	isim				Türkçe	Hayır				
 günindi					ISIM	isim				Türkçe	Hayır				
 günöte					ISIM	isim			gök bilimi	Türkçe	Hayır				
 günü					ISIM	isim				Türkçe	Hayır				
 günübirliğine					ZARF	zarf				Türkçe	Hayır				
 günübirlik	günübirliğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
-günüle	günülü				FIIL	fiil				Türkçe					
+günüle	günülü				FIIL	fiil				Türkçe	Hayır				
 Günyüzü					OZEL	özel			ilçe	Türkçe	Evet				
 güpegündüz					ZARF	zarf				Türkçe	Hayır				
 güpgüzel					SIFAT	sıfat				Türkçe	Hayır				
@@ -9018,12 +9220,15 @@ güven					ISIM	isim				Türkçe	Hayır
 güven					FIIL	fiil				Türkçe	Hayır		E	Hayır	
 güvence					ISIM	isim				Türkçe	Hayır				
 güvenç	güvenc				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
+güvenilir					SIFAT	sıfat									
+güvenirlik	güvenirliğ				ISIM	isim	R_YUMUSAMA_kğ								
 güvenoy					TAMLAMA	isim				Türkçe	Hayır				
 güvercin					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 güvercinboyun					TAMLAMA	isim				Türkçe	Hayır				
 güvercingiller					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 güvercingöğüs					TAMLAMA	isim				Türkçe	Hayır				
 güverte					ISIM	isim			denizcilik	İtalyanca	Hayır				
+güvey					ISIM	isim									
 güveyfener					TAMLAMA	isim			bitki bilimi		Hayır				
 güveyi					ISIM	isim				Türkçe	Hayır				
 güvez					ISIM	isim				Türkçe	Hayır				
@@ -9336,6 +9541,7 @@ haploloji					ISIM	isim			dil bilgisi	Fransızca	Hayır
 hapset	hapsed				FIIL	fiil, genis_Ar	R_YUMUSAMA_td, 	der		Ar-Tr	Hayır		E	Evet	
 hapsol					FIIL	fiil				Ar-Tr	Hayır	E		Hayır	
 hapşır					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Hayır	
+hapşırık	hapşırığ				ISIM	isim	R_YUMUSAMA_kğ								
 hapşu					UNLEM	ünlem				Türkçe	Hayır				
 haptet	hapted		Karşısındakini susturmak, cevap veremez durumunda bırakmak	F	FIIL	fiil, genis_Ar	R_YUMUSAMA_td, 	der		Ar-Tr	Hayır		E	Evet	
 har					ISIM	isim					Hayır				
@@ -9519,7 +9725,7 @@ hattat					ISIM	isim				Arapça	Hayır
 hattıhareket					ISIM	isim				Arapça	Hayır				
 hatun					ISIM	isim					Hayır				
 hav					ISIM	isim				Arapça	Hayır				
-hav					ISIM	isim					Hayır				
+hav				F	ISIM	isim					Hayır				
 hav					YANSIMA	yansıma				Türkçe	Hayır				
 hava					ISIM	isim				Arapça	Hayır				
 havaalan					TAMLAMA	isim				Ar-Tr	Hayır				
@@ -9572,7 +9778,7 @@ hayalî					SIFAT	sıfat, şapkalı				Arapça	Hayır
 hayalperest					SIFAT	sıfat				Ar-Fa	Hayır				
 hayalperver					SIFAT	sıfat				Ar-Fa	Hayır				
 hayat					ISIM	isim				Arapça	Hayır				
-hayat					ISIM	isim				Arapça	Hayır				
+hayat				F	ISIM	isim				Arapça	Hayır				
 hayati					SIFAT	sıfat				Arapça	Hayır				
 hayatiyet					ISIM	isim				Arapça	Hayır				
 haybe					ISIM	isim				Arapça	Hayır				
@@ -9712,6 +9918,7 @@ hemayar					SIFAT	sıfat				Farsça	Hayır
 hemcins					SIFAT	sıfat				Farsça	Hayır				
 hemdert	hemderd				SIFAT	sıfat	R_YUMUSAMA_td	di		Farsça	Hayır				
 hemen					ZARF	zarf				Farsça	Hayır				
+hemencecik					ZARF	zarf									
 hemencek					ZARF	zarf					Hayır				
 hemfikir					SIFAT	sıfat				Fa-Ar	Hayır				
 hemhal		hemhál			SIFAT	sıfat, şapkasız	D_SAPKA_DUSUR_A	li		Farsça	Hayır				
@@ -9743,6 +9950,7 @@ hep					ZARF	zarf				Türkçe	Hayır
 hepatit					ISIM	isim			tıp	Fransızca	Hayır				
 hepatoloji					ISIM	isim			tıp	Fransızca	Hayır				
 hepçil					SIFAT	sıfat				Türkçe	Hayır				
+hepimiz					ZAMIR_BELIRSIZLIK	zamir									
 hepsi					ZAMIR	zamir	F_OZEL_N			Türkçe	Hayır				
 hepyek					ISIM	isim				Türkçe	Hayır				
 her					SIFAT	sıfat				Farsça	Hayır				
@@ -10106,6 +10314,8 @@ horozkara					TAMLAMA	isim			bitki bilimi		Hayır
 horozlan					FIIL	fiil									
 horst					ISIM	isim			coğrafya	Almanca	Hayır				
 hortla	hortlı				FIIL	fiil									
+hortla	hortlu				FIIL	fiil									
+hortlak	hortlağ				ISIM	isim	R_YUMUSAMA_kğ								
 hortum					ISIM	isim				Arapça	Hayır				
 horul					YANSIMA	yansıma				Türkçe	Hayır				
 horul					YANSIMA	yansıma				Türkçe	Hayır				
@@ -10204,6 +10414,7 @@ Hüda					OZEL	özel			din bilgisi	Farsça	Evet
 hükmen					ZARF	zarf				Arapça	Hayır				
 hükmet	hükmed				FIIL	fiil, genis_Ar	R_YUMUSAMA_td, 	der		Arapça	Hayır		E	Hayır	
 hükmi					SIFAT	sıfat			hukuk	Arapça	Hayır				
+hükmolun					FIIL	fiil, edilgen									
 hükumet		hükûmet			ISIM	isim, şapkasız	D_SAPKA_DUSUR_U			Arapça	Hayır				
 hükûmet					ISIM	isim, şapkalı				Arapça	Hayır				
 hüküm	hükm				ISIM	isim	R_DUSME_SON_UNLU	kmü		Arapça	Hayır				
@@ -10288,9 +10499,11 @@ Ilgın					OZEL	özel			ilçe	Türkçe	Evet
 ılıca					ISIM	isim				Türkçe	Hayır				
 Ilıca					OZEL	özel			ilçe	Türkçe	Evet				
 ılıcak	ılıcağ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
+ılık	ılığ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 ılıkçıl					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 ılım					ISIM	isim									
 ılıman					SIFAT	sıfat			coğrafya	Türkçe	Hayır				
+ılış					FIIL	fiil									
 ıltar					ISIM	isim				Türkçe	Hayır				
 ıncalız					ISIM	isim				Türkçe	Hayır				
 ıpıslak	ıpıslağ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
@@ -10332,6 +10545,7 @@ Isfahan					OZEL	özel					Evet
 ısırgan					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 ısırgangiller					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 ısırgın					ISIM	isim			tıp	Türkçe	Hayır				
+ısırık	ısırığ				ISIM	isim	R_YUMUSAMA_kğ								
 ısıt					FIIL	fiil				Türkçe	Hayır		E	Evet	
 ısıveren					SIFAT	sıfat			kimya	Türkçe	Hayır				
 ısıyayar					ISIM	isim			fizik	Türkçe	Hayır				
@@ -10350,6 +10564,7 @@ Isfahan					OZEL	özel					Evet
 ıslahat					ISIM	isim				Arapça	Hayır				
 ıslahev					TAMLAMA	isim			hukuk	Ar-Tr	Hayır				
 ıslahhane					ISIM	isim			hukuk	Ar-Fa	Hayır				
+ıslak	ıslağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 ıslakkarga					SIFAT	sıfat				Türkçe	Hayır				
 ıslan					FIIL	fiil				Türkçe					
 ıslık	ıslığ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
@@ -10373,11 +10588,13 @@ Isparta					OZEL	özel			il		Evet
 ıstırari					SIFAT	sıfat				Arapça	Hayır				
 ışı					FIIL	fiil				Türkçe	Hayır	E		Hayır	
 ışığan					ISIM	isim			bitki bilimi	Türkçe	Hayır				
+ışık	ışığ				ISIM	isim	R_YUMUSAMA_kğ								
 ışıkkesen					ISIM	isim			sinema	Türkçe	Hayır				
 ışıklan					FIIL	fiil				Türkçe					
 ışıkölçer					ISIM	isim			fizik	Türkçe	Hayır				
 ışıl					YANSIMA	yansıma				Türkçe	Hayır				
 ışıla	ışılı				FIIL	fiil				Türkçe					
+ışıldak	ışıldağ				ISIM	isim	R_YUMUSAMA_kğ								
 ışın					ISIM	isim			fizik	Türkçe	Hayır				
 ışınetkin					SIFAT	sıfat			fizik	Türkçe	Hayır				
 ışınım					ISIM	isim			fizik	Türkçe	Hayır				
@@ -10397,6 +10614,7 @@ Isparta					OZEL	özel			il		Evet
 ıtriyat					ISIM	isim				Arapça	Hayır				
 ıttıla					ISIM	isim				Arapça	Hayır				
 ıttırat	ıttırad				ISIM	isim	R_YUMUSAMA_td	dı		Arapça	Hayır				
+ıvır					ISIM	ikileme									
 ıydiye					ISIM	isim				Arapça	Hayır				
 ızgara					ISIM	isim				Rumca	Hayır				
 ızgın					ISIM	isim			bitki bilimi	Türkçe	Hayır				
@@ -10458,6 +10676,7 @@ iç					ISIM	isim				Türkçe	Hayır
 iç					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Evet	
 içbükey					SIFAT	sıfat			fizik	Türkçe	Hayır				
 içdenetir					ISIM	isim				Türkçe	Hayır				
+içecek	içeceğ				ISIM	isim	R_YUMUSAMA_kğ								
 İçel					OZEL	özel			il	Türkçe	Evet				
 içer					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
 içeri					ISIM	isim				Türkçe	Hayır				
@@ -10474,6 +10693,7 @@ içkin					SIFAT	sıfat			felsefe	Türkçe	Hayır
 içlen					FIIL	fiil				Türkçe					
 içre					ZARF	zarf				Türkçe	Hayır				
 içrek	içreğ				SIFAT	sıfat	R_YUMUSAMA_kğ		felsefe	Türkçe	Hayır				
+içten					SIFAT	sıfat									
 içtepi					ISIM	isim			ruh bilimi	Türkçe	Hayır				
 içtihat	içtihad				ISIM	isim	R_YUMUSAMA_td	dı	hukuk	Arapça	Hayır				
 içtima					ISIM	isim			askerlik	Arapça	Hayır				
@@ -10550,6 +10770,7 @@ iğren					FIIL	fiil				Türkçe	Hayır		E	Hayır
 iğrenç	iğrenc				SIFAT	sıfat	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
 iğrengen					SIFAT	sıfat				Türkçe	Hayır				
 iğrenti					ISIM	isim				Türkçe	Hayır				
+iğreti					SIFAT	sıfat									
 iğtinam					ISIM	isim				Arapça	Hayır				
 ihale					ISIM	isim			ticaret	Arapça	Hayır				
 iham					ISIM	isim				Arapça	Hayır				
@@ -10630,6 +10851,7 @@ iki					SAYI	sayı, isim, sıfat
 ikibuçukluk	ikibuçukluğ				ISIM	isim	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır				
 ikiçifte					ISIM	isim			spor	Tr-Fa	Hayır				
 ikile	ikili				FIIL	fiil				Türkçe					
+ikilem					ISIM	isim									
 ikileşik	ikileşiğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 ikileşim					ISIM	isim									
 ikincil					SIFAT	sıfat				Türkçe	Hayır				
@@ -10653,6 +10875,7 @@ iklim					ISIM	isim			coğrafya	Arapça	Hayır
 ikmal		ikmál			ISIM	isim	D_OZEL_INCELME_A	li		Arapça	Hayır				
 ikna					ISIM	isim				Arapça	Hayır				
 ikon					ISIM	isim				Fransızca	Hayır				
+ikona					ISIM	isim									
 ikonografi					ISIM	isim				Fransızca	Hayır				
 ikrah					ISIM	isim				Arapça	Hayır				
 ikram					ISIM	isim				Arapça	Hayır				
@@ -10811,12 +11034,14 @@ imdi					ZARF	zarf				Türkçe	Hayır
 imece					ISIM	isim			toplum bilimi	Türkçe	Hayır				
 imge					ISIM	isim				Türkçe	Hayır				
 imgele	imgeli				FIIL	fiil				Türkçe					
+imgelem					ISIM	isim									
 imha					ISIM	isim				Arapça	Hayır				
 imitasyon					ISIM	isim				Fransızca	Hayır				
 imkan		imkân			ISIM	isim, şapkasız	D_SAPKA_DUSUR_A			Arapça	Hayır				
 imkân					ISIM	isim, şapkalı				Arapça	Hayır				
 imla					ISIM	isim				Arapça	Hayır				
 imle	imli				FIIL	fiil				Türkçe					
+imleç	imlec				ISIM	isim	R_YUMUSAMA_çc								
 immoral		immorál			SIFAT	sıfat	D_OZEL_INCELME_A	li	felsefe	Fransızca	Hayır				
 immoralizm					ISIM	isim			felsefe	Fransızca	Hayır				
 immünoloji					ISIM	isim			tıp	Fransızca	Hayır				
@@ -10855,6 +11080,7 @@ inayet					ISIM	isim				Arapça	Hayır
 ince					SIFAT	sıfat, azlık				Türkçe	Hayır				
 incel					FIIL	fiil, ettirgen_t				Türkçe	Hayır	E		Hayır	
 incele	inceli				FIIL	fiil				Türkçe					
+inceleme					ISIM	isim, kök_değil									
 incerek	incereğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
 İncesu					OZEL	özel			ilçe	Türkçe	Evet				
 inci					ISIM	isim				Türkçe	Hayır				
@@ -10923,6 +11149,7 @@ inik	iniğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ği		Türkçe	Hayır
 inikas		inikâs			ISIM	isim, şapkasız	D_SAPKA_DUSUR_A		fizik	Arapça	Hayır				
 inikâs					ISIM	isim, şapkalı			fizik	Arapça	Hayır				
 inikat	inikad				ISIM	isim	R_YUMUSAMA_td	dı		Arapça	Hayır				
+inilde	inildi				FIIL	fiil									
 inilti					ISIM	isim				Türkçe	Hayır				
 inisiyatif					ISIM	isim				Fransızca	Hayır				
 inisyal		inisyál			ISIM	isim	D_OZEL_INCELME_A	li		Fransızca	Hayır				
@@ -11032,6 +11259,7 @@ irap	irab				ISIM	isim	R_YUMUSAMA_pb	bı		Arapça	Hayır
 irat	irad				ISIM	isim	R_YUMUSAMA_td	dı		Arapça	Hayır				
 irca					ISIM	isim				Arapça	Hayır				
 irdele	irdeli				FIIL	fiil				Türkçe	Hayır	E		Evet	
+irdele					ISIM	isim									
 irfan					ISIM	isim				Arapça	Hayır				
 iri					SIFAT	sıfat				Türkçe	Hayır				
 iribaş					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
@@ -11274,6 +11502,7 @@ işaret					ISIM	isim				Arapça	Hayır
 işaretle	işaretli				FIIL	fiil									
 işba					ISIM	isim				Arapça	Hayır				
 işbaş					TAMLAMA	isim				Türkçe	Hayır				
+işbirlik	işbirliğ				TAMLAMA	isim	R_YUMUSAMA_kğ								
 işbu					ISIM	isim				Türkçe	Hayır				
 işe	işi				FIIL	fiil				Türkçe	Hayır	E		Hayır	
 işgal		işgál			ISIM	isim	D_OZEL_INCELME_A	li		Arapça	Hayır				
@@ -11293,6 +11522,9 @@ işkine					ISIM	isim			hayvan bilimi	Latince	Hayır
 işle	işli				FIIL	fiil				Türkçe	Hayır	E		Evet	
 işle	işli				FIIL	fiil				Türkçe					
 işle					FIIL	fiil									
+işleç	işlec				ISIM	isim	R_YUMUSAMA_çc								
+işlek	işleğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
+işlem					ISIM	isim									
 işleme					ISIM	isim, kök_değil									
 işlenti					ISIM	isim			ekonomi	Türkçe	Hayır				
 işler					SIFAT	sıfat				Türkçe	Hayır				
@@ -11386,6 +11618,7 @@ ivedilen					FIIL	fiil				Türkçe
 iveğen					SIFAT	sıfat				Türkçe	Hayır				
 ivgi					ISIM	isim				Türkçe	Hayır				
 ivinti					ISIM	isim				Türkçe	Hayır				
+ivme					ISIM	isim, sıfat									
 ivmeölçer					ISIM	isim			fizik	Türkçe	Hayır				
 ivmeyazar					ISIM	isim			fizik	Türkçe	Hayır				
 İvrindi					OZEL	özel			ilçe	Türkçe	Evet				
@@ -11425,6 +11658,7 @@ izbe					SIFAT	sıfat				Rusça	Hayır
 izbiro					ISIM	isim			denizcilik	İtalyanca	Hayır				
 izdiham					ISIM	isim				Arapça	Hayır				
 izdivaç	izdivac				ISIM	isim	R_YUMUSAMA_çc	cı		Arapça	Hayır				
+izdüşüm					ISIM	isim									
 izdüşüren					SIFAT	sıfat			matematik	Türkçe	Hayır				
 izhar					ISIM	isim				Arapça	Hayır				
 izin	izn				ISIM	isim	R_DUSME_SON_UNLU	zni		Arapça	Hayır				
@@ -11432,7 +11666,10 @@ izinname					ISIM	isim				Ar-Fa	Hayır
 İzlanda					OZEL	özel			ülke						
 İzlandaca					ISIM	isim, sıfat			lisan		Evet				
 izle	izli				FIIL	fiil				Türkçe					
+izlek	izleğ				ISIM	isim	R_YUMUSAMA_kğ								
+izlem					ISIM	isim									
 izlence					ISIM	isim				Türkçe	Hayır				
+izlenim					ISIM	isim									
 izmarit					ISIM	isim			hayvan bilimi	Rumca	Hayır				
 izmaritgiller					ISIM	isim			hayvan bilimi		Hayır				
 izmihlal		izmihlál			ISIM	isim	D_OZEL_INCELME_A	li		Arapça	Hayır				
@@ -11552,6 +11789,7 @@ kaban					ISIM	isim				Fransızca	Hayır
 kabana					ISIM	isim				Fransızca	Hayır				
 kabar					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Hayır	
 kabara					ISIM	isim				Türkçe	Hayır				
+kabarcık	kabarcığ				ISIM	isim	R_YUMUSAMA_kğ								
 Kabardeyce					ISIM	isim, sıfat			lisan		Evet				
 kabare					ISIM	isim				Fransızca	Hayır				
 kabarık	kabarığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
@@ -11583,6 +11821,7 @@ kaburga					ISIM	isim			anatomi	Moğolca	Hayır
 kabus		kâbus			ISIM	isim, şapkasız	D_SAPKA_DUSUR_A			Arapça	Hayır				
 kâbus					ISIM	isim, şapkalı				Arapça	Hayır				
 kabza					ISIM	isim				Türkçe	Hayır				
+kabzet	kabzed				FIIL	fiil, genis_Ar	R_YUMUSAMA_td								
 kabzımal					ISIM	isim			ticaret	Arapça	Hayır				
 kaç					SIFAT	sıfat				Türkçe	Hayır				
 kaç					ZAMIR_BELIRSIZLIK	zamir, çoğul, sayı									
@@ -11602,6 +11841,7 @@ kaçınık	kaçınığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır
 kaçınılmaz					SIFAT	sıfat, kök_değil									
 kaçıntı					ISIM	isim				Türkçe	Hayır				
 kaçır					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
+kaçış					FIIL	fiil									
 kaçkın					ISIM	isim				Türkçe	Hayır				
 kadar					EDAT_GIBI	edat				Arapça	Hayır				
 kadastro					ISIM	isim				İspanyolca	Hayır				
@@ -11735,6 +11975,7 @@ kakıntı					ISIM	isim				Türkçe	Hayır
 kakır					YANSIMA	yansıma				Türkçe	Hayır				
 kakır					YANSIMA	yansıma				Türkçe	Hayır				
 kakırca					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
+kakış					FIIL	ikileme									
 kaknem					SIFAT	sıfat				Ermenice	Hayır				
 kakofoni					ISIM	isim			edebiyat	Fransızca	Hayır				
 kaktüs					ISIM	isim			bitki bilimi	Fransızca	Hayır				
@@ -12035,6 +12276,7 @@ kaparoz					ISIM	isim				argo	Hayır
 kaparozla	kaparozlu				FIIL	fiil				argo					
 kapasite					ISIM	isim				Fransızca	Hayır				
 kapat					FIIL	fiil				Türkçe					
+kapatma					ISIM	isim									
 kapçak	kapçağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 kapela					ISIM	isim				İtalyanca	Hayır				
 kapı					ISIM	isim				Türkçe	Hayır				
@@ -12058,6 +12300,7 @@ kapkaranlık	kapkaranlığ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır
 kapla	kaplı				FIIL	fiil				Türkçe					
 kaplan					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 kaplanboğan					ISIM	isim			bitki bilimi	Türkçe	Hayır				
+kaplıca					ISIM	isim									
 kaplumbağa					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 kapnisit					ISIM	isim			jeoloji	Fransızca	Hayır				
 kapora					ISIM	isim			hukuk	İtalyanca	Hayır				
@@ -12109,6 +12352,7 @@ karabulut					ISIM	isim				Türkçe	Hayır
 karaburçak	karaburçağ				ISIM	isim	R_YUMUSAMA_kğ	ğı	bitki bilimi	Türkçe	Hayır				
 Karaburun					OZEL	özel			ilçe	Türkçe	Evet				
 Karabük					OZEL	özel		k'ü	il	Türkçe	Evet				
+karaca					ISIM	isim									
 Karacabey					OZEL	özel			ilçe	Türkçe	Evet				
 karacaot					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 Karacasu					OZEL	özel			ilçe	Türkçe	Evet				
@@ -12225,6 +12469,7 @@ karayaka					ISIM	isim			hayvan bilimi	Türkçe	Hayır
 karayandık	karayandığ				ISIM	isim	R_YUMUSAMA_kğ	ğı	bitki bilimi	Türkçe	Hayır				
 karayanık	karayanığ				ISIM	isim	R_YUMUSAMA_kğ	ğı	tıp	Türkçe	Hayır				
 Karayazı					OZEL	özel			ilçe	Türkçe	Evet				
+karayazı					ISIM	isim									
 karayemiş					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 karayılan					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 karbojen					ISIM	isim				Fransızca	Hayır				
@@ -12291,6 +12536,7 @@ karha					ISIM	isim			tıp	Arapça	Hayır
 karı					ISIM	isim				Türkçe	Hayır				
 karı			Yaşlanmak, kocamak, ihtiyarlamak.	F	FIIL	fiil				Türkçe	Hayır			Hayır	
 karık			Göz fazla ışıktan kamaşmak.	F	FIIL	fiil				Türkçe	Hayır			Hayır	
+karık	karığ				ISIM	isim	R_YUMUSAMA_kğ								
 karın	karn				ISIM	isim	R_DUSME_SON_UNLU	rnı		Türkçe	Hayır				
 karın					FIIL	fiil				Türkçe					
 karınca					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
@@ -12334,6 +12580,7 @@ karmakarış					SIFAT	sıfat				Türkçe	Hayır
 karmakarışık	karmakarışığ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
 karmanyola					ISIM	isim				İtalyanca	Hayır				
 karmaş					FIIL	fiil				Türkçe					
+karmaşa					ISIM	isim									
 karmaşık	karmaşığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 karmık	karmığ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 karnabahar					ISIM	isim			bitki bilimi	Rumca	Hayır				
@@ -12459,6 +12706,7 @@ kaşı					FIIL	fiil				Türkçe	Hayır	E		Evet
 kaşık	kaşığ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 kaşıkçın					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 kaşıkla	kaşıklı				FIIL	fiil				Türkçe					
+kaşın					FIIL	fiil, dönüşlü									
 kaşıntı					ISIM	isim				Türkçe	Hayır				
 kaşif		kâşif			ISIM	isim, şapkasız	D_SAPKA_DUSUR_A			Arapça	Hayır				
 kâşif					ISIM	isim, şapkalı				Arapça	Hayır				
@@ -12503,6 +12751,7 @@ katet	kated				FIIL	fiil, genis_Ar	R_YUMUSAMA_td, 	der		Ar-Tr	Hayır		E	Evet
 katgüt					ISIM	isim			tıp	Fransızca	Hayır				
 katı					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 katı					SIFAT	sıfat				Türkçe	Hayır				
+katık	katığ				ISIM	isim	R_YUMUSAMA_kğ								
 katıkla	katıklı				FIIL	fiil				Türkçe					
 katıl					FIIL	fiil				Türkçe					
 katıl					FIIL	fiil				Türkçe					
@@ -12543,6 +12792,7 @@ katranköpük	katranköpüğ				TAMLAMA	isim	R_YUMUSAMA_kğ		bitki bilimi		Hayı
 katranla	katranlı				FIIL	fiil									
 katre					ISIM	isim				Arapça	Hayır				
 katrilyon					ISIM	isim				Fransızca	Hayır				
+katsayı					ISIM	isim									
 katyon					ISIM	isim			kimya	Fransızca	Hayır				
 kauçuk	kauçuğ				ISIM	isim	R_YUMUSAMA_kğ	ğu	bitki bilimi	Fransızca	Hayır				
 kav					ISIM	isim				Türkçe	Hayır				
@@ -12586,6 +12836,7 @@ kavraç	kavrac				ISIM	isim	R_YUMUSAMA_çc	cı		Türkçe	Hayır
 kavrak	kavrağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 kavram					ISIM	isim									
 kavranılmaz					SIFAT	sıfat, kök_değil									
+kavruk	kavruğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 kavşak	kavşağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 kavuk	kavuğ				ISIM	isim	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır				
 Kavuklu					OZEL	özel			geleneksel tiyatro	Türkçe	Evet				
@@ -12659,10 +12910,12 @@ kayme					ISIM	isim				Arapça	Hayır
 kayna	kaynı				FIIL	fiil				Türkçe	Hayır	E		Hayır	Hayır
 kaynaç	kaynac				ISIM	isim	R_YUMUSAMA_çc	cı	jeoloji	Türkçe	Hayır				
 kaynak	kaynağ				ISIM	isim	R_YUMUSAMA_kğ, 	ğı		Türkçe	Hayır				
+kaynakça					ISIM	isim									
 kaynakhane					ISIM	isim				Tr-Fa	Hayır				
 kaynaklan					FIIL	fiil				Türkçe					
 kaynana					ISIM	isim				Türkçe	Hayır				
 kaynanadil					TAMLAMA	isim				Türkçe	Hayır				
+kaynar					SIFAT	sıfat									
 Kaynarca					OZEL	özel			ilçe	Türkçe	Evet				
 kaynaş					FIIL	fiil				Türkçe					
 kaynaşık	kaynaşığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
@@ -12852,6 +13105,7 @@ kenar					ISIM	isim				Farsça	Hayır
 kenarortay					ISIM	isim			matematik		Hayır				
 kendi					ZAMIR_DONUSLULUK	zamir	F_OZEL_N			Türkçe	Hayır				
 kendigelen					SIFAT	sıfat				Türkçe	Hayır				
+kendiliğinden					ZARF	zarf, ekfiil_alır									
 kendir					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 kendirgiller					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 kendirik	kendiriğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
@@ -12943,6 +13197,7 @@ kesel					ISIM	isim				Arapça	Hayır
 kesele	keseli				FIIL	fiil									
 kesene					ISIM	isim				Türkçe	Hayır				
 kesenek	keseneğ				ISIM	isim	R_YUMUSAMA_kğ	ği	ekonomi	Türkçe	Hayır				
+keser					ISIM	isim									
 kesif					SIFAT	sıfat				Arapça	Hayır				
 kesik	kesiğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 kesim					ISIM	isim									
@@ -13052,6 +13307,7 @@ kılıçkuyruk	kılıçkuyruğ				ISIM	isim	R_YUMUSAMA_kğ	ğu	hayvan bilimi	Tü
 kılıçla	kılıçlı				FIIL	fiil				Türkçe					
 kılıf					ISIM	isim				Arapça	Hayır				
 kılıfla	kılıflı				FIIL	fiil									
+kılık	kılığ				ISIM	isim	R_YUMUSAMA_kğ								
 kılır					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 kılkapan					ISIM	isim				Türkçe	Hayır				
 kılkıran					ISIM	isim			tıp	Türkçe	Hayır				
@@ -13226,6 +13482,7 @@ kıvır	kıvr				FIIL	fiil, ettirgen_t	R_DUSME_SON_UNLU_EDILGEN			Türkçe	Hayı
 kıvırcık	kıvırcığ				ISIM	isim	R_YUMUSAMA_kğ	ğı	hayvan bilimi	Türkçe	Hayır				
 kıvra	kıvrı			F	FIIL	fiil				Türkçe	Hayır			Hayır	
 kıvracık	kıvracığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
+kıvrak	kıvrağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 kıvran					FIIL	fiil				Türkçe					
 kıvrantı					ISIM	isim				Türkçe	Hayır				
 kıvrat					FIIL	fiil				Türkçe					
@@ -13261,6 +13518,7 @@ kıymetiharbiye					ISIM	isim				Arapça	Hayır
 kıymetlen					FIIL	fiil									
 kıymettar					SIFAT	sıfat				Ar-Fa	Hayır				
 kıymık	kıymığ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
+kıytırık	kıytırığ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 kıyye					ISIM	isim				Arapça	Hayır				
 kız					ISIM	isim				Türkçe	Hayır				
 kız					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Hayır	
@@ -13342,6 +13600,7 @@ kilizman					ISIM	isim					Hayır
 kille	killi				FIIL	fiil									
 kilo					ISIM	isim			matematik	Fransızca	Hayır				
 kiloamper					ISIM	isim			fizik	Fransızca	Hayır				
+kilobayt					ISIM	isim			bilgisayar						
 kilogram					ISIM	isim			matematik	Fransızca	Hayır				
 kilogramağırlık	kilogramağırlığ				ISIM	isim	R_YUMUSAMA_kğ	ğı	fizik		Hayır				
 kilogramkuvvet					ISIM	isim			fizik		Hayır				
@@ -13512,6 +13771,7 @@ koç					ISIM	isim			spor	İngilizce	Hayır
 Koç					OZEL	özel			gök bilimi/burç	Türkçe	Evet				
 koç				F	FIIL	fiil, genis_Ar		ar		Türkçe	Hayır			Evet	
 koçak	koçağ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
+koçan					ISIM	isim									
 Koçarlı					OZEL	özel			ilçe	Türkçe	Evet				
 koçbaş					TAMLAMA	isim				Türkçe	Hayır				
 koçboynuz					TAMLAMA	isim			denizcilik	Türkçe	Hayır				
@@ -13542,6 +13802,7 @@ kokain					ISIM	isim			kimya	Fransızca	Hayır
 kokainman					ISIM	isim				Fransızca	Hayır				
 kokainomani					ISIM	isim				Fransızca	Hayır				
 kokak	kokağ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
+kokarca					ISIM	isim									
 kokart	kokard				ISIM	isim	R_YUMUSAMA_td	dı	askerlik	Fransızca	Hayır				
 koket					SIFAT	sıfat				Fransızca	Hayır				
 koketri					ISIM	isim				Fransızca	Hayır				
@@ -13587,6 +13848,7 @@ kolera					ISIM	isim			tıp	Fransızca	Hayır
 kolesterol		kólesteról			ISIM	isim	D_OZEL_INCELME_O	lü	tıp	Fransızca	Hayır				
 kolhoz					ISIM	isim				Rusça	Hayır				
 koli					ISIM	isim				Fransızca	Hayır				
+kolibasil					TAMLAMA	isim									
 kolibri					ISIM	isim			hayvan bilimi	Fransızca	Hayır				
 kolibrigiller					ISIM	isim			hayvan bilimi		Hayır				
 kolik	koliğ				ISIM	isim	R_YUMUSAMA_kğ	ği	tıp	Fransızca	Hayır				
@@ -13904,6 +14166,7 @@ koşin					ISIM	isim			hayvan bilimi	İngilizce	Hayır
 koşnil					ISIM	isim			hayvan bilimi	Fransızca	Hayır				
 koştur					FIIL	fiil				Türkçe					
 koşu					ISIM	isim			spor	Türkçe	Hayır				
+koşuk	koşuğ				ISIM	isim	R_YUMUSAMA_kğ								
 koşul					ISIM	isim				Türkçe	Hayır				
 koşulla	koşullu				FIIL	fiil				Türkçe					
 koşum					ISIM	isim									
@@ -13994,6 +14257,7 @@ kökle	kökli				FIIL	fiil				Türkçe
 kökle	kökli				FIIL	fiil				Türkçe					
 köklen					FIIL	fiil				Türkçe					
 köknar					ISIM	isim			bitki bilimi	Rumca	Hayır				
+köktenci					ISIM	isim									
 kökteş					SIFAT	sıfat			dil bilgisi	Türkçe	Hayır				
 Köktürk					OZEL	özel			tarih	Türkçe	Evet				
 kölçer					ISIM	isim			bitki bilimi	Türkçe	Hayır				
@@ -14071,6 +14335,7 @@ kötü					SIFAT	sıfat				Türkçe	Hayır
 kötücül					SIFAT	sıfat				Türkçe	Hayır				
 kötüle	kötülü				FIIL	fiil				Türkçe					
 kötümse	kötümsü				FIIL	fiil				Türkçe	Hayır			Evet	
+kötümser					SIFAT	sıfat									
 kötürüm					SIFAT	sıfat				Türkçe	Hayır				
 köy					ISIM	isim				Farsça	Hayır				
 Köyceğiz					OZEL	özel			ilçe		Evet				
@@ -14199,6 +14464,7 @@ kuka					ISIM	isim				Rumca	Hayır
 kukla					ISIM	isim				Rumca	Hayır				
 kuklavari					SIFAT	sıfat				Rumca	Hayır				
 kukuleta					ISIM	isim				İtalyanca	Hayır				
+kukumav					ISIM	isim									
 kul					ISIM	isim				Türkçe	Hayır				
 kula					ISIM	isim				Türkçe	Hayır				
 Kula					OZEL	özel			ilçe	Türkçe	Evet				
@@ -14345,6 +14611,7 @@ kurula	kurulu				FIIL	fiil				Türkçe
 kurultay					ISIM	isim				Moğolca	Hayır				
 kurulu					SIFAT	sıfat				Türkçe	Hayır				
 kurulum					ISIM	isim									
+kuruluş					ISIM	isim									
 kurum					ISIM	isim				Türkçe	Hayır				
 kurum					ISIM	isim									
 kurum					ISIM	isim									
@@ -14531,7 +14798,9 @@ küre					ISIM	isim			matematik	Arapça	Hayır
 küre					ISIM	isim			madencilik	Türkçe	Hayır				
 Küre					OZEL	özel			ilçe	Türkçe	Evet				
 küre	kürü				FIIL	fiil				Türkçe	Hayır	E		Evet	
+kürek	küreğ				ISIM	isim	R_YUMUSAMA_kğ								
 kürele	küreli				FIIL	fiil				Türkçe					
+küreselleşme					ISIM	isim, kök_değil									
 kürevi					SIFAT	sıfat				Arapça	Hayır				
 kürit					ISIM	isim			kimya	Fransızca	Hayır				
 küriyum					ISIM	isim			kimya	Fransızca	Hayır				
@@ -14645,9 +14914,11 @@ laka					ISIM	isim				İtalyanca	Hayır
 lakap	lakab				ISIM	isim	R_YUMUSAMA_pb	bı		Arapça	Hayır				
 lakaydi					ISIM	isim				Arapça	Hayır				
 lakayıt	lakayd				SIFAT	sıfat	R_YUMUSAMA_td	ydı		Arapça	Hayır				
+lakayt					SIFAT	sıfat									
 Lakça					ISIM	isim, sıfat			lisan		Evet				
 lake					SIFAT	sıfat				Fransızca	Hayır				
 lakerda					ISIM	isim				Rumca	Hayır				
+lakırdı					ISIM	isim									
 lakırtı					ISIM	isim				Türkçe	Hayır				
 lakin					BAGLAC	bağlaç				Arapça	Hayır				
 laklak	laklağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Arapça	Hayır				
@@ -15209,6 +15480,7 @@ mahsup	mahsub				SIFAT	sıfat	R_YUMUSAMA_pb	bu		Arapça	Hayır
 mahsur					SIFAT	sıfat				Arapça	Hayır				
 mahsus					SIFAT	sıfat				Arapça	Hayır				
 mahsus					SIFAT	sıfat				Arapça	Hayır				
+mahsusçuktan					ZARF	zarf									
 mahsusen					ZARF	zarf				Arapça	Hayır				
 mahşer					ISIM	isim			din bilgisi	Arapça	Hayır				
 mahşeri		mahşerî			SIFAT	sıfat, şapkasız	D_SAPKA_DUSUR_I			Arapça	Hayır				
@@ -16340,8 +16612,8 @@ mikser					ISIM	isim				İngilizce	Hayır
 miktar					ISIM	isim				Arapça	Hayır				
 mikyas					ISIM	isim				Arapça	Hayır				
 mil					ISIM	isim				Rumca	Hayır				
-mil					ISIM	isim				Arapça	Hayır				
-mil					ISIM	isim			matematik	Fransızca	Hayır				
+mil				F	ISIM	isim				Arapça	Hayır				
+mil				F	ISIM	isim			matematik	Fransızca	Hayır				
 miladi					SIFAT	sıfat				Arapça	Hayır				
 Milas		Milâs			OZEL	özel, şapkasız	D_SAPKA_DUSUR_A		ilçe		Evet				
 Milâs					OZEL	özel, şapkalı			ilçe		Evet				
@@ -16514,6 +16786,7 @@ Moğolca					ISIM	isim, sıfat			lisan		Evet
 Moğolistan					OZEL	özel			ülke						
 moher					ISIM	isim				Fransızca	Hayır				
 moka					ISIM	isim					Hayır				
+mokasen					ISIM	isim									
 mola					ISIM	isim				İtalyanca	Hayır				
 molas					ISIM	isim			jeoloji	Fransızca	Hayır				
 Moldova					OZEL	özel			ülke		Evet				
@@ -16579,6 +16852,7 @@ morina					ISIM	isim			hayvan bilimi	İngilizce	Hayır
 Moritanya					OZEL	özel			ülke		Evet				
 morkaraman					ISIM	isim			hayvan bilimi	Er-Tr	Hayır				
 mormenekşe					ISIM	isim			bitki bilimi	Er-Fa	Hayır				
+morötesi					SIFAT	sıfat									
 mors					ISIM	isim			hayvan bilimi	Fransızca	Hayır				
 Mors					OZEL	özel				Fransızca	Evet				
 morsgiller					ISIM	isim			hayvan bilimi		Hayır				
@@ -17906,6 +18180,7 @@ nite					ZARF	zarf				Türkçe	Hayır
 nitekim					ZARF	zarf				Türkçe	Hayır				
 nitel					SIFAT	sıfat				Türkçe	Hayır				
 nitele	niteli				FIIL	fiil				Türkçe	Hayır	E		Evet	
+nitelen					FIIL	fiil									
 nitelik	niteliğ				ISIM	isim	R_YUMUSAMA_kğ								
 nitramit					ISIM	isim			mineraloji	Fransızca	Hayır				
 nitrat					ISIM	isim			kimya	Fransızca	Hayır				
@@ -18006,6 +18281,7 @@ nükleik					ISIM	isim			kimya	Fransızca	Hayır
 nükleon					ISIM	isim			fizik	Fransızca	Hayır				
 nükleoprotein					ISIM	isim			kimya	Fransızca	Hayır				
 nüks					ISIM	isim				Arapça	Hayır				
+nükset	nüksed				FIIL	fiil, genis_Ar	R_YUMUSAMA_td								
 nükte					ISIM	isim				Arapça	Hayır				
 nüktedan					SIFAT	sıfat				Ar-Fa	Hayır				
 nükul		nükûl			ISIM	isim, şapkasız	D_SAPKA_DUSUR_U	lü	hukuk	Arapça	Hayır				
@@ -18021,6 +18297,7 @@ nüve					ISIM	isim				Arapça	Hayır
 nüzul		nüzúl			ISIM	isim	D_OZEL_INCELME_U	lü		Arapça	Hayır				
 o					UNLEM	ünlem				Türkçe	Hayır				
 o				F	SIFAT	sıfat				Türkçe	Hayır				
+o					ZAMIR_SAHIS_O	zamir	F_OZEL_o								
 oba					ISIM	isim				Türkçe	Hayır				
 obabaşı					ISIM	isim				Türkçe	Hayır				
 obelisk					ISIM	isim				Fransızca	Hayır				
@@ -18132,6 +18409,7 @@ olağan					SIFAT	sıfat				Türkçe	Hayır
 olağanüstü					SIFAT	sıfat				Türkçe	Hayır				
 olamaz					SIFAT	sıfat, kök_değil									
 olanak	olanağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
+olası					SIFAT	sıfat									
 olay					ISIM	isim				Türkçe	Hayır				
 olçum					ISIM	isim				Türkçe	Hayır				
 oldubitti					ISIM	isim				Türkçe	Hayır				
@@ -18154,6 +18432,7 @@ olmaz					SIFAT	sıfat, kök_değil
 olta					ISIM	isim				Rumca	Hayır				
 Oltu					OZEL	özel			ilçe		Evet				
 oluk	oluğ				ISIM	isim	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır				
+olum					ISIM	isim									
 olumlu					SIFAT	sıfat				Türkçe	Hayır				
 olumsuz					SIFAT	sıfat									
 olupbitti					ISIM	isim				Türkçe	Hayır				
@@ -18176,7 +18455,6 @@ omurilik	omuriliğ				ISIM	isim	R_YUMUSAMA_kğ	ği	anatomi	Mo-Tr	Hayır
 omuz	omz				ISIM	isim	R_DUSME_SON_UNLU	mzu, -uzu	anatomi	Türkçe	Hayır				
 omuzdaş					ISIM	isim				Türkçe	Hayır				
 omuzla	omuzlu				FIIL	fiil				Türkçe					
-o					ZAMIR_SAHIS_O	zamir	F_OZEL_o								
 on					SAYI	sayı									
 on					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Hayır	
 ona	onu				FIIL	fiil				Türkçe	Hayır	E		Evet	
@@ -18191,6 +18469,7 @@ onbaşı					ISIM	isim		yı	askerlik	Türkçe	Hayır
 onbeşli					SIFAT	sıfat			tarih	Türkçe	Hayır				
 onbiraylık	onbiraylığ				ISIM	isim	R_YUMUSAMA_kğ	ğı	bitki bilimi	Türkçe	Hayır				
 onculayın					ZARF	zarf				Türkçe	Hayır				
+ondalık	ondalığ				ISIM	isim	R_YUMUSAMA_kğ								
 Ondokuzmayıs					OZEL	özel			ilçe	Tr-La	Evet				
 ondörtlük	ondörtlüğ				ISIM	isim	R_YUMUSAMA_kğ	ğü		Türkçe	Hayır				
 ondülatör					ISIM	isim				Fransızca	Hayır				
@@ -18345,6 +18624,7 @@ otala	otalı			F	FIIL	fiil				Türkçe	Hayır			Evet
 otantik	otantiğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Fransızca	Hayır				
 otar				F	FIIL	fiil, ettirtgen_t				Türkçe	Hayır			Evet	
 otarsi					ISIM	isim				Fransızca	Hayır				
+otarşi					ISIM	isim									
 otçul					SIFAT	sıfat			hayvan bilimi	Türkçe	Hayır				
 otel					ISIM	isim				Fransızca	Hayır				
 otelgarni					ISIM	isim				Fransızca	Hayır				
@@ -18352,6 +18632,7 @@ otist					ISIM	isim			ruh bilimi	Fransızca	Hayır
 otistik	otistiğ				SIFAT	sıfat	R_YUMUSAMA_kğ		ruh bilimi	Fransızca	Hayır				
 otizm					ISIM	isim			ruh bilimi	Fransızca	Hayır				
 otla	otlu				FIIL	fiil				Türkçe					
+otlak	otlağ				ISIM	isim	R_YUMUSAMA_kğ								
 otlakiye					ISIM	isim			tarih	Tr-Ar	Hayır				
 Otlukbeli					OZEL	özel			ilçe	Türkçe	Evet				
 otoban					ISIM	isim				Almanca	Hayır				
@@ -18410,6 +18691,7 @@ overlok	overloğ				ISIM	isim	R_YUMUSAMA_kğ	ğu		İngilizce	Hayır
 ovmaç	ovmac				ISIM	isim	R_YUMUSAMA_çc	cı		Türkçe	Hayır				
 ovogon					ISIM	isim			biyoloji	Fransızca	Hayır				
 ovolit					ISIM	isim			jeoloji	Fransızca	Hayır				
+ovuştur					FIIL	fiil									
 oy					ISIM	isim				Türkçe	Hayır				
 oy					UNLEM	ünlem				Türkçe	Hayır				
 oy					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Evet	
@@ -18421,14 +18703,18 @@ oydaş				F	FIIL	fiil				Türkçe	Hayır			Hayır
 oyla	oylu				FIIL	fiil				Türkçe					
 oylum					SIFAT	sıfat				Türkçe	Hayır				
 oylumla	oylumlu				FIIL	fiil				Türkçe					
+oyma					ISIM	isim, sıfat									
 oymak	oymağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Moğolca	Hayır				
 oymak	oymağ				ISIM	isim	R_YUMUSAMA_kğ	ğı	gök bilimi		Hayır				
 oymakbaş					TAMLAMA	isim				Mo-Tr	Hayır				
 oyna	oynı				FIIL	fiil				Türkçe	Hayır	E		Hayır	
+oynak	oynağ				ISIM	isim	R_YUMUSAMA_kğ								
 oynaş					FIIL	fiil				Türkçe					
+oynaş					ISIM	isim									
 oynatım					ISIM	isim									
 oysa					BAGLAC	bağlaç				Türkçe	Hayır				
 oysaki					BAGLAC	bağlaç				Türkçe	Hayır				
+oyuk	oyuğ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
 oyulga					ISIM	isim				Türkçe	Hayır				
 oyulga	oyulgı			F	FIIL	fiil				Türkçe	Hayır			Evet	
 oyulgala	oyulgalı			F	FIIL	fiil				Türkçe	Hayır			Evet	
@@ -18468,6 +18754,7 @@ ozuga					ISIM	isim			bitki bilimi		Hayır
 ödeş					FIIL	fiil									
 ödev					ISIM	isim				Türkçe	Hayır				
 ödevcil					SIFAT	sıfat				Türkçe	Hayır				
+ödlek	ödleğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 ödül					ISIM	isim				Türkçe	Hayır				
 ödün					ISIM	isim				Türkçe	Hayır				
 ödünç	ödünc				ISIM	isim	R_YUMUSAMA_çc	cü		Türkçe	Hayır				
@@ -18547,6 +18834,7 @@ ozuga					ISIM	isim			bitki bilimi		Hayır
 ömür	ömr				ISIM	isim	R_DUSME_SON_UNLU	mrü		Arapça	Hayır				
 ön					ISIM	isim				Türkçe	Hayır				
 önayak	önayağ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
+önbellek	önbelleğ				ISIM	isim	R_YUMUSAMA_kğ								
 önce					ISIM	isim, zaman									
 öncel					ISIM	isim				Türkçe	Hayır				
 öncele	önceli				FIIL	fiil				Türkçe					
@@ -18564,6 +18852,7 @@ ozuga					ISIM	isim			bitki bilimi		Hayır
 öngör					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
 öngörü					ISIM	isim				Türkçe	Hayır				
 önle	önli				FIIL	fiil				Türkçe					
+önlem					ISIM	isim									
 önoloji					ISIM	isim				İngilizce	Hayır				
 önsezi					ISIM	isim				Türkçe	Hayır				
 öp					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Evet	
@@ -18578,6 +18867,7 @@ ozuga					ISIM	isim			bitki bilimi		Hayır
 ördür					FIIL	fiil				Türkçe					
 örek	öreğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 öreke					ISIM	isim				Türkçe	Hayır				
+örenlik	örenliğ				ISIM	isim	R_YUMUSAMA_kğ								
 örf					ISIM	isim				Arapça	Hayır				
 örfi					SIFAT	sıfat				Arapça	Hayır				
 örge					ISIM	isim				Türkçe	Hayır				
@@ -18603,6 +18893,7 @@ ozuga					ISIM	isim			bitki bilimi		Hayır
 örtüş					FIIL	fiil				Türkçe	Hayır				
 örü					ISIM	isim				Türkçe	Hayır				
 örü					ISIM	isim				Türkçe	Hayır				
+örük	örüğ				ISIM	isim	R_YUMUSAMA_kğ								
 örükle	örükli				FIIL	fiil				Türkçe					
 örüm					ISIM	isim									
 örümce					ISIM	isim				Türkçe	Hayır				
@@ -18615,10 +18906,12 @@ ozuga					ISIM	isim			bitki bilimi		Hayır
 ötanazi					ISIM	isim				Fransızca	Hayır				
 öte					ISIM	isim				Türkçe	Hayır				
 öteberi					ISIM	isim				Türkçe	Hayır				
+öteki					SIFAT	sıfat									
 ötleğen					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 ötleğengiller					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 ötleği					ISIM	isim				Türkçe	Hayır				
 ötre					ISIM	isim				Türkçe	Hayır				
+ötüm					ISIM	isim									
 ötür				F	FIIL	fiil, ettirtgen_t				Türkçe	Hayır			Hayır	
 ötürü					ZARF	zarf, ekfiil_alır				Türkçe	Hayır				
 ötürük	ötürüğ				ISIM	isim	R_YUMUSAMA_kğ	ğü		Türkçe	Hayır				
@@ -18649,11 +18942,15 @@ ozuga					ISIM	isim			bitki bilimi		Hayır
 özdeş					SIFAT	sıfat				Türkçe	Hayır				
 özdeşle	özdeşli				FIIL	fiil				Türkçe					
 özdeştir				F	FIIL	fiil, ettirtgen_t				Türkçe	Hayır			Evet	
+özdevinim					ISIM	isim									
 özdeyiş					ISIM	isim				Türkçe	Hayır				
 öze					ISIM	isim				Türkçe	Hayır				
 öze	özü			F	FIIL	fiil				Türkçe	Hayır			Evet	
 özek	özeğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 özel					SIFAT	sıfat				Türkçe	Hayır				
+özeleştiri					ISIM	isim									
+özeleştirim					ISIM	isim									
+özelleştirme					ISIM	isim, kök_değil									
 özen					ISIM	isim				Türkçe	Hayır				
 özen					FIIL	fiil				Türkçe	Hayır		E	Hayır	
 özenç	özenc				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
@@ -18676,8 +18973,10 @@ ozuga					ISIM	isim			bitki bilimi		Hayır
 özlenti					ISIM	isim				Türkçe	Hayır				
 özne					ISIM	isim			dil bilgisi	Türkçe	Hayır				
 öznel					SIFAT	sıfat				Türkçe	Hayır				
+öznitelik	özniteliğ				ISIM	isim	R_YUMUSAMA_kğ								
 özsever					SIFAT	sıfat			ruh bilimi	Türkçe	Hayır				
 özümle	özümli			F	FIIL	fiil			biyoloji	Türkçe	Hayır			Evet	
+özümle	özümlü				FIIL	fiil									
 özümse	özümsi				FIIL	fiil				Türkçe	Hayır	E		Evet	
 özünlü					SIFAT	sıfat			felsefe	Türkçe	Hayır				
 özür	özr				ISIM	isim	R_DUSME_SON_UNLU	zrü		Arapça	Hayır				
@@ -18763,6 +19062,7 @@ panda					ISIM	isim			hayvan bilimi	İngilizce	Hayır
 pandantif					ISIM	isim				Fransızca	Hayır				
 pandispanya					ISIM	isim				İtalyanca	Hayır				
 pandomim					ISIM	isim			tiyatro	Fransızca	Hayır				
+pandomima					ISIM	isim									
 pandül					ISIM	isim			fizik	Fransızca	Hayır				
 panel					ISIM	isim				Fransızca	Hayır				
 panelist					SIFAT	sıfat				Fransızca	Hayır				
@@ -18881,6 +19181,7 @@ parkmetre					ISIM	isim				İngilizce	Hayır
 parkometre					ISIM	isim				Fransızca	Hayır				
 parkur					ISIM	isim				Fransızca	Hayır				
 parla	parlı				FIIL	fiil				Türkçe	Hayır	E		Hayır	
+parlak	parlağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 parlamentarizm					ISIM	isim				Fransızca	Hayır				
 parlamenter					ISIM	isim				Fransızca	Hayır				
 parlamento					ISIM	isim				İtalyanca	Hayır				
@@ -18902,7 +19203,7 @@ partal					SIFAT	sıfat				Türkçe	Hayır
 partenogenez					ISIM	isim			biyoloji	Fransızca	Hayır				
 parter					ISIM	isim				Fransızca	Hayır				
 parti					ISIM	isim				Fransızca	Hayır				
-parti					ISIM	isim				Fransızca	Hayır				
+parti				F	ISIM	isim				Fransızca	Hayır				
 partikül					ISIM	isim			fizik	Fransızca	Hayır				
 partisip	partisib				ISIM	isim	R_YUMUSAMA_pb	bi	dil bilgisi	Fransızca	Hayır				
 partisyon					ISIM	isim			müzik	Fransızca	Hayır				
@@ -18921,6 +19222,7 @@ pasata					ISIM	isim				Rumca	Hayır
 pasavan					ISIM	isim				Fransızca	Hayır				
 pasif					SIFAT	sıfat			felsefe	Fransızca	Hayır				
 pasifik	pasifiğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Fransızca	Hayır				
+pasifist					SIFAT	sıfat									
 Pasinler					OZEL	özel			ilçe		Evet				
 pasivize					SIFAT	sıfat				Fransızca	Hayır				
 pasiyans					ISIM	isim				Fransızca	Hayır				
@@ -18979,6 +19281,7 @@ patika					ISIM	isim				Bulgarca	Hayır
 patinaj					ISIM	isim			spor	Fransızca	Hayır				
 patiska					ISIM	isim				İtalyanca	Hayır				
 patla	patlı				FIIL	fiil				Türkçe					
+patlak	patlağ				ISIM	isim	R_YUMUSAMA_kğ								
 patlangaç	patlangac				ISIM	isim	R_YUMUSAMA_çc	cı		Türkçe	Hayır				
 patlıcan					ISIM	isim			bitki bilimi	Arapça	Hayır				
 patlıcangiller					ISIM	isim			bitki bilimi		Hayır				
@@ -19258,6 +19561,7 @@ peyzaj					ISIM	isim				Fransızca	Hayır
 pezevenk	pezeveng				ISIM	isim	R_YUMUSAMA_kg	gi		Farsça	Hayır				
 pıhtı					ISIM	isim				Farsça	Hayır				
 pıhtılan					FIIL	fiil									
+pıl					ISIM	ikileme									
 pınar					ISIM	isim				Türkçe	Hayır				
 Pınarbaşı					OZEL	özel			ilçe	Türkçe	Evet				
 Pınarhisar					OZEL	özel			ilçe	Tr-Ar	Evet				
@@ -19279,6 +19583,7 @@ pırpırla	pırpırlı				FIIL	fiil				Türkçe
 pırpıt					SIFAT	sıfat				Rumca	Hayır				
 pırt					YANSIMA	yansıma				Türkçe	Hayır				
 pırt				F	FIIL	fiil				Türkçe	Hayır			Hayır	
+pırt					ISIM	ikileme									
 pırtı					ISIM	isim				Türkçe	Hayır				
 pırtla	pırtlı				FIIL	fiil				Türkçe					
 pıs					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Hayır	
@@ -19315,6 +19620,7 @@ pikolo					ISIM	isim			bitki bilimi	İtalyanca	Hayır
 pil					ISIM	isim				Fransızca	Hayır				
 pilaki					ISIM	isim				Rumca	Hayır				
 pilav					ISIM	isim				Farsça	Hayır				
+pile					ISIM	isim									
 pili					ISIM	isim				Fransızca	Hayır				
 piliç	pilic				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
 pilot					ISIM	isim				Fransızca	Hayır				
@@ -19381,9 +19687,12 @@ pişek	pişeğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır
 Pişekar		Pişekâr			OZEL	özel, şapkasız	D_SAPKA_DUSUR_A		geleneksel tiyatro	Farsça	Evet				
 Pişekâr					OZEL	özel, şapkalı			geleneksel tiyatro	Farsça	Evet				
 pişi					ISIM	isim				Türkçe	Hayır				
+pişik	pişiğ				ISIM	isim	R_YUMUSAMA_kğ								
+pişik	pişiğ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
 pişim					ISIM	isim									
 pişir					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
 pişirgeç	pişirgec				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
+pişirim					ISIM	isim									
 pişkin					SIFAT	sıfat				Türkçe	Hayır				
 pişman					SIFAT	sıfat				Farsça	Hayır				
 pişmaniye					ISIM	isim				Farsça	Hayır				
@@ -19607,6 +19916,7 @@ pöçük	pöçüğ				ISIM	isim	R_YUMUSAMA_kğ	ğü		Türkçe	Hayır
 pöf					UNLEM	ünlem				Türkçe	Hayır				
 pöhrenk	pöhreng				ISIM	isim	R_YUMUSAMA_kg	gi		Ermenice	Hayır				
 pörsü					FIIL	fiil				Türkçe	Hayır	E		Hayır	
+pörsük	pörsüğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 pörtle	pörtlü				FIIL	fiil				Türkçe					
 pösteki					ISIM	isim				Farsça	Hayır				
 pötibör					ISIM	isim				Fransızca	Hayır				
@@ -19796,6 +20106,7 @@ püskür					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet
 püskürteç	püskürtec				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
 püskürtü					ISIM	isim			jeoloji	Türkçe	Hayır				
 püskürük	püskürüğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğü		Türkçe	Hayır				
+püsle	püslü				FIIL	ikileme									
 püstül					ISIM	isim			tıp	Türkçe	Hayır				
 püsür					ISIM	isim				Türkçe	Hayır				
 püsürüklük	püsürüklüğ				ISIM	isim	R_YUMUSAMA_kğ	ğü		Türkçe	Hayır				
@@ -20109,6 +20420,7 @@ reyhan					ISIM	isim			bitki bilimi	Arapça	Hayır
 reyhani					SIFAT	sıfat				Arapça	Hayır				
 Reyhanlı					OZEL	özel			ilçe		Evet				
 reyon					ISIM	isim				Fransızca	Hayır				
+reyting					ISIM	isim									
 rezalet					ISIM	isim				Arapça	Hayır				
 reze					ISIM	isim				Arapça	Hayır				
 rezede					ISIM	isim			bitki bilimi	Latince	Hayır				
@@ -20416,8 +20728,9 @@ sağır					SIFAT	sıfat				Türkçe	Hayır
 sağistem					ISIM	isim				Türkçe	Hayır				
 sağkol					ISIM	isim				Türkçe	Hayır				
 sağla	sağlı				FIIL	fiil				Türkçe	Hayır				
-sağla	sağlı				FIIL	fiil				Türkçe					
-sağla	sağlı				FIIL	fiil				Türkçe					
+sağla	sağlı			F	FIIL	fiil				Türkçe					
+sağla	sağlı			F	FIIL	fiil				Türkçe					
+sağlam					SIFAT	sıfat									
 sağlamla	sağlamlı				FIIL	fiil				Türkçe					
 sağlıcakla					ZARF	zarf				Türkçe	Hayır				
 sağlıkev					TAMLAMA	isim				Türkçe	Hayır				
@@ -20436,6 +20749,8 @@ sahan					ISIM	isim				Arapça	Hayır
 sahavet					ISIM	isim				Arapça	Hayır				
 sahi					ZARF	zarf				Arapça	Hayır				
 sahibe					ISIM	isim				Arapça	Hayır				
+sahici					SIFAT	sıfat									
+sahiden					ZARF	zarf									
 sahife					ISIM	isim				Arapça	Hayır				
 sahih					SIFAT	sıfat				Arapça	Hayır				
 sahil					ISIM	isim				Arapça	Hayır				
@@ -20546,6 +20861,7 @@ salgıla	salgılı				FIIL	fiil			biyoloji	Türkçe
 salgın					SIFAT	sıfat				Türkçe	Hayır				
 salhane					ISIM	isim				Ar-Fa	Hayır				
 salı					ISIM	isim				Türkçe	Hayır				
+salık	salığ				ISIM	isim	R_YUMUSAMA_kğ								
 salın					FIIL	fiil				Türkçe					
 salıncak	salıncağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 salınım					ISIM	isim									
@@ -20788,6 +21104,7 @@ sarmal					SIFAT	sıfat			fizik	Türkçe	Hayır
 sarmala	sarmalı				FIIL	fiil				Türkçe					
 sarman					SIFAT	sıfat				Türkçe	Hayır				
 sarmaş				F	FIIL	fiil				Türkçe	Hayır			Hayır	
+sarmaşık	sarmaşığ				ISIM	isim	R_YUMUSAMA_kğ								
 sarmaşıkgiller					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 sarmısak	sarmısağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 sarnıç	sarnıc				ISIM	isim	R_YUMUSAMA_çc	cı		Arapça	Hayır				
@@ -20927,9 +21244,10 @@ seç					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Evet
 seçal					ISIM	isim				Türkçe	Hayır				
 seçenek	seçeneğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 seçi					ISIM	isim				Türkçe	Hayır				
+seçik	seçiğ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
 seçil					FIIL	fiil				Türkçe					
 seçim					ISIM	isim									
-seçim					ISIM	isim									
+seçim				F	ISIM	isim									
 seçki					ISIM	isim				Türkçe	Hayır				
 seçkin					SIFAT	sıfat				Türkçe	Hayır				
 seçmen					ISIM	isim				Türkçe	Hayır				
@@ -21349,6 +21667,7 @@ sığamsal					SIFAT	sıfat			biyoloji	Türkçe	Hayır
 sığın					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 sığın					FIIL	fiil				Türkçe					
 sığınak	sığınağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
+sığınık	sığınığ				ISIM	isim	R_YUMUSAMA_kğ								
 sığıntı					ISIM	isim				Türkçe	Hayır				
 sığır					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 sığırdil					TAMLAMA	isim			bitki bilimi	Türkçe	Hayır				
@@ -21410,6 +21729,7 @@ sır					ISIM	isim				Türkçe	Hayır
 sıra					ISIM	isim				Türkçe	Hayır				
 sıracagiller					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 sıradağ					ISIM	isim			coğrafya	Türkçe	Hayır				
+sıradan					SIFAT	sıfat									
 sırala	sıralı				FIIL	fiil				Türkçe					
 sıralaç	sıralac				ISIM	isim	R_YUMUSAMA_çc	cı		Türkçe	Hayır				
 sırat					ISIM	isim				Arapça	Hayır				
@@ -21467,6 +21787,8 @@ sıygı					ISIM	isim				Türkçe	Hayır
 sıyır	sıyr				FIIL	fiil, ettirgen_t	R_DUSME_SON_UNLU_EDILGEN			Türkçe	Hayır		E	Evet	
 sıyırga					ISIM	isim				Türkçe	Hayır				
 sıyırgı					ISIM	isim				Türkçe	Hayır				
+sıyırık	sıyırığ				ISIM	isim	R_YUMUSAMA_kğ								
+sıyrık	sıyrığ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
 sıyrıntı					ISIM	isim				Türkçe	Hayır				
 sız					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Hayır	
 sızak	sızağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
@@ -21521,6 +21843,7 @@ sik					ISIM	isim				Türkçe	Hayır
 sik					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Evet	
 sikalar					ISIM	isim			bitki bilimi		Hayır				
 sikatif					SIFAT	sıfat			kimya	Fransızca	Hayır				
+sikiş					FIIL	fiil, isteş									
 sikke					ISIM	isim				Arapça	Hayır				
 sikke					ISIM	isim				Arapça	Hayır				
 sikke					ISIM	isim				Arapça	Hayır				
@@ -21539,6 +21862,7 @@ silahsızlan					FIIL	fiil
 silahşor					ISIM	isim				Ar-Fa	Hayır				
 silahtar					ISIM	isim			tarih	Ar-Fa	Hayır				
 silaj					ISIM	isim				Fransızca	Hayır				
+silecek	sileceğ				ISIM	isim, kök_değil	R_YUMUSAMA_kğ								
 silgeç	silgec				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
 silgi					ISIM	isim				Türkçe	Hayır				
 silgiç	silgic				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
@@ -21807,6 +22131,7 @@ Soğdca					ISIM	isim, sıfat			lisan		Evet
 soğrul					FIIL	fiil				Türkçe					
 soğrumsama					ISIM	isim			fizik	Türkçe	Hayır				
 soğu					FIIL	fiil				Türkçe	Hayır	E		Hayır	
+soğuk	soğuğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 soğukkanlı					SIFAT	sıfat				Türkçe	Hayır				
 soğukla	soğuklu				FIIL	fiil				Türkçe					
 soğul				F	FIIL	fiil				Türkçe	Hayır			Hayır	
@@ -21850,6 +22175,7 @@ solu					FIIL	fiil				Türkçe	Hayır	E		Evet
 solucan					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 soluğan					SIFAT	sıfat				Türkçe	Hayır				
 soluk	soluğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır				
+soluk	soluğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 solukla	soluklu				FIIL	fiil				Türkçe					
 soluklan					FIIL	fiil				Türkçe					
 solungaç	solungac				ISIM	isim	R_YUMUSAMA_çc	cı	hayvan bilimi	Türkçe	Hayır				
@@ -21985,6 +22311,7 @@ söve					ISIM	isim				Türkçe	Hayır
 söve					ISIM	isim			mimarlık	Fransızca	Hayır				
 söven					ISIM	isim				Türkçe	Hayır				
 sövgü					ISIM	isim				Türkçe	Hayır				
+sövüş					FIIL	fiil									
 söyle	söyli				FIIL	fiil				Türkçe	Hayır	E		Evet	
 söylem					ISIM	isim									
 söylemse	söylemsi			F	FIIL	fiil				Türkçe	Hayır			Hayır	
@@ -22150,6 +22477,7 @@ suizan	suizann				ISIM	isim	R_CIFTLESME_SON_UNSUZ	nnı		Arapça	Hayır
 sukut					ISIM	isim				Arapça	Hayır				
 sukutuhayal		sukutuhayál			ISIM	isim	D_OZEL_INCELME_A	li		Arapça	Hayır				
 sula	sulu				FIIL	fiil				Türkçe					
+sulak	sulağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 Sulakyurt					OZEL	özel		t'u	ilçe	Türkçe	Evet				
 sulantı					ISIM	isim				Türkçe	Hayır				
 sulfata					ISIM	isim				Fransızca	Hayır				
@@ -22174,6 +22502,7 @@ Sulusaray					OZEL	özel			ilçe	Tr-Fa	Evet
 suma					ISIM	isim				Rumca	Hayır				
 sumak	sumağ				ISIM	isim	R_YUMUSAMA_kğ	ğı	bitki bilimi	Arapça	Hayır				
 Sumbas					OZEL	özel			ilçe		Evet				
+sumo					ISIM	isim			spor						
 sumsuk	sumsuğ				ISIM	isim	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır				
 sumsukla	sumsuklu				FIIL	fiil				Türkçe					
 sun					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Evet	
@@ -22322,6 +22651,7 @@ sürç					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Hayır
 sürçülisan					ISIM	isim				Tr-Ar	Hayır				
 sürdür					FIIL	fiil				Türkçe					
 sürdürüm					ISIM	isim									
+süre					ISIM	isim									
 süreç	sürec				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
 süreduran					SIFAT	sıfat			fizik	Türkçe	Hayır				
 süredurum					ISIM	isim			fizik	Türkçe	Hayır				
@@ -22353,6 +22683,7 @@ sürrealizm					ISIM	isim				Fransızca	Hayır
 sürsat					ISIM	isim			tarih	Türkçe	Hayır				
 sürşarj					ISIM	isim				Fransızca	Hayır				
 sürt					FIIL	fiil, genis_Ar		er		Türkçe					
+sürtük	sürtüğ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
 sürtün					FIIL	fiil				Türkçe					
 sürtüş					FIIL	fiil				Türkçe					
 sürur					ISIM	isim				Arapça	Hayır				
@@ -22467,6 +22798,7 @@ süzüntü					ISIM	isim				Türkçe	Hayır
 şakla	şaklı				FIIL	fiil				Türkçe					
 şaklaban					ISIM	isim				Türkçe	Hayır				
 şakra	şakrı				FIIL	fiil				Türkçe	Hayır	E		Hayır	
+şakrak	şakrağ				SIFAT	ikileme									
 şakşak	şakşağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 şakul		şakúl			ISIM	isim	D_OZEL_INCELME_U	lü	fizik	Arapça	Hayır				
 şakuli					SIFAT	sıfat				Arapça	Hayır				
@@ -22534,6 +22866,7 @@ süzüntü					ISIM	isim				Türkçe	Hayır
 şapla	şaplı				FIIL	fiil				Türkçe					
 şapla	şaplı				FIIL	fiil									
 şapla	şaplı				FIIL	fiil									
+şaplak	şaplağ				ISIM	isim	R_YUMUSAMA_kğ								
 şappadak					ZARF	zarf				Türkçe	Hayır				
 şaprak	şaprağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 şapşal					SIFAT	sıfat				Türkçe	Hayır				
@@ -22701,6 +23034,7 @@ süzüntü					ISIM	isim				Türkçe	Hayır
 şereflen					FIIL	fiil									
 Şereflikoçhisar					OZEL	özel			ilçe		Evet				
 şerefyab					SIFAT	sıfat				Ar-Fa	Hayır				
+şerefyap	şerefyab				SIFAT	sıfat	R_YUMUSAMA_pb								
 şergil					ISIM	isim					Hayır				
 şerh					ISIM	isim				Arapça	Hayır				
 şerha					ISIM	isim				Arapça	Hayır				
@@ -22900,6 +23234,7 @@ süzüntü					ISIM	isim				Türkçe	Hayır
 şövalye					ISIM	isim			tarih	Fransızca	Hayır				
 şöyle					ZARF	zarf				Türkçe	Hayır				
 şu					SIFAT	sıfat				Türkçe	Hayır				
+şu	şun				ZAMIR_ISARET	zamir	F_OZEL_o								
 şua					ISIM	isim			fizik	Arapça	Hayır				
 şuara					ISIM	isim				Arapça	Hayır				
 şubat					ISIM	isim				Arapça	Hayır				
@@ -22908,7 +23243,6 @@ süzüntü					ISIM	isim				Türkçe	Hayır
 şuh					SIFAT	sıfat				Farsça	Hayır				
 Şuhut					OZEL	özel		t'u	ilçe		Evet				
 şule					ISIM	isim				Arapça	Hayır				
-şu	şun				ZAMIR_ISARET	zamir	F_OZEL_o								
 şura					ZAMIR_ISARET_YER	zamir				Türkçe	Hayır				
 şura		şûra			ISIM	isim, şapkasız	D_SAPKA_DUSUR_U			Arapça	Hayır				
 şûra					ISIM	isim, şapkalı				Arapça	Hayır				
@@ -22960,6 +23294,7 @@ tabakhane					ISIM	isim				Ar-Fa	Hayır
 tabakla	tabaklı				FIIL	fiil									
 taban					ISIM	isim				Türkçe	Hayır				
 taban					ZARF	zarf				Arapça	Hayır				
+tabanca					ISIM	isim									
 tabanvay					ZARF	zarf				Tr-İng	Hayır				
 tabasbus					ISIM	isim				Arapça	Hayır				
 tabela					ISIM	isim				İtalyanca	Hayır				
@@ -22971,6 +23306,7 @@ tabiatüstü					SIFAT	sıfat				Ar-Tr	Hayır
 tabii					SIFAT	sıfat				Arapça	Hayır				
 tabiiyet					ISIM	isim		ti		Arapça	Hayır				
 tabildot					ISIM	isim				Fransızca	Hayır				
+tabildot    					ISIM	isim									
 tabip	tabib				ISIM	isim	R_YUMUSAMA_pb	bi		Arapça	Hayır				
 tabir					ISIM	isim				Arapça	Hayır				
 tabirname					ISIM	isim				Ar-Fa	Hayır				
@@ -23098,6 +23434,7 @@ tahteşşuur					ISIM	isim			ruh bilimi	Arapça	Hayır
 tahtırevan					ISIM	isim				Farsça	Hayır				
 tahvil					ISIM	isim				Arapça	Hayır				
 tahvilat					ISIM	isim				Arapça	Hayır				
+taife					ISIM	isim									
 tak					ISIM	isim				Türkçe	Hayır				
 tak					ISIM	isim				Arapça	Hayır				
 tak					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Evet	
@@ -23252,14 +23589,19 @@ tangır					YANSIMA	yansıma				Türkçe	Hayır
 tango					ISIM	isim			müzik	İspanyolca	Hayır				
 tanı					ISIM	isim			tıp	Türkçe	Hayır				
 tanı					FIIL	fiil				Türkçe	Hayır	E		Evet	
+tanıdık	tanıdığ				ISIM	isim	R_YUMUSAMA_kğ								
+tanık	tanığ				ISIM	isim	R_YUMUSAMA_kğ								
 tanıkla	tanıklı				FIIL	fiil				Türkçe					
 tanıla	tanılı				FIIL	fiil				Türkçe					
 tanım					ISIM	isim									
 tanımaz					SIFAT	sıfat, kök_değil									
 tanımla	tanımlı				FIIL	fiil				Türkçe					
 tanış					FIIL	fiil				Türkçe	Hayır		E	Hayır	
+tanış					ISIM	isim									
+tanışık	tanışığ				ISIM	isim	R_YUMUSAMA_kğ								
 tanıt					ISIM	isim				Türkçe	Hayır				
 tanıtı					ISIM	isim				Türkçe	Hayır				
+tanıtım					ISIM	isim									
 tanıtla	tanıtlı			F	FIIL	fiil				Türkçe	Hayır			Evet	
 tanin					ISIM	isim				Arapça	Hayır				
 tanjant					ISIM	isim			matematik	Fransızca	Hayır				
@@ -23319,6 +23661,7 @@ taraftar					ISIM	isim				Ar-Fa	Hayır
 tarak	tarağ				ISIM	isim	R_YUMUSAMA_kğ								
 tarakla	taraklı				FIIL	fiil				Türkçe					
 Taraklı					OZEL	özel			ilçe	Türkçe	Evet				
+taralı					SIFAT	sıfat									
 taranga					ISIM	isim					Hayır				
 tarantı					ISIM	isim				Türkçe	Hayır				
 tarassut	tarassud				ISIM	isim	R_YUMUSAMA_td	du		Arapça	Hayır				
@@ -23365,6 +23708,7 @@ tartıl					SIFAT	sıfat			kimya	Türkçe	Hayır
 tartıl					FIIL	fiil				Türkçe					
 tartım					ISIM	isim									
 tartış					FIIL	fiil				Türkçe	Hayır		E	Evet	
+tartışma					ISIM	isim, kök_değil									
 tartura					ISIM	isim				Türkçe	Hayır				
 tarumar					SIFAT	sıfat				Farsça	Hayır				
 tarz					ISIM	isim				Arapça	Hayır				
@@ -23527,6 +23871,7 @@ tazallüm					ISIM	isim				Arapça	Hayır
 tazammun					ISIM	isim				Arapça	Hayır				
 tazarru					ISIM	isim				Arapça	Hayır				
 taze					SIFAT	sıfat				Farsça	Hayır				
+tazecik	tazeciğ				SIFAT	sıfat									
 tazele	tazeli				FIIL	fiil									
 tazı					ISIM	isim			hayvan bilimi	Farsça	Hayır				
 tazim					ISIM	isim				Arapça	Hayır				
@@ -23644,6 +23989,7 @@ tefavüt					ISIM	isim				Arapça	Hayır
 tefcir					ISIM	isim				Arapça	Hayır				
 tefe					ISIM	isim					Hayır				
 tefehhüm					ISIM	isim				Arapça	Hayır				
+tefek	tefe, tefeğ				SIFAT	ikileme, azlık									
 tefekkür					ISIM	isim				Arapça	Hayır				
 Tefenni					OZEL	özel			ilçe		Evet				
 teferruat					ISIM	isim				Arapça	Hayır				
@@ -23713,6 +24059,7 @@ tekellüm					ISIM	isim				Arapça	Hayır
 tekemmül					ISIM	isim				Arapça	Hayır				
 teker					ISIM	isim				Türkçe	Hayır				
 tekerle	tekerli				FIIL	fiil				Türkçe					
+tekerlek	tekerleğ				ISIM	isim	R_YUMUSAMA_kğ								
 tekerrür					ISIM	isim				Arapça	Hayır				
 tekesakal					TAMLAMA	isim			bitki bilimi	Türkçe	Hayır				
 tekese	tekesi			F	FIIL	fiil				Türkçe	Hayır			Hayır	
@@ -23947,10 +24294,12 @@ tepeüstü					ZARF	zarf				Türkçe	Hayır
 tephir					ISIM	isim				Arapça	Hayır				
 tephirhane					ISIM	isim				Ar-Fa	Hayır				
 tepi					ISIM	isim			ruh bilimi	Türkçe	Hayır				
+tepik	tepiğ				ISIM	isim	R_YUMUSAMA_kğ								
 tepikle	tepikli				FIIL	fiil				Türkçe					
 tepin					FIIL	fiil				Türkçe					
 tepir					ISIM	isim				Türkçe	Hayır				
 tepirle	tepirli				FIIL	fiil				Türkçe					
+tepiş					FIIL	fiil									
 tepke					ISIM	isim			biyoloji	Türkçe	Hayır				
 tepki					ISIM	isim				Türkçe	Hayır				
 tepki					FIIL	fiil				Türkçe	Hayır	E		Hayır	
@@ -23958,6 +24307,7 @@ tepkin					SIFAT	sıfat				Türkçe	Hayır
 tepser				F	FIIL	fiil, ettirtgen_t				Türkçe	Hayır			Hayır	
 tepsi					ISIM	isim				Türkçe	Hayır				
 ter					ISIM	isim				Türkçe	Hayır				
+terabayt					ISIM	isim			bilgisayar						
 terakki					ISIM	isim				Arapça	Hayır				
 terakkiperver					SIFAT	sıfat				Ar-Fa	Hayır				
 teraküm					ISIM	isim				Arapça	Hayır				
@@ -24242,6 +24592,7 @@ tık				F	FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Evet
 tıka	tıkı				FIIL	fiil				Türkçe	Hayır	E		Evet	
 tıkaç	tıkac				ISIM	isim	R_YUMUSAMA_çc	cı		Türkçe	Hayır				
 tıkaçla	tıkaçlı				FIIL	fiil				Türkçe					
+tıkalı					SIFAT	sıfat									
 tıkanık	tıkanığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 tıkım					ISIM	isim									
 tıkın					FIIL	fiil				Türkçe					
@@ -24253,6 +24604,7 @@ tıkla	tıklı				FIIL	fiil				Türkçe
 tıknaz					SIFAT	sıfat				Türkçe	Hayır				
 tıknefes					SIFAT	sıfat				Arapça	Hayır				
 tıksır					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Hayır	
+tıksırık	tıksırığ				ISIM	isim	R_YUMUSAMA_kğ								
 tılsım					ISIM	isim				Arapça	Hayır				
 tımar					ISIM	isim				Farsça	Hayır				
 tımar					ISIM	isim			tarih		Hayır				
@@ -24298,6 +24650,7 @@ tırkaz					ISIM	isim				Türkçe	Hayır
 tırkazla	tırkazlı				FIIL	fiil				Türkçe					
 tırmala	tırmalı				FIIL	fiil				Türkçe	Hayır	E		Evet	
 tırman					FIIL	fiil				Türkçe	Hayır		E	Hayır	
+tırmanış					ISIM	isim									
 tırmık	tırmığ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 tırmıkla	tırmıklı				FIIL	fiil				Türkçe					
 tırnak	tırnağ				ISIM	isim	R_YUMUSAMA_kğ	ğı	anatomi	Türkçe	Hayır				
@@ -24389,10 +24742,12 @@ tiryak					ISIM	isim				Arapça	Hayır
 tiryaki					SIFAT	sıfat				Arapça	Hayır				
 tişört					ISIM	isim				İngilizce	Hayır				
 titan					ISIM	isim			kimya	Fransızca	Hayır				
+titanyum					ISIM	isim									
 titiz					SIFAT	sıfat				Türkçe	Hayır				
 titizlen					FIIL	fiil				Türkçe					
 titr					ISIM	isim				Fransızca	Hayır				
 titre	titri				FIIL	fiil				Türkçe	Hayır	E		Hayır	
+titrek	titreğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 titrem					ISIM	isim									
 titremle	titremli				FIIL	fiil				Türkçe					
 titreş					FIIL	fiil				Türkçe					
@@ -24429,6 +24784,7 @@ tokur					YANSIMA	yansıma				Türkçe	Hayır
 tokurcun					ISIM	isim				Türkçe	Hayır				
 tokurda	tokurdı				FIIL	fiil				Türkçe					
 tokuş					FIIL	fiil				Türkçe	Hayır		E	Hayır	
+tokuş					ISIM	ikileme									
 tokuz					SIFAT	sıfat				Türkçe	Hayır				
 tokyo					ISIM	isim				Japonca	Hayır				
 tol					ISIM	isim					Hayır				
@@ -24474,7 +24830,9 @@ topal					SIFAT	sıfat				Türkçe	Hayır
 topalak	topalağ				ISIM	isim	R_YUMUSAMA_kğ	ğı	bitki bilimi	Türkçe	Hayır				
 topalla	topallı				FIIL	fiil				Türkçe					
 toparla	toparlı				FIIL	fiil				Türkçe	Hayır	E		Evet	
+toparla					FIIL	fiil									
 toparlacık	toparlacığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
+toparlak	toparlağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 topatan					ISIM	isim			bitki bilimi	Türkçe	Hayır				
 topaz					ISIM	isim			mineraloji	Fransızca	Hayır				
 topbaş					ISIM	isim			bitki bilimi	Türkçe	Hayır				
@@ -24484,6 +24842,7 @@ topik	topiğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Ermenice	Hayır
 topla					ISIM	isim				Türkçe	Hayır				
 topla	toplu				FIIL	fiil				Türkçe					
 toplaç	toplac				ISIM	isim	R_YUMUSAMA_çc	cı	fizik	Türkçe	Hayır				
+toplam					ISIM	isim									
 toplanık	toplanığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 toplantı					ISIM	isim				Türkçe	Hayır				
 toplardamar					ISIM	isim			anatomi	Türkçe	Hayır				
@@ -24501,6 +24860,7 @@ toprakbastı					ISIM	isim				Türkçe	Hayır
 toprakçıl					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 Toprakkale					OZEL	özel			ilçe	Tr-Ar	Evet				
 toprakla	topraklı				FIIL	fiil				Türkçe					
+toptan					SIFAT	sıfat									
 topuk	topuğ				ISIM	isim	R_YUMUSAMA_kğ	ğu	anatomi	Türkçe	Hayır				
 topukdöven					ISIM	isim				Türkçe	Hayır				
 topukla	topuklu				FIIL	fiil				Türkçe					
@@ -24561,6 +24921,7 @@ toygar					ISIM	isim			hayvan bilimi	Türkçe	Hayır
 toygiller					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 toynak	toynağ				ISIM	isim	R_YUMUSAMA_kğ	ğı	hayvan bilimi	Türkçe	Hayır				
 toz					ISIM	isim				Türkçe	Hayır				
+toz					FIIL	ikileme									
 tozan					ISIM	isim				Türkçe	Hayır				
 tozar					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Hayır	
 tozkoparan					SIFAT	sıfat				Türkçe	Hayır				
@@ -24845,6 +25206,7 @@ tüm					ISIM	isim				Türkçe	Hayır
 tüm					ISIM	isim				Türkçe	Hayır				
 tümamiral		tümamirál			ISIM	isim	D_OZEL_INCELME_A	li	askerlik		Hayır				
 tümbek	tümbeğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
+tümce					ISIM	isim									
 tümdengelim					ISIM	isim			felsefe	Türkçe	Hayır				
 tümel					SIFAT	sıfat			felsefe	Türkçe	Hayır				
 tümen					ISIM	isim			askerlik	Türkçe	Hayır				
@@ -24861,6 +25223,7 @@ tün					ISIM	isim				Türkçe	Hayır
 tün					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Hayır	
 tünaydın					UNLEM	ünlem				Türkçe	Hayır				
 tüne	tünü				FIIL	fiil				Türkçe	Hayır	E		Hayır	
+tünek	tüneğ				ISIM	isim	R_YUMUSAMA_kğ								
 tünekle	tünekli				FIIL	fiil				Türkçe					
 tünel					ISIM	isim				Fransızca	Hayır				
 tüp					ISIM	isim				Fransızca	Hayır				
@@ -24896,6 +25259,7 @@ Türkoğlu					OZEL	özel			ilçe	Türkçe	Evet
 Türkolog					OZEL	özel		ğu	bilim terimi		Evet				
 Türkoloji					OZEL	özel			bilim dalı		Evet				
 Türkolojik	Türkolojiğ				SIFAT	sıfat	R_YUMUSAMA_kğ				Evet				
+türkuaz					SIFAT	sıfat									
 türkü					ISIM	isim			edebiyat	Tr-Ar	Hayır				
 türküle	türkülü				FIIL	fiil									
 Türkvari					SIFAT	sıfat				Tr-Fa	Evet				
@@ -24928,6 +25292,7 @@ uç					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Hayır
 uçak	uçağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 uçaksavar					ISIM	isim			askerlik	Türkçe	Hayır				
 uçarı					SIFAT	sıfat				Türkçe	Hayır				
+uçbirim					ISIM	isim			bilgisayar						
 uçkun					ISIM	isim				Türkçe	Hayır				
 uçkur					ISIM	isim				Türkçe	Hayır				
 uçkurutan					ISIM	isim			bitki bilimi	Türkçe	Hayır				
@@ -24940,6 +25305,7 @@ uçuk	uçuğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır
 uçukla	uçuklu				FIIL	fiil				Türkçe					
 uçun					ISIM	isim				Türkçe	Hayır				
 uçur					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
+uçurtma					ISIM	isim									
 uçurum					ISIM	isim									
 uçuş					FIIL	fiil				Türkçe					
 udi					ISIM	isim			müzik	Arapça	Hayır				
@@ -24957,6 +25323,7 @@ ufunetlen					FIIL	fiil
 Uganda					OZEL	özel			ülke		Evet				
 uğra					ISIM	isim				Türkçe	Hayır				
 uğra	uğru				FIIL	fiil				Türkçe	Hayır	E		Hayır	
+uğrak	uğrağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 uğrala	uğralı				FIIL	fiil				Türkçe					
 uğraş					ISIM	isim				Türkçe	Hayır				
 uğraş					FIIL	fiil				Türkçe	Hayır		E	Hayır	
@@ -24989,6 +25356,7 @@ Ula					OZEL	özel			ilçe	Türkçe	Evet
 ula	ulu				FIIL	fiil				Türkçe	Hayır	E		Evet	
 ulaç	ulac				ISIM	isim	R_YUMUSAMA_çc	cı	dil bilgisi	Türkçe	Hayır				
 Ulah					OZEL	özel			halk	Romence	Evet				
+ulak	ulağ				ISIM	isim	R_YUMUSAMA_kğ								
 ulam					ISIM	isim									
 ulan					UNLEM	ünlem				Türkçe	Hayır				
 ulantı					ISIM	isim				Türkçe	Hayır				
@@ -25019,6 +25387,8 @@ ulvi					SIFAT	sıfat				Arapça	Hayır
 ulviyet					ISIM	isim				Arapça	Hayır				
 um					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Evet	
 umacı					ISIM	isim				Türkçe	Hayır				
+umar					ISIM	isim									
+umarsız					SIFAT	sıfat									
 umde					ISIM	isim			mantık	Arapça	Hayır				
 umman					ISIM	isim			coğrafya	Arapça	Hayır				
 Umman					OZEL	özel			ülke						
@@ -25116,6 +25486,7 @@ uyarım					ISIM	isim
 uyarla	uyarlı				FIIL	fiil				Türkçe					
 uyaroğlu					ISIM	isim				Türkçe	Hayır				
 uyartı					ISIM	isim				Türkçe	Hayır				
+uydu					ISIM	isim									
 uydur					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
 uydur					FIIL	fiil				Türkçe					
 uydurma					SIFAT	sıfat									
@@ -25144,8 +25515,8 @@ uyum					ISIM	isim				Türkçe	Hayır
 uyuntu					SIFAT	sıfat				Türkçe	Hayır				
 uyurgezer					SIFAT	sıfat				Türkçe	Hayır				
 uyuş					FIIL	fiil				Türkçe	Hayır		E	Hayır	
-uyuş					FIIL	fiil				Türkçe					
-uyuş					FIIL	fiil				Türkçe					
+uyuş				F	FIIL	fiil				Türkçe					
+uyuş				F	FIIL	fiil				Türkçe					
 uyuşkan					SIFAT	sıfat				Türkçe	Hayır				
 uyuştur					FIIL	fiil				Türkçe					
 uyuştur					FIIL	fiil				Türkçe					
@@ -25202,8 +25573,11 @@ uzviyet					ISIM	isim			anatomi	Arapça	Hayır
 üçüz					SIFAT	sıfat				Türkçe	Hayır				
 üdeba					ISIM	isim				Arapça	Hayır				
 üfle	üfli				FIIL	fiil				Türkçe					
+üfle	üflü				FIIL	fiil									
 üfleç	üflec				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
 üfür					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
+üfürük	üfürüğ				ISIM	isim	R_YUMUSAMA_kğ								
+üfürük	üfürüğ				ISIM	isim	R_YUMUSAMA_kğ								
 üğrüm					ISIM	isim			gök bilimi	Türkçe	Hayır				
 ülen					ISIM	isim				Türkçe	Hayır				
 üleş					ISIM	isim				Türkçe	Hayır				
@@ -25235,6 +25609,7 @@ uzviyet					ISIM	isim			anatomi	Arapça	Hayır
 üniversalizm					ISIM	isim				Fransızca	Hayır				
 üniversite					ISIM	isim				Fransızca	Hayır				
 ünle	ünli				FIIL	fiil				Türkçe					
+ünlem					ISIM	isim									
 ünlen					FIIL	fiil				Türkçe					
 ünsiyet					ISIM	isim				Arapça	Hayır				
 Ünye					OZEL	özel			ilçe		Evet				
@@ -25283,6 +25658,7 @@ uzviyet					ISIM	isim			anatomi	Arapça	Hayır
 üsteğmen					ISIM	isim			askerlik	Türkçe	Hayır				
 üstel					SIFAT	sıfat			matematik	Türkçe	Hayır				
 üstele	üsteli				FIIL	fiil				Türkçe					
+üstelik					ISIM	isim, zarf									
 üsten				F	FIIL	fiil				Türkçe	Hayır			Evet	
 üstenci					ISIM	isim				Türkçe	Hayır				
 üstlen					FIIL	fiil				Türkçe					
@@ -25367,6 +25743,7 @@ vahşiyane					ZARF	zarf				Ar-Fa	Hayır
 vahvahlan					FIIL	fiil									
 vahyol					FIIL	fiil									
 vaiz					ISIM	isim				Arapça	Hayır				
+vaize					ISIM	isim									
 vajina					ISIM	isim			anatomi	Latince	Hayır				
 vaka					ISIM	isim				Arapça	Hayır				
 vakanüvis					ISIM	isim			tarih	Arapça	Hayır				
@@ -25557,6 +25934,7 @@ veranda					ISIM	isim				Fransızca	Hayır
 veraset					ISIM	isim			biyoloji	Arapça	Hayır				
 verem					ISIM	isim			tıp	Arapça	Hayır				
 verese					ISIM	isim				Arapça	Hayır				
+veresiye					ISIM	zarf									
 verev					SIFAT	sıfat				Türkçe	Hayır				
 vergi					ISIM	isim				Türkçe	Hayır				
 vergile	vergili				FIIL	fiil				Türkçe					
@@ -25733,8 +26111,10 @@ vurgun					ISIM	isim				Türkçe	Hayır
 vurtut					ISIM	isim				Türkçe	Hayır				
 vuru					ISIM	isim				Türkçe	Hayır				
 vuruk	vuruğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır				
+vurum					ISIM	isim									
 vuruntu					ISIM	isim				Türkçe	Hayır				
 vuruş					FIIL	fiil				Türkçe	Hayır		E	Hayır	
+vuruş					ISIM	isim									
 vuruşkan					SIFAT	sıfat				Türkçe	Hayır				
 vuslat					ISIM	isim				Arapça	Hayır				
 vusul		vusúl			ISIM	isim	D_OZEL_INCELME_U	lü		Arapça	Hayır				
@@ -25816,6 +26196,7 @@ yakınsak	yakınsağ				SIFAT	sıfat	R_YUMUSAMA_kğ		fizik	Türkçe	Hayır
 yakıntı					ISIM	isim				Türkçe	Hayır				
 yakış					FIIL	fiil				Türkçe	Hayır		E	Hayır	
 yakış					FIIL	fiil				Türkçe					
+yakışık	yakışığ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
 yakışıklı					SIFAT	sıfat				Türkçe	Hayır				
 yakıt					ISIM	isim				Türkçe	Hayır				
 yakin					ISIM	isim				Arapça	Hayır				
@@ -25857,6 +26238,7 @@ yalınç					SIFAT	sıfat				Türkçe	Hayır
 yalıngaç					SIFAT	sıfat				Türkçe	Hayır				
 yalıngöz					ISIM	isim				Türkçe	Hayır				
 yalıt					FIIL	fiil			fizik	Türkçe	Hayır		E	Evet	
+yalıtık	yalıtığ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 yalıtım					ISIM	isim									
 yalıtkan					SIFAT	sıfat			fizik	Türkçe	Hayır				
 yalız					SIFAT	sıfat				Türkçe	Hayır				
@@ -25923,6 +26305,7 @@ yankıla	yankılı				FIIL	fiil				Türkçe
 yankılan					FIIL	fiil				Türkçe					
 yankılanım					ISIM	isim									
 yanla	yanlı				FIIL	fiil				Türkçe					
+yanlış					SIFAT	sıfat									
 yansı					ISIM	isim, ettirtgen_t			fizik	Türkçe	Hayır				
 yansı					FIIL	fiil				Türkçe	Hayır	E		Hayır	
 yansıla	yansılı				FIIL	fiil				Türkçe					
@@ -25951,6 +26334,7 @@ yapışak	yapışağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır
 yapışık	yapışığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 yapışkan					SIFAT	sıfat				Türkçe	Hayır				
 yapıt					ISIM	isim				Türkçe	Hayır				
+yapmacık	yapmacığ				SIFAT	sıfat	R_YUMUSAMA_kğ								
 yaprak	yaprağ				ISIM	isim	R_YUMUSAMA_kğ	ğı	bitki bilimi	Türkçe	Hayır				
 yaprakçıl					SIFAT	sıfat			hayvan bilimi	Türkçe	Hayır				
 yaprakkurusu					ISIM	isim				Türkçe	Hayır				
@@ -25967,18 +26351,24 @@ yâr		yár	sevgili		ISIM	isim, şapkalı	D_INCELME_SAPKA_A	ri		Farsça	Hayır
 yara					ISIM	isim				Türkçe	Hayır				
 yara	yarı				FIIL	fiil				Türkçe	Hayır	E		Hayır	
 Yaradan					OZEL	özel			din bilgisi	Türkçe	Evet				
+yaradılış					ISIM	isim									
 yarak	yarağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 yarala	yaralı				FIIL	fiil				Türkçe					
 yaramaz					SIFAT	sıfat, kök_değil									
 yaran		yârân			ISIM	isim, şapkasız	D_SAPKA_DUSUR_A			Farsça	Hayır				
 yaran					FIIL	fiil				Türkçe					
 yârân					ISIM	isim, şapkalı				Farsça	Hayır				
+yarar					ISIM	isim									
 yararlan					FIIL	fiil, dönüşlü				Türkçe	Hayır		E	Hayır	
 yararlan					FIIL	fiil				Türkçe					
 yarasa					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 yaraş					FIIL	fiil				Türkçe					
+yaraşık	yaraşığ				ISIM	isim	R_YUMUSAMA_kğ								
+yaraşık	yaraşığ				ISIM	isim	R_YUMUSAMA_kğ								
 yarat					FIIL	fiil			din bilgisi	Türkçe	Hayır		E	Evet	
 yaratı					ISIM	isim				Türkçe	Hayır				
+yaratık	yaratığ				ISIM	isim	R_YUMUSAMA_kğ								
+yaratılış					ISIM	isim									
 yaratım					ISIM	isim									
 yarbay					ISIM	isim			askerlik	Türkçe	Hayır				
 yarda					ISIM	isim				İtalyanca	Hayır				
@@ -25996,11 +26386,13 @@ yargıla	yargılı				FIIL	fiil				Türkçe
 yarı					SIFAT	sıfat				Türkçe	Hayır				
 yarıçap					ISIM	isim			geometri		Hayır				
 yarık					ISIM	isim, sıfat				Türkçe	Hayır				
+yarık	yarığ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
 yarıla	yarılı				FIIL	fiil				Türkçe					
 yarım					SIFAT	sıfat				Türkçe	Hayır				
 yarım					SAYI	sayı, sıfat				Türkçe	Hayır				
 yarımada					ISIM	isim			coğrafya	Türkçe	Hayır				
 yarımla	yarımlı				FIIL	fiil				Türkçe					
+yarımşar					ZARF	zarf									
 yarın					ISIM	isim				Türkçe	Hayır				
 yarıntı					ISIM	isim			coğrafya	Türkçe	Hayır				
 yarış					ISIM	isim				Türkçe	Hayır				
@@ -26299,7 +26691,9 @@ Yeşilyurt					OZEL	özel		t'u	ilçe	Türkçe	Evet
 yeşim					ISIM	isim			mineraloji	Türkçe	Hayır				
 yet					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Hayır	
 yetenek	yeteneğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
+yeterince					ZARF	zarf									
 yeterli					SIFAT	sıfat									
+yeterlik	yeterliğ				ISIM	isim	R_YUMUSAMA_kğ								
 yetersiz					SIFAT	sıfat									
 yetersiz					SIFAT	sıfat									
 yeti					ISIM	isim			felsefe	Türkçe	Hayır				
@@ -26327,10 +26721,12 @@ Yezidi					OZEL	özel			din bilgisi	Arapça	Evet
 yezit	yezid				ISIM	isim	R_YUMUSAMA_td	di		Arapça	Hayır				
 yığ					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Evet	
 Yığılca					OZEL	özel			ilçe	Türkçe	Evet				
+yığılı					SIFAT	sıfat									
 yığılım					ISIM	isim									
 yığın					ISIM	isim				Türkçe	Hayır				
 yığınak	yığınağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 yığıntı					ISIM	isim				Türkçe	Hayır				
+yığış					FIIL	fiil									
 yığışık	yığışığ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
 yığışım					ISIM	isim									
 yık					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Evet	
@@ -26401,13 +26797,16 @@ yirik	yiriğ				ISIM	isim	R_YUMUSAMA_kğ	ği		Türkçe	Hayır
 yirmi					SAYI	sayı									
 yit					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Hayır	
 yitik					ISIM	isim				Türkçe	Hayır				
+yitik	yitiğ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
 yitim					ISIM	isim									
 yitir					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
 yiv					ISIM	isim				Türkçe	Hayır				
 yivaçar					ISIM	isim				Türkçe	Hayır				
 yivle	yivli				FIIL	fiil				Türkçe					
+yiyecek	yiyeceğ				ISIM	isim	R_YUMUSAMA_kğ								
 yiyim					ISIM	isim									
 yiyinti					ISIM	isim				Türkçe	Hayır				
+yiyiş					FIIL	fiil									
 yo					UNLEM	ünlem				Türkçe	Hayır				
 yobaz					SIFAT	sıfat				Türkçe	Hayır				
 yoga					ISIM	isim				Sanskritçe	Hayır				
@@ -26451,6 +26850,7 @@ yongar					ISIM	isim			müzik	Türkçe	Hayır
 yont					ISIM	isim				Türkçe	Hayır				
 yont					FIIL	fiil, genis_Ar		ar		Türkçe					
 yontu					ISIM	isim				Türkçe	Hayır				
+yontuk	yontuğ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
 yor					FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Evet	
 yor			Bir anlam vermek, yorumlamak		FIIL	fiil, genis_Ar		ar		Türkçe	Hayır		E	Evet	
 yordam					ISIM	isim				Türkçe	Hayır				
@@ -26517,6 +26917,7 @@ yumakla	yumaklı				FIIL	fiil				Türkçe
 yumru					ISIM	isim				Türkçe	Hayır				
 yumruk	yumruğ				ISIM	isim	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır				
 yumrukla	yumruklu				FIIL	fiil				Türkçe					
+yumrul					FIIL	fiil, edilgen									
 yumrulan					FIIL	fiil				Türkçe					
 yumuk	yumuğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğu		Türkçe	Hayır				
 yumurcak	yumurcağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Türkçe	Hayır				
@@ -26565,10 +26966,13 @@ yuvgula	yuvgulu				FIIL	fiil				Türkçe
 yüce					SIFAT	sıfat				Türkçe	Hayır				
 yücel					FIIL	fiil, ettirgen_t				Türkçe	Hayır	E		Hayır	
 yücelim					ISIM	isim									
+yüceltim					ISIM	isim									
 yüğrük	yüğrüğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ğü		Türkçe	Hayır				
 yük					ISIM	isim				Türkçe	Hayır				
 yükçeker					ISIM	isim				Türkçe	Hayır				
 yükle	yükli				FIIL	fiil				Türkçe					
+yüklem					ISIM	isim									
+yüklenim					ISIM	isim									
 yüklenti					ISIM	isim				Türkçe	Hayır				
 yüksek	yükseğ				SIFAT	sıfat	R_YUMUSAMA_kğ	ği		Türkçe	Hayır				
 yükseklikölçer					ISIM	isim				Türkçe	Hayır				
@@ -26599,9 +27003,11 @@ yüreklen					FIIL	fiil				Türkçe
 yürü					FIIL	fiil				Türkçe	Hayır	E		Hayır	
 Yürük					OZEL	özel		k'ü	oymak	Türkçe	Evet				
 yürürçalar					ISIM	isim				Türkçe	Hayır				
+yürürlük	yürürlüğ				ISIM	isim	R_YUMUSAMA_kğ								
 yürüt					FIIL	fiil				Türkçe					
 yürüteç	yürütec				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
 yürütüm					ISIM	isim									
+yürüyüş					ISIM	isim, kök_değil									
 yüsrü					ISIM	isim				Türkçe	Hayır				
 yüz				F	ISIM	isim				Türkçe	Hayır				
 yüz					ISIM	isim				Türkçe	Hayır				
@@ -26611,6 +27017,7 @@ yüz					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Evet
 yüzbaşı					ISIM	isim		yı	askerlik	Türkçe	Hayır				
 yüzbeşlik	yüzbeşliğ				ISIM	isim	R_YUMUSAMA_kğ	ği	askerlik	Türkçe	Hayır				
 yüzbeyüz					ZARF	zarf				Türkçe	Hayır				
+yüzde					ISIM	isim									
 yüzergezer					SIFAT	sıfat				Türkçe	Hayır				
 yüzey					ISIM	isim			matematik	Türkçe	Hayır				
 yüzgeç	yüzgec				ISIM	isim	R_YUMUSAMA_çc	ci		Türkçe	Hayır				
@@ -26685,6 +27092,7 @@ zanka					ISIM	isim				Rusça	Hayır
 zannet	zanned				FIIL	fiil, genis_Ar	R_YUMUSAMA_td, 	der		Ar-Tr	Hayır		E	Evet	
 zanneyle	zanneyli				FIIL	fiil				Ar-Tr	Hayır	E		Hayır	
 zannolun					FIIL	fiil				Ar-Tr					
+zaping					ISIM	isim									
 zapt					ISIM	isim				Arapça	Hayır				
 zaptiye					ISIM	isim			tarih	Arapça	Hayır				
 zapturapt					ISIM	isim				Arapça	Hayır				
@@ -26866,6 +27274,7 @@ zırvala	zırvalı				FIIL	fiil				Türkçe
 zıt	zıdd				SIFAT	sıfat	R_YUMUSAMA_td, R_CIFTLESME_SON_UNSUZ	ddı		Arapça	Hayır				
 zıtlan					FIIL	fiil									
 zıvana					ISIM	isim				Farsça	Hayır				
+zıvır					ISIM	ikileme									
 zıypak	zıypağ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
 zibidi					SIFAT	sıfat				Farsça	Hayır				
 zifaf					ISIM	isim				Arapça	Hayır				
@@ -26889,6 +27298,7 @@ zihniyet					ISIM	isim				Arapça	Hayır
 zikıymet					SIFAT	sıfat				Arapça	Hayır				
 zikir	zikr				ISIM	isim	R_DUSME_SON_UNLU	kri		Arapça	Hayır				
 zikret	zikred				FIIL	fiil, genis_Ar	R_YUMUSAMA_td, 	der		Ar-Tr	Hayır		E	Evet	
+zikrolun					FIIL	fiil, edilgen									
 zikzak	zikzağ				ISIM	isim	R_YUMUSAMA_kğ	ğı		Fransızca	Hayır				
 zil					ISIM	isim				Farsça	Hayır				
 Zile					OZEL	özel			ilçe		Evet				
@@ -26990,407 +27400,3 @@ zürefa					ISIM	isim				Arapça	Hayır
 zürra					ISIM	isim				Arapça	Hayır				
 zürriyet					ISIM	isim				Arapça	Hayır				
 züyuf					ISIM	isim				Arapça	Hayır				
-eşanlı					SIFAT	sıfat									
-parlak	parlağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-özelleştirme					ISIM	isim, kök_değil									
-kabzet	kabzed				FIIL	fiil, genis_Ar	R_YUMUSAMA_td								
-elek	eleğ				ISIM	isim	R_YUMUSAMA_kğ								
-duyarlı					SIFAT	sıfat									
-duyarsız					SIFAT	sıfat									
-açmaz					ISIM	isim									
-yürüyüş					ISIM	isim, kök_değil									
-çıkmaz					ISIM	isim									
-hortla	hortlu				FIIL	fiil									
-çalışma					ISIM	isim, kök_değil									
-bakış					FIIL	fiil									
-nitelen					FIIL	fiil									
-tanık	tanığ				ISIM	isim	R_YUMUSAMA_kğ								
-zaping					ISIM	isim									
-acın					FIIL	fiil									
-tanışık	tanışığ				ISIM	isim	R_YUMUSAMA_kğ								
-çoluk	çoluğ				ISIM	ikileme	R_YUMUSAMA_kğ								
-düzenleme					ISIM	isim, kök_değil									
-anaokul					TAMLAMA	isim									
-doğrama					ISIM	isim, kök_değil									
-yaradılış					ISIM	isim									
-çakmak	çakmağ				ISIM	isim	R_YUMUSAMA_kğ								
-sarmaşık	sarmaşığ				ISIM	isim	R_YUMUSAMA_kğ								
-esnek	esneğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-çöreot					TAMLAMA	isim									
-dizilim					ISIM	isim									
-dolmuş					ISIM	isim, kök_değil									
-ikilem					ISIM	isim									
-doğaüst					TAMLAMA	isim									
-kürek	küreğ				ISIM	isim	R_YUMUSAMA_kğ								
-yaratık	yaratığ				ISIM	isim	R_YUMUSAMA_kğ								
-tanıtım					ISIM	isim									
-tepiş					FIIL	fiil									
-yiyiş					FIIL	fiil									
-gidiş					FIIL	fiil									
-ayrık	ayrığ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-başuç	başuc				TAMLAMA	isim	R_YUMUSAMA_çc								
-dayanıklı					SIFAT	sıfat									
-dayanıksız					SIFAT	sıfat									
-katık	katığ				ISIM	isim	R_YUMUSAMA_kğ								
-öteki					SIFAT	sıfat									
-ıslak	ıslağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-kötümser					SIFAT	sıfat									
-yüzde					ISIM	isim									
-yürürlük	yürürlüğ				ISIM	isim	R_YUMUSAMA_kğ								
-kılık	kılığ				ISIM	isim	R_YUMUSAMA_kğ								
-bağlama					ISIM	isim									
-yeterlik	yeterliğ				ISIM	isim	R_YUMUSAMA_kğ								
-bellek	belleğ				ISIM	isim	R_YUMUSAMA_kğ								
-eşlem					ISIM	isim									
-olası					SIFAT	sıfat									
-oyuk	oyuğ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
-anlaşık	anlaşığ				ISIM	isim	R_YUMUSAMA_kğ								
-sığınık	sığınığ				ISIM	isim	R_YUMUSAMA_kğ								
-örük	örüğ				ISIM	isim	R_YUMUSAMA_kğ								
-yaraşık	yaraşığ				ISIM	isim	R_YUMUSAMA_kğ								
-tıksırık	tıksırığ				ISIM	isim	R_YUMUSAMA_kğ								
-soluk	soluğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-pişik	pişiğ				ISIM	isim	R_YUMUSAMA_kğ								
-bastırık	bastırığ				ISIM	isim	R_YUMUSAMA_kğ								
-tepik	tepiğ				ISIM	isim	R_YUMUSAMA_kğ								
-üfürük	üfürüğ				ISIM	isim	R_YUMUSAMA_kğ								
-göçük	göçüğ				ISIM	isim	R_YUMUSAMA_kğ								
-yitik	yitiğ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
-yakışık	yakışığ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
-danışık	danışığ				ISIM	isim	R_YUMUSAMA_kğ								
-yarık	yarığ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
-pişik	pişiğ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
-aksırık	aksırığ				ISIM	isim	R_YUMUSAMA_kğ								
-hapşırık	hapşırığ				ISIM	isim	R_YUMUSAMA_kğ								
-çentik	çentiğ				ISIM	isim	R_YUMUSAMA_kğ								
-üfürük	üfürüğ				ISIM	isim	R_YUMUSAMA_kğ								
-salık	salığ				ISIM	isim	R_YUMUSAMA_kğ								
-sıyırık	sıyırığ				ISIM	isim	R_YUMUSAMA_kğ								
-buluk	buluğ				ISIM	isim	R_YUMUSAMA_kğ								
-yontuk	yontuğ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
-sürtük	sürtüğ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
-koşuk	koşuğ				ISIM	isim	R_YUMUSAMA_kğ								
-belirtik	belirtiğ				ISIM	isim	R_YUMUSAMA_kğ								
-göçük	göçüğ				ISIM	isim	R_YUMUSAMA_kğ								
-ısırık	ısırığ				ISIM	isim	R_YUMUSAMA_kğ								
-yaraşık	yaraşığ				ISIM	isim	R_YUMUSAMA_kğ								
-fışkırık	fışkırığ				ISIM	isim	R_YUMUSAMA_kğ								
-çıkık	çıkığ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
-bertik	bertiğ				ISIM	isim	R_YUMUSAMA_kğ								
-seçik	seçiğ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
-özeleştiri					ISIM	isim									
-eleştirim					ISIM	isim									
-açım					ISIM	isim									
-anlaşım					ISIM	isim									
-olum					ISIM	isim									
-özeleştirim					ISIM	isim									
-ötüm					ISIM	isim									
-vurum					ISIM	isim									
-güdülenim					ISIM	isim									
-yüklenim					ISIM	isim									
-başkalaşım					ISIM	isim									
-çakışım					ISIM	isim									
-çağırışım					ISIM	isim									
-yüceltim					ISIM	isim									
-biçimlenim					ISIM	isim									
-gerçekleştirim					ISIM	isim									
-tanış					ISIM	isim									
-batım					ISIM	isim									
-izlenim					ISIM	isim									
-karayazı					ISIM	isim									
-tartışma					ISIM	isim, kök_değil									
-birliktelik	birlikteliğ				ISIM	isim	R_YUMUSAMA_kğ								
-gözleme					ISIM	isim									
-küreselleşme					ISIM	isim, kök_değil									
-tekerlek	tekerleğ				ISIM	isim	R_YUMUSAMA_kğ								
-eleştirme					ISIM	isim, kök_değil									
-inceleme					ISIM	isim, kök_değil									
-görüşme					ISIM	isim, kök_değil									
-globalleşme					ISIM	isim, kök_değil									
-araştırma					ISIM	isim, kök_değil									
-direniş					ISIM	isim									
-uçurtma					ISIM	isim									
-sağlam					SIFAT	sıfat									
-köktenci					ISIM	isim									
-dize					ISIM	isim									
-silecek	sileceğ				ISIM	isim, kök_değil	R_YUMUSAMA_kğ								
-durul					FIIL	fiil									
-akış					FIIL	fiil									
-ovuştur					FIIL	fiil									
-oyma					ISIM	isim, sıfat									
-ivme					ISIM	isim, sıfat									
-asma					ISIM	isim									
-ışık	ışığ				ISIM	isim	R_YUMUSAMA_kğ								
-soğuk	soğuğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-aminoasit	aminoasid				ISIM	isim	R_YUMUSAMA_td								
-dövüş					ISIM	isim, kök_değil									
-altküme					ISIM	isim									
-devrik	devriğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-yüklem					ISIM	isim									
-kıytırık	kıytırığ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-dilek	dileğ				ISIM	isim	R_YUMUSAMA_kğ								
-adak	adağ				ISIM	isim	R_YUMUSAMA_kğ								
-pile					ISIM	isim									
-duyarlık	duyarlığ				ISIM	isim	R_YUMUSAMA_kğ								
-irdele					ISIM	isim									
-yarar					ISIM	isim									
-sıyrık	sıyrığ				ISIM	isim, sıfat	R_YUMUSAMA_kğ								
-cumartesi					ISIM	isim									
-önbellek	önbelleğ				ISIM	isim	R_YUMUSAMA_kğ								
-tanıdık	tanıdığ				ISIM	isim	R_YUMUSAMA_kğ								
-katsayı					ISIM	isim									
-balay					TAMLAMA	isim									
-atmaca					ISIM	isim									
-işlem					ISIM	isim									
-işbirlik	işbirliğ				TAMLAMA	isim	R_YUMUSAMA_kğ								
-geçerli					SIFAT	sıfat									
-geçersiz					SIFAT	sıfat									
-hortlak	hortlağ				ISIM	isim	R_YUMUSAMA_kğ								
-çatlak	çatlağ				ISIM	isim	R_YUMUSAMA_kğ								
-dürtükle	dürtüklü				FIIL	fiil									
-lakayt					SIFAT	sıfat									
-bildik	bildiğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-bilindik	bilindiğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-gevrek	gevreğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-büryan					ISIM	isim									
-sahici					SIFAT	sıfat									
-kokarca					ISIM	isim									
-denek	deneğ				ISIM	isim	R_YUMUSAMA_kğ								
-bozlak	bozlağ				ISIM	isim	R_YUMUSAMA_kğ								
-püsle	püslü				FIIL	ikileme									
-işleç	işlec				ISIM	isim	R_YUMUSAMA_çc								
-özdevinim					ISIM	isim									
-tabanca					ISIM	isim									
-kaynakça					ISIM	isim									
-akçe					ISIM	isim									
-amansız					SIFAT	sıfat									
-kabarcık	kabarcığ				ISIM	isim	R_YUMUSAMA_kğ								
-davranış					ISIM	isim									
-yaratılış					ISIM	isim									
-görüş					ISIM	isim									
-giriş					ISIM	isim									
-tırmanış					ISIM	isim									
-gösteriş					ISIM	isim									
-vuruş					ISIM	isim									
-arayış					ISIM	isim									
-örenlik	örenliğ				ISIM	isim	R_YUMUSAMA_kğ								
-globülin					ISIM	isim			biyoloji						
-yumrul					FIIL	fiil, edilgen									
-fırıldak	fırıldağ				ISIM	isim	R_YUMUSAMA_kğ								
-düşünür					ISIM	isim									
-kapatma					ISIM	isim									
-düzüş					FIIL	fiil									
-enek	eneğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-kaşın					FIIL	fiil, dönüşlü									
-gotik	gotiğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-fırlak	fırlağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-anadil					ISIM	isim									
-üfle	üflü				FIIL	fiil									
-çalkalan					FIIL	fiil, dönüşlü									
-filanca					ZAMIR	zamir									
-zikrolun					FIIL	fiil, edilgen									
-yiyecek	yiyeceğ				ISIM	isim	R_YUMUSAMA_kğ								
-içecek	içeceğ				ISIM	isim	R_YUMUSAMA_kğ								
-yığış					FIIL	fiil									
-yığılı					SIFAT	sıfat									
-yeterince					ZARF	zarf									
-yarımşar					ZARF	zarf									
-yapmacık	yapmacığ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-yanlış					SIFAT	sıfat									
-yalıtık	yalıtığ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-veresiye					ISIM	zarf									
-vaize					ISIM	isim									
-üstelik					ISIM	isim, zarf									
-ünlem					ISIM	isim									
-uydu					ISIM	isim									
-umarsız					SIFAT	sıfat									
-ulak	ulağ				ISIM	isim	R_YUMUSAMA_kğ								
-uğrak	uğrağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-uçbirim					ISIM	isim			bilgisayar						
-türkuaz					SIFAT	sıfat									
-tünek	tüneğ				ISIM	isim	R_YUMUSAMA_kğ								
-tümce					ISIM	isim									
-toz					FIIL	ikileme									
-toplam					ISIM	isim									
-toparla					FIIL	fiil									
-tokuş					ISIM	ikileme									
-titanyum					ISIM	isim									
-tıkalı					SIFAT	sıfat									
-terabayt					ISIM	isim			bilgisayar						
-tefek	tefe, tefeğ				SIFAT	ikileme, azlık									
-tazecik	tazeciğ				SIFAT	sıfat									
-taralı					SIFAT	sıfat									
-taife					ISIM	isim									
-tabildot    					ISIM	isim									
-şerefyap	şerefyab				SIFAT	sıfat	R_YUMUSAMA_pb								
-şaplak	şaplağ				ISIM	isim	R_YUMUSAMA_kğ								
-süre					ISIM	isim									
-sumo					ISIM	isim			spor						
-sulak	sulağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-sıradan					SIFAT	sıfat									
-reyting					ISIM	isim									
-addolun					FIIL	fiil, edilgen									
-affolun					FIIL	fiil, edilgen									
-aksak	aksağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-akşamüst					TAMLAMA	zarf									
-alacak	alacağ				ISIM	isim	R_YUMUSAMA_kğ								
-alındı					ISIM	isim									
-alınım					ISIM	isim									
-ambulans					ISIM	isim									
-anayurt	anayurd				ISIM	isim	R_YUMUSAMA_td								
-ankesör					ISIM	isim									
-arakesit					ISIM	isim									
-ardışık	ardışığ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-artım					SIFAT	sıfat									
-aylak	aylağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-bağlam					ISIM	isim									
-bağrış					ISIM	isim									
-bayt					ISIM	isim			bilgisayar						
-belirtim					ISIM	isim									
-beriki					SIFAT	sıfat									
-bıngıldak	bıngıldağ				ISIM	isim	R_YUMUSAMA_kğ								
-birbiri					ZAMIR	zamir									
-boylam					ISIM	isim									
-enlem					ISIM	isim									
-budak	budağ				ISIM	isim	R_YUMUSAMA_kğ								
-bulmaca					ISIM	isim									
-bunak	bunağ				ISIM	isim	R_YUMUSAMA_kğ								
-buzdolap	buzdolab				TAMLAMA	isim	R_YUMUSAMA_pb								
-cıbıl					SIFAT	sıfat									
-çağlayan					ISIM	isim									
-çevrimdışı					ISIM	isim									
-çıkar					ISIM	isim									
-çıktı					ISIM	isim									
-çizer					ISIM	isim									
-dantela					ISIM	isim									
-dayanış					FIIL	fiil									
-demonstrasyon					ISIM	isim									
-denklem					ISIM	isim									
-deontoloji					ISIM	isim									
-derebey					TAMLAMA	isim									
-detektif					ISIM	isim									
-detektör					ISIM	isim									
-dilalt					TAMLAMA	isim									
-dişlek	dişleğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-diyot					ISIM	isim									
-doğa					ISIM	isim									
-döner					ISIM	isim									
-düzlem					ISIM	isim									
-eder					ISIM	isim									
-eklem					ISIM	isim									
-embriyon					ISIM	isim									
-esrik	esriğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-eşdeğer					ISIM	isim									
-faraziyat					ISIM	isim									
-fırlama					SIFAT	sıfat									
-fingirdek	fingirdeğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-fosseptik	fosseptiğ				ISIM	isim	R_YUMUSAMA_kğ								
-gelecek	geleceğ				ISIM	isim	R_YUMUSAMA_kğ								
-belirim					ISIM	isim									
-çıngırdak	çıngırdağ				ISIM	isim	R_YUMUSAMA_kğ								
-çırpış					FIIL	fiil									
-çiğnem					ISIM	isim									
-dolak	dolağ				ISIM	isim	R_YUMUSAMA_kğ								
-fıkırdak	fıkırdağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-fücur					ISIM	isim									
-garez					ISIM	isim									
-gelir					ISIM	isim									
-gider					ISIM	isim									
-gencecik	genceciğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-gevşek	gevşeğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-gigabayt					ISIM	isim									
-girdi					ISIM	isim									
-göçer					ISIM	isim									
-göğerti					ISIM	isim									
-göreceli					SIFAT	sıfat									
-göreli					SIFAT	sıfat									
-gözde					SIFAT	sıfat									
-grafiti					ISIM	isim									
-gündelik	gündeliğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-güvenilir					SIFAT	sıfat									
-hemencecik					ZARF	zarf									
-hükmolun					FIIL	fiil, edilgen									
-ılık	ılığ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-ılış					FIIL	fiil									
-ışıldak	ışıldağ				ISIM	isim	R_YUMUSAMA_kğ								
-içten					SIFAT	sıfat									
-iğreti					SIFAT	sıfat									
-ikona					ISIM	isim									
-imgelem					ISIM	isim									
-imleç	imlec				ISIM	isim	R_YUMUSAMA_çc								
-inilde	inildi				FIIL	fiil									
-işlek	işleğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-izdüşüm					ISIM	isim									
-izlek	izleğ				ISIM	isim	R_YUMUSAMA_kğ								
-izlem					ISIM	isim									
-kaçış					FIIL	fiil									
-kakış					FIIL	ikileme									
-kaplıca					ISIM	isim									
-karaca					ISIM	isim									
-karık	karığ				ISIM	isim	R_YUMUSAMA_kğ								
-karmaşa					ISIM	isim									
-kavruk	kavruğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-kaynar					SIFAT	sıfat									
-keser					ISIM	isim									
-kıvrak	kıvrağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-kilobayt					ISIM	isim			bilgisayar						
-koçan					ISIM	isim									
-kolibasil					TAMLAMA	isim									
-kuruluş					ISIM	isim									
-lakırdı					ISIM	isim									
-mokasen					ISIM	isim									
-morötesi					SIFAT	sıfat									
-nükset	nüksed				FIIL	fiil, genis_Ar	R_YUMUSAMA_td								
-ondalık	ondalığ				ISIM	isim	R_YUMUSAMA_kğ								
-otarşi					ISIM	isim									
-otlak	otlağ				ISIM	isim	R_YUMUSAMA_kğ								
-oynak	oynağ				ISIM	isim	R_YUMUSAMA_kğ								
-oynaş					ISIM	isim									
-ödlek	ödleğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-önlem					ISIM	isim									
-öznitelik	özniteliğ				ISIM	isim	R_YUMUSAMA_kğ								
-özümle	özümlü				FIIL	fiil									
-pandomima					ISIM	isim									
-pasifist					SIFAT	sıfat									
-patlak	patlağ				ISIM	isim	R_YUMUSAMA_kğ								
-pişirim					ISIM	isim									
-pörsük	pörsüğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-sahiden					ZARF	zarf									
-sövüş					FIIL	fiil									
-titrek	titreğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-toparlak	toparlağ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-toptan					SIFAT	sıfat									
-umar					ISIM	isim									
-abur					ISIM	ikileme									
-afra					ISIM	ikileme									
-beraberlik	beraberliğ				ISIM	isim	R_YUMUSAMA_kğ								
-bilinemez					SIFAT	kök_değil									
-bilirlik	bilirliğ				ISIM	isim	R_YUMUSAMA_kğ								
-biliş					FIIL	fiil									
-bilmece					ISIM	isim									
-birbirleri					ZAMIR	zamir									
-çöküş					FIIL										
-çözüş					FIIL										
-dahası					ISIM	isim									
-düzmece					SIFAT	sıfat									
-elverişiz					SIFAT	sıfat									
-elverişli					SIFAT	sıfat									
-epeyce					SIFAT	sıfat, zarf									
-geçerlik	geçerliğ				ISIM	isim	R_YUMUSAMA_kğ								
-görece					SIFAT	sıfat									
-görünür					SIFAT	sıfat									
-güvenirlik	güvenirliğ				ISIM	isim	R_YUMUSAMA_kğ								
-güvey					ISIM	isim									
-ıvır					ISIM	ikileme									
-zıvır					ISIM	ikileme									
-kendiliğinden					ZARF	zarf, ekfiil_alır									
-kukumav					ISIM	isim									
-mahsusçuktan					ZARF	zarf									
-şakrak	şakrağ				SIFAT	ikileme									
-pıl					ISIM	ikileme									
-pırt					ISIM	ikileme									
-beklenmedik	beklenmediğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-bilinmeyen					SIFAT	sıfat									
-biteviyelik	biteviyeliğ				SIFAT	sıfat	R_YUMUSAMA_kğ								
-hepimiz					ZAMIR_BELIRSIZLIK	zamir									
-sikiş					FIIL	fiil, isteş									

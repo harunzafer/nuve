@@ -77,9 +77,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Nuve.Test\Nuve.Test.csproj">
+      <Project>{886838AB-25EA-41AE-9AAA-D5B60420BB5A}</Project>
+      <Name>Nuve.Test</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Nuve\Nuve.csproj">
       <Project>{BCC4C1C8-5F64-4A5C-9079-0272498745C2}</Project>
       <Name>Nuve</Name>

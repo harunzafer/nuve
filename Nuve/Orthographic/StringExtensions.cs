@@ -7,7 +7,7 @@ using Nuve.Morphologic.Structure;
 
 namespace Nuve.Orthographic
 {
-    internal static class StringExtensions
+    public static class StringExtensions
     {
 
         internal static void ThrowIfNullOrEmpty(this string str)
@@ -213,7 +213,7 @@ namespace Nuve.Orthographic
             //IList<string> analyses = new List<string>();
             //foreach (Word word in words)
             //{
-            //    analyses.Add(word.Analysis);
+            //    analyses.AddSequence(word.Analysis);
             //}
             //return analyses;
             return words.Select(word => word.Analysis).ToList();

@@ -46,5 +46,7 @@ namespace Nuve.Test.Analysis
         {
             Tester.ContainsAnalysis(token, analysis);
         }
+
+
     }
 }

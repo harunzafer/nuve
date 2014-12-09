@@ -33,8 +33,6 @@
 
         #endregion
 
-
-
         /// <summary>
         /// Todo: Bu grupta zaman zarfları olmalı. Şu anda çözümler isim veriyor.
         /// </summary>
@@ -53,11 +51,6 @@
                                              "anki",
                                          };
         #endregion
-
-
-
-
-
 
         #region string[] GenisOlumluEt
 
@@ -487,8 +480,6 @@
 
         #endregion
 
- 
-
         #region string[] Zarf
 
         public static string[] Zarf = {
@@ -522,30 +513,30 @@
 
         #endregion
 
-        #region string[] SoruBaglac
+        //#region string[] SoruBaglac
 
-        public static string[] SoruBaglac = {
-                                                "gel_de",
-                                                "gelir_misiniz",
-                                                "araba_da",
-                                                "ev_de",
-                                                "evde_mi",
-                                                "ev_de_mi",
-                                                "gelmiş_mi_de",
-                                                "ise_de",
-                                                "zeytinyağı_da",
-                                                "zeytinyağı_mı",
-                                                "zeytinyağ_mı",
-                                                "zeytinyağ_da",
-                                                "o_da",
-                                                "o_mu",
-                                                "su_mu",
-                                                "su_da",
-                                                "benim_mi",
-                                                "onların_da"
-                                            };
+        //public static string[] SoruBaglac = {
+        //                                        "gel_de",
+        //                                        "gelir_misiniz",
+        //                                        "araba_da",
+        //                                        "ev_de",
+        //                                        "evde_mi",
+        //                                        "ev_de_mi",
+        //                                        "gelmiş_mi_de",
+        //                                        "ise_de",
+        //                                        "zeytinyağı_da",
+        //                                        "zeytinyağı_mı",
+        //                                        "zeytinyağ_mı",
+        //                                        "zeytinyağ_da",
+        //                                        "o_da",
+        //                                        "o_mu",
+        //                                        "su_mu",
+        //                                        "su_da",
+        //                                        "benim_mi",
+        //                                        "onların_da"
+        //                                    };
 
-        #endregion
+        //#endregion
 
         
 

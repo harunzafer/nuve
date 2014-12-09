@@ -6,13 +6,13 @@ using Nuve.Reader;
 
 namespace Nuve.Condition
 {
-    public enum Position { First, Previous, Next, Current, Source, Target, AfterTarget, BeforeSource, Last} ;
+    public enum Position { First, Previous, Next, Current, Source, Target, BeforeTarget, AfterTarget, BeforeSource, Last } ;
 
     public abstract class ConditionBase 
     {
         protected readonly Alphabet Alphabet;
         protected readonly string Operand;
-        protected Position Position;
+        protected readonly Position Position;
 
         protected ConditionBase(string position, string operand, Alphabet alphabet)
         {

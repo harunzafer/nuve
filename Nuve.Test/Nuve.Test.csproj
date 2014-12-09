@@ -50,6 +50,7 @@
     <Compile Include="Analysis\NounDerivationTest.cs" />
     <Compile Include="Analysis\PronounConjugation.cs" />
     <Compile Include="Analysis\PronounConjugationTest.cs" />
+    <Compile Include="Analysis\SoruTest.cs" />
     <Compile Include="Analysis\SpecialCase.cs" />
     <Compile Include="Analysis\SpecialCaseTest.cs" />
     <Compile Include="Analysis\Tester.cs" />
@@ -63,6 +64,10 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Distance\DistanceTest.cs" />
     <Compile Include="Distance\DistanceTester.cs" />
+    <Compile Include="NGrams\NGramModelTest.cs" />
+    <Compile Include="NGrams\NGramDictionaryTest.cs" />
+    <Compile Include="NGrams\NGramExtractorTest.cs" />
+    <Compile Include="NGrams\NGramTest.cs" />
     <Compile Include="Orthographic\NounGenerationTest.cs" />
     <Compile Include="Orthographic\StringExtensionsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

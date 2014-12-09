@@ -93,7 +93,7 @@ namespace Nuve.Lexicon
         }
 
         /// <summary>
-        /// Add a child node associated with a key to this node and return the node.
+        /// AddSequence a child node associated with a key to this node and return the node.
         /// </summary>
         /// <param name="key">Key to associated with the child node.</param>
         /// <returns>If given key already exists then return the existing child node, else return the new child node.</returns>

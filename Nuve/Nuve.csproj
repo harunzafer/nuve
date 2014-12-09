@@ -71,7 +71,6 @@
     <Compile Include="Condition\StartsWithConsonant.cs" />
     <Compile Include="Condition\StartsWithVowel.cs" />
     <Compile Include="Disambiguator\Model.cs" />
-    <Compile Include="Disambiguator\SolutionFrequency.cs" />
     <Compile Include="Distance\BinarizedDistance.cs" />
     <Compile Include="Distance\DamerauLevenshteinDistance.cs" />
     <Compile Include="Distance\EuclideanDistance.cs" />
@@ -79,9 +78,15 @@
     <Compile Include="Distance\IDistance.cs" />
     <Compile Include="Distance\JaccardDistance.cs" />
     <Compile Include="Distance\LevenshteinDistance.cs" />
+    <Compile Include="Stemming\DictionaryStemmer.cs" />
     <Compile Include="Lang\Language.cs" />
     <Compile Include="Lang\Language.Property.cs" />
     <Compile Include="Lang\RootSurfacePair.cs" />
+    <Compile Include="Stemming\RuleBasedStemmer.cs" />
+    <Compile Include="Stemming\StatisticalStemmer.cs" />
+    <Compile Include="Stemming\IStemmer.cs" />
+    <Compile Include="Stemming\StemDictionaryGenerator.cs" />
+    <Compile Include="Stemming\StemmerEvaluator.cs" />
     <Compile Include="Lang\WordAnalyzer.cs" />
     <Compile Include="Lexicon\IPrefixMatcher.cs" />
     <Compile Include="Lexicon\PrefixMatcher.cs" />
@@ -98,6 +103,10 @@
     <Compile Include="Morphologic\Structure\Suffix.cs" />
     <Compile Include="Morphologic\Structure\Word.cs" />
     <Compile Include="Morphologic\Transition.cs" />
+    <Compile Include="NGrams\NGramModel.cs" />
+    <Compile Include="NGrams\NGram.cs" />
+    <Compile Include="NGrams\NGramDictionary.cs" />
+    <Compile Include="NGrams\NGramExtractor.cs" />
     <Compile Include="Orthographic\Action\ActionFactory.cs" />
     <Compile Include="Orthographic\Action\AppendAction.cs" />
     <Compile Include="Orthographic\Action\AppendTamlamaSuffix.cs" />
@@ -169,6 +178,7 @@
     <EmbeddedResource Include="Resources\root_tr.txt" />
     <EmbeddedResource Include="Resources\suffix_tr.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

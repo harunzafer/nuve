@@ -56,7 +56,7 @@ namespace Nuve.Gui.Tokenization
             ////        }
             ////        if (!sentencesInPar.Last().Equals(sentence))
             ////        {
-            ////            ses.Add(sentence);
+            ////            ses.AddSequence(sentence);
             ////            Console.WriteLine(sentence);
             ////        }
             ////    }

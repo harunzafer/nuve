@@ -29,7 +29,7 @@ namespace Nuve.Reader
             //Split the first line into the columns       
             string[] columns = s.ReadLine().Split(delimiter.ToCharArray());
 
-            //Add the new DataTable to the RecordSet
+            //AddSequence the new DataTable to the RecordSet
             result.Tables.Add(tableName);
 
             //Cycle the colums, adding those that don't exist yet 
@@ -78,7 +78,7 @@ namespace Nuve.Reader
                 //Split the row at the delimiter.
                 string[] items = r.Split(delimiter.ToCharArray());
 
-                //Add the item
+                //AddSequence the item
                 result.Tables[tableName].Rows.Add(items);
             }
 

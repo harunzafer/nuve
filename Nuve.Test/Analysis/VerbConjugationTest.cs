@@ -28,6 +28,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("geldim_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("geldin_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("geldi_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU")]
@@ -39,6 +40,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmedim_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("gelmedin_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmedi_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU")]
@@ -72,6 +74,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmiş_miyim", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmiş_misin", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmiş_mi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU")]
@@ -83,6 +86,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmemiş_miyim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmemiş_misin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmemiş_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU")]
@@ -116,6 +120,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("geliyor_muyum", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("geliyor_musun", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("geliyor_mu", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU")]
@@ -127,6 +132,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmiyor_muyum", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmiyor_musun", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmiyor_mu", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU")]
@@ -188,6 +194,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelecek_miyim", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelecek_misin", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelecek_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU")]
@@ -199,6 +206,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmeyecek_miyim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU " +
                                       "yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmeyecek_misin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU " +
@@ -237,6 +245,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("yapar_mıyım", "yap/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("yapar_mısın", "yap/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("yapar_mı", "yap/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU")]
@@ -248,6 +257,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("yapmaz_mıyım", "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("yapmaz_mısın", "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("yapmaz_mı", "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU")]
@@ -309,6 +319,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmeli_miyim", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmeli_misin", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmeli_mi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU")]
@@ -320,6 +331,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmemeli_miyim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmemeli_misin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmemeli_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU")]
@@ -353,6 +365,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelsem_mi", "gel/FIIL sA/FC_KIP_DILEK_sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("gelsen_mi", "gel/FIIL sA/FC_KIP_DILEK_sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelse_mi", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU")]
@@ -364,6 +377,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmesem_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("gelmesen_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmese_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU")]
@@ -401,6 +415,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("geleyim_mi", "gel/FIIL yA/FC_KIP_ISTEK_(y)A yUm/EKFIIL_SAHIS_BEN_(y)Um _mU/SORU_mU")]
         [TestCase("gelelim_mi", "gel/FIIL yA/FC_KIP_ISTEK_(y)A k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
         public void IstekSoruTest(string token, string analysis)
@@ -408,6 +423,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmeyeyim_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yUm/EKFIIL_SAHIS_BEN_(y)Um _mU/SORU_mU")]
         [TestCase("gelmeyelim_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
         public void IstekSoruOlumsuzTest(string token, string analysis)
@@ -435,6 +451,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelsin_mi", "gel/FIIL sUn/FC_KIP_EMIR_sUn _mU/SORU_mU")]
         [TestCase("gelsinler_mi", "gel/FIIL sUnlAr/FC_KIP_EMIR_sUnlAr _mU/SORU_mU")]
         public void EmirSoruTest(string token, string analysis)
@@ -442,6 +459,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmesin_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sUn/FC_KIP_EMIR_sUn _mU/SORU_mU")]
         [TestCase("gelmesinler_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sUnlAr/FC_KIP_EMIR_sUnlAr _mU/SORU_mU")]
         public void EmirOlumsuzSoruTest(string token, string analysis)
@@ -471,6 +489,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("geldi_miydim", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("geldi_miydin", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("geldi_miydi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -483,6 +502,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmedi_miydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gelmedi_miydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmedi_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -519,6 +539,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmiş_miydim", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gelmiş_miydin", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmiş_miydi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -554,6 +575,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("geliyor_muydum", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("geliyor_muydun", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("geliyor_muydu", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -566,6 +588,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmiyor_muydum", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gelmiyor_muydun", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmiyor_muydu", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -602,6 +625,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelecek_miydim", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gelecek_miydin", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelecek_miydi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -614,6 +638,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmeyecek_miydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gelmeyecek_miydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmeyecek_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -650,6 +675,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gezer_miydim", "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gezer_miydin", "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gezer_miydi", "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -662,6 +688,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gezmez_miydim", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gezmez_miydin", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gezmez_miydi", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -696,6 +723,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmeli_miydim", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gelmeli_miydin", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmeli_miydi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -707,6 +735,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmemeli_miydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gelmemeli_miydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmemeli_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -742,6 +771,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelse_miydim", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gelse_miydin", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelse_miydi", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -754,6 +784,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmese_miydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gelmese_miydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmese_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -788,6 +819,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gele_miydim", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gele_miydin", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gele_miydi", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -799,6 +831,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmeye_miydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("gelmeye_miydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmeye_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
@@ -834,6 +867,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmiş_miymişim", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmiş_miymişsin", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmiş_miymiş", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -845,6 +879,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmemiş_miymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmemiş_miymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmemiş_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -880,6 +915,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("geliyor_muymuşum", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("geliyor_muymuşsun", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("geliyor_muymuş", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -892,6 +928,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmiyor_muymuşum", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmiyor_muymuşsun", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmiyor_muymuş", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -928,6 +965,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelecek_miymişim", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelecek_miymişsin", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelecek_miymiş", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -940,6 +978,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmeyecek_miymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmeyecek_miymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmeyecek_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -976,6 +1015,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelir_miymişim", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelir_miymişsin", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelir_miymiş", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -988,6 +1028,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmez_miymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmez_miymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmez_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -1024,6 +1065,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmeli_miymişim", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmeli_miymişsin", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmeli_miymiş", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -1036,6 +1078,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmemeli_miymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmemeli_miymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmemeli_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -1072,6 +1115,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelse_miymişim", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelse_miymişsin", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelse_miymiş", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -1084,6 +1128,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmese_miymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmese_miymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmese_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -1118,6 +1163,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gele_miymişim", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gele_miymişsin", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gele_miymiş", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -1129,6 +1175,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmeye_miymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("gelmeye_miymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmeye_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
@@ -1164,6 +1211,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("geldiysem_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("geldiysen_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("geldiyse_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
@@ -1176,6 +1224,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmediysem_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("gelmediysen_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmediyse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
@@ -1212,6 +1261,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmişsem_mi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("gelmişsen_mi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmişse_mi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
@@ -1224,6 +1274,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmemişsem_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("gelmemişsen_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmemişse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
@@ -1260,6 +1311,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("geliyorsam_mı", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("geliyorsan_mı", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("geliyorsa_mı", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
@@ -1272,6 +1324,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmiyorsam_mı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("gelmiyorsan_mı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmiyorsa_mı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
@@ -1308,6 +1361,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("geleceksem_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("geleceksen_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelecekse_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
@@ -1320,6 +1374,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmeyeceksem_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("gelmeyeceksen_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmeyecekse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
@@ -1356,6 +1411,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelirsem_mi", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("gelirsen_mi", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelirse_mi", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
@@ -1368,6 +1424,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmezsem_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("gelmezsen_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmezse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
@@ -1402,6 +1459,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmeliysem_mi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("gelmeliysen_mi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmeliyse_mi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
@@ -1413,6 +1471,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [Ignore]
         [TestCase("gelmemeliysem_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
         [TestCase("gelmemeliysen_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmemeliyse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]

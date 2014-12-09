@@ -28,7 +28,7 @@ namespace Nuve.Lexicon
         char LastMatch();
 
         /// <summary>
-        /// Add another character to the end of the prefix if new prefix is actually a prefix to some strings in the trie.
+        /// AddSequence another character to the end of the prefix if new prefix is actually a prefix to some strings in the trie.
         /// If no strings have a matching prefix, character will not be added.
         /// </summary>
         /// <param name="next">Next character in the prefix.</param>
