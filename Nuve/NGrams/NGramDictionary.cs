@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace Nuve.NGrams
 {
@@ -21,19 +24,45 @@ namespace Nuve.NGrams
             nGrams = new Dictionary<NGram, int>();
         }
 
+        private NGramDictionary(NGramExtractor extractor, IDictionary<NGram, int> nGrams)
+        {
+            this.extractor = extractor;
+            this.nGrams = nGrams;
+        }
+
+        public static NGramDictionary DeserializeFrom(string str)
+        {
+            var lines = str.Split('\n');
+            var minNGram = Int32.Parse(lines[0].Split('\t')[0]);
+            var maxNGram = Int32.Parse(lines[0].Split('\t')[1]);
+
+            IDictionary<NGram, int> nGrams = new Dictionary<NGram, int>();
+            var extractor = new NGramExtractor(minNGram, maxNGram);
+
+            foreach (var line in lines.Skip(1))
+            {
+                var row = line.Split('\t');
+
+                var nGram = new NGram(row[0].Split(null));
+
+                int freq = Int32.Parse(row[1]);
+
+                if (!nGrams.ContainsKey(nGram))
+                {
+                    nGrams.Add(nGram, freq);
+                }
+            }
+
+            return new NGramDictionary(extractor, nGrams);
+        }
+
         public void AddSequence(IEnumerable<string> tokens)
         {
             var newNGrams = extractor.ExtractAsDictionary(tokens);
             nGrams.Merge(newNGrams);
         }
 
-        public void Add(NGram nGram, int freq)
-        {
-            if (!nGrams.ContainsKey(nGram))
-            {
-                nGrams.Add(nGram, freq);
-            }
-        }
+        
 
         public int GetFrequency(params string[] nGramTokens)
         {
@@ -64,8 +93,17 @@ namespace Nuve.NGrams
 
         public override string ToString()
         {
-            var entries = nGrams.Select(d => string.Format("{0}\t{1}", d.Key, d.Value));
-            return  string.Join("\n", entries) ;
+            var sb = new StringBuilder().
+                Append(extractor.MinNGramSize).
+                Append("\t").
+                Append(extractor.MaxNGramSize).
+                Append("\n");
+
+            foreach (KeyValuePair<NGram, int> pair in nGrams)
+            {
+                sb.Append(pair.Key).Append("\t").Append(pair.Value).Append("\n");
+            }
+            return sb.ToString().TrimEnd();            
         }
     }
 

@@ -248,5 +248,22 @@ namespace Nuve.Test.NGrams
             freq = corpus.GetFrequency("not", "like", "green");
             Assert.AreEqual(1, freq);
         }
+
+        [Test]
+        public void SerializationTest()
+        {
+            var corpus = new NGramDictionary(new NGramExtractor(Unigram, Trigram));
+            corpus.AddSequence(Text1.Split(null).ToList());
+            corpus.AddSequence(Text2.Split(null).ToList());          
+
+            var copy = NGramDictionary.DeserializeFrom(corpus.ToString());
+
+            corpus.AddSequence(Text3.Split(null).ToList());
+            copy.AddSequence(Text3.Split(null).ToList());
+            
+            Assert.AreEqual(corpus.ToString(), copy.ToString());
+
+        }
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 
 namespace Nuve.NGrams
@@ -10,6 +11,8 @@ namespace Nuve.NGrams
     public class NGram
     {
         private readonly IList<string> tokens;
+
+        private const string Delimiter = " ";
 
         public NGram(IList<string> tokens)
         {
@@ -57,7 +60,7 @@ namespace Nuve.NGrams
             foreach (var token in Tokens)
             {
                 str += prefix + token;
-                prefix = " ";
+                prefix = Delimiter;
             }
             return str;
         }

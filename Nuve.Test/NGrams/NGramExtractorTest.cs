@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 using Nuve.NGrams;
 
@@ -35,6 +36,8 @@ namespace Nuve.Test.NGrams
         private static readonly NGram three_four_five = new NGram("three", "four", "five");
         private static readonly NGram four_five_one = new NGram("four", "five", "one");
         private static readonly NGram five_one_two = new NGram("five", "one", "two");
+
+        
 
 // ReSharper restore InconsistentNaming
 
@@ -155,6 +158,17 @@ namespace Nuve.Test.NGrams
                 {five_one_two, 1},
             };
             CollectionAssert.AreEquivalent(expected, actual);
+        }
+
+        [Test]
+        public void TestExtractLetterNGramsAsList()
+        {
+            var extractor = new NGramExtractor(Bigram, Trigram);
+            var tokens = "beşiktaş".ToCharArray().Select(x => x.ToString());
+            var actual = extractor.ExtractAsList(tokens);
+
+
+            
         }
     }
 }

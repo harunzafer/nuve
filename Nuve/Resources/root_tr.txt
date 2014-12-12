@@ -8525,7 +8525,7 @@ gelinkuşak	gelinkuşağ				TAMLAMA	isim	R_YUMUSAMA_kğ			Türkçe	Hayır
 gelinparmak	gelinparmağ				TAMLAMA	isim	R_YUMUSAMA_kğ		bitki bilimi	Türkçe	Hayır				
 gelir					ISIM	isim									
 geliş					FIIL	fiil				Türkçe	Hayır		E	Hayır	
-geliş					FIIL	fiil			biyoloji	Türkçe					
+geliş				F	FIIL	fiil			biyoloji	Türkçe					
 gelişigüzel					SIFAT	sıfat				Türkçe	Hayır				
 gelişim					ISIM	isim									
 gelişkin					SIFAT	sıfat				Türkçe	Hayır				
@@ -9180,7 +9180,7 @@ gelişmiş					SIFAT	sıfat				Türkçe	Hayır
 günısı					ISIM	isim				Türkçe	Hayır				
 günindi					ISIM	isim				Türkçe	Hayır				
 günöte					ISIM	isim			gök bilimi	Türkçe	Hayır				
-günü					ISIM	isim				Türkçe	Hayır				
+günü				F	ISIM	isim				Türkçe	Hayır				
 günübirliğine					ZARF	zarf				Türkçe	Hayır				
 günübirlik	günübirliğ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
 günüle	günülü				FIIL	fiil				Türkçe	Hayır				
@@ -17974,6 +17974,7 @@ necip	necib				SIFAT	sıfat	R_YUMUSAMA_pb	bi		Arapça	Hayır
 nedamet					ISIM	isim				Arapça	Hayır				
 nedbe					ISIM	isim				Arapça	Hayır				
 neden					ISIM	isim				Türkçe	Hayır				
+neden					ZARF	zarf				Türkçe	Hayır				
 nedim					ISIM	isim				Arapça	Hayır				
 nedime					ISIM	isim				Arapça	Hayır				
 nedret					ISIM	isim				Arapça	Hayır				
@@ -20775,8 +20776,6 @@ saika					ISIM	isim				Arapça	Hayır
 Saimbeyli					OZEL	özel			ilçe	Ar-Tr	Evet				
 sair					SIFAT	sıfat				Arapça	Hayır				
 sairfilmenam					SIFAT	sıfat				Arapça	Hayır				
-sak					ISIM	isim			bitki bilimi	Arapça	Hayır				
-sak	sağ				SIFAT	sıfat	R_YUMUSAMA_kğ			Türkçe	Hayır				
 saka					ISIM	isim				Arapça	Hayır				
 saka					ISIM	isim			hayvan bilimi	Türkçe	Hayır				
 saka					ISIM	isim			tıp	Arapça	Hayır				
@@ -20816,10 +20815,10 @@ sakkarometre					ISIM	isim			kimya	Fransızca	Hayır
 sakkaroz					ISIM	isim			kimya	Fransızca	Hayır				
 sakkarozölçer					ISIM	isim			kimya	Fr-Tr	Hayır				
 sakla	saklı				FIIL	fiil				Türkçe	Hayır	E		Evet	
-sakla	saklı				FIIL	fiil				Türkçe					
+sakla	saklı			F	FIIL	fiil				Türkçe	Hayır				
 saklambaç	saklambac				ISIM	isim	R_YUMUSAMA_çc	cı		Türkçe	Hayır				
 saklan					FIIL	fiil				Türkçe	Hayır		E	Hayır	
-saklan					FIIL	fiil				Türkçe					
+saklan				F	FIIL	fiil				Türkçe					
 saklantı					ISIM	isim				Türkçe	Hayır				
 sako					ISIM	isim				İtalyanca	Hayır				
 saksafon					ISIM	isim			müzik	Fransızca	Hayır				
@@ -27400,3 +27399,6 @@ zürefa					ISIM	isim				Arapça	Hayır
 zürra					ISIM	isim				Arapça	Hayır				
 zürriyet					ISIM	isim				Arapça	Hayır				
 züyuf					ISIM	isim				Arapça	Hayır				
+özgeçmiş					ISIM	isim				Türkçe	Hayır				
+böylece					ZARF	zarf				Türkçe	Hayır				
+halükarda					ZARF	zarf				Türkçe	Hayır				

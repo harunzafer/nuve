@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters;
 using System.Security.Policy;
 using System.Text;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
 using Nuve.NGrams;
@@ -20,41 +23,53 @@ namespace Nuve.Gui
         private const string UntaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalized.txt";
 
 
-        //private static readonly WordAnalyzer Analyzer = null;
-        private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
+        private static readonly WordAnalyzer Analyzer = null;
+        //private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
 
+        private const string Text1 = "I am Sam";
+        private const string Text2 = "Sam I am";
+        private const string Text3 = "I do not like green eggs and ham";
+        private const int Unigram = 1;
+        private const int Bigram = 2;
+        private const int Trigram = 3;
+        
         /// <summary>
         ///     The main entry point for the application.
         /// </summary>
         [STAThread]
         private static void Main()
         {
-    
-            //var model = CreateModel();
-            
-            var model = new NGramModel(2, @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\model_uni_bi.json");
+           
 
-            IStemmer stemmer = new DictionaryStemmer();
-            //var betterModel = CreateBetterModel(stemmer);
-            var betterModel = new NGramModel(2, @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\model_uni_bi.json");
 
-            IStemmer betterStemmer = new StatisticalStemmer(betterModel, Analyzer);
+            //var deserializedProduct = JsonConvert.DeserializeObject<NGramDictionary>(output);
 
-            //Console.WriteLine(stemmer.GetStem("araştırmalardı"));
-            //Console.WriteLine(stemmer.GetStem("annesiydi"));
-            
-            StemmerEvaluator.Evaluate(stemmer, @"C:\Users\hrzafer\Dropbox\nuve\data\expected_stems.txt");
 
-            StemmerEvaluator.Evaluate(betterStemmer, @"C:\Users\hrzafer\Dropbox\nuve\data\expected_stems.txt");
+            ////var model = CreateModel();
+
+            //var model = new NGramModel(2, @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\model_uni_bi.json");
+
+            //IStemmer stemmer = new DictionaryStemmer();
+            ////var betterModel = CreateBetterModel(stemmer);
+            //var betterModel = new NGramModel(2, @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\model_uni_bi.json");
+
+            //IStemmer betterStemmer = new StatisticalStemmer(betterModel, Analyzer);
+
+            ////Console.WriteLine(stemmer.GetStem("araştırmalardı"));
+            ////Console.WriteLine(stemmer.GetStem("annesiydi"));
+
+            //StemmerEvaluator.Evaluate(stemmer, @"C:\Users\hrzafer\Dropbox\nuve\data\expected_stems.txt");
+
+            //StemmerEvaluator.Evaluate(betterStemmer, @"C:\Users\hrzafer\Dropbox\nuve\data\expected_stems.txt");
 
             //Test();
 
 
-            var words = File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\Damla\code\suggestion\unigrams.txt")
-                .Select(x => x.Split(null)[0]);
-            var output = @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\nuve_stems2.dict";
+            //var words = File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\Damla\code\suggestion\unigrams.txt")
+            //    .Select(x => x.Split(null)[0]);
+            //var output = @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\nuve_stems2.dict";
 
-            StemDictionaryGenerator.Generate(words, betterStemmer, output);
+            //StemDictionaryGenerator.Generate(words, betterStemmer, output);
 
             //StemFirst500();
 
@@ -107,7 +122,7 @@ namespace Nuve.Gui
 
         public static void PrintSentences(SentenceSegmenter segmenter, string paragraph)
         {
-            IEnumerable<string> sentences = segmenter.GetSentences(paragraph);
+            IEnumerable<string> sentences = segmenter.GetSentences(paragraph);      
             foreach (string sentence in sentences)
             {
                 Console.WriteLine(sentence);
@@ -119,8 +134,8 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-                "yardımcısı", "araştırmadık", "gelmedik", "gitmedik", "yapmadık", "araştırmalardı", "kalemlerin",
-                "kalemlerden"
+                "görüşemeyeli", "özgeçmiş", "özgeçmişin", "halükarda", "yapmadık", "araştırmalardı", "kalemlerin",
+                "kalemlerden"   
             };
             //string[] testStrings = SoruTest.Soru;
             try

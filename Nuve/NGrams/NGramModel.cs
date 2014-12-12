@@ -32,25 +32,10 @@ namespace Nuve.NGrams
             maxNGramSize = nGramSize;
             extractor = new NGramExtractor(1, maxNGramSize);
             var lines = File.ReadAllLines(modelFilepath);
-            AddAll(lines);
+            //AddAll(lines);
         }
 
-        private void AddAll(IEnumerable<string> lines )
-        {
-            
-            foreach (var line in lines)
-            {
-                var row = line.Split('\t');
-                var nGram = new NGram(row[0].Split(null));
-                int freq = Int32.Parse(row[1]);
-                nGramDictionary.Add(nGram, freq);
-                if (!row[0].Contains(" "))
-                {
-                    tokenCount += freq;
-                }
-            }
-        }
-
+        
         public void AddSentence(IEnumerable<string> tokens)
         {
             var tokenList = tokens.ToList();
