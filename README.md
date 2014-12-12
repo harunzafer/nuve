@@ -15,7 +15,8 @@ Use cases for the above tasks are as follows:
 
 
 #### Morphologic Analysis, Stemming and Generation:
-```   
+
+```
 Language tr = Language.Turkish;
 
 //Analysis
@@ -44,11 +45,11 @@ word.AddSuffix(tr.Suffixes.GetSuffix("IC_COGUL_lAr"));
 word.AddSuffix(tr.Suffixes.GetSuffix("IC_HAL_AYRILMA_DAn"));
  
 return word.GetSurface();
-```   
+```
  
 ####Sentence Segmentation:     
 
-```   
+```
  var paragraph = "Prof. Dr. Ahmet Bey 1.6 oranında artış var dedi 2. kez. E-posta adresi ahmet.bilir@prof.dr imiş! Doğru mu?";
  Splitter splitter = new RegexSplitter(RegexSplitter.ClassicPattern);
  var segmenter = new TokenBasedSentenceSegmenter(splitter);
@@ -57,11 +58,11 @@ return word.GetSurface();
  {
 	  Console.WriteLine(sentence);
  }     
-```   
+```
 
 #### N-gram Extraction:     
 
-```   
+```
 string Text1 = "I am Sam";
 string Text2 = "Sam I am";
 string Text3 = "I do not like green eggs and ham";
@@ -75,7 +76,7 @@ corpus.AddSequence(Text2.Split(null).ToList());
 corpus.AddSequence(Text3.Split(null).ToList());
 
 int freq = corpus.GetFrequency("I", "am");
-```   
+```
  
 ### Add to your project
 

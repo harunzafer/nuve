@@ -22,17 +22,9 @@ namespace Nuve.Gui
         private const string TaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcSentencedNormalized.txt";
         private const string UntaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalized.txt";
 
-
         private static readonly WordAnalyzer Analyzer = null;
         //private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
 
-        private const string Text1 = "I am Sam";
-        private const string Text2 = "Sam I am";
-        private const string Text3 = "I do not like green eggs and ham";
-        private const int Unigram = 1;
-        private const int Bigram = 2;
-        private const int Trigram = 3;
-        
         /// <summary>
         ///     The main entry point for the application.
         /// </summary>
@@ -40,10 +32,7 @@ namespace Nuve.Gui
         private static void Main()
         {
            
-
-
             //var deserializedProduct = JsonConvert.DeserializeObject<NGramDictionary>(output);
-
 
             ////var model = CreateModel();
 
@@ -63,7 +52,6 @@ namespace Nuve.Gui
             //StemmerEvaluator.Evaluate(betterStemmer, @"C:\Users\hrzafer\Dropbox\nuve\data\expected_stems.txt");
 
             //Test();
-
 
             //var words = File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\Damla\code\suggestion\unigrams.txt")
             //    .Select(x => x.Split(null)[0]);
