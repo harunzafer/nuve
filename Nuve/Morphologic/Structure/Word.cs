@@ -11,10 +11,11 @@ namespace Nuve.Morphologic.Structure
     /// <summary>
     /// Bir kelime nesnesini temsil eder.
     /// </summary>
-    public class Word : IEnumerable<Allomorph>
+    public class Word : IEnumerable<Allomorph>, IEquatable<Word>
     {
         private readonly LinkedList<Allomorph> _allomorphs = new LinkedList<Allomorph>();
         private string _surface = string.Empty;
+
 
         /// <summary>
         /// Word[i] şeklinde kullanım için, i. Allomorfu döndürür.
@@ -237,17 +238,26 @@ namespace Nuve.Morphologic.Structure
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
+
             return Equals((Word) obj);
         }
 
-        private bool Equals(Word other)
+        public bool Equals(Word other)
         {
-            return Equals(_allomorphs, other._allomorphs);
+
+            return GetHashCode() == other.GetHashCode();
         }
 
         public override int GetHashCode()
         {
-            return (_allomorphs != null ? _allomorphs.GetHashCode() : 0);
+            int hashcode = 0;
+
+            foreach (var allomorph in _allomorphs)
+            {
+                hashcode += allomorph.Morpheme.GetHashCode();
+            }
+
+            return hashcode;
         }
 
 

@@ -1,6 +1,6 @@
 nuve
 ===
-Nuveis a Natural Language Processing Library for Turkish. Currently it supports:
+Nuve is a Natural Language Processing Library for Turkish. Currently it supports:
 
  - Morphologic analysis
  - Morphologic generation

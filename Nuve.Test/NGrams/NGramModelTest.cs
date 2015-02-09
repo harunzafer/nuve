@@ -8,6 +8,7 @@ using Nuve.NGrams;
 
 namespace Nuve.Test.NGrams
 {
+    [Ignore]
     [TestFixture]
     internal class NGramModelTest
     {

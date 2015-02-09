@@ -36,6 +36,21 @@ namespace Nuve.Lexicon
             return roots[rootSurface];
         }
 
+        /// <summary>
+        /// Belirtilen anahtara karşılık gelen kökleri out parametresine atar
+        /// </summary>
+        /// <param name="rootSurface">kök yüzeyi</param>
+        /// <param name="rootCandidates">kök yüzeyine karşılık gelen kökler</param>
+        /// <returns>True if there is any root for the given surface</returns>
+        public bool TryGetRoots(string rootSurface, out List<Root> rootCandidates)
+        {
+            if (roots.TryGetValue(rootSurface, out rootCandidates))
+            {
+                return true;
+            }
+            return false;
+        }
+        
         public bool Contains(string surface){
             return roots.ContainsKey(surface);
         }

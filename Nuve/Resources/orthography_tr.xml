@@ -184,8 +184,10 @@
 		</rule>
 
 		<rule id="F_OZEL_su" type="First">
-			<description>	Gelen ek (vasıta hali eki hariç) sessiz ile başlıyorsa sondaki ý karakteri düşer.
-										Değilse ý karakteri y harfine dönüştürülür. </description>
+			<description>
+        Gelen ek sesli ile başlıyorsa veya IC_SAHIPLIK_O_(s)U, IC_HAL_ILGI_(n)Un eklerinden biri ise
+        sona y karakteri ekle
+      </description>
 			<transformation action="Append" operandOne="y">
 				<conditions flag="Or">
 					<condition operator="StartsWithVowel"/>
@@ -211,6 +213,24 @@
 			</transformation>
 		</rule>
 
+    <rule id="F_OZEL_o" type="First">
+      <description> o, bu, şu kökleri bazı ekler için araya n sesi alırlar </description>
+      <transformation action="Append" operandOne="n">
+        <conditions flag="Or">
+          <condition operator="MorphemeEquals" operand="ZAMIR_COGUL_lAr"/>
+          <condition operator="MorphemeEquals" operand="IC_HAL_YONELME_(y)A"/>
+          <condition operator="MorphemeEquals" operand="IC_HAL_BULUNMA_DA"/>
+          <condition operator="MorphemeEquals" operand="IC_HAL_AYRILMA_DAn"/>
+          <condition operator="MorphemeEquals" operand="IC_HAL_BELIRTME_(y)U"/>
+          <condition operator="MorphemeEquals" operand="IY_SIFAT_sUz"/>
+          <condition operator="MorphemeEquals" operand="IY_SIFAT_lU" />
+          <condition operator="MorphemeEquals" operand="IY_ISIM_lUK" />
+          <condition operator="MorphemeEquals" operand="IY_ISIM_cAğIz" />
+          <condition operator="MorphemeEquals" operand="IY_ZARF_CA" />
+        </conditions>
+      </transformation>
+    </rule>
+
 		<rule id="F_OZEL_bana" type="First">
 			<description> Gelen ek yönelme hal eki ise e => a olur. 
 										ben => bana, sen => sana </description>
@@ -231,25 +251,7 @@
 				</conditions>
 			</transformation>
 		</rule>
-		
-		<rule id="F_OZEL_o" type="First">
-			<description> o, bu, şu kökleri bazı ekler için araya n sesi alırlar </description>
-			<transformation action="Append" operandOne="n">
-				<conditions flag="Or">
-					<condition operator="MorphemeEquals" operand="ZAMIR_COGUL_lAr"/>
-					<condition operator="MorphemeEquals" operand="IC_HAL_YONELME_(y)A"/>
-					<condition operator="MorphemeEquals" operand="IC_HAL_BULUNMA_DA"/>
-					<condition operator="MorphemeEquals" operand="IC_HAL_AYRILMA_DAn"/>
-					<condition operator="MorphemeEquals" operand="IC_HAL_BELIRTME_(y)U"/>
-					<condition operator="MorphemeEquals" operand="IY_SIFAT_sUz"/>
-					<condition operator="MorphemeEquals" operand="IY_SIFAT_lU" />
-					<condition operator="MorphemeEquals" operand="IY_ISIM_lUK" />
-					<condition operator="MorphemeEquals" operand="IY_ISIM_cAğIz" />
-					<condition operator="MorphemeEquals" operand="IY_ZARF_CA" />
-				</conditions>
-			</transformation>
-		</rule>
-		
+						
 		<rule id="S_OZEL_o" type="Self">
 			<description> o, bu, şu zamirlerinin yüzeyindeki n sesi ek gelmiyorsa silinir. </description>
 			<transformation action="DeleteLastLetter" />
@@ -477,6 +479,7 @@
 			<transformation action="Append" operandOne="'" />
 		</rule>
 
+    <!-- Bu kurallar tam olarak neden var?-->
 		<rule id="D_ILK_HARF_BUYUT_o" type="Default">
 			<description>kâr -> kar </description>
 			<transformation action="Replace" operandOne="o" operandTwo="O" flag="first"/>

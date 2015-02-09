@@ -6,15 +6,16 @@ using System.Text.RegularExpressions;
 
 namespace Nuve.Tokenizers
 {
-    class RegexSplitter : Splitter
+    public class RegexSplitter : Splitter
     {
-        private readonly string _pattern;
+        private readonly string pattern;
 
+        //todo: bu regex ile boşluklar da dahil oluyor, bunun bir de boşlukları elimine eden versiyonu yazılabilir.
         public const string ClassicPattern = "(" + @"\s+|" + //space
                                       @"(?<=[^.])(\.\.\.)(?=\s)|" + //space
                                       @"https?://[-a-z0-9]+(\.[-a-z0-9]+)*\.[a-z]{2,4}(/[-a-z0-9R:@&#?=+,.!/~+'%$]+)?|" + //URL
                                       @"\w+(\.\w+)*@\w+\.\w+(\.\w+)*|" + // Email
-                                      @"e-\w{4,10}|" + // e-devlet, e-posta
+                                      @"e-\w+|" + // e-devlet, e-posta, e-ticaret
                                       @"(0|[12])?[0-9][.:][0-5][0-9]('[a-zçığöşü]+)|" + //saat
                                       @"\w+(['.]\w+)+(-[ıiuü])?|" + //tek tırnak
                                       @"\d+([,]\d+)?|" + //virgül ile ayrılmış rakamlar
@@ -25,14 +26,14 @@ namespace Nuve.Tokenizers
 
         public RegexSplitter(string pattern)
         {
-            _pattern = pattern;
+            this.pattern = pattern;
         }
 
         public override IList<string> Split(string input)
         {
             var words = new List<string>();
 
-            var regex = new Regex(_pattern);
+            var regex = new Regex(pattern);
 
             if (regex.IsMatch(input))
             {

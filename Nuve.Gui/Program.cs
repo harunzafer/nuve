@@ -6,13 +6,15 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters;
 using System.Security.Policy;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
-using Newtonsoft.Json;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
 using Nuve.NGrams;
 using Nuve.Sentence;
 using Nuve.Stemming;
+using Nuve.Test.Analysis;
+using Nuve.Tokenizers;
 
 namespace Nuve.Gui
 {
@@ -22,8 +24,8 @@ namespace Nuve.Gui
         private const string TaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcSentencedNormalized.txt";
         private const string UntaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalized.txt";
 
-        private static readonly WordAnalyzer Analyzer = null;
-        //private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
+        //private static readonly WordAnalyzer Analyzer = null;
+        private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
 
         /// <summary>
         ///     The main entry point for the application.
@@ -31,7 +33,58 @@ namespace Nuve.Gui
         [STAThread]
         private static void Main()
         {
-           
+            //var lines = File.ReadAllLines(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcExtra.txt");
+            //var splitter = new RegexSplitter(RegexSplitter.ClassicPattern);
+
+            //var tokens = new List<string>();
+            //foreach (var line in lines)
+            //{
+            //    tokens.AddRange(splitter.Split(line));
+            //}
+
+
+            //var sb = new StringBuilder();
+            //foreach (var token in tokens)
+            //{
+            //    if (token == " " || token=="")
+            //    {
+            //        continue;
+            //    }
+            //    var solutions = Analyzer.Analyze(token).ToList();
+            //    if (token != token.ToLower())
+            //    {
+            //        solutions.AddRange(Analyzer.Analyze(token.ToLower()));
+            //    }
+
+            //    sb.Append(token).Append('\n');
+            //    foreach (var solution in solutions)
+            //    {
+            //        sb.Append('\t').Append(solution).Append('\n');
+            //    }
+            //    sb.Append('\n');
+
+            //}
+
+            //File.WriteAllText(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcExtraTagged.txt", sb.ToString());
+
+            //Benchmarker.TestWithAMillionWords(Analyzer);
+
+            //File.WriteAllLines(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalizedTokenized.txt", tokens);
+            //var test = TestGenerator.GenerateContainsAnalysisTest(SpecialCase.ZamirSoruNe, "ZamirSoruNeTest");
+            //Console.WriteLine(test);
+            //AnalysisHelper.Analyze(Analyzer, PronounConjugation.O);
+            Analyzer.Analyze("kalemim");
+            //Benchmarker.TestWithAMillionWords(Analyzer);
+            //Benchmarker.TestWithAMillionTokens(Analyzer);
+
+            //Test();
+            //var solutions = Analyzer.Analyze("bunu");
+            //foreach (var solution in solutions)
+            //{
+            //    Console.WriteLine(solution.GetHashCode());
+            //}
+
+
             //var deserializedProduct = JsonConvert.DeserializeObject<NGramDictionary>(output);
 
             ////var model = CreateModel();
@@ -51,7 +104,7 @@ namespace Nuve.Gui
 
             //StemmerEvaluator.Evaluate(betterStemmer, @"C:\Users\hrzafer\Dropbox\nuve\data\expected_stems.txt");
 
-            //Test();
+
 
             //var words = File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\Damla\code\suggestion\unigrams.txt")
             //    .Select(x => x.Split(null)[0]);
@@ -122,8 +175,9 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-                "görüşemeyeli", "özgeçmiş", "özgeçmişin", "halükarda", "yapmadık", "araştırmalardı", "kalemlerin",
-                "kalemlerden"   
+                "bunlar",
+                "su", "onu", "suya", "sudan", "sular", "suyla", "suda","susu",
+                "bu","bunu","buna","bunda","bundan","bunlar","bununla"
             };
             //string[] testStrings = SoruTest.Soru;
             try

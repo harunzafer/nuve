@@ -2,6 +2,7 @@ root	surfaces	lex	active	Id	flags	rules	Anlam
 AA		aa		KISALTMA	kısaltma	D_OKUNUSDAN_YAZILISA	Anadolu Ajansı
 Google		guugıl		ALINTI	alıntı	D_OKUNUSDAN_YAZILISA	
 AB		abe		KISALTMA	kısaltma	D_OKUNUSDAN_YAZILISA	Avrupa Birliği
+MHP		mehepe		KISALTMA		D_OKUNUSDAN_YAZILISA	Milliyetçi Hareket Partisi
 AAFSE		aafesee	F	KISALTMA		D_OKUNUSDAN_YAZILISA	Güney Avrupa Müttefik Hava Kuvvetleri (Allied Air Forces Southern Europe)
 AAM		aame	F	KISALTMA		D_OKUNUSDAN_YAZILISA	Atatürk Araştırma Merkezi
 ABD		abede		KISALTMA		D_OKUNUSDAN_YAZILISA	Amerika Birleşik Devletleri
@@ -542,7 +543,7 @@ VHF				KISALTMA		D_OKUNUSDAN_YAZILISA	Çok yüksek frekans (Very High Frequency)
 VIP		viaypi		KISALTMA		D_OKUNUSDAN_YAZILISA	Çok önemli kişi (Very Important Person)
 vs.		Vesaire		NOKTALI			Vesaire
 w		vat		KISALTMA		D_OKUNUSDAN_YAZILISA	Elektrik güç birimi (Watt)
-WAP		vap		KISALTMA		D_OKUNUSDAN_YAZILISA	"Kablosuz uygulama protokolü; İnternet sistemine kablosuz erişim (Wireless Application Protocol)"
+WAP		vap		KISALTMA		D_OKUNUSDAN_YAZILISA	Kablosuz uygulama protokolü; İnternet sistemine kablosuz erişim (Wireless Application Protocol)
 WB				KISALTMA		D_OKUNUSDAN_YAZILISA	Dünya Bankası (World Bank)
 WHO		hu		KISALTMA		D_OKUNUSDAN_YAZILISA	Dünya Sağlık Örgütü (World Health Organization)
 WTO				KISALTMA		D_OKUNUSDAN_YAZILISA	Dünya Ticaret Örgütü (World Trade Organization)

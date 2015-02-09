@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 using Nuve.Tokenizers;
 
@@ -42,6 +43,7 @@ namespace Nuve.Test.Tokenizers
         [TestCase("2 No.lu", Result = new object[] {"2", " ", "No.lu"})]
         [TestCase("1. değil 2. oldum", Result = new object[] {"1", ".", " ", "değil", " ", "2", ".", " ", "oldum"})]
         [TestCase("kaç m²(metrekare)", Result = new object[] {"kaç"," ", "m", "²", "(", "metrekare", ")"})]
+        [TestCase("postalarım e-postalarımın e-postalarınızdaki", Result = new object[] { "postalarım", " ", "e-postalarımın", " ", "e-postalarınızdaki"})]
         [TestCase("Please, email john.doe@foo.com by 03-09, re: m37-xq.",
             Result =
                 new object[]
@@ -53,8 +55,12 @@ namespace Nuve.Test.Tokenizers
         public IList<string> StandartTokenizerTest(string text)
         {
             Splitter splitter = new RegexSplitter(RegexSplitter.ClassicPattern);
-            return splitter.Split(text);
+            var tokens = splitter.Split(text);
+            var length = String.Join("", tokens).Length;
+            Assert.AreEqual(length, text.Length);
+            return tokens;
         }
+
         
         
     }

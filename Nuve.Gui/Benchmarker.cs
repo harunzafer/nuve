@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
@@ -15,7 +16,10 @@ namespace Nuve.Gui
 
 
         
-
+        /// <summary>
+        /// Test the speed with a million different word types
+        /// </summary>
+        /// <param name="analyzer"></param>
         public static void TestWithAMillionWords(WordAnalyzer analyzer)
         {
             string[] lines = File.ReadAllLines(AMillionWords, Encoding.UTF8);
@@ -26,6 +30,10 @@ namespace Nuve.Gui
             GC.Collect();
         }
 
+        /// <summary>
+        /// Test the speed with a million word corpus which includes same words many times
+        /// </summary>
+        /// <param name="analyzer"></param>
         public static void TestWithAMillionTokens(WordAnalyzer analyzer)
         {            
             string[] lines = File.ReadAllLines(AMillionTokens, Encoding.UTF8);
@@ -36,7 +44,7 @@ namespace Nuve.Gui
             GC.Collect();
         }
 
-        private static void Process(string[] tokens, WordAnalyzer analyzer)
+        private static void Process(IEnumerable<string> tokens, WordAnalyzer analyzer)
         {
             foreach (string token in tokens)
             {

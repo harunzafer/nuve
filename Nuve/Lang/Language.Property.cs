@@ -77,7 +77,7 @@ namespace Nuve.Lang
                 }
                 else
                 {
-                    string[] filenames = {_rootFilename, _nameFilename};
+                    string[] filenames = {_rootFilename, _nameFilename, _abbreviationFilename};
                     rd = TextRootReader.Read(filenames, _orthography);
                 }
 

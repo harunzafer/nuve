@@ -80,7 +80,7 @@ namespace Nuve.Test.Analysis
         [TestCase("parıldıyordu", 1, new[] { "parıl dA Uyor yDU", })]
         [TestCase("terkisinde", 1, new[] { "terki sU ndA", })]
         [TestCase("beğenmişliğiyle", 1, new[] { "beğen mUş lUk sU ylA", })]
-        [TestCase("bunları", 1, new[] { "bun lAr yU", })]
+        [TestCase("bunları", 1, new[] { "bu lAr yU", })]
         [TestCase("gibiydi", 1, new[] { "gibi yDU", })]
         [TestCase("iğrentiye", 1, new[] { "iğrenti yA", })]
         [TestCase("anlayamazdı", 2, new[] { "an lA yAmA Ur yDU", "anla yAmA Ur yDU", })]

@@ -31,10 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net40\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="QuickGraph">
       <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.dll</HintPath>
     </Reference>
@@ -168,6 +164,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Resources\dictionary_tr.xlsx" />
@@ -176,7 +173,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\abbrv_tr.txt" />
-    <EmbeddedResource Include="Resources\morphotactics_tr.xml" />
+    <EmbeddedResource Include="Resources\morphotactics_tr.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\name_tr.txt" />
     <EmbeddedResource Include="Resources\orthography_tr.xml" />
     <EmbeddedResource Include="Resources\root_tr.txt" />

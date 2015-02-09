@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Nuve.Morphologic.Structure;
 
@@ -21,28 +22,24 @@ namespace Nuve.Lang
         /// <returns></returns>
         public IList<Word> Analyze(string token, bool checkTransition = true, bool checkOrthography = true, bool checkTransitionConditions = true) {
 
-            IList<Word> words = new List<Word>();
-            IList<RootSurfacePair> roots = FindPossibleRoots(token);
+            var words = new List<Word>();
+            IEnumerable<RootSurfacePair> roots = FindPossibleRoots(token);
             foreach (RootSurfacePair pair in roots)
             {
                 GetPossibleWords(new Word(pair.Root), token.Remove(0, pair.Surface.Length), words, checkTransition);
             }
+
+            if (checkTransitionConditions)
+            {
+                EliminateByMorphotactics(words);
+            }   
 
             if (checkOrthography)
             {
                 EliminateByOrtography(words, token);    
             }
 
-            if (checkTransitionConditions)
-            {
-                EliminateByMorphotactics(words);    
-            }
-
-            return words;
-        }
-
-        public bool HasCorrectSurface(Word word, string surface) {
-            return word.GetSurface() == surface;
+            return words.Distinct().ToList();
         }
 
         public void EliminateByOrtography(IList<Word> analyses, string surface) {
@@ -52,6 +49,11 @@ namespace Nuve.Lang
                     analyses.RemoveAt(i);
                 }
             }
+        }
+
+        public bool HasCorrectSurface(Word word, string surface)
+        {
+            return word.GetSurface() == surface;
         }
 
         public void EliminateByMorphotactics(IList<Word> analyses)
@@ -71,18 +73,22 @@ namespace Nuve.Lang
         /// </summary>
         /// <param name="token">Kökü bulunacak kelime</param>
         /// <returns></returns>
-        private List<RootSurfacePair> FindPossibleRoots(string token)
+        private IEnumerable<RootSurfacePair> FindPossibleRoots(string token)
         {
             var rootSurfacePairs = new List<RootSurfacePair>();
             for (int i = 0; i < token.Length; i++)
             {
                 string prefix = token.Substring(0, i+1);
-                if (lang.Roots.Contains(prefix))
+                
+                List<Root> rootCandidates;
+
+                if (lang.Roots.TryGetRoots(prefix, out rootCandidates))
                 {
-                    foreach (Root root in lang.Roots.Get(prefix)) { 
+                    foreach (Root root in rootCandidates)
+                    {
                         rootSurfacePairs.Add(new RootSurfacePair(root, prefix));
                     }
-                }
+                }              
             }
             return rootSurfacePairs;
         }
@@ -91,7 +97,7 @@ namespace Nuve.Lang
         {
             if (restOfWord.Length == 0)
             {
-                Word newPossibleWord = new Word(word);
+                var newPossibleWord = new Word(word);
                 words.Add(newPossibleWord);
                 return;
             }
@@ -121,14 +127,13 @@ namespace Nuve.Lang
         private  IList<KeyValuePair<string, Suffix>> GetPossibleFirstSuffixes(string prefix)
         {
             var list = new List<KeyValuePair<string, Suffix>>();
-            IList<Suffix> possibleSuffixes;
             var sb = new StringBuilder();
             foreach (char ch in prefix)
             {
                 sb.Append(ch);
                 if (lang.Suffixes.ContainsSuffixStartsWith(sb.ToString()))
                 {
-                    possibleSuffixes = lang.Suffixes.GetSuffixes(sb.ToString());
+                    IList<Suffix> possibleSuffixes = lang.Suffixes.GetSuffixes(sb.ToString());
                     foreach (var possibleSuffix in possibleSuffixes)
                     {
                         list.Add(new KeyValuePair<string, Suffix>(sb.ToString(), possibleSuffix));

@@ -15,7 +15,15 @@ namespace Nuve.Morphologic
 
         public bool HasTransition(string previousMorphemeId, string nextMorphemeId)
         {
+
             return _graph.ContainsEdge(previousMorphemeId, nextMorphemeId);
+
+            //Transition<string> transition;
+            //bool edgeExists = _graph.TryGetEdge(previousMorphemeId, nextMorphemeId, out transition);
+            //if (edgeExists && !transition.Conditions.IsTrue(word[i]))
+            //{
+            //    return false;
+            //}
         }
 
         public bool IsValid(Word word)
