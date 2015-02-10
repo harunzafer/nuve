@@ -78,23 +78,19 @@
     <Compile Include="Distance\IDistance.cs" />
     <Compile Include="Distance\JaccardDistance.cs" />
     <Compile Include="Distance\LevenshteinDistance.cs" />
+    <Compile Include="Dictionary\MorphemeLexicon.cs" />
+    <Compile Include="Reader\LexiconReader.cs" />
+    <Compile Include="Reader\SuffixLexiconReader.cs" />
     <Compile Include="Stemming\DictionaryStemmer.cs" />
     <Compile Include="Lang\Language.cs" />
     <Compile Include="Lang\Language.Property.cs" />
-    <Compile Include="Lang\RootSurfacePair.cs" />
     <Compile Include="Stemming\RuleBasedStemmer.cs" />
     <Compile Include="Stemming\StatisticalStemmer.cs" />
     <Compile Include="Stemming\IStemmer.cs" />
     <Compile Include="Stemming\StemDictionaryGenerator.cs" />
     <Compile Include="Stemming\StemmerEvaluator.cs" />
     <Compile Include="Lang\WordAnalyzer.cs" />
-    <Compile Include="Lexicon\IPrefixMatcher.cs" />
-    <Compile Include="Lexicon\PrefixMatcher.cs" />
-    <Compile Include="Lexicon\RootDictionary.cs" />
-    <Compile Include="Lexicon\SuffixDictionary.cs" />
-    <Compile Include="Lexicon\SuffixTrie.cs" />
-    <Compile Include="Lexicon\Trie.cs" />
-    <Compile Include="Lexicon\TrieNode.cs" />
+    <Compile Include="Dictionary\Lexicon.cs" />
     <Compile Include="Morphologic\Morphotactics.cs" />
     <Compile Include="Morphologic\Structure\Allomorph.cs" />
     <Compile Include="Morphologic\Structure\Morpheme.cs" />
@@ -131,15 +127,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Reader\EmbeddedResourceReader.cs" />
-    <Compile Include="Reader\ExcelRootReader.cs" />
-    <Compile Include="Reader\ExcelSuffixReader.cs" />
     <Compile Include="Reader\LabelSet.cs" />
     <Compile Include="Reader\MorphotacticsReader.cs" />
     <Compile Include="Reader\MyXmlResolver.cs" />
     <Compile Include="Reader\OrthographyReader.cs" />
     <Compile Include="Reader\PropertySet.cs" />
-    <Compile Include="Reader\TextRootReader.cs" />
-    <Compile Include="Reader\TextSuffixReader.cs" />
+    <Compile Include="Reader\RootLexiconReader.cs" />
     <Compile Include="Reader\TextToDataset.cs" />
     <Compile Include="SampleClass.cs" />
     <Compile Include="Sentence\MockOpenNLPSentenceSegmenter.cs" />

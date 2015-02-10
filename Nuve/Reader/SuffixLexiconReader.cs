@@ -2,19 +2,22 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-using Nuve.Lexicon;
+using Nuve.Dictionary;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
 
 namespace Nuve.Reader
 {
-    internal class TextSuffixReader
+    internal class SuffixLexiconReader
     {
-        private static Orthography _orthography;
+        private readonly Orthography orthography;
 
-        
+        public SuffixLexiconReader(Orthography orthography)
+        {
+            this.orthography = orthography;
+        }
 
-        private class DictionaryLine
+        private class SuffixDictionaryLine
         {
             public string Id;
             public string Lex;
@@ -25,20 +28,15 @@ namespace Nuve.Reader
             public string EmptySurface;
         }
         
-        public static SuffixDictionary Read(string filename, Orthography orthography)
+        public void Read(string filename, 
+            out Dictionary<string, Suffix> suffixesById, 
+            out MorphemeLexicon<Suffix> suffixes)
         {
-            _orthography = orthography;
-            return ReadRoots(filename);
-        }
 
-        public static SuffixDictionary ReadRoots(string filename)
-        {
-            var suffixes = new Dictionary<string, Suffix>();
-            var suffixTrie = new SuffixTrie();
             var ds = TextToDataSet.Convert(filename, "suffix", "\t");
             var data = ds.Tables["suffix"].AsEnumerable();
             var entries = data.Select(x =>
-                        new DictionaryLine
+                        new SuffixDictionaryLine
                         {
                             Id = x.Field<string>("id"),
                             Lex = x.Field<string>("lexicalForm"),
@@ -50,19 +48,20 @@ namespace Nuve.Reader
                         });
 
 
+            suffixesById = new Dictionary<string, Suffix>();
+            suffixes = new MorphemeLexicon<Suffix>();
+
             foreach (var entry in entries)
             {
-                AddSuffix(entry, suffixTrie, suffixes);
+                AddSuffix(entry,  suffixesById,  suffixes);
             }
-
-            return new SuffixDictionary(suffixes, suffixTrie);
-
         }
         
 
-        private static void AddSuffix(DictionaryLine entry, SuffixTrie trie, Dictionary<string, Suffix> suffixes)
+        private void AddSuffix(SuffixDictionaryLine entry,
+             Dictionary<string, Suffix> suffixesById,
+             MorphemeLexicon<Suffix> suffixes)
         {
-            //id	lexicalForm	Order	rules	surfaces
 
             string id = entry.Id; 
             string lex = entry.Lex;
@@ -79,21 +78,15 @@ namespace Nuve.Reader
             Debug.Assert(entry.Surfaces != null, "entry.Surfaces != null");
             var surfaces = new List<string>(entry.Surfaces.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries));
 
-            //bool emptySurface = entry.EmptySurface == "TRUE";
-            //if (emptySurface)
-            //{
-            //   surfaces.AddSequence("");//Burada tam olarak ne yapmaya çalışıyoruz? Boş ek meselesini mi çözmeye çalışıyoruz?
-            //}   
-
-            List<OrthographyRule> rules = _orthography.GetRules(rulesToken);
+            List<OrthographyRule> rules = orthography.GetRules(rulesToken);
             var suffix = new Suffix(id, lex, morphemeType, LabelSet.ConvertLabelNamesToIndexes(flags), rules);
-            suffixes.Add(id, suffix);
-
+            suffixesById.Add(id, suffix);
+            
             foreach (var surface in surfaces)
             {
-                trie.Put(surface, suffix);
+                suffixes.Add(surface, suffix);                
             }
-            
+           
         }
 
     }

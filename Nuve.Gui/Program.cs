@@ -72,10 +72,10 @@ namespace Nuve.Gui
             //File.WriteAllLines(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalizedTokenized.txt", tokens);
             //var test = TestGenerator.GenerateContainsAnalysisTest(SpecialCase.ZamirSoruNe, "ZamirSoruNeTest");
             //Console.WriteLine(test);
-            //AnalysisHelper.Analyze(Analyzer, PronounConjugation.O);
-            Analyzer.Analyze("kalemim");
+            //Test();
+            
             //Benchmarker.TestWithAMillionWords(Analyzer);
-            //Benchmarker.TestWithAMillionTokens(Analyzer);
+            Benchmarker.TestWithAMillionTokens(Analyzer);
 
             //Test();
             //var solutions = Analyzer.Analyze("bunu");
@@ -175,7 +175,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-                "bunlar",
+                "dedik",
                 "su", "onu", "suya", "sudan", "sular", "suyla", "suda","susu",
                 "bu","bunu","buna","bunda","bundan","bunlar","bununla"
             };

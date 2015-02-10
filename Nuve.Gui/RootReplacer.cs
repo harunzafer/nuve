@@ -19,7 +19,7 @@ namespace Nuve.Gui
                 foreach (var solution in solutions)
                 {
                     string output = solution.GetSurface();
-                    solution.Root = turkish.Roots.Get(root)[0];
+                    solution.Root = turkish.Lexicon.Roots.Get(root)[0];
                     output += "\t" + solution.GetSurface();
                     replacedWords.Add(output);
                 }

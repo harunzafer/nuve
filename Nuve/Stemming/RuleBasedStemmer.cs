@@ -76,7 +76,7 @@ namespace Nuve.Stemming
 
         private Word SelectBestSolution(IEnumerable<Word> solutions)
         {
-            //Get stems from solutions
+            //GetSuffix stems from solutions
             var stems = solutions.Select(s => s.GetStem()).ToArray();
 
             ////Remove problematic derivational stems, if they exist at the last

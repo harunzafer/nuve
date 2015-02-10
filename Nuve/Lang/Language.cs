@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using Nuve.Lexicon;
+using Nuve.Dictionary;
 using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
@@ -16,8 +16,9 @@ namespace Nuve.Lang
     public sealed partial class Language
     {
         private readonly Orthography _orthography;
-        private readonly RootDictionary _rootDictionary;
-        private readonly SuffixDictionary _suffixDictionary;
+        private readonly Lexicon lexicon;
+        //private readonly SuffixDictionary _suffixTrie;
+        //private readonly MorphemeLexicon<Suffix> suffixLexicon;
         private readonly Morphotactics _morphotactics;
 
         private Language(LanguageProperty languageProperty)
@@ -25,8 +26,10 @@ namespace Nuve.Lang
             Stopwatch sw1 = Stopwatch.StartNew();
             _orthography = languageProperty.GetOrthography();
             _morphotactics = languageProperty.GetMorphotactics();
-            _suffixDictionary = languageProperty.GetSuffixDictionary();
-            _rootDictionary = languageProperty.GetRootDictionary();
+            lexicon = languageProperty.GetLexicon();
+            //_suffixTrie = languageProperty.GetSuffixDictionary();
+            //suffixLexicon = languageProperty.GetSuffixDictionary2();
+            lexicon = languageProperty.GetLexicon();
             sw1.Stop();
             Console.WriteLine("Time taken for language: {0} ms", sw1.Elapsed.TotalMilliseconds);
         }
@@ -36,25 +39,32 @@ namespace Nuve.Lang
             get { return _morphotactics; }
         }
 
-        internal RootDictionary Roots
+        internal Dictionary.Lexicon Roots
         {
-            get { return _rootDictionary; }
+            get { return lexicon; }
         }
 
-        internal SuffixDictionary Suffixes
+        //internal SuffixDictionary Suffixes
+        //{
+        //    get { return _suffixTrie; }
+        //}
+
+        internal Lexicon Lexicon
         {
-            get { return _suffixDictionary; }
+            get { return lexicon; }
         }
 
-        public List<Root> GetRoots(string root)
-        {
-            return _rootDictionary.Get(root);
-        }
 
-        public Suffix GetSuffix(string id)
-        {
-            return _suffixDictionary.GetSuffix(id);
-        }
+
+        //public List<Root> GetRoots(string root)
+        //{
+        //    return lexicon.GetSuffix(root);
+        //}
+
+        //public Suffix GetSuffix(string id)
+        //{          
+        //    return _suffixTrie.GetSuffix(id);
+        //}
 
         public static readonly Language Turkish = new Language(LanguageProperty.Tr);
     }

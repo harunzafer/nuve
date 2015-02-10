@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
-using Nuve.Lexicon;
+using Nuve.Dictionary;
 using Nuve.Morphologic;
+using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
 using Nuve.Properties;
 using Nuve.Reader;
@@ -9,22 +10,22 @@ using Nuve.Reader;
 namespace Nuve.Lang
 {
     /// <summary>
-    /// Bir dile ait kaynak dosyaları okur ve dil nesnesine döndürür.
+    ///     Bir dile ait kaynak dosyaları okur ve dil nesnesine döndürür.
     /// </summary>
     partial class Language
     {
         private class LanguageProperty
         {
-            private const bool UseExcel = false;
+            internal static readonly LanguageProperty Tr = new LanguageProperty("tr");
+            private readonly string _abbreviationFilename;
 
             private readonly string _langCode;
             private readonly string _morphotacticsFilename;
-            private readonly string _suffixFilename;
-            private readonly string _rootFilename;
             private readonly string _nameFilename;
-            private readonly string _abbreviationFilename;
 
             private readonly Orthography _orthography;
+            private readonly string _rootFilename;
+            private readonly string _suffixFilename;
 
             private LanguageProperty(string langCode)
             {
@@ -65,52 +66,20 @@ namespace Nuve.Lang
                 return _orthography;
             }
 
-            internal RootDictionary GetRootDictionary()
-            {
-                Stopwatch sw1 = Stopwatch.StartNew();
-                RootDictionary rd;
-
-                if (UseExcel)
-                {
-                    string filename = Resources.ResourcesPath + Resources.RootsFile;
-                    rd = ExcelRootReader.Read(filename, _orthography);
-                }
-                else
-                {
-                    string[] filenames = {_rootFilename, _nameFilename, _abbreviationFilename};
-                    rd = TextRootReader.Read(filenames, _orthography);
-                }
-
-
-                sw1.Stop();
-                Console.WriteLine("Time taken for roots: {0} ms", sw1.Elapsed.TotalMilliseconds);
-                return rd;
-            }
-
-            internal SuffixDictionary GetSuffixDictionary()
+            internal Lexicon GetLexicon()
             {
                 Stopwatch sw1 = Stopwatch.StartNew();
 
-                SuffixDictionary sd;
+                string[] filenames = {_rootFilename, _nameFilename, _abbreviationFilename};
 
-                if (UseExcel)
-                {
-                    string filename = Resources.ResourcesPath + Resources.SuffixFile;
-                    sd = ExcelSuffixReader.Read(filename, _orthography);
-                }
-                else
-                {
-                    sd = TextSuffixReader.Read(_suffixFilename, _orthography);
-                }
-
+                var reader = new LexiconReader(_orthography);
+                Lexicon lexicon = reader.Read(filenames, _suffixFilename);
 
                 sw1.Stop();
-                Console.WriteLine("Time taken for suffixes: {0} ms", sw1.Elapsed.TotalMilliseconds);
-                return sd;
+                Console.WriteLine("Time taken for lexicon: {0} ms", sw1.Elapsed.TotalMilliseconds);
+                return lexicon;
             }
 
-
-            internal static readonly LanguageProperty Tr = new LanguageProperty("tr");
         }
     }
 }

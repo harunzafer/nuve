@@ -27,12 +27,11 @@ namespace Nuve.Reader
 
         private static IEnumerable<SuffixGroupElement> SUFFIX_GROUP_ELEMENTS;
         private static IEnumerable<TransitionSetElement> TRANSITION_SET_ELEMENTS;
-        private static readonly AdjacencyGraph<string, Transition<string>> GRAPH = new AdjacencyGraph<string, Transition<string>>(false);
+        private static readonly AdjacencyGraph<string, Transition<string>> Graph = new AdjacencyGraph<string, Transition<string>>(false);
         private static Alphabet _alphabet;
 
         public static Morphotactics Read(string xmlFileName , Alphabet alphabet)
         {
-
             _alphabet = alphabet;
             XDocument doc = null;
             try
@@ -51,7 +50,7 @@ namespace Nuve.Reader
 
             BuildGraph();
 
-            return new Morphotactics(GRAPH.ToArrayAdjacencyGraph());
+            return new Morphotactics(Graph.ToArrayAdjacencyGraph());
 
         }
 
@@ -90,16 +89,16 @@ namespace Nuve.Reader
         private static void AddTransitions(TransitionSetElement transitionSetElement)
         {
             var sourceId = transitionSetElement.Id;
-            GRAPH.AddVertex(sourceId);
+            Graph.AddVertex(sourceId);
 
             var copyTransitions = GetCopyTransitions(sourceId, transitionSetElement.Copies);
-            GRAPH.AddEdgeRange(copyTransitions);
+            Graph.AddEdgeRange(copyTransitions);
 
             var groupTransitions = GetGroupTransitions(sourceId, transitionSetElement.TargetGroups);
-            GRAPH.AddEdgeRange(groupTransitions);
+            Graph.AddEdgeRange(groupTransitions);
 
             var singleTransitions = GetSingleTransitions(sourceId, transitionSetElement.Targets);
-            GRAPH.AddEdgeRange(singleTransitions);
+            Graph.AddEdgeRange(singleTransitions);
         }
 
         private static IEnumerable<Transition<string>> GetSingleTransitions(string sourceId,
@@ -110,7 +109,7 @@ namespace Nuve.Reader
             {
                 string targetId = singleElement.Attribute("id").Value;
                 ConditionContainer conditions = GetConditionContainer(singleElement);
-                GRAPH.AddVertex(targetId);
+                Graph.AddVertex(targetId);
                 transitions.Add(new Transition<string>(sourceId, targetId, conditions));
             }
 
@@ -185,7 +184,7 @@ namespace Nuve.Reader
             string copyId = copyElement.Attribute("id").Value;
 
             IEnumerable<Transition<string>> list;
-            GRAPH.TryGetOutEdges(copyId, out list);
+            Graph.TryGetOutEdges(copyId, out list);
 
             foreach (var transition in list)
             {
@@ -222,7 +221,7 @@ namespace Nuve.Reader
             SuffixGroupElement group = SUFFIX_GROUP_ELEMENTS.First(x => x.Id == groupId);
             foreach (var suffix in group.Suffixes)
             {
-                GRAPH.AddVertex(suffix.Value);
+                Graph.AddVertex(suffix.Value);
                 transitions.Add(new Transition<string>(sourceId, suffix.Value));
             }
 

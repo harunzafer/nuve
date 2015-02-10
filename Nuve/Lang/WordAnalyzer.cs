@@ -23,10 +23,10 @@ namespace Nuve.Lang
         public IList<Word> Analyze(string token, bool checkTransition = true, bool checkOrthography = true, bool checkTransitionConditions = true) {
 
             var words = new List<Word>();
-            IEnumerable<RootSurfacePair> roots = FindPossibleRoots(token);
-            foreach (RootSurfacePair pair in roots)
+            IEnumerable<KeyValuePair<string, Root>> roots = FindPossibleRoots(token);
+            foreach (KeyValuePair<string, Root> pair in roots)
             {
-                GetPossibleWords(new Word(pair.Root), token.Remove(0, pair.Surface.Length), words, checkTransition);
+                GetPossibleWords(new Word(pair.Value), token.Remove(0, pair.Key.Length), words, checkTransition);
             }
 
             if (checkTransitionConditions)
@@ -68,30 +68,7 @@ namespace Nuve.Lang
         }
 
 
-        /// <summary>
-        /// Verilen bir kelimenin muhtemel tüm eklerini döndürür.
-        /// </summary>
-        /// <param name="token">Kökü bulunacak kelime</param>
-        /// <returns></returns>
-        private IEnumerable<RootSurfacePair> FindPossibleRoots(string token)
-        {
-            var rootSurfacePairs = new List<RootSurfacePair>();
-            for (int i = 0; i < token.Length; i++)
-            {
-                string prefix = token.Substring(0, i+1);
-                
-                List<Root> rootCandidates;
-
-                if (lang.Roots.TryGetRoots(prefix, out rootCandidates))
-                {
-                    foreach (Root root in rootCandidates)
-                    {
-                        rootSurfacePairs.Add(new RootSurfacePair(root, prefix));
-                    }
-                }              
-            }
-            return rootSurfacePairs;
-        }
+       
 
         private  void GetPossibleWords(Word word, string restOfWord, IList<Word> words, bool checkTransition)
         {
@@ -123,30 +100,81 @@ namespace Nuve.Lang
             }
 
         }
-
-        private  IList<KeyValuePair<string, Suffix>> GetPossibleFirstSuffixes(string prefix)
+        /// <summary>
+        /// Verilen bir kelimenin muhtemel tüm eklerini döndürür.
+        /// </summary>
+        /// <param name="token">Kökü bulunacak kelime</param>
+        /// <returns></returns>
+        private IEnumerable<KeyValuePair<string, Root>> FindPossibleRoots(string token)
         {
-            var list = new List<KeyValuePair<string, Suffix>>();
-            var sb = new StringBuilder();
-            foreach (char ch in prefix)
+            var pairs = new List<KeyValuePair<string, Root>>();
+            for (int i = 0; i < token.Length; i++)
             {
-                sb.Append(ch);
-                if (lang.Suffixes.ContainsSuffixStartsWith(sb.ToString()))
+                string prefix = token.Substring(0, i + 1);
+                List<Root> rootCandidates;
+
+                if (lang.Lexicon.Roots.TryGet(prefix, out rootCandidates))
                 {
-                    IList<Suffix> possibleSuffixes = lang.Suffixes.GetSuffixes(sb.ToString());
-                    foreach (var possibleSuffix in possibleSuffixes)
+                    foreach (Root root in rootCandidates)
                     {
-                        list.Add(new KeyValuePair<string, Suffix>(sb.ToString(), possibleSuffix));
+                        pairs.Add(new KeyValuePair<string, Root>(prefix, root));
                     }
                 }
-                else
-                {
-                    break;
-                }
-
             }
-            return list;
+            return pairs;
         }
+
+        private IList<KeyValuePair<string, Suffix>> GetPossibleFirstSuffixes(string token)
+        {
+            var pairs = new List<KeyValuePair<string, Suffix>>();
+
+            for (int i = 0; i < token.Length; i++)
+            {
+                string prefix = token.Substring(0, i + 1);
+
+                //if (!lang.Suffixes.ContainsSuffixStartsWith(prefix))
+                //{
+                //    break;
+                //}
+
+                List<Suffix> suffixes;
+                if (lang.Lexicon.Suffixes.TryGet(prefix, out suffixes))
+                {
+                    foreach (Suffix suffix in suffixes)
+                    {
+                        pairs.Add(new KeyValuePair<string, Suffix>(prefix, suffix));
+                    }
+                }
+                
+            }
+            return pairs;
+        }
+
+        //private  IList<KeyValuePair<string, Suffix>> GetPossibleFirstSuffixes(string token)
+        //{
+        //    var list = new List<KeyValuePair<string, Suffix>>();
+        //    var sb = new StringBuilder();
+        //    foreach (char ch in token)
+        //    {
+        //        sb.Append(ch);
+
+
+        //        if (lang.Suffixes.ContainsSuffixStartsWith(sb.ToString()))
+        //        {
+        //            IList<Suffix> possibleSuffixes = lang.Suffixes.GetSuffixes(sb.ToString());
+        //            foreach (var possibleSuffix in possibleSuffixes)
+        //            {
+        //                list.Add(new KeyValuePair<string, Suffix>(sb.ToString(), possibleSuffix));
+        //            }
+        //        }
+        //        else
+        //        {
+        //            break;
+        //        }
+
+        //    }
+        //    return list;
+        //}
         
     }
 }
