@@ -1,14 +1,14 @@
 ﻿using System;
 using Nuve.Morphologic.Structure;
-using QuickGraph;
 
 namespace Nuve.Morphologic
 {
     class Morphotactics
     {
-        private readonly ArrayAdjacencyGraph<string, Transition<string>> _graph;
+        //private readonly ArrayAdjacencyGraph<string, CustomEdge<string>> _graph;
+        private readonly IGraph<string> _graph;
 
-        public Morphotactics(ArrayAdjacencyGraph<string, Transition<string>> graph)
+        public Morphotactics(IGraph<string> graph)
         {
             _graph = graph;
         }

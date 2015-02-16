@@ -55,6 +55,7 @@ namespace Nuve.Orthographic
         {
             str.ThrowIfNullOrEmpty();
             char last = str[str.Length - 1];
+
             foreach (char letter in letters)
             {
                 if (last == letter)

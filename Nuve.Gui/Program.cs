@@ -77,6 +77,7 @@ namespace Nuve.Gui
             //Benchmarker.TestWithAMillionWords(Analyzer);
             Benchmarker.TestWithAMillionTokens(Analyzer);
 
+
             //Test();
             //var solutions = Analyzer.Analyze("bunu");
             //foreach (var solution in solutions)

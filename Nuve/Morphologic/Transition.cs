@@ -1,24 +1,32 @@
-﻿using Nuve.Condition;
-using QuickGraph;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Nuve.Condition;
 
 namespace Nuve.Morphologic
 {
-    class Transition<TVertex> : Edge<TVertex>
+    class Transition<T>
     {
-        private readonly ConditionContainer _conditionContainer;
-        public Transition(TVertex source, TVertex target, ConditionContainer conditionContainer)
-        : base(source, target)
+        public readonly T Source;
+        public readonly T Target;
+        public readonly ConditionContainer Conditions;
+
+        public Transition(T source, T target, ConditionContainer conditions)
         {
-            _conditionContainer = conditionContainer;
+            Source = source;
+            Target = target;
+            Conditions = conditions;
         }
 
-        public Transition(TVertex source, TVertex target)
-            : base(source, target)
+        public Transition(T source, T target)
         {
-            _conditionContainer = ConditionContainer.EmptyContainer();
+            Source = source;
+            Target = target;
+            Conditions = ConditionContainer.EmptyContainer();
+         
         }
-
-        public ConditionContainer Conditions { get { return _conditionContainer; } }
+        
 
     }
 }
