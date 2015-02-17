@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Text;
 using Nuve.Lang;
+using Nuve.Morphologic.Structure;
 
 namespace Nuve.Gui
 {
@@ -40,15 +41,22 @@ namespace Nuve.Gui
             Stopwatch sw = Stopwatch.StartNew();
             Process(lines, analyzer);
             sw.Stop();
-            Console.WriteLine("Time taken for a million tokens: {0}ms", sw.Elapsed.TotalMilliseconds);
+            Console.WriteLine("For a million tokens\tcache: {0}\ttime: {1}ms\tmemory: {2}",Cache.GetSize(), sw.Elapsed.TotalMilliseconds, GC.GetTotalMemory(false)/1024);
             GC.Collect();
+            
         }
+
+
 
         private static void Process(IEnumerable<string> tokens, WordAnalyzer analyzer)
         {
             foreach (string token in tokens)
             {
-                analyzer.Analyze(token);
+                IList<Word> sol;
+                if (!Cache.TryAnalyze(token, out sol))
+                {
+                    analyzer.Analyze(token);
+                }
             }
         }
 

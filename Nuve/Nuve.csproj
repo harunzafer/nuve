@@ -31,18 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="QuickGraph">
-      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.dll</HintPath>
-    </Reference>
-    <Reference Include="QuickGraph.Data">
-      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="QuickGraph.Graphviz">
-      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Graphviz.dll</HintPath>
-    </Reference>
-    <Reference Include="QuickGraph.Serialization">
-      <HintPath>..\packages\QuickGraph.3.6.61119.7\lib\net4\QuickGraph.Serialization.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -82,7 +70,6 @@
     <Compile Include="Morphologic\DictionaryGraph.cs" />
     <Compile Include="Morphologic\IGraph.cs" />
     <Compile Include="Morphologic\Transition.cs" />
-    <Compile Include="Morphologic\QuickGraph.cs" />
     <Compile Include="Reader\LexiconReader.cs" />
     <Compile Include="Reader\SuffixLexiconReader.cs" />
     <Compile Include="Stemming\DictionaryStemmer.cs" />
@@ -102,7 +89,6 @@
     <Compile Include="Morphologic\Structure\Root.cs" />
     <Compile Include="Morphologic\Structure\Suffix.cs" />
     <Compile Include="Morphologic\Structure\Word.cs" />
-    <Compile Include="Morphologic\CustomEdge.cs" />
     <Compile Include="NGrams\NGramModel.cs" />
     <Compile Include="NGrams\NGram.cs" />
     <Compile Include="NGrams\NGramDictionary.cs" />
@@ -163,7 +149,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Resources\dictionary_tr.xlsx" />
     <EmbeddedResource Include="Resources\orthography.dtd" />
     <None Include="Resources\suffix_tr.xlsx" />

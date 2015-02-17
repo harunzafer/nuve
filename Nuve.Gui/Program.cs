@@ -75,7 +75,9 @@ namespace Nuve.Gui
             //Test();
             
             //Benchmarker.TestWithAMillionWords(Analyzer);
-            Benchmarker.TestWithAMillionTokens(Analyzer);
+            //Benchmarker.TestWithAMillionTokens(Analyzer);
+
+            AnaylzeWithCache(0);
 
 
             //Test();
@@ -122,6 +124,39 @@ namespace Nuve.Gui
             //tokens.RemoveAll(x => x.Length == 0);
             //var map = extractor.ExtractAsDictionary(tokens);
             //ToSortedFile(map, @"C:\Users\hrzafer\Dropbox\nuve\corpus\bigrams.txt");
+        }
+
+
+        public static void AnaylzeWithCache(int cacheSize)
+        {
+            var lines = File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\hunspell-tr\data\archive\unigrams.txt", Encoding.UTF8);
+            var tokens = lines.Select(x => x.Split(new[] { '\t' })[0]).ToArray();
+
+                foreach (var token in tokens)
+                {
+                    var sol = Analyzer.Analyze(token);
+                    if (sol.Count > 0)
+                    {
+                        Cache.Add(token, sol);
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                    
+                    if (Cache.GetSize() % 1000 ==0)
+                    {
+                        Benchmarker.TestWithAMillionTokens(Analyzer);
+                    }
+
+                    if (Cache.GetSize() > 100000)
+                    {
+                        break;
+                    }
+                }
+
+            
+
         }
 
         public static void GetProbabilities(string word)
