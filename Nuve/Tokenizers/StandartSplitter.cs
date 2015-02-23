@@ -12,9 +12,9 @@ namespace Nuve.Tokenizers
     /// The "@" character is among the set of token-splitting punctuation, so email addresses are not preserved as single tokens.
     /// </summary>
     /// Whitespace, punct, letter,digit, other than that
-    internal class StandartSplitter : Splitter
+    internal class StandartSplitter 
     {
-        public override IList<string> Split(string input)
+        public IList<string> Split(string input)
         {
             IList<string> tokens = new List<string>();
             string token = "";

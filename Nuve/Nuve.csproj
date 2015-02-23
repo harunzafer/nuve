@@ -136,12 +136,16 @@
     <Compile Include="Sentence\SentenceSegmenterEvaluator.cs" />
     <Compile Include="Sentence\DetailedEvaluation.cs" />
     <Compile Include="Sentence\SentenceIterator.cs" />
-    <Compile Include="Tokenizers\LowerCaseTokenizer.cs" />
-    <Compile Include="Tokenizers\NGramTokenizer.cs" />
-    <Compile Include="Tokenizers\RegexSplitter.cs" />
+    <Compile Include="Tokenizers\ClassicTokenizer.cs" />
+    <Compile Include="Lexers\ILexer.cs" />
+    <Compile Include="Tokenizers\ITokenizer.cs" />
+    <Compile Include="Tokenizers\NuveTokenizer.cs" />
+    <Compile Include="Tokenizers\RegexPattern.cs" />
+    <Compile Include="Tokenizers\RegexTokenizerBase.cs" />
     <Compile Include="Tokenizers\StandartSplitter.cs" />
-    <Compile Include="Tokenizers\Splitter.cs" />
-    <Compile Include="Tokenizers\WhitespaceSplitter.cs" />
+    <Compile Include="Tokenizers\StandartTokenizer.cs" />
+    <Compile Include="Lexers\Token.cs" />
+    <Compile Include="Tokenizers\WhitespaceTokenizer.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -6,8 +6,10 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters;
 using System.Security.Policy;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows.Forms;
+using Nuve.Gui.Benchmark;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
 using Nuve.NGrams;
@@ -34,7 +36,7 @@ namespace Nuve.Gui
         private static void Main()
         {
             //var lines = File.ReadAllLines(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcExtra.txt");
-            //var splitter = new RegexSplitter(RegexSplitter.ClassicPattern);
+            //var splitter = new RegexTokenizerBase(RegexTokenizerBase.Pattern);
 
             //var tokens = new List<string>();
             //foreach (var line in lines)
@@ -77,7 +79,25 @@ namespace Nuve.Gui
             //Benchmarker.TestWithAMillionWords(Analyzer);
             //Benchmarker.TestWithAMillionTokens(Analyzer);
 
-            AnaylzeWithCache(0);
+            //AnaylzeWithCache(0);
+
+           TokenizerBenchmark.TestWithAMillionWords(new WhitespaceTokenizer(false));
+
+            //var splitter = new RegexTokenizerBase(RegexTokenizerBase.Pattern);
+            //splitter.Split("bu bir, denemedir harun@gmail.com! !");
+
+            //string pattern = @"(\s+)|(\d+)|(\w+)";
+            //string input = "He said that 123 was 321 the 123abc answer.";
+            //var matches = Regex.Matches(input, pattern, RegexOptions.IgnoreCase);
+            //foreach (Match match in matches)
+            //{
+            //    Console.WriteLine("Group-0: '{0}' group-1: '{1}' group-2 '{2}'",
+            //                      match.Groups[1].Value, match.Groups[2].Value, match.Groups[3].Value);
+            //    Console.WriteLine(match.Groups);
+
+
+            //}
+
 
 
             //Test();

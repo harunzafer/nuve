@@ -46,7 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnalysisHelper.cs" />
-    <Compile Include="Benchmarker.cs" />
+    <Compile Include="Benchmark\Benchmarker.cs" />
+    <Compile Include="Benchmark\TokenizerBenchmark.cs" />
     <Compile Include="Cache.cs" />
     <Compile Include="Conjugation.cs" />
     <Compile Include="ConjugationReader.cs" />

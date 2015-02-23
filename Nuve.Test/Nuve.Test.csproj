@@ -73,7 +73,10 @@
     <Compile Include="Orthographic\StringExtensionsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Segmentation\SentenceSegmentationTest.cs" />
-    <Compile Include="Tokenizers\TokenizerTest.cs" />
+    <Compile Include="Tokenizers\ClassicTokenizerTest.cs" />
+    <Compile Include="Tokenizers\NuveTokenizerTest.cs" />
+    <Compile Include="Tokenizers\StandartTokenizerTest.cs" />
+    <Compile Include="Tokenizers\WhitespaceTokenizerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

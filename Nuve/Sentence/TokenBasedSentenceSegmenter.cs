@@ -8,7 +8,7 @@ namespace Nuve.Sentence
 {
     internal class TokenBasedSentenceSegmenter : SentenceSegmenter
     {
-        private readonly Splitter _splitter;
+        private readonly ITokenizer tokenizer;
         /// <summary>
         /// todo: bu liste Türkçe dilinden alınmalı
         /// </summary>
@@ -600,9 +600,10 @@ namespace Nuve.Sentence
             "y",
             "z",
         };
-        public TokenBasedSentenceSegmenter(Splitter splitter)
+
+        public TokenBasedSentenceSegmenter(ITokenizer tokenizer)
         {
-            _splitter = splitter;
+            this.tokenizer = tokenizer;
         }
 
         private bool IsEosCandidate(string token)
@@ -612,7 +613,7 @@ namespace Nuve.Sentence
 
         public override IEnumerable<int> GetBoundaryIndices(string paragraph)
         {
-            IList<string> tokens = _splitter.Split(paragraph);
+            IList<string> tokens = tokenizer.Tokenize(paragraph);
             int index = -1;
             var indices = new List<int>();
             for (int i = 0; i < tokens.Count; i++)

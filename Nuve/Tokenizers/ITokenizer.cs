@@ -5,7 +5,8 @@ using System.Text;
 
 namespace Nuve.Tokenizers
 {
-    class NGramTokenizer
+    interface ITokenizer
     {
+        IList<string> Tokenize(string text);
     }
 }
