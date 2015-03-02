@@ -1,26 +1,26 @@
 ﻿using System.Collections.Generic;
 using Nuve.Morphologic.Structure;
 
-namespace Nuve.Dictionary
+namespace Nuve.Morphologic
 {
     internal class Lexicon
     {
-        public Lexicon(MorphemeLexicon<Root> roots, MorphemeLexicon<Suffix> suffixes, Dictionary<string, Suffix> suffixesById)
+        private readonly Dictionary<string, Suffix> _suffixesById;
+
+        public Lexicon(MorphemeLexicon<Root> roots, MorphemeLexicon<Suffix> suffixes,
+            Dictionary<string, Suffix> suffixesById)
         {
             Roots = roots;
             Suffixes = suffixes;
-            this.suffixesById = suffixesById;
+            _suffixesById = suffixesById;
         }
 
         public MorphemeLexicon<Root> Roots { get; private set; }
         public MorphemeLexicon<Suffix> Suffixes { get; private set; }
-        private readonly Dictionary<string, Suffix> suffixesById;
 
         public Suffix GetSuffix(string id)
         {
-            return suffixesById[id];
+            return _suffixesById[id];
         }
-
-
     }
 }

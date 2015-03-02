@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-using Nuve.Dictionary;
+using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
 

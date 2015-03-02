@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Xml;
 using System.Xml.Linq;
 using Nuve.Condition;
 using Nuve.Morphologic;
@@ -31,13 +33,13 @@ namespace Nuve.Reader
         private static readonly IGraph<string> Graph = new DictionaryGraph();
         private static Alphabet _alphabet;
 
-        public static Morphotactics Read(string xmlFileName , Alphabet alphabet)
+        public static Morphotactics Read(Stream xml , Alphabet alphabet)
         {
             _alphabet = alphabet;
             XDocument doc = null;
             try
             {
-                doc = XDocument.Load(EmbeddedResourceReader.Read(xmlFileName));
+                doc = XDocument.Load(xml);
             }
 
             catch (Exception e)

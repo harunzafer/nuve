@@ -74,14 +74,15 @@ namespace Nuve.Gui
             //File.WriteAllLines(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalizedTokenized.txt", tokens);
             //var test = TestGenerator.GenerateContainsAnalysisTest(SpecialCase.ZamirSoruNe, "ZamirSoruNeTest");
             //Console.WriteLine(test);
-            //Test();
+            Test();
             
             //Benchmarker.TestWithAMillionWords(Analyzer);
             //Benchmarker.TestWithAMillionTokens(Analyzer);
 
             //AnaylzeWithCache(0);
 
-           TokenizerBenchmark.TestWithAMillionWords(new WhitespaceTokenizer(false));
+
+           //TokenizerBenchmark.TestWithAMillionWords(new WhitespaceTokenizer(false));
 
             //var splitter = new RegexTokenizerBase(RegexTokenizerBase.Pattern);
             //splitter.Split("bu bir, denemedir harun@gmail.com! !");

@@ -2,7 +2,7 @@
 using System.Text;
 using Nuve.Morphologic.Structure;
 
-namespace Nuve.Dictionary
+namespace Nuve.Morphologic
 {
     /// <summary>
     /// Contains surface forms as keys and a list for each key which contains possible Morphemes

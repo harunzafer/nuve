@@ -66,7 +66,8 @@
     <Compile Include="Distance\IDistance.cs" />
     <Compile Include="Distance\JaccardDistance.cs" />
     <Compile Include="Distance\LevenshteinDistance.cs" />
-    <Compile Include="Dictionary\MorphemeLexicon.cs" />
+    <Compile Include="Morphologic\MorphemeLexicon.cs" />
+    <Compile Include="Reader\LanguageReader.cs" />
     <Compile Include="Morphologic\DictionaryGraph.cs" />
     <Compile Include="Morphologic\IGraph.cs" />
     <Compile Include="Morphologic\Transition.cs" />
@@ -74,14 +75,13 @@
     <Compile Include="Reader\SuffixLexiconReader.cs" />
     <Compile Include="Stemming\DictionaryStemmer.cs" />
     <Compile Include="Lang\Language.cs" />
-    <Compile Include="Lang\Language.Property.cs" />
     <Compile Include="Stemming\RuleBasedStemmer.cs" />
     <Compile Include="Stemming\StatisticalStemmer.cs" />
     <Compile Include="Stemming\IStemmer.cs" />
     <Compile Include="Stemming\StemDictionaryGenerator.cs" />
     <Compile Include="Stemming\StemmerEvaluator.cs" />
     <Compile Include="Lang\WordAnalyzer.cs" />
-    <Compile Include="Dictionary\Lexicon.cs" />
+    <Compile Include="Morphologic\Lexicon.cs" />
     <Compile Include="Morphologic\Morphotactics.cs" />
     <Compile Include="Morphologic\Structure\Allomorph.cs" />
     <Compile Include="Morphologic\Structure\Morpheme.cs" />
@@ -153,19 +153,19 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="Resources\dictionary_tr.xlsx" />
+    <None Include="Resources\Tr\dictionary.xlsx" />
     <EmbeddedResource Include="Resources\orthography.dtd" />
-    <None Include="Resources\suffix_tr.xlsx" />
+    <None Include="Resources\Tr\suffix.xlsx" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\abbrv_tr.txt" />
-    <EmbeddedResource Include="Resources\morphotactics_tr.xml">
+    <EmbeddedResource Include="Resources\Tr\abbrv.txt" />
+    <EmbeddedResource Include="Resources\Tr\morphotactics.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\name_tr.txt" />
-    <EmbeddedResource Include="Resources\orthography_tr.xml" />
-    <EmbeddedResource Include="Resources\root_tr.txt" />
-    <EmbeddedResource Include="Resources\suffix_tr.txt" />
+    <EmbeddedResource Include="Resources\Tr\name.txt" />
+    <EmbeddedResource Include="Resources\Tr\orthography.xml" />
+    <EmbeddedResource Include="Resources\Tr\root.txt" />
+    <EmbeddedResource Include="Resources\Tr\suffix.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

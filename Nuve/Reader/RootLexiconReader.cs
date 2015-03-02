@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
-using Nuve.Dictionary;
+using System.Data.OleDb;
+using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
 
@@ -9,10 +10,12 @@ namespace Nuve.Reader
     internal class RootLexiconReader
     {
         private readonly Orthography orthography;
+        private readonly bool fromExcel;
 
-        public RootLexiconReader(Orthography orthography)
+        public RootLexiconReader(Orthography orthography, bool fromExcel = false)
         {
             this.orthography = orthography;
+            this.fromExcel = fromExcel;
         }
 
         private class RootLine
@@ -36,7 +39,7 @@ namespace Nuve.Reader
             var roots = new MorphemeLexicon<Root>();
             foreach (string filename in filenames)
             {
-                AddEntries(filename, filename.Substring(0, filename.IndexOf('_')), roots);
+                AddEntries(filename, filename, roots);
             }
 
             return roots;
@@ -45,8 +48,24 @@ namespace Nuve.Reader
         private void AddEntries(string filename, string sheetname, MorphemeLexicon<Root> roots)
         {
 
+            DataSet ds;
 
-            var ds = TextToDataSet.Convert(filename, sheetname, "\t");
+            if (fromExcel)
+            { 
+                var connectionString = string.Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0}; " +
+                    "Extended Properties=Excel 12.0;", filename);
+                var adapter = new OleDbDataAdapter("SELECT * FROM [" + sheetname + "$]", connectionString);
+                ds = new DataSet();
+                adapter.Fill(ds, "roots");
+            }
+            else
+            {
+                ds = TextToDataSet.Convert(filename, sheetname, "\t");    
+            }
+
+            
+
+
             var data = ds.Tables[sheetname].AsEnumerable();
             EnumerableRowCollection<RootLine> entries = data.Select(x =>
                                                           new RootLine

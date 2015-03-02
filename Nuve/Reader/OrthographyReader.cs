@@ -11,9 +11,9 @@ namespace Nuve.Reader
     {
         private static Alphabet _alphabet;
 
-        public static Orthography Read(String xmlFileName)
+        public static Orthography Read(XmlDocument xml)
         {
-            var xml = EmbeddedResourceReader.ReadXml(xmlFileName);
+            //var xml = EmbeddedResourceReader.ReadXml(xmlFileName);
             _alphabet = ReadAlphabet(xml);
             List<OrthographyRule> rules = ReadRules(xml);
             return new Orthography(_alphabet, rules);

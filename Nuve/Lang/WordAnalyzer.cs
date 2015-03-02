@@ -7,9 +7,9 @@ namespace Nuve.Lang
 {
     public class WordAnalyzer
     {
-        private readonly Language lang;
+        private readonly Language _lang;
         public WordAnalyzer(Language language) {
-            this.lang = language;
+            _lang = language;
         }
 
         /// <summary>
@@ -20,7 +20,8 @@ namespace Nuve.Lang
         /// <param name="checkOrthography"> Ortografik kuralları işlet ve kontrol et.</param>
         /// <param name="checkTransitionConditions">Morfotaktik geçiş koşullarını kontrol et. </param>
         /// <returns></returns>
-        public IList<Word> Analyze(string token, bool checkTransition = true, bool checkOrthography = true, bool checkTransitionConditions = true) {
+        public IList<Word> Analyze(string token, bool checkTransition = true, 
+            bool checkOrthography = true, bool checkTransitionConditions = true) {
 
             var words = new List<Word>();
             IEnumerable<KeyValuePair<string, Root>> roots = FindPossibleRoots(token);
@@ -60,7 +61,7 @@ namespace Nuve.Lang
         {
             for (int i = analyses.Count - 1; i >= 0; i--) //Reverse for loop to remove element
             {
-                if (!lang.Morphotactics.IsValid(analyses[i]))
+                if (!_lang.Morphotactics.IsValid(analyses[i]))
                 {
                     analyses.RemoveAt(i);
                 }
@@ -90,7 +91,7 @@ namespace Nuve.Lang
             foreach (var pair in possibleFirstSuffixes)
             {
                 //Burada değişiklik yaptık, şimdilik sorun yok
-                if (!lang.Morphotactics.HasTransition(word.Last.Morpheme.Id, pair.Value.Id) && checkTransition)
+                if (!_lang.Morphotactics.HasTransition(word.Last.Morpheme.Id, pair.Value.Id) && checkTransition)
                 {
                     continue;
                 }
@@ -113,7 +114,7 @@ namespace Nuve.Lang
                 string prefix = token.Substring(0, i + 1);
                 List<Root> rootCandidates;
 
-                if (lang.Lexicon.Roots.TryGet(prefix, out rootCandidates))
+                if (_lang.Lexicon.Roots.TryGet(prefix, out rootCandidates))
                 {
                     foreach (Root root in rootCandidates)
                     {
@@ -138,7 +139,7 @@ namespace Nuve.Lang
                 //}
 
                 List<Suffix> suffixes;
-                if (lang.Lexicon.Suffixes.TryGet(prefix, out suffixes))
+                if (_lang.Lexicon.Suffixes.TryGet(prefix, out suffixes))
                 {
                     foreach (Suffix suffix in suffixes)
                     {

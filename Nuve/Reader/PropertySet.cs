@@ -6,7 +6,7 @@ namespace Nuve.Reader
 {
     internal class PropertySet
     {
-        private static readonly IDictionary<string, string> map =
+        private static readonly IDictionary<string, string> Map =
             new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
                 {
                     {"isim", "F1"},
@@ -51,7 +51,7 @@ namespace Nuve.Reader
         {
             MorphemeFlags property;
 
-            if (!Enum.TryParse(map[propertyName], out property))
+            if (!Enum.TryParse(Map[propertyName], out property))
             {
                 throw new ArgumentException("Invalid Root Property " + propertyName);
             }

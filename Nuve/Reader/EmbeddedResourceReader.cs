@@ -8,17 +8,19 @@ namespace Nuve.Reader
     /// <summary>
     /// Nuve.Resources klasörünün altındaki dosyaları okur.
     /// </summary>
-    static class EmbeddedResourceReader
+    internal static class EmbeddedResourceReader
     {
         private const string AssemblyFolder = "Nuve.Resources.";
         private static readonly Assembly Assembly = Assembly.GetExecutingAssembly();
 
         public static Stream Read(string filename)
         {
-            Stream stream = null;
+            Stream stream;
             try
             {
                 stream = Assembly.GetManifestResourceStream(AssemblyFolder + filename);
+                Console.WriteLine(Assembly.CodeBase);
+                Console.WriteLine(AssemblyFolder + filename);
             }
             catch (Exception)
             {
