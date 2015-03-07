@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT orthography (alphabet, rules)>
+<!ATTLIST orthography lang (Tr-TR | Tk-TK | Az-AZ) #REQUIRED>
+
+<!ELEMENT alphabet (consonants, vowels)>
+
+<!ELEMENT consonants (#PCDATA)>
+
+<!ELEMENT vowels (#PCDATA)>
+
+<!ELEMENT rules (rule)+>
+
+<!ELEMENT rule (description, transformation*)>
+<!ATTLIST rule
+    id CDATA #REQUIRED
+    type CDATA #REQUIRED>
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT transformation (conditions?)>
+<!ATTLIST transformation 
+  action (
+              Append |
+              AppendTamlamaSuffix |
+              DeleteFirstLetter |
+              DeleteFirstVowel | 
+              DeleteLastLetter | 
+              DeleteLastLetterOfNeighbour |
+              DeleteLastVowel |
+              DoubleLastLetter |
+              Replace |
+              ReplaceNeighbour |
+              LexicalToSurface 
+  ) #REQUIRED
+  position (Current | Next | Previous) #IMPLIED
+  operandOne CDATA #IMPLIED
+  operandTwo CDATA #IMPLIED
+  flag CDATA #IMPLIED>
+
+<!ELEMENT conditions (condition+)>
+<!ATTLIST conditions
+  flag ( And | Or ) #REQUIRED>
+
+<!ELEMENT condition EMPTY>
+<!ATTLIST condition 
+   morpheme (  Previous |
+              Next |
+              Current
+  ) #IMPLIED
+  operator (
+                EndsWithConsonant |
+                EndsWithVowel |
+                FirstLetterEquals |
+                LastLetterEquals |
+                LastVowelEquals |
+                MorphemeEquals |
+                MorphemeNotEquals |
+                HasFlags |
+                HasNotFlags |
+                PenultVowelEquals |
+                StartsWithConsonant |
+                StartsWithVowel 
+  ) #REQUIRED
+  operand CDATA #IMPLIED>

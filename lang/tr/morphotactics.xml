@@ -1,0 +1,1364 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<morphology lang="Tr-TR">
+  <suffixGroups>
+    <suffixGroup name="ISIM_SAHIPLIK">
+      <suffix>IC_SAHIPLIK_BEN_(U)m</suffix>
+      <suffix>IC_SAHIPLIK_SEN_(U)n</suffix>
+      <suffix>IC_SAHIPLIK_O_(s)U</suffix>
+      <suffix>IC_SAHIPLIK_BIZ_(U)mUz</suffix>
+      <suffix>IC_SAHIPLIK_SIZ_(U)nUz</suffix>
+      <suffix>IC_SAHIPLIK_ONLAR_lArI</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="EKFIIL_SAHIS">
+      <suffix>EKFIIL_SAHIS_BEN_(y)Um</suffix>
+      <suffix>EKFIIL_SAHIS_SEN_sUn</suffix>
+      <suffix>EKFIIL_SAHIS_BIZ_(y)Uz</suffix>
+      <suffix>EKFIIL_SAHIS_SIZ_sUnUz</suffix>
+      <suffix>EKFIIL_SAHIS_ONLAR_lAr</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="EKFIIL_SAHIS_2">
+      <suffix>EKFIIL_SAHIS_BEN_m</suffix>
+      <suffix>EKFIIL_SAHIS_SEN_n</suffix>
+      <suffix>EKFIIL_SAHIS_BIZ_k</suffix>
+      <suffix>EKFIIL_SAHIS_SIZ_nUz</suffix>
+      <suffix>EKFIIL_SAHIS_ONLAR_lAr</suffix>
+      <!-- Bu ek yuklarıdakinden ayrılabilir, hastaysalar-dır meselesi-->
+    </suffixGroup>
+
+    <suffixGroup name="ISIM_HAL">
+      <suffix>IC_HAL_YONELME_(y)A</suffix>
+      <suffix>IC_HAL_BULUNMA_DA</suffix>
+      <suffix>IC_HAL_AYRILMA_DAn</suffix>
+      <suffix>IC_HAL_BELIRTME_(y)U</suffix>
+      <suffix>IC_HAL_ILGI_(n)Un</suffix>
+      <suffix>IC_HAL_VASITA_(y)lA</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="EKFIIL_ZAMAN">
+      <suffix>EKFIIL_HIKAYE_(y)DU</suffix>
+      <suffix>EKFIIL_RIVAYET_(y)mUş</suffix>
+      <suffix>EKFIIL_SART_(y)sA</suffix>
+      <suffix>EKFIIL_ZAMAN_(y)ken</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="FIIL_KIP">
+      <suffix>FC_KIP_EMIR_(y)Un</suffix>
+      <suffix>FC_KIP_EMIR_(y)UnUz</suffix>
+      <suffix>FC_KIP_EMIR_sUn</suffix>
+      <suffix>FC_KIP_EMIR_sUnlAr</suffix>
+      <suffix>FC_KIP_ISTEK_(y)A</suffix>
+      <suffix>FC_KIP_ISTEK_sAnA</suffix>
+      <suffix>FC_KIP_ISTEK_sAnIzA</suffix>
+      <suffix>FC_KIP_GEREKLILIK_mAlI</suffix>
+      <suffix>FC_KIP_DILEK_sA</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="FIIL_ZAMAN">
+      <suffix>FC_ZAMAN_GECMIS_DU</suffix>
+      <suffix>FC_ZAMAN_GECMIS_mUş</suffix>
+      <suffix>FC_ZAMAN_GELECEK_(y)AcAK</suffix>
+      <suffix>FC_ZAMAN_GENIS_(A)r</suffix>
+      <suffix>FC_ZAMAN_GENIS_(U)r</suffix>
+      <suffix>FC_ZAMAN_GENIS_OLUMUSUZ_mAz</suffix>
+      <suffix>FC_ZAMAN_SIMDIKI_(U)yor</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="FIIL_YARDIMCI">
+      <suffix>FC_YF_SUREKLILIK_(y)Adur</suffix>
+      <suffix>FC_YF_SUREKLILIK_(y)Agel</suffix>
+      <suffix>FC_YF_SUREKLILIK_(y)Agör</suffix>
+      <suffix>FC_YF_SUREKLILIK_(y)Akal</suffix>
+      <suffix>FC_YF_TEZLIK_(y)Uver</suffix>
+      <suffix>FC_YF_YAKLASMA_(y)Ayaz</suffix>
+      <suffix>FC_YF_YETERLILIK_(y)Abil</suffix>
+      <suffix>FC_YF_YETERSIZLIK_(y)AmA</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="FIILIMSI_ISIM">
+      <suffix>FIILIMSI_ISIM_(y)Uş</suffix>
+      <suffix>FIILIMSI_ISIM_mA</suffix>
+      <suffix>FIILIMSI_ISIM_mAk</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="FIILIMSI_SIFAT">
+      <suffix>FIILIMSI_SIFAT_(y)AcAK</suffix>
+      <suffix>FIILIMSI_SIFAT_(y)An</suffix>
+      <suffix>FIILIMSI_SIFAT_(y)AsI</suffix>
+      <suffix>FIILIMSI_SIFAT_(y)AsIcA</suffix>
+      <suffix>FIILIMSI_SIFAT_DUK</suffix>
+      <suffix>FIILIMSI_SIFAT_mAz</suffix>
+      <suffix>FIILIMSI_SIFAT_mUş</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="FIILIMSI_ZARF">
+      <suffix>FIILIMSI_ZARF_(y)A</suffix>
+      <suffix>FIILIMSI_ZARF_(y)AlI</suffix>
+      <suffix>FIILIMSI_ZARF_(y)ArAk</suffix>
+      <suffix>FIILIMSI_ZARF_(y)AsIyA</suffix>
+      <suffix>FIILIMSI_ZARF_(y)Up</suffix>
+      <suffix>FIILIMSI_ZARF_(y)UncA</suffix>
+      <suffix>FIILIMSI_ZARF_CAsInA</suffix>
+      <suffix>FIILIMSI_ZARF_DUkçA</suffix>
+      <suffix>FIILIMSI_ZARF_mAdAn</suffix>
+      <suffix>FIILIMSI_ZARF_sIzIn</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="FY_ISIM">
+      <!--<suffix>FY_DONUSUM_(U)m</suffix>-->
+      <suffix>FY_DONUSUM_mAcA</suffix>
+      <suffix>FY_TANIMLAMA_(y)UcU</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="FY_SIFAT">
+      <!--<suffix>FY_DONUSUM_(U)k</suffix>-->
+      <suffix>FY_DONUSUM_(U)lU</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="FY_FIIL">
+      <suffix>FY_EDILGEN_Ul_(U)n</suffix>
+      <suffix>FY_ETTIRGEN_DUr_(U)t</suffix>
+      <suffix>FY_ETTIRTGEN_t_DUr</suffix>
+      <suffix>FY_OLUMSUZLUK_mA</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="IY_ISIM">
+      <suffix>IY_ISIM_cAğIz</suffix>
+      <suffix>IY_ISIM_CU</suffix>
+      <suffix>IY_ISIM_KUCULTME_CUK</suffix>
+      <suffix>IY_ISIM_lUK</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="IY_SIFAT">
+      <suffix>IY_SIFAT_(U)msU</suffix>
+      <suffix>IY_SIFAT_lU</suffix>
+      <suffix>IY_SIFAT_sAl</suffix>
+      <suffix>IY_SIFAT_sU</suffix>
+      <suffix>IY_SIFAT_sUz</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="IY_FIIL">
+      <suffix>IY_FIIL_lA</suffix>
+      <suffix>IY_FIIL_lAş</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="IY_ZARF">
+      <suffix>IY_ZARF_CA</suffix>
+      <suffix>IY_ZARF_CAsInA</suffix>
+    </suffixGroup>
+
+    <suffixGroup name="SORU_BAGLAC">
+      <!--<suffix>SORU_mU</suffix>-->
+      <suffix>BAGLAC_dA</suffix>
+    </suffixGroup>
+  </suffixGroups>
+
+  <graph>
+
+    <source id="ISIM">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="IY_ISIM" />
+      <targetGroup id="IY_FIIL" />
+      <targetGroup id="IY_SIFAT">
+        <removeTarget id="IY_SIFAT_sU" />
+      </targetGroup>
+      <target id="IY_SIFAT_sU">
+        <conditions flag="Or">
+          <condition operator="EndsWithConsonant" position="Source" />
+        </conditions>
+      </target>
+      <targetGroup id="IY_ZARF" />
+      <target id="IC_COGUL_lAr" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="IC_AITLIK_ki">
+        <conditions flag="Or">
+          <condition operator="HasFlags" position="Source" operand="zaman" />
+        </conditions>
+      </target>
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IKILEME">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+    </source>
+
+    <source id="SIFAT">
+      <copy id="ISIM">
+        <removeTarget id="IY_ISIM_KUCULTME_CUK" />
+      </copy>
+      <target id="IY_ISIM_KUCULTME_CUK">
+        <conditions flag="Or">
+          <condition operator="HasFlags" position="Source" operand="azlık" />
+        </conditions>
+      </target>
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="UNLEM">
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="ISIM_HAL" />
+      <target id="IC_COGUL_lAr" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+    </source>
+
+
+    <source id="ZARF">
+      <target id="EKFIIL_TANIMLAMA_DUr">
+        <conditions flag="And">
+          <condition operator="HasFlags" position="Source" operand="ekfiil_alır" />
+          <condition operator="IsLastMorpheme" position="Target" />
+        </conditions>
+      </target>
+      <target id="EKFIIL_RIVAYET_(y)mUş">
+        <conditions flag="And">
+          <condition operator="HasFlags" position="Source" operand="ekfiil_alır" />
+          <condition operator="IsLastMorpheme" position="Target" />
+        </conditions>
+      </target>
+      <target id="EKFIIL_HIKAYE_(y)DU">
+        <conditions flag="And">
+          <condition operator="HasFlags" position="Source" operand="ekfiil_alır" />
+          <condition operator="IsLastMorpheme" position="Target" />
+        </conditions>
+      </target>
+      <target id="EKFIIL_SART_(y)sA">
+        <conditions flag="And">
+          <condition operator="HasFlags" position="Source" operand="ekfiil_alır" />
+          <condition operator="IsLastMorpheme" position="Target" />
+        </conditions>
+      </target>
+      <target id="EKFIIL_ZAMAN_(y)ken">
+        <conditions flag="And">
+          <condition operator="HasFlags" position="Source" operand="ekfiil_alır" />
+          <condition operator="IsLastMorpheme" position="Target" />
+        </conditions>
+      </target>
+      <target id="IC_AITLIK_ki">
+        <conditions flag="Or">
+          <condition operator="HasFlags" position="Source" operand="zaman" />
+        </conditions>
+      </target>
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+
+    <source id="FIIL">
+      <targetGroup id="FIIL_KIP" />
+      <targetGroup id="FIIL_ZAMAN" />
+      <targetGroup id="FIILIMSI_ISIM" />
+      <targetGroup id="FIILIMSI_SIFAT">
+        <removeTarget id="FIILIMSI_SIFAT_DUK" />
+      </targetGroup>
+      <target id="FIILIMSI_SIFAT_DUK">
+        <conditions flag="Or">
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_BEN_(U)m" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_SEN_(U)n" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_O_(s)U" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_BIZ_(U)mUz" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_SIZ_(U)nUz" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_ONLAR_lArI" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_COGUL_lAr" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_HAL_AYRILMA_DAn" />
+        </conditions>
+      </target>
+      <targetGroup id="FIILIMSI_ZARF">
+        <removeTarget id="FIILIMSI_ZARF_CAsInA" />
+        <removeTarget id="FIILIMSI_ZARF_sIzIn" />
+      </targetGroup>
+      <targetGroup id="FIIL_YARDIMCI" />
+      <targetGroup id="FY_ISIM" />
+      <targetGroup id="FY_SIFAT" />
+      <target id="FY_EDILGEN_Ul_(U)n" />
+      <target id="FY_ETTIRGEN_DUr_(U)t">
+        <conditions flag="And">
+          <condition operator="HasNotFlags" position="Source" operand="ettirtgen_t" />
+          <condition operator="HasNotFlags" position="Source" operand="edilgen" />
+        </conditions>
+      </target>
+      <target id="FY_ETTIRTGEN_t_DUr">
+        <conditions flag="And">
+          <condition operator="HasFlags" position="Source" operand="ettirtgen_t" />
+        </conditions>
+      </target>
+      <target id="FY_OLUMSUZLUK_mA" />
+      <target id="BAGLAC_dA" />
+    </source>
+
+
+    <source id="FY_ETTIRGEN_DUr_(U)t">
+      <copy id="FIIL">
+        <removeTarget id="FY_ETTIRGEN_DUr_(U)t" />
+      </copy>
+    </source>
+
+    <source id="FY_ETTIRTGEN_t_DUr">
+      <copy id="FIIL">
+        <removeTarget id="FY_ETTIRGEN_DUr_(U)t" />
+        <removeTarget id="FY_ETTIRTGEN_t_DUr" />
+      </copy>
+    </source>
+
+    <source id="EKFIIL">
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="BAGLAC_dA" />
+    </source>
+
+    <!-- <source id="SORU_mU">
+      <target id="EKFIIL_SAHIS_BEN_(y)Um">
+        <conditions flag="And">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU"/>
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_DILEK_sA"/>
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A"/>
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_SART_(y)sA"/>
+        </conditions>
+      </target>
+      <target id="EKFIIL_SAHIS_SEN_sUn">
+        <conditions flag="And">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU"/>
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_DILEK_sA"/>
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A"/>
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_SART_(y)sA"/>
+        </conditions>
+      </target>
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz">
+        <conditions flag="And">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU"/>
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_DILEK_sA"/>
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A"/>
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_SART_(y)sA"/>
+        </conditions>
+      </target>
+      <target id="EKFIIL_SAHIS_SIZ_sUnUz">
+        <conditions flag="And">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU"/>
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_DILEK_sA"/>
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A"/>
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_SART_(y)sA"/>
+        </conditions>
+      </target>            
+      <target id="EKFIIL_HIKAYE_(y)DU"/>
+      <target id="EKFIIL_RIVAYET_(y)mUş"/>
+      <target id="EKFIIL_TANIMLAMA_DUr"/>
+    </source> -->
+
+    <source id="SORU">
+      <target id="EKFIIL_SAHIS_BEN_(y)Um" />
+      <target id="EKFIIL_SAHIS_SEN_sUn" />
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
+      <target id="EKFIIL_SAHIS_SIZ_sUnUz" />
+      <target id="EKFIIL_HIKAYE_(y)DU" />
+      <target id="EKFIIL_RIVAYET_(y)mUş" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+    </source>
+
+    <source id="EDAT_GIBI">
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <target id="IC_COGUL_lAr" />
+      <target id="IC_SAHIPLIK_O_(s)U" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="OZEL">
+      <target id="KARAKTER_KESME" />
+      <target id="IC_COGUL_lAr" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="IY_ISIM" />
+      <targetGroup id="IY_SIFAT" />
+      <targetGroup id="IY_ZARF" />
+      <targetGroup id="IY_FIIL" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="KISALTMA">
+      <target id="KARAKTER_KESME" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="HARF">
+      <target id="KARAKTER_KESME" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="NOKTALI">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="ALINTI">
+      <target id="KARAKTER_KESME" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="KARAKTER_KESME">
+      <copy id="ISIM" />
+    </source>
+
+    <source id="BAGLAC_dA">
+      <target id="SORU_mU" />
+    </source>
+
+    <source id="TAMLAMA">
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="IY_ISIM" />
+      <targetGroup id="IY_SIFAT">
+        <removeTarget id="IY_SIFAT_sU" />
+      </targetGroup>
+      <target id="IY_SIFAT_sU">
+        <conditions flag="Or">
+          <condition operator="EndsWithConsonant" position="Source" />
+        </conditions>
+      </target>
+      <targetGroup id="IY_ZARF" />
+      <target id="IY_FIIL_lA" />
+      <target id="IY_FIIL_lAş" />
+      <target id="IC_COGUL_lAr">
+        <conditions flag="Or">
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_BEN_(U)m" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_SEN_(U)n" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_O_(s)U" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_BIZ_(U)mUz" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_SIZ_(U)nUz" />
+        </conditions>
+      </target>
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <!-- Zamirler hepsi hiçbiri ve öbürkü için hal ekleri araya n sesi almalı -->
+    <source id="ZAMIR">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="IC_COGUL_lAr">
+        <condition operator="HasNotFlags" position="Source" operand="cogul" />
+      </target>
+      <target id="IY_ZARF_CA" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="IY_SIFAT_sUz" />
+      <target id="IY_SIFAT_lU" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+    </source>
+
+
+    <source id="ZAMIR_SAHIS_BEN">
+      <targetGroup id="ISIM_HAL">
+        <removeTarget id="IC_HAL_VASITA_(y)lA" />
+      </targetGroup>
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="EKFIIL_SAHIS_BEN_(y)Um" />
+      <target id="IY_ISIM_cAğIz" />
+      <target id="IY_ISIM_lUK" />
+      <target id="IY_ZARF_CA" />
+      <target id="IY_SIFAT_sUz" />
+      <target id="IY_SIFAT_lU" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+
+    <source id="ZAMIR_SAHIS_SEN">
+      <targetGroup id="ISIM_HAL">
+        <removeTarget id="IC_HAL_VASITA_(y)lA" />
+      </targetGroup>
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="EKFIIL_SAHIS_SEN_sUn" />
+      <target id="IY_ISIM_cAğIz" />
+      <target id="IY_ISIM_lUK" />
+      <target id="IY_ZARF_CA" />
+      <target id="IY_SIFAT_sUz" />
+      <target id="IY_SIFAT_lU" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+
+    <source id="ZAMIR_SAHIS_BIZ">
+      <targetGroup id="ISIM_HAL">
+        <removeTarget id="IC_HAL_VASITA_(y)lA" />
+      </targetGroup>
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="IY_ISIM_lUK" />
+      <target id="IY_ZARF_CA" />
+      <target id="IY_SIFAT_sUz" />
+      <target id="IY_SIFAT_lU" />
+      <target id="ZAMIR_COGUL_lAr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="ZAMIR_SAHIS_SIZ">
+      <targetGroup id="ISIM_HAL">
+        <removeTarget id="IC_HAL_VASITA_(y)lA" />
+      </targetGroup>
+      <target id="EKFIIL_SAHIS_SIZ_sUnUz" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="IY_ISIM_lUK" />
+      <target id="IY_ZARF_CA" />
+      <target id="IY_SIFAT_sUz" />
+      <target id="IY_SIFAT_lU" />
+      <target id="ZAMIR_COGUL_lAr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="ZAMIR_SAHIS_ONLAR">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="EKFIIL_SAHIS_SIZ_sUnUz" />
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="IY_ISIM_lUK" />
+      <target id="IY_ZARF_CA" />
+      <target id="IY_SIFAT_sUz" />
+      <target id="IY_SIFAT_lU" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="ZAMIR_SAHIS_O">
+      <targetGroup id="ISIM_HAL">
+        <removeTarget id="IC_HAL_VASITA_(y)lA" />
+      </targetGroup>
+      <targetGroup id="EKFIIL_SAHIS" />
+      <target id="IY_ISIM_lUK" />
+      <target id="IY_ZARF_CA" />
+      <target id="IY_SIFAT_sUz" />
+      <target id="IY_SIFAT_lU" />
+      <target id="IY_ISIM_cAğIz" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="ZAMIR_ISARET">
+      <targetGroup id="ISIM_HAL">
+        <removeTarget id="IC_HAL_VASITA_(y)lA" />
+      </targetGroup>
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="EKFIIL_SAHIS">
+        <removeTarget id="EKFIIL_SAHIS_ONLAR_lAr" />
+      </targetGroup>
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="IY_ZARF_CA" />
+      <target id="IY_SIFAT_sUz" />
+      <target id="IY_ISIM_cAğIz" />
+      <target id="ZAMIR_COGUL_lAr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="ZAMIR_ISARET_YER">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="IY_ZARF_CA" />
+      <target id="IY_SIFAT_sUz" />
+      <target id="IY_SIFAT_lU" />
+      <target id="IC_COGUL_lAr" />
+    </source>
+
+    <source id="ZAMIR_DONUSLULUK">
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="ISIM_HAL" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="IY_ISIM_lUK">
+        <conditions flag="Or">
+          <condition operator="MorphemeSequenceEquals" position="AfterTarget"
+                     operand="IC_SAHIPLIK_BEN_(U)m, IC_HAL_AYRILMA_DAn" />
+          <condition operator="MorphemeSequenceEquals" position="AfterTarget"
+                     operand="IC_SAHIPLIK_SEN_(U)n, IC_HAL_AYRILMA_DAn" />
+          <condition operator="MorphemeSequenceEquals" position="AfterTarget"
+                     operand="IC_SAHIPLIK_O_(s)U, IC_HAL_AYRILMA_DAn" />
+          <condition operator="MorphemeSequenceEquals" position="AfterTarget"
+                     operand="IC_SAHIPLIK_BIZ_(U)mUz, IC_HAL_AYRILMA_DAn" />
+          <condition operator="MorphemeSequenceEquals" position="AfterTarget"
+                     operand="IC_SAHIPLIK_SIZ_(U)nUz, IC_HAL_AYRILMA_DAn" />
+          <condition operator="MorphemeSequenceEquals" position="AfterTarget"
+                     operand="IC_SAHIPLIK_ONLAR_lArI, IC_HAL_AYRILMA_DAn" />
+        </conditions>
+      </target>
+      <target id="IY_ZARF_CA" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="ZAMIR_SORU">
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="IC_COGUL_lAr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="ZAMIR_BELIRSIZLIK">
+      <target id="IC_SAHIPLIK_O_(s)U" />
+      <target id="IC_SAHIPLIK_ONLAR_lArI" />
+      <target id="SAYI_ULESTIRME_(ş)Ar">
+        <conditions flag="Or">
+          <condition operator="HasFlags" position="Source" operand="sayı" />
+        </conditions>
+      </target>
+      <target id="SAYI_SIRA_(U)ncU">
+        <conditions flag="Or">
+          <condition operator="HasFlags" position="Source" operand="sayı" />
+        </conditions>
+      </target>
+    </source>
+
+    <source id="ZAMIR_COGUL_lAr">
+      <targetGroup id="ISIM_HAL" />
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
+      <target id="EKFIIL_SAHIS_SIZ_sUnUz" />
+      <target id="IY_ZARF_CA" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <!-- Zamirler -->
+
+    <source id="IC_COGUL_lAr">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
+      <target id="EKFIIL_SAHIS_SIZ_sUnUz" />
+      <target id="IY_ZARF_CA" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IC_SAHIPLIK_BEN_(U)m">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="IY_ZARF_CA" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="EKFIIL_SAHIS_SEN_sUn" />
+      <target id="EKFIIL_SAHIS_SIZ_sUnUz" />
+      <target id="IC_COGUL_lAr">
+        <conditions flag="Or">
+          <condition operator="HasFlags" position="First" operand="akrabalık" />
+        </conditions>
+      </target>
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+
+    <source id="IC_SAHIPLIK_SEN_(U)n">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="IY_ZARF_CA" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="EKFIIL_SAHIS_BEN_(y)Um" />
+      <target id="EKFIIL_SAHIS_SEN_sUn" />
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IC_SAHIPLIK_O_(s)U">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="IY_ZARF_CA" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="EKFIIL_SAHIS_BEN_(y)Um" />
+      <target id="EKFIIL_SAHIS_SEN_sUn" />
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
+      <target id="EKFIIL_SAHIS_SIZ_sUnUz" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IC_SAHIPLIK_BIZ_(U)mUz">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="IY_ZARF_CA" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="EKFIIL_SAHIS_SEN_sUn" />
+      <target id="EKFIIL_SAHIS_SIZ_sUnUz" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IC_SAHIPLIK_SIZ_(U)nUz">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="IY_ZARF_CA" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="EKFIIL_SAHIS_BEN_(y)Um" />
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IC_SAHIPLIK_ONLAR_lArI">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="IY_ZARF_CA" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="EKFIIL_SAHIS_BEN_(y)Um" />
+      <target id="EKFIIL_SAHIS_SEN_sUn" />
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
+      <target id="EKFIIL_SAHIS_SIZ_sUnUz" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IC_HAL_YONELME_(y)A">
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IC_HAL_BELIRTME_(y)U">
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IC_HAL_BULUNMA_DA">
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <target id="IC_AITLIK_ki" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IC_HAL_AYRILMA_DAn">
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IC_HAL_ILGI_(n)Un">
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="IC_AITLIK_ki" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="IC_HAL_VASITA_(y)lA">
+        <conditions flag="And">
+          <condition operator="HasFlags" position="BeforeSource" operand="zamir" />
+          <condition operator="HasNotFlags" position="BeforeSource" operand="çoğul" />
+        </conditions>
+      </target>
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IC_HAL_VASITA_(y)lA">
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="IC_AITLIK_ki">
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <targetGroup id="ISIM_HAL" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="IC_COGUL_lAr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="ZAMAN_ki">
+      <copy id="IC_AITLIK_ki" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="EKFIIL_TANIMLAMA_DUr">
+      <target id="EKFIIL_SAHIS_ONLAR_lAr" />
+      <target id="BAGLAC_dA" />
+    </source>
+
+    <source id="EKFIIL_SAHIS_BEN_(y)Um">
+      <target id="EKFIIL_TANIMLAMA_DUr">
+        <conditions flag="Or">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GENIS_(U)r" />
+        </conditions>
+      </target>
+      <target id="BAGLAC_dA" />
+      <target id="SORU_mU">
+        <conditions flag="And">
+          <condition operator="MorphemeEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A" />
+        </conditions>
+      </target>
+    </source>
+
+    <source id="EKFIIL_SAHIS_SEN_sUn">
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="BAGLAC_dA" />
+    </source>
+
+    <source id="EKFIIL_SAHIS_BIZ_(y)Uz">
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="BAGLAC_dA" />
+    </source>
+
+    <source id="EKFIIL_SAHIS_SIZ_sUnUz">
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="BAGLAC_dA" />
+    </source>
+
+    <source id="EKFIIL_SAHIS_ONLAR_lAr">
+      <target id="EKFIIL_HIKAYE_(y)DU">
+        <conditions flag="And">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU" />
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A" />
+        </conditions>
+      </target>
+      <target id="EKFIIL_ZAMAN_(y)ken">
+        <conditions flag="Or">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU" />
+        </conditions>
+      </target>
+      <target id="EKFIIL_RIVAYET_(y)mUş">
+        <conditions flag="Or">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU" />
+        </conditions>
+      </target>
+      <target id="EKFIIL_SART_(y)sA">
+        <conditions flag="And">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_DILEK_sA" />
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A" />
+        </conditions>
+      </target>
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="BAGLAC_dA" />
+      <target id="SORU_mU">
+        <conditions flag="Or">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_HIKAYE_(y)DU" />
+        </conditions>
+      </target>
+    </source>
+
+    <!-- Ekfiil Şahıs Ekleri 2 -->
+    <source id="EKFIIL_SAHIS_BEN_m">
+      <target id="BAGLAC_dA" />
+      <target id=" ">
+        <conditions flag="Or">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_HIKAYE_(y)DU" />
+        </conditions>
+      </target>
+    </source>
+
+    <source id="EKFIIL_SAHIS_SEN_n">
+      <target id="BAGLAC_dA" />
+      <target id="SORU_mU">
+        <conditions flag="Or">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_HIKAYE_(y)DU" />
+        </conditions>
+      </target>
+    </source>
+
+    <source id="EKFIIL_SAHIS_BIZ_k">
+      <target id="BAGLAC_dA" />
+      <target id="SORU_mU">
+        <conditions flag="Or">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_HIKAYE_(y)DU" />
+        </conditions>
+      </target>
+    </source>
+
+    <source id="EKFIIL_SAHIS_SIZ_nUz">
+      <target id="BAGLAC_dA" />
+      <target id="SORU_mU">
+        <conditions flag="Or">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_HIKAYE_(y)DU" />
+        </conditions>
+      </target>
+    </source>
+
+    <!-- Ekfiil Zaman Ekleri -->
+    <source id="EKFIIL_ZAMAN_(y)ken">
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="EKFIIL_SART_(y)sA">
+      <targetGroup id="EKFIIL_SAHIS_2" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="EKFIIL_RIVAYET_(y)mUş">
+      <targetGroup id="EKFIIL_SAHIS" />
+      <target id="EKFIIL_SART_(y)sA" />
+      <target id="IY_ZARF_CAsInA" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="EKFIIL_HIKAYE_(y)DU">
+      <targetGroup id="EKFIIL_SAHIS_2">
+        <!--<removeTarget id="EKFIIL_SAHIS_ONLAR_lAr"/>-->
+      </targetGroup>
+      <!--<target id="EKFIIL_SAHIS_ONLAR_lAr">
+        <conditions flag="Or">
+          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="SORU_mU"/>          
+        </conditions>
+      </target>-->
+      <target id="EKFIIL_SART_(y)sA" />
+      <target id="BAGLAC_dA" />
+    </source>
+
+    <!-- Fiil Kip Ekleri -->
+    <source id="FC_KIP_EMIR_(y)Un">
+      <target id="BAGLAC_dA" />
+    </source>
+
+    <source id="FC_KIP_EMIR_(y)UnUz">
+      <target id="BAGLAC_dA" />
+    </source>
+
+    <source id="FC_KIP_EMIR_sUn">
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FC_KIP_EMIR_sUnlAr">
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FC_KIP_ISTEK_(y)A">
+      <targetGroup id="EKFIIL_SAHIS">
+        <replaceTarget old="EKFIIL_SAHIS_BIZ_(y)Uz" new="EKFIIL_SAHIS_BIZ_k" />
+      </targetGroup>
+      <target id="EKFIIL_HIKAYE_(y)DU" />
+      <target id="EKFIIL_RIVAYET_(y)mUş" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FC_KIP_ISTEK_sAnA" />
+
+    <source id="FC_KIP_ISTEK_sAnIzA" />
+
+    <source id="FC_KIP_GEREKLILIK_mAlI">
+      <targetGroup id="EKFIIL_SAHIS" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FC_KIP_DILEK_sA">
+      <targetGroup id="EKFIIL_SAHIS_2" />
+      <target id="EKFIIL_HIKAYE_(y)DU" />
+      <target id="EKFIIL_RIVAYET_(y)mUş" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <!-- Fiil Zaman Ekleri -->
+    <source id="FC_ZAMAN_GECMIS_DU">
+      <targetGroup id="EKFIIL_SAHIS_2" />
+      <target id="EKFIIL_HIKAYE_(y)DU" />
+      <target id="EKFIIL_SART_(y)sA" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FC_ZAMAN_GELECEK_(y)AcAK">
+      <targetGroup id="EKFIIL_SAHIS" />
+      <target id="EKFIIL_HIKAYE_(y)DU" />
+      <target id="EKFIIL_RIVAYET_(y)mUş" />
+      <target id="EKFIIL_SART_(y)sA" />
+      <target id="EKFIIL_ZAMAN_(y)ken" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FC_ZAMAN_GECMIS_mUş">
+      <copy id="FC_ZAMAN_GELECEK_(y)AcAK" />
+      <target id="IY_ZARF_CAsInA" />
+    </source>
+
+    <source id="FC_ZAMAN_SIMDIKI_(U)yor">
+      <copy id="FC_ZAMAN_GELECEK_(y)AcAK" />
+    </source>
+
+    <source id="FC_ZAMAN_GENIS_(U)r">
+      <copy id="FC_ZAMAN_GELECEK_(y)AcAK">
+        <removeTarget id="EKFIIL_TANIMLAMA_DUr" />
+      </copy>
+      <target id="FIILIMSI_ZARF_CAsInA" />
+      <target id="IY_ISIM_lUK">
+        <conditions flag="Or">
+          <condition operator="MorphemeEquals" position="BeforeSource" operand="FY_EDILGEN_Ul_(U)n" />
+          <condition operator="MorphemeEquals" position="BeforeSource" operand="FC_YF_YETERLILIK_(y)Abil" />
+          <condition operator="HasFlags" position="First" operand="dönüşlü" />
+        </conditions>
+      </target>
+      <target id="EKFIIL_TANIMLAMA_DUr">
+        <conditions flag="Or">
+          <condition operator="MorphemeEquals" position="BeforeSource" operand="FY_EDILGEN_Ul_(U)n" />
+          <condition operator="MorphemeSequenceEquals" position="BeforeSource"
+                     operand="FY_EDILGEN_Ul_(U)n, FC_YF_YETERLILIK_(y)Abil" />
+        </conditions>
+      </target>
+    </source>
+
+    <!-- Yardımcı Fiil Ekleri -->
+    <source id="FC_YF_SUREKLILIK_(y)Adur">
+      <targetGroup id="FIIL_ZAMAN" />
+      <targetGroup id="FIIL_KIP" />
+      <targetGroup id="FIILIMSI_ISIM" />
+      <targetGroup id="FIILIMSI_SIFAT" />
+      <targetGroup id="FIILIMSI_ZARF">
+        <removeTarget id="FIILIMSI_ZARF_CAsInA" />
+        <removeTarget id="FIILIMSI_ZARF_sIzIn" />
+      </targetGroup>
+      <targetGroup id="FY_ISIM" />
+      <targetGroup id="FY_SIFAT" />
+      <target id="FC_YF_YETERLILIK_(y)Abil" />
+      <target id="FY_EDILGEN_Ul_(U)n" />
+      <target id="FY_OLUMSUZLUK_mA" />
+      <target id="EKFIIL_SART_(y)sA" />
+      <target id="BAGLAC_dA" />
+    </source>
+
+    <source id="FC_YF_SUREKLILIK_(y)Agel">
+      <copy id="FC_YF_SUREKLILIK_(y)Adur" />
+    </source>
+
+    <source id="FC_YF_SUREKLILIK_(y)Agör">
+      <copy id="FC_YF_SUREKLILIK_(y)Adur" />
+    </source>
+
+    <source id="FC_YF_SUREKLILIK_(y)Akal">
+      <copy id="FC_YF_SUREKLILIK_(y)Adur" />
+    </source>
+
+    <source id="FC_YF_TEZLIK_(y)Uver">
+      <copy id="FC_YF_SUREKLILIK_(y)Adur" />
+    </source>
+
+    <source id="FC_YF_YAKLASMA_(y)Ayaz">
+      <copy id="FC_YF_SUREKLILIK_(y)Adur" />
+    </source>
+
+    <source id="FC_YF_YETERLILIK_(y)Abil">
+      <copy id="FC_YF_SUREKLILIK_(y)Adur">
+        <removeTarget id="FC_YF_YETERLILIK_(y)Abil" />
+      </copy>
+    </source>
+
+    <source id="FC_YF_YETERSIZLIK_(y)AmA">
+      <copy id="FC_YF_SUREKLILIK_(y)Adur" />
+      <target id="FC_YF_YETERLILIK_(y)Abil" />
+      <target id="EKFIIL_SAHIS_BEN_m" />
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
+      <target id="IC_HAL_AYRILMA_DAn" />
+    </source>
+
+    <!-- Fiilimsi Ekleri-->
+    <source id="FIILIMSI_ISIM_(y)Uş">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="IY_ISIM_CU" />
+      <target id="IC_COGUL_lAr" />
+      <target id="IY_SIFAT_sUz" />
+      <target id="IY_SIFAT_sAl" />
+      <target id="IY_SIFAT_lU" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_ISIM_mA">
+      <copy id="FIILIMSI_ISIM_(y)Uş">
+        <removeTarget id="IY_SIFAT_sAl" />
+      </copy>
+      <target id="IY_ISIM_CU" />
+      <target id="FIILIMSI_ZARF_CAsInA" />
+      <target id="IY_ISIM_lUK" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+    </source>
+
+    <source id="FIILIMSI_ISIM_mAk">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="FIILIMSI_ZARF_sIzIn" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_SIFAT_(y)AcAK">
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="ISIM_HAL" />
+      <target id="IC_COGUL_lAr" />
+    </source>
+
+    <source id="FIILIMSI_SIFAT_(y)An">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="IC_COGUL_lAr" />
+      <target id="IY_SIFAT_sUz" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_SIFAT_(y)AsI">
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <target id="IC_COGUL_lAr" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_SIFAT_(y)AsIcA">
+      <targetGroup id="ISIM_HAL" />
+      <target id="IC_COGUL_lAr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_SIFAT_DUK">
+      <target id="IC_HAL_AYRILMA_DAn">
+        <conditions flag="Or">
+          <condition operator="IsLastMorpheme" position="Target" />
+        </conditions>
+      </target>
+      <target id="IC_COGUL_lAr">
+        <conditions flag="Or">
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_BEN_(U)m" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_SEN_(U)n" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_O_(s)U" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_BIZ_(U)mUz" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_SIZ_(U)nUz" />
+          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_ONLAR_lArI" />
+        </conditions>
+      </target>
+      <targetGroup id="ISIM_SAHIPLIK" />
+    </source>
+
+
+    <source id="FIILIMSI_SIFAT_mAz">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <target id="IC_COGUL_lAr" />
+      <target id="IY_ISIM_lUK" />
+      <target id="IY_FIIL_lAş" />
+      <target id="IY_ZARF_CAsInA" />
+      <target id="IY_ZARF_CA" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_SIFAT_mUş">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <target id="IC_COGUL_lAr" />
+      <target id="IY_ISIM_lUK" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+
+    <source id="FIILIMSI_ZARF_(y)A">
+      <target id="BAGLAC_dA" />
+    </source>
+
+    <source id="FIILIMSI_ZARF_(y)AlI">
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_ZARF_(y)ArAk">
+      <target id="IC_HAL_AYRILMA_DAn" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_ZARF_(y)AsIyA">
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_ZARF_(y)Up">
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_ZARF_(y)UncA">
+      <target id="IC_HAL_YONELME_(y)A" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_ZARF_CAsInA">
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_ZARF_DUkçA">
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_ZARF_mAdAn">
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FIILIMSI_ZARF_sIzIn" />
+
+    <!-- Fiil Yapım Ekleri-->
+
+    <source id="FY_OLUMSUZLUK_mA">
+      <copy id="FIIL">
+        <removeTarget id="FY_OLUMSUZLUK_mA" />
+        <removeTarget id="FY_ETTIRGEN_DUr_(U)t" />
+        <removeTarget id="FY_ETTIRTGEN_t_DUr" />
+        <removeTarget id="FY_EDILGEN_Ul_(U)n" />
+      </copy>
+      <target id="EKFIIL_SAHIS_BEN_m" />
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
+    </source>
+
+    <source id="FY_DONUSUM_mAcA">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <target id="IC_COGUL_lAr" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+    </source>
+
+    <source id="FY_TANIMLAMA_(y)UcU">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <target id="IC_COGUL_lAr" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+      <target id="IY_ISIM_lUK" />
+      <target id="IY_SIFAT_(U)msU" />
+      <target id="IY_SIFAT_lU" />
+      <target id="IY_SIFAT_sUz" />
+      <target id="IY_FIIL_lAş" />
+    </source>
+
+    <source id="FY_EDILGEN_Ul_(U)n">
+      <copy id="FIIL">
+        <!--<removeTarget id="FY_EDILGEN_Ul_(U)n"/>-->
+        <removeTarget id="FY_ETTIRGEN_DUr_(U)t" />
+        <removeTarget id="FY_ETTIRTGEN_t_DUr" />
+      </copy>
+      <target id="FY_ETTIRGEN_DUr_(U)t">
+        <conditions flag="Or">
+          <condition operator="MorphemeEquals" position="BeforeSource" operand="IY_FIIL_lA" />
+        </conditions>
+      </target>
+    </source>
+
+    <source id="IY_FIIL_lA">
+      <copy id="FIIL">
+        <removeTarget id="FY_ETTIRTGEN_t_DUr" />
+      </copy>
+      <target id="FY_DONUSLU_n" />
+    </source>
+
+    <source id="FY_DONUSLU_n">
+      <copy id="FIIL" />
+    </source>
+
+    <source id="IY_FIIL_lAş">
+      <copy id="FIIL">
+        <removeTarget id="FY_ETTIRTGEN_t_DUr" />
+      </copy>
+    </source>
+
+    <!-- İsim Yapım Ekleri -->
+    <source id="IY_ISIM_cAğIz">
+      <copy id="ISIM" />
+    </source>
+
+    <source id="IY_ISIM_CU">
+      <copy id="ISIM">
+        <removeTarget id="IY_SIFAT_sU" />
+      </copy>
+    </source>
+
+    <source id="IY_ISIM_KUCULTME_CUK">
+      <copy id="ISIM" />
+    </source>
+
+    <source id="IY_ISIM_lUK">
+      <copy id="ISIM" />
+    </source>
+
+    <source id="IY_SIFAT_(U)msU">
+      <copy id="SIFAT" />
+    </source>
+
+    <source id="IY_SIFAT_lU">
+      <copy id="SIFAT">
+        <removeTarget id="IY_SIFAT_sU" />
+      </copy>
+    </source>
+
+    <source id="IY_SIFAT_sAl">
+      <copy id="SIFAT" />
+    </source>
+
+    <source id="IY_SIFAT_sU">
+      <copy id="SIFAT">
+        <removeTarget id="IY_SIFAT_sU" />
+      </copy>
+    </source>
+
+    <source id="IY_SIFAT_sUz">
+      <copy id="SIFAT" />
+    </source>
+
+
+    <source id="IY_ZARF_CA">
+      <target id="IC_SAHIPLIK_O_(s)U" />
+      <target id="IC_SAHIPLIK_BIZ_(U)mUz">
+        <conditions flag="Or">
+          <condition operator="MorphemeSequenceEquals" position="BeforeSource" operand="SAYI, IC_COGUL_lAr" />
+        </conditions>
+      </target>
+      <target id="IC_SAHIPLIK_SIZ_(U)nUz">
+        <conditions flag="Or">
+          <condition operator="MorphemeSequenceEquals" position="BeforeSource" operand="SAYI, IC_COGUL_lAr" />
+        </conditions>
+      </target>
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+    </source>
+
+    <source id="IY_ZARF_CAsInA" />
+
+    <!-- Yansıma Ekleri -->
+    <source id="YANSIMA">
+      <target id="YANSIMA_DONUSUM_dA" />
+      <target id="YANSIMA_DONUSUM_tU" />
+    </source>
+
+    <source id="YANSIMA_DONUSUM_dA">
+      <copy id="FIIL" />
+    </source>
+
+    <source id="YANSIMA_DONUSUM_tU">
+      <copy id="ISIM" />
+    </source>
+
+    <!-- Sayı Ekleri -->
+    <source id="SAYI">
+      <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_SAHIS" />
+      <targetGroup id="EKFIIL_ZAMAN" />
+      <targetGroup id="ISIM_SAHIPLIK" />
+      <target id="IY_ISIM_lUK" />
+      <target id="IY_ISIM_CU" />
+      <target id="IY_SIFAT_lU" />
+      <target id="IY_FIIL_lA" />
+      <target id="IC_COGUL_lAr" />
+      <target id="EKFIIL_TANIMLAMA_DUr" />
+      <targetGroup id="SORU_BAGLAC" />
+      <target id="SAYI_SIRA_(U)ncU" />
+      <target id="SAYI_ULESTIRME_(ş)Ar" />
+    </source>
+
+    <source id="SAYI_SIRA_(U)ncU">
+      <copy id="ISIM" />
+    </source>
+
+    <source id="SAYI_ULESTIRME_(ş)Ar">
+      <copy id="ISIM" />
+    </source>
+
+  </graph>
+
+</morphology>

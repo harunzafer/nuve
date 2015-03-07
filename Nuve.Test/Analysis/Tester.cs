@@ -3,11 +3,15 @@ using System.Linq;
 using NUnit.Framework;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
+using Nuve.Reader;
 
 namespace Nuve.Test.Analysis
 {
     internal class Tester
     {
+        //private const string DirPath = @"C:\Users\hrzafer\Desktop\tr";
+        //static readonly Language Language = LanguageReader.ReadExternal(DirPath);
+        //static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language);
         static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
 
         /// <summary>

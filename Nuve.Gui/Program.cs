@@ -13,6 +13,7 @@ using Nuve.Gui.Benchmark;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
 using Nuve.NGrams;
+using Nuve.Reader;
 using Nuve.Sentence;
 using Nuve.Stemming;
 using Nuve.Test.Analysis;
@@ -26,8 +27,12 @@ namespace Nuve.Gui
         private const string TaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcSentencedNormalized.txt";
         private const string UntaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalized.txt";
 
-        //private static readonly WordAnalyzer Analyzer = null;
-        private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
+        private const string DirPath = @"../../../../lang/tr";
+
+        static readonly Language Language = LanguageReader.ReadExternal(DirPath);
+
+        private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language);
+        //private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
 
         /// <summary>
         ///     The main entry point for the application.

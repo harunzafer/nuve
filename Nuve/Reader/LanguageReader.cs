@@ -1,5 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
+using System.Data.OleDb;
+using System.IO;
+using System.Xml;
 using Nuve.Lang;
 using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
@@ -10,7 +14,18 @@ namespace Nuve.Reader
 {
     public static class LanguageReader
     {
-        public static Language ReadInternal(string langCode)
+
+        public static Language ReadExternal(string dirPath)
+        {
+            var orthography = ReadExternalOrthography(dirPath);
+            var morphotactics = ReadExternalMorphotactics(dirPath, orthography.Alphabet);
+            var roots = ReadExternalRoots(dirPath, orthography);
+            var suffixes = ReadExternalSuffixes(dirPath, orthography);
+
+            return new Language(orthography, morphotactics, roots, suffixes);
+        }
+
+        internal static Language ReadInternal(string langCode)
         {
             var orthography = ReadInternalOrthography(langCode);
             var morphotactics = ReadInternalMorphotactics(langCode, orthography.Alphabet);
@@ -22,14 +37,14 @@ namespace Nuve.Reader
 
         private static Orthography ReadInternalOrthography(string lang)
         {
-            var path = lang + "." + Resources.Orthography;
+            var path = lang + "." + Resources.OrthographyFileName;
             var xml = EmbeddedResourceReader.ReadXml(path);
             return OrthographyReader.Read(xml);
         }
 
         private static Morphotactics ReadInternalMorphotactics(string lang, Alphabet alphabet)
         {
-            var path = lang + "." + Resources.Morphotactics;
+            var path = lang + "." + Resources.MorphotacticsFileName;
             var xml = EmbeddedResourceReader.Read(path);
             return MorphotacticsReader.Read(xml, alphabet);
         }
@@ -39,14 +54,14 @@ namespace Nuve.Reader
             var roots = new MorphemeSurfaceDictionary<Root>();
             var reader = new RootLexiconReader(orthography);
 
-            var rootsPath = lang + "." + Resources.Roots;
-            reader.AddEntries(GetAsDataSet(rootsPath), DefaultTableName, roots);
+            var rootsPath = lang + "." + Resources.InternalMainRootsPath;
+            reader.AddEntries(EmbeddedTextResourceToDataSet(rootsPath), DefaultTableName, roots);
 
-            var namesPath = lang + "." + Resources.Names;
-            reader.AddEntries(GetAsDataSet(namesPath), DefaultTableName, roots);
+            var namesPath = lang + "." + Resources.InternalPersonNamesPath;
+            reader.AddEntries(EmbeddedTextResourceToDataSet(namesPath), DefaultTableName, roots);
 
-            var abbreviationPath = lang + "." + Resources.Abbreviations;
-            reader.AddEntries(GetAsDataSet(abbreviationPath), DefaultTableName, roots);
+            var abbreviationPath = lang + "." + Resources.InternalAbbreviationsPath;
+            reader.AddEntries(EmbeddedTextResourceToDataSet(abbreviationPath), DefaultTableName, roots);
 
             return roots;
         }
@@ -56,8 +71,8 @@ namespace Nuve.Reader
             Dictionary<string, Suffix> suffixesById;
             MorphemeSurfaceDictionary<Suffix> suffixesBySurface;
 
-            var path = lang + "." + Resources.Suffixes;
-            var dataSet = GetAsDataSet(path);
+            var path = lang + "." + Resources.InternalSuffixesPath;
+            var dataSet = EmbeddedTextResourceToDataSet(path);
 
             var reader = new SuffixLexiconReader(orthography);
             reader.Read(dataSet, DefaultTableName, out suffixesById, out suffixesBySurface);
@@ -65,34 +80,91 @@ namespace Nuve.Reader
             return new Suffixes(suffixesById, suffixesBySurface);
         }
 
-        //if (_fromExcel)
-        //    { 
-        //        var connectionString = string.Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0}; " +
-        //            "Extended Properties=Excel 12.0;", filename);
-        //        var adapter = new OleDbDataAdapter("SELECT * FROM [" + sheetname + "$]", connectionString);
-        //        ds = new DataSet();
-        //        adapter.Fill(ds, "roots");
-        //    }
 
         private const string Delimiter = "\t";
 
         public const string DefaultTableName = "sheet";
 
-        private static DataSet GetAsDataSet(string path)
+        private static DataSet EmbeddedTextResourceToDataSet(string path)
         {
             var textStream = EmbeddedResourceReader.Read(path);
             return TextToDataSet.Convert(textStream, DefaultTableName, Delimiter);
         }
-
-        //1- Excelden veya Text'den dataset'ler burada oluşturulmalı
-        //2- Hem suffix hem root reader ortografi, params dataset almalı ve oradan yürümeli
-        //3- EmbeddedResourceReader ve TextToDataset sınıfları yalnızca buradan çağılısın
-        //4- Excel dosyalarından okunacak sheet'ler burada belirtilsin
-
-
-        public static Language ReadExternal(string path)
+      
+        private static Orthography ReadExternalOrthography(string dirPath)
         {
-            return null;
+            var path = dirPath + "/" + Resources.OrthographyFileName;
+            var xml = new XmlDocument();
+            xml.Load(path);
+            return OrthographyReader.Read(xml);
+        }
+
+        private static Morphotactics ReadExternalMorphotactics(string dirPath, Alphabet alphabet)
+        {
+            var path = dirPath + "/" + Resources.MorphotacticsFileName;
+            var stream = new FileStream(path, FileMode.Open, FileAccess.Read);
+            return MorphotacticsReader.Read(stream, alphabet);
+        }
+
+        private static MorphemeSurfaceDictionary<Root> ReadExternalRoots(string dirPath, Orthography orthography)
+        {
+            var roots = new MorphemeSurfaceDictionary<Root>();
+            var reader = new RootLexiconReader(orthography);
+
+            var path = dirPath + "\\" + Resources.ExternalRootsFileName;
+
+
+            string sheetName = Resources.SheetNameMainRoots;
+            DataSet ds = GetExcelSheetAsDataSet(path, sheetName);
+            reader.AddEntries(ds, sheetName, roots);
+
+
+            sheetName = Resources.SheetNamePersonNames;
+            ds = GetExcelSheetAsDataSet(path, sheetName);
+            reader.AddEntries(ds, sheetName, roots);
+
+            sheetName = Resources.SheetNameAbbreviations;
+            ds = GetExcelSheetAsDataSet(path, sheetName);
+            reader.AddEntries(ds, sheetName, roots);
+
+            return roots;
+        }
+
+        private static Suffixes ReadExternalSuffixes(string langDir, Orthography orthography)
+        {
+            Dictionary<string, Suffix> suffixesById;
+            MorphemeSurfaceDictionary<Suffix> suffixesBySurface;
+
+            var path = langDir + "/" + Resources.ExternalSuffixFileName;
+
+            string sheetName = Resources.SheetNameSuffixes;
+            DataSet ds = GetExcelSheetAsDataSet(path, sheetName);
+            
+            var reader = new SuffixLexiconReader(orthography);
+            reader.Read(ds, sheetName, out suffixesById, out suffixesBySurface);
+
+            return new Suffixes(suffixesById, suffixesBySurface);
+        }
+
+        private static DataSet GetExcelSheetAsDataSet(string path, string sheetName)
+        {
+            var connectionString = string.Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0}; " +
+                "Extended Properties=Excel 12.0;", path);
+            var adapter = new OleDbDataAdapter("SELECT * FROM [" + sheetName + "$]", connectionString);
+            var ds = new DataSet();
+
+            try
+            {
+                adapter.Fill(ds, sheetName);
+            }
+            catch (Exception exception)
+            {
+
+                Console.WriteLine(exception.Message);
+                Console.WriteLine(exception);
+            }
+            
+            return ds;
         }
         
     }

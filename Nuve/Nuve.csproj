@@ -30,6 +30,24 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -152,18 +170,16 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="Resources\Tr\dictionary.xlsx" />
     <EmbeddedResource Include="Resources\orthography.dtd" />
-    <None Include="Resources\Tr\suffix.xlsx" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Tr\abbrv.txt" />
+    <EmbeddedResource Include="Resources\Tr\root_abbrv.txt" />
     <EmbeddedResource Include="Resources\Tr\morphotactics.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Tr\name.txt" />
+    <EmbeddedResource Include="Resources\Tr\root_name.txt" />
     <EmbeddedResource Include="Resources\Tr\orthography.xml" />
-    <EmbeddedResource Include="Resources\Tr\root.txt" />
+    <EmbeddedResource Include="Resources\Tr\root_main.txt" />
     <EmbeddedResource Include="Resources\Tr\suffix.txt" />
   </ItemGroup>
   <ItemGroup />

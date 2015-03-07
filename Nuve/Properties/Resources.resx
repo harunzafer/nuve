@@ -117,29 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Abbreviations" xml:space="preserve">
-    <value>abbrv.txt</value>
+  <data name="InternalAbbreviationsPath" xml:space="preserve">
+    <value>root_abbrv.txt</value>
   </data>
-  <data name="Morphotactics" xml:space="preserve">
+  <data name="MorphotacticsFileName" xml:space="preserve">
     <value>morphotactics.xml</value>
   </data>
-  <data name="Names" xml:space="preserve">
-    <value>name.txt</value>
+  <data name="InternalPersonNamesPath" xml:space="preserve">
+    <value>root_name.txt</value>
   </data>
-  <data name="Orthography" xml:space="preserve">
+  <data name="OrthographyFileName" xml:space="preserve">
     <value>orthography.xml</value>
   </data>
-  <data name="Roots" xml:space="preserve">
-    <value>root.txt</value>
+  <data name="InternalMainRootsPath" xml:space="preserve">
+    <value>root_main.txt</value>
   </data>
-  <data name="RootsFile" xml:space="preserve">
-    <value>dictionary_tr.xlsx</value>
+  <data name="ExternalRootsFileName" xml:space="preserve">
+    <value>roots.xlsx</value>
   </data>
-  <data name="Suffixes" xml:space="preserve">
+  <data name="InternalSuffixesPath" xml:space="preserve">
     <value>suffix.txt</value>
   </data>
-  <data name="SuffixFile" xml:space="preserve">
-    <value>suffix_tr.xlsx</value>
+  <data name="ExternalSuffixFileName" xml:space="preserve">
+    <value>suffixes.xlsx</value>
   </data>
   <data name="ResourcesPath" xml:space="preserve">
     <value>..\..\Nuve\Resources\</value>
@@ -149,5 +149,17 @@
   </data>
   <data name="langCodeLength" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="SheetNameAbbreviations" xml:space="preserve">
+    <value>abbrv</value>
+  </data>
+  <data name="SheetNameMainRoots" xml:space="preserve">
+    <value>main</value>
+  </data>
+  <data name="SheetNamePersonNames" xml:space="preserve">
+    <value>name</value>
+  </data>
+  <data name="SheetNameSuffixes" xml:space="preserve">
+    <value>suffix</value>
   </data>
 </root>
