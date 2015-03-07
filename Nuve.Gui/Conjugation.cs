@@ -16,8 +16,8 @@ namespace Nuve.Gui
         public SecondTense SecondTense { get; private set; }
         public Person Person { get; private set; }
 
-        private static readonly Suffix Negative = Language.Turkish.Lexicon.GetSuffix("FY_OLUMSUZLUK_mA");
-        private static Suffix SORU = Language.Turkish.Lexicon.GetSuffix("SORU_mU");
+        private static readonly Suffix Negative = Language.Turkish.GetSuffix("FY_OLUMSUZLUK_mA");
+        private static Suffix SORU = Language.Turkish.GetSuffix("SORU_mU");
 
 
         public Conjugation(Word verb, FirstTense firstTense, SecondTense secondTense, Person person)

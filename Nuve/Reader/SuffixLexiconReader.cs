@@ -10,11 +10,11 @@ namespace Nuve.Reader
 {
     internal class SuffixLexiconReader
     {
-        private readonly Orthography orthography;
+        private readonly Orthography _orthography;
 
         public SuffixLexiconReader(Orthography orthography)
         {
-            this.orthography = orthography;
+            _orthography = orthography;
         }
 
         private class SuffixDictionaryLine
@@ -25,16 +25,15 @@ namespace Nuve.Reader
             public string Flags;
             public string Rules;
             public string Surfaces;
-            public string EmptySurface;
+            
         }
         
-        public void Read(string filename, 
+        public void Read(DataSet ds, 
+            string tableName,
             out Dictionary<string, Suffix> suffixesById, 
-            out MorphemeLexicon<Suffix> suffixes)
+            out MorphemeSurfaceDictionary<Suffix> suffixes)
         {
-
-            var ds = TextToDataSet.Convert(filename, "suffix", "\t");
-            var data = ds.Tables["suffix"].AsEnumerable();
+            var data = ds.Tables[tableName].AsEnumerable();
             var entries = data.Select(x =>
                         new SuffixDictionaryLine
                         {
@@ -44,12 +43,12 @@ namespace Nuve.Reader
                             Flags = x.Field<string>("flags") ?? "",
                             Rules = x.Field<string>("rules") ?? "",
                             Surfaces = x.Field<string>("surfaces"),
-                            EmptySurface = x.Field<string>("emptySurface") ?? "",
+            
                         });
 
 
             suffixesById = new Dictionary<string, Suffix>();
-            suffixes = new MorphemeLexicon<Suffix>();
+            suffixes = new MorphemeSurfaceDictionary<Suffix>();
 
             foreach (var entry in entries)
             {
@@ -60,7 +59,7 @@ namespace Nuve.Reader
 
         private void AddSuffix(SuffixDictionaryLine entry,
              Dictionary<string, Suffix> suffixesById,
-             MorphemeLexicon<Suffix> suffixes)
+             MorphemeSurfaceDictionary<Suffix> suffixes)
         {
 
             string id = entry.Id; 
@@ -78,7 +77,7 @@ namespace Nuve.Reader
             Debug.Assert(entry.Surfaces != null, "entry.Surfaces != null");
             var surfaces = new List<string>(entry.Surfaces.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries));
 
-            List<OrthographyRule> rules = orthography.GetRules(rulesToken);
+            List<OrthographyRule> rules = _orthography.GetRules(rulesToken);
             var suffix = new Suffix(id, lex, morphemeType, LabelSet.ConvertLabelNamesToIndexes(flags), rules);
             suffixesById.Add(id, suffix);
             

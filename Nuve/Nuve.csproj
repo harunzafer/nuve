@@ -66,12 +66,12 @@
     <Compile Include="Distance\IDistance.cs" />
     <Compile Include="Distance\JaccardDistance.cs" />
     <Compile Include="Distance\LevenshteinDistance.cs" />
-    <Compile Include="Morphologic\MorphemeLexicon.cs" />
+    <Compile Include="Morphologic\MorphemeSurfaceDictionary.cs" />
+    <Compile Include="Morphologic\Suffixes.cs" />
     <Compile Include="Reader\LanguageReader.cs" />
     <Compile Include="Morphologic\DictionaryGraph.cs" />
     <Compile Include="Morphologic\IGraph.cs" />
     <Compile Include="Morphologic\Transition.cs" />
-    <Compile Include="Reader\LexiconReader.cs" />
     <Compile Include="Reader\SuffixLexiconReader.cs" />
     <Compile Include="Stemming\DictionaryStemmer.cs" />
     <Compile Include="Lang\Language.cs" />
@@ -81,7 +81,6 @@
     <Compile Include="Stemming\StemDictionaryGenerator.cs" />
     <Compile Include="Stemming\StemmerEvaluator.cs" />
     <Compile Include="Lang\WordAnalyzer.cs" />
-    <Compile Include="Morphologic\Lexicon.cs" />
     <Compile Include="Morphologic\Morphotactics.cs" />
     <Compile Include="Morphologic\Structure\Allomorph.cs" />
     <Compile Include="Morphologic\Structure\Morpheme.cs" />

@@ -6,28 +6,28 @@ namespace Nuve.Reader
 {
     internal class TextToDataSet
     {
+
         /// <summary>
         /// Converts a given delimited file into a dataset. 
         /// Assumes that the first line    
         /// of the text file contains the column names.
         /// </summary>
-        /// <param name="filename">The name of the file to open</param>    
+        /// <param name="stream">The text file as Stream</param>    
         /// <param name="tableName">The name of the 
         /// Table to be made within the DataSet returned</param>
         /// <param name="delimiter">The string to delimit by</param>
         /// <returns>DataSet</returns>  
         /// <see cref="http://www.codeproject.com/Articles/6737/Fill-a-DataSet-from-delimited-text-files"/>
-        public static DataSet Convert(string filename, string tableName, string delimiter)
+        public static DataSet Convert(Stream stream, string tableName, string delimiter)
         {
-            //The DataSet to Return
-            DataSet result = new DataSet();
-
-
-            //Open the file in a stream reader.
-            StreamReader s = new StreamReader(EmbeddedResourceReader.Read(filename));
+            
+            StreamReader reader = new StreamReader(stream);
 
             //Split the first line into the columns       
-            string[] columns = s.ReadLine().Split(delimiter.ToCharArray());
+            string[] columns = reader.ReadLine().Split(delimiter.ToCharArray());
+
+            //The DataSet to Return
+            DataSet result = new DataSet();
 
             //AddSequence the new DataTable to the RecordSet
             result.Tables.Add(tableName);
@@ -64,13 +64,13 @@ namespace Nuve.Reader
             }
 
             //Read the rest of the data in the file.        
-            string AllData = s.ReadToEnd();
+            string AllData = reader.ReadToEnd();
 
             //Split off each row at the Carriage Return/Line Feed
             //Default line ending in most windows exports.  
             //You may have to edit this to match your particular file.
             //This will work for Excel, Access, etc. default exports.
-            string[] rows = AllData.Split("\r\n".ToCharArray() , StringSplitOptions.RemoveEmptyEntries);
+            string[] rows = AllData.Split("\r\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
 
             //Now add each row to the DataSet        
             foreach (string r in rows)
@@ -85,5 +85,6 @@ namespace Nuve.Reader
             //Return the imported data.        
             return result;
         }
+        
     }
 }

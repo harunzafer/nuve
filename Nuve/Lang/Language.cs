@@ -17,13 +17,18 @@ namespace Nuve.Lang
     {
         private readonly Orthography _orthography;
         private readonly Morphotactics _morphotactics;
-        private readonly Lexicon _lexicon;
+        private readonly MorphemeSurfaceDictionary<Root> _roots;
+        private readonly Suffixes _suffixes;
 
-        internal Language(Orthography orthography, Morphotactics morphotactics, Lexicon lexicon)
+        internal Language(Orthography orthography, 
+            Morphotactics morphotactics, 
+            MorphemeSurfaceDictionary<Root> roots, 
+            Suffixes suffixes)
         {
             _orthography = orthography;
             _morphotactics = morphotactics;
-            _lexicon = lexicon;
+            _roots = roots;
+            _suffixes = suffixes;
         }
 
         internal Morphotactics Morphotactics
@@ -31,14 +36,25 @@ namespace Nuve.Lang
             get { return _morphotactics; }
         }
 
-        internal Lexicon Roots
+        public Suffix GetSuffix(string id)
         {
-            get { return _lexicon; }
+            Suffix suffix;
+            if (_suffixes.SuffixesById.TryGetValue(id, out suffix))
+            {
+                return suffix;
+            }
+
+            return null;
         }
 
-        internal Lexicon Lexicon
+        public IEnumerable<Root> GetRoots(string surface)
         {
-            get { return _lexicon; }
+            return _roots.Get(surface);
+        }
+
+        public IEnumerable<Suffix> GetSuffixes(string surface)
+        {
+            return _suffixes.SuffixesBySurface.Get(surface);
         }
 
         public static readonly Language Turkish = LanguageReader.ReadInternal("Tr");

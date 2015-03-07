@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
 
@@ -19,7 +20,7 @@ namespace Nuve.Gui
                 foreach (var solution in solutions)
                 {
                     string output = solution.GetSurface();
-                    solution.Root = turkish.Lexicon.Roots.Get(root)[0];
+                    solution.Root = turkish.GetRoots(root).First();
                     output += "\t" + solution.GetSurface();
                     replacedWords.Add(output);
                 }
