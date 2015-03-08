@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.IO;
 using System.Xml;
+using System.Xml.Schema;
 using Nuve.Lang;
 using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
@@ -14,7 +15,6 @@ namespace Nuve.Reader
 {
     public static class LanguageReader
     {
-
         public static Language ReadExternal(string dirPath)
         {
             var orthography = ReadExternalOrthography(dirPath);
@@ -90,13 +90,37 @@ namespace Nuve.Reader
             var textStream = EmbeddedResourceReader.Read(path);
             return TextToDataSet.Convert(textStream, DefaultTableName, Delimiter);
         }
-      
+
         private static Orthography ReadExternalOrthography(string dirPath)
         {
             var path = dirPath + "/" + Resources.OrthographyFileName;
+            var settings = new XmlReaderSettings
+            {
+                ValidationType = ValidationType.DTD,
+                DtdProcessing = DtdProcessing.Parse,
+            };
+
+            settings.ValidationEventHandler += OnValidationEvent;
+            var reader = XmlReader.Create(path, settings);
             var xml = new XmlDocument();
-            xml.Load(path);
+
+            try
+            {
+                xml.Load(reader);
+            }
+            catch (XmlException ex)
+            {
+
+                throw new XmlException("Invalid Orthography XML: " + ex.Message);
+            }
+            
+
             return OrthographyReader.Read(xml);
+        }
+
+        private static void OnValidationEvent(Object o, ValidationEventArgs args)
+        {
+            throw new XmlException("Invalid Orthography XML: " + args.Message, args.Exception);
         }
 
         private static Morphotactics ReadExternalMorphotactics(string dirPath, Alphabet alphabet)
@@ -139,7 +163,7 @@ namespace Nuve.Reader
 
             string sheetName = Resources.SheetNameSuffixes;
             DataSet ds = GetExcelSheetAsDataSet(path, sheetName);
-            
+
             var reader = new SuffixLexiconReader(orthography);
             reader.Read(ds, sheetName, out suffixesById, out suffixesBySurface);
 
@@ -149,7 +173,7 @@ namespace Nuve.Reader
         private static DataSet GetExcelSheetAsDataSet(string path, string sheetName)
         {
             var connectionString = string.Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0}; " +
-                "Extended Properties=Excel 12.0;", path);
+                                                 "Extended Properties=Excel 12.0;", path);
             var adapter = new OleDbDataAdapter("SELECT * FROM [" + sheetName + "$]", connectionString);
             var ds = new DataSet();
 
@@ -159,13 +183,11 @@ namespace Nuve.Reader
             }
             catch (Exception exception)
             {
-
                 Console.WriteLine(exception.Message);
                 Console.WriteLine(exception);
             }
-            
+
             return ds;
         }
-        
     }
 }

@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Nuve.Orthographic
@@ -28,10 +30,18 @@ namespace Nuve.Orthographic
         public List<OrthographyRule> GetRules(IEnumerable<string> ids)
         {
             var orthographyRules = new List<OrthographyRule>();
-            foreach (var token in ids)
+            foreach (var id in ids)
             {
                 //int id = Convert.ToInt32(rule.Value);
-                orthographyRules.Add(GetRule(token));
+                if (GetRule(id)==null)
+                {
+                    Console.WriteLine("Warning: Undefined orthograpy rule:" + id);
+                }
+                else
+                {
+                    orthographyRules.Add(GetRule(id));    
+                }
+                
             }
             return orthographyRules;
         }

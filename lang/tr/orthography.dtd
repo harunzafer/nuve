@@ -14,7 +14,7 @@
 <!ELEMENT rule (description, transformation*)>
 <!ATTLIST rule
     id CDATA #REQUIRED
-    type CDATA #REQUIRED>
+    type (First | Next | Previous | Self | Default | None) #REQUIRED>
 <!ELEMENT description (#PCDATA)>
 
 <!ELEMENT transformation (conditions?)>

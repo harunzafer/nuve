@@ -42,9 +42,9 @@ namespace Nuve.Reader
                 doc = XDocument.Load(xml);
             }
 
-            catch (Exception e)
+            catch (XmlException ex)
             {
-                Console.WriteLine(e);
+                throw new XmlException("Invalid morphotactics XML: " + ex.Message);
             }
 
 

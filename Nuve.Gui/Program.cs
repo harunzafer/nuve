@@ -9,6 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows.Forms;
+using System.Xml;
 using Nuve.Gui.Benchmark;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
@@ -27,19 +28,35 @@ namespace Nuve.Gui
         private const string TaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcSentencedNormalized.txt";
         private const string UntaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalized.txt";
 
-        private const string DirPath = @"../../../../lang/tr";
-
-        static readonly Language Language = LanguageReader.ReadExternal(DirPath);
-
-        private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language);
-        //private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
-
+        
+        
+        private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
+        
         /// <summary>
         ///     The main entry point for the application.
         /// </summary>
         [STAThread]
         private static void Main()
         {
+
+            try
+            {
+                string DirPath = @"../../../../lang/tr";
+
+                Language Language = LanguageReader.ReadExternal(DirPath);
+
+                WordAnalyzer an = new WordAnalyzer(Language);
+
+                
+            }
+            catch (XmlException exception)
+            {
+                Console.WriteLine(exception.Message);
+            }
+
+            
+            
+
             //var lines = File.ReadAllLines(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcExtra.txt");
             //var splitter = new RegexTokenizerBase(RegexTokenizerBase.Pattern);
 

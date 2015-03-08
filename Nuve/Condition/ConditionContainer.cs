@@ -6,30 +6,30 @@ namespace Nuve.Condition
 {
     public class ConditionContainer
     {
-        private readonly IList<ConditionBase> conditions;
-        private readonly bool flag;
+        private readonly IList<ConditionBase> _conditions;
+        private readonly bool _flag;
 
         public ConditionContainer(IList<ConditionBase> conditions, string flag)
         {
             if (String.IsNullOrEmpty(flag) || flag == "Or")
             {
-                this.flag = false;
+                this._flag = false;
             }
             else if (flag=="And")
             {
-                this.flag = true;
+                this._flag = true;
             }
             else
             {
                 throw new ArgumentException("Geçersiz Flag deðeri, And veya Or olmalý :)");
             }
 
-            this.conditions = conditions;
+            this._conditions = conditions;
         }
 
         public bool IsEmpty
         {
-            get { return conditions.Count == 0; }
+            get { return _conditions.Count == 0; }
         }
 
         public bool IsTrue(Allomorph allomorph)
@@ -39,7 +39,7 @@ namespace Nuve.Condition
                 return true;
             }
 
-            return flag ? AreAllConditionsTrue(allomorph) : IsAnyConditionTrue(allomorph);
+            return _flag ? AreAllConditionsTrue(allomorph) : IsAnyConditionTrue(allomorph);
         }
 
         public static ConditionContainer EmptyContainer()
@@ -49,7 +49,7 @@ namespace Nuve.Condition
 
         private bool AreAllConditionsTrue(Allomorph allomorph)
         {
-            foreach (var condition in conditions)
+            foreach (var condition in _conditions)
             {
                 if (!condition.IsTrueFor(allomorph))
                 {
@@ -61,7 +61,7 @@ namespace Nuve.Condition
 
         private bool IsAnyConditionTrue(Allomorph allomorph)
         {
-            foreach (var condition in conditions)
+            foreach (var condition in _conditions)
             {
                 if (condition.IsTrueFor(allomorph))
                 {

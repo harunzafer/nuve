@@ -15,7 +15,7 @@ namespace Nuve.Test.Orthographic
         public void Init()
         {
             tr = Language.Turkish;
-        }
+            }
 
         [TestCase("kitap", Result = "kitaplarımdakilerden")]
         [TestCase("kalem", Result = "kalemlerimdekilerden")]

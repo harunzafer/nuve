@@ -24,7 +24,7 @@ namespace Nuve.Condition
                 case "HasFlags": return new HasLabel(morphemeLocation, operand, alphabet);
                 case "HasNotFlags": return new HasNotLabel(morphemeLocation, operand, alphabet);
                 case "IsLastMorpheme": return new IsLastMorpheme(morphemeLocation, operand, alphabet);
-                default: throw new ArgumentException("What the hack is that action: " + name);
+                default: throw new ArgumentException("Invalid Condition: " + name);
             }
 
         }
