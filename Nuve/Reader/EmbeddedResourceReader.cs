@@ -19,8 +19,6 @@ namespace Nuve.Reader
             try
             {
                 stream = Assembly.GetManifestResourceStream(AssemblyFolder + filename);
-                Console.WriteLine(Assembly.CodeBase);
-                Console.WriteLine(AssemblyFolder + filename);
             }
             catch (Exception)
             {
@@ -32,15 +30,6 @@ namespace Nuve.Reader
             }
             return stream;
         }
-
-        public static XmlDocument ReadXml(string filename)
-        {
-            Stream stream = Read(filename);
-            var doc = new XmlDocument {XmlResolver = new MyXmlResolver()};
-            doc.Load(stream);
-            return doc;
-        }
-
 
     }
 }

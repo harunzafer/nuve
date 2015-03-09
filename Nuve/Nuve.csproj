@@ -86,6 +86,7 @@
     <Compile Include="Distance\LevenshteinDistance.cs" />
     <Compile Include="Morphologic\MorphemeSurfaceDictionary.cs" />
     <Compile Include="Morphologic\Suffixes.cs" />
+    <Compile Include="Reader\InvalidLanguageFileException.cs" />
     <Compile Include="Reader\LanguageReader.cs" />
     <Compile Include="Morphologic\DictionaryGraph.cs" />
     <Compile Include="Morphologic\IGraph.cs" />

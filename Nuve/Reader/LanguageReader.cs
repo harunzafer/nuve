@@ -13,71 +13,122 @@ using Nuve.Properties;
 
 namespace Nuve.Reader
 {
-    public static class LanguageReader
+    public class LanguageReader
     {
-        public static Language ReadExternal(string dirPath)
-        {
-            var orthography = ReadExternalOrthography(dirPath);
-            var morphotactics = ReadExternalMorphotactics(dirPath, orthography.Alphabet);
-            var roots = ReadExternalRoots(dirPath, orthography);
-            var suffixes = ReadExternalSuffixes(dirPath, orthography);
+        private readonly bool _external;
+        private readonly string _dirPath;
+        private readonly string _seperator;
+        private Orthography _orthography;
 
-            return new Language(orthography, morphotactics, roots, suffixes);
+        public LanguageReader(string dirPath)
+        {
+            _dirPath = dirPath;
+            _external = true;
+            _seperator = "/";
         }
 
-        internal static Language ReadInternal(string langCode)
+        internal LanguageReader(string langCode, bool external)
         {
-            var orthography = ReadInternalOrthography(langCode);
-            var morphotactics = ReadInternalMorphotactics(langCode, orthography.Alphabet);
-            var roots = ReadInternalRoots(langCode, orthography);
-            var suffixes = ReadInternalSuffixes(langCode, orthography);
-
-            return new Language(orthography, morphotactics, roots, suffixes);
+            _dirPath = langCode;
+            _external = external;
+            _seperator = external ? "/" : ".";
         }
 
-        private static Orthography ReadInternalOrthography(string lang)
+        public Language Read()
         {
-            var path = lang + "." + Resources.OrthographyFileName;
-            var xml = EmbeddedResourceReader.ReadXml(path);
-            return OrthographyReader.Read(xml);
+            _orthography = ReadOrthography();
+            var morphotactics = ReadMorphotactics();
+            var roots = ReadRoots();
+            var suffixes = ReadSuffixes();
+
+            return new Language(morphotactics, roots, suffixes);
         }
 
-        private static Morphotactics ReadInternalMorphotactics(string lang, Alphabet alphabet)
+        private Orthography ReadOrthography()
         {
-            var path = lang + "." + Resources.MorphotacticsFileName;
-            var xml = EmbeddedResourceReader.Read(path);
-            return MorphotacticsReader.Read(xml, alphabet);
+            try
+            {
+                var path = _dirPath + _seperator + Resources.OrthographyFileName;
+
+                var xml = new XmlDocument();
+                var reader = GetXmlReader(path);
+                xml.Load(reader);
+
+                return OrthographyReader.Read(xml);
+            }
+
+            catch (Exception ex)
+            {
+                throw new InvalidLanguageFileException(ex, Type.Orthograpy, "Invalid language file for orthograpy: ");
+            }
         }
 
-        private static MorphemeSurfaceDictionary<Root> ReadInternalRoots(string lang, Orthography orthography)
+        private Morphotactics ReadMorphotactics()
         {
-            var roots = new MorphemeSurfaceDictionary<Root>();
-            var reader = new RootLexiconReader(orthography);
+            try
+            {
+                var path = _dirPath + _seperator + Resources.MorphotacticsFileName;
 
-            var rootsPath = lang + "." + Resources.InternalMainRootsPath;
-            reader.AddEntries(EmbeddedTextResourceToDataSet(rootsPath), DefaultTableName, roots);
+                if (_external)
+                {
+                    var stream = new FileStream(path, FileMode.Open, FileAccess.Read);
+                    return MorphotacticsReader.Read(stream, _orthography.Alphabet);
+                }
 
-            var namesPath = lang + "." + Resources.InternalPersonNamesPath;
-            reader.AddEntries(EmbeddedTextResourceToDataSet(namesPath), DefaultTableName, roots);
-
-            var abbreviationPath = lang + "." + Resources.InternalAbbreviationsPath;
-            reader.AddEntries(EmbeddedTextResourceToDataSet(abbreviationPath), DefaultTableName, roots);
-
-            return roots;
+                var xml = EmbeddedResourceReader.Read(path);
+                return MorphotacticsReader.Read(xml, _orthography.Alphabet);
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidLanguageFileException(ex, Type.Morphotactics,
+                    "Invalid language file for Morphotactics: ");
+            }
         }
 
-        private static Suffixes ReadInternalSuffixes(string lang, Orthography orthography)
+        private MorphemeSurfaceDictionary<Root> ReadRoots()
         {
-            Dictionary<string, Suffix> suffixesById;
-            MorphemeSurfaceDictionary<Suffix> suffixesBySurface;
+            try
+            {
+                var roots = new MorphemeSurfaceDictionary<Root>();
+                var reader = new RootLexiconReader(_orthography);
 
-            var path = lang + "." + Resources.InternalSuffixesPath;
-            var dataSet = EmbeddedTextResourceToDataSet(path);
+                var rootsPath = _dirPath + _seperator + Resources.InternalMainRootsPath;
 
-            var reader = new SuffixLexiconReader(orthography);
-            reader.Read(dataSet, DefaultTableName, out suffixesById, out suffixesBySurface);
+                reader.AddEntries(EmbeddedTextResourceToDataSet(rootsPath), DefaultTableName, roots);
 
-            return new Suffixes(suffixesById, suffixesBySurface);
+                var namesPath = _dirPath + _seperator + Resources.InternalPersonNamesPath;
+                reader.AddEntries(EmbeddedTextResourceToDataSet(namesPath), DefaultTableName, roots);
+
+                var abbreviationPath = _dirPath + _seperator + Resources.InternalAbbreviationsPath;
+                reader.AddEntries(EmbeddedTextResourceToDataSet(abbreviationPath), DefaultTableName, roots);
+
+                return roots;
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidLanguageFileException(ex, Type.Roots, "Invalid language file for roots: ");
+            }
+        }
+
+        private Suffixes ReadSuffixes()
+        {
+            try
+            {
+                Dictionary<string, Suffix> suffixesById;
+                MorphemeSurfaceDictionary<Suffix> suffixesBySurface;
+
+                var path = _dirPath + _seperator + Resources.InternalSuffixesPath;
+                var dataSet = EmbeddedTextResourceToDataSet(path);
+
+                var reader = new SuffixLexiconReader(_orthography);
+                reader.Read(dataSet, DefaultTableName, out suffixesById, out suffixesBySurface);
+
+                return new Suffixes(suffixesById, suffixesBySurface);
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidLanguageFileException(ex, Type.Suffixes, "Invalid language file for suffixes: ");
+            }
         }
 
 
@@ -85,109 +136,40 @@ namespace Nuve.Reader
 
         public const string DefaultTableName = "sheet";
 
-        private static DataSet EmbeddedTextResourceToDataSet(string path)
+        private DataSet EmbeddedTextResourceToDataSet(string path)
         {
             var textStream = EmbeddedResourceReader.Read(path);
             return TextToDataSet.Convert(textStream, DefaultTableName, Delimiter);
         }
 
-        private static Orthography ReadExternalOrthography(string dirPath)
+
+        private XmlReader GetXmlReader(string path)
         {
-            var path = dirPath + "/" + Resources.OrthographyFileName;
             var settings = new XmlReaderSettings
             {
                 ValidationType = ValidationType.DTD,
                 DtdProcessing = DtdProcessing.Parse,
             };
-
             settings.ValidationEventHandler += OnValidationEvent;
-            var reader = XmlReader.Create(path, settings);
-            var xml = new XmlDocument();
 
-            try
+            XmlReader reader;
+            if (!_external)
             {
-                xml.Load(reader);
+                settings.XmlResolver = new MyXmlResolver();
+                var stream = EmbeddedResourceReader.Read(path);
+                reader = XmlReader.Create(stream, settings);
             }
-            catch (XmlException ex)
+            else
             {
-
-                throw new XmlException("Invalid Orthography XML: " + ex.Message);
+                reader = XmlReader.Create(path, settings);
             }
-            
 
-            return OrthographyReader.Read(xml);
+            return reader;
         }
 
-        private static void OnValidationEvent(Object o, ValidationEventArgs args)
+        private void OnValidationEvent(Object o, ValidationEventArgs args)
         {
             throw new XmlException("Invalid Orthography XML: " + args.Message, args.Exception);
-        }
-
-        private static Morphotactics ReadExternalMorphotactics(string dirPath, Alphabet alphabet)
-        {
-            var path = dirPath + "/" + Resources.MorphotacticsFileName;
-            var stream = new FileStream(path, FileMode.Open, FileAccess.Read);
-            return MorphotacticsReader.Read(stream, alphabet);
-        }
-
-        private static MorphemeSurfaceDictionary<Root> ReadExternalRoots(string dirPath, Orthography orthography)
-        {
-            var roots = new MorphemeSurfaceDictionary<Root>();
-            var reader = new RootLexiconReader(orthography);
-
-            var path = dirPath + "\\" + Resources.ExternalRootsFileName;
-
-
-            string sheetName = Resources.SheetNameMainRoots;
-            DataSet ds = GetExcelSheetAsDataSet(path, sheetName);
-            reader.AddEntries(ds, sheetName, roots);
-
-
-            sheetName = Resources.SheetNamePersonNames;
-            ds = GetExcelSheetAsDataSet(path, sheetName);
-            reader.AddEntries(ds, sheetName, roots);
-
-            sheetName = Resources.SheetNameAbbreviations;
-            ds = GetExcelSheetAsDataSet(path, sheetName);
-            reader.AddEntries(ds, sheetName, roots);
-
-            return roots;
-        }
-
-        private static Suffixes ReadExternalSuffixes(string langDir, Orthography orthography)
-        {
-            Dictionary<string, Suffix> suffixesById;
-            MorphemeSurfaceDictionary<Suffix> suffixesBySurface;
-
-            var path = langDir + "/" + Resources.ExternalSuffixFileName;
-
-            string sheetName = Resources.SheetNameSuffixes;
-            DataSet ds = GetExcelSheetAsDataSet(path, sheetName);
-
-            var reader = new SuffixLexiconReader(orthography);
-            reader.Read(ds, sheetName, out suffixesById, out suffixesBySurface);
-
-            return new Suffixes(suffixesById, suffixesBySurface);
-        }
-
-        private static DataSet GetExcelSheetAsDataSet(string path, string sheetName)
-        {
-            var connectionString = string.Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0}; " +
-                                                 "Extended Properties=Excel 12.0;", path);
-            var adapter = new OleDbDataAdapter("SELECT * FROM [" + sheetName + "$]", connectionString);
-            var ds = new DataSet();
-
-            try
-            {
-                adapter.Fill(ds, sheetName);
-            }
-            catch (Exception exception)
-            {
-                Console.WriteLine(exception.Message);
-                Console.WriteLine(exception);
-            }
-
-            return ds;
         }
     }
 }

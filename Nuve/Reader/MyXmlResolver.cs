@@ -7,7 +7,9 @@ namespace Nuve.Reader
 {
     class MyXmlResolver : XmlResolver 
     {
-        public override object GetEntity(Uri absoluteUri, string role, Type ofObjectToReturn)
+
+
+        public override object GetEntity(Uri absoluteUri, string role, System.Type ofObjectToReturn)
         {
             var fileName = absoluteUri.Segments[absoluteUri.Segments.Length - 1];
             var resourceName = "Nuve.Resources." + fileName;

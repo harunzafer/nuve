@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -19,6 +20,7 @@ using Nuve.Sentence;
 using Nuve.Stemming;
 using Nuve.Test.Analysis;
 using Nuve.Tokenizers;
+using Type = Nuve.Reader.Type;
 
 namespace Nuve.Gui
 {
@@ -27,10 +29,21 @@ namespace Nuve.Gui
         
         private const string TaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcSentencedNormalized.txt";
         private const string UntaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalized.txt";
-
-        
-        
-        private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
+        private static readonly WordAnalyzer Analyzer;
+        static Program()
+        {
+            try
+            {
+                Analyzer = new WordAnalyzer(new LanguageReader("Tr", false).Read());
+            }
+            catch (InvalidLanguageFileException exception)
+            {
+                Console.WriteLine(exception.Message);
+            }
+            
+        }
+ 
+         
         
         /// <summary>
         ///     The main entry point for the application.
@@ -38,21 +51,20 @@ namespace Nuve.Gui
         [STAThread]
         private static void Main()
         {
+            Console.WriteLine("deneme");
+            //try
+            //{
+            //    string DirPath = @"../../../lang/tr";
 
-            try
-            {
-                string DirPath = @"../../../../lang/tr";
+            //    Language Language = LanguageReader.Read(DirPath);
 
-                Language Language = LanguageReader.ReadExternal(DirPath);
-
-                WordAnalyzer an = new WordAnalyzer(Language);
-
+            //    WordAnalyzer an = new WordAnalyzer(Language);
                 
-            }
-            catch (XmlException exception)
-            {
-                Console.WriteLine(exception.Message);
-            }
+            //}
+            //catch (InvalidLanguageFileException ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
 
             
             
@@ -96,7 +108,7 @@ namespace Nuve.Gui
             //File.WriteAllLines(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalizedTokenized.txt", tokens);
             //var test = TestGenerator.GenerateContainsAnalysisTest(SpecialCase.ZamirSoruNe, "ZamirSoruNeTest");
             //Console.WriteLine(test);
-            Test();
+            //Test();
             
             //Benchmarker.TestWithAMillionWords(Analyzer);
             //Benchmarker.TestWithAMillionTokens(Analyzer);

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
@@ -15,17 +16,15 @@ namespace Nuve.Lang
     /// </summary>
     public sealed class Language
     {
-        private readonly Orthography _orthography;
         private readonly Morphotactics _morphotactics;
         private readonly MorphemeSurfaceDictionary<Root> _roots;
         private readonly Suffixes _suffixes;
 
-        internal Language(Orthography orthography, 
+        internal Language(
             Morphotactics morphotactics, 
             MorphemeSurfaceDictionary<Root> roots, 
             Suffixes suffixes)
         {
-            _orthography = orthography;
             _morphotactics = morphotactics;
             _roots = roots;
             _suffixes = suffixes;
@@ -57,6 +56,20 @@ namespace Nuve.Lang
             return _suffixes.SuffixesBySurface.Get(surface);
         }
 
-        public static readonly Language Turkish = LanguageReader.ReadInternal("Tr");
+        static Language()
+        {
+            try
+            {
+                Turkish = new LanguageReader("Tr", false).Read();
+            }
+            catch (InvalidLanguageFileException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
+        }
+
+        public static readonly Language Turkish;
+
     }
 }
