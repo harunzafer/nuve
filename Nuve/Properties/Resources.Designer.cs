@@ -88,7 +88,7 @@ namespace Nuve.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to root_main.txt.
+        ///   Looks up a localized string similar to root.txt.
         /// </summary>
         internal static string InternalMainRootsPath {
             get {
@@ -147,42 +147,6 @@ namespace Nuve.Properties {
         internal static string ResourcesPath {
             get {
                 return ResourceManager.GetString("ResourcesPath", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to abbrv.
-        /// </summary>
-        internal static string SheetNameAbbreviations {
-            get {
-                return ResourceManager.GetString("SheetNameAbbreviations", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to main.
-        /// </summary>
-        internal static string SheetNameMainRoots {
-            get {
-                return ResourceManager.GetString("SheetNameMainRoots", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to name.
-        /// </summary>
-        internal static string SheetNamePersonNames {
-            get {
-                return ResourceManager.GetString("SheetNamePersonNames", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to suffix.
-        /// </summary>
-        internal static string SheetNameSuffixes {
-            get {
-                return ResourceManager.GetString("SheetNameSuffixes", resourceCulture);
             }
         }
         

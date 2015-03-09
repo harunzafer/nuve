@@ -130,7 +130,7 @@
     <value>orthography.xml</value>
   </data>
   <data name="InternalMainRootsPath" xml:space="preserve">
-    <value>root_main.txt</value>
+    <value>root.txt</value>
   </data>
   <data name="ExternalRootsFileName" xml:space="preserve">
     <value>roots.xlsx</value>
@@ -149,17 +149,5 @@
   </data>
   <data name="langCodeLength" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="SheetNameAbbreviations" xml:space="preserve">
-    <value>abbrv</value>
-  </data>
-  <data name="SheetNameMainRoots" xml:space="preserve">
-    <value>main</value>
-  </data>
-  <data name="SheetNamePersonNames" xml:space="preserve">
-    <value>name</value>
-  </data>
-  <data name="SheetNameSuffixes" xml:space="preserve">
-    <value>suffix</value>
   </data>
 </root>

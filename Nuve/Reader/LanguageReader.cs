@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
+using System.Diagnostics;
 using System.IO;
 using System.Xml;
 using System.Xml.Schema;
@@ -35,11 +36,25 @@ namespace Nuve.Reader
         }
 
         public Language Read()
-        {
+        {           
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+            
             _orthography = ReadOrthography();
+            Debug.Print("orthograpy: " + sw.ElapsedMilliseconds.ToString() + " ms");
+            sw.Restart();
+
             var morphotactics = ReadMorphotactics();
+            Debug.Print("morphotactics: " + sw.ElapsedMilliseconds.ToString() + " ms");
+            sw.Restart();
+
             var roots = ReadRoots();
+            Debug.Print("roots: " + sw.ElapsedMilliseconds.ToString() + " ms");
+            sw.Restart();
+            
             var suffixes = ReadSuffixes();
+            Debug.Print("suffixes: " + sw.ElapsedMilliseconds.ToString() + " ms");
+            sw.Restart();
 
             return new Language(morphotactics, roots, suffixes);
         }
@@ -92,9 +107,21 @@ namespace Nuve.Reader
                 var roots = new MorphemeSurfaceDictionary<Root>();
                 var reader = new RootLexiconReader(_orthography);
 
+
                 var rootsPath = _dirPath + _seperator + Resources.InternalMainRootsPath;
 
+
+                if (_external)
+                {
+                    var stream = new FileStream(rootsPath, FileMode.Open, FileAccess.Read);
+                    reader.AddEntries(TextToDataSet.Convert(stream, DefaultTableName, Delimiter), DefaultTableName,
+                        roots);
+                    return roots;
+                }
+
+
                 reader.AddEntries(EmbeddedTextResourceToDataSet(rootsPath), DefaultTableName, roots);
+
 
                 var namesPath = _dirPath + _seperator + Resources.InternalPersonNamesPath;
                 reader.AddEntries(EmbeddedTextResourceToDataSet(namesPath), DefaultTableName, roots);
@@ -118,9 +145,18 @@ namespace Nuve.Reader
                 MorphemeSurfaceDictionary<Suffix> suffixesBySurface;
 
                 var path = _dirPath + _seperator + Resources.InternalSuffixesPath;
+                var reader = new SuffixLexiconReader(_orthography);
+
+                if (_external)
+                {
+                    var stream = new FileStream(path, FileMode.Open, FileAccess.Read);
+                    reader.Read(TextToDataSet.Convert(stream, DefaultTableName, Delimiter), DefaultTableName,
+                        out suffixesById, out suffixesBySurface);
+                    return new Suffixes(suffixesById, suffixesBySurface);
+                }
+
                 var dataSet = EmbeddedTextResourceToDataSet(path);
 
-                var reader = new SuffixLexiconReader(_orthography);
                 reader.Read(dataSet, DefaultTableName, out suffixesById, out suffixesBySurface);
 
                 return new Suffixes(suffixesById, suffixesBySurface);

@@ -10,7 +10,6 @@ namespace Nuve.Test.Analysis
     internal class Tester
     {
         static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
-        
 
         /// <summary>
         /// Bir kelimenin çözümleri içerisinde aranan çözümün bir ve yalnız bir adet

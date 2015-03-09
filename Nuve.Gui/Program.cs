@@ -1,74 +1,28 @@
 ﻿using System;
-using System.CodeDom;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Runtime.Serialization.Formatters;
-using System.Security.Policy;
 using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading;
 using System.Windows.Forms;
-using System.Xml;
-using Nuve.Gui.Benchmark;
 using Nuve.Lang;
-using Nuve.Morphologic.Structure;
 using Nuve.NGrams;
-using Nuve.Reader;
 using Nuve.Sentence;
 using Nuve.Stemming;
-using Nuve.Test.Analysis;
-using Nuve.Tokenizers;
-using Type = Nuve.Reader.Type;
 
 namespace Nuve.Gui
 {
     internal static class Program
     {
-        
         private const string TaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcSentencedNormalized.txt";
         private const string UntaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalized.txt";
-        private static readonly WordAnalyzer Analyzer;
-        static Program()
-        {
-            try
-            {
-                Analyzer = new WordAnalyzer(new LanguageReader("Tr", false).Read());
-            }
-            catch (InvalidLanguageFileException exception)
-            {
-                Console.WriteLine(exception.Message);
-            }
-            
-        }
- 
-         
-        
+        private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
+
         /// <summary>
         ///     The main entry point for the application.
         /// </summary>
         [STAThread]
         private static void Main()
         {
-            Console.WriteLine("deneme");
-            //try
-            //{
-            //    string DirPath = @"../../../lang/tr";
-
-            //    Language Language = LanguageReader.Read(DirPath);
-
-            //    WordAnalyzer an = new WordAnalyzer(Language);
-                
-            //}
-            //catch (InvalidLanguageFileException ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
-
-            
-            
-
             //var lines = File.ReadAllLines(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcExtra.txt");
             //var splitter = new RegexTokenizerBase(RegexTokenizerBase.Pattern);
 
@@ -109,14 +63,14 @@ namespace Nuve.Gui
             //var test = TestGenerator.GenerateContainsAnalysisTest(SpecialCase.ZamirSoruNe, "ZamirSoruNeTest");
             //Console.WriteLine(test);
             //Test();
-            
+
             //Benchmarker.TestWithAMillionWords(Analyzer);
             //Benchmarker.TestWithAMillionTokens(Analyzer);
 
             //AnaylzeWithCache(0);
 
 
-           //TokenizerBenchmark.TestWithAMillionWords(new WhitespaceTokenizer(false));
+            //TokenizerBenchmark.TestWithAMillionWords(new WhitespaceTokenizer(false));
 
             //var splitter = new RegexTokenizerBase(RegexTokenizerBase.Pattern);
             //splitter.Split("bu bir, denemedir harun@gmail.com! !");
@@ -132,7 +86,6 @@ namespace Nuve.Gui
 
 
             //}
-
 
 
             //Test();
@@ -163,7 +116,6 @@ namespace Nuve.Gui
             //StemmerEvaluator.Evaluate(betterStemmer, @"C:\Users\hrzafer\Dropbox\nuve\data\expected_stems.txt");
 
 
-
             //var words = File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\Damla\code\suggestion\unigrams.txt")
             //    .Select(x => x.Split(null)[0]);
             //var output = @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\nuve_stems2.dict";
@@ -181,37 +133,34 @@ namespace Nuve.Gui
             //ToSortedFile(map, @"C:\Users\hrzafer\Dropbox\nuve\corpus\bigrams.txt");
         }
 
-
         public static void AnaylzeWithCache(int cacheSize)
         {
-            var lines = File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\hunspell-tr\data\archive\unigrams.txt", Encoding.UTF8);
-            var tokens = lines.Select(x => x.Split(new[] { '\t' })[0]).ToArray();
+            var lines = File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\hunspell-tr\data\archive\unigrams.txt",
+                Encoding.UTF8);
+            var tokens = lines.Select(x => x.Split('\t')[0]).ToArray();
 
-                foreach (var token in tokens)
+            foreach (var token in tokens)
+            {
+                var sol = Analyzer.Analyze(token);
+                if (sol.Count > 0)
                 {
-                    var sol = Analyzer.Analyze(token);
-                    if (sol.Count > 0)
-                    {
-                        Cache.Add(token, sol);
-                    }
-                    else
-                    {
-                        continue;
-                    }
-                    
-                    if (Cache.GetSize() % 1000 ==0)
-                    {
-                        Benchmarker.TestWithAMillionTokens(Analyzer);
-                    }
-
-                    if (Cache.GetSize() > 100000)
-                    {
-                        break;
-                    }
+                    Cache.Add(token, sol);
+                }
+                else
+                {
+                    continue;
                 }
 
-            
+                if (Cache.GetSize()%1000 == 0)
+                {
+                    Benchmarker.TestWithAMillionTokens(Analyzer);
+                }
 
+                if (Cache.GetSize() > 100000)
+                {
+                    break;
+                }
+            }
         }
 
         public static void GetProbabilities(string word)
@@ -228,7 +177,6 @@ namespace Nuve.Gui
             }
         }
 
-
         public static void ToSortedFile(IDictionary<string, int> map, string path)
         {
             var list = map.ToList();
@@ -239,14 +187,14 @@ namespace Nuve.Gui
 
         public static void EvaluateSbd(SentenceSegmenter segmenter)
         {
-            string[] taggedParagraphs = File.ReadAllLines(TaggedInput);
-            IEnumerable<DetailedEvaluation> evaluations = segmenter.Evaluate(taggedParagraphs);
+            var taggedParagraphs = File.ReadAllLines(TaggedInput);
+            var evaluations = segmenter.Evaluate(taggedParagraphs);
             SentenceSegmenterEvaluator.GetTotalReport(evaluations, printFalseAlarms: true);
         }
 
         public static void PrintSentences(SentenceSegmenter segmenter, IEnumerable<string> paragraphs)
         {
-            foreach (string paragraph in paragraphs)
+            foreach (var paragraph in paragraphs)
             {
                 PrintSentences(segmenter, paragraph);
             }
@@ -254,21 +202,20 @@ namespace Nuve.Gui
 
         public static void PrintSentences(SentenceSegmenter segmenter, string paragraph)
         {
-            IEnumerable<string> sentences = segmenter.GetSentences(paragraph);      
-            foreach (string sentence in sentences)
+            var sentences = segmenter.GetSentences(paragraph);
+            foreach (var sentence in sentences)
             {
                 Console.WriteLine(sentence);
             }
         }
-
 
         public static void Test()
         {
             string[] testStrings =
             {
                 "dedik",
-                "su", "onu", "suya", "sudan", "sular", "suyla", "suda","susu",
-                "bu","bunu","buna","bunda","bundan","bunlar","bununla"
+                "su", "onu", "suya", "sudan", "sular", "suyla", "suda", "susu",
+                "bu", "bunu", "buna", "bunda", "bundan", "bunlar", "bununla"
             };
             //string[] testStrings = SoruTest.Soru;
             try
@@ -323,7 +270,7 @@ namespace Nuve.Gui
                 .Select(x => x.Split(null));
             var nGramModel = new NGramModel(2);
 
-            int counter = 0;
+            var counter = 0;
 
             foreach (var line in lines)
             {
@@ -331,24 +278,25 @@ namespace Nuve.Gui
                 var solutions = Analyzer.Analyze(line[0]);
                 foreach (var solution in solutions)
                 {
-                    if (solutions.Count==1 || stemmer.GetStem(line[0]) == solution.GetStem().GetSurface())
+                    if (solutions.Count == 1 || stemmer.GetStem(line[0]) == solution.GetStem().GetSurface())
                     {
                         var morphemeIds = solution.GetMorphemeIds();
-                        var times = Math.Round((Int32.Parse(line[1]) + 99) / (double)100);
-                        for (int i = 0; i < times; i++)
+                        var times = Math.Round((Int32.Parse(line[1]) + 99)/(double) 100);
+                        for (var i = 0; i < times; i++)
                         {
                             nGramModel.AddSentence(morphemeIds);
                         }
-                    }                    
+                    }
                 }
 
-                if (counter % 100 == 0)
+                if (counter%100 == 0)
                 {
                     Console.WriteLine(counter);
                 }
             }
 
-            nGramModel.Deserialize(@"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\model_uni_bi.json");
+            nGramModel.Deserialize(
+                @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\model_uni_bi.json");
 
             return nGramModel;
         }
@@ -359,7 +307,7 @@ namespace Nuve.Gui
                 .Select(x => x.Split(null));
             var nGramModel = new NGramModel(2);
 
-            int counter = 0;
+            var counter = 0;
 
             foreach (var line in lines)
             {
@@ -368,8 +316,8 @@ namespace Nuve.Gui
                 foreach (var solution in solutions)
                 {
                     var morphemeIds = solution.GetMorphemeIds();
-                    var times = Math.Round((Int32.Parse(line[1]) + 99)/(double)100);
-                    for (int i = 0; i < times; i++)
+                    var times = Math.Round((Int32.Parse(line[1]) + 99)/(double) 100);
+                    for (var i = 0; i < times; i++)
                     {
                         nGramModel.AddSentence(morphemeIds);
                     }
@@ -381,14 +329,15 @@ namespace Nuve.Gui
                 }
             }
 
-            nGramModel.Deserialize(@"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\model_uni_bi.json");
+            nGramModel.Deserialize(
+                @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\model_uni_bi.json");
 
             return nGramModel;
         }
 
         private static IList<string> ReadWords(string filename)
         {
-            string[] tokens = File.ReadAllText(filename, Encoding.UTF8).Split(null);
+            var tokens = File.ReadAllText(filename, Encoding.UTF8).Split(null);
             return tokens.ToList();
         }
     }
