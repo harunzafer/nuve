@@ -50,6 +50,7 @@ namespace Nuve.Condition
                     }
                 }
             }
+
             throw new ArgumentException("Invalid position for MorphemeExists: " + Position);
         }
     }

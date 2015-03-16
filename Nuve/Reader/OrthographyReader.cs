@@ -13,10 +13,6 @@ namespace Nuve.Reader
 
         public static Orthography Read(XmlDocument xml)
         {
-            //var xml = EmbeddedResourceReader.ReadXml(xmlFileName);
-
-            
-            
             _alphabet = ReadAlphabet(xml);
             List<OrthographyRule> rules = ReadRules(xml);
             return new Orthography(_alphabet, rules);
@@ -58,12 +54,12 @@ namespace Nuve.Reader
             return list;
         }
 
-        private static OrthographyRule ReadOrthographyRule(XmlNode node)
+        private static OrthographyRule ReadOrthographyRule(XmlNode ruleNode)
         {
-            string description = node["description"].InnerText; //node.ChildNodes[0].InnerText;
-            string id = node.Attributes["id"].InnerText;
-            string type = node.Attributes["type"].InnerText;
-            List<Transformation> transforms = ReadTransforms(node, type);
+            string description = ruleNode["description"].InnerText;
+            string id = ruleNode.Attributes["id"].InnerText;
+            string type = ruleNode.Attributes["type"].InnerText;
+            List<Transformation> transforms = ReadTransforms(ruleNode, type);
             return new OrthographyRule(id, type, transforms);
         }
 
@@ -71,42 +67,40 @@ namespace Nuve.Reader
         {
             XmlNodeList transformNodeList = ruleNode.SelectNodes("transformation");
             var transforms = new List<Transformation>();
-            foreach (XmlNode node in transformNodeList)
+            foreach (XmlNode transformNode in transformNodeList)
             {
-                transforms.Add(ReadTransform(node, type));
+                transforms.Add(ReadTransform(transformNode, type));
             }
             return transforms;
         }
 
-        private static Transformation ReadTransform(XmlNode node, string type)
+        private static Transformation ReadTransform(XmlNode transformNode, string type)
         {
-            string actionName = node.Attributes["action"].InnerText;
-            string operandOne = "";
-            string operandTwo = "";
-            string flag = "";
+            string actionName = transformNode.Attributes["action"].InnerText;
             
-            try
-            {                
-                operandOne = node.Attributes["operandOne"].InnerText;
-                operandTwo = node.Attributes["operandTwo"].InnerText;
-                flag = node.Attributes["flag"].InnerText;
-            } 
-            catch (Exception) { }
+            string operandOne = transformNode.Attributes["operandOne"] != null ? 
+                transformNode.Attributes["operandOne"].InnerText : "";
+
+            string operandTwo = transformNode.Attributes["operandTwo"] != null ?
+                transformNode.Attributes["operandTwo"].InnerText : "";
+
+            string flag = transformNode.Attributes["flag"] != null ?
+                transformNode.Attributes["flag"].InnerText : "";
 
             BaseAction action = ActionFactory.Create(actionName, _alphabet, operandOne, operandTwo, flag);
 
             ConditionContainer conditions = ConditionContainer.EmptyContainer();
 
-            if (node.HasChildNodes)
+            if (transformNode.HasChildNodes)
             {
-                conditions = ReadConditionContainer(node.FirstChild, type);
+                conditions = ReadConditionContainer(transformNode.FirstChild, type);
             }
 
             string position = "Current";
 
-            if (node.Attributes["position"] != null)
+            if (transformNode.Attributes["position"] != null)
             {
-                position = node.Attributes["position"].InnerText;
+                position = transformNode.Attributes["position"].InnerText;
             }
 
             return new Transformation(action, position, conditions);
@@ -152,6 +146,11 @@ namespace Nuve.Reader
             if (node.Attributes["operand"] != null)
             {
                 operand = node.Attributes["operand"].InnerText;                
+            }
+
+            if (type == "Self")
+            {
+                Console.WriteLine("");
             }
 
             return ConditionFactory.Create(name, morphemeLocation, operand, _alphabet);                

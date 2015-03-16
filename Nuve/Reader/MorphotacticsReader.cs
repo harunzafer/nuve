@@ -122,14 +122,25 @@ namespace Nuve.Reader
         private static ConditionContainer GetConditionContainer(XElement singleElement)
         {
             XElement conditionsElement;
-            try
+            //try
+            //{
+            //    conditionsElement = singleElement.Descendants("conditions").First();
+            //}
+            //catch(Exception)
+            //{
+            //    return ConditionContainer.EmptyContainer();
+            //}
+
+            if (singleElement.Descendants("conditions").Any())
             {
-                conditionsElement = singleElement.Descendants("conditions").First();    
+                conditionsElement = singleElement.Descendants("conditions").First();
             }
-            catch(Exception)
+            else
             {
                 return ConditionContainer.EmptyContainer();
             }
+
+
             string flag = conditionsElement.Attribute("flag").Value;
             return new ConditionContainer(GetConditions(conditionsElement.Descendants("condition")), flag);
         }

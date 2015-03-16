@@ -25,11 +25,9 @@
               DeleteFirstLetter |
               DeleteFirstVowel | 
               DeleteLastLetter | 
-              DeleteLastLetterOfNeighbour |
               DeleteLastVowel |
-              DoubleLastLetter |
+              DoubleLastLetter | 
               Replace |
-              ReplaceNeighbour |
               LexicalToSurface 
   ) #REQUIRED
   position (Current | Next | Previous) #IMPLIED

@@ -11,8 +11,6 @@ namespace Nuve.Orthographic.Action
         public override void Do(Allomorph allomorph, Position position)
         {
             string suffix = "";
-
-
             
             if (allomorph.Surface.LastCharEqualsAny(Alphabet.Vowels))
             {

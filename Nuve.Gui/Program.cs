@@ -88,7 +88,7 @@ namespace Nuve.Gui
             //}
 
 
-            //Test();
+            Test();
             //var solutions = Analyzer.Analyze("bunu");
             //foreach (var solution in solutions)
             //{
