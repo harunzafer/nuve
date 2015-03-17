@@ -10,8 +10,14 @@ namespace Nuve.Condition
 
         public override bool IsTrueFor(Allomorph allomorph)
         {
-            allomorph = allomorph.Next;
-            return !allomorph.HasNext;
+            Allomorph operand;
+            if (TryGetOperandMorpheme(allomorph, out operand))
+            {
+                return !operand.HasNext;
+            }
+            return false;
+
+            //allomorph = allomorph.Next;
         }
     }
 }

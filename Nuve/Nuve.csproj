@@ -113,7 +113,6 @@
     <Compile Include="NGrams\NGramExtractor.cs" />
     <Compile Include="Orthographic\Action\ActionFactory.cs" />
     <Compile Include="Orthographic\Action\AppendAction.cs" />
-    <Compile Include="Orthographic\Action\AppendTamlamaSuffix.cs" />
     <Compile Include="Orthographic\Action\BaseAction.cs" />
     <Compile Include="Orthographic\Action\DeleteFirstLetter.cs" />
     <Compile Include="Orthographic\Action\DeleteFirstVowel.cs" />

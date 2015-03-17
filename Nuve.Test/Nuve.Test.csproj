@@ -72,6 +72,7 @@
     <Compile Include="Analysis\SoruTest.cs" />
     <Compile Include="Analysis\SpecialCase.cs" />
     <Compile Include="Analysis\SpecialCaseTest.cs" />
+    <Compile Include="Analysis\TamlamaTest.cs" />
     <Compile Include="Analysis\Tester.cs" />
     <Compile Include="Analysis\TestGenerator.cs" />
     <Compile Include="Analysis\VerbAux.cs" />

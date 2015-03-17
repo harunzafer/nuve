@@ -59,25 +59,7 @@ namespace Nuve.Test.Analysis
 
        
 
-        [TestCase("zeytinyağ", 0, new string[] { "negative" })]
-        [TestCase("zeytinyağlar", 1, new string[] { "zeytinyağ lA Ur" })]
-        [TestCase("zeytinyağı", 1, new string[] { "zeytinyağ sU" })]
-        [TestCase("zeytinyağım", 1, new string[] { "zeytinyağ Um" })]
-        [TestCase("zeytinyağımlar", 0, new string[] { "negative" })]
-        [TestCase("zeytinyağlarım", 1, new string[] { "zeytinyağ lAr Um" })]
-        [TestCase("zeytinyağları", 2, new string[] { "zeytinyağ lAr sU", "zeytinyağ lArI" })]
-        [TestCase("zeytinyağda", 0, new string[] { "negative" })]
-        [TestCase("zeytinyağında", 2, new string[] { "zeytinyağ sU ndA", "zeytinyağ Un DA" })]
-        [TestCase("zeytinyağısı", 0, new string[] { "negative" })]
-        [TestCase("zeytinyağıyı", 0, new string[] { "negative" })]
-        [TestCase("zeytinyağını", 2, new string[] { "zeytinyağ sU nU", "zeytinyağ Un yU" })]
-        [TestCase("zeytinyağısız", 0, new string[] { "negative" })]
-        [TestCase("zeytinyağsız", 1, new string[] { "zeytinyağ sUz", "avuç Un yA" })]
-        public void Tamlama_Test(string token, int count, string[] analyses)
-        {
-            Tester.TestAnalyses(token, count, analyses);
-        }
-
+        
 
         [TestCase("inkar", 1, new string[] { "inkâr" })]
         [TestCase("inkardır", 1, new string[] { "inkâr DUr" })]

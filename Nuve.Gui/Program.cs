@@ -213,14 +213,10 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-                "dedik",
-                "su", "onu", "suya", "sudan", "sular", "suyla", "suda", "susu",
-                "bu", "bunu", "buna", "bunda", "bundan", "bunlar", "bununla"
+                "sanatkaranedir"                                
             };
             //string[] testStrings = SoruTest.Soru;
-            try
-            {
-                AnalysisHelper.Analyze(Analyzer, testStrings);
+           AnalysisHelper.Analyze(Analyzer, testStrings);
 
                 //string test = TestGenerator.GenerateContainsAnalysisTest(SpecialCase.Şapkalı, "Şapkalı");
                 //string test = TestGenerator.GenerateContainsAnalysesTest(VerbAux.FiilimsiZarfArak, "FiilimsiZarfArak", "FIILIMSI_ZARF_(y)ArAk");
@@ -229,11 +225,7 @@ namespace Nuve.Gui
                 //Benchmarker.TestWithAMillionTokens(analyzer);
                 //Benchmarker.TestWithAMillionWords(analyzer);
                 //Benchmarker.TestMillionTimesWithSingleWord("kitabımdakin", analyzer);    
-            }
-            catch (Exception exception)
-            {
-                MessageBox.Show(exception.InnerException.ToString());
-            }
+          
         }
 
         private static void StemFirst500()

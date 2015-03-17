@@ -7,14 +7,14 @@ using Nuve.Orthographic.Action;
 
 namespace Nuve.Reader
 {
-    internal class OrthographyReader
+    internal static class OrthographyReader
     {
         private static Alphabet _alphabet;
 
         public static Orthography Read(XmlDocument xml)
         {
             _alphabet = ReadAlphabet(xml);
-            List<OrthographyRule> rules = ReadRules(xml);
+            IEnumerable<OrthographyRule> rules = ReadRules(xml);
             return new Orthography(_alphabet, rules);
         }
 
@@ -27,14 +27,14 @@ namespace Nuve.Reader
             return new Alphabet(consonants, vowels);
         }
 
-        private static List<OrthographyRule> ReadRules(XmlDocument xml)
+        private static IEnumerable<OrthographyRule> ReadRules(XmlDocument xml)
         {
             XmlNodeList ruleNodeList = xml.GetElementsByTagName("rule");
             return RulesAsList(ruleNodeList);
         }
 
 
-        private static List<OrthographyRule> RulesAsList(XmlNodeList ruleNodeList)
+        private static IEnumerable<OrthographyRule> RulesAsList(XmlNodeList ruleNodeList)
         {
             var rules = new List<OrthographyRule>();
             foreach (XmlNode node in ruleNodeList)
@@ -132,28 +132,25 @@ namespace Nuve.Reader
         private static ConditionBase ReadCondition(XmlNode node, string type)
         {
             string name = node.Attributes["operator"].InnerText;
-            string morphemeLocation = type;
-            if (node.Attributes["morphemeLocation"] != null)
+            string position = type;
+            
+            if (type == "First")
             {
-                morphemeLocation = node.Attributes["morphemeLocation"].InnerText;
+                position = "Next";
             }
-            else if (type == "First")
+            if (type == "Self")
             {
-                morphemeLocation = "Next";
+                position = "Current";
             }
 
             string operand = string.Empty;
+
             if (node.Attributes["operand"] != null)
             {
                 operand = node.Attributes["operand"].InnerText;                
             }
 
-            if (type == "Self")
-            {
-                Console.WriteLine("");
-            }
-
-            return ConditionFactory.Create(name, morphemeLocation, operand, _alphabet);                
+            return ConditionFactory.Create(name, position, operand, _alphabet);                
         }
     }
 }

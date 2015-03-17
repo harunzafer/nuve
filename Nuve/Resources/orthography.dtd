@@ -41,10 +41,8 @@
 
 <!ELEMENT condition EMPTY>
 <!ATTLIST condition 
-   morpheme (  Previous |
-              Next |
-              Current
-  ) #IMPLIED
+   morpheme ( Previous | Next | Current ) 
+  #IMPLIED
   operator (
                 EndsWithConsonant |
                 EndsWithVowel |
@@ -57,6 +55,8 @@
                 HasNotFlags |
                 PenultVowelEquals |
                 StartsWithConsonant |
-                StartsWithVowel 
+                StartsWithVowel | 
+                IsLastMorpheme
+  
   ) #REQUIRED
   operand CDATA #IMPLIED>

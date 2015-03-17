@@ -2,7 +2,7 @@
 
 namespace Nuve.Orthographic.Action
 {
-    class ActionFactory
+    static class ActionFactory
     {
         public static BaseAction Create(string name, Alphabet alphabet, 
             string operandOne, string operandTwo, string flag)
@@ -10,7 +10,6 @@ namespace Nuve.Orthographic.Action
             switch (name)
             {
                 case "Append": return new AppendAction(alphabet, operandOne, operandTwo, flag);
-                case "AppendTamlamaSuffix": return new AppendTamlamaSuffix(alphabet, operandOne, operandTwo, flag);
                 case "DeleteFirstLetter": return new DeleteFirstLetter(alphabet, operandOne, operandTwo, flag);
                 case "DeleteFirstVowel": return new DeleteFirstVowel(alphabet, operandOne, operandTwo, flag);
                 case "DeleteLastLetter": return new DeleteLastLetter(alphabet, operandOne, operandTwo, flag);

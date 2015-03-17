@@ -255,10 +255,14 @@
       </transformation>
     </rule>
 
-    <rule id="S_OZEL_o" type="Self">
+    <!--<rule id="S_OZEL_o" type="Self">
       <description> o, bu, şu zamirlerinin yüzeyindeki n sesi ek gelmiyorsa silinir. </description>
-      <transformation action="DeleteLastLetter" />
-    </rule>
+      <transformation action="DeleteLastLetter">
+        <conditions flag="Or">
+          <condition operator="MorphemeEquals" operand="IC_HAL_ILGI_(n)Un" />
+        </conditions>
+      </transformation>
+    </rule>-->
 
     <rule id="D_OZEL_INCELME_A" type="Default">
       <description>	saat => saate özel durumu için yerleştirilen á karakteri sonradan a olur. </description>
@@ -423,7 +427,11 @@
 
     <rule id="S_TAMLAMA_OZEL" type="Self">
       <description>zeytinyağ -> zeytinyağı </description>
-      <transformation action="AppendTamlamaSuffix" operandOne="" />
+      <transformation action="Append" operandOne="_">
+        <conditions flag="Or">
+          <condition operator="IsLastMorpheme"/>
+        </conditions>
+      </transformation>
     </rule>
 
     <rule id="D_SAPKA_DUSUR_A" type="Default">

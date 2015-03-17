@@ -16,21 +16,21 @@ namespace Nuve.Reader
             _orthography = orthography;
         }
 
-        public void AddEntries(DataSet ds, string tableName,  MorphemeSurfaceDictionary<Root> roots)
+        public void AddEntries(DataSet ds, string tableName, MorphemeSurfaceDictionary<Root> roots)
         {
-
             var data = ds.Tables[tableName].AsEnumerable();
             EnumerableRowCollection<RootLine> entries = data.Select(x =>
-                                                          new RootLine
-                                                          {
-                                                              Root = x.Field<string>("root"),
-                                                              Surfaces = x.Field<string>("surfaces") ?? "",
-                                                              Lex = x.Field<string>("lex"),
-                                                              Active = x.Field<string>("active") ?? "",
-                                                              Id = x.Field<string>("Id"),
-                                                              Flags = x.Field<string>("flags") ?? "",
-                                                              Rules = x.Field<string>("rules") ?? "",
-                                                          });
+                new RootLine
+                {
+                    Root = x.Field<string>("root"),
+                    Surfaces = x.Field<string>("surfaces") ?? "",
+                    Lex = x.Field<string>("lex"),
+                    Active = x.Field<string>("active") ?? "",
+                    Id = x.Field<string>("Id"),
+                    Flags = x.Field<string>("flags") ?? "",
+                    Rules = x.Field<string>("rules") ?? "",
+                });
+
             foreach (var entry in entries)
             {
                 if (entry.Active == "")
@@ -52,15 +52,14 @@ namespace Nuve.Reader
         }
 
 
-
         private void AddRoots(RootLine entry, MorphemeSurfaceDictionary<Root> roots)
         {
             string item = entry.Root;
-            string[] surfaces = entry.Surfaces.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] surfaces = entry.Surfaces.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
             string lex = entry.Lex;
-            string[] flags = entry.Flags.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] flags = entry.Flags.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
             string type = entry.Id;
-            string[] rules = entry.Rules.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] rules = entry.Rules.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
 
 
             if (string.IsNullOrEmpty(entry.Lex))
@@ -71,7 +70,8 @@ namespace Nuve.Reader
             Root root;
             if (type == "KISALTMA" || type == "ALINTI" || type == "NOKTALI" || type == "HARF")
             {
-                root = new Root(type, lex, LabelSet.ConvertLabelNamesToIndexes(flags), _orthography.GetRules(rules), item);
+                root = new Root(type, lex, LabelSet.ConvertLabelNamesToIndexes(flags), _orthography.GetRules(rules),
+                    item);
             }
             else
             {
