@@ -6,7 +6,8 @@ using Nuve.Reader;
 
 namespace Nuve.Condition
 {
-    public enum Position { First, Previous, Next, Current, Source, Target, BeforeTarget, AfterTarget, BeforeSource, Last } ;
+    public enum Position { First, Previous, Next, This, Source, Target, 
+        BeforeTarget, AfterTarget, BeforeSource, Last } ;
 
     public abstract class ConditionBase 
     {
@@ -38,7 +39,7 @@ namespace Nuve.Condition
                     operand = allomorph.Previous;
                     return allomorph.HasPrevious;
                 
-                case Position.Current:
+                case Position.This:
                 case Position.Source:
                     operand = allomorph;
                     return true;

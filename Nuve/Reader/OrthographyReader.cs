@@ -56,14 +56,14 @@ namespace Nuve.Reader
 
         private static OrthographyRule ReadOrthographyRule(XmlNode ruleNode)
         {
-            string description = ruleNode["description"].InnerText;
+            //string description = ruleNode["description"].InnerText;
             string id = ruleNode.Attributes["id"].InnerText;
-            string type = ruleNode.Attributes["type"].InnerText;
-            List<Transformation> transforms = ReadTransforms(ruleNode, type);
-            return new OrthographyRule(id, type, transforms);
+            string order = ruleNode.Attributes["order"].InnerText;
+            List<Transformation> transforms = ReadTransformations(ruleNode, order);
+            return new OrthographyRule(id, Int32.Parse(order), transforms);
         }
 
-        private static List<Transformation> ReadTransforms(XmlNode ruleNode, string type)
+        private static List<Transformation> ReadTransformations(XmlNode ruleNode, string type)
         {
             XmlNodeList transformNodeList = ruleNode.SelectNodes("transformation");
             var transforms = new List<Transformation>();
@@ -76,6 +76,8 @@ namespace Nuve.Reader
 
         private static Transformation ReadTransform(XmlNode transformNode, string type)
         {
+            string morpheme = transformNode.Attributes["morpheme"].InnerText;
+
             string actionName = transformNode.Attributes["action"].InnerText;
             
             string operandOne = transformNode.Attributes["operandOne"] != null ? 
@@ -96,14 +98,7 @@ namespace Nuve.Reader
                 conditions = ReadConditionContainer(transformNode.FirstChild, type);
             }
 
-            string position = "Current";
-
-            if (transformNode.Attributes["position"] != null)
-            {
-                position = transformNode.Attributes["position"].InnerText;
-            }
-
-            return new Transformation(action, position, conditions);
+            return new Transformation(action, morpheme, conditions);
         }
 
         private static ConditionContainer ReadConditionContainer(XmlNode conditionsNode, string type)
@@ -132,17 +127,9 @@ namespace Nuve.Reader
         private static ConditionBase ReadCondition(XmlNode node, string type)
         {
             string name = node.Attributes["operator"].InnerText;
-            string position = type;
             
-            if (type == "First")
-            {
-                position = "Next";
-            }
-            if (type == "Self")
-            {
-                position = "Current";
-            }
-
+            string morpheme = node.Attributes["morpheme"].InnerText;
+            
             string operand = string.Empty;
 
             if (node.Attributes["operand"] != null)
@@ -150,7 +137,7 @@ namespace Nuve.Reader
                 operand = node.Attributes["operand"].InnerText;                
             }
 
-            return ConditionFactory.Create(name, position, operand, _alphabet);                
+            return ConditionFactory.Create(name, morpheme, operand, _alphabet);                
         }
     }
 }

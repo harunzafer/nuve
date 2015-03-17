@@ -182,11 +182,11 @@ namespace Nuve.Morphologic.Structure
         /// </summary>
         private void GenerateSurface()
         {
-            ProcessRulesOnAllomorphs(RuleType.First);
-            ProcessRulesOnAllomorphs(RuleType.Previous);
-            ProcessRulesOnAllomorphs(RuleType.Next);
-            ProcessRulesOnAllomorphs(RuleType.Self);
-            ProcessRulesOnAllomorphs(RuleType.Default);
+            ProcessRulesOnAllomorphs(Order.One);
+            ProcessRulesOnAllomorphs(Order.Two);
+            ProcessRulesOnAllomorphs(Order.Three);
+            ProcessRulesOnAllomorphs(Order.Four);
+            ProcessRulesOnAllomorphs(Order.Fife);
 
             var sb = new StringBuilder("");
             foreach (Allomorph allomorph in _allomorphs)
@@ -197,7 +197,7 @@ namespace Nuve.Morphologic.Structure
             _surface = sb.ToString();
         }
 
-        private void ProcessRulesOnAllomorphs(RuleType morphemeType)
+        private void ProcessRulesOnAllomorphs(Order morphemeType)
         {
             foreach (Allomorph allomorph in _allomorphs)
             {

@@ -14,11 +14,14 @@
 <!ELEMENT rule (description, transformation*)>
 <!ATTLIST rule
     id CDATA #REQUIRED
-    type (First | Next | Previous | Self | Default | None) #REQUIRED>
+    order ( 1 | 2 | 3 | 4 | 5 ) #REQUIRED>
 <!ELEMENT description (#PCDATA)>
 
 <!ELEMENT transformation (conditions?)>
 <!ATTLIST transformation 
+
+  morpheme ( Previous | This | Next ) #REQUIRED
+  
   action (
               Append |
               AppendTamlamaSuffix |
@@ -29,8 +32,7 @@
               DoubleLastLetter | 
               Replace |
               LexicalToSurface 
-  ) #REQUIRED
-  position (Current | Next | Previous) #IMPLIED
+  ) #REQUIRED  
   operandOne CDATA #IMPLIED
   operandTwo CDATA #IMPLIED
   flag CDATA #IMPLIED>
@@ -41,8 +43,7 @@
 
 <!ELEMENT condition EMPTY>
 <!ATTLIST condition 
-   morpheme ( Previous | Next | Current ) 
-  #IMPLIED
+   morpheme ( Previous | This | Next ) #REQUIRED
   operator (
                 EndsWithConsonant |
                 EndsWithVowel |

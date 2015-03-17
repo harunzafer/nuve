@@ -25,7 +25,7 @@ namespace Nuve.Orthographic.Action
         {
             switch (position)
             {
-                case Position.Current:
+                case Position.This:
                     operand = allomorph;
                     return true;
 

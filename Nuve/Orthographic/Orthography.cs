@@ -35,7 +35,7 @@ namespace Nuve.Orthographic
                 //int id = Convert.ToInt32(rule.Value);
                 if (GetRule(id)==null)
                 {
-                    Console.WriteLine("Warning: Undefined orthograpy rule:" + id);
+                    //Console.WriteLine("Warning: Undefined orthograpy rule:" + id);
                 }
                 else
                 {

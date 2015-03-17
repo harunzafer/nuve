@@ -13,513 +13,504 @@
 
   <rules>
 
-    <rule id="L_DUSME_UNLU" type="Previous">
+    <rule id="L_DUSME_UNLU" order="2">
       <description>Önce gelen ek ünlü ile bitiyorsa bu ekin başındaki ünlüyü düşür</description>
-      <transformation action="DeleteFirstLetter">
+      <transformation morpheme="This" action="DeleteFirstLetter">
         <conditions flag="Or">
-          <condition operator="EndsWithVowel" />
+          <condition morpheme="Previous" operator="EndsWithVowel" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="L_DUSME_UNSUZ" type="Previous">
+    <rule id="L_DUSME_UNSUZ" order="2">
       <description>Önceki ek ünsüz ile bitiyorsa bu ekin başındaki ünsüzü (kaynaştırma) düşür</description>
-      <transformation action="DeleteFirstLetter">
+      <transformation morpheme="This" action="DeleteFirstLetter">
         <conditions flag="Or">
-          <condition operator="EndsWithConsonant" />
+          <condition morpheme="Previous" operator="EndsWithConsonant" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="L_DONUSUM_D" type="Previous">
+    <rule id="L_DONUSUM_D" order="2">
       <description>Önceki ek sert sessiz ile bitirosa D => t değilse D => d</description>
-      <transformation action="Replace" operandOne="D" operandTwo="t" flag="all">
+      <transformation morpheme="This" action="Replace" operandOne="D" operandTwo="t" flag="all">
         <conditions flag="Or">
-          <condition operator="LastLetterEquals" operand="pçtkşsfh" />
+          <condition morpheme="Previous" operator="LastLetterEquals" operand="pçtkşsfh" />
         </conditions>
       </transformation>
-      <transformation action="Replace" operandOne="D" operandTwo="d" flag="all" />
+      <transformation morpheme="This" action="Replace" operandOne="D" operandTwo="d" flag="all" />
     </rule>
 
-    <rule id="L_DONUSUM_C" type="Previous">
-      <description>Önceki ek sert sessiz ile bitirosa D => t değilse D => d</description>
-      <transformation action="Replace" operandOne="C" operandTwo="ç" flag="all">
+    <rule id="L_DONUSUM_C" order="2">
+      <description>Önceki ek sert sessiz ile bitirosa C => ç değilse c </description>
+      <transformation morpheme="This" action="Replace" operandOne="C" operandTwo="ç" flag="all">
         <conditions flag="Or">
-          <condition operator="LastLetterEquals" operand="pçtkşsfh" />
+          <condition morpheme="Previous" operator="LastLetterEquals" operand="pçtkşsfh" />
         </conditions>
       </transformation>
-      <transformation action="Replace" operandOne="C" operandTwo="c" flag="all" />
+      <transformation morpheme="This" action="Replace" operandOne="C" operandTwo="c" flag="all" />
     </rule>
 
-    <rule id="L_DONUSUM_A" type="Previous">
+    <rule id="L_DONUSUM_A" order="2">
       <description>Önceki ekin son sesli harfi kalın ise A => a değilse A => e </description>
-      <transformation action="Replace" operandOne="A" operandTwo="a" flag="all">
+      <transformation morpheme="This" action="Replace" operandOne="A" operandTwo="a" flag="all">
         <conditions flag="Or">
-          <condition operator="LastVowelEquals" operand="aıouâû" />
+          <condition morpheme="Previous" operator="LastVowelEquals" operand="aıouâû" />
         </conditions>
       </transformation>
-      <transformation action="Replace" operandOne="A" operandTwo="e" flag="all" />
+      <transformation morpheme="This" action="Replace" operandOne="A" operandTwo="e" flag="all" />
     </rule>
 
-    <rule id="L_DONUSUM_I" type="Previous">
+    <rule id="L_DONUSUM_I" order="2">
       <description>Önceki ekin son sesli harfi kalın ise I => ı değilse I => i </description>
-      <transformation action="Replace" operandOne="I" operandTwo="ı" flag="all">
+      <transformation morpheme="This" action="Replace" operandOne="I" operandTwo="ı" flag="all">
         <conditions flag="Or">
-          <condition operator="LastVowelEquals" operand="aıouâû" />
+          <condition morpheme="Previous" operator="LastVowelEquals" operand="aıouâû" />
         </conditions>
       </transformation>
-      <transformation action="Replace" operandOne="I" operandTwo="i" flag="all" />
+      <transformation morpheme="This" action="Replace" operandOne="I" operandTwo="i" flag="all" />
     </rule>
 
-    <rule id="L_DONUSUM_U" type="Previous">
+    <rule id="L_DONUSUM_U" order="2">
       <description>Önceki ekin son sesli harfine göre  U => ı, i, u veya ü olur </description>
-      <transformation action="Replace" operandOne="U" operandTwo="ı" flag="all">
+      <transformation morpheme="This" action="Replace" operandOne="U" operandTwo="ı" flag="all">
         <conditions flag="Or">
-          <condition operator="LastVowelEquals" operand="aıâ" />
+          <condition morpheme="Previous" operator="LastVowelEquals" operand="aıâ" />
         </conditions>
       </transformation>
-      <transformation action="Replace" operandOne="U" operandTwo="i" flag="all">
+      <transformation morpheme="This" action="Replace" operandOne="U" operandTwo="i" flag="all">
         <conditions flag="Or">
-          <condition operator="LastVowelEquals" operand="eiéáî" />
+          <condition morpheme="Previous" operator="LastVowelEquals" operand="eiéáî" />
         </conditions>
       </transformation>
-      <transformation action="Replace" operandOne="U" operandTwo="u" flag="all">
+      <transformation morpheme="This" action="Replace" operandOne="U" operandTwo="u" flag="all">
         <conditions flag="Or">
-          <condition operator="LastVowelEquals" operand="ouû" />
+          <condition morpheme="Previous" operator="LastVowelEquals" operand="ouû" />
         </conditions>
       </transformation>
-      <transformation action="Replace" operandOne="U" operandTwo="ü" flag="all" />
+      <transformation morpheme="This" action="Replace" operandOne="U" operandTwo="ü" flag="all" />
     </rule>
 
-    <rule id="R_YUMUSAMA_pb" type="Next">
+    <rule id="R_YUMUSAMA_pb" order="3">
       <description>	Sonraki ek ünlü ile başlıyorsa sondaki p => b'ye yumuşar </description>
-      <transformation action="Replace" operandOne="p" operandTwo="b" flag="last">
+      <transformation morpheme="This" action="Replace" operandOne="p" operandTwo="b" flag="last">
         <conditions flag="Or">
-          <condition operator="StartsWithVowel" />
+          <condition morpheme="Next" operator="StartsWithVowel" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="R_YUMUSAMA_çc" type="Next">
+    <rule id="R_YUMUSAMA_çc" order="3">
       <description> Sonraki ek ünlü ile başlıyorsa sondaki ç => c'ye yumuşar </description>
-      <transformation action="Replace" operandOne="ç" operandTwo="c" flag="last">
+      <transformation morpheme="This" action="Replace" operandOne="ç" operandTwo="c" flag="last">
         <conditions flag="Or">
-          <condition operator="StartsWithVowel" />
+          <condition morpheme="Next" operator="StartsWithVowel" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="R_YUMUSAMA_td" type="Next">
+    <rule id="R_YUMUSAMA_td" order="3">
       <description>	Sonraki ek ünlü ile başlıyorsa sondaki t => d'ye yumuşar 	</description>
-      <transformation action="Replace" operandOne="t" operandTwo="d" flag="last">
+      <transformation morpheme="This" action="Replace" operandOne="t" operandTwo="d" flag="last">
         <conditions flag="Or">
-          <condition operator="StartsWithVowel" />
+          <condition morpheme="Next" operator="StartsWithVowel" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="R_YUMUSAMA_kğ" type="Next">
+    <rule id="R_YUMUSAMA_kğ" order="3">
       <description>	Sonraki ek ünlü ile başlıyorsa sondaki k => ğ'ye yumuşar 	</description>
-      <transformation action="Replace" operandOne="k" operandTwo="ğ" flag="last">
+      <transformation morpheme="This" action="Replace" operandOne="k" operandTwo="ğ" flag="last">
         <conditions flag="Or">
-          <condition operator="StartsWithVowel" />
+          <condition morpheme="Next" operator="StartsWithVowel" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="R_YUMUSAMA_kg" type="Next">
+    <rule id="R_YUMUSAMA_kg" order="3">
       <description> Sonraki ek ünlü ile başlıyorsa sondaki k => g'ye yumuşar. çelenk => çelengi </description>
-      <transformation action="Replace" operandOne="k" operandTwo="g" flag="last">
+      <transformation morpheme="This" action="Replace" operandOne="k" operandTwo="g" flag="last">
         <conditions flag="Or">
-          <condition operator="StartsWithVowel" />
+          <condition morpheme="Next" operator="StartsWithVowel" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="R_YUMUSAMA_gğ" type="Next">
+    <rule id="R_YUMUSAMA_gğ" order="3">
       <description>	Sonraki ek ünlü ile başlıyorsa sondaki g => ğ'ye yumuşar. psikolog =› psikoloğa	</description>
-      <transformation action="Replace" operandOne="g" operandTwo="ğ" flag="last">
+      <transformation morpheme="This" action="Replace" operandOne="g" operandTwo="ğ" flag="last">
         <conditions flag="Or">
-          <condition operator="StartsWithVowel" />
+          <condition morpheme="Next" operator="StartsWithVowel" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="R_DUSME_SON_UNLU" type="Next">
+    <rule id="R_DUSME_SON_UNLU" order="3">
       <description>
         Gelen ek ünlü ile başlıyorsa son sesli harf düşer.
         ağız =› ağz-a, burun =› burn-um, zehir =› zehr-e
         Ancak ben ağızım ve biz ağızız şeklinde 1. tekil ve çoğul şahıs ekleri geldiğinde bu düşme olmaz.
       </description>
-      <transformation action="DeleteLastVowel">
+      <transformation morpheme="This" action="DeleteLastVowel">
         <conditions flag="And">
-          <condition operator="StartsWithVowel" />
-          <condition operator="MorphemeNotEquals" operand="EKFIIL_SAHIS_BEN_(y)Um" />
-          <condition operator="MorphemeNotEquals" operand="EKFIIL_SAHIS_BIZ_(y)Uz" />
+          <condition morpheme="Next" operator="StartsWithVowel" />
+          <condition morpheme="Next" operator="MorphemeNotEquals" operand="EKFIIL_SAHIS_BEN_(y)Um" />
+          <condition morpheme="Next" operator="MorphemeNotEquals" operand="EKFIIL_SAHIS_BIZ_(y)Uz" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="R_DUSME_SON_UNLU_EDILGEN" type="Next">
+    <rule id="R_DUSME_SON_UNLU_EDILGEN" order="3">
       <description>
         Edilgen eki geldiğinde son ünlünün düşmesi kuralı
         kavur => kavrul
         doğur => doğrul
       </description>
-      <transformation action="DeleteLastVowel">
+      <transformation morpheme="This" action="DeleteLastVowel">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="FY_EDILGEN_Ul_(U)n" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="FY_EDILGEN_Ul_(U)n" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="R_CIFTLESME_SON_UNSUZ" type="Next">
+    <rule id="R_CIFTLESME_SON_UNSUZ" order="3">
       <description>
         hat›hatt-ı, ret›redd-i , serhat›serhadd-i
       </description>
-      <transformation action="DoubleLastLetter">
+      <transformation morpheme="This" action="DoubleLastLetter">
         <conditions flag="Or">
-          <condition operator="StartsWithVowel" />
+          <condition morpheme="Next" operator="StartsWithVowel" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="F_OZEL_su" type="First">
+    <rule id="F_OZEL_su" order="1">
       <description>
         Gelen ek sesli ile başlıyorsa veya IC_SAHIPLIK_O_(s)U, IC_HAL_ILGI_(n)Un eklerinden biri ise
         sona y karakteri ekle
       </description>
-      <transformation action="Append" operandOne="y">
+      <transformation morpheme="This" action="Append" operandOne="y">
         <conditions flag="Or">
-          <condition operator="StartsWithVowel" />
-          <condition operator="MorphemeEquals" operand="IC_SAHIPLIK_O_(s)U" />
-          <condition operator="MorphemeEquals" operand="IC_HAL_ILGI_(n)Un" />
+          <condition morpheme="Next" operator="StartsWithVowel" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_SAHIPLIK_O_(s)U" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_HAL_ILGI_(n)Un" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="F_OZEL_N" type="First">
+    <rule id="F_OZEL_N" order="1">
       <description>
         Bazı ek ve kelimelerden sonra araya n sesinin girmesi. kapısıya => kapısına
         kendice => kendince
       </description>
-      <transformation action="Append" operandOne="n">
+      <transformation morpheme="This" action="Append" operandOne="n">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="IC_HAL_YONELME_(y)A" />
-          <condition operator="MorphemeEquals" operand="IC_HAL_BULUNMA_DA" />
-          <condition operator="MorphemeEquals" operand="IC_HAL_AYRILMA_DAn" />
-          <condition operator="MorphemeEquals" operand="IC_HAL_BELIRTME_(y)U" />
-          <condition operator="MorphemeEquals" operand="IY_ZARF_CA" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_HAL_YONELME_(y)A" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_HAL_BULUNMA_DA" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_HAL_BELIRTME_(y)U" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IY_ZARF_CA" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="F_OZEL_o" type="First">
+    <rule id="F_OZEL_o" order="1">
       <description> o, bu, şu kökleri bazı ekler için araya n sesi alırlar </description>
-      <transformation action="Append" operandOne="n">
+      <transformation morpheme="This" action="Append" operandOne="n">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="ZAMIR_COGUL_lAr" />
-          <condition operator="MorphemeEquals" operand="IC_HAL_YONELME_(y)A" />
-          <condition operator="MorphemeEquals" operand="IC_HAL_BULUNMA_DA" />
-          <condition operator="MorphemeEquals" operand="IC_HAL_AYRILMA_DAn" />
-          <condition operator="MorphemeEquals" operand="IC_HAL_BELIRTME_(y)U" />
-          <condition operator="MorphemeEquals" operand="IY_SIFAT_sUz" />
-          <condition operator="MorphemeEquals" operand="IY_SIFAT_lU" />
-          <condition operator="MorphemeEquals" operand="IY_ISIM_lUK" />
-          <condition operator="MorphemeEquals" operand="IY_ISIM_cAğIz" />
-          <condition operator="MorphemeEquals" operand="IY_ZARF_CA" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="ZAMIR_COGUL_lAr" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_HAL_YONELME_(y)A" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_HAL_BULUNMA_DA" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_HAL_BELIRTME_(y)U" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IY_SIFAT_sUz" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IY_SIFAT_lU" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IY_ISIM_lUK" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IY_ISIM_cAğIz" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IY_ZARF_CA" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="F_OZEL_bana" type="First">
+    <rule id="F_OZEL_bana" order="1">
       <description>
         Gelen ek yönelme hal eki ise e => a olur.
         ben => bana, sen => sana
       </description>
-      <transformation action="Replace" operandOne="e" operandTwo="a" flag="first">
+      <transformation morpheme="This" action="Replace" operandOne="e" operandTwo="a" flag="first">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="IC_HAL_YONELME_(y)A" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_HAL_YONELME_(y)A" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="F_OZEL_benim" type="First">
+    <rule id="F_OZEL_benim" order="1">
       <description>
         ilgi hali, im şeklini alır. benim, bizim
       </description>
-      <transformation action="Replace" position="Next" operandOne="nUn" operandTwo="nim" flag="first">
+      <transformation morpheme="Next" action="Replace" operandOne="nUn" operandTwo="nim" flag="first">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="IC_HAL_ILGI_(n)Un" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_HAL_ILGI_(n)Un" />
         </conditions>
       </transformation>
     </rule>
 
-    <!--<rule id="S_OZEL_o" type="Self">
-      <description> o, bu, şu zamirlerinin yüzeyindeki n sesi ek gelmiyorsa silinir. </description>
-      <transformation action="DeleteLastLetter">
-        <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="IC_HAL_ILGI_(n)Un" />
-        </conditions>
-      </transformation>
-    </rule>-->
-
-    <rule id="D_OZEL_INCELME_A" type="Default">
+    <rule id="D_OZEL_INCELME_A" order="5">
       <description>	saat => saate özel durumu için yerleştirilen á karakteri sonradan a olur. </description>
-      <transformation action="Replace" operandOne="á" operandTwo="a" flag="all" />
+      <transformation morpheme="This" action="Replace" operandOne="á" operandTwo="a" flag="all" />
     </rule>
 
-    <rule id="D_OZEL_INCELME_O" type="Default">
+    <rule id="D_OZEL_INCELME_O" order="5">
       <description> gol-e, alkol-lü özel durumu için yerleştirilen ó karakteri sonradan o olur. </description>
-      <transformation action="Replace" operandOne="ó" operandTwo="o" flag="all" />
+      <transformation morpheme="This" action="Replace" operandOne="ó" operandTwo="o" flag="all" />
     </rule>
 
-    <rule id="D_OZEL_INCELME_U" type="Default">
+    <rule id="D_OZEL_INCELME_U" order="5">
       <description> ampul-e özel durumu için yerleştirilen ú karakteri sonradan o olur. </description>
-      <transformation action="Replace" operandOne="ú" operandTwo="u" flag="all" />
+      <transformation morpheme="This" action="Replace" operandOne="ú" operandTwo="u" flag="all" />
     </rule>
 
-    <rule id="D_INCELME_SAPKA_A" type="Default">
+    <rule id="D_INCELME_SAPKA_A" order="5">
       <description>yâr -> yâre </description>
-      <transformation action="Replace" operandOne="á" operandTwo="â" flag="all" />
+      <transformation morpheme="This" action="Replace" operandOne="á" operandTwo="â" flag="all" />
     </rule>
 
-    <rule id="L_OZEL_BIZ_lIm" type="Previous">
+    <rule id="L_OZEL_BIZ_lIm" order="2">
       <description>
         Önceki ek istek eki ise k olan yüzey lIm olarak değişir.
         gelek => gelelim
       </description>
-      <transformation action="Replace" operandOne="k" operandTwo="lIm" flag="all">
+      <transformation morpheme="This" action="Replace" operandOne="k" operandTwo="lIm" flag="all">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="FC_KIP_ISTEK_(y)A" />
+          <condition morpheme="Previous" operator="MorphemeEquals" operand="FC_KIP_ISTEK_(y)A" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="L_OZEL_UYOR" type="Previous">
+    <rule id="L_OZEL_UYOR" order="2">
       <description>
         Önceki ekin son harfi a veya e ise bu harfi sil.
         Yok eğer Son harf ı,i,u,ü ise kendi ilk harfini (U) sil
       </description>
-      <transformation action="DeleteLastLetter" position="Previous">
+      <transformation morpheme="Previous" action="DeleteLastLetter">
         <conditions flag="Or">
-          <condition operator="LastLetterEquals" operand="ae" />
+          <condition morpheme="Previous" operator="LastLetterEquals" operand="ae" />
         </conditions>
       </transformation>
-      <transformation action="DeleteFirstLetter">
+      <transformation morpheme="This" action="DeleteFirstLetter">
         <conditions flag="Or">
-          <condition operator="LastLetterEquals" operand="ıiuü" />
+          <condition morpheme="Previous" operator="LastLetterEquals" operand="ıiuü" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="R_OZEL_de" type="Next">
+    <rule id="R_OZEL_de" order="3">
       <description>
         de fiili bazı eklerden sonra di halini alyor.
         de => di-yecek ama de-yip and de-yince
         Şimdiki zaman eki L_OZEL_UYOR kuralı de => d yaptığından üyor => iyor olur.
       </description>
-      <transformation action="Replace" position="Next" operandOne="ü" operandTwo="i" flag="first">
+      <transformation morpheme="Next" action="Replace" operandOne="ü" operandTwo="i" flag="first">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="FC_ZAMAN_SIMDIKI_(U)yor" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="FC_ZAMAN_SIMDIKI_(U)yor" />
         </conditions>
       </transformation>
-      <transformation action="Replace" operandOne="e" operandTwo="e" flag="first">
-        <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="FIILIMSI_ZARF_(y)Up" />
-          <condition operator="MorphemeEquals" operand="FIILIMSI_ZARF_(y)UncA" />
-          <condition operator="MorphemeEquals" operand="FIILIMSI_ISIM_(y)Uş" />
-          <condition operator="MorphemeEquals" operand="FY_TANIMLAMA_(y)UcU" />
-          <condition operator="MorphemeEquals" operand="FC_YF_TEZLIK_(y)Uver" />
-        </conditions>
-      </transformation>
-      <transformation action="Replace" operandOne="e" operandTwo="i" flag="last">
+      <transformation morpheme="This" action="Replace" operandOne="e" operandTwo="i" flag="first">
         <conditions flag="And">
-          <condition operator="FirstLetterEquals" operand="y" />
+          <condition morpheme="Next" operator="MorphemeNotEquals" operand="FIILIMSI_ZARF_(y)Up" />
+          <condition morpheme="Next" operator="MorphemeNotEquals" operand="FIILIMSI_ZARF_(y)UncA" />
+          <condition morpheme="Next" operator="MorphemeNotEquals" operand="FIILIMSI_ISIM_(y)Uş" />
+          <condition morpheme="Next" operator="MorphemeNotEquals" operand="FY_TANIMLAMA_(y)UcU" />
+          <condition morpheme="Next" operator="MorphemeNotEquals" operand="FC_YF_TEZLIK_(y)Uver" />
+          <condition morpheme="Next" operator="FirstLetterEquals" operand="y" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="R_OZEL_ye" type="Next">
+    <rule id="R_OZEL_ye" order="3">
       <description>
         ye fiili bazı eklerden sonra yi halini alyor.
         ye => yi-yecek, yi-yip and yi-yince
         Şimdiki zaman eki L_OZEL_UYOR kuralı ye => y yaptığından üyor => iyor olur.
       </description>
-      <transformation action="Replace" operandOne="e" operandTwo="i" flag="last">
+      <transformation morpheme="This" action="Replace" operandOne="e" operandTwo="i" flag="last">
         <conditions flag="Or">
-          <condition operator="FirstLetterEquals" operand="y" />
+          <condition morpheme="Next" operator="FirstLetterEquals" operand="y" />
         </conditions>
       </transformation>
-      <transformation action="Replace" position="Next" operandOne="ü" operandTwo="i" flag="first">
+      <transformation morpheme="Next" action="Replace" operandOne="ü" operandTwo="i" flag="first">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="FC_ZAMAN_SIMDIKI_(U)yor" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="FC_ZAMAN_SIMDIKI_(U)yor" />
         </conditions>
       </transformation>
     </rule>
 
-
     <!-- Bu 2 kural geniş zaman eki için -->
-    <rule id="L_OZEL_GZ" type="Previous">
+
+    <rule id="L_OZEL_GZ" order="2">
       <description>
         Genis zaman ekinden önce gelen morfemde (fiilde) S_OZEL_GZ kuralı var ise Ur => Ar olur.
         Önceki ek olumsuzluk eki ise Ur => z olur.
       </description>
-      <transformation action="Replace" operandOne="U" operandTwo="A" flag="all">
+      <transformation morpheme="This" action="Replace" operandOne="U" operandTwo="A" flag="all">
         <conditions flag="Or">
-          <condition operator="HasFlags" operand="genis_Ar" />
+          <condition morpheme="Previous" operator="HasFlags" operand="genis_Ar" />
         </conditions>
       </transformation>
-      <transformation action="Replace" operandOne="Ur" operandTwo="z" flag="all">
+      <transformation morpheme="This" action="Replace" operandOne="Ur" operandTwo="z" flag="all">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="FY_OLUMSUZLUK_mA" />
-          <condition operator="MorphemeEquals" operand="FC_YF_YETERSIZLIK_(y)AmA" />
+          <condition morpheme="Previous" operator="MorphemeEquals" operand="FY_OLUMSUZLUK_mA" />
+          <condition morpheme="Previous" operator="MorphemeEquals" operand="FC_YF_YETERSIZLIK_(y)AmA" />
         </conditions>
       </transformation>
     </rule>
-    <rule id="L_DUSME_UNLU_GZ" type="Previous">
+    <rule id="L_DUSME_UNLU_GZ" order="2">
       <description>yapar, eder </description>
-      <transformation action="DeleteFirstVowel">
+      <transformation morpheme="This" action="DeleteFirstVowel">
         <conditions flag="Or">
-          <condition operator="EndsWithVowel" />
+          <condition morpheme="Previous" operator="EndsWithVowel" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="L_OZEL_EDILGEN" type="Previous">
+
+    <rule id="L_OZEL_EDILGEN" order="2">
       <description>     </description>
-      <transformation action="Replace" operandOne="l" operandTwo="n" flag="last">
+      <transformation morpheme="This" action="Replace" operandOne="l" operandTwo="n" flag="last">
         <conditions flag="Or">
-          <condition operator="EndsWithVowel" />
-          <condition operator="LastLetterEquals" operand="l" />
+          <condition morpheme="Previous" operator="EndsWithVowel" />
+          <condition morpheme="Previous" operator="LastLetterEquals" operand="l" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="L_OZEL_ETTIRGEN" type="Previous">
+
+    <rule id="L_OZEL_ETTIRGEN" order="2">
       <description>     </description>
-      <transformation action="Replace" operandOne="DUr" operandTwo="t" flag="first">
+      <transformation morpheme="This" action="Replace" operandOne="DUr" operandTwo="t" flag="first">
         <conditions flag="And">
-          <condition operator="EndsWithVowel" />
-          <condition operator="HasNotFlags" operand="ettirgen_dur" />
+          <condition morpheme="Previous" operator="EndsWithVowel" />
+          <condition morpheme="Previous" operator="HasNotFlags" operand="ettirgen_dur" />
         </conditions>
       </transformation>
-      <transformation action="Replace" operandOne="DUr" operandTwo="t" flag="first">
+      <transformation morpheme="This" action="Replace" operandOne="DUr" operandTwo="t" flag="first">
         <conditions flag="And">
-          <condition operator="HasFlags" operand="ettirgen_t" />
+          <condition morpheme="Previous" operator="HasFlags" operand="ettirgen_t" />
         </conditions>
       </transformation>
-      <transformation action="Replace" operandOne="DUr" operandTwo="Ut" flag="first">
+      <transformation morpheme="This" action="Replace" operandOne="DUr" operandTwo="Ut" flag="first">
         <conditions flag="And">
-          <condition operator="HasFlags" operand="ettirgen_ut" />
+          <condition morpheme="Previous" operator="HasFlags" operand="ettirgen_ut" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="L_OZEL_ETTIRTGEN" type="Previous">
-      <description>     </description>
-      <transformation action="Replace" operandOne="t" operandTwo="DUr" flag="first">
-        <conditions flag="Or">
-          <condition operator="LastLetterEquals" operand="t" />
-        </conditions>
-      </transformation>
-    </rule>
-
-    <rule id="S_TAMLAMA_OZEL" type="Self">
+    <rule id="S_TAMLAMA_OZEL" order="4">
       <description>zeytinyağ -> zeytinyağı </description>
-      <transformation action="Append" operandOne="_">
+      <transformation morpheme="This" action="Append" operandOne="_">
         <conditions flag="Or">
-          <condition operator="IsLastMorpheme"/>
+          <condition morpheme="This" operator="IsLastMorpheme" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="D_SAPKA_DUSUR_A" type="Default">
-      <description>kâr -> kar </description>
-      <transformation action="Replace" operandOne="â" operandTwo="a" flag="all" />
+    <rule id="L_OZEL_ETTIRTGEN" order="2">
+      <description>     </description>
+      <transformation morpheme="This" action="Replace" operandOne="t" operandTwo="DUr" flag="first">
+        <conditions flag="Or">
+          <condition morpheme="Previous" operator="LastLetterEquals" operand="t" />
+        </conditions>
+      </transformation>
     </rule>
 
-    <rule id="D_SAPKA_DUSUR_I" type="Default">
+
+    <rule id="D_SAPKA_DUSUR_A" order="5">
       <description>kâr -> kar </description>
-      <transformation action="Replace" operandOne="î" operandTwo="i" flag="all" />
+      <transformation morpheme="This" action="Replace" operandOne="â" operandTwo="a" flag="all" />
     </rule>
 
-    <rule id="D_SAPKA_DUSUR_U" type="Default">
+    <rule id="D_SAPKA_DUSUR_I" order="5">
       <description>kâr -> kar </description>
-      <transformation action="Replace" operandOne="û" operandTwo="u" flag="all" />
+      <transformation morpheme="This" action="Replace" operandOne="î" operandTwo="i" flag="all" />
     </rule>
 
-    <rule id="R_OZEL_EKFIIL" type="Next">
+    <rule id="D_SAPKA_DUSUR_U" order="5">
+      <description>kâr -> kar </description>
+      <transformation morpheme="This" action="Replace" operandOne="û" operandTwo="u" flag="all" />
+    </rule>
+
+    <rule id="R_OZEL_EKFIIL" order="3">
       <description>
         Sondaki özel ý karakteri ekfiil zaman ekleri geldiğinde düşer.
         ekfiil olan i tekbaşına bulunamayacağından, aksi takdirde düşmez.
       </description>
-      <transformation action="DeleteLastLetter" />
+      <transformation morpheme="This" action="DeleteLastLetter" />
     </rule>
 
-    <rule id="F_OZEL_KUCULTME" type="First">
+    <rule id="F_OZEL_KUCULTME" order="1">
       <description>
-        Eğer gelen ek küçültme eki olan CUK ise sondaki k'yı düşür.
+        Eğer gelen ek küçültme eki olan CUK ise sondaki k'yı düşür. küçük + cük => küçücük
       </description>
-      <transformation action="DeleteLastLetter">
+      <transformation morpheme="This" action="DeleteLastLetter">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="IY_ISIM_KUCULTME_CUK" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IY_ISIM_KUCULTME_CUK" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="F_ZAMAN_kü" type="First">
+    <rule id="F_ZAMAN_kü" order="1">
       <description>
         Yalnızca dün, gün ve bugün kelimelerinden sonra ki eki kü halini alır
       </description>
-      <transformation action="Replace" position="Next" operandOne="i" operandTwo="ü" flag="first">
+      <transformation morpheme="Next" action="Replace" operandOne="i" operandTwo="ü" flag="first">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" operand="IC_AITLIK_ki" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_AITLIK_ki" />
         </conditions>
       </transformation>
     </rule>
 
-    <rule id="D_OKUNUSDAN_YAZILISA" type="Default">
+
+    <!--<rule id="D_OKUNUSDAN_YAZILISA" order="5">
       <description>
         Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini
       </description>
-      <transformation action="LexicalToSurface" />
+      <transformation morpheme="This" action="LexicalToSurface" />
     </rule>
 
-    <rule id="L_KESME_KALDIR" type="Previous">
+    <rule id="L_KESME_KALDIR" order="2">
       <description>
         Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini
       </description>
-      <transformation action="DeleteFirstLetter" />
+      <transformation morpheme="This" action="DeleteFirstLetter" />
     </rule>
 
-    <rule id="D_KESME_EKLE" type="Default">
+    <rule id="D_KESME_EKLE" order="5">
       <description>
         Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini
       </description>
-      <transformation action="Append" operandOne="'" />
+      <transformation morpheme="This" action="Append" operandOne="'" />
     </rule>
 
-    <!-- Bu kurallar tam olarak neden var?-->
-    <rule id="D_ILK_HARF_BUYUT_o" type="Default">
+    --><!-- Bu kurallar tam olarak neden var?--><!--
+    <rule id="D_ILK_HARF_BUYUT_o" order="5">
       <description>kâr -> kar </description>
-      <transformation action="Replace" operandOne="o" operandTwo="O" flag="first" />
+      <transformation morpheme="This" action="Replace" operandOne="o" operandTwo="O" flag="first" />
     </rule>
 
-    <rule id="D_ILK_HARF_BUYUT_ö" type="Default">
+    <rule id="D_ILK_HARF_BUYUT_ö" order="5">
       <description>kâr -> kar </description>
-      <transformation action="Replace" operandOne="ö" operandTwo="Ö" flag="first" />
+      <transformation morpheme="This" action="Replace" operandOne="ö" operandTwo="Ö" flag="first" />
     </rule>
 
-    <rule id="D_ILK_HARF_BUYUT_a" type="Default">
+    <rule id="D_ILK_HARF_BUYUT_a" order="5">
       <description>kâr -> kar </description>
-      <transformation action="Replace" operandOne="a" operandTwo="A" flag="first" />
+      <transformation morpheme="This" action="Replace" operandOne="a" operandTwo="A" flag="first" />
     </rule>
 
-    <rule id="D_ILK_HARF_BUYUT_u" type="Default">
+    <rule id="D_ILK_HARF_BUYUT_u" order="5">
       <description>kâr -> kar </description>
-      <transformation action="Replace" operandOne="u" operandTwo="U" flag="first" />
-    </rule>
+      <transformation morpheme="This" action="Replace" operandOne="u" operandTwo="U" flag="first" />
+    </rule>-->
 
   </rules>
 </orthography>

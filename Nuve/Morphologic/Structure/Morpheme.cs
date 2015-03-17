@@ -106,12 +106,12 @@ namespace Nuve.Morphologic.Structure
         /// <param name="surface">Ortografik kurallar işletilerek değişime uğrayacak olan o anki yüzey biçimi</param>
         /// <param name="leftSurface">Bir önceki morfemin o anki yüzey biçimi</param>
         /// <returns>İşletilen kurallar neticesine değişen yüzeyin son hali</returns>
-        internal void ProcessRules(RuleType ruleType, Allomorph allomorph)
+        internal void ProcessRules(Order order, Allomorph allomorph)
         {
             if (HasRule)
                 foreach (OrthographyRule rule in Rules)
                 {
-                    if (rule.Type == ruleType)
+                    if (rule.Type == order)
                         rule.Process(allomorph);
                 }
 

@@ -147,7 +147,7 @@ namespace Nuve.Morphologic.Structure
                 return GetPreviousSurface();
             }
 
-            if (location == Position.Current || location == Position.Source)
+            if (location == Position.This || location == Position.Source)
             {
                 return Surface;
             }
@@ -198,7 +198,7 @@ namespace Nuve.Morphologic.Structure
         private void ProcessFirstRules()
         {
             if (HasNext)
-                _morpheme.ProcessRules(RuleType.First, this);
+                _morpheme.ProcessRules(Order.One, this);
         }
 
         /// <summary>
@@ -207,7 +207,7 @@ namespace Nuve.Morphologic.Structure
         private void ProcessPrevRules()
         {
             if (HasPrevious)
-                _morpheme.ProcessRules(RuleType.Previous, this);
+                _morpheme.ProcessRules(Order.Two, this);
         }
 
         /// <summary>
@@ -216,7 +216,7 @@ namespace Nuve.Morphologic.Structure
         private void ProcessNextRules()
         {
             if (HasNext)
-                _morpheme.ProcessRules(RuleType.Next, this);
+                _morpheme.ProcessRules(Order.Three, this);
         }
 
         /// <summary>
@@ -226,7 +226,7 @@ namespace Nuve.Morphologic.Structure
         private void ProcessSelfRules()
         {
             if (!HasNext)
-                _morpheme.ProcessRules(RuleType.Self, this);
+                _morpheme.ProcessRules(Order.Four, this);
         }
 
         /// <summary>
@@ -235,27 +235,27 @@ namespace Nuve.Morphologic.Structure
         /// </summary>
         private void ProcessDefaultRules()
         {
-            _morpheme.ProcessRules(RuleType.Default, this);
+            _morpheme.ProcessRules(Order.Fife, this);
         }
 
 
-        internal void ProcessRules(RuleType ruleType)
+        internal void ProcessRules(Order order)
         {
-            switch (ruleType)
+            switch (order)
             {
-                case RuleType.First:
+                case Order.One:
                     ProcessFirstRules();
                     break;
-                case RuleType.Previous:
+                case Order.Two:
                     ProcessPrevRules();
                     break;
-                case RuleType.Next:
+                case Order.Three:
                     ProcessNextRules();
                     break;
-                case RuleType.Self:
+                case Order.Four:
                     ProcessSelfRules();
                     break;
-                case RuleType.Default:
+                case Order.Fife:
                     ProcessDefaultRules();
                     break;
             }
