@@ -178,7 +178,9 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Tr\root_name.txt" />
-    <EmbeddedResource Include="Resources\Tr\orthography.xml" />
+    <EmbeddedResource Include="Resources\Tr\orthography.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Tr\root.txt" />
     <EmbeddedResource Include="Resources\Tr\suffix.txt" />
   </ItemGroup>
