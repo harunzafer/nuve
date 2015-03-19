@@ -158,7 +158,7 @@ namespace Nuve.Reader
         private static ConditionBase GetCondition(XElement conditionElement)
         {
             string name = conditionElement.Attribute("operator").Value;
-            string morphemeLocation = conditionElement.Attribute("position").Value;
+            string morphemeLocation = conditionElement.Attribute("morpheme").Value;
             var attribute = conditionElement.Attribute("operand");
             string operand = "";
             if (attribute != null)

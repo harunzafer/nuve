@@ -169,7 +169,7 @@
       </targetGroup>
       <target id="IY_SIFAT_sU">
         <conditions flag="Or">
-          <condition operator="EndsWithConsonant" position="Source" />
+          <condition morpheme="Source" operator="EndsWithConsonant" />
         </conditions>
       </target>
       <targetGroup id="IY_ZARF" />
@@ -177,7 +177,7 @@
       <target id="EKFIIL_TANIMLAMA_DUr" />
       <target id="IC_AITLIK_ki">
         <conditions flag="Or">
-          <condition operator="HasFlags" position="Source" operand="zaman" />
+          <condition morpheme="Source" operator="HasFlags" operand="zaman" />
         </conditions>
       </target>
       <targetGroup id="SORU_BAGLAC" />
@@ -196,7 +196,7 @@
       </copy>
       <target id="IY_ISIM_KUCULTME_CUK">
         <conditions flag="Or">
-          <condition operator="HasFlags" position="Source" operand="azlık" />
+          <condition morpheme="Source" operator="HasFlags" operand="azlık" />
         </conditions>
       </target>
       <targetGroup id="SORU_BAGLAC" />
@@ -214,37 +214,37 @@
     <source id="ZARF">
       <target id="EKFIIL_TANIMLAMA_DUr">
         <conditions flag="And">
-          <condition operator="HasFlags" position="Source" operand="ekfiil_alır" />
-          <condition operator="IsLastMorpheme" position="Target" />
+          <condition morpheme="Source" operator="HasFlags" operand="ekfiil_alır" />
+          <condition morpheme="Target" operator="IsLastMorpheme" />
         </conditions>
       </target>
       <target id="EKFIIL_RIVAYET_(y)mUş">
         <conditions flag="And">
-          <condition operator="HasFlags" position="Source" operand="ekfiil_alır" />
-          <condition operator="IsLastMorpheme" position="Target" />
+          <condition morpheme="Source" operator="HasFlags" operand="ekfiil_alır" />
+          <condition morpheme="Target" operator="IsLastMorpheme" />
         </conditions>
       </target>
       <target id="EKFIIL_HIKAYE_(y)DU">
         <conditions flag="And">
-          <condition operator="HasFlags" position="Source" operand="ekfiil_alır" />
-          <condition operator="IsLastMorpheme" position="Target" />
+          <condition morpheme="Source" operator="HasFlags" operand="ekfiil_alır" />
+          <condition morpheme="Target" operator="IsLastMorpheme" />
         </conditions>
       </target>
       <target id="EKFIIL_SART_(y)sA">
         <conditions flag="And">
-          <condition operator="HasFlags" position="Source" operand="ekfiil_alır" />
-          <condition operator="IsLastMorpheme" position="Target" />
+          <condition morpheme="Source" operator="HasFlags" operand="ekfiil_alır" />
+          <condition morpheme="Target" operator="IsLastMorpheme" />
         </conditions>
       </target>
       <target id="EKFIIL_ZAMAN_(y)ken">
         <conditions flag="And">
-          <condition operator="HasFlags" position="Source" operand="ekfiil_alır" />
-          <condition operator="IsLastMorpheme" position="Target" />
+          <condition morpheme="Source" operator="HasFlags" operand="ekfiil_alır" />
+          <condition morpheme="Target" operator="IsLastMorpheme" />
         </conditions>
       </target>
       <target id="IC_AITLIK_ki">
         <conditions flag="Or">
-          <condition operator="HasFlags" position="Source" operand="zaman" />
+          <condition morpheme="Source" operator="HasFlags" operand="zaman" />
         </conditions>
       </target>
       <targetGroup id="SORU_BAGLAC" />
@@ -260,14 +260,14 @@
       </targetGroup>
       <target id="FIILIMSI_SIFAT_DUK">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_BEN_(U)m" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_SEN_(U)n" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_O_(s)U" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_BIZ_(U)mUz" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_SIZ_(U)nUz" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_ONLAR_lArI" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_COGUL_lAr" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_BEN_(U)m" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_SEN_(U)n" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_O_(s)U" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_BIZ_(U)mUz" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_SIZ_(U)nUz" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_ONLAR_lArI" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_COGUL_lAr" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_HAL_AYRILMA_DAn" />
         </conditions>
       </target>
       <targetGroup id="FIILIMSI_ZARF">
@@ -280,13 +280,13 @@
       <target id="FY_EDILGEN_Ul_(U)n" />
       <target id="FY_ETTIRGEN_DUr_(U)t">
         <conditions flag="And">
-          <condition operator="HasNotFlags" position="Source" operand="ettirtgen_t" />
-          <condition operator="HasNotFlags" position="Source" operand="edilgen" />
+          <condition morpheme="Source" operator="HasNotFlags" operand="ettirtgen_t" />
+          <condition morpheme="Source" operator="HasNotFlags" operand="edilgen" />
         </conditions>
       </target>
       <target id="FY_ETTIRTGEN_t_DUr">
         <conditions flag="And">
-          <condition operator="HasFlags" position="Source" operand="ettirtgen_t" />
+          <condition morpheme="Source" operator="HasFlags" operand="ettirtgen_t" />
         </conditions>
       </target>
       <target id="FY_OLUMSUZLUK_mA" />
@@ -315,34 +315,34 @@
     <!-- <source id="SORU_mU">
       <target id="EKFIIL_SAHIS_BEN_(y)Um">
         <conditions flag="And">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU"/>
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_DILEK_sA"/>
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A"/>
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_SART_(y)sA"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_ZAMAN_GECMIS_DU"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_KIP_DILEK_sA"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_KIP_ISTEK_(y)A"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="EKFIIL_SART_(y)sA"/>
         </conditions>
       </target>
       <target id="EKFIIL_SAHIS_SEN_sUn">
         <conditions flag="And">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU"/>
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_DILEK_sA"/>
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A"/>
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_SART_(y)sA"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_ZAMAN_GECMIS_DU"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_KIP_DILEK_sA"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_KIP_ISTEK_(y)A"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="EKFIIL_SART_(y)sA"/>
         </conditions>
       </target>
       <target id="EKFIIL_SAHIS_BIZ_(y)Uz">
         <conditions flag="And">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU"/>
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_DILEK_sA"/>
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A"/>
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_SART_(y)sA"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_ZAMAN_GECMIS_DU"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_KIP_DILEK_sA"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_KIP_ISTEK_(y)A"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="EKFIIL_SART_(y)sA"/>
         </conditions>
       </target>
       <target id="EKFIIL_SAHIS_SIZ_sUnUz">
         <conditions flag="And">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU"/>
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_DILEK_sA"/>
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A"/>
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_SART_(y)sA"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_ZAMAN_GECMIS_DU"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_KIP_DILEK_sA"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_KIP_ISTEK_(y)A"/>
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="EKFIIL_SART_(y)sA"/>
         </conditions>
       </target>            
       <target id="EKFIIL_HIKAYE_(y)DU"/>
@@ -416,7 +416,7 @@
       </targetGroup>
       <target id="IY_SIFAT_sU">
         <conditions flag="Or">
-          <condition operator="EndsWithConsonant" position="Source" />
+          <condition morpheme="Source" operator="EndsWithConsonant" />
         </conditions>
       </target>
       <targetGroup id="IY_ZARF" />
@@ -424,11 +424,11 @@
       <target id="IY_FIIL_lAş" />
       <target id="IC_COGUL_lAr">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_BEN_(U)m" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_SEN_(U)n" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_O_(s)U" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_BIZ_(U)mUz" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_SIZ_(U)nUz" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_BEN_(U)m" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_SEN_(U)n" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_O_(s)U" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_BIZ_(U)mUz" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_SIZ_(U)nUz" />
         </conditions>
       </target>
       <targetGroup id="SORU_BAGLAC" />
@@ -440,7 +440,7 @@
       <targetGroup id="EKFIIL_SAHIS" />
       <targetGroup id="EKFIIL_ZAMAN" />
       <target id="IC_COGUL_lAr">
-        <condition operator="HasNotFlags" position="Source" operand="cogul" />
+        <condition morpheme="Source" operator="HasNotFlags" operand="cogul" />
       </target>
       <target id="IY_ZARF_CA" />
       <target id="EKFIIL_TANIMLAMA_DUr" />
@@ -569,18 +569,12 @@
       <target id="EKFIIL_TANIMLAMA_DUr" />
       <target id="IY_ISIM_lUK">
         <conditions flag="Or">
-          <condition operator="MorphemeSequenceEquals" position="AfterTarget"
-                     operand="IC_SAHIPLIK_BEN_(U)m, IC_HAL_AYRILMA_DAn" />
-          <condition operator="MorphemeSequenceEquals" position="AfterTarget"
-                     operand="IC_SAHIPLIK_SEN_(U)n, IC_HAL_AYRILMA_DAn" />
-          <condition operator="MorphemeSequenceEquals" position="AfterTarget"
-                     operand="IC_SAHIPLIK_O_(s)U, IC_HAL_AYRILMA_DAn" />
-          <condition operator="MorphemeSequenceEquals" position="AfterTarget"
-                     operand="IC_SAHIPLIK_BIZ_(U)mUz, IC_HAL_AYRILMA_DAn" />
-          <condition operator="MorphemeSequenceEquals" position="AfterTarget"
-                     operand="IC_SAHIPLIK_SIZ_(U)nUz, IC_HAL_AYRILMA_DAn" />
-          <condition operator="MorphemeSequenceEquals" position="AfterTarget"
-                     operand="IC_SAHIPLIK_ONLAR_lArI, IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals" operand="IC_SAHIPLIK_BEN_(U)m, IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals" operand="IC_SAHIPLIK_SEN_(U)n, IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals" operand="IC_SAHIPLIK_O_(s)U, IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals" operand="IC_SAHIPLIK_BIZ_(U)mUz, IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals" operand="IC_SAHIPLIK_SIZ_(U)nUz, IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals" operand="IC_SAHIPLIK_ONLAR_lArI, IC_HAL_AYRILMA_DAn" />
         </conditions>
       </target>
       <target id="IY_ZARF_CA" />
@@ -602,12 +596,12 @@
       <target id="IC_SAHIPLIK_ONLAR_lArI" />
       <target id="SAYI_ULESTIRME_(ş)Ar">
         <conditions flag="Or">
-          <condition operator="HasFlags" position="Source" operand="sayı" />
+          <condition morpheme="Source" operator="HasFlags" operand="sayı" />
         </conditions>
       </target>
       <target id="SAYI_SIRA_(U)ncU">
         <conditions flag="Or">
-          <condition operator="HasFlags" position="Source" operand="sayı" />
+          <condition morpheme="Source" operator="HasFlags" operand="sayı" />
         </conditions>
       </target>
     </source>
@@ -643,7 +637,7 @@
       <target id="EKFIIL_SAHIS_SIZ_sUnUz" />
       <target id="IC_COGUL_lAr">
         <conditions flag="Or">
-          <condition operator="HasFlags" position="First" operand="akrabalık" />
+          <condition morpheme="First" operator="HasFlags" operand="akrabalık" />
         </conditions>
       </target>
       <targetGroup id="SORU_BAGLAC" />
@@ -738,8 +732,8 @@
       <target id="EKFIIL_TANIMLAMA_DUr" />
       <target id="IC_HAL_VASITA_(y)lA">
         <conditions flag="And">
-          <condition operator="HasFlags" position="BeforeSource" operand="zamir" />
-          <condition operator="HasNotFlags" position="BeforeSource" operand="çoğul" />
+          <condition morpheme="BeforeSource" operator="HasFlags" operand="zamir" />
+          <condition morpheme="BeforeSource" operator="HasNotFlags" operand="çoğul" />
         </conditions>
       </target>
       <targetGroup id="SORU_BAGLAC" />
@@ -774,13 +768,13 @@
     <source id="EKFIIL_SAHIS_BEN_(y)Um">
       <target id="EKFIIL_TANIMLAMA_DUr">
         <conditions flag="Or">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GENIS_(U)r" />
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_ZAMAN_GENIS_(U)r" />
         </conditions>
       </target>
       <target id="BAGLAC_dA" />
       <target id="SORU_mU">
         <conditions flag="And">
-          <condition operator="MorphemeEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A" />
+          <condition morpheme="BeforeSource" operator="MorphemeEquals" operand="FC_KIP_ISTEK_(y)A" />
         </conditions>
       </target>
     </source>
@@ -803,31 +797,31 @@
     <source id="EKFIIL_SAHIS_ONLAR_lAr">
       <target id="EKFIIL_HIKAYE_(y)DU">
         <conditions flag="And">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU" />
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A" />
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_ZAMAN_GECMIS_DU" />
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_KIP_ISTEK_(y)A" />
         </conditions>
       </target>
       <target id="EKFIIL_ZAMAN_(y)ken">
         <conditions flag="Or">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU" />
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_ZAMAN_GECMIS_DU" />
         </conditions>
       </target>
       <target id="EKFIIL_RIVAYET_(y)mUş">
         <conditions flag="Or">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_ZAMAN_GECMIS_DU" />
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_ZAMAN_GECMIS_DU" />
         </conditions>
       </target>
       <target id="EKFIIL_SART_(y)sA">
         <conditions flag="And">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_DILEK_sA" />
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="FC_KIP_ISTEK_(y)A" />
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_KIP_DILEK_sA" />
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_KIP_ISTEK_(y)A" />
         </conditions>
       </target>
       <target id="EKFIIL_TANIMLAMA_DUr" />
       <target id="BAGLAC_dA" />
       <target id="SORU_mU">
         <conditions flag="Or">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_HIKAYE_(y)DU" />
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="EKFIIL_HIKAYE_(y)DU" />
         </conditions>
       </target>
     </source>
@@ -837,7 +831,7 @@
       <target id="BAGLAC_dA" />
       <target id=" ">
         <conditions flag="Or">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_HIKAYE_(y)DU" />
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="EKFIIL_HIKAYE_(y)DU" />
         </conditions>
       </target>
     </source>
@@ -846,7 +840,7 @@
       <target id="BAGLAC_dA" />
       <target id="SORU_mU">
         <conditions flag="Or">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_HIKAYE_(y)DU" />
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="EKFIIL_HIKAYE_(y)DU" />
         </conditions>
       </target>
     </source>
@@ -855,7 +849,7 @@
       <target id="BAGLAC_dA" />
       <target id="SORU_mU">
         <conditions flag="Or">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_HIKAYE_(y)DU" />
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="EKFIIL_HIKAYE_(y)DU" />
         </conditions>
       </target>
     </source>
@@ -864,7 +858,7 @@
       <target id="BAGLAC_dA" />
       <target id="SORU_mU">
         <conditions flag="Or">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="EKFIIL_HIKAYE_(y)DU" />
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="EKFIIL_HIKAYE_(y)DU" />
         </conditions>
       </target>
     </source>
@@ -892,7 +886,7 @@
       </targetGroup>
       <!--<target id="EKFIIL_SAHIS_ONLAR_lAr">
         <conditions flag="Or">
-          <condition operator="MorphemeNotEquals" position="BeforeSource" operand="SORU_mU"/>          
+          <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="SORU_mU"/>          
         </conditions>
       </target>-->
       <target id="EKFIIL_SART_(y)sA" />
@@ -977,16 +971,15 @@
       <target id="FIILIMSI_ZARF_CAsInA" />
       <target id="IY_ISIM_lUK">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" position="BeforeSource" operand="FY_EDILGEN_Ul_(U)n" />
-          <condition operator="MorphemeEquals" position="BeforeSource" operand="FC_YF_YETERLILIK_(y)Abil" />
-          <condition operator="HasFlags" position="First" operand="dönüşlü" />
+          <condition morpheme="BeforeSource" operator="MorphemeEquals" operand="FY_EDILGEN_Ul_(U)n" />
+          <condition morpheme="BeforeSource" operator="MorphemeEquals" operand="FC_YF_YETERLILIK_(y)Abil" />
+          <condition morpheme="First" operator="HasFlags" operand="dönüşlü" />
         </conditions>
       </target>
       <target id="EKFIIL_TANIMLAMA_DUr">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" position="BeforeSource" operand="FY_EDILGEN_Ul_(U)n" />
-          <condition operator="MorphemeSequenceEquals" position="BeforeSource"
-                     operand="FY_EDILGEN_Ul_(U)n, FC_YF_YETERLILIK_(y)Abil" />
+          <condition morpheme="BeforeSource" operator="MorphemeEquals" operand="FY_EDILGEN_Ul_(U)n" />
+          <condition morpheme="BeforeSource" operator="MorphemeSequenceEquals" operand="FY_EDILGEN_Ul_(U)n, FC_YF_YETERLILIK_(y)Abil" />
         </conditions>
       </target>
     </source>
@@ -1110,17 +1103,17 @@
     <source id="FIILIMSI_SIFAT_DUK">
       <target id="IC_HAL_AYRILMA_DAn">
         <conditions flag="Or">
-          <condition operator="IsLastMorpheme" position="Target" />
+          <condition morpheme="Target" operator="IsLastMorpheme" />
         </conditions>
       </target>
       <target id="IC_COGUL_lAr">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_BEN_(U)m" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_SEN_(U)n" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_O_(s)U" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_BIZ_(U)mUz" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_SIZ_(U)nUz" />
-          <condition operator="MorphemeEquals" position="AfterTarget" operand="IC_SAHIPLIK_ONLAR_lArI" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_BEN_(U)m" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_SEN_(U)n" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_O_(s)U" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_BIZ_(U)mUz" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_SIZ_(U)nUz" />
+          <condition morpheme="AfterTarget" operator="MorphemeEquals" operand="IC_SAHIPLIK_ONLAR_lArI" />
         </conditions>
       </target>
       <targetGroup id="ISIM_SAHIPLIK" />
@@ -1237,7 +1230,7 @@
       </copy>
       <target id="FY_ETTIRGEN_DUr_(U)t">
         <conditions flag="Or">
-          <condition operator="MorphemeEquals" position="BeforeSource" operand="IY_FIIL_lA" />
+          <condition morpheme="BeforeSource" operator="MorphemeEquals" operand="IY_FIIL_lA" />
         </conditions>
       </target>
     </source>
@@ -1307,12 +1300,12 @@
       <target id="IC_SAHIPLIK_O_(s)U" />
       <target id="IC_SAHIPLIK_BIZ_(U)mUz">
         <conditions flag="Or">
-          <condition operator="MorphemeSequenceEquals" position="BeforeSource" operand="SAYI, IC_COGUL_lAr" />
+          <condition morpheme="BeforeSource" operator="MorphemeSequenceEquals" operand="SAYI, IC_COGUL_lAr" />
         </conditions>
       </target>
       <target id="IC_SAHIPLIK_SIZ_(U)nUz">
         <conditions flag="Or">
-          <condition operator="MorphemeSequenceEquals" position="BeforeSource" operand="SAYI, IC_COGUL_lAr" />
+          <condition morpheme="BeforeSource" operator="MorphemeSequenceEquals" operand="SAYI, IC_COGUL_lAr" />
         </conditions>
       </target>
       <target id="EKFIIL_TANIMLAMA_DUr" />

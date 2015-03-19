@@ -213,7 +213,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-                "sanatkaranedir"                                
+                "sanatkaranedir","kitaplaştıramadıklarımızdanmışçasına"                                
             };
             //string[] testStrings = SoruTest.Soru;
            AnalysisHelper.Analyze(Analyzer, testStrings);
