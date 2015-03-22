@@ -56,7 +56,12 @@ namespace Nuve.Reader
             Debug.Print("suffixes: " + sw.ElapsedMilliseconds.ToString() + " ms");
             sw.Restart();
 
-            return new Language(morphotactics, roots, suffixes);
+
+            var index = _dirPath.LastIndexOf("\\") ; 
+
+            var langCode = index > -1 ?_dirPath.Substring(index + 1) : _dirPath;
+
+            return new Language(langCode, morphotactics, roots, suffixes);
         }
 
         private Orthography ReadOrthography()

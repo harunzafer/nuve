@@ -16,15 +16,17 @@ namespace Nuve.Lang
     /// </summary>
     public sealed class Language
     {
+        private readonly string _code;
         private readonly Morphotactics _morphotactics;
         private readonly MorphemeSurfaceDictionary<Root> _roots;
         private readonly Suffixes _suffixes;
 
-        internal Language(
+        internal Language(string code,
             Morphotactics morphotactics, 
             MorphemeSurfaceDictionary<Root> roots, 
             Suffixes suffixes)
         {
+            _code = code;
             _morphotactics = morphotactics;
             _roots = roots;
             _suffixes = suffixes;
@@ -44,6 +46,11 @@ namespace Nuve.Lang
             }
 
             return null;
+        }
+
+        public IEnumerable<Suffix> AllSuffixes
+        {
+            get { return _suffixes.SuffixesById.Values; }
         }
 
         public IEnumerable<Root> GetRoots(string surface)
@@ -71,5 +78,9 @@ namespace Nuve.Lang
 
         public static readonly Language Turkish;
 
+        public override string ToString()
+        {
+            return _code;
+        }
     }
 }
