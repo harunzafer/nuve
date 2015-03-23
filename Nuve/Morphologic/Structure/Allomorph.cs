@@ -198,7 +198,7 @@ namespace Nuve.Morphologic.Structure
         private void ProcessFirstRules()
         {
             if (HasNext)
-                _morpheme.ProcessRules(Order.One, this);
+                _morpheme.ProcessRules(Phase.One, this);
         }
 
         /// <summary>
@@ -207,7 +207,7 @@ namespace Nuve.Morphologic.Structure
         private void ProcessPrevRules()
         {
             if (HasPrevious)
-                _morpheme.ProcessRules(Order.Two, this);
+                _morpheme.ProcessRules(Phase.Two, this);
         }
 
         /// <summary>
@@ -216,7 +216,7 @@ namespace Nuve.Morphologic.Structure
         private void ProcessNextRules()
         {
             if (HasNext)
-                _morpheme.ProcessRules(Order.Three, this);
+                _morpheme.ProcessRules(Phase.Three, this);
         }
 
         /// <summary>
@@ -226,7 +226,7 @@ namespace Nuve.Morphologic.Structure
         private void ProcessSelfRules()
         {
             if (!HasNext)
-                _morpheme.ProcessRules(Order.Four, this);
+                _morpheme.ProcessRules(Phase.Four, this);
         }
 
         /// <summary>
@@ -235,27 +235,27 @@ namespace Nuve.Morphologic.Structure
         /// </summary>
         private void ProcessDefaultRules()
         {
-            _morpheme.ProcessRules(Order.Fife, this);
+            _morpheme.ProcessRules(Phase.Fife, this);
         }
 
 
-        internal void ProcessRules(Order order)
+        internal void ProcessRules(Phase phase)
         {
-            switch (order)
+            switch (phase)
             {
-                case Order.One:
+                case Phase.One:
                     ProcessFirstRules();
                     break;
-                case Order.Two:
+                case Phase.Two:
                     ProcessPrevRules();
                     break;
-                case Order.Three:
+                case Phase.Three:
                     ProcessNextRules();
                     break;
-                case Order.Four:
+                case Phase.Four:
                     ProcessSelfRules();
                     break;
-                case Order.Fife:
+                case Phase.Fife:
                     ProcessDefaultRules();
                     break;
             }

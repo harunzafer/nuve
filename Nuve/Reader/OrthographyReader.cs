@@ -58,7 +58,7 @@ namespace Nuve.Reader
         {
             //string description = ruleNode["description"].InnerText;
             string id = ruleNode.Attributes["id"].InnerText;
-            string order = ruleNode.Attributes["order"].InnerText;
+            string order = ruleNode.Attributes["phase"].InnerText;
             List<Transformation> transforms = ReadTransformations(ruleNode, order);
             return new OrthographyRule(id, Int32.Parse(order), transforms);
         }

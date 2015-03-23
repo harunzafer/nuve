@@ -177,31 +177,48 @@ namespace Nuve.Morphologic.Structure
             return _surface;
         }
 
+        public IList<string> GetSurfacesAfterEachPhase()
+        {
+            var surfaces = new List<string>();
+
+            foreach (Phase phase in Enum.GetValues(typeof(Phase)))
+            {
+                ProcessRulesOnAllomorphs(phase);
+                surfaces.Add(ConcatAllomorphSurfaces());    
+            }
+
+            return surfaces;
+        }
+
         /// <summary>
         /// Önce sol sonra sağ ortografik kurallar işletilerek kelimenin yüzeyi biçimi oluşturulur.
         /// </summary>
         private void GenerateSurface()
-        {
-            ProcessRulesOnAllomorphs(Order.One);
-            ProcessRulesOnAllomorphs(Order.Two);
-            ProcessRulesOnAllomorphs(Order.Three);
-            ProcessRulesOnAllomorphs(Order.Four);
-            ProcessRulesOnAllomorphs(Order.Fife);
+        {            
+            foreach (Phase phase in Enum.GetValues(typeof(Phase)))
+            {
+                ProcessRulesOnAllomorphs(phase);
+            }
 
+            _surface = ConcatAllomorphSurfaces();
+        }
+
+        private string ConcatAllomorphSurfaces()
+        {
             var sb = new StringBuilder("");
             foreach (Allomorph allomorph in _allomorphs)
             {
                 sb.Append(allomorph.Surface);
             }
 
-            _surface = sb.ToString();
+            return sb.ToString();
         }
 
-        private void ProcessRulesOnAllomorphs(Order morphemeType)
+        private void ProcessRulesOnAllomorphs(Phase phase)
         {
             foreach (Allomorph allomorph in _allomorphs)
             {
-                allomorph.ProcessRules(morphemeType);
+                allomorph.ProcessRules(phase);
             }
         }
 

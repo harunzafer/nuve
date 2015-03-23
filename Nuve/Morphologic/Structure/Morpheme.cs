@@ -26,7 +26,7 @@ namespace Nuve.Morphologic.Structure
         /// <example>
         /// Morfem <see cref="Suffix"/> ise sistemde her suffix için biricik (unique) tanımlanmış olan id değerini 
         /// döndürür. Mesela çoğul eki için IC_COGUL_lAr gibi. <para/>
-        /// Morfem <see cref="Root"/> ise Root'un tipini (root.Order) döndürür<para/>
+        /// Morfem <see cref="Root"/> ise Root'un tipini (root.Phase) döndürür<para/>
         /// </example>
         public string Id{ get { return _id; }}
         private readonly string _id;
@@ -106,12 +106,12 @@ namespace Nuve.Morphologic.Structure
         /// <param name="surface">Ortografik kurallar işletilerek değişime uğrayacak olan o anki yüzey biçimi</param>
         /// <param name="leftSurface">Bir önceki morfemin o anki yüzey biçimi</param>
         /// <returns>İşletilen kurallar neticesine değişen yüzeyin son hali</returns>
-        internal void ProcessRules(Order order, Allomorph allomorph)
+        internal void ProcessRules(Phase phase, Allomorph allomorph)
         {
             if (HasRule)
                 foreach (OrthographyRule rule in Rules)
                 {
-                    if (rule.Type == order)
+                    if (rule.Type == phase)
                         rule.Process(allomorph);
                 }
 
