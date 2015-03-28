@@ -5,7 +5,7 @@ using System.Xml;
 
 namespace Nuve.Reader
 {
-    class MyXmlResolver : XmlResolver 
+    class EmbeddedXmlResolver : XmlResolver 
     {
 
 

@@ -91,6 +91,7 @@
     <Compile Include="Morphologic\DictionaryGraph.cs" />
     <Compile Include="Morphologic\IGraph.cs" />
     <Compile Include="Morphologic\Transition.cs" />
+    <Compile Include="Reader\ExternalDtdUrlResolver.cs" />
     <Compile Include="Reader\SuffixLexiconReader.cs" />
     <Compile Include="Stemming\DictionaryStemmer.cs" />
     <Compile Include="Lang\Language.cs" />
@@ -136,7 +137,7 @@
     <Compile Include="Reader\EmbeddedResourceReader.cs" />
     <Compile Include="Reader\LabelSet.cs" />
     <Compile Include="Reader\MorphotacticsReader.cs" />
-    <Compile Include="Reader\MyXmlResolver.cs" />
+    <Compile Include="Reader\EmbeddedXmlResolver.cs" />
     <Compile Include="Reader\OrthographyReader.cs" />
     <Compile Include="Reader\PropertySet.cs" />
     <Compile Include="Reader\RootLexiconReader.cs" />

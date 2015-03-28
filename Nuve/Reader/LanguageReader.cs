@@ -36,10 +36,10 @@ namespace Nuve.Reader
         }
 
         public Language Read()
-        {           
+        {
             Stopwatch sw = new Stopwatch();
             sw.Start();
-            
+
             _orthography = ReadOrthography();
             Debug.Print("orthograpy: " + sw.ElapsedMilliseconds.ToString() + " ms");
             sw.Restart();
@@ -51,15 +51,15 @@ namespace Nuve.Reader
             var roots = ReadRoots();
             Debug.Print("roots: " + sw.ElapsedMilliseconds.ToString() + " ms");
             sw.Restart();
-            
+
             var suffixes = ReadSuffixes();
             Debug.Print("suffixes: " + sw.ElapsedMilliseconds.ToString() + " ms");
             sw.Restart();
 
 
-            var index = _dirPath.LastIndexOf("\\") ; 
+            var index = _dirPath.LastIndexOf("\\");
 
-            var langCode = index > -1 ?_dirPath.Substring(index + 1) : _dirPath;
+            var langCode = index > -1 ? _dirPath.Substring(index + 1) : _dirPath;
 
             return new Language(langCode, morphotactics, roots, suffixes);
         }
@@ -91,8 +91,10 @@ namespace Nuve.Reader
 
                 if (_external)
                 {
-                    var stream = new FileStream(path, FileMode.Open, FileAccess.Read);
-                    return MorphotacticsReader.Read(stream, _orthography.Alphabet);
+                    using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                    {
+                        return MorphotacticsReader.Read(stream, _orthography.Alphabet);
+                    }
                 }
 
                 var xml = EmbeddedResourceReader.Read(path);
@@ -118,9 +120,12 @@ namespace Nuve.Reader
 
                 if (_external)
                 {
-                    var stream = new FileStream(rootsPath, FileMode.Open, FileAccess.Read);
-                    reader.AddEntries(TextToDataSet.Convert(stream, DefaultTableName, Delimiter), DefaultTableName,
-                        roots);
+                    using (var stream = new FileStream(rootsPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                    {
+                        reader.AddEntries(TextToDataSet.Convert(stream, DefaultTableName, Delimiter), DefaultTableName,
+                            roots);
+                    }
+
                     return roots;
                 }
 
@@ -154,9 +159,12 @@ namespace Nuve.Reader
 
                 if (_external)
                 {
-                    var stream = new FileStream(path, FileMode.Open, FileAccess.Read);
-                    reader.Read(TextToDataSet.Convert(stream, DefaultTableName, Delimiter), DefaultTableName,
-                        out suffixesById, out suffixesBySurface);
+                    using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                    {
+                        reader.Read(TextToDataSet.Convert(stream, DefaultTableName, Delimiter), DefaultTableName,
+                            out suffixesById, out suffixesBySurface);
+                    }
+
                     return new Suffixes(suffixesById, suffixesBySurface);
                 }
 
@@ -196,13 +204,16 @@ namespace Nuve.Reader
             XmlReader reader;
             if (!_external)
             {
-                settings.XmlResolver = new MyXmlResolver();
+                settings.XmlResolver = new EmbeddedXmlResolver();
                 var stream = EmbeddedResourceReader.Read(path);
                 reader = XmlReader.Create(stream, settings);
             }
+
             else
             {
-                reader = XmlReader.Create(path, settings);
+                var stream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+                settings.XmlResolver = new ExternalDtdUrlResolver(path);
+                reader = XmlReader.Create(stream, settings);
             }
 
             return reader;

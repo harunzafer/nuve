@@ -6,6 +6,7 @@ using System.Text;
 using System.Windows.Forms;
 using Nuve.Lang;
 using Nuve.NGrams;
+using Nuve.Reader;
 using Nuve.Sentence;
 using Nuve.Stemming;
 
@@ -87,6 +88,17 @@ namespace Nuve.Gui
 
             //}
 
+
+            try
+            {
+                Language language = new LanguageReader(@"C:\Users\hrzafer\Desktop\nuve-studio\lang\tr").Read();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
+            
 
             Test();
             //var solutions = Analyzer.Analyze("bunu");
