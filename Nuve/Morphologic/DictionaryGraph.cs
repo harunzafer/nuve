@@ -1,28 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Nuve.Morphologic
 {
-    class DictionaryGraph: IGraph<string>
+    internal class DictionaryGraph : IGraph<string>
     {
-        Dictionary<string, Transition<string>> dict = new Dictionary<string, Transition<string>>();
+        private const string Delim = "+";
+        private readonly Dictionary<string, Transition<string>> _dict = new Dictionary<string, Transition<string>>();
+
         public bool ContainsEdge(string source, string target)
         {
-            return dict.ContainsKey(source + target);
+            string key = GetKey(source, target);
+            return _dict.ContainsKey(key);
         }
 
         public bool TryGetEdge(string source, string target, out Transition<string> edge)
         {
-            return dict.TryGetValue(source + target, out edge);
+            string key = GetKey(source, target);
+            return _dict.TryGetValue(key, out edge);
         }
 
         public void AddEdge(Transition<string> edge)
         {
-            string key = edge.Source + edge.Target;
-            if (!dict.ContainsKey(key)){
-                dict[key] = edge;
+            string key = GetKey(edge.Source, edge.Target);
+
+            if (!_dict.ContainsKey(key))
+            {
+                _dict[key] = edge;
             }
         }
 
@@ -31,15 +34,16 @@ namespace Nuve.Morphologic
             var list = new List<Transition<string>>();
             outEdges = null;
 
-            foreach (var d in dict)
+            foreach (var d in _dict)
             {
-                if (d.Key.StartsWith(source))
+                if (d.Key.StartsWith(source + Delim))
                 {
                     list.Add(d.Value);
                 }
             }
 
-            if (list.Count > 0){
+            if (list.Count > 0)
+            {
                 outEdges = list;
                 return true;
             }
@@ -49,11 +53,15 @@ namespace Nuve.Morphologic
 
         public void AddEdges(IEnumerable<Transition<string>> edges)
         {
-            foreach (Transition<string> t in edges)
+            foreach (var t in edges)
             {
                 AddEdge(t);
             }
         }
 
+        private string GetKey(string source, string target)
+        {
+            return source + Delim + target;
+        }
     }
 }
