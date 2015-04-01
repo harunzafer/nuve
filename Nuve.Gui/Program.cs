@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Nuve.Lang;
+using Nuve.Morphologic.Structure;
 using Nuve.NGrams;
 using Nuve.Reader;
 using Nuve.Sentence;
@@ -24,125 +25,41 @@ namespace Nuve.Gui
         [STAThread]
         private static void Main()
         {
-            //var lines = File.ReadAllLines(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcExtra.txt");
-            //var splitter = new RegexTokenizerBase(RegexTokenizerBase.Pattern);
-
-            //var tokens = new List<string>();
-            //foreach (var line in lines)
-            //{
-            //    tokens.AddRange(splitter.Split(line));
-            //}
-
-
-            //var sb = new StringBuilder();
-            //foreach (var token in tokens)
-            //{
-            //    if (token == " " || token=="")
-            //    {
-            //        continue;
-            //    }
-            //    var solutions = Analyzer.Analyze(token).ToList();
-            //    if (token != token.ToLower())
-            //    {
-            //        solutions.AddRange(Analyzer.Analyze(token.ToLower()));
-            //    }
-
-            //    sb.Append(token).Append('\n');
-            //    foreach (var solution in solutions)
-            //    {
-            //        sb.Append('\t').Append(solution).Append('\n');
-            //    }
-            //    sb.Append('\n');
-
-            //}
-
-            //File.WriteAllText(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcExtraTagged.txt", sb.ToString());
-
             //Benchmarker.TestWithAMillionWords(Analyzer);
+            //Benchmarker.TestWithAMillionTokens(Analyzer);
 
-            //File.WriteAllLines(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalizedTokenized.txt", tokens);
-            //var test = TestGenerator.GenerateContainsAnalysisTest(SpecialCase.ZamirSoruNe, "ZamirSoruNeTest");
-            //Console.WriteLine(test);
-            //Test();
+            Language tr = Language.Turkish;
 
-            //Benchmarker.TestWithAMillionWords(Analyzer);
-            Benchmarker.TestWithAMillionTokens(Analyzer);
+            //Analysis
+            var analyzer = new WordAnalyzer(tr);
 
-            //AnaylzeWithCache(0);
+            //Morphologic Analysis and stemming
+            IList<Word> solutions = analyzer.Analyze("deneme");
 
-
-            //TokenizerBenchmark.TestWithAMillionWords(new WhitespaceTokenizer(false));
-
-            //var splitter = new RegexTokenizerBase(RegexTokenizerBase.Pattern);
-            //splitter.Split("bu bir, denemedir harun@gmail.com! !");
-
-            //string pattern = @"(\s+)|(\d+)|(\w+)";
-            //string input = "He said that 123 was 321 the 123abc answer.";
-            //var matches = Regex.Matches(input, pattern, RegexOptions.IgnoreCase);
-            //foreach (Match match in matches)
-            //{
-            //    Console.WriteLine("Group-0: '{0}' group-1: '{1}' group-2 '{2}'",
-            //                      match.Groups[1].Value, match.Groups[2].Value, match.Groups[3].Value);
-            //    Console.WriteLine(match.Groups);
-
-
-            //}
-
-
-            try
+            foreach (var solution in solutions)
             {
-                Language language = new LanguageReader(@"C:\Users\hrzafer\Desktop\nuve-studio\lang\tr").Read();
+                Console.WriteLine("\t{0}", solution);
+                Console.WriteLine("\toriginal:{0} stem:{1}\n",
+                solution.GetSurface(),
+                solution.GetStem().GetSurface()); //Stemming
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+
+            //Morphologic Generation
+            Root root = tr.GetRootsHavingSurface("kitap").First();
+
+            var word = new Word(root);
+            word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
+            word.AddSuffix(tr.GetSuffix("IC_SAHIPLIK_BEN_(U)m"));
+            word.AddSuffix(tr.GetSuffix("IC_HAL_BULUNMA_DA"));
+            word.AddSuffix(tr.GetSuffix("IC_AITLIK_ki"));
+            word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
+            word.AddSuffix(tr.GetSuffix("IC_HAL_AYRILMA_DAn"));
+
+            Console.WriteLine(word.GetSurface());
             
             
-
             Test();
-            //var solutions = Analyzer.Analyze("bunu");
-            //foreach (var solution in solutions)
-            //{
-            //    Console.WriteLine(solution.GetHashCode());
-            //}
-
-
-            //var deserializedProduct = JsonConvert.DeserializeObject<NGramDictionary>(output);
-
-            ////var model = CreateModel();
-
-            //var model = new NGramModel(2, @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\model_uni_bi.json");
-
-            //IStemmer stemmer = new DictionaryStemmer();
-            ////var betterModel = CreateBetterModel(stemmer);
-            //var betterModel = new NGramModel(2, @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\model_uni_bi.json");
-
-            //IStemmer betterStemmer = new StatisticalStemmer(betterModel, Analyzer);
-
-            ////Console.WriteLine(stemmer.GetStem("araştırmalardı"));
-            ////Console.WriteLine(stemmer.GetStem("annesiydi"));
-
-            //StemmerEvaluator.Evaluate(stemmer, @"C:\Users\hrzafer\Dropbox\nuve\data\expected_stems.txt");
-
-            //StemmerEvaluator.Evaluate(betterStemmer, @"C:\Users\hrzafer\Dropbox\nuve\data\expected_stems.txt");
-
-
-            //var words = File.ReadAllLines(@"C:\Users\hrzafer\Desktop\workspace\Damla\code\suggestion\unigrams.txt")
-            //    .Select(x => x.Split(null)[0]);
-            //var output = @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\nuve_stems2.dict";
-
-            //StemDictionaryGenerator.Generate(words, betterStemmer, output);
-
-            //StemFirst500();
-
-            //GetProbabilities("kitaplar");
-
-            //var extractor = new NGramExtractor(NGramSize.Trigram);
-            //var tokens = File.ReadAllText(@"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalized.txt").Split(null).ToList();
-            //tokens.RemoveAll(x => x.Length == 0);
-            //var map = extractor.ExtractAsDictionary(tokens);
-            //ToSortedFile(map, @"C:\Users\hrzafer\Dropbox\nuve\corpus\bigrams.txt");
+        
         }
 
         public static void AnaylzeWithCache(int cacheSize)

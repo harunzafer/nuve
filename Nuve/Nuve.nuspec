@@ -11,7 +11,11 @@
     <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>N-gram extraction feature is added. See project page for more detail.</releaseNotes>
+    <releaseNotes>
+		- Quickgraph dependency is removed
+		- Language object creation time is improved dramatically
+		- Turkish dictionary is extended and minor errors are fixed
+		- Analysis time is improved. (24K word per second on a i5 2.8 GHz 64 bit machine)
     <copyright>Copyright 2014</copyright>
     <tags>NLP Turkish Turkic</tags>
   </metadata>

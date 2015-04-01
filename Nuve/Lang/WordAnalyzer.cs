@@ -115,7 +115,7 @@ namespace Nuve.Lang
             {
                 string prefix = token.Substring(0, i + 1);
 
-                var roots = _lang.GetRoots(prefix);
+                var roots = _lang.GetRootsHavingSurface(prefix);
 
                 foreach (Root root in roots)
                 {
@@ -133,7 +133,7 @@ namespace Nuve.Lang
             {
                 string prefix = token.Substring(0, i + 1);
 
-                var suffixes = _lang.GetSuffixes(prefix);
+                var suffixes = _lang.GetSuffixesHavingSurface(prefix);
 
                 foreach (Suffix suffix in suffixes)
                 {

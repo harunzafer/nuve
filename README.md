@@ -14,12 +14,12 @@ Nuve is used for its morphologic generation ability in this project: http://fiil
 Use cases for the above tasks are as follows: 
 
 
-#### Morphologic Analysis, Stemming and Generation:
+#### Morphologic Analysis and Stemming
 
-```
+```c#
 Language tr = Language.Turkish;
 
-//Analysis
+//Create a new WordAnalyzer for Turkish words
 var analyzer = new WordAnalyzer(tr);
 
 //Morphologic Analysis and stemming
@@ -32,8 +32,21 @@ foreach (var solution in solutions)
     solution.GetSurface(), 
     solution.GetStem().GetSurface()); //Stemming
 }
+```
+Output:
+```
+	de/FIIL Ul/FY_EDILGEN_Ul_(U)n yAmA/FC_YF_YETERSIZLIK_(y)AmA
+	original:deneme stem:deneme
+	
+	dene/FIIL mA/FIILIMSI_ISIM_mA
+	original:deneme stem:deneme
 
-//Morphologic Generation
+	dene/FIIL mA/FY_OLUMSUZLUK_mA
+	original:deneme stem:deneme
+```
+####Morphologic Generation
+```
+
 Root root = tr.Roots.Get("kitap")[0];
  
 word = new Word(root);
@@ -46,7 +59,10 @@ word.AddSuffix(tr.Suffixes.GetSuffix("IC_HAL_AYRILMA_DAn"));
  
 return word.GetSurface();
 ```
- 
+Output:
+```
+	kitaplarımdakilerden
+```
 ####Sentence Segmentation:     
 
 ```
@@ -88,5 +104,5 @@ In Visual Studio open [Package Manager Console] (http://docs.nuget.org/docs/star
 
     PM> Install-Package Nuve
 
-   
+
 

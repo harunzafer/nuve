@@ -21,7 +21,7 @@ namespace Nuve.Test.Orthographic
         [TestCase("kalem", Result = "kalemlerimdekilerden")]
         public string LerimdekilerdenTest(string rootWord)
         {
-            Root root = tr.GetRoots(rootWord).First();
+            Root root = tr.GetRootsHavingSurface(rootWord).First();
             word = new Word(root);
             word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
             word.AddSuffix(tr.GetSuffix("IC_SAHIPLIK_BEN_(U)m"));

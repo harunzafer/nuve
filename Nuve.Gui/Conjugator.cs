@@ -25,7 +25,7 @@ namespace Nuve.Gui
 
         private static Root GetVerbRoot(string verbRoot)
         {
-            var roots = Language.Turkish.GetRoots(verbRoot);
+            var roots = Language.Turkish.GetRootsHavingSurface(verbRoot);
             foreach (Root root in roots)
             {
                 if (root.Id == "FIIL")

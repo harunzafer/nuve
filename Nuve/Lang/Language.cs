@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
@@ -37,6 +38,11 @@ namespace Nuve.Lang
             get { return _morphotactics; }
         }
 
+        /// <summary>
+        /// Returns the immutable Suffix object having given id
+        /// </summary>
+        /// <param name="id">unique id of the Suffix</param>
+        /// <returns>Returns the Suffix or null if no Suffix with the id exists</returns>
         public Suffix GetSuffix(string id)
         {
             Suffix suffix;
@@ -53,12 +59,27 @@ namespace Nuve.Lang
             get { return _suffixes.SuffixesById.Values; }
         }
 
-        public IEnumerable<Root> GetRoots(string surface)
+        /// <summary>
+        /// Returns the roots having the specified surface. For example if
+        /// the surface is "ara", for Language.Turkish this method returns
+        /// to roots, (ara ISIM) and (ara FIIL)
+        /// </summary>
+        /// <param name="surface"></param>
+        /// <returns>Returns an empty list if no root has the specified surface</returns>
+        public IEnumerable<Root> GetRootsHavingSurface(string surface)
         {
             return _roots.Get(surface);
         }
 
-        public IEnumerable<Suffix> GetSuffixes(string surface)
+
+        /// <summary>
+        /// Returns the suffixes having the specified surface. For example if
+        /// the surface is "ma", for Language.Turkish this method returns
+        /// to suffixes, FIILIMSI_ISIM_mA and FY_OLUMSUZLUK_mA
+        /// </summary>
+        /// <param name="surface"></param>
+        /// <returns>Returns an empty list if no suffix has the specified surface</returns>
+        public IEnumerable<Suffix> GetSuffixesHavingSurface(string surface)
         {
             return _suffixes.SuffixesBySurface.Get(surface);
         }
