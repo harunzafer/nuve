@@ -66,7 +66,7 @@ namespace Nuve.Gui
             //Test();
 
             //Benchmarker.TestWithAMillionWords(Analyzer);
-            //Benchmarker.TestWithAMillionTokens(Analyzer);
+            Benchmarker.TestWithAMillionTokens(Analyzer);
 
             //AnaylzeWithCache(0);
 

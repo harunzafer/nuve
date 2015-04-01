@@ -27,5 +27,10 @@ namespace Nuve.Gui
         {
             return cache.Count;
         }
+
+        public static bool IsEmpty
+        {
+            get { return cache.Count == 0; }
+        }
     }
 }

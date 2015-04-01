@@ -27,7 +27,7 @@ namespace Nuve.Gui
             Stopwatch sw = Stopwatch.StartNew();
             Process(lines, analyzer);
             sw.Stop();
-            Console.WriteLine("Time taken for a million different words: {0}ms", sw.Elapsed.TotalMilliseconds);
+            Console.WriteLine("Time taken for a million different words: {0} s", sw.Elapsed.TotalSeconds);
             GC.Collect();
         }
 
@@ -41,7 +41,7 @@ namespace Nuve.Gui
             Stopwatch sw = Stopwatch.StartNew();
             Process(lines, analyzer);
             sw.Stop();
-            Console.WriteLine("For a million tokens\tcache: {0}\ttime: {1}ms\tmemory: {2}",Cache.GetSize(), sw.Elapsed.TotalMilliseconds, GC.GetTotalMemory(false)/1024);
+            Console.WriteLine("For a million tokens\tcache: {0}\ttime: {1} s\tmemory: {2}",Cache.GetSize(), sw.Elapsed.TotalSeconds, GC.GetTotalMemory(false)/1024);
             GC.Collect();
             
         }
