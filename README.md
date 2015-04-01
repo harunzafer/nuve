@@ -19,21 +19,22 @@ Use cases for the above tasks are as follows:
 ```c#
 Language tr = Language.Turkish;
 
-//Create a new WordAnalyzer for Turkish words
+//Analysis
 var analyzer = new WordAnalyzer(tr);
 
 //Morphologic Analysis and stemming
 IList<Word> solutions = analyzer.Analyze("deneme");
- 
+
 foreach (var solution in solutions)
 {
-    Console.WriteLine("\t{0}\n", solution);
-    Console.WriteLine("\toriginal:{0} stem:{1}\n", 
-    solution.GetSurface(), 
+    Console.WriteLine("\t{0}", solution);
+    Console.WriteLine("\toriginal:{0} stem:{1}\n",
+    solution.GetSurface(),
     solution.GetStem().GetSurface()); //Stemming
 }
 ```
 Output:
+
 ```
 	de/FIIL Ul/FY_EDILGEN_Ul_(U)n yAmA/FC_YF_YETERSIZLIK_(y)AmA
 	original:deneme stem:deneme
@@ -44,28 +45,31 @@ Output:
 	dene/FIIL mA/FY_OLUMSUZLUK_mA
 	original:deneme stem:deneme
 ```
+
 ####Morphologic Generation
+
+```c#
+Root root = tr.GetRootsHavingSurface("kitap").First();
+
+var word = new Word(root);
+word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
+word.AddSuffix(tr.GetSuffix("IC_SAHIPLIK_BEN_(U)m"));
+word.AddSuffix(tr.GetSuffix("IC_HAL_BULUNMA_DA"));
+word.AddSuffix(tr.GetSuffix("IC_AITLIK_ki"));
+word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
+word.AddSuffix(tr.GetSuffix("IC_HAL_AYRILMA_DAn"));
+
+Console.WriteLine(word.GetSurface());
 ```
 
-Root root = tr.Roots.Get("kitap")[0];
- 
-word = new Word(root);
-word.AddSuffix(tr.Suffixes.GetSuffix("IC_COGUL_lAr"));
-word.AddSuffix(tr.Suffixes.GetSuffix("IC_SAHIPLIK_BEN_(U)m"));
-word.AddSuffix(tr.Suffixes.GetSuffix("IC_HAL_BULUNMA_DA"));
-word.AddSuffix(tr.Suffixes.GetSuffix("IC_AITLIK_ki"));
-word.AddSuffix(tr.Suffixes.GetSuffix("IC_COGUL_lAr"));
-word.AddSuffix(tr.Suffixes.GetSuffix("IC_HAL_AYRILMA_DAn"));
- 
-return word.GetSurface();
-```
 Output:
 ```
 	kitaplarımdakilerden
 ```
+
 ####Sentence Segmentation:     
 
-```
+```c#
  var paragraph = "Prof. Dr. Ahmet Bey 1.6 oranında artış var dedi 2. kez. E-posta adresi ahmet.bilir@prof.dr imiş! Doğru mu?";
  Splitter splitter = new RegexSplitter(RegexSplitter.ClassicPattern);
  var segmenter = new TokenBasedSentenceSegmenter(splitter);
@@ -78,7 +82,7 @@ Output:
 
 #### N-gram Extraction:     
 
-```
+```c#
 string Text1 = "I am Sam";
 string Text2 = "Sam I am";
 string Text3 = "I do not like green eggs and ham";
