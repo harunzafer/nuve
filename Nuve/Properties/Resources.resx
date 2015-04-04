@@ -150,4 +150,7 @@
   <data name="langCodeLength" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="MaxPhaseNum" xml:space="preserve">
+    <value>5</value>
+  </data>
 </root>

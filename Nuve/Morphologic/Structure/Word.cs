@@ -181,7 +181,7 @@ namespace Nuve.Morphologic.Structure
         {
             var surfaces = new List<string>();
 
-            foreach (Phase phase in Enum.GetValues(typeof(Phase)))
+            for (int phase = 1; phase <= OrthographyRule.MaxPhaseNum; phase++)
             {
                 ProcessRulesOnAllomorphs(phase);
                 surfaces.Add(ConcatAllomorphSurfaces());    
@@ -194,10 +194,12 @@ namespace Nuve.Morphologic.Structure
         /// Önce sol sonra sağ ortografik kurallar işletilerek kelimenin yüzeyi biçimi oluşturulur.
         /// </summary>
         private void GenerateSurface()
-        {            
-            foreach (Phase phase in Enum.GetValues(typeof(Phase)))
+        {
+
+            for (int phase = 1; phase <= OrthographyRule.MaxPhaseNum; phase++)
             {
                 ProcessRulesOnAllomorphs(phase);
+            
             }
 
             _surface = ConcatAllomorphSurfaces();
@@ -214,7 +216,7 @@ namespace Nuve.Morphologic.Structure
             return sb.ToString();
         }
 
-        private void ProcessRulesOnAllomorphs(Phase phase)
+        private void ProcessRulesOnAllomorphs(int phase)
         {
             foreach (Allomorph allomorph in _allomorphs)
             {

@@ -124,6 +124,15 @@ namespace Nuve.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 5.
+        /// </summary>
+        internal static string MaxPhaseNum {
+            get {
+                return ResourceManager.GetString("MaxPhaseNum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to morphotactics.xml.
         /// </summary>
         internal static string MorphotacticsFileName {

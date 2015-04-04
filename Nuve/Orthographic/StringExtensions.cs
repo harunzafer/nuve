@@ -35,9 +35,18 @@ namespace Nuve.Orthographic
             return str;
         }
 
+        internal static bool IsNullOrEmpty(this string str)
+        {
+            return str == null || str == "";
+        }
+
         public static bool FirstCharEqualsAny(this string str, IList<char> letters)
         {
-            str.ThrowIfNullOrEmpty();
+            if (str.IsNullOrEmpty())
+            {
+                return false;
+            }
+            
             char first = str[0];
 
             foreach (char letter in letters)

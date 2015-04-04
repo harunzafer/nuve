@@ -25,40 +25,40 @@ namespace Nuve.Gui
         [STAThread]
         private static void Main()
         {
-            //Benchmarker.TestWithAMillionWords(Analyzer);
+            Benchmarker.TestWithAMillionWords(Analyzer);
             //Benchmarker.TestWithAMillionTokens(Analyzer);
 
-            Language tr = Language.Turkish;
+            //Language tr = Language.Turkish;
 
-            //Analysis
-            var analyzer = new WordAnalyzer(tr);
+            ////Analysis
+            //var analyzer = new WordAnalyzer(tr);
 
-            //Morphologic Analysis and stemming
-            IList<Word> solutions = analyzer.Analyze("deneme");
+            ////Morphologic Analysis and stemming
+            //IList<Word> solutions = analyzer.Analyze("deneme");
 
-            foreach (var solution in solutions)
-            {
-                Console.WriteLine("\t{0}", solution);
-                Console.WriteLine("\toriginal:{0} stem:{1}\n",
-                solution.GetSurface(),
-                solution.GetStem().GetSurface()); //Stemming
-            }
+            //foreach (var solution in solutions)
+            //{
+            //    Console.WriteLine("\t{0}", solution);
+            //    Console.WriteLine("\toriginal:{0} stem:{1}\n",
+            //    solution.GetSurface(),
+            //    solution.GetStem().GetSurface()); //Stemming
+            //}
 
-            //Morphologic Generation
-            Root root = tr.GetRootsHavingSurface("kitap").First();
+            ////Morphologic Generation
+            //Root root = tr.GetRootsHavingSurface("kitap").First();
 
-            var word = new Word(root);
-            word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
-            word.AddSuffix(tr.GetSuffix("IC_SAHIPLIK_BEN_(U)m"));
-            word.AddSuffix(tr.GetSuffix("IC_HAL_BULUNMA_DA"));
-            word.AddSuffix(tr.GetSuffix("IC_AITLIK_ki"));
-            word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
-            word.AddSuffix(tr.GetSuffix("IC_HAL_AYRILMA_DAn"));
+            //var word = new Word(root);
+            //word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
+            //word.AddSuffix(tr.GetSuffix("IC_SAHIPLIK_BEN_(U)m"));
+            //word.AddSuffix(tr.GetSuffix("IC_HAL_BULUNMA_DA"));
+            //word.AddSuffix(tr.GetSuffix("IC_AITLIK_ki"));
+            //word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
+            //word.AddSuffix(tr.GetSuffix("IC_HAL_AYRILMA_DAn"));
 
-            Console.WriteLine(word.GetSurface());
+            //Console.WriteLine(word.GetSurface());
             
             
-            Test();
+            //Test();
         
         }
 

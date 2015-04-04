@@ -198,7 +198,7 @@ namespace Nuve.Morphologic.Structure
         private void ProcessFirstRules()
         {
             if (HasNext)
-                _morpheme.ProcessRules(Phase.One, this);
+                _morpheme.ProcessRules(1, this);
         }
 
         /// <summary>
@@ -207,7 +207,7 @@ namespace Nuve.Morphologic.Structure
         private void ProcessPrevRules()
         {
             if (HasPrevious)
-                _morpheme.ProcessRules(Phase.Two, this);
+                _morpheme.ProcessRules(2, this);
         }
 
         /// <summary>
@@ -216,7 +216,7 @@ namespace Nuve.Morphologic.Structure
         private void ProcessNextRules()
         {
             if (HasNext)
-                _morpheme.ProcessRules(Phase.Three, this);
+                _morpheme.ProcessRules(3, this);
         }
 
         /// <summary>
@@ -226,7 +226,7 @@ namespace Nuve.Morphologic.Structure
         private void ProcessSelfRules()
         {
             if (!HasNext)
-                _morpheme.ProcessRules(Phase.Four, this);
+                _morpheme.ProcessRules(4, this);
         }
 
         /// <summary>
@@ -235,27 +235,27 @@ namespace Nuve.Morphologic.Structure
         /// </summary>
         private void ProcessDefaultRules()
         {
-            _morpheme.ProcessRules(Phase.Fife, this);
+            _morpheme.ProcessRules(5, this);
         }
 
 
-        internal void ProcessRules(Phase phase)
+        internal void ProcessRules(int phase)
         {
             switch (phase)
             {
-                case Phase.One:
+                case 1:
                     ProcessFirstRules();
                     break;
-                case Phase.Two:
+                case 2:
                     ProcessPrevRules();
                     break;
-                case Phase.Three:
+                case 3:
                     ProcessNextRules();
                     break;
-                case Phase.Four:
+                case 4:
                     ProcessSelfRules();
                     break;
-                case Phase.Fife:
+                case 5:
                     ProcessDefaultRules();
                     break;
             }
