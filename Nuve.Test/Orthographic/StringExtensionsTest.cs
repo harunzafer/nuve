@@ -19,8 +19,7 @@ namespace Nuve.Test.Orthographic
         [TestCase("ab", "aeıioöuü", Result = true)]
         public bool FirstLetterEqualsAnyTest(String str, String letters)
         {
-            IList<char> charList = new List<char>(letters.ToCharArray());
-            return str.FirstCharEqualsAny(charList);
+            return str.FirstCharEqualsAny(letters);
         }
 
         [TestCase(null, "", ExpectedException = typeof(ArgumentNullException))]
@@ -34,8 +33,7 @@ namespace Nuve.Test.Orthographic
         [TestCase("ab", "aeıioöuü", Result = false)]
         public bool LastLetterEqualsAnyTest(String str, String letters)
         {            
-            IList<char> charList = new List<char>(letters.ToCharArray());
-            return str.LastCharEqualsAny(charList);
+            return str.LastCharEqualsAny(letters);
         }
 
         [TestCase("deneme", "aeıioöuü", Result = 'e')]
@@ -44,8 +42,7 @@ namespace Nuve.Test.Orthographic
         [TestCase("bbbbbü", "aeıioöuü", Result = 'ü')]
         public char? FirstOccurrenceOfAnyTest(String str, String letters)
         {
-            IList<char> charList = new List<char>(letters.ToCharArray());
-            return str.FirstOccurrenceOfAny(charList);
+            return str.FirstOccurrenceOfAny(letters);
         }
            
         [TestCase("a", "aeıioöuü", Result = 'a')]
@@ -55,8 +52,7 @@ namespace Nuve.Test.Orthographic
         [TestCase("babalü", "aeıioöuü", Result = 'ü')]
         public char? LastOccurrenceOfAnyTest(String str, String letters)
         {
-            IList<char> charList = new List<char>(letters.ToCharArray());
-            return str.LastOccurrenceOfAny(charList);
+            return str.LastOccurrenceOfAny(letters);
         }
 
 
@@ -67,8 +63,7 @@ namespace Nuve.Test.Orthographic
         [TestCase("ae", "aeıioöuü", Result = 'a')]
         public char? PenultimateOccurrenceOfAnyTest(String str, String letters)
         {
-            IList<char> charList = new List<char>(letters.ToCharArray());
-            return str.PenultimateOccurrenceOfAny(charList);
+            return str.PenultimateOccurrenceOfAny(letters);
         }
 
         [TestCase("babeli", "aeıioöuü", Result = "bbeli")]
@@ -77,7 +72,7 @@ namespace Nuve.Test.Orthographic
         [TestCase("bbb", "aeıioöuü", Result = "bbb")]
         public string DeleteFirstOccurrenceOfAnyTest(String str, String letters)
         {            
-            return str.DeleteFirstOccurrenceOfAny(letters.ToCharArray());
+            return str.DeleteFirstOccurrenceOfAny(letters);
         }
 
         [TestCase("babeli", "aeıioöuü", Result = "babel")]
@@ -86,7 +81,7 @@ namespace Nuve.Test.Orthographic
         [TestCase("bbb", "aeıioöuü", Result = "bbb")]
         public string DeleteLastOccurrenceOfAnyTest(String str, String letters)
         {
-            return str.DeleteLastOccurrenceOfAny(letters.ToCharArray());
+            return str.DeleteLastOccurrenceOfAny(letters);
         }
        
         [TestCase("a", Result = "")]

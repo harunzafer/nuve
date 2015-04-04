@@ -22,8 +22,8 @@ namespace Nuve.Reader
         {
             XmlNode consonantsNode = xml.GetElementsByTagName("consonants")[0].FirstChild;
             XmlNode vowelsNode = xml.GetElementsByTagName("vowels")[0].FirstChild;
-            var consonants = new List<char>(consonantsNode.Value.ToCharArray());
-            var vowels = new List<char>(vowelsNode.Value.ToCharArray());
+            var consonants = consonantsNode.Value;
+            var vowels = vowelsNode.Value;
             return new Alphabet(consonants, vowels);
         }
 

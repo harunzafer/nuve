@@ -4,7 +4,7 @@ namespace Nuve.Orthographic
 {
     static class CharSet
     {
-         public static readonly IList<char> TurkishConsonants = new List<char>("bcçdfgğhjklmnprsştvyz".ToCharArray());
-         public static readonly IList<char> TurkishVowels = new List<char>("aeıioöuü".ToCharArray());
+         public static readonly string TurkishConsonants = "bcçdfgğhjklmnprsştvyz";
+         public static readonly string TurkishVowels = "aeıioöuü";
     }
 }

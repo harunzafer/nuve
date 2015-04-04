@@ -12,7 +12,7 @@ namespace Nuve.Condition
         public override bool IsTrueFor(Allomorph allomorph)
         {
             string neighbourSurface = allomorph.GetSurface(Position);
-            return neighbourSurface.LastCharEqualsAny(Operand.ToList());
+            return neighbourSurface.LastCharEqualsAny(Operand);
         }
     }
 }

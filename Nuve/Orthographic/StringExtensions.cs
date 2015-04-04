@@ -35,48 +35,40 @@ namespace Nuve.Orthographic
             return str;
         }
 
-        internal static bool IsNullOrEmpty(this string str)
-        {
-            return str == null || str == "";
-        }
+        //internal static bool IsNullOrEmpty(this string str)
+        //{
+        //    return string.IsNullOrEmpty(str);
+        //}
 
-        public static bool FirstCharEqualsAny(this string str, IList<char> letters)
+        public static bool FirstCharEqualsAny(this string str, string letters)
         {
-            if (str.IsNullOrEmpty())
+            if (string.IsNullOrEmpty(str))
             {
                 return false;
             }
             
             char first = str[0];
 
-            foreach (char letter in letters)
-            {
-                if (first == letter)
-                {
-                    return true;
-                }
-            }
+            return letters.IndexOf(first) > -1;
 
-            return false;
+           
         }
 
-        public static bool LastCharEqualsAny(this string str, IList<char> letters)
+        public static bool LastCharEqualsAny(this string str, string letters)
         {
-            str.ThrowIfNullOrEmpty();
+            if (string.IsNullOrEmpty(str))
+            {
+                return false;
+            }
+
             char last = str[str.Length - 1];
 
-            foreach (char letter in letters)
-            {
-                if (last == letter)
-                {
-                    return true;
-                }
-            }
+            return letters.IndexOf(last) > -1;
 
-            return false;
+            
         }
 
-        public static char? FirstOccurrenceOfAny(this string str, IList<char> letters)
+        public static char? FirstOccurrenceOfAny(this string str, string letters)
         {
             int index = str.IndexOfAny(letters.ToArray());
 
@@ -88,7 +80,7 @@ namespace Nuve.Orthographic
             return str[index];
         }
 
-        public static char? LastOccurrenceOfAny(this string str, IList<char> letters)
+        public static char? LastOccurrenceOfAny(this string str, string letters)
         {
             int index = str.LastIndexOfAny(letters.ToArray());
 
@@ -101,7 +93,7 @@ namespace Nuve.Orthographic
         }
         
         //Sondan bir önceki
-        public static char? PenultimateOccurrenceOfAny(this string str, IList<char> letters)
+        public static char? PenultimateOccurrenceOfAny(this string str, string letters)
         {
             int index = str.LastIndexOfAny(letters.ToArray());
             if (index == -1)
@@ -119,7 +111,7 @@ namespace Nuve.Orthographic
             return str[index];
         }
 
-        public static string DeleteFirstOccurrenceOfAny(this string str, IList<char> letters)
+        public static string DeleteFirstOccurrenceOfAny(this string str, string letters)
         {
             str.ThrowIfNullOrEmpty();
             
@@ -133,7 +125,7 @@ namespace Nuve.Orthographic
             return str.Remove(index, 1);
         }
 
-        public static string DeleteLastOccurrenceOfAny(this string str, IList<char> letters)
+        public static string DeleteLastOccurrenceOfAny(this string str, string letters)
         {
             str.ThrowIfNullOrEmpty();
 
