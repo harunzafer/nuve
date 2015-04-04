@@ -70,6 +70,7 @@ namespace Nuve.Morphologic.Structure
             _type = type;
             _labels = labels;
             _rules = rules;
+            HasRule = _rules.Any();
         }
 
         /// <summary>
@@ -78,26 +79,12 @@ namespace Nuve.Morphologic.Structure
         /// <value>
         ///   <c>true</c> Eğer bir ya da daha fazla kural varsa; hiç kural yoksa, <c>false</c>.
         /// </value>
-        protected bool HasRule
-        {
-            get { return Rules.Any(); }
-        }
+        protected readonly bool HasRule;
+        
 
-        /// <summary>
-        /// Morfem'in herhangi bir ortografi kuralı olup olmadığına bakar.
-        /// </summary>
-        /// <value>
-        ///   <c>true</c> Eğer bir ya da daha fazla kural varsa; hiç kural yoksa, <c>false</c>.
-        /// </value>
         internal bool ContainsRule(string id)
         {
-            foreach (var rule in _rules)
-            {
-                if (rule.Id == id)
-                    return true;
-            }
-
-            return false;
+            return _rules.Any(rule => rule.Id == id);
         }
 
         /// <summary>

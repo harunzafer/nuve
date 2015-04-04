@@ -8,10 +8,10 @@ namespace Nuve.Test.Orthographic
     [TestFixture]
     public class StringExtensionsTest
     {
-        [TestCase(null, "", ExpectedException = typeof(ArgumentNullException))]
-        [TestCase(null, "test", ExpectedException = typeof(ArgumentNullException))]
-        [TestCase("", "", ExpectedException = typeof(ArgumentException))]
-        [TestCase("", "aeıioöuü", ExpectedException = typeof(ArgumentException))]
+        [TestCase(null, "", Result = false)]
+        [TestCase(null, "test", Result = false)]
+        [TestCase("", "", Result = false)]
+        [TestCase("", "aeıioöuü", Result = false)]
         [TestCase("test", "", Result = false)]
         [TestCase("a", "aeıioöuü", Result = true)]
         [TestCase("b", "aeıioöuü", Result = false)]
@@ -22,10 +22,10 @@ namespace Nuve.Test.Orthographic
             return str.FirstCharEqualsAny(letters);
         }
 
-        [TestCase(null, "", ExpectedException = typeof(ArgumentNullException))]
-        [TestCase(null, "test", ExpectedException = typeof(ArgumentNullException))]
-        [TestCase("", "", ExpectedException = typeof(ArgumentException))]
-        [TestCase("", "aeıioöuü", ExpectedException = typeof(ArgumentException))]
+        [TestCase(null, "", Result = false)]
+        [TestCase(null, "test", Result = false)]
+        [TestCase("", "", Result = false)]
+        [TestCase("", "aeıioöuü", Result = false)]
         [TestCase("test", "", Result = false)]
         [TestCase("a", "aeıioöuü", Result = true)]
         [TestCase("b", "aeıioöuü", Result = false)]

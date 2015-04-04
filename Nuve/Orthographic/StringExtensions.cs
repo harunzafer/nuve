@@ -9,6 +9,20 @@ namespace Nuve.Orthographic
 {
     public static class StringExtensions
     {
+        private const string DoubleQuote = "\"";
+        private const string SingleQuote = "'";
+
+        public static readonly IDictionary<string, string> DefaultNormalizationMap = new Dictionary<string, string>
+        {
+            {"''", DoubleQuote},
+            {"”", DoubleQuote},
+            {"“", DoubleQuote},
+            {"»", DoubleQuote},
+            {"«", DoubleQuote},
+            {"’", SingleQuote},
+            {"‘", SingleQuote},
+            {"…", "..."},
+        };
 
         internal static void ThrowIfNullOrEmpty(this string str)
         {
@@ -35,23 +49,16 @@ namespace Nuve.Orthographic
             return str;
         }
 
-        //internal static bool IsNullOrEmpty(this string str)
-        //{
-        //    return string.IsNullOrEmpty(str);
-        //}
-
         public static bool FirstCharEqualsAny(this string str, string letters)
         {
             if (string.IsNullOrEmpty(str))
             {
                 return false;
             }
-            
+
             char first = str[0];
 
             return letters.IndexOf(first) > -1;
-
-           
         }
 
         public static bool LastCharEqualsAny(this string str, string letters)
@@ -64,8 +71,6 @@ namespace Nuve.Orthographic
             char last = str[str.Length - 1];
 
             return letters.IndexOf(last) > -1;
-
-            
         }
 
         public static char? FirstOccurrenceOfAny(this string str, string letters)
@@ -91,7 +96,7 @@ namespace Nuve.Orthographic
 
             return str[index];
         }
-        
+
         //Sondan bir önceki
         public static char? PenultimateOccurrenceOfAny(this string str, string letters)
         {
@@ -114,7 +119,7 @@ namespace Nuve.Orthographic
         public static string DeleteFirstOccurrenceOfAny(this string str, string letters)
         {
             str.ThrowIfNullOrEmpty();
-            
+
             int index = str.IndexOfAny(letters.ToArray());
 
             if (index == -1)
@@ -136,7 +141,7 @@ namespace Nuve.Orthographic
                 return str;
             }
 
-            return str.Remove(index,1);
+            return str.Remove(index, 1);
         }
 
         public static string DeleteFirstChar(this string str)
@@ -147,7 +152,7 @@ namespace Nuve.Orthographic
 
         public static string DeleteLastChar(this string str)
         {
-            str.ThrowIfNullOrEmpty();   
+            str.ThrowIfNullOrEmpty();
             return str.Remove(str.Length - 1);
         }
 
@@ -174,7 +179,7 @@ namespace Nuve.Orthographic
         }
 
         public static string RemoveParentheses(this string str)
-        {           
+        {
             var rgx = new Regex(@"(\(|\))");
             return rgx.Replace(str, "");
         }
@@ -192,7 +197,7 @@ namespace Nuve.Orthographic
             return false;
         }
 
-
+        //String'in ilk harfini büyütür
         public static string UppercaseFirst(this string str)
         {
             if (String.IsNullOrEmpty(str))
@@ -221,25 +226,8 @@ namespace Nuve.Orthographic
             return words.Select(word => word.Analysis).ToList();
         }
 
-        private const string DoubleQuote = "\"";
-        private const string SingleQuote = "'";
-
-        public static readonly IDictionary<string, string> DefaultNormalizationMap = new Dictionary<string, string>
-        {
-                
-            {"''", DoubleQuote}, 
-            {"”",  DoubleQuote},
-            {"“",  DoubleQuote},
-            {"»",  DoubleQuote},
-            {"«",  DoubleQuote},
-            {"’",  SingleQuote},
-            {"‘",  SingleQuote},
-            {"…",  "..."},
-                
-        };
-
         /// <summary>
-        /// Replaces each key of the map with corresponding value
+        ///     Replaces each key of the map with corresponding value
         /// </summary>
         /// <param name="s"></param>
         /// <param name="map"></param>
