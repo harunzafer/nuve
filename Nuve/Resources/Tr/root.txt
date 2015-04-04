@@ -27357,3 +27357,4 @@ evrensel 					SIFAT	sıfat				Türkçe	Hayır
 değerlendir					FIIL	fiil, ettirgen_dur				Türkçe	Hayır				
 ortalama					ZARF	zarf				Türkçe	Hayır				
 yabancı					SIFAT	sıfat				Türkçe	Hayır				
+art					FIIL	fiil									

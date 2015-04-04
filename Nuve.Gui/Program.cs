@@ -25,7 +25,7 @@ namespace Nuve.Gui
         [STAThread]
         private static void Main()
         {
-            Benchmarker.TestWithAMillionWords(Analyzer);
+            //Benchmarker.TestWithAMillionWords(Analyzer);
             //Benchmarker.TestWithAMillionTokens(Analyzer);
 
             //Language tr = Language.Turkish;
@@ -58,7 +58,7 @@ namespace Nuve.Gui
             //Console.WriteLine(word.GetSurface());
             
             
-            //Test();
+            Test();
         
         }
 
@@ -142,7 +142,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-                "sanatkaranedir","kitaplaştıramadıklarımızdanmışçasına"                                
+                "yaptırıveremedim","tabiki"                                
             };
             //string[] testStrings = SoruTest.Soru;
            AnalysisHelper.Analyze(Analyzer, testStrings);

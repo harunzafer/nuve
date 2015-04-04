@@ -193,6 +193,7 @@
     <source id="SIFAT">
       <copy id="ISIM">
         <removeTarget id="IY_ISIM_KUCULTME_CUK" />
+        <removeTarget id="IC_AITLIK_ki" />
       </copy>
       <target id="IY_ISIM_KUCULTME_CUK">
         <conditions flag="Or">
@@ -1017,6 +1018,7 @@
 
     <source id="FC_YF_TEZLIK_(y)Uver">
       <copy id="FC_YF_SUREKLILIK_(y)Adur" />
+      <target id="FC_YF_YETERSIZLIK_(y)AmA" />
     </source>
 
     <source id="FC_YF_YAKLASMA_(y)Ayaz">
