@@ -3,9 +3,9 @@ using Nuve.Morphologic.Structure;
 
 namespace Nuve.Orthographic.Action
 {
-    class AppendAction : BaseAction
+    class Append : BaseAction
     {
-        public AppendAction(Alphabet alphabet, string operandOne, string operandTwo, string flag)
+        public Append(Alphabet alphabet, string operandOne, string operandTwo, string flag)
             : base(alphabet, operandOne, operandTwo, flag) { }
 
 

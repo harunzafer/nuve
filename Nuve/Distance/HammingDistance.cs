@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
 
-namespace NLPT.Distance
+namespace Nuve.Distance
 {
     /// <summary>
     /// Manhattan distance ile aynı şey bu bağlamda

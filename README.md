@@ -8,8 +8,9 @@ Nuve is a Natural Language Processing Library for Turkish. Currently it supports
  - Sentence (segmentation) boundary detection
  - N-gram extraction
 
-Morphologic Analysis is demonstrated here: http://nuvedemo.apphb.com/
-Nuve is used for its morphologic generation ability in this project: http://fiilcek.apphb.com/
+Morphologic Analysis is demonstrated here: http://nuvedemo.apphb.com
+
+Morphologic Generation is demonstrated here: http://fiilcek.apphb.com
 
 Use cases for the above tasks are as follows: 
 

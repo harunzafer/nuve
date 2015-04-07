@@ -3,7 +3,7 @@ using Nuve.Orthographic;
 
 namespace Nuve.Condition
 {
-    class ConditionFactory
+    static class ConditionFactory
     {
         public static ConditionBase Create(string name, string morphemeLocation, string operand, Alphabet alphabet)
         {

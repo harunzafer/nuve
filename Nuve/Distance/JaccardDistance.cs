@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Linq;
-using System.Text;
 
-namespace NLPT.Distance
+namespace Nuve.Distance
 {
     /// <summary>
     /// Önce Jaccard benzerliğini bulup 1'den çıkararak uzaklığı elde ediyoruz.

@@ -1,5 +1,4 @@
 ﻿using System;
-using NLPT.Distance;
 
 namespace Nuve.Distance
 {

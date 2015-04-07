@@ -14,18 +14,18 @@ namespace Nuve.Orthographic
 
         public readonly string Id;
         public readonly int Phase;
-        private readonly List<Transformation> transformations;
+        private readonly List<Transformation> _transformations;
 
         public OrthographyRule(string id, int order, List<Transformation> transformations)
         {
             Phase = order;
             Id = id;
-            this.transformations = transformations;
+            this._transformations = transformations;
         }
 
         public void Process(Allomorph allomorph)
         {
-            foreach (Transformation transformation in transformations)
+            foreach (Transformation transformation in _transformations)
             {
                 if (transformation.Condition.IsTrue(allomorph))
                 {

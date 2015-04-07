@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace NLPT.Distance
+﻿namespace Nuve.Distance
 {
     //http://www.sequentix.de/gelquest/help/distance_measures.htm
     //Burada sıra öneml değil. string karşılaştırmadan ziyade

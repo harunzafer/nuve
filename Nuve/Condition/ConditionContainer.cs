@@ -13,18 +13,18 @@ namespace Nuve.Condition
         {
             if (String.IsNullOrEmpty(flag) || flag == "Or")
             {
-                this._flag = false;
+                _flag = false;
             }
             else if (flag=="And")
             {
-                this._flag = true;
+                _flag = true;
             }
             else
             {
                 throw new ArgumentException("Geçersiz Flag deðeri, And veya Or olmalý :)");
             }
 
-            this._conditions = conditions;
+            _conditions = conditions;
         }
 
         public bool IsEmpty

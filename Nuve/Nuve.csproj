@@ -113,7 +113,7 @@
     <Compile Include="NGrams\NGramDictionary.cs" />
     <Compile Include="NGrams\NGramExtractor.cs" />
     <Compile Include="Orthographic\Action\ActionFactory.cs" />
-    <Compile Include="Orthographic\Action\AppendAction.cs" />
+    <Compile Include="Orthographic\Action\Append.cs" />
     <Compile Include="Orthographic\Action\BaseAction.cs" />
     <Compile Include="Orthographic\Action\DeleteFirstLetter.cs" />
     <Compile Include="Orthographic\Action\DeleteFirstVowel.cs" />
@@ -121,7 +121,7 @@
     <Compile Include="Orthographic\Action\DeleteLastVowel.cs" />
     <Compile Include="Orthographic\Action\DoubleLastLetter.cs" />
     <Compile Include="Orthographic\Action\LexicalToSurface.cs" />
-    <Compile Include="Orthographic\Action\ReplaceAction.cs" />
+    <Compile Include="Orthographic\Action\Replace.cs" />
     <Compile Include="Orthographic\Alphabet.cs" />
     <Compile Include="Orthographic\CharSet.cs" />
     <Compile Include="Orthographic\Orthography.cs" />

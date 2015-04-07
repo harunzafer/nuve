@@ -1,5 +1,4 @@
-﻿using NLPT.Distance;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Nuve.Distance;
 
 namespace Nuve.Test.Distance

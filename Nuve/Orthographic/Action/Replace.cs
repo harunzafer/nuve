@@ -3,9 +3,9 @@ using Nuve.Morphologic.Structure;
 
 namespace Nuve.Orthographic.Action
 {
-    internal class ReplaceAction : BaseAction
+    internal class Replace : BaseAction
     {
-        public ReplaceAction(Alphabet alphabet, string operandOne, string operandTwo, string flag)
+        public Replace(Alphabet alphabet, string operandOne, string operandTwo, string flag)
             : base(alphabet, operandOne, operandTwo, flag) { }
 
         public override void Do(Allomorph allomorph, Position position)
@@ -13,11 +13,11 @@ namespace Nuve.Orthographic.Action
             Allomorph operand;
             if (TryGetOperandMorpheme(allomorph, out operand, position))
             {
-                operand.Surface = Replace(operand.Surface);            
+                operand.Surface = _Replace(operand.Surface);            
             }
         }
 
-        protected string Replace(string str)
+        private string _Replace(string str)
         {
             if (Flag == "last")
             {

@@ -15,9 +15,8 @@ namespace Nuve.Condition
             {
                 return !operand.HasNext;
             }
-            return false;
 
-            //allomorph = allomorph.Next;
+            return false;
         }
     }
 }
