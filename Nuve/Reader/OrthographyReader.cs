@@ -58,23 +58,23 @@ namespace Nuve.Reader
         {
             //string description = ruleNode["description"].InnerText;
             string id = ruleNode.Attributes["id"].InnerText;
-            string order = ruleNode.Attributes["phase"].InnerText;
-            List<Transformation> transforms = ReadTransformations(ruleNode, order);
-            return new OrthographyRule(id, Int32.Parse(order), transforms);
+            string level = ruleNode.Attributes["phase"].InnerText;
+            List<Transformation> transforms = ReadTransformations(ruleNode);
+            return new OrthographyRule(id, Int32.Parse(level), transforms);
         }
 
-        private static List<Transformation> ReadTransformations(XmlNode ruleNode, string type)
+        private static List<Transformation> ReadTransformations(XmlNode ruleNode)
         {
             XmlNodeList transformNodeList = ruleNode.SelectNodes("transformation");
             var transforms = new List<Transformation>();
             foreach (XmlNode transformNode in transformNodeList)
             {
-                transforms.Add(ReadTransform(transformNode, type));
+                transforms.Add(ReadTransform(transformNode));
             }
             return transforms;
         }
 
-        private static Transformation ReadTransform(XmlNode transformNode, string type)
+        private static Transformation ReadTransform(XmlNode transformNode)
         {
             string morpheme = transformNode.Attributes["morpheme"].InnerText;
 
@@ -95,36 +95,36 @@ namespace Nuve.Reader
 
             if (transformNode.HasChildNodes)
             {
-                conditions = ReadConditionContainer(transformNode.FirstChild, type);
+                conditions = ReadConditionContainer(transformNode.FirstChild);
             }
 
             return new Transformation(action, morpheme, conditions);
         }
 
-        private static ConditionContainer ReadConditionContainer(XmlNode conditionsNode, string type)
+        private static ConditionContainer ReadConditionContainer(XmlNode conditionsNode)
         {
             var conditions = new List<ConditionBase>();
             string flag = conditionsNode.Attributes["flag"].InnerText;
 
             if (conditionsNode.HasChildNodes)
             {
-                conditions = ConditionsAsList(conditionsNode.ChildNodes, type);
+                conditions = ConditionsAsList(conditionsNode.ChildNodes);
             }
 
             return new ConditionContainer(conditions, flag);
         }
 
-        private static List<ConditionBase> ConditionsAsList(XmlNodeList ruleNodeList, string type)
+        private static List<ConditionBase> ConditionsAsList(XmlNodeList ruleNodeList)
         {
             var conditions = new List<ConditionBase>();
             foreach (XmlNode node in ruleNodeList)
             {
-                conditions.Add(ReadCondition(node, type));
+                conditions.Add(ReadCondition(node));
             }
             return conditions;
         }
         
-        private static ConditionBase ReadCondition(XmlNode node, string type)
+        private static ConditionBase ReadCondition(XmlNode node)
         {
             string name = node.Attributes["operator"].InnerText;
             
