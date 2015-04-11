@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
 using Nuve.NGrams;
 
@@ -16,50 +14,115 @@ namespace Nuve.Test.NGrams
         private const int Bigram = 2;
         private const int Trigram = 3;
 
+        private const string Text1 = "I am Sam";
+        private const string Text2 = "Sam I am";
+        private const string Text3 = "I do not like green eggs and ham";
+
         [Test]
         public void AddStartStopSymbolsTest()
         {
-            var tokens = new[] { "this", "is", "a", "test" };
-            var actual = tokens.ToList();
-            var expected = tokens.ToList();
+            var tokens = new[] {"this", "is", "a", "test"};
+            List<string> actual = tokens.ToList();
+            List<string> expected = tokens.ToList();
             var model = new NGramModel(Unigram);
             model.AddStartStopSymbols(actual);
             CollectionAssert.AreEqual(expected, actual);
 
             model = new NGramModel(Bigram);
             actual = tokens.ToList();
-            expected = new[] { "<s0>", "this", "is", "a", "test", "</s>" }.ToList();
+            expected = new[] {"<s0>", "this", "is", "a", "test", "</s>"}.ToList();
             model.AddStartStopSymbols(actual);
             CollectionAssert.AreEqual(expected, actual);
 
             model = new NGramModel(Trigram);
             actual = tokens.ToList();
-            expected = new[] { "<s1>", "<s0>", "this", "is", "a", "test", "</s>" }.ToList();
+            expected = new[] {"<s1>", "<s0>", "this", "is", "a", "test", "</s>"}.ToList();
             model.AddStartStopSymbols(actual);
             CollectionAssert.AreEqual(expected, actual);
 
             model = new NGramModel(4);
             actual = tokens.ToList();
-            expected = new[] { "<s2>", "<s1>", "<s0>", "this", "is", "a", "test", "</s>" }.ToList();
+            expected = new[] {"<s2>", "<s1>", "<s0>", "this", "is", "a", "test", "</s>"}.ToList();
             model.AddStartStopSymbols(actual);
             CollectionAssert.AreEqual(expected, actual);
         }
 
-        private const string Text1 = "I am Sam";
-        private const string Text2 = "Sam I am";
-        private const string Text3 = "I do not like green eggs and ham";
+
+        [Test]
+        public void TestGetSequenceProbabilityForBigramModel()
+        {
+            var model = new NGramModel(Bigram);
+
+            model.AddSentence(Text1.Split(null).ToList());
+            model.AddSentence(Text2.Split(null).ToList());
+            model.AddSentence(Text3.Split(null).ToList());
+
+            double actual = model.GetSentenceProbability("I", "am", "Sam");
+            double expected = .111;
+            Assert.AreEqual(expected, Math.Round(actual, 3));
+
+            actual = model.GetSentenceProbability("Sam", "I", "am");
+            expected = .056;
+            Assert.AreEqual(expected, Math.Round(actual, 3));
+
+            actual = model.GetSentenceProbability("I", "do", "not", "like", "green", "eggs", "and", "ham");
+            expected = .222;
+            Assert.AreEqual(expected, Math.Round(actual, 3));
+
+            actual = model.GetSentenceProbability("I", "am", "Sam", "I", "am");
+            expected = .037;
+            Assert.AreEqual(expected, Math.Round(actual, 3));
+
+            actual = model.GetSentenceProbability("I", "am");
+            expected = .222;
+            Assert.AreEqual(expected, Math.Round(actual, 3));
+
+            actual = model.GetSentenceProbability("I", "am", "the");
+            expected = .0;
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void TestGetSequenceProbabilityForTrigramModel()
+        {
+            var model = new NGramModel(Trigram);
+
+            model.AddSentence(Text1.Split(null).ToList());
+            model.AddSentence(Text2.Split(null).ToList());
+            model.AddSentence(Text3.Split(null).ToList());
+
+            double actual = model.GetSentenceProbability("I", "am", "Sam");
+            double expected = .167;
+            Assert.AreEqual(expected, Math.Round(actual, 3));
+
+            actual = model.GetSentenceProbability("Sam", "I", "am");
+            expected = .167;
+            Assert.AreEqual(expected, Math.Round(actual, 3));
+
+            actual = model.GetSentenceProbability("I", "do", "not", "like", "green", "eggs", "and", "ham");
+            expected = .333;
+            Assert.AreEqual(expected, Math.Round(actual, 3));
+
+            actual = model.GetSentenceProbability("I", "am", "Sam", "I", "am");
+            expected = .000;
+            Assert.AreEqual(expected, Math.Round(actual, 3));
+
+            actual = model.GetSentenceProbability("I", "am");
+            expected = .167;
+            Assert.AreEqual(expected, Math.Round(actual, 3));
+        }
 
         [Test]
         public void TestGetSequenceProbabilityForUnigramModel()
         {
             var model = new NGramModel(Unigram);
-            
+
             model.AddSentence(Text1.Split(null).ToList());
             model.AddSentence(Text2.Split(null).ToList());
             model.AddSentence(Text3.Split(null).ToList());
-            
-            var actual = model.GetSentenceProbability("I");
-            var expected = 0.21;
+
+            double actual = model.GetSentenceProbability("I");
+            double expected = 0.21;
             Assert.AreEqual(expected, Math.Round(actual, 2));
 
             actual = model.GetSentenceProbability("Sam");
@@ -98,72 +161,6 @@ namespace Nuve.Test.NGrams
             actual = model.GetSentenceProbability("Sam", "I", "am");
             expected = 0.0044;
             Assert.AreEqual(expected, Math.Round(actual, 4));
-        }
-
-
-        [Test]
-        public void TestGetSequenceProbabilityForBigramModel()
-        {
-            var model = new NGramModel(Bigram);
-
-            model.AddSentence(Text1.Split(null).ToList());
-            model.AddSentence(Text2.Split(null).ToList());
-            model.AddSentence(Text3.Split(null).ToList());
-
-            var actual = model.GetSentenceProbability("I" ,"am", "Sam");
-            var expected = .111;
-            Assert.AreEqual(expected, Math.Round(actual, 3));
-
-            actual = model.GetSentenceProbability("Sam", "I", "am");
-            expected = .056;
-            Assert.AreEqual(expected, Math.Round(actual, 3));
-
-            actual = model.GetSentenceProbability("I", "do", "not", "like", "green", "eggs", "and", "ham");
-            expected = .222;
-            Assert.AreEqual(expected, Math.Round(actual, 3));
-
-            actual = model.GetSentenceProbability("I", "am", "Sam", "I", "am");
-            expected = .037;
-            Assert.AreEqual(expected, Math.Round(actual, 3));
-
-            actual = model.GetSentenceProbability("I", "am");
-            expected = .222;
-            Assert.AreEqual(expected, Math.Round(actual, 3));
-
-            actual = model.GetSentenceProbability("I", "am", "the");
-            expected = .0;
-            Assert.AreEqual(expected, actual);
-            
-        }
-
-        [Test]
-        public void TestGetSequenceProbabilityForTrigramModel()
-        {
-            var model = new NGramModel(Trigram);
-
-            model.AddSentence(Text1.Split(null).ToList());
-            model.AddSentence(Text2.Split(null).ToList());
-            model.AddSentence(Text3.Split(null).ToList());
-
-            var actual = model.GetSentenceProbability("I", "am", "Sam");
-            var expected = .167;
-            Assert.AreEqual(expected, Math.Round(actual, 3));
-
-            actual = model.GetSentenceProbability("Sam", "I", "am");
-            expected = .167;
-            Assert.AreEqual(expected, Math.Round(actual, 3));
-
-            actual = model.GetSentenceProbability("I", "do", "not", "like", "green", "eggs", "and", "ham");
-            expected = .333;
-            Assert.AreEqual(expected, Math.Round(actual, 3));
-
-            actual = model.GetSentenceProbability("I", "am", "Sam", "I", "am");
-            expected = .000;
-            Assert.AreEqual(expected, Math.Round(actual, 3));
-
-            actual = model.GetSentenceProbability("I", "am");
-            expected = .167;
-            Assert.AreEqual(expected, Math.Round(actual, 3));
         }
 
         //[Test]
@@ -236,7 +233,7 @@ namespace Nuve.Test.NGrams
 
         //}
 
-    //    var trigams = new NGramDictionary(Trigram, isStartStopSymbolsUsed: true);
+        //    var trigams = new NGramDictionary(Trigram, isStartStopSymbolsUsed: true);
 
         //    trigams.AddSequence(Text1.Split(null).ToList());
         //    trigams.AddSequence(Text2.Split(null).ToList());
@@ -395,7 +392,5 @@ namespace Nuve.Test.NGrams
         //    freq = corpus.GetFrequency("am", "Sam", stop);
         //    Assert.AreEqual(1, freq);
         //}
-
-        
     }
 }

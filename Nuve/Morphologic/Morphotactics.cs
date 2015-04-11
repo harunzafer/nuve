@@ -3,7 +3,7 @@ using Nuve.Morphologic.Structure;
 
 namespace Nuve.Morphologic
 {
-    class Morphotactics
+    internal class Morphotactics
     {
         //private readonly ArrayAdjacencyGraph<string, CustomEdge<string>> _graph;
         private readonly IGraph<string> _graph;
@@ -15,7 +15,6 @@ namespace Nuve.Morphologic
 
         public bool HasTransition(string previousMorphemeId, string nextMorphemeId)
         {
-
             return _graph.ContainsEdge(previousMorphemeId, nextMorphemeId);
 
             //Transition<string> transition;
@@ -31,7 +30,7 @@ namespace Nuve.Morphologic
             for (int i = 0; i < word.AllomorphCount - 1; i++)
             {
                 Transition<string> transition;
-                bool edgeExists = _graph.TryGetEdge(word[i].Morpheme.Id, word[i+1].Morpheme.Id, out transition);
+                bool edgeExists = _graph.TryGetEdge(word[i].Morpheme.Id, word[i + 1].Morpheme.Id, out transition);
                 if (edgeExists && !transition.Conditions.IsTrue(word[i]))
                 {
                     return false;

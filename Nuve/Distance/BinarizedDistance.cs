@@ -5,14 +5,13 @@
     // terimlerden oluşan vektörleri karşılaştırmada kullanmak daha mantıklı. Vektörler sparse olabilir. Bir sürü 0
     // ile uğraşmaya da gerek kalmaz
     // [a, b, c] vektörü ile [d, e, f] vektörü aynı kapıya çıkar böylece.
-    abstract class BinarizedDistance : IDistance
+    internal abstract class BinarizedDistance : IDistance
     {
-        private int a;//
+        private int a; //
         private int b;
         private int c;
 
 
         public abstract double Measure(string s1, string s2);
-    
     }
 }

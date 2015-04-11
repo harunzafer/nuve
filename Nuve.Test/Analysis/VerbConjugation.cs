@@ -2,10 +2,6 @@
 {
     public class VerbConjugation
     {
-        //CTRL + M plus CTRL + L for collapsing all regions recursively.
-        //This one is a toggle, meaning you can do it again to re-open them.
-        //CTRL + M plus CTRL + O to collapse all regions non-recursively.
-
         #region string[] GecmisDiOlumlu
 
         public static string[] GecmisDiOlumlu =
@@ -15,7 +11,7 @@
             "geldi",
             "geldik",
             "geldiniz",
-            "geldiler",
+            "geldiler"
         };
 
         #endregion
@@ -29,7 +25,7 @@
             "gelmedi",
             "gelmedik",
             "gelmediniz",
-            "gelmediler",
+            "gelmediler"
         };
 
         #endregion
@@ -43,7 +39,7 @@
             "geldi_mi",
             "geldik_mi",
             "geldiniz_mi",
-            "geldiler_mi",
+            "geldiler_mi"
         };
 
         #endregion
@@ -57,7 +53,7 @@
             "gelmedi_mi",
             "gelmedik_mi",
             "gelmediniz_mi",
-            "gelmediler_mi",
+            "gelmediler_mi"
         };
 
         #endregion
@@ -71,7 +67,7 @@
             "gelmiş",
             "gelmişiz",
             "gelmişsiniz",
-            "gelmişler",
+            "gelmişler"
         };
 
         #endregion
@@ -85,7 +81,7 @@
             "gelmemiş",
             "gelmemişiz",
             "gelmemişsiniz",
-            "gelmemişler",
+            "gelmemişler"
         };
 
         #endregion
@@ -99,7 +95,7 @@
             "gelmiş_mi",
             "gelmiş_miyiz",
             "gelmiş_misiniz",
-            "gelmişler_mi",
+            "gelmişler_mi"
         };
 
         #endregion
@@ -113,7 +109,7 @@
             "gelmemiş_mi",
             "gelmemiş_miyiz",
             "gelmemiş_misiniz",
-            "gelmemişler_mi",
+            "gelmemişler_mi"
         };
 
         #endregion
@@ -127,7 +123,7 @@
             "geliyor",
             "geliyoruz",
             "geliyorsunuz",
-            "geliyorlar",
+            "geliyorlar"
         };
 
         #endregion
@@ -141,7 +137,7 @@
             "gelmiyor",
             "gelmiyoruz",
             "gelmiyorsunuz",
-            "gelmiyorlar",
+            "gelmiyorlar"
         };
 
         #endregion
@@ -155,7 +151,7 @@
             "geliyor_mu",
             "geliyor_muyuz",
             "geliyor_musunuz",
-            "geliyorlar_mı",
+            "geliyorlar_mı"
         };
 
         #endregion
@@ -169,7 +165,7 @@
             "gelmiyor_mu",
             "gelmiyor_muyuz",
             "gelmiyor_musunuz",
-            "gelmiyorlar_mı",
+            "gelmiyorlar_mı"
         };
 
         #endregion
@@ -212,7 +208,7 @@
             "gelecek",
             "geleceğiz",
             "geleceksiniz",
-            "gelecekler",
+            "gelecekler"
         };
 
         #endregion
@@ -226,7 +222,7 @@
             "gelmeyecek",
             "gelmeyeceğiz",
             "gelmeyeceksiniz",
-            "gelmeyecekler",
+            "gelmeyecekler"
         };
 
         #endregion
@@ -240,7 +236,7 @@
             "gelecek_mi",
             "gelecek_miyiz",
             "gelecek_misiniz",
-            "gelecekler_mi",
+            "gelecekler_mi"
         };
 
         #endregion
@@ -254,7 +250,7 @@
             "gelmeyecek_mi",
             "gelmeyecek_miyiz",
             "gelmeyecek_misiniz",
-            "gelmeyecekler_mi",
+            "gelmeyecekler_mi"
         };
 
         #endregion
@@ -268,7 +264,7 @@
             "yapar",
             "yaparız",
             "yaparsınız",
-            "yaparlar",
+            "yaparlar"
         };
 
         #endregion
@@ -282,7 +278,7 @@
             "yapmaz",
             "yapmayız",
             "yapmazsınız",
-            "yapmazlar",
+            "yapmazlar"
         };
 
         #endregion
@@ -296,7 +292,7 @@
             "yapar_mı",
             "yapar_mıyız",
             "yapar_mısınız",
-            "yaparlar_mı",
+            "yaparlar_mı"
         };
 
         #endregion
@@ -310,7 +306,7 @@
             "yapmaz_mı",
             "yapmaz_mıyız",
             "yapmaz_mısınız",
-            "yapmazlar_mı",
+            "yapmazlar_mı"
         };
 
         #endregion
@@ -339,7 +335,7 @@
             "gelir",
             "yapar",
             "gözler",
-            "kollar",
+            "kollar"
         };
 
         #endregion
@@ -353,7 +349,7 @@
             "gelmeli",
             "gelmeliyiz",
             "gelmelisiniz",
-            "gelmeliler",
+            "gelmeliler"
         };
 
         #endregion
@@ -367,7 +363,7 @@
             "gelmemeli",
             "gelmemeliyiz",
             "gelmemelisiniz",
-            "gelmemeliler",
+            "gelmemeliler"
         };
 
         #endregion
@@ -381,7 +377,7 @@
             "gelmeli_mi",
             "gelmeli_miyiz",
             "gelmeli_misiniz",
-            "gelmeliler_mi",
+            "gelmeliler_mi"
         };
 
         #endregion
@@ -395,7 +391,7 @@
             "gelmemeli_mi",
             "gelmemeli_miyiz",
             "gelmemeli_misiniz",
-            "gelmemeliler_mi",
+            "gelmemeliler_mi"
         };
 
         #endregion
@@ -409,7 +405,7 @@
             "gelse",
             "gelsek",
             "gelseniz",
-            "gelseler",
+            "gelseler"
         };
 
         #endregion
@@ -423,7 +419,7 @@
             "gelmese",
             "gelmesek",
             "gelmeseniz",
-            "gelmeseler",
+            "gelmeseler"
         };
 
         #endregion
@@ -437,7 +433,7 @@
             "gelse_mi",
             "gelsek_mi",
             "gelseniz_mi",
-            "gelseler_mi",
+            "gelseler_mi"
         };
 
         #endregion
@@ -451,7 +447,7 @@
             "gelmese_mi",
             "gelmesek_mi",
             "gelmeseniz_mi",
-            "gelmeseler_mi",
+            "gelmeseler_mi"
         };
 
         #endregion
@@ -467,7 +463,7 @@
             "gelesiniz",
             "geleler",
             "gelsene",
-            "gelsenize",
+            "gelsenize"
         };
 
         #endregion
@@ -483,7 +479,7 @@
             "gelmeyesiniz",
             "gelmeyeler",
             "gelmesene",
-            "gelmesenize",
+            "gelmesenize"
         };
 
         #endregion
@@ -495,7 +491,7 @@
             "geleyim_mi",
             //"gelesin_mi",
             //"gele_mi",
-            "gelelim_mi",
+            "gelelim_mi"
             //"gelesiniz_mi",
             //"geleler_mi",                                               
         };
@@ -509,7 +505,7 @@
             "gelmeyeyim_mi",
             //"gelmeyesin_mi",
             //"gelmeye_mi",
-            "gelmeyelim_mi",
+            "gelmeyelim_mi"
             //"gelmeyesiniz_mi",
             //"gelmeyeler_mi",                                               
         };
@@ -524,7 +520,7 @@
             "gelin",
             "gelsin",
             "geliniz",
-            "gelsinler",
+            "gelsinler"
         };
 
         #endregion
@@ -537,7 +533,7 @@
             "gelmeyin",
             "gelmesin",
             "gelmeyiniz",
-            "gelmesinler",
+            "gelmesinler"
         };
 
         #endregion
@@ -547,7 +543,7 @@
         public static string[] EmirSoru =
         {
             "gelsin_mi",
-            "gelsinler_mi",
+            "gelsinler_mi"
         };
 
         #endregion
@@ -557,7 +553,7 @@
         public static string[] EmirSoruOlumsuz =
         {
             "gelmesin_mi",
-            "gelmesinler_mi",
+            "gelmesinler_mi"
         };
 
         #endregion
@@ -571,7 +567,7 @@
             "geldiydi",
             "geldiydik",
             "geldiydiniz",
-            "geldiydiler",
+            "geldiydiler"
         };
 
         #endregion
@@ -585,7 +581,7 @@
             "gelmediydi",
             "gelmediydik",
             "gelmediydiniz",
-            "gelmediydiler",
+            "gelmediydiler"
         };
 
         #endregion
@@ -615,7 +611,7 @@
             "gelmedi_miydik",
             "gelmedi_miydiniz",
             "gelmedi_miydiler",
-            "gelmediler_miydi",
+            "gelmediler_miydi"
         };
 
         #endregion
@@ -630,7 +626,7 @@
             "gelmiştik",
             "gelmiştiniz",
             "gelmiştiler",
-            "gelmişlerdi",
+            "gelmişlerdi"
         };
 
         #endregion
@@ -645,7 +641,7 @@
             "gelmemiştik",
             "gelmemiştiniz",
             "gelmemiştiler",
-            "gelmemişlerdi",
+            "gelmemişlerdi"
         };
 
         #endregion
@@ -659,7 +655,7 @@
             "gelmiş_miydi",
             "gelmiş_miydik",
             "gelmiş_miydiniz",
-            "gelmişler_miydi",
+            "gelmişler_miydi"
         };
 
         #endregion
@@ -674,7 +670,7 @@
             "geliyorduk",
             "geliyordunuz",
             "geliyordular",
-            "geliyorlardı",
+            "geliyorlardı"
         };
 
         #endregion
@@ -689,7 +685,7 @@
             "gelmiyorduk",
             "gelmiyordunuz",
             "gelmiyordular",
-            "gelmiyorlardı",
+            "gelmiyorlardı"
         };
 
         #endregion
@@ -704,7 +700,7 @@
             "geliyor_muyduk",
             "geliyor_muydunuz",
             "geliyor_muydular",
-            "geliyorlar_mıydı",
+            "geliyorlar_mıydı"
         };
 
         #endregion
@@ -719,7 +715,7 @@
             "gelmiyor_muyduk",
             "gelmiyor_muydunuz",
             "geliyor_muydular",
-            "gelmiyorlar_mıydı",
+            "gelmiyorlar_mıydı"
         };
 
         #endregion
@@ -794,7 +790,7 @@
             "gezerdik",
             "gezerdiniz",
             "gezerdiler",
-            "gezerlerdi",
+            "gezerlerdi"
         };
 
         #endregion
@@ -809,7 +805,7 @@
             "gezmezdik",
             "gezmezdiniz",
             "gezmezdiler",
-            "gezmezlerdi",
+            "gezmezlerdi"
         };
 
         #endregion
@@ -824,7 +820,7 @@
             "gezer_miydik",
             "gezer_miydiniz",
             "gezer_miydiler",
-            "gezerler_miydi",
+            "gezerler_miydi"
         };
 
         #endregion
@@ -839,7 +835,7 @@
             "gezmez_miydik",
             "gezmez_miydiniz",
             "gezmez_miydiler",
-            "gezmezler_miydi",
+            "gezmezler_miydi"
         };
 
         #endregion
@@ -853,7 +849,7 @@
             "gelmeliydi",
             "gelmeliydik",
             "gelmeliydiniz",
-            "gelmeliydiler",
+            "gelmeliydiler"
         };
 
         #endregion
@@ -867,7 +863,7 @@
             "gelmemeliydi",
             "gelmemeliydik",
             "gelmemeliydiniz",
-            "gelmemeliydiler",
+            "gelmemeliydiler"
         };
 
         #endregion
@@ -881,7 +877,7 @@
             "gelmeli_miydi",
             "gelmeli_miydik",
             "gelmeli_miydiniz",
-            "gelmeli_miydiler",
+            "gelmeli_miydiler"
         };
 
         #endregion
@@ -895,7 +891,7 @@
             "gelmemeli_miydi",
             "gelmemeli_miydik",
             "gelmemeli_miydiniz",
-            "gelmemeli_miydiler",
+            "gelmemeli_miydiler"
         };
 
         #endregion
@@ -910,7 +906,7 @@
             "gelseydik",
             "gelseydiniz",
             "gelseydiler",
-            "gelselerdi",
+            "gelselerdi"
         };
 
         #endregion
@@ -925,7 +921,7 @@
             "gelmeseydik",
             "gelmeseydiniz",
             "gelmeseydiler",
-            "gelmeselerdi",
+            "gelmeselerdi"
         };
 
         #endregion
@@ -940,7 +936,7 @@
             "gelse_miydik",
             "gelse_miydiniz",
             "gelse_miydiler",
-            "gelseler_miydi",
+            "gelseler_miydi"
         };
 
         #endregion
@@ -955,7 +951,7 @@
             "gelmese_miydik",
             "gelmese_miydiniz",
             "gelmese_miydiler",
-            "gelmeseler_miydi",
+            "gelmeseler_miydi"
         };
 
         #endregion
@@ -969,7 +965,7 @@
             "geleydi",
             "geleydik",
             "geleydiniz",
-            "geleydiler",
+            "geleydiler"
         };
 
         #endregion
@@ -983,7 +979,7 @@
             "gelmeyeydi",
             "gelmeyeydik",
             "gelmeyeydiniz",
-            "gelmeyeydiler",
+            "gelmeyeydiler"
         };
 
         #endregion
@@ -997,7 +993,7 @@
             "gele_miydi",
             "gele_miydik",
             "gele_miydiniz",
-            "gele_miydiler",
+            "gele_miydiler"
         };
 
         #endregion
@@ -1011,7 +1007,7 @@
             "gelmeye_miydi",
             "gelmeye_miydik",
             "gelmeye_miydiniz",
-            "gelmeye_miydiler",
+            "gelmeye_miydiler"
         };
 
         #endregion
@@ -1026,7 +1022,7 @@
             "gelmişmişiz",
             "gelmişmişsiniz",
             "gelmişmişler",
-            "gelmişlermiş",
+            "gelmişlermiş"
         };
 
         #endregion
@@ -1041,7 +1037,7 @@
             "gelmemişmişiz",
             "gelmemişmişsiniz",
             "gelmemişmişler",
-            "gelmemişlermiş",
+            "gelmemişlermiş"
         };
 
         #endregion
@@ -1055,7 +1051,7 @@
             "gelmiş_miymiş",
             "gelmiş_miymişiz",
             "gelmiş_miymişsiniz",
-            "gelmişler_miymiş",
+            "gelmişler_miymiş"
         };
 
         #endregion
@@ -1069,7 +1065,7 @@
             "gelmemiş_miymiş",
             "gelmemiş_miymişiz",
             "gelmemiş_miymişsiniz",
-            "gelmemişler_miymiş",
+            "gelmemişler_miymiş"
         };
 
         #endregion
@@ -1084,7 +1080,7 @@
             "geliyormuşuz",
             "geliyormuşsunuz",
             "geliyormuşlar",
-            "geliyorlarmış",
+            "geliyorlarmış"
         };
 
         #endregion
@@ -1099,7 +1095,7 @@
             "gelmiyormuşuz",
             "gelmiyormuşsunuz",
             "gelmiyormuşlar",
-            "gelmiyorlarmış",
+            "gelmiyorlarmış"
         };
 
         #endregion
@@ -1114,7 +1110,7 @@
             "geliyor_muymuşuz",
             "geliyor_muymuşsunuz",
             "geliyor_muymuşlar",
-            "geliyorlar_mıymış",
+            "geliyorlar_mıymış"
         };
 
         #endregion
@@ -1129,7 +1125,7 @@
             "gelmiyor_muymuşuz",
             "gelmiyor_muymuşsunuz",
             "gelmiyor_muymuşlar",
-            "gelmiyorlar_mıymış",
+            "gelmiyorlar_mıymış"
         };
 
         #endregion
@@ -1144,7 +1140,7 @@
             "gelecekmişiz",
             "gelecekmişsiniz",
             "gelecekmişler",
-            "geleceklermiş",
+            "geleceklermiş"
         };
 
         #endregion
@@ -1159,7 +1155,7 @@
             "gelmeyecekmişiz",
             "gelmeyecekmişsiniz",
             "gelmeyecekmişler",
-            "gelmeyeceklermiş",
+            "gelmeyeceklermiş"
         };
 
         #endregion
@@ -1174,7 +1170,7 @@
             "gelecek_miymişiz",
             "gelecek_miymişsiniz",
             "gelecek_miymişler",
-            "gelecekler_miymiş",
+            "gelecekler_miymiş"
         };
 
         #endregion
@@ -1189,7 +1185,7 @@
             "gelmeyecek_miymişiz",
             "gelmeyecek_miymişsiniz",
             "gelmeyecek_miymişler",
-            "gelmeyecekler_miymiş",
+            "gelmeyecekler_miymiş"
         };
 
         #endregion
@@ -1204,7 +1200,7 @@
             "gelirmişiz",
             "gelirmişsiniz",
             "gelirmişler",
-            "gelirlermiş",
+            "gelirlermiş"
         };
 
         #endregion
@@ -1219,7 +1215,7 @@
             "gelmezmişiz",
             "gelmezmişsiniz",
             "gelmezmişler",
-            "gelmezlermiş",
+            "gelmezlermiş"
         };
 
         #endregion
@@ -1234,7 +1230,7 @@
             "gelir_miymişiz",
             "gelir_miymişsiniz",
             "gelir_miymişler",
-            "gelirler_miymiş",
+            "gelirler_miymiş"
         };
 
         #endregion
@@ -1249,7 +1245,7 @@
             "gelmez_miymişiz",
             "gelmez_miymişsiniz",
             "gelmez_miymişler",
-            "gelmezler_miymiş",
+            "gelmezler_miymiş"
         };
 
         #endregion
@@ -1324,7 +1320,7 @@
             "gelseymişiz",
             "gelseymişsiniz",
             "gelseymişler",
-            "gelselermiş",
+            "gelselermiş"
         };
 
         #endregion
@@ -1339,7 +1335,7 @@
             "gelmeseymişiz",
             "gelmeseymişsiniz",
             "gelmeseymişler",
-            "gelmeselermiş",
+            "gelmeselermiş"
         };
 
         #endregion
@@ -1354,7 +1350,7 @@
             "gelse_miymişiz",
             "gelse_miymişsiniz",
             "gelse_miymişler",
-            "gelseler_miymiş",
+            "gelseler_miymiş"
         };
 
         #endregion
@@ -1369,7 +1365,7 @@
             "gelmese_miymişiz",
             "gelmese_miymişsiniz",
             "gelmese_miymişler",
-            "gelmeseler_miymiş",
+            "gelmeseler_miymiş"
         };
 
         #endregion
@@ -1383,7 +1379,7 @@
             "geleymiş",
             "geleymişiz",
             "geleymişsiniz",
-            "geleymişler",
+            "geleymişler"
         };
 
         #endregion
@@ -1397,7 +1393,7 @@
             "gelmeyeymiş",
             "gelmeyeymişiz",
             "gelmeyeymişsiniz",
-            "gelmeyeymişler",
+            "gelmeyeymişler"
         };
 
         #endregion
@@ -1411,7 +1407,7 @@
             "gele_miymiş",
             "gele_miymişiz",
             "gele_miymişsiniz",
-            "gele_miymişler",
+            "gele_miymişler"
         };
 
         #endregion
@@ -1425,7 +1421,7 @@
             "gelmeye_miymiş",
             "gelmeye_miymişiz",
             "gelmeye_miymişsiniz",
-            "gelmeye_miymişler",
+            "gelmeye_miymişler"
         };
 
         #endregion
@@ -1440,7 +1436,7 @@
             "geldiysek",
             "geldiyseniz",
             "geldiyseler",
-            "geldilerse",
+            "geldilerse"
         };
 
         #endregion
@@ -1455,7 +1451,7 @@
             "gelmediysek",
             "gelmediyseniz",
             "gelmediyseler",
-            "gelmedilerse",
+            "gelmedilerse"
         };
 
         #endregion
@@ -1470,7 +1466,7 @@
             "geldiysek_mi",
             "geldiyseniz_mi",
             "geldiyseler_mi",
-            "geldilerse_mi",
+            "geldilerse_mi"
         };
 
         #endregion
@@ -1485,7 +1481,7 @@
             "gelmediysek_mi",
             "gelmediyseniz_mi",
             "gelmediyseler_mi",
-            "gelmedilerse_mi",
+            "gelmedilerse_mi"
         };
 
         #endregion
@@ -1500,7 +1496,7 @@
             "gelmişsek",
             "gelmişseniz",
             "gelmişseler",
-            "gelmişlerse",
+            "gelmişlerse"
         };
 
         #endregion
@@ -1515,7 +1511,7 @@
             "gelmemişsek",
             "gelmemişseniz",
             "gelmemişseler",
-            "gelmemişlerse",
+            "gelmemişlerse"
         };
 
         #endregion
@@ -1530,7 +1526,7 @@
             "gelmişsek_mi",
             "gelmişseniz_mi",
             "gelmişseler_mi",
-            "gelmişlerse_mi",
+            "gelmişlerse_mi"
         };
 
         #endregion
@@ -1545,7 +1541,7 @@
             "gelmemişsek_mi",
             "gelmemişseniz_mi",
             "gelmemişseler_mi",
-            "gelmemişlerse_mi",
+            "gelmemişlerse_mi"
         };
 
         #endregion
@@ -1560,7 +1556,7 @@
             "geliyorsak",
             "geliyorsanız",
             "geliyorsalar",
-            "geliyorlarsa",
+            "geliyorlarsa"
         };
 
         #endregion
@@ -1575,7 +1571,7 @@
             "gelmiyorsak",
             "gelmiyorsanız",
             "gelmiyorsalar",
-            "gelmiyorlarsa",
+            "gelmiyorlarsa"
         };
 
         #endregion
@@ -1590,7 +1586,7 @@
             "geliyorsak_mı",
             "geliyorsanız_mı",
             "geliyorsalar_mı",
-            "geliyorlarsa_mı",
+            "geliyorlarsa_mı"
         };
 
         #endregion
@@ -1605,7 +1601,7 @@
             "gelmiyorsak_mı",
             "gelmiyorsanız_mı",
             "gelmiyorsalar_mı",
-            "gelmiyorlarsa_mı",
+            "gelmiyorlarsa_mı"
         };
 
         #endregion
@@ -1620,7 +1616,7 @@
             "gelecekseniz",
             "geleceksek",
             "gelecekseler",
-            "geleceklerse",
+            "geleceklerse"
         };
 
         #endregion
@@ -1635,7 +1631,7 @@
             "gelmeyecekseniz",
             "gelmeyeceksek",
             "gelmeyecekseler",
-            "gelmeyeceklerse",
+            "gelmeyeceklerse"
         };
 
         #endregion
@@ -1650,7 +1646,7 @@
             "gelecekseniz_mi",
             "geleceksek_mi",
             "gelecekseler_mi",
-            "geleceklerse_mi",
+            "geleceklerse_mi"
         };
 
         #endregion
@@ -1665,7 +1661,7 @@
             "gelmeyecekseniz_mi",
             "gelmeyeceksek_mi",
             "gelmeyecekseler_mi",
-            "gelmeyeceklerse_mi",
+            "gelmeyeceklerse_mi"
         };
 
         #endregion
@@ -1680,7 +1676,7 @@
             "gelirsek",
             "gelirseniz",
             "gelirseler",
-            "gelirlerse",
+            "gelirlerse"
         };
 
         #endregion
@@ -1695,7 +1691,7 @@
             "gelmezsek",
             "gelmezseniz",
             "gelmezseler",
-            "gelmezlerse",
+            "gelmezlerse"
         };
 
         #endregion
@@ -1710,7 +1706,7 @@
             "gelirsek_mi",
             "gelirseniz_mi",
             "gelirseler_mi",
-            "gelirlerse_mi",
+            "gelirlerse_mi"
         };
 
         #endregion
@@ -1725,7 +1721,7 @@
             "gelmezsek_mi",
             "gelmezseniz_mi",
             "gelmezseler_mi",
-            "gelmezlerse_mi",
+            "gelmezlerse_mi"
         };
 
         #endregion
@@ -1739,7 +1735,7 @@
             "gelmeliyse",
             "gelmeliysek",
             "gelmeliyseniz",
-            "gelmeliyseler",
+            "gelmeliyseler"
         };
 
         #endregion
@@ -1753,7 +1749,7 @@
             "gelmeliyse_mi",
             "gelmeliysek_mi",
             "gelmeliyseniz_mi",
-            "gelmeliyseler_mi",
+            "gelmeliyseler_mi"
         };
 
         #endregion
@@ -1767,7 +1763,7 @@
             "gelmemeliyse",
             "gelmemeliysek",
             "gelmemeliyseniz",
-            "gelmemeliyseler",
+            "gelmemeliyseler"
         };
 
         #endregion
@@ -1781,12 +1777,10 @@
             "gelmemeliyse_mi",
             "gelmemeliysek_mi",
             "gelmemeliyseniz_mi",
-            "gelmemeliyseler_mi",
+            "gelmemeliyseler_mi"
         };
 
         #endregion
-
-        /* Geçersiz çekimler */
 
         #region string[] GecersizGecmisDiSoru
 
@@ -1796,7 +1790,7 @@
             "geldi_misin",
             "geldi_miyiz",
             "geldi_misiniz",
-            "geldi_miler",
+            "geldi_miler"
         };
 
         #endregion
@@ -1810,7 +1804,7 @@
             "gelmişiz_mi",
             "gel_miymiş",
             "gelmişsiniz_mi",
-            "gelmiş_miler",
+            "gelmiş_miler"
         };
 
         #endregion
@@ -1823,7 +1817,7 @@
             "geliyorsun_mu",
             "geliyoruz_mu",
             "geliyorsunuz_mu",
-            "geliyor_mular",
+            "geliyor_mular"
         };
 
         #endregion
@@ -1836,7 +1830,7 @@
             "yaparsın_mı",
             "yaparız_mı",
             "yaparsınız_mı",
-            "yapar_mılar",
+            "yapar_mılar"
         };
 
         #endregion
@@ -1849,7 +1843,7 @@
             "gelmelisin_mi",
             "gelmeliyiz_mi",
             "gelmelisiniz_mi",
-            "gelmeli_miler",
+            "gelmeli_miler"
         };
 
         #endregion
@@ -1862,7 +1856,7 @@
             "gelse_misin",
             "gelse_miyiz",
             "gelse_misiniz",
-            "gelse_miler",
+            "gelse_miler"
         };
 
         #endregion
@@ -1875,7 +1869,7 @@
             "gele_misin",
             "gele_miyiz",
             "gele_misiniz",
-            "gele_miler",
+            "gele_miler"
         };
 
         #endregion
@@ -1889,7 +1883,7 @@
             "geldiydi_mi",
             "geldiydik_mi",
             "geldiydiniz_mi",
-            "geldiydiler_mi",
+            "geldiydiler_mi"
         };
 
         #endregion
@@ -1904,7 +1898,7 @@
             "gelmiştik_mi",
             "gelmiştiniz_mi",
             "gelmiştiler_mi",
-            "gelmişlerdi_mi",
+            "gelmişlerdi_mi"
         };
 
         #endregion
@@ -1919,7 +1913,7 @@
             "geliyorduk_mu",
             "geliyordunuz_mu",
             "geliyorlardı_mı",
-            "geliyordular_mı",
+            "geliyordular_mı"
         };
 
         #endregion
@@ -1949,7 +1943,7 @@
             "gezerdik_mi",
             "gezerdiniz_mi",
             "gezerdiler_mi",
-            "gezerlerdi_mi",
+            "gezerlerdi_mi"
         };
 
         #endregion
@@ -1963,7 +1957,7 @@
             "gelmeliydi_mi",
             "gelmeliydik_mi",
             "gelmeliydiniz_mi",
-            "gelmeliydiler_mi",
+            "gelmeliydiler_mi"
         };
 
         #endregion
@@ -1978,7 +1972,7 @@
             "gelseydik_mi",
             "gelseydiniz_mi",
             "gelseydiler_mi",
-            "gelselerdi_mi",
+            "gelselerdi_mi"
         };
 
         #endregion
@@ -1992,7 +1986,7 @@
             "geleydi_mi",
             "geleydik_mi",
             "geleydiniz_mi",
-            "geleydiler_mi",
+            "geleydiler_mi"
         };
 
         #endregion
@@ -2007,7 +2001,7 @@
             "geldiymişiz",
             "geldiymişsiniz",
             "geldiymişler",
-            "geldilermiş",
+            "geldilermiş"
         };
 
         #endregion
@@ -2027,7 +2021,7 @@
             "geldiyse_misin",
             "geldiyse_miyiz",
             "geldiyse_misiniz",
-            "geldiyse_miler",
+            "geldiyse_miler"
         };
 
         #endregion
@@ -2042,7 +2036,7 @@
             "gelseysek",
             "gelseyseniz",
             "gelseyseler",
-            "gelselerse",
+            "gelselerse"
         };
 
         #endregion
@@ -2057,7 +2051,7 @@
             "geleysek",
             "geleyseniz",
             "geleyseler",
-            "gelelerse",
+            "gelelerse"
         };
 
         #endregion
@@ -2074,7 +2068,7 @@
             "gelsinlermiş",
             "gelsinse",
             "gelinizse",
-            "gelsinlerse",
+            "gelsinlerse"
         };
 
         #endregion
@@ -2089,7 +2083,7 @@
             "geldiydi_mi",
             "geldiydik_mi",
             "geldiydiniz_mi",
-            "geldiydiler_mi",
+            "geldiydiler_mi"
         };
 
         #endregion
@@ -2107,5 +2101,11 @@
         };
 
         #endregion
+
+        //CTRL + M plus CTRL + L for collapsing all regions recursively.
+        //This one is a toggle, meaning you can do it again to re-open them.
+        //CTRL + M plus CTRL + O to collapse all regions non-recursively.
+
+        /* Geçersiz çekimler */
     }
 }

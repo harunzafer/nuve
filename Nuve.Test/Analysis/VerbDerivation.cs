@@ -1,10 +1,11 @@
 ﻿namespace Nuve.Test.Analysis
 {
-    class VerbDerivation
+    internal class VerbDerivation
     {
         #region string[] FiilYapımIsimMaca
 
-        public static string[] FiilYapımIsimMaca = {
+        public static string[] FiilYapımIsimMaca =
+        {
             "aramaca",
             "ödememece",
             "yememece",
@@ -32,7 +33,8 @@
 
         #region string[] FiilYapımIsimYucu
 
-        public static string[] FiilYapımIsimYucu = {
+        public static string[] FiilYapımIsimYucu =
+        {
             "arayıcı",
             "ödeyici",
             "yiyici",
@@ -60,7 +62,8 @@
 
         #region string[] FiilYapımEdilgen
 
-        public static string[] FiilYapımEdilgen = {
+        public static string[] FiilYapımEdilgen =
+        {
             "aranmak",
             "ödenmek",
             "yenmek",
@@ -89,7 +92,8 @@
 
         #region string[] FiilYapımEttirgen
 
-        public static string[] FiilYapımEttirgen = {
+        public static string[] FiilYapımEttirgen =
+        {
             "acıtmak",
             "acıttırmak",
             "açtırmak",
@@ -111,7 +115,8 @@
 
         #region string[] FiilYapımIsteşlikUş
 
-        public static string[] FiilYapımIsteşlikUş = {
+        public static string[] FiilYapımIsteşlikUş =
+        {
             "araşmak",
             "ödeşmek",
             "yiyişmek",
@@ -139,7 +144,8 @@
 
         #region string[] FiilYapımOldurganUt
 
-        public static string[] FiilYapımOldurganUt = {
+        public static string[] FiilYapımOldurganUt =
+        {
             "arat",
             "ödet",
             "yet",

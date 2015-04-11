@@ -4,11 +4,11 @@ using Nuve.Orthographic;
 
 namespace Nuve.Sentence
 {
-    class SentenceIterator: IEnumerable<string>
+    internal class SentenceIterator : IEnumerable<string>
     {
         private readonly string _paragraph;
         private readonly SentenceSegmenter _segmenter;
-        
+
         public SentenceIterator(SentenceSegmenter segmenter, string paragraph)
         {
             _paragraph = paragraph;

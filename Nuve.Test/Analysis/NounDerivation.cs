@@ -21,7 +21,7 @@
             "orglamak",
             "aktörlemek",
             "oruçlamak",
-            "övünçlemek",
+            "övünçlemek"
         };
 
         #endregion
@@ -45,7 +45,7 @@
             "orglaşmak",
             "aktörleşmek",
             "oruçlaşmak",
-            "övünçleşmek",
+            "övünçleşmek"
         };
 
         #endregion
@@ -69,7 +69,7 @@
             "orgcağız",
             "aktörceğiz",
             "oruçcağız",
-            "övünçceğiz",
+            "övünçceğiz"
         };
 
         #endregion
@@ -93,7 +93,7 @@
             "orgcu",
             "aktörcü",
             "oruççu",
-            "övünççü",
+            "övünççü"
         };
 
         #endregion
@@ -117,7 +117,7 @@
             "orgcuk",
             "aktörcük",
             "oruççuk",
-            "övünççük",
+            "övünççük"
         };
 
         #endregion
@@ -141,7 +141,7 @@
             "orgluk",
             "aktörlük",
             "oruçluk",
-            "övünçlük",
+            "övünçlük"
         };
 
         #endregion
@@ -165,7 +165,7 @@
             "orgumsu",
             "aktörümsü",
             "orucumsu",
-            "övüncümsü",
+            "övüncümsü"
         };
 
         #endregion
@@ -189,7 +189,7 @@
             "orglu",
             "aktörlü",
             "oruçlu",
-            "övünçlü",
+            "övünçlü"
         };
 
         #endregion
@@ -213,7 +213,7 @@
             "orgsal",
             "aktörsel",
             "oruçsal",
-            "övünçsel",
+            "övünçsel"
         };
 
         #endregion
@@ -237,7 +237,7 @@
             "orgsu",
             "aktörsü",
             "oruçsu",
-            "övünçsü",
+            "övünçsü"
         };
 
         #endregion
@@ -261,7 +261,7 @@
             "orgsuz",
             "aktörsüz",
             "oruçsuz",
-            "övünçsüz",
+            "övünçsüz"
         };
 
         #endregion
@@ -285,7 +285,7 @@
             "orgca",
             "aktörce",
             "oruçça",
-            "övünççe",
+            "övünççe"
         };
 
         #endregion
@@ -309,7 +309,7 @@
             "orgcasına",
             "aktörcesine",
             "oruççasına",
-            "övünççesine",
+            "övünççesine"
         };
 
         #endregion

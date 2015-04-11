@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Dynamic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace Nuve.NGrams
 {
     /// <summary>
-    /// Represents an n-gram object which consists of n tokens.
+    ///     Represents an n-gram object which consists of n tokens.
     /// </summary>
     public class NGram
     {
-        private readonly IList<string> tokens;
-
         private const string Delimiter = " ";
+        private readonly IList<string> tokens;
 
         public NGram(IList<string> tokens)
         {
@@ -22,7 +19,7 @@ namespace Nuve.NGrams
         public NGram(params string[] tokens)
         {
             this.tokens = tokens;
-        }        
+        }
 
         public IEnumerable<string> Tokens
         {
@@ -38,7 +35,7 @@ namespace Nuve.NGrams
         {
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
-            if (obj.GetType() != this.GetType()) return false;
+            if (obj.GetType() != GetType()) return false;
             return Equals((NGram) obj);
         }
 
@@ -46,9 +43,9 @@ namespace Nuve.NGrams
         {
             const int prime = 31;
             int hash = 19;
-            foreach (var token in tokens)
+            foreach (string token in tokens)
             {
-                hash += hash * prime + token.GetHashCode();
+                hash += hash*prime + token.GetHashCode();
             }
             return hash;
         }
@@ -57,7 +54,7 @@ namespace Nuve.NGrams
         {
             string str = "";
             string prefix = "";
-            foreach (var token in Tokens)
+            foreach (string token in Tokens)
             {
                 str += prefix + token;
                 prefix = Delimiter;

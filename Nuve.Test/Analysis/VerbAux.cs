@@ -4,59 +4,64 @@
     {
         #region string[] EkFiilGenisZaman
 
-        public static string[] EkFiilGenisZaman = {
+        public static string[] EkFiilGenisZaman =
+        {
             "yayayım",
             "yayasın",
             "yayadır",
             "yayayız",
             "yayasınız",
-            "yayadırlar",
+            "yayadırlar"
         };
 
         #endregion
 
         #region string[] EkFiilGecmisDi
 
-        public static string[] EkFiilGecmisDi = {
+        public static string[] EkFiilGecmisDi =
+        {
             "yayaydım",
             "yayaydın",
             "yayaydı",
             "yayaydık",
             "yayaydınız",
-            "yayaydılar",
+            "yayaydılar"
         };
 
         #endregion
 
         #region string[] EkFiilGecmisMis
 
-        public static string[] EkFiilGecmisMis = {
+        public static string[] EkFiilGecmisMis =
+        {
             "yayaymışım",
             "yayaymışsın",
             "yayaymış",
             "yayaymışız",
             "yayaymışsınız",
-            "yayaymışlar",
+            "yayaymışlar"
         };
 
         #endregion
 
         #region string[] EkFiilSart
 
-        public static string[] EkFiilSart = {
+        public static string[] EkFiilSart =
+        {
             "yayaysam",
             "yayaysan",
             "yayaysa",
             "yayaysak",
             "yayaysanız",
-            "yayaysalar",
+            "yayaysalar"
         };
 
         #endregion
 
         #region string[] FiilYardımcıAdur
 
-        public static string[] FiilYardımcıAdur = {
+        public static string[] FiilYardımcıAdur =
+        {
             "geledur",
             "geledursun",
             "geledurdum",
@@ -72,7 +77,8 @@
 
         #region string[] FiilYardımcıAgel
 
-        public static string[] FiilYardımcıAgel = {
+        public static string[] FiilYardımcıAgel =
+        {
             "olagel",
             "olagelseydiniz",
             "olagelmiştir",
@@ -88,7 +94,8 @@
 
         #region string[] FiilYardımcıAgör
 
-        public static string[] FiilYardımcıAgör = {
+        public static string[] FiilYardımcıAgör =
+        {
             "olagör",
             "olagörseydiniz",
             "olagörmüştür",
@@ -104,7 +111,8 @@
 
         #region string[] FiilYardımcıAkal
 
-        public static string[] FiilYardımcıAkal = {
+        public static string[] FiilYardımcıAkal =
+        {
             "olakal",
             "olakalsaydınız",
             "olakalmıştır",
@@ -120,7 +128,8 @@
 
         #region string[] FiilYardımcıUver
 
-        public static string[] FiilYardımcıUver = {
+        public static string[] FiilYardımcıUver =
+        {
             "yapıver",
             "yapıverseydiniz",
             "yapıvermiştir",
@@ -136,7 +145,8 @@
 
         #region string[] FiilYardımcıAyaz
 
-        public static string[] FiilYardımcıAyaz = {
+        public static string[] FiilYardımcıAyaz =
+        {
             "yapayaz",
             "yapayazsaydınız",
             "yapayazmıştır",
@@ -152,7 +162,8 @@
 
         #region string[] FiilYardımcıYeterlilik
 
-        public static string[] FiilYardımcıYeterlilik = {
+        public static string[] FiilYardımcıYeterlilik =
+        {
             "yapabil",
             "yapabilseydiniz",
             "yapabilmiştir",
@@ -168,7 +179,8 @@
 
         #region string[] FiilYardımcıYetersizlik
 
-        public static string[] FiilYardımcıYetersizlik = {
+        public static string[] FiilYardımcıYetersizlik =
+        {
             "yapama",
             "yapamasaydınız",
             "yapamamıştır",
@@ -178,14 +190,15 @@
             "yapamazmışlar",
             "yapamayacaktım",
             "yapamıyorsanız",
-            "yapamaz",
+            "yapamaz"
         };
 
         #endregion
 
         #region string[] FiilimsiIsimUş
 
-        public static string[] FiilimsiIsimUş = {
+        public static string[] FiilimsiIsimUş =
+        {
             "arayış",
             "ödeyiş",
             "yiyiş",
@@ -204,14 +217,15 @@
             "ölüş",
             "kalış",
             "geliş",
-            "yapış",            
+            "yapış"
         };
 
         #endregion
 
         #region string[] FiilimsiIsimMa
 
-        public static string[] FiilimsiIsimMa = {
+        public static string[] FiilimsiIsimMa =
+        {
             "arama",
             "ödeme",
             "yeme",
@@ -230,14 +244,15 @@
             "ölme",
             "kalma",
             "gelme",
-            "yapma",
+            "yapma"
         };
 
         #endregion
 
         #region string[] FiilimsiIsimMak
 
-        public static string[] FiilimsiIsimMak = {
+        public static string[] FiilimsiIsimMak =
+        {
             "aramak",
             "ödemek",
             "yemek",
@@ -256,14 +271,15 @@
             "ölmek",
             "kalmak",
             "gelmek",
-            "yapmak",
+            "yapmak"
         };
 
         #endregion
 
         #region string[] FiilimsiSıfatAn
 
-        public static string[] FiilimsiSıfatAn = {
+        public static string[] FiilimsiSıfatAn =
+        {
             "arayan",
             "ödeyen",
             "yiyen",
@@ -282,14 +298,15 @@
             "ölen",
             "kalan",
             "gelen",
-            "yapan",           
+            "yapan"
         };
 
         #endregion
 
         #region string[] FiilimsiSıfatAsı
 
-        public static string[] FiilimsiSıfatAsı = {
+        public static string[] FiilimsiSıfatAsı =
+        {
             "arayası",
             "ödeyesi",
             "yiyesi",
@@ -308,14 +325,15 @@
             "ölesi",
             "kalası",
             "gelesi",
-            "yapası",
+            "yapası"
         };
 
         #endregion
 
         #region string[] FiilimsiSıfatAsıca
 
-        public static string[] FiilimsiSıfatAsıca = {
+        public static string[] FiilimsiSıfatAsıca =
+        {
             "arayasıca",
             "ödeyesice",
             "yiyesice",
@@ -334,14 +352,15 @@
             "ölesice",
             "kalasıca",
             "gelesice",
-            "yapasıca",
+            "yapasıca"
         };
 
         #endregion
 
         #region string[] FiilimsiSıfatDuk
 
-        public static string[] FiilimsiSıfatDuk = {
+        public static string[] FiilimsiSıfatDuk =
+        {
             "aradığım",
             "ödediğim",
             "yediğim",
@@ -360,14 +379,15 @@
             "öldüğüm",
             "kaldığım",
             "geldiğim",
-            "yaptığım",
+            "yaptığım"
         };
 
         #endregion
 
         #region string[] FiilimsiSıfatMaz
 
-        public static string[] FiilimsiSıfatMaz = {
+        public static string[] FiilimsiSıfatMaz =
+        {
             "aramaz",
             "ödemez",
             "yemez",
@@ -386,14 +406,15 @@
             "ölmez",
             "kalmaz",
             "gelmez",
-            "yapmaz",            
+            "yapmaz"
         };
 
         #endregion
 
         #region string[] FiilimsiSıfatMus
 
-        public static string[] FiilimsiSıfatMus = {
+        public static string[] FiilimsiSıfatMus =
+        {
             "aramış",
             "ödemiş",
             "yemiş",
@@ -412,27 +433,29 @@
             "ölmüş",
             "kalmış",
             "gelmiş",
-            "yapmış",
+            "yapmış"
         };
 
         #endregion
 
         #region string[] FiilimsiZarfA
 
-        public static string[] FiilimsiZarfA = {
+        public static string[] FiilimsiZarfA =
+        {
             "araya",
             "ödeye",
             "yiye",
             "diye",
             "ola",
-            "öle",
+            "öle"
         };
 
         #endregion
 
         #region string[] FiilimsiZarfAlı
 
-        public static string[] FiilimsiZarfAlı = {
+        public static string[] FiilimsiZarfAlı =
+        {
             "arayalı",
             "ödeyeli",
             "yiyeli",
@@ -451,14 +474,15 @@
             "öleli",
             "kalalı",
             "geleli",
-            "yapalı",
+            "yapalı"
         };
 
         #endregion
 
         #region string[] FiilimsiZarfArak
 
-        public static string[] FiilimsiZarfArak = {
+        public static string[] FiilimsiZarfArak =
+        {
             "arayarak",
             "ödeyerek",
             "yiyerek",
@@ -477,14 +501,15 @@
             "ölerek",
             "kalarak",
             "gelerek",
-            "yaparak",
+            "yaparak"
         };
 
         #endregion
 
         #region string[] FiilimsiZarfAsıya
 
-        public static string[] FiilimsiZarfAsıya = {
+        public static string[] FiilimsiZarfAsıya =
+        {
             "arayasıya",
             "ödeyesiye",
             "yiyesiye",
@@ -503,14 +528,15 @@
             "ölesiye",
             "kalasıya",
             "gelesiye",
-            "yapasıya",
+            "yapasıya"
         };
 
         #endregion
 
         #region string[] FiilimsiZarfUp
 
-        public static string[] FiilimsiZarfUp = {
+        public static string[] FiilimsiZarfUp =
+        {
             "arayıp",
             "ödeyip",
             "yiyip",
@@ -529,14 +555,15 @@
             "ölüp",
             "kalıp",
             "gelip",
-            "yapıp",
+            "yapıp"
         };
 
         #endregion
 
         #region string[] FiilimsiZarfCasına
 
-        public static string[] FiilimsiZarfCasına = {           
+        public static string[] FiilimsiZarfCasına =
+        {
             "ararcasına",
             "ödercesine",
             "yercesine",
@@ -555,14 +582,15 @@
             "ölürcesine",
             "kalırcasına",
             "gelircesine",
-            "yaparcasına",
+            "yaparcasına"
         };
 
         #endregion
 
         #region string[] FiilimsiZarfDıkca
 
-        public static string[] FiilimsiZarfDıkca = {
+        public static string[] FiilimsiZarfDıkca =
+        {
             "aradıkça",
             "ödedikçe",
             "yedikçe",
@@ -581,14 +609,15 @@
             "öldükçe",
             "kaldıkça",
             "geldikçe",
-            "yaptıkça",
+            "yaptıkça"
         };
 
         #endregion
 
         #region string[] FiilimsiZarfMadan
 
-        public static string[] FiilimsiZarfMadan = {
+        public static string[] FiilimsiZarfMadan =
+        {
             "aramadan",
             "ödemeden",
             "yemeden",
@@ -607,14 +636,15 @@
             "ölmeden",
             "kalmadan",
             "gelmeden",
-            "yapmadan",
+            "yapmadan"
         };
 
         #endregion
 
         #region string[] FiilimsiZarfMaksızın
 
-        public static string[] FiilimsiZarfMaksızın = {
+        public static string[] FiilimsiZarfMaksızın =
+        {
             "aramaksızın",
             "ödemeksizin",
             "yemeksizin",
@@ -633,7 +663,7 @@
             "ölmeksizin",
             "kalmaksızın",
             "gelmeksizin",
-            "yapmaksızın",
+            "yapmaksızın"
         };
 
         #endregion

@@ -1,17 +1,8 @@
 ﻿namespace Nuve.Gui
 {
-    class ConjugationSuffix
+    internal class ConjugationSuffix
     {
-        private string id;
-        private string name;
-
-        private ConjugationSuffix(string id, string name)
-        {
-            this.id = id;
-            this.name = name;
-        }
-
-        public static readonly ConjugationSuffix GecmisDi = 
+        public static readonly ConjugationSuffix GecmisDi =
             new ConjugationSuffix("FC_ZAMAN_GECMIS_DU", "Görülen Geçmiş Zaman");
 
         public static readonly ConjugationSuffix GecmisMis =
@@ -29,6 +20,13 @@
         public static readonly ConjugationSuffix Emir =
             new ConjugationSuffix("FC_ZAMAN_GENIS_(U)r", "Geniş Zaman");
 
-        
+        private string id;
+        private string name;
+
+        private ConjugationSuffix(string id, string name)
+        {
+            this.id = id;
+            this.name = name;
+        }
     }
 }

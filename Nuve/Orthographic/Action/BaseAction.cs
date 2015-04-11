@@ -7,9 +7,9 @@ namespace Nuve.Orthographic.Action
     public abstract class BaseAction
     {
         protected readonly Alphabet Alphabet;
+        protected readonly string Flag;
         protected readonly string OperandOne;
         protected readonly string OperandTwo;
-        protected readonly string Flag;
 
         protected BaseAction(Alphabet alphabet, string operandOne, string operandTwo, string flag)
         {
@@ -21,7 +21,8 @@ namespace Nuve.Orthographic.Action
 
         public abstract void Do(Allomorph allomorph, Position position);
 
-        protected bool TryGetOperandMorpheme(Allomorph allomorph, out Allomorph operand, Position position)  // out parameter for result
+        protected bool TryGetOperandMorpheme(Allomorph allomorph, out Allomorph operand, Position position)
+            // out parameter for result
         {
             switch (position)
             {
@@ -37,9 +38,9 @@ namespace Nuve.Orthographic.Action
                     operand = allomorph.Previous;
                     return allomorph.HasPrevious;
 
-                default: throw new ArgumentException("Invalid Position for Action : " + position);
+                default:
+                    throw new ArgumentException("Invalid Position for Action : " + position);
             }
         }
-    
     }
 }

@@ -3,10 +3,9 @@ using Nuve.Distance;
 
 namespace Nuve.Test.Distance
 {
-    class DistanceTest
+    internal class DistanceTest
     {
-
-        private IDistance d;
+        private readonly IDistance d;
 
         public DistanceTest(IDistance d)
         {
@@ -24,7 +23,7 @@ namespace Nuve.Test.Distance
             if (s1 == s2)
             {
                 double distance = d.Measure(s1, s2);
-                Assert.AreEqual(distance, 0);    
+                Assert.AreEqual(distance, 0);
             }
         }
 
@@ -42,6 +41,5 @@ namespace Nuve.Test.Distance
             double distance3 = d.Measure(s1, s3);
             Assert.LessOrEqual(distance3, distance1 + distance2);
         }
-
     }
 }

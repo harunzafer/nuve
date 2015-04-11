@@ -4,10 +4,12 @@ using Nuve.Orthographic;
 
 namespace Nuve.Condition
 {
-    class MorphemeExists : ConditionBase
+    internal class MorphemeExists : ConditionBase
     {
         public MorphemeExists(string position, string operand, Alphabet alphabet)
-            : base(position, operand, alphabet) { }
+            : base(position, operand, alphabet)
+        {
+        }
 
         public override bool IsTrueFor(Allomorph allomorph)
         {
@@ -32,7 +34,6 @@ namespace Nuve.Condition
                     }
                     operand = operand.Previous;
                 }
-
             }
 
             if (Position == Position.AfterTarget)

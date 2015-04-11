@@ -1,42 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
 using System.IO;
 using System.Linq;
-using System.Windows.Forms;
 using System.Xml.Linq;
 
 namespace Nuve.Gui.Tokenization
 {
-    class SampleReader
+    internal class SampleReader
     {
         private const string SegmentedCorpusDirPath = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tinyCorpusSegmented\";
         private const string RawCorpusDirPath = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tinyCorpusRaw\";
-        static IEnumerable<XElement> ReadParaghraps(string xmlpath)
+
+        private static IEnumerable<XElement> ReadParaghraps(string xmlpath)
         {
             XDocument xdoc = XDocument.Load(xmlpath);
-            var sentences = from pElement in xdoc.Descendants("p")
+            IEnumerable<XElement> sentences = from pElement in xdoc.Descendants("p")
                 select pElement;
 
             foreach (XElement element in sentences)
             {
-                var ses = element.Descendants("s").Select(s=>s.Value);
+                IEnumerable<string> ses = element.Descendants("s").Select(s => s.Value);
                 string p = "";
                 foreach (string s in ses)
                 {
-                     p += s + "#" + " ";
+                    p += s + "#" + " ";
                 }
-                Console.WriteLine(p.Trim() + "\n");                
+                Console.WriteLine(p.Trim() + "\n");
             }
 
             return sentences.ToList();
         }
-       
+
 
         public static void deneme()
         {
-
-            var files = Directory.GetFiles(SegmentedCorpusDirPath, "*.xml");
+            string[] files = Directory.GetFiles(SegmentedCorpusDirPath, "*.xml");
             foreach (string file in files)
             {
                 ReadParaghraps(file);
@@ -85,8 +83,6 @@ namespace Nuve.Gui.Tokenization
             //{
             //    Console.WriteLine(c);
             //}
-
-
         }
     }
 }

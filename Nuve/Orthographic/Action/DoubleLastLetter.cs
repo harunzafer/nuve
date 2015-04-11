@@ -3,10 +3,12 @@ using Nuve.Morphologic.Structure;
 
 namespace Nuve.Orthographic.Action
 {
-    class DoubleLastLetter : BaseAction
+    internal class DoubleLastLetter : BaseAction
     {
         public DoubleLastLetter(Alphabet alphabet, string operandOne, string operandTwo, string flag)
-            : base(alphabet, operandOne, operandTwo, flag) { }
+            : base(alphabet, operandOne, operandTwo, flag)
+        {
+        }
 
         public override void Do(Allomorph allomorph, Position position)
         {

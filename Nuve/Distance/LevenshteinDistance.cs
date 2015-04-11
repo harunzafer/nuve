@@ -3,12 +3,11 @@
 namespace Nuve.Distance
 {
     /// <summary>
-    /// Edit distance
-    /// Yalnızca insert, delete, substitute işlemlerine izin verilen ve her işlemin maliteyi 1 olan edit 
-    /// distance türüne Levenshtein uzaklığı denir.
-    /// 
+    ///     Edit distance
+    ///     Yalnızca insert, delete, substitute işlemlerine izin verilen ve her işlemin maliteyi 1 olan edit
+    ///     distance türüne Levenshtein uzaklığı denir.
     /// </summary>
-    class LevenshteinDistance : IDistance
+    internal class LevenshteinDistance : IDistance
     {
         private readonly bool _normalized;
 
@@ -22,11 +21,21 @@ namespace Nuve.Distance
             _normalized = false;
         }
 
+        public double Measure(string s1, string s2)
+        {
+            int distance = GetDistance(s1, s2);
+            if (_normalized)
+            {
+                return normalize(s1.Length, s2.Length, distance);
+            }
+            return distance;
+        }
+
         private int GetDistance(string s1, string s2)
         {
             int n = s1.Length;
             int m = s2.Length;
-            int[,] d = new int[n + 1, m + 1];
+            var d = new int[n + 1, m + 1];
 
             if (s1 == s2)
             {
@@ -45,9 +54,13 @@ namespace Nuve.Distance
             }
 
             // Step 2
-            for (int i = 0; i <= n; d[i, 0] = i++) { }
+            for (int i = 0; i <= n; d[i, 0] = i++)
+            {
+            }
 
-            for (int j = 0; j <= m; d[0, j] = j++) { }
+            for (int j = 0; j <= m; d[0, j] = j++)
+            {
+            }
 
             // Step 3
             for (int i = 1; i <= n; i++)
@@ -67,20 +80,11 @@ namespace Nuve.Distance
             // Step 7
             return d[n, m];
         }
-        public double Measure(string s1, string s2)
-        {
-            int distance = GetDistance(s1, s2);
-            if (_normalized)
-            {
-                return normalize(s1.Length ,s2.Length, distance);
-            }
-            return distance;
-        }
 
         public double normalize(int l1, int l2, int distance)
         {
             int max = Math.Max(l1, l2);
             return Math.Abs(distance - max)/(double) max;
-        } 
+        }
     }
 }

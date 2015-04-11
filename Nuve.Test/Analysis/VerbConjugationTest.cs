@@ -5,7 +5,6 @@ namespace Nuve.Test.Analysis
     [TestFixture]
     internal class VerbConjugationTest
     {
-      
         [TestCase("geldim", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("geldin", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("geldi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU")]
@@ -22,7 +21,7 @@ namespace Nuve.Test.Analysis
         [TestCase("gelmedi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU")]
         [TestCase("gelmedik", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU k/EKFIIL_SAHIS_BIZ_k")]
         [TestCase("gelmediniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmediler", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]      
+        [TestCase("gelmediler", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
         public void GecmisDiOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -45,8 +44,10 @@ namespace Nuve.Test.Analysis
         [TestCase("gelmedin_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmedi_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU")]
         [TestCase("gelmedik_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("gelmediniz_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("gelmediler_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("gelmediniz_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
+        [TestCase("gelmediler_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
         public void GecmisDiSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -87,12 +88,17 @@ namespace Nuve.Test.Analysis
         }
 
         [Ignore]
-        [TestCase("gelmemiş_miyim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmemiş_misin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelmemiş_miyim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelmemiş_misin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmemiş_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU")]
-        [TestCase("gelmemiş_miyiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmemiş_misiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmemişler_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("gelmemiş_miyiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelmemiş_misiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelmemişler_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
         public void GecmisMisSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -113,8 +119,10 @@ namespace Nuve.Test.Analysis
         [TestCase("gelmiyorsun", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmiyor", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor")]
         [TestCase("gelmiyoruz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmiyorsunuz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmiyorlar", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmiyorsunuz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelmiyorlar", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr")
+        ]
         public void SimdikiZamanOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -133,12 +141,17 @@ namespace Nuve.Test.Analysis
         }
 
         [Ignore]
-        [TestCase("gelmiyor_muyum", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmiyor_musun", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelmiyor_muyum",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelmiyor_musun",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmiyor_mu", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU")]
-        [TestCase("gelmiyor_muyuz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmiyor_musunuz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmiyorlar_mı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("gelmiyor_muyuz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelmiyor_musunuz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelmiyorlar_mı",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
         public void SimdikiZamanSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -183,12 +196,17 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmeyeceğim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmeyeceksin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelmeyeceğim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelmeyeceksin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmeyecek", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK")]
-        [TestCase("gelmeyeceğiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmeyeceksiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmeyecekler", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmeyeceğiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelmeyeceksiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelmeyecekler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr")]
         public void GelecekOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -199,7 +217,8 @@ namespace Nuve.Test.Analysis
         [TestCase("gelecek_misin", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelecek_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU")]
         [TestCase("gelecek_miyiz", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelecek_misiniz", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelecek_misiniz", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")
+        ]
         [TestCase("gelecekler_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
         public void GelecekSoruTest(string token, string analysis)
         {
@@ -258,12 +277,17 @@ namespace Nuve.Test.Analysis
         }
 
         [Ignore]
-        [TestCase("yapmaz_mıyım", "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("yapmaz_mısın", "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("yapmaz_mıyım",
+            "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("yapmaz_mısın",
+            "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("yapmaz_mı", "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU")]
-        [TestCase("yapmaz_mıyız", "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("yapmaz_mısınız", "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("yapmazlar_mı", "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("yapmaz_mıyız",
+            "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("yapmaz_mısınız",
+            "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("yapmazlar_mı",
+            "yap/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
         public void GenisSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -308,12 +332,16 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmemeliyim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelmemeliyim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yUm/EKFIIL_SAHIS_BEN_(y)Um")
+        ]
         [TestCase("gelmemelisin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmemeli", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI")]
-        [TestCase("gelmemeliyiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmemelisiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmemeliler", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmemeliyiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yUz/EKFIIL_SAHIS_BIZ_(y)Uz")
+        ]
+        [TestCase("gelmemelisiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelmemeliler", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI lAr/EKFIIL_SAHIS_ONLAR_lAr")
+        ]
         public void GereklilikOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -332,12 +360,17 @@ namespace Nuve.Test.Analysis
         }
 
         [Ignore]
-        [TestCase("gelmemeli_miyim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmemeli_misin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelmemeli_miyim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelmemeli_misin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmemeli_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU")]
-        [TestCase("gelmemeli_miyiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmemeli_misiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmemeliler_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("gelmemeli_miyiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelmemeli_misiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelmemeliler_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
         public void GereklilikSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -382,8 +415,10 @@ namespace Nuve.Test.Analysis
         [TestCase("gelmesen_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmese_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU")]
         [TestCase("gelmesek_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("gelmeseniz_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("gelmeseler_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("gelmeseniz_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
+        [TestCase("gelmeseler_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
         public void DilekSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -424,8 +459,10 @@ namespace Nuve.Test.Analysis
         }
 
         [Ignore]
-        [TestCase("gelmeyeyim_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yUm/EKFIIL_SAHIS_BEN_(y)Um _mU/SORU_mU")]
-        [TestCase("gelmeyelim_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
+        [TestCase("gelmeyeyim_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yUm/EKFIIL_SAHIS_BEN_(y)Um _mU/SORU_mU")]
+        [TestCase("gelmeyelim_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")
+        ]
         public void IstekSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -478,38 +515,62 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmediydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmediydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmediydim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmediydin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmediydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmediydik", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmediydiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmediydiler", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmediydik",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmediydiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelmediydiler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
         public void GecmisDiHikayeOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("geldi_miydim", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("geldi_miydin", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("geldi_miydim",
+            "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("geldi_miydin",
+            "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("geldi_miydi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("geldi_miydik", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("geldi_miydiniz", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("geldi_miydiler", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("geldiler_miydi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("geldi_miydik",
+            "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("geldi_miydiniz",
+            "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("geldi_miydiler",
+            "gel/FIIL DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("geldiler_miydi",
+            "gel/FIIL DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
         public void GecmisDiHikayeSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmedi_miydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmedi_miydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
-        [TestCase("gelmedi_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmedi_miydik", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmedi_miydiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmedi_miydiler", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmediler_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmedi_miydim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("gelmedi_miydin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n"
+            )]
+        [TestCase("gelmedi_miydi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmedi_miydik",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("gelmedi_miydiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("gelmedi_miydiler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmediler_miydi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU"
+            )]
         public void GecmisDiHikayeSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -527,25 +588,36 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmemiştim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmemiştin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmemiştim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmemiştin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmemişti", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmemiştik", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmemiştiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmemiştiler", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmemişlerdi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmemiştik",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmemiştiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelmemiştiler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmemişlerdi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU")]
         public void GecmisMisHikayeOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmiş_miydim", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmiş_miydin", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmiş_miydim",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmiş_miydin",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmiş_miydi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmiş_miydik", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmiş_miydiniz", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmişler_miydi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmiş_miydik",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmiş_miydiniz",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelmişler_miydi",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
         public void GecmisMisHikayeSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -555,47 +627,77 @@ namespace Nuve.Test.Analysis
         [TestCase("geliyordun", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("geliyordu", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU")]
         [TestCase("geliyorduk", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("geliyordunuz", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("geliyordular", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("geliyorlardı", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("geliyordunuz",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("geliyordular",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("geliyorlardı",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU")]
         public void SimdikiHikayeOlumluTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmiyordum", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmiyordun", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmiyordum",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmiyordun",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmiyordu", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmiyorduk", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmiyordunuz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmiyordular", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmiyorlardı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmiyorduk",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmiyordunuz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("gelmiyordular",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmiyorlardı",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU"
+            )]
         public void SimdikiHikayeOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("geliyor_muydum", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("geliyor_muydun", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("geliyor_muydum",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("geliyor_muydun",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("geliyor_muydu", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("geliyor_muyduk", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("geliyor_muydunuz", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("geliyor_muydular", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("geliyorlar_mıydı", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("geliyor_muyduk",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("geliyor_muydunuz",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("geliyor_muydular",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("geliyorlar_mıydı",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
         public void SimdikiHikayeSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmiyor_muydum", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmiyor_muydun", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
-        [TestCase("gelmiyor_muydu", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmiyor_muyduk", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmiyor_muydunuz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("geliyor_muydular", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmiyorlar_mıydı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmiyor_muydum",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("gelmiyor_muydun",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n"
+            )]
+        [TestCase("gelmiyor_muydu",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmiyor_muyduk",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("gelmiyor_muydunuz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("geliyor_muydular",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmiyorlar_mıydı",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU"
+            )]
         public void SimdikiHikayeSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -605,47 +707,79 @@ namespace Nuve.Test.Analysis
         [TestCase("gelecektin", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelecekti", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU")]
         [TestCase("gelecektik", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelecektiniz", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelecektiler", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("geleceklerdi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelecektiniz",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelecektiler",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("geleceklerdi",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU")]
         public void GelecekHikayeOlumluTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmeyecektim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmeyecektin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
-        [TestCase("gelmeyecekti", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmeyecektik", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmeyecektiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmeyecektiler", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmeyeceklerdi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmeyecektim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmeyecektin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmeyecekti", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU")
+        ]
+        [TestCase("gelmeyecektik",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmeyecektiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("gelmeyecektiler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmeyeceklerdi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU"
+            )]
         public void GelecekHikayeOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelecek_miydim", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelecek_miydin", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelecek_miydim",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelecek_miydin",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelecek_miydi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelecek_miydik", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelecek_miydiniz", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelecek_miydiler", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelecekler_miydi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelecek_miydik",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelecek_miydiniz",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelecek_miydiler",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelecekler_miydi",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
         public void GelecekHikayeSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmeyecek_miydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmeyecek_miydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
-        [TestCase("gelmeyecek_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmeyecek_miydik", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmeyecek_miydiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmeyecek_miydiler", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmeyecekler_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmeyecek_miydim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("gelmeyecek_miydin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n"
+            )]
+        [TestCase("gelmeyecek_miydi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmeyecek_miydik",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("gelmeyecek_miydiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("gelmeyecek_miydiler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmeyecekler_miydi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU"
+            )]
         public void GelecekHikayeSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -663,39 +797,64 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gezmezdim", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gezmezdin", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gezmezdim",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gezmezdin",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gezmezdi", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gezmezdik", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gezmezdiniz", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gezmezdiler", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gezmezlerdi", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gezmezdik",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gezmezdiniz",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gezmezdiler",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gezmezlerdi",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU")]
         public void GenisHikayeOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gezer_miydim", "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gezer_miydin", "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gezer_miydim",
+            "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gezer_miydin",
+            "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gezer_miydi", "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gezer_miydik", "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gezer_miydiniz", "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gezer_miydiler", "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gezerler_miydi", "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gezer_miydik",
+            "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gezer_miydiniz",
+            "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gezer_miydiler",
+            "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gezerler_miydi",
+            "gez/FIIL Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
         public void GenisHikayeSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gezmez_miydim", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gezmez_miydin", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
-        [TestCase("gezmez_miydi", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gezmez_miydik", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gezmez_miydiniz", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gezmez_miydiler", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gezmezler_miydi", "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gezmez_miydim",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("gezmez_miydin",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n"
+            )]
+        [TestCase("gezmez_miydi",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gezmez_miydik",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("gezmez_miydiniz",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("gezmez_miydiler",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gezmezler_miydi",
+            "gez/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU"
+            )]
         public void GenisHikayeSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -705,43 +864,68 @@ namespace Nuve.Test.Analysis
         [TestCase("gelmeliydin", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmeliydi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU")]
         [TestCase("gelmeliydik", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmeliydiniz", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmeliydiler", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmeliydiniz",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelmeliydiler",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
         public void GereklilikHikayeOlumluTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmemeliydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmemeliydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmemeliydim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmemeliydin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmemeliydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmemeliydik", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmemeliydiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmemeliydiler", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmemeliydik",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmemeliydiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")
+        ]
+        [TestCase("gelmemeliydiler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
         public void GereklilikHikayeOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmeli_miydim", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmeli_miydin", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmeli_miydim",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmeli_miydin",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmeli_miydi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmeli_miydik", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmeli_miydiniz", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmeli_miydiler", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmeli_miydik",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmeli_miydiniz",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelmeli_miydiler",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
         public void GereklilikHikayeSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmemeli_miydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmemeli_miydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
-        [TestCase("gelmemeli_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmemeli_miydik", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmemeli_miydiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmemeli_miydiler", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmemeli_miydim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("gelmemeli_miydin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n"
+            )]
+        [TestCase("gelmemeli_miydi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmemeli_miydik",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("gelmemeli_miydiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("gelmemeli_miydiler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
         public void GereklilikHikayeSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -759,39 +943,61 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmeseydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmeseydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmeseydim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmeseydin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmeseydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmeseydik", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmeseydiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmeseydiler", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmeselerdi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmeseydik",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmeseydiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelmeseydiler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmeselerdi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr yDU/EKFIIL_HIKAYE_(y)DU")]
         public void DilekHikayeOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelse_miydim", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelse_miydin", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelse_miydim", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("gelse_miydin", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n"
+            )]
         [TestCase("gelse_miydi", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelse_miydik", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelse_miydiniz", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelse_miydiler", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelseler_miydi", "gel/FIIL sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelse_miydik", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("gelse_miydiniz",
+            "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelse_miydiler",
+            "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelseler_miydi",
+            "gel/FIIL sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
         public void DilekHikayeSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmese_miydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmese_miydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
-        [TestCase("gelmese_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmese_miydik", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmese_miydiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmese_miydiler", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmeseler_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmese_miydim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmese_miydin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmese_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU"
+            )]
+        [TestCase("gelmese_miydik",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmese_miydiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("gelmese_miydiler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmeseler_miydi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU"
+            )]
         public void DilekHikayeSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -808,284 +1014,493 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmeyeydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmeyeydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmeyeydim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmeyeydin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmeyeydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmeyeydik", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmeyeydiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmeyeydiler", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmeyeydik",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmeyeydiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelmeyeydiler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
         public void IstekHikayeOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gele_miydim", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gele_miydin", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gele_miydim",
+            "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gele_miydin",
+            "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gele_miydi", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gele_miydik", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gele_miydiniz", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gele_miydiler", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gele_miydik",
+            "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gele_miydiniz",
+            "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gele_miydiler",
+            "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
         public void IstekHikayeSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmeye_miydim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmeye_miydin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n")]
-        [TestCase("gelmeye_miydi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("gelmeye_miydik", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmeye_miydiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmeye_miydiler", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmeye_miydim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("gelmeye_miydin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU n/EKFIIL_SAHIS_SEN_n"
+            )]
+        [TestCase("gelmeye_miydi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU")]
+        [TestCase("gelmeye_miydik",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("gelmeye_miydiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("gelmeye_miydiler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU yDU/EKFIIL_HIKAYE_(y)DU lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
         public void IstekHikayeSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmişmişim", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmişmişsin", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelmişmişim",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelmişmişsin", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn"
+            )]
         [TestCase("gelmişmiş", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmişmişiz", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmişmişsiniz", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmişmişler", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmişlermiş", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmişmişiz",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelmişmişsiniz",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelmişmişler",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmişlermiş",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
         public void GecmisMisRivayetOlumluTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmemişmişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmemişmişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelmemişmişim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um"
+            )]
+        [TestCase("gelmemişmişsin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmemişmiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmemişmişiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmemişmişsiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmemişmişler", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmemişlermiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmemişmişiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz"
+            )]
+        [TestCase("gelmemişmişsiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelmemişmişler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmemişlermiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş"
+            )]
         public void GecmisMisRivayetOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmiş_miymişim", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmiş_miymişsin", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelmiş_miymişim",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelmiş_miymişsin",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmiş_miymiş", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmiş_miymişiz", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmiş_miymişsiniz", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmişler_miymiş", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmiş_miymişiz",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelmiş_miymişsiniz",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelmişler_miymiş",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
         public void GecmisMisRivayetSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmemiş_miymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmemiş_miymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
-        [TestCase("gelmemiş_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmemiş_miymişiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmemiş_miymişsiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmemişler_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmemiş_miymişim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um"
+            )]
+        [TestCase("gelmemiş_miymişsin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn"
+            )]
+        [TestCase("gelmemiş_miymiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmemiş_miymişiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz"
+            )]
+        [TestCase("gelmemiş_miymişsiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelmemişler_miymiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş"
+            )]
         public void GecmisMisRivayetSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("geliyormuşum", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("geliyormuşsun", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("geliyormuşum",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("geliyormuşsun",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("geliyormuş", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("geliyormuşuz", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("geliyormuşsunuz", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("geliyormuşlar", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("geliyorlarmış", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("geliyormuşuz",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("geliyormuşsunuz",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("geliyormuşlar",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("geliyorlarmış",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
         public void SimdikiRivayetOlumluTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmiyormuşum", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmiyormuşsun", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
-        [TestCase("gelmiyormuş", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmiyormuşuz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmiyormuşsunuz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmiyormuşlar", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmiyorlarmış", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmiyormuşum",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um"
+            )]
+        [TestCase("gelmiyormuşsun",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn"
+            )]
+        [TestCase("gelmiyormuş", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş")
+        ]
+        [TestCase("gelmiyormuşuz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz"
+            )]
+        [TestCase("gelmiyormuşsunuz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelmiyormuşlar",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmiyorlarmış",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş"
+            )]
         public void SimdikiRivayetOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("geliyor_muymuşum", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("geliyor_muymuşsun", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("geliyor_muymuşum",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("geliyor_muymuşsun",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("geliyor_muymuş", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("geliyor_muymuşuz", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("geliyor_muymuşsunuz", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("geliyor_muymuşlar", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("geliyorlar_mıymış", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("geliyor_muymuşuz",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("geliyor_muymuşsunuz",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")
+        ]
+        [TestCase("geliyor_muymuşlar",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("geliyorlar_mıymış",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
         public void SimdikiRivayetSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmiyor_muymuşum", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmiyor_muymuşsun", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
-        [TestCase("gelmiyor_muymuş", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmiyor_muymuşuz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmiyor_muymuşsunuz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmiyor_muymuşlar", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmiyorlar_mıymış", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmiyor_muymuşum",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um"
+            )]
+        [TestCase("gelmiyor_muymuşsun",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn"
+            )]
+        [TestCase("gelmiyor_muymuş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmiyor_muymuşuz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz"
+            )]
+        [TestCase("gelmiyor_muymuşsunuz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelmiyor_muymuşlar",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmiyorlar_mıymış",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş"
+            )]
         public void SimdikiRivayetSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelecekmişim", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelecekmişsin", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelecekmişim",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelecekmişsin",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelecekmiş", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelecekmişiz", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelecekmişsiniz", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelecekmişler", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("geleceklermiş", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelecekmişiz",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelecekmişsiniz",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelecekmişler",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("geleceklermiş",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
         public void GelecekRivayetOlumluTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmeyecekmişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmeyecekmişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
-        [TestCase("gelmeyecekmiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmeyecekmişiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmeyecekmişsiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmeyecekmişler", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmeyeceklermiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmeyecekmişim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um"
+            )]
+        [TestCase("gelmeyecekmişsin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn"
+            )]
+        [TestCase("gelmeyecekmiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmeyecekmişiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz"
+            )]
+        [TestCase("gelmeyecekmişsiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelmeyecekmişler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmeyeceklermiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş"
+            )]
         public void GelecekRivayetOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelecek_miymişim", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelecek_miymişsin", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelecek_miymişim",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")
+        ]
+        [TestCase("gelecek_miymişsin",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelecek_miymiş", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelecek_miymişiz", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelecek_miymişsiniz", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelecek_miymişler", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelecekler_miymiş", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelecek_miymişiz",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")
+        ]
+        [TestCase("gelecek_miymişsiniz",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelecek_miymişler",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")
+        ]
+        [TestCase("gelecekler_miymiş",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")
+        ]
         public void GelecekRivayetSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmeyecek_miymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmeyecek_miymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
-        [TestCase("gelmeyecek_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmeyecek_miymişiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmeyecek_miymişsiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmeyecek_miymişler", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmeyecekler_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmeyecek_miymişim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um"
+            )]
+        [TestCase("gelmeyecek_miymişsin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn"
+            )]
+        [TestCase("gelmeyecek_miymiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmeyecek_miymişiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz"
+            )]
+        [TestCase("gelmeyecek_miymişsiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelmeyecek_miymişler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmeyecekler_miymiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş"
+            )]
         public void GelecekRivayetSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelirmişim", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelirmişim", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")
+        ]
         [TestCase("gelirmişsin", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelirmiş", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelirmişiz", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelirmişsiniz", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelirmişler", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelirlermiş", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelirmişiz", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")
+        ]
+        [TestCase("gelirmişsiniz",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelirmişler", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelirlermiş", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş"
+            )]
         public void GenisRivayetOlumluTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmezmişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmezmişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelmezmişim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")
+        ]
+        [TestCase("gelmezmişsin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmezmiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmezmişiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmezmişsiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmezmişler", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmezlermiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmezmişiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")
+        ]
+        [TestCase("gelmezmişsiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelmezmişler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")
+        ]
+        [TestCase("gelmezlermiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")
+        ]
         public void GenisRivayetOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelir_miymişim", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelir_miymişsin", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelir_miymişim",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelir_miymişsin",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelir_miymiş", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelir_miymişiz", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelir_miymişsiniz", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelir_miymişler", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelirler_miymiş", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelir_miymişiz",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelir_miymişsiniz",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelir_miymişler",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelirler_miymiş",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
         public void GenisRivayetSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmez_miymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmez_miymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
-        [TestCase("gelmez_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmez_miymişiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmez_miymişsiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmez_miymişler", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmezler_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmez_miymişim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um"
+            )]
+        [TestCase("gelmez_miymişsin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn"
+            )]
+        [TestCase("gelmez_miymiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmez_miymişiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz"
+            )]
+        [TestCase("gelmez_miymişsiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelmez_miymişler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmezler_miymiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş"
+            )]
         public void GenisRivayetSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmeliymişim", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmeliymişsin", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelmeliymişim",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelmeliymişsin",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmeliymiş", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmeliymişiz", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmeliymişsiniz", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmeliymişler", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmelilermiş", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmeliymişiz",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelmeliymişsiniz",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelmeliymişler",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmelilermiş",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
         public void GereklilikRivayetOlumluTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmemeliymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmemeliymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
-        [TestCase("gelmemeliymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmemeliymişiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmemeliymişsiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmemeliymişler", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmemelilermiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmemeliymişim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um"
+            )]
+        [TestCase("gelmemeliymişsin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn"
+            )]
+        [TestCase("gelmemeliymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş"
+            )]
+        [TestCase("gelmemeliymişiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz"
+            )]
+        [TestCase("gelmemeliymişsiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelmemeliymişler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmemelilermiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş"
+            )]
         public void GereklilikRivayetOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmeli_miymişim", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmeli_miymişsin", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelmeli_miymişim",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelmeli_miymişsin",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmeli_miymiş", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmeli_miymişiz", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmeli_miymişsiniz", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmeli_miymişler", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmeliler_miymiş", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmeli_miymişiz",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelmeli_miymişsiniz",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelmeli_miymişler",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmeliler_miymiş",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
         public void GereklilikRivayetSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmemeli_miymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmemeli_miymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
-        [TestCase("gelmemeli_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmemeli_miymişiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmemeli_miymişsiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmemeli_miymişler", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmemeliler_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmemeli_miymişim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um"
+            )]
+        [TestCase("gelmemeli_miymişsin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn"
+            )]
+        [TestCase("gelmemeli_miymiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmemeli_miymişiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz"
+            )]
+        [TestCase("gelmemeli_miymişsiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelmemeli_miymişler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmemeliler_miymiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş"
+            )]
         public void GereklilikRivayetSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -1095,7 +1510,8 @@ namespace Nuve.Test.Analysis
         [TestCase("gelseymişsin", "gel/FIIL sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelseymiş", "gel/FIIL sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş")]
         [TestCase("gelseymişiz", "gel/FIIL sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelseymişsiniz", "gel/FIIL sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelseymişsiniz",
+            "gel/FIIL sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
         [TestCase("gelseymişler", "gel/FIIL sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
         [TestCase("gelselermiş", "gel/FIIL sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
         public void DilekRivayetOlumluTest(string token, string analysis)
@@ -1103,39 +1519,64 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmeseymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmeseymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelmeseymişim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelmeseymişsin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmeseymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmeseymişiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmeseymişsiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmeseymişler", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmeselermiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmeseymişiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelmeseymişsiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelmeseymişler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmeselermiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr ymUş/EKFIIL_RIVAYET_(y)mUş")]
         public void DilekRivayetOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelse_miymişim", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelse_miymişsin", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelse_miymişim",
+            "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelse_miymişsin",
+            "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelse_miymiş", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelse_miymişiz", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelse_miymişsiniz", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelse_miymişler", "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelseler_miymiş", "gel/FIIL sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelse_miymişiz",
+            "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelse_miymişsiniz",
+            "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gelse_miymişler",
+            "gel/FIIL sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelseler_miymiş",
+            "gel/FIIL sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
         public void DilekRivayetSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmese_miymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmese_miymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
-        [TestCase("gelmese_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmese_miymişiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmese_miymişsiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmese_miymişler", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmeseler_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmese_miymişim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um"
+            )]
+        [TestCase("gelmese_miymişsin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn"
+            )]
+        [TestCase("gelmese_miymiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmese_miymişiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz"
+            )]
+        [TestCase("gelmese_miymişsiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelmese_miymişler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmeseler_miymiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA sA/FC_KIP_DILEK_sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş"
+            )]
         public void DilekRivayetSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -1145,43 +1586,66 @@ namespace Nuve.Test.Analysis
         [TestCase("geleymişsin", "gel/FIIL yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("geleymiş", "gel/FIIL yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş")]
         [TestCase("geleymişiz", "gel/FIIL yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("geleymişsiniz", "gel/FIIL yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("geleymişsiniz",
+            "gel/FIIL yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
         [TestCase("geleymişler", "gel/FIIL yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
         public void IstekRivayetOlumluTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmeyeymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmeyeymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gelmeyeymişim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gelmeyeymişsin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gelmeyeymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmeyeymişiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmeyeymişsiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmeyeymişler", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmeyeymişiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gelmeyeymişsiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")
+        ]
+        [TestCase("gelmeyeymişler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
         public void IstekRivayetOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gele_miymişim", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gele_miymişsin", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("gele_miymişim",
+            "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("gele_miymişsin",
+            "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("gele_miymiş", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gele_miymişiz", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gele_miymişsiniz", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gele_miymişler", "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gele_miymişiz",
+            "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
+        [TestCase("gele_miymişsiniz",
+            "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("gele_miymişler",
+            "gel/FIIL yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
         public void IstekRivayetSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmeye_miymişim", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
-        [TestCase("gelmeye_miymişsin", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
-        [TestCase("gelmeye_miymiş", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("gelmeye_miymişiz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("gelmeye_miymişsiniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("gelmeye_miymişler", "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmeye_miymişim",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um"
+            )]
+        [TestCase("gelmeye_miymişsin",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn"
+            )]
+        [TestCase("gelmeye_miymiş",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş")]
+        [TestCase("gelmeye_miymişiz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz"
+            )]
+        [TestCase("gelmeye_miymişsiniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
+        [TestCase("gelmeye_miymişler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yA/FC_KIP_ISTEK_(y)A _mU/SORU_mU ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
         public void IstekRivayetSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -1199,39 +1663,64 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmediysem", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmediysen", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmediysem",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmediysen",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmediyse", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA")]
-        [TestCase("gelmediysek", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmediyseniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmediyseler", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmedilerse", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA")]
+        [TestCase("gelmediysek",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmediyseniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelmediyseler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmedilerse",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA")]
         public void GecmisDiSartOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("geldiysem_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
-        [TestCase("geldiysen_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
+        [TestCase("geldiysem_mi",
+            "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
+        [TestCase("geldiysen_mi",
+            "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("geldiyse_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
-        [TestCase("geldiysek_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("geldiyseniz_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("geldiyseler_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
-        [TestCase("geldilerse_mi", "gel/FIIL DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("geldiysek_mi",
+            "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
+        [TestCase("geldiyseniz_mi",
+            "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
+        [TestCase("geldiyseler_mi",
+            "gel/FIIL DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("geldilerse_mi",
+            "gel/FIIL DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
         public void GecmisDiSartSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmediysem_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
-        [TestCase("gelmediysen_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
-        [TestCase("gelmediyse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
-        [TestCase("gelmediysek_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("gelmediyseniz_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("gelmediyseler_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
-        [TestCase("gelmedilerse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelmediysem_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")
+        ]
+        [TestCase("gelmediysen_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")
+        ]
+        [TestCase("gelmediyse_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelmediysek_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")
+        ]
+        [TestCase("gelmediyseniz_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU"
+            )]
+        [TestCase("gelmediyseler_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU"
+            )]
+        [TestCase("gelmedilerse_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA DU/FC_ZAMAN_GECMIS_DU lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU"
+            )]
         public void GecmisDiSartSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -1249,39 +1738,64 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmemişsem", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmemişsen", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmemişsem",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmemişsen",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmemişse", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA")]
-        [TestCase("gelmemişsek", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmemişseniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmemişseler", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmemişlerse", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA")]
+        [TestCase("gelmemişsek",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmemişseniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelmemişseler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmemişlerse",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA")]
         public void GecmisMisSartOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmişsem_mi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
-        [TestCase("gelmişsen_mi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
+        [TestCase("gelmişsem_mi",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
+        [TestCase("gelmişsen_mi",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmişse_mi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
-        [TestCase("gelmişsek_mi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("gelmişseniz_mi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("gelmişseler_mi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
-        [TestCase("gelmişlerse_mi", "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelmişsek_mi",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
+        [TestCase("gelmişseniz_mi",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
+        [TestCase("gelmişseler_mi",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("gelmişlerse_mi",
+            "gel/FIIL mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
         public void GecmisMisSartSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmemişsem_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
-        [TestCase("gelmemişsen_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
-        [TestCase("gelmemişse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
-        [TestCase("gelmemişsek_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("gelmemişseniz_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("gelmemişseler_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
-        [TestCase("gelmemişlerse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelmemişsem_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU"
+            )]
+        [TestCase("gelmemişsen_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU"
+            )]
+        [TestCase("gelmemişse_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelmemişsek_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU"
+            )]
+        [TestCase("gelmemişseniz_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU"
+            )]
+        [TestCase("gelmemişseler_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU"
+            )]
+        [TestCase("gelmemişlerse_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mUş/FC_ZAMAN_GECMIS_mUş lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU"
+            )]
         public void GecmisMisSartSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -1291,47 +1805,77 @@ namespace Nuve.Test.Analysis
         [TestCase("geliyorsan", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("geliyorsa", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA")]
         [TestCase("geliyorsak", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("geliyorsanız", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("geliyorsalar", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("geliyorlarsa", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA")]
+        [TestCase("geliyorsanız", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("geliyorsalar",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("geliyorlarsa",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA")]
         public void SimdikiSartOlumluTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmiyorsam", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmiyorsan", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmiyorsam",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmiyorsan",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmiyorsa", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA")]
-        [TestCase("gelmiyorsak", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmiyorsanız", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmiyorsalar", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmiyorlarsa", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA")]
+        [TestCase("gelmiyorsak",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmiyorsanız",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelmiyorsalar",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmiyorlarsa",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA"
+            )]
         public void SimdikiSartOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("geliyorsam_mı", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
-        [TestCase("geliyorsan_mı", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
+        [TestCase("geliyorsam_mı",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
+        [TestCase("geliyorsan_mı",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("geliyorsa_mı", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
-        [TestCase("geliyorsak_mı", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("geliyorsanız_mı", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("geliyorsalar_mı", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
-        [TestCase("geliyorlarsa_mı", "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("geliyorsak_mı",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
+        [TestCase("geliyorsanız_mı",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
+        [TestCase("geliyorsalar_mı",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("geliyorlarsa_mı",
+            "gel/FIIL Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
         public void SimdikiSartSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmiyorsam_mı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
-        [TestCase("gelmiyorsan_mı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
-        [TestCase("gelmiyorsa_mı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
-        [TestCase("gelmiyorsak_mı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("gelmiyorsanız_mı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("gelmiyorsalar_mı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
-        [TestCase("gelmiyorlarsa_mı", "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelmiyorsam_mı",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU"
+            )]
+        [TestCase("gelmiyorsan_mı",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU"
+            )]
+        [TestCase("gelmiyorsa_mı",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelmiyorsak_mı",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU"
+            )]
+        [TestCase("gelmiyorsanız_mı",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU"
+            )]
+        [TestCase("gelmiyorsalar_mı",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU"
+            )]
+        [TestCase("gelmiyorlarsa_mı",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Uyor/FC_ZAMAN_SIMDIKI_(U)yor lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU"
+            )]
         public void SimdikiSartSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -1340,48 +1884,79 @@ namespace Nuve.Test.Analysis
         [TestCase("geleceksem", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
         [TestCase("geleceksen", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelecekse", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA")]
-        [TestCase("gelecekseniz", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelecekseniz",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
         [TestCase("geleceksek", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelecekseler", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("geleceklerse", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA")]
+        [TestCase("gelecekseler",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("geleceklerse",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA")]
         public void GelecekSartOlumluTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmeyeceksem", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmeyeceksen", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmeyeceksem",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmeyeceksen",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmeyecekse", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA")]
-        [TestCase("gelmeyecekseniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmeyeceksek", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmeyecekseler", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmeyeceklerse", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA")]
+        [TestCase("gelmeyecekseniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("gelmeyeceksek",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmeyecekseler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("gelmeyeceklerse",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA"
+            )]
         public void GelecekSartOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("geleceksem_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
-        [TestCase("geleceksen_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
+        [TestCase("geleceksem_mi",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
+        [TestCase("geleceksen_mi",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelecekse_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
-        [TestCase("gelecekseniz_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("geleceksek_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("gelecekseler_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
-        [TestCase("geleceklerse_mi", "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelecekseniz_mi",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
+        [TestCase("geleceksek_mi",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
+        [TestCase("gelecekseler_mi",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("geleceklerse_mi",
+            "gel/FIIL yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
         public void GelecekSartSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmeyeceksem_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
-        [TestCase("gelmeyeceksen_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
-        [TestCase("gelmeyecekse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
-        [TestCase("gelmeyecekseniz_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("gelmeyeceksek_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("gelmeyecekseler_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
-        [TestCase("gelmeyeceklerse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelmeyeceksem_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU"
+            )]
+        [TestCase("gelmeyeceksen_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU"
+            )]
+        [TestCase("gelmeyecekse_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelmeyecekseniz_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU"
+            )]
+        [TestCase("gelmeyeceksek_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU"
+            )]
+        [TestCase("gelmeyecekseler_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU"
+            )]
+        [TestCase("gelmeyeceklerse_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU"
+            )]
         public void GelecekSartSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -1399,39 +1974,64 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmezsem", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmezsen", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmezsem",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmezsen",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmezse", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA")]
-        [TestCase("gelmezsek", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmezseniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmezseler", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("gelmezlerse", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA")]
+        [TestCase("gelmezsek",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmezseniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelmezseler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmezlerse",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA")]
         public void GenisSartOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelirsem_mi", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
-        [TestCase("gelirsen_mi", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
+        [TestCase("gelirsem_mi",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
+        [TestCase("gelirsen_mi",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelirse_mi", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
-        [TestCase("gelirsek_mi", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("gelirseniz_mi", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("gelirseler_mi", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
-        [TestCase("gelirlerse_mi", "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelirsek_mi",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
+        [TestCase("gelirseniz_mi",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
+        [TestCase("gelirseler_mi",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("gelirlerse_mi",
+            "gel/FIIL Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
         public void GenisSartSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmezsem_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
-        [TestCase("gelmezsen_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
-        [TestCase("gelmezse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
-        [TestCase("gelmezsek_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("gelmezseniz_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("gelmezseler_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
-        [TestCase("gelmezlerse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelmezsem_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU"
+            )]
+        [TestCase("gelmezsen_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU"
+            )]
+        [TestCase("gelmezse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA _mU/SORU_mU"
+            )]
+        [TestCase("gelmezsek_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU"
+            )]
+        [TestCase("gelmezseniz_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU"
+            )]
+        [TestCase("gelmezseler_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU"
+            )]
+        [TestCase("gelmezlerse_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA Ur/FC_ZAMAN_GENIS_(U)r lAr/EKFIIL_SAHIS_ONLAR_lAr ysA/EKFIIL_SART_(y)sA _mU/SORU_mU"
+            )]
         public void GenisSartSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -1441,43 +2041,67 @@ namespace Nuve.Test.Analysis
         [TestCase("gelmeliysen", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmeliyse", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA")]
         [TestCase("gelmeliysek", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmeliyseniz", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmeliyseler", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmeliyseniz", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("gelmeliyseler",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
         public void GereklilikSartOlumluTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("gelmemeliysem", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("gelmemeliysen", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
+        [TestCase("gelmemeliysem",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m")]
+        [TestCase("gelmemeliysen",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n")]
         [TestCase("gelmemeliyse", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA")]
-        [TestCase("gelmemeliysek", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("gelmemeliyseniz", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("gelmemeliyseler", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("gelmemeliysek",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k")]
+        [TestCase("gelmemeliyseniz",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("gelmemeliyseler",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr")
+        ]
         public void GereklilikSartOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmeliysem_mi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
-        [TestCase("gelmeliysen_mi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
+        [TestCase("gelmeliysem_mi",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
+        [TestCase("gelmeliysen_mi",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
         [TestCase("gelmeliyse_mi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
-        [TestCase("gelmeliysek_mi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("gelmeliyseniz_mi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("gelmeliyseler_mi", "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("gelmeliysek_mi",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
+        [TestCase("gelmeliyseniz_mi",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
+        [TestCase("gelmeliyseler_mi",
+            "gel/FIIL mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
         public void GereklilikSartSoruTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [Ignore]
-        [TestCase("gelmemeliysem_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU")]
-        [TestCase("gelmemeliysen_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU")]
-        [TestCase("gelmemeliyse_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
-        [TestCase("gelmemeliysek_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU")]
-        [TestCase("gelmemeliyseniz_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU")]
-        [TestCase("gelmemeliyseler_mi", "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU")]
+        [TestCase("gelmemeliysem_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _mU/SORU_mU"
+            )]
+        [TestCase("gelmemeliysen_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA n/EKFIIL_SAHIS_SEN_n _mU/SORU_mU"
+            )]
+        [TestCase("gelmemeliyse_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA _mU/SORU_mU")]
+        [TestCase("gelmemeliysek_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA k/EKFIIL_SAHIS_BIZ_k _mU/SORU_mU"
+            )]
+        [TestCase("gelmemeliyseniz_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz _mU/SORU_mU"
+            )]
+        [TestCase("gelmemeliyseler_mi",
+            "gel/FIIL mA/FY_OLUMSUZLUK_mA mAlI/FC_KIP_GEREKLILIK_mAlI ysA/EKFIIL_SART_(y)sA lAr/EKFIIL_SAHIS_ONLAR_lAr _mU/SORU_mU"
+            )]
         public void GereklilikSartSoruOlumsuzTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);

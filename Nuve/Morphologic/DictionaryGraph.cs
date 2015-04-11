@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Nuve.Morphologic
 {
@@ -26,6 +27,10 @@ namespace Nuve.Morphologic
             if (!_dict.ContainsKey(key))
             {
                 _dict[key] = edge;
+            }
+            else
+            {
+                Console.WriteLine(@"Duplicate key: " + key);
             }
         }
 

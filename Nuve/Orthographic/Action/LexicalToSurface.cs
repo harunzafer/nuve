@@ -6,7 +6,9 @@ namespace Nuve.Orthographic.Action
     internal class LexicalToSurface : BaseAction
     {
         public LexicalToSurface(Alphabet alphabet, string operandOne, string operandTwo, string flag)
-            : base(alphabet, operandOne, operandTwo, flag) { }
+            : base(alphabet, operandOne, operandTwo, flag)
+        {
+        }
 
         public override void Do(Allomorph allomorph, Position position)
         {
@@ -14,4 +16,3 @@ namespace Nuve.Orthographic.Action
         }
     }
 }
-

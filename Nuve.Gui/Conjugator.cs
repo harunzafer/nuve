@@ -5,7 +5,7 @@ using Nuve.Morphologic.Structure;
 
 namespace Nuve.Gui
 {
-    class Conjugator
+    internal class Conjugator
     {
         private const string Filename = @"C:\Users\hrzafer\Dropbox\aNewHope\conjugationData.xlsx";
         private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
@@ -13,7 +13,7 @@ namespace Nuve.Gui
 
         public static List<string> Conjugate(string verbRoot, bool negative, bool question)
         {
-            List<string> conjugations = new List<string>();
+            var conjugations = new List<string>();
             Root root = GetVerbRoot(verbRoot);
             foreach (Conjugation conjugation in Conjugations)
             {
@@ -25,7 +25,7 @@ namespace Nuve.Gui
 
         private static Root GetVerbRoot(string verbRoot)
         {
-            var roots = Language.Turkish.GetRootsHavingSurface(verbRoot);
+            IEnumerable<Root> roots = Language.Turkish.GetRootsHavingSurface(verbRoot);
             foreach (Root root in roots)
             {
                 if (root.Id == "FIIL")

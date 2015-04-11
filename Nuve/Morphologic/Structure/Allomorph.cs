@@ -3,41 +3,29 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using Nuve.Condition;
-using Nuve.Orthographic;
 
 namespace Nuve.Morphologic.Structure
 {
     /// <summary>
-    /// Allomorph'un kelime anlamı: Bir morpheme'in aldığı farklı biçimlerin her birine verilen ad.<para/>
-    /// Morfemler bulundukları kelimeler içerisinde farklı yüzey biçimleri alırlar.<para/>
-    /// Bir morfemin yüzey biçimi sahip olduğu ortografik kurallara ve kendisinin sağındaki ve solundaki morfemlere göre değişir<para/>
+    ///     Allomorph'un kelime anlamı: Bir morpheme'in aldığı farklı biçimlerin her birine verilen ad.
+    ///     <para />
+    ///     Morfemler bulundukları kelimeler içerisinde farklı yüzey biçimleri alırlar.
+    ///     <para />
+    ///     Bir morfemin yüzey biçimi sahip olduğu ortografik kurallara ve kendisinin sağındaki ve solundaki morfemlere göre
+    ///     değişir
+    ///     <para />
     /// </summary>
     [DebuggerDisplay("{morpheme.LexicalForm}=>{Surface}")]
     public class Allomorph
     {
+        private readonly Morpheme _morpheme;
         private LinkedListNode<Allomorph> _node;
 
-        /// <summary>
-        /// Her <see cref="Allomorph"/> nesnesi içerisinde bir Morpheme nesnesi barındırır.<para/>
-        /// </summary>
-        public Morpheme Morpheme
-        {
-            get { return _morpheme; }
-        }
-        private readonly Morpheme _morpheme;
-
-        /// <summary>
-        /// Allomorph'un yüzey biçimi
-        /// </summary>
-        public string Surface
-        {
-            get { return _surface; }
-            set { _surface = value; }
-        }
         private string _surface;
 
         /// <summary>
-        /// Her <see cref="Allomorph"/> nesnesi içerisinde bir Morpheme nesnesi barındırır.<para/>
+        ///     Her <see cref="Allomorph" /> nesnesi içerisinde bir Morpheme nesnesi barındırır.
+        ///     <para />
         /// </summary>
         /// <param name="morpheme">Allomorph'a kaynaklık eden Morpheme </param>
         public Allomorph(Morpheme morpheme)
@@ -47,18 +35,25 @@ namespace Nuve.Morphologic.Structure
         }
 
         /// <summary>
-        /// Allomorph'lar bir linked list halinde bulunurlar Word sınıfı içerisinde<para/>
-        /// Her allomorph içerisinde bulunduğu linkedlist node'una bir referans tutar.<para/>
-        /// Bu sayede sağındaki ve solundaki morfemlerden haberdar olur<para/>
+        ///     Her <see cref="Allomorph" /> nesnesi içerisinde bir Morpheme nesnesi barındırır.
+        ///     <para />
         /// </summary>
-        /// <param name="node">linkedlist node'u</param>
-        public void SetNode(LinkedListNode<Allomorph> node)
+        public Morpheme Morpheme
         {
-            _node = node;
+            get { return _morpheme; }
         }
 
         /// <summary>
-        /// Soldaki yani bir önceki Allomorph'u döndürür.
+        ///     Allomorph'un yüzey biçimi
+        /// </summary>
+        public string Surface
+        {
+            get { return _surface; }
+            set { _surface = value; }
+        }
+
+        /// <summary>
+        ///     Soldaki yani bir önceki Allomorph'u döndürür.
         /// </summary>
         public Allomorph Previous
         {
@@ -93,7 +88,7 @@ namespace Nuve.Morphologic.Structure
         }
 
         /// <summary>
-        /// Sağdaki yani bir sonraki Allomorph.
+        ///     Sağdaki yani bir sonraki Allomorph.
         /// </summary>
         public Allomorph Next
         {
@@ -102,11 +97,11 @@ namespace Nuve.Morphologic.Structure
 
 
         /// <summary>
-        /// Bu morfemden önce gelen bir morfem var mı? </para>
-        /// Eğer morfem kelimenin kökü (Root) ise doğal olarak false dönecektir.
+        ///     Bu morfemden önce gelen bir morfem var mı? </para>
+        ///     Eğer morfem kelimenin kökü (Root) ise doğal olarak false dönecektir.
         /// </summary>
         /// <value>
-        ///   <c>true</c> Morfemin solunda bir morfem varsa; yoksa, <c>false</c>.
+        ///     <c>true</c> Morfemin solunda bir morfem varsa; yoksa, <c>false</c>.
         /// </value>
         public bool HasPrevious
         {
@@ -114,11 +109,11 @@ namespace Nuve.Morphologic.Structure
         }
 
         /// <summary>
-        /// Bu morfemden sonra gelen bir morfem var mı? </para>
-        /// Eğer morfem kelimenin son morfemi ise doğal olarak false dönecektir.
+        ///     Bu morfemden sonra gelen bir morfem var mı? </para>
+        ///     Eğer morfem kelimenin son morfemi ise doğal olarak false dönecektir.
         /// </summary>
         /// <value>
-        ///   <c>true</c> Morfemin sağında bir morfem varsa; yoksa, <c>false</c>.
+        ///     <c>true</c> Morfemin sağında bir morfem varsa; yoksa, <c>false</c>.
         /// </value>
         public bool HasNext
         {
@@ -133,6 +128,20 @@ namespace Nuve.Morphologic.Structure
         public bool IsLast
         {
             get { return HasNext; }
+        }
+
+        /// <summary>
+        ///     Allomorph'lar bir linked list halinde bulunurlar Word sınıfı içerisinde
+        ///     <para />
+        ///     Her allomorph içerisinde bulunduğu linkedlist node'una bir referans tutar.
+        ///     <para />
+        ///     Bu sayede sağındaki ve solundaki morfemlerden haberdar olur
+        ///     <para />
+        /// </summary>
+        /// <param name="node">linkedlist node'u</param>
+        public void SetNode(LinkedListNode<Allomorph> node)
+        {
+            _node = node;
         }
 
         public string GetSurface(Position location)
@@ -156,9 +165,8 @@ namespace Nuve.Morphologic.Structure
         }
 
 
-
         /// <summary>
-        /// Allomorph'un solunda kalan yüzeyi döndürür.
+        ///     Allomorph'un solunda kalan yüzeyi döndürür.
         /// </summary>
         /// <returns>sol/önceki yüzey</returns>
         protected string GetPreviousSurface()
@@ -175,7 +183,7 @@ namespace Nuve.Morphologic.Structure
         }
 
         /// <summary>
-        /// Allomorph'un sonrasındaki yüzeyi döndürür.
+        ///     Allomorph'un sonrasındaki yüzeyi döndürür.
         /// </summary>
         /// <returns>sağ/sonraki yüzey</returns>
         protected string GetNextSurface()
@@ -191,9 +199,9 @@ namespace Nuve.Morphologic.Structure
             return sb.ToString();
         }
 
-      
+
         /// <summary>
-        /// Eğer morfemden sonra gelen bir morfem var ise ilk kuralları işlet
+        ///     Eğer morfemden sonra gelen bir morfem var ise ilk kuralları işlet
         /// </summary>
         private void ProcessFirstRules()
         {
@@ -202,7 +210,7 @@ namespace Nuve.Morphologic.Structure
         }
 
         /// <summary>
-        /// Eğer morfemden önce gelen bir morfem var ise Previous kuralları işlet
+        ///     Eğer morfemden önce gelen bir morfem var ise Previous kuralları işlet
         /// </summary>
         private void ProcessPrevRules()
         {
@@ -211,7 +219,7 @@ namespace Nuve.Morphologic.Structure
         }
 
         /// <summary>
-        /// Eğer morfemden sonra gelen bir morfem var ise Next türündeki ortografik kuralları işlet.
+        ///     Eğer morfemden sonra gelen bir morfem var ise Next türündeki ortografik kuralları işlet.
         /// </summary>
         private void ProcessNextRules()
         {
@@ -220,8 +228,8 @@ namespace Nuve.Morphologic.Structure
         }
 
         /// <summary>
-        /// Eğer morfemden sonra ek gelmiyorsa bu kural işletilir.
-        /// Bu kuralın Condition'ı olmaz.
+        ///     Eğer morfemden sonra ek gelmiyorsa bu kural işletilir.
+        ///     Bu kuralın Condition'ı olmaz.
         /// </summary>
         private void ProcessSelfRules()
         {
@@ -230,8 +238,8 @@ namespace Nuve.Morphologic.Structure
         }
 
         /// <summary>
-        /// Diğer kuralların işletilmesinden sonra, son ve koşulsuz olarak bu kural işletilir.
-        /// Genelde özel karakterleri silmek için kullanılır.
+        ///     Diğer kuralların işletilmesinden sonra, son ve koşulsuz olarak bu kural işletilir.
+        ///     Genelde özel karakterleri silmek için kullanılır.
         /// </summary>
         private void ProcessDefaultRules()
         {
@@ -263,7 +271,7 @@ namespace Nuve.Morphologic.Structure
 
 
         /// <summary>
-        /// Yüzeyi ilk sözlük biçimine geri al.
+        ///     Yüzeyi ilk sözlük biçimine geri al.
         /// </summary>
         internal void ResetSurface()
         {

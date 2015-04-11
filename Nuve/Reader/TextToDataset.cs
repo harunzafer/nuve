@@ -6,28 +6,28 @@ namespace Nuve.Reader
 {
     internal class TextToDataSet
     {
-
         /// <summary>
-        /// Converts a given delimited file into a dataset. 
-        /// Assumes that the first line    
-        /// of the text file contains the column names.
+        ///     Converts a given delimited file into a dataset.
+        ///     Assumes that the first line
+        ///     of the text file contains the column names.
         /// </summary>
-        /// <param name="stream">The text file as Stream</param>    
-        /// <param name="tableName">The name of the 
-        /// Table to be made within the DataSet returned</param>
+        /// <param name="stream">The text file as Stream</param>
+        /// <param name="tableName">
+        ///     The name of the
+        ///     Table to be made within the DataSet returned
+        /// </param>
         /// <param name="delimiter">The string to delimit by</param>
-        /// <returns>DataSet</returns>  
-        /// <see cref="http://www.codeproject.com/Articles/6737/Fill-a-DataSet-from-delimited-text-files"/>
+        /// <returns>DataSet</returns>
+        /// <see cref="http://www.codeproject.com/Articles/6737/Fill-a-DataSet-from-delimited-text-files" />
         public static DataSet Convert(Stream stream, string tableName, string delimiter)
         {
-            
-            StreamReader reader = new StreamReader(stream);
+            var reader = new StreamReader(stream);
 
             //Split the first line into the columns       
             string[] columns = reader.ReadLine().Split(delimiter.ToCharArray());
 
             //The DataSet to Return
-            DataSet result = new DataSet();
+            var result = new DataSet();
 
             //AddSequence the new DataTable to the RecordSet
             result.Tables.Add(tableName);
@@ -58,7 +58,7 @@ namespace Nuve.Reader
                     {
                         //if it did exist then we increment the sequencer and try again.
                         i++;
-                        next = "_" + i.ToString();
+                        next = "_" + i;
                     }
                 }
             }
@@ -85,6 +85,5 @@ namespace Nuve.Reader
             //Return the imported data.        
             return result;
         }
-        
     }
 }

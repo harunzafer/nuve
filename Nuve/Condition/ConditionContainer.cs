@@ -15,7 +15,7 @@ namespace Nuve.Condition
             {
                 _flag = false;
             }
-            else if (flag=="And")
+            else if (flag == "And")
             {
                 _flag = true;
             }
@@ -49,7 +49,7 @@ namespace Nuve.Condition
 
         private bool AreAllConditionsTrue(Allomorph allomorph)
         {
-            foreach (var condition in _conditions)
+            foreach (ConditionBase condition in _conditions)
             {
                 if (!condition.IsTrueFor(allomorph))
                 {
@@ -61,7 +61,7 @@ namespace Nuve.Condition
 
         private bool IsAnyConditionTrue(Allomorph allomorph)
         {
-            foreach (var condition in _conditions)
+            foreach (ConditionBase condition in _conditions)
             {
                 if (condition.IsTrueFor(allomorph))
                 {
@@ -70,6 +70,5 @@ namespace Nuve.Condition
             }
             return false;
         }
-        
     }
 }

@@ -1,12 +1,11 @@
 ﻿using System;
 using System.IO;
 using System.Reflection;
-using System.Xml;
 
 namespace Nuve.Reader
 {
     /// <summary>
-    /// Nuve.Resources klasörünün altındaki dosyaları okur.
+    ///     Nuve.Resources klasörünün altındaki dosyaları okur.
     /// </summary>
     internal static class EmbeddedResourceReader
     {
@@ -30,6 +29,5 @@ namespace Nuve.Reader
             }
             return stream;
         }
-
     }
 }

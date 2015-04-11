@@ -6,16 +6,16 @@ using Nuve.Morphologic.Structure;
 namespace Nuve.Test.Orthographic
 {
     [TestFixture]
-    class NounGenerationTest
+    internal class NounGenerationTest
     {
-        private Language tr;
-        private Word word;
-
         [SetUp]
         public void Init()
         {
             tr = Language.Turkish;
-            }
+        }
+
+        private Language tr;
+        private Word word;
 
         [TestCase("kitap", Result = "kitaplarımdakilerden")]
         [TestCase("kalem", Result = "kalemlerimdekilerden")]
@@ -29,7 +29,7 @@ namespace Nuve.Test.Orthographic
             word.AddSuffix(tr.GetSuffix("IC_AITLIK_ki"));
             word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
             word.AddSuffix(tr.GetSuffix("IC_HAL_AYRILMA_DAn"));
-            
+
             return word.GetSurface();
         }
     }

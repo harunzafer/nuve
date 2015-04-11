@@ -16,32 +16,18 @@ namespace Nuve.Test.NGrams
         private const int Trigram = 3;
 
         [Test]
-        public void TestUnigrams()
+        public void SerializationTest()
         {
-            var unigrams = new NGramDictionary(new NGramExtractor(Unigram));
-            unigrams.AddSequence(Text1.Split(null).ToList());
-            unigrams.AddSequence(Text2.Split(null).ToList());
-            unigrams.AddSequence(Text3.Split(null).ToList());
+            var corpus = new NGramDictionary(new NGramExtractor(Unigram, Trigram));
+            corpus.AddSequence(Text1.Split(null).ToList());
+            corpus.AddSequence(Text2.Split(null).ToList());
 
-            var ex = Assert.Throws<ArgumentException>(() => unigrams.GetFrequency());
-            Assert.That(ex.Message,
-                Is.EqualTo(@"Length of nGramTokens (0) must not be greater than maxNGramSize or less than minNGramSize"));
+            NGramDictionary copy = NGramDictionary.DeserializeFrom(corpus.ToString());
 
-            ex = Assert.Throws<ArgumentException>(() => unigrams.GetFrequency("I", "am"));
-            Assert.That(ex.Message,
-                Is.EqualTo(@"Length of nGramTokens (2) must not be greater than maxNGramSize or less than minNGramSize"));
+            corpus.AddSequence(Text3.Split(null).ToList());
+            copy.AddSequence(Text3.Split(null).ToList());
 
-            int freq = unigrams.GetFrequency("I");
-            Assert.AreEqual(3, freq);
-
-            freq = unigrams.GetFrequency("am");
-            Assert.AreEqual(2, freq);
-
-            freq = unigrams.GetFrequency("not");
-            Assert.AreEqual(1, freq);
-
-            freq = unigrams.GetFrequency("the");
-            Assert.AreEqual(0, freq);
+            Assert.AreEqual(corpus.ToString(), copy.ToString());
         }
 
         [Test]
@@ -102,6 +88,35 @@ namespace Nuve.Test.NGrams
 
             freq = trigams.GetFrequency("not", "like", "green");
             Assert.AreEqual(1, freq);
+        }
+
+        [Test]
+        public void TestUnigrams()
+        {
+            var unigrams = new NGramDictionary(new NGramExtractor(Unigram));
+            unigrams.AddSequence(Text1.Split(null).ToList());
+            unigrams.AddSequence(Text2.Split(null).ToList());
+            unigrams.AddSequence(Text3.Split(null).ToList());
+
+            var ex = Assert.Throws<ArgumentException>(() => unigrams.GetFrequency());
+            Assert.That(ex.Message,
+                Is.EqualTo(@"Length of nGramTokens (0) must not be greater than maxNGramSize or less than minNGramSize"));
+
+            ex = Assert.Throws<ArgumentException>(() => unigrams.GetFrequency("I", "am"));
+            Assert.That(ex.Message,
+                Is.EqualTo(@"Length of nGramTokens (2) must not be greater than maxNGramSize or less than minNGramSize"));
+
+            int freq = unigrams.GetFrequency("I");
+            Assert.AreEqual(3, freq);
+
+            freq = unigrams.GetFrequency("am");
+            Assert.AreEqual(2, freq);
+
+            freq = unigrams.GetFrequency("not");
+            Assert.AreEqual(1, freq);
+
+            freq = unigrams.GetFrequency("the");
+            Assert.AreEqual(0, freq);
         }
 
 
@@ -248,22 +263,5 @@ namespace Nuve.Test.NGrams
             freq = corpus.GetFrequency("not", "like", "green");
             Assert.AreEqual(1, freq);
         }
-
-        [Test]
-        public void SerializationTest()
-        {
-            var corpus = new NGramDictionary(new NGramExtractor(Unigram, Trigram));
-            corpus.AddSequence(Text1.Split(null).ToList());
-            corpus.AddSequence(Text2.Split(null).ToList());          
-
-            var copy = NGramDictionary.DeserializeFrom(corpus.ToString());
-
-            corpus.AddSequence(Text3.Split(null).ToList());
-            copy.AddSequence(Text3.Split(null).ToList());
-            
-            Assert.AreEqual(corpus.ToString(), copy.ToString());
-
-        }
-
     }
 }

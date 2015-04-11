@@ -1,12 +1,9 @@
-﻿    using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using Nuve.Morphologic.Structure;
 
 namespace Nuve.Disambiguator
 {
-    class Model
+    internal class Model
     {
         private readonly IDictionary<Word, int> _model;
 
@@ -23,8 +20,7 @@ namespace Nuve.Disambiguator
         //        int f =_model[solution];
 
         //    }
-            
+
         //}
-        
     }
 }

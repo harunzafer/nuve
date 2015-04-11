@@ -6,10 +6,21 @@ using Nuve.Reader;
 
 namespace Nuve.Condition
 {
-    public enum Position { First, Previous, Next, This, Source, Target, 
-        BeforeTarget, AfterTarget, BeforeSource, Last } ;
+    public enum Position
+    {
+        First,
+        Previous,
+        Next,
+        This,
+        Source,
+        Target,
+        BeforeTarget,
+        AfterTarget,
+        BeforeSource,
+        Last
+    };
 
-    public abstract class ConditionBase 
+    public abstract class ConditionBase
     {
         protected readonly Alphabet Alphabet;
         protected readonly string Operand;
@@ -25,20 +36,20 @@ namespace Nuve.Condition
             Alphabet = alphabet;
         }
 
-        protected bool TryGetOperandMorpheme(Allomorph allomorph, out Allomorph operand)  // out parameter for result
+        protected bool TryGetOperandMorpheme(Allomorph allomorph, out Allomorph operand) // out parameter for result
         {
             switch (Position)
             {
-                case Position.Next: 
+                case Position.Next:
                 case Position.Target:
                     operand = allomorph.Next;
                     return allomorph.HasNext;
-                    
+
                 case Position.Previous:
                 case Position.BeforeSource:
                     operand = allomorph.Previous;
                     return allomorph.HasPrevious;
-                
+
                 case Position.This:
                 case Position.Source:
                     operand = allomorph;
@@ -56,8 +67,9 @@ namespace Nuve.Condition
                     }
                     operand = null;
                     return false;
-                
-                default: throw new ArgumentException("Invalid Argument : " + Position);
+
+                default:
+                    throw new ArgumentException("Invalid Argument : " + Position);
             }
         }
 
@@ -65,10 +77,10 @@ namespace Nuve.Condition
 
         protected List<int> ParseLabels(string operand)
         {
-            string[] labels = operand.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] labels = operand.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
             return LabelSet.ConvertLabelNamesToIndexes(labels);
         }
-        
+
         public override string ToString()
         {
             return "operand: " + Operand;

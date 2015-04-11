@@ -22,8 +22,8 @@ namespace Nuve.Reader
         {
             XmlNode consonantsNode = xml.GetElementsByTagName("consonants")[0].FirstChild;
             XmlNode vowelsNode = xml.GetElementsByTagName("vowels")[0].FirstChild;
-            var consonants = consonantsNode.Value;
-            var vowels = vowelsNode.Value;
+            string consonants = consonantsNode.Value;
+            string vowels = vowelsNode.Value;
             return new Alphabet(consonants, vowels);
         }
 
@@ -79,15 +79,18 @@ namespace Nuve.Reader
             string morpheme = transformNode.Attributes["morpheme"].InnerText;
 
             string actionName = transformNode.Attributes["action"].InnerText;
-            
-            string operandOne = transformNode.Attributes["operandOne"] != null ? 
-                transformNode.Attributes["operandOne"].InnerText : "";
 
-            string operandTwo = transformNode.Attributes["operandTwo"] != null ?
-                transformNode.Attributes["operandTwo"].InnerText : "";
+            string operandOne = transformNode.Attributes["operandOne"] != null
+                ? transformNode.Attributes["operandOne"].InnerText
+                : "";
 
-            string flag = transformNode.Attributes["flag"] != null ?
-                transformNode.Attributes["flag"].InnerText : "";
+            string operandTwo = transformNode.Attributes["operandTwo"] != null
+                ? transformNode.Attributes["operandTwo"].InnerText
+                : "";
+
+            string flag = transformNode.Attributes["flag"] != null
+                ? transformNode.Attributes["flag"].InnerText
+                : "";
 
             BaseAction action = ActionFactory.Create(actionName, _alphabet, operandOne, operandTwo, flag);
 
@@ -123,21 +126,21 @@ namespace Nuve.Reader
             }
             return conditions;
         }
-        
+
         private static ConditionBase ReadCondition(XmlNode node)
         {
             string name = node.Attributes["operator"].InnerText;
-            
+
             string morpheme = node.Attributes["morpheme"].InnerText;
-            
+
             string operand = string.Empty;
 
             if (node.Attributes["operand"] != null)
             {
-                operand = node.Attributes["operand"].InnerText;                
+                operand = node.Attributes["operand"].InnerText;
             }
 
-            return ConditionFactory.Create(name, morpheme, operand, _alphabet);                
+            return ConditionFactory.Create(name, morpheme, operand, _alphabet);
         }
     }
 }

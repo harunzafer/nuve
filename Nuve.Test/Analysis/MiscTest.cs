@@ -2,7 +2,7 @@
 
 namespace Nuve.Test.Analysis
 {
-    class MiscTest
+    internal class MiscTest
     {
         [TestCase("birinci", "bir/SAYI UncU/SAYI_SIRA_(U)ncU")]
         [TestCase("ikinci", "iki/SAYI UncU/SAYI_SIRA_(U)ncU")]
@@ -46,7 +46,5 @@ namespace Nuve.Test.Analysis
         {
             Tester.ContainsAnalysis(token, analysis);
         }
-
-
     }
 }

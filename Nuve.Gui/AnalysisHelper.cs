@@ -9,30 +9,30 @@ using Nuve.Morphologic.Structure;
 
 namespace Nuve.Gui
 {
-    class AnalysisHelper
+    internal class AnalysisHelper
     {
-
         public static void Analyze(WordAnalyzer analyzer, IEnumerable<string> words)
         {
-            foreach (var test in words)
+            foreach (string test in words)
             {
                 IList<Word> solutions = analyzer.Analyze(test);
                 Console.WriteLine("\n{0} için {1} çözüm bulundu:", test, solutions.Count);
-                foreach (var solution in solutions)
+                foreach (Word solution in solutions)
                 {
                     Console.WriteLine("\t{0}\n", solution);
                 }
             }
         }
 
-        public static void AnalyzeTokensToFile(WordAnalyzer analyzer, IEnumerable<string> words, string undefinedOutputFilename)
+        public static void AnalyzeTokensToFile(WordAnalyzer analyzer, IEnumerable<string> words,
+            string undefinedOutputFilename)
         {
             IList<string> lines = new List<string>();
             foreach (string word in words)
             {
                 string line = word;
                 IList<Word> solutions = analyzer.Analyze(word);
-                foreach (var solution in solutions)
+                foreach (Word solution in solutions)
                 {
                     line += "\t" + solution;
                 }
@@ -47,10 +47,10 @@ namespace Nuve.Gui
             string[] lines = File.ReadAllLines(inputFilename, Encoding.UTF8);
             foreach (string line in lines)
             {
-                IList<Word> solutions = analyzer.Analyze(line);                
+                IList<Word> solutions = analyzer.Analyze(line);
                 if (!solutions.Any())
                 {
-                     undefined.Add(line);
+                    undefined.Add(line);
                 }
             }
             File.WriteAllLines(undefinedOutputFilename, undefined);

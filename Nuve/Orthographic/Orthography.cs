@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Text;
 
 namespace Nuve.Orthographic
@@ -19,7 +17,10 @@ namespace Nuve.Orthographic
             }
         }
 
-        public Alphabet Alphabet {get {return _alphabet; } }
+        public Alphabet Alphabet
+        {
+            get { return _alphabet; }
+        }
 
         public OrthographyRule GetRule(string id)
         {
@@ -30,18 +31,17 @@ namespace Nuve.Orthographic
         public List<OrthographyRule> GetRules(IEnumerable<string> ids)
         {
             var orthographyRules = new List<OrthographyRule>();
-            foreach (var id in ids)
+            foreach (string id in ids)
             {
                 //int id = Convert.ToInt32(rule.Value);
-                if (GetRule(id)==null)
+                if (GetRule(id) == null)
                 {
                     //Console.WriteLine("Warning: Undefined orthograpy rule:" + id);
                 }
                 else
                 {
-                    orthographyRules.Add(GetRule(id));    
+                    orthographyRules.Add(GetRule(id));
                 }
-                
             }
             return orthographyRules;
         }
@@ -51,7 +51,7 @@ namespace Nuve.Orthographic
             var sb = new StringBuilder();
             foreach (var rule in _rules)
             {
-                sb.Append(rule.Value.ToString());
+                sb.Append(rule.Value);
             }
             return sb.ToString();
         }

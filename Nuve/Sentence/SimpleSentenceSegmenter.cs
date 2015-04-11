@@ -3,11 +3,15 @@ using System.Linq;
 
 namespace Nuve.Sentence
 {
-    class SimpleSentenceSegmenter : SentenceSegmenter
+    internal class SimpleSentenceSegmenter : SentenceSegmenter
     {
-        public SimpleSentenceSegmenter(char[] eosCandidates):base(eosCandidates) { }
+        public SimpleSentenceSegmenter(char[] eosCandidates) : base(eosCandidates)
+        {
+        }
 
-        public SimpleSentenceSegmenter() { }
+        public SimpleSentenceSegmenter()
+        {
+        }
 
         public override IEnumerable<int> GetBoundaryIndices(string paragraph)
         {
@@ -20,7 +24,7 @@ namespace Nuve.Sentence
                 }
             }
 
-            AddLastIndexAsSentenceBoundary(indices, lastIndex: paragraph.Length - 1);
+            AddLastIndexAsSentenceBoundary(indices, paragraph.Length - 1);
 
             return indices;
         }

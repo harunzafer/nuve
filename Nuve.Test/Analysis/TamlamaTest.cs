@@ -15,14 +15,13 @@ namespace Nuve.Test.Analysis
 
         //iyelik ekleri (doğrudan eklenir)
         [TestCase("zeytinyağım", new[] {"zeytinyağ/TAMLAMA Um/IC_SAHIPLIK_BEN_(U)m"})]
-        [TestCase("zeytinyağımız", new[] { "zeytinyağ/TAMLAMA UmUz/IC_SAHIPLIK_BIZ_(U)mUz" })]
+        [TestCase("zeytinyağımız", new[] {"zeytinyağ/TAMLAMA UmUz/IC_SAHIPLIK_BIZ_(U)mUz"})]
 
         //Yapım ekleri (doğrudan eklenir)
-        [TestCase("zeytinyağsız", new[] { "zeytinyağ/TAMLAMA sUz/IY_SIFAT_sUz" })]
-        [TestCase("zeytinyağlı", new[] { "zeytinyağ/TAMLAMA lU/IY_SIFAT_lU" })]
-        [TestCase("zeytinyağcı", new[] { "zeytinyağ/TAMLAMA CU/IY_ISIM_CU" })]
-        [TestCase("zeytinyağlamak", new[] { "zeytinyağ/TAMLAMA lA/IY_FIIL_lA mAk/FIILIMSI_ISIM_mAk" })]
-
+        [TestCase("zeytinyağsız", new[] {"zeytinyağ/TAMLAMA sUz/IY_SIFAT_sUz"})]
+        [TestCase("zeytinyağlı", new[] {"zeytinyağ/TAMLAMA lU/IY_SIFAT_lU"})]
+        [TestCase("zeytinyağcı", new[] {"zeytinyağ/TAMLAMA CU/IY_ISIM_CU"})]
+        [TestCase("zeytinyağlamak", new[] {"zeytinyağ/TAMLAMA lA/IY_FIIL_lA mAk/FIILIMSI_ISIM_mAk"})]
 
         //Hal ekleri (iyelik ekinden sonra eklenir)
         [TestCase("zeytinyağında", new[]
@@ -32,21 +31,18 @@ namespace Nuve.Test.Analysis
         })]
         [TestCase("zeytinyağımızı", new[]
         {
-            "zeytinyağ/TAMLAMA UmUz/IC_SAHIPLIK_BIZ_(U)mUz yU/IC_HAL_BELIRTME_(y)U",            
+            "zeytinyağ/TAMLAMA UmUz/IC_SAHIPLIK_BIZ_(U)mUz yU/IC_HAL_BELIRTME_(y)U"
         })]
 
         //Ek Fiil (iyelik ekinden sonra eklenir)
         [TestCase("zeytinyağıydı", new[]
         {
-            "zeytinyağ/TAMLAMA sU/IC_SAHIPLIK_O_(s)U yDU/EKFIIL_HIKAYE_(y)DU",
+            "zeytinyağ/TAMLAMA sU/IC_SAHIPLIK_O_(s)U yDU/EKFIIL_HIKAYE_(y)DU"
         })]
-
         [TestCase("zeytinyağınızmış", new[]
         {
-            "zeytinyağ/TAMLAMA UnUz/IC_SAHIPLIK_SIZ_(U)nUz ymUş/EKFIIL_RIVAYET_(y)mUş",            
+            "zeytinyağ/TAMLAMA UnUz/IC_SAHIPLIK_SIZ_(U)nUz ymUş/EKFIIL_RIVAYET_(y)mUş"
         })]
-        
-
         public void Tamlama_Test(string token, string[] analyses)
         {
             Tester.AllAnalysesEqual(token, analyses);
@@ -71,7 +67,5 @@ namespace Nuve.Test.Analysis
         {
             Tester.AnalysisNotExist("zeytinyağlar", "zeytinyağ/TAMLAMA lAr/IC_COGUL_lAr");
         }
-
-
     }
 }

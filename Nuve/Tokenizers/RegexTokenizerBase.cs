@@ -1,25 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Text.RegularExpressions;
-
 
 namespace Nuve.Tokenizers
 {
-
     public abstract class RegexTokenizerBase : ITokenizer
     {
-
         private readonly Regex regex;
 
         private readonly bool returnDelims;
 
-        protected RegexTokenizerBase(string regex, bool returnDelims=false)
+        protected RegexTokenizerBase(string regex, bool returnDelims = false)
         {
             this.regex = new Regex(regex);
             this.returnDelims = returnDelims;
-        }        
+        }
 
         public IList<string> Tokenize(string text)
         {
@@ -33,7 +27,6 @@ namespace Nuve.Tokenizers
                 {
                     tokens.Add(capture.Value);
                 }
-
             }
 
             if (!returnDelims)

@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Nuve.Sentence
 {
-    abstract class MockSentenceSegmenter : SentenceSegmenter
+    internal abstract class MockSentenceSegmenter : SentenceSegmenter
     {
         protected static Dictionary<string, IEnumerable<int>> Map;
-        
+
         protected static int keyLength = 21;
 
-        
+
         public override IEnumerable<int> GetBoundaryIndices(string paragraph)
         {
             int end = 0;

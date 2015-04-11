@@ -1,25 +1,24 @@
 ﻿using System;
+using System.IO;
 using System.Net;
 using System.Reflection;
 using System.Xml;
 
 namespace Nuve.Reader
 {
-    class EmbeddedXmlResolver : XmlResolver 
+    internal class EmbeddedXmlResolver : XmlResolver
     {
-
-
-        public override object GetEntity(Uri absoluteUri, string role, System.Type ofObjectToReturn)
-        {
-            var fileName = absoluteUri.Segments[absoluteUri.Segments.Length - 1];
-            var resourceName = "Nuve.Resources." + fileName;
-            var resourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName);
-            return resourceStream;
-        }
-
         public override ICredentials Credentials
         {
             set { throw new NotImplementedException(); }
+        }
+
+        public override object GetEntity(Uri absoluteUri, string role, System.Type ofObjectToReturn)
+        {
+            string fileName = absoluteUri.Segments[absoluteUri.Segments.Length - 1];
+            string resourceName = "Nuve.Resources." + fileName;
+            Stream resourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName);
+            return resourceStream;
         }
     }
 }

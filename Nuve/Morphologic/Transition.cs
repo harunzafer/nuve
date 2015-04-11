@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Nuve.Condition;
+﻿using Nuve.Condition;
 
 namespace Nuve.Morphologic
 {
-    class Transition<T>
+    internal class Transition<T>
     {
+        public readonly ConditionContainer Conditions;
         public readonly T Source;
         public readonly T Target;
-        public readonly ConditionContainer Conditions;
 
         public Transition(T source, T target, ConditionContainer conditions)
         {
@@ -24,9 +20,6 @@ namespace Nuve.Morphologic
             Source = source;
             Target = target;
             Conditions = ConditionContainer.EmptyContainer();
-         
         }
-        
-
     }
 }

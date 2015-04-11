@@ -3,10 +3,12 @@ using Nuve.Morphologic.Structure;
 
 namespace Nuve.Orthographic.Action
 {
-    class DeleteLastLetter : BaseAction
+    internal class DeleteLastLetter : BaseAction
     {
         public DeleteLastLetter(Alphabet alphabet, string operandOne, string operandTwo, string flag)
-            : base(alphabet, operandOne, operandTwo, flag) { }
+            : base(alphabet, operandOne, operandTwo, flag)
+        {
+        }
 
         public override void Do(Allomorph allomorph, Position position)
         {
@@ -16,7 +18,7 @@ namespace Nuve.Orthographic.Action
                 case Position.Next:
                     neighbour = allomorph.Next;
                     break;
-                    
+
                 case Position.Previous:
                     neighbour = allomorph.Previous;
                     break;

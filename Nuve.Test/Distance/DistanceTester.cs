@@ -3,16 +3,16 @@ using Nuve.Distance;
 
 namespace Nuve.Test.Distance
 {
-    class DistanceTester
+    internal class DistanceTester
     {
-        static readonly object[] Source =
+        private static readonly object[] Source =
         {
-            new object[] { "abc", "abc" },
-            new object[] { "abcdef", "abc" },
-            new object[] { "abc", "def" },
-            new object[] { "abc", "" },
-            new object[] { "", "" },
-            new object[] { "", "def" },
+            new object[] {"abc", "abc"},
+            new object[] {"abcdef", "abc"},
+            new object[] {"abc", "def"},
+            new object[] {"abc", ""},
+            new object[] {"", ""},
+            new object[] {"", "def"}
         };
 
         [TestCaseSource("Source")]
@@ -20,8 +20,8 @@ namespace Nuve.Test.Distance
         {
             var distanceTest = new DistanceTest(new EuclideanDistance());
             distanceTest.NotNegativeTest(s1, s2);
-            distanceTest.ZeroDistanceTest(s1,s2);
-            distanceTest.SymmetryTest(s1,s2);
+            distanceTest.ZeroDistanceTest(s1, s2);
+            distanceTest.SymmetryTest(s1, s2);
             distanceTest.TriangeInequalityTest(s1, s2, "abc");
         }
 

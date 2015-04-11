@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using NUnit.Framework;
-using Nuve.Sentence;
+﻿using NUnit.Framework;
 
 namespace Nuve.Test.Segmentation
 {
     [TestFixture]
     internal class SentenceSegmentationTest
     {
-        private const string RawParagraph = "Mahkemeye sevk edilen 8 kisinin Sisli 2. Asliye Ceza Mahkemesi'nde tekrar ifadeleri alındı. " +
-                                            "Prof. Dr. Ahmet Bey ile görüsecegiz. " +
-                                            "Daha sonra Ars. Gör. Özlem hanım da katılacak bize. " +
-                                            "Dr. Ahmet bey de gelecek. " +
-                                            "As. İz. Mehmet gelemeyecekmis. " +
-                                            "1.6 oranında artıs var.";
+        private const string RawParagraph =
+            "Mahkemeye sevk edilen 8 kisinin Sisli 2. Asliye Ceza Mahkemesi'nde tekrar ifadeleri alındı. " +
+            "Prof. Dr. Ahmet Bey ile görüsecegiz. " +
+            "Daha sonra Ars. Gör. Özlem hanım da katılacak bize. " +
+            "Dr. Ahmet bey de gelecek. " +
+            "As. İz. Mehmet gelemeyecekmis. " +
+            "1.6 oranında artıs var.";
 
         private const string CorrectSegmentation =
             "Mahkemeye sevk edilen 8 kisinin Sisli 2. Asliye Ceza Mahkemesi'nde tekrar ifadeleri alındı.# " +
@@ -25,18 +22,18 @@ namespace Nuve.Test.Segmentation
             "1.6 oranında artıs var.#";
 
         private const string PredictedSegmentation1 =
-            "Mahkemeye sevk edilen 8 kisinin Sisli 2.# "+
-            "Asliye Ceza Mahkemesi'nde tekrar ifadeleri alındı.# "+
-            "Prof. Dr. Ahmet Bey ile görüsecegiz.# "+
-            "Daha sonra Ars.# "+
-            "Gör.# "+
-            "Özlem hanım da katılacak bize.# "+
-            "Dr.# "+
-            "Ahmet bey de gelecek.# "+
-            "As.# "+
-            "İz.# "+
-            "Mehmet gelemeyecekmis.# "+
-            "1.#"+
+            "Mahkemeye sevk edilen 8 kisinin Sisli 2.# " +
+            "Asliye Ceza Mahkemesi'nde tekrar ifadeleri alındı.# " +
+            "Prof. Dr. Ahmet Bey ile görüsecegiz.# " +
+            "Daha sonra Ars.# " +
+            "Gör.# " +
+            "Özlem hanım da katılacak bize.# " +
+            "Dr.# " +
+            "Ahmet bey de gelecek.# " +
+            "As.# " +
+            "İz.# " +
+            "Mehmet gelemeyecekmis.# " +
+            "1.#" +
             "6 oranında artıs var.#";
 
         //private static int[] misses = { }
@@ -87,7 +84,5 @@ namespace Nuve.Test.Segmentation
         //    var actual = segmenter.GetBoundaryIndices(paragraph);
         //    CollectionAssert.AreEqual(actual, expectedIndexes);
         //}
-
-       
     }
 }

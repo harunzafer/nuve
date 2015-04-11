@@ -32,6 +32,5 @@ namespace Nuve.Morphologic.Structure
         F24 = 1 << 23,
         F25 = 1 << 24,
         F26 = 1 << 25,
-
     }
 }

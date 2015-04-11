@@ -8,8 +8,8 @@ namespace Nuve.Orthographic
     public class Transformation
     {
         private readonly BaseAction _action;
-        private readonly Position _location;
         private readonly ConditionContainer _conditionContainer;
+        private readonly Position _location;
 
         public Transformation(BaseAction action, String location, ConditionContainer conditionContainer)
         {

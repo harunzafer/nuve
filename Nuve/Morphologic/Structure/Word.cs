@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using Nuve.Orthographic;
@@ -9,28 +8,52 @@ using Nuve.Orthographic;
 namespace Nuve.Morphologic.Structure
 {
     /// <summary>
-    /// Bir kelime nesnesini temsil eder.
+    ///     Bir kelime nesnesini temsil eder.
     /// </summary>
     public class Word : IEnumerable<Allomorph>, IEquatable<Word>
     {
         private readonly LinkedList<Allomorph> _allomorphs = new LinkedList<Allomorph>();
         private string _surface = string.Empty;
 
+        /// <summary>
+        ///     Kökü "root" olan yeni bir <see cref="Word" /> nesnesi oluşturur.
+        /// </summary>
+        /// <param name="root">Kelimenin kökü</param>
+        public Word(Root root)
+        {
+            Root = root;
+        }
 
         /// <summary>
-        /// Word[i] şeklinde kullanım için, i. Allomorfu döndürür.
-        /// </summary>       
+        ///     Bir kelimeden yeni bir kelime nesnesi oluşturur. Kopyalama (clone) amacıyla kullanılır.
+        /// </summary>
+        /// <param name="source">Kopyalanacak kelime</param>
+        public Word(Word source)
+        {
+            Root = source.Root;
+            IEnumerator<Allomorph> it = source._allomorphs.GetEnumerator();
+            it.MoveNext(); //skip root
+            while (it.MoveNext())
+            {
+                AddSuffix((Suffix) it.Current.Morpheme);
+            }
+        }
+
+
+        /// <summary>
+        ///     Word[i] şeklinde kullanım için, i. Allomorfu döndürür.
+        /// </summary>
         public Allomorph this[int i]
         {
             get
-            {                
+            {
                 if (i < 0 || i >= _allomorphs.Count)
                 {
                     throw new IndexOutOfRangeException();
                 }
 
-                var node = _allomorphs.First;
-                int counter = 0;               
+                LinkedListNode<Allomorph> node = _allomorphs.First;
+                int counter = 0;
 
                 while (counter != i)
                 {
@@ -46,42 +69,6 @@ namespace Nuve.Morphologic.Structure
         public int AllomorphCount
         {
             get { return _allomorphs.Count; }
-        }
-
-        // For IEnumerable<Allomorph>
-        public IEnumerator<Allomorph> GetEnumerator()
-        {
-            return _allomorphs.GetEnumerator();
-        }
-
-        // For IEnumerable
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
-
-        /// <summary>
-        /// Kökü "root" olan yeni bir <see cref="Word"/> nesnesi oluşturur.
-        /// </summary>
-        /// <param name="root">Kelimenin kökü</param>
-        public Word(Root root)
-        {
-            Root = root;
-        }
-
-        /// <summary>
-        /// Bir kelimeden yeni bir kelime nesnesi oluşturur. Kopyalama (clone) amacıyla kullanılır.
-        /// </summary>
-        /// <param name="source">Kopyalanacak kelime</param>
-        public Word(Word source)
-        {
-            Root = source.Root;
-            IEnumerator<Allomorph> it = source._allomorphs.GetEnumerator();
-            it.MoveNext(); //skip root
-            while (it.MoveNext())
-            {
-                AddSuffix((Suffix) it.Current.Morpheme);
-            }
         }
 
         public Root Root
@@ -100,8 +87,35 @@ namespace Nuve.Morphologic.Structure
             }
         }
 
+        public Allomorph Last
+        {
+            get { return _allomorphs.Last.Value; }
+        }
+
+        public string Analysis
+        {
+            get { return ToString(); }
+        }
+
+        // For IEnumerable<Allomorph>
+        public IEnumerator<Allomorph> GetEnumerator()
+        {
+            return _allomorphs.GetEnumerator();
+        }
+
+        // For IEnumerable
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+        public bool Equals(Word other)
+        {
+            return GetHashCode() == other.GetHashCode();
+        }
+
         /// <summary>
-        /// Tüm allomorph'ların yüzeylerini lexical (sözlük) biçimine geri alır.
+        ///     Tüm allomorph'ların yüzeylerini lexical (sözlük) biçimine geri alır.
         /// </summary>
         private void ResetSurface()
         {
@@ -113,7 +127,7 @@ namespace Nuve.Morphologic.Structure
         }
 
         /// <summary>
-        /// Kelimenin sonuna yeni bir ek ekler.
+        ///     Kelimenin sonuna yeni bir ek ekler.
         /// </summary>
         /// <param name="suffix">Eklenecek ek.</param>
         public void AddSuffix(Suffix suffix)
@@ -133,7 +147,7 @@ namespace Nuve.Morphologic.Structure
         }
 
         /// <summary>
-        /// Kelimedeki en son eki kaldırır ve true döndürür. Kelimede ek yok ise false dönrürür
+        ///     Kelimedeki en son eki kaldırır ve true döndürür. Kelimede ek yok ise false dönrürür
         /// </summary>
         public bool RemoveLastSuffix()
         {
@@ -160,13 +174,8 @@ namespace Nuve.Morphologic.Structure
             return Last.Morpheme.Id == suffixId;
         }
 
-        public Allomorph Last
-        {
-            get { return _allomorphs.Last.Value; }
-        }
-
         /// <summary>
-        /// Kelimenin yüzey biçimi döndürülür.
+        ///     Kelimenin yüzey biçimi döndürülür.
         /// </summary>
         /// <returns></returns>
         public string GetSurface()
@@ -184,22 +193,20 @@ namespace Nuve.Morphologic.Structure
             for (int phase = 1; phase <= OrthographyRule.MaxPhaseNum; phase++)
             {
                 ProcessRulesOnAllomorphs(phase);
-                surfaces.Add(ConcatAllomorphSurfaces());    
+                surfaces.Add(ConcatAllomorphSurfaces());
             }
 
             return surfaces;
         }
 
         /// <summary>
-        /// Önce sol sonra sağ ortografik kurallar işletilerek kelimenin yüzeyi biçimi oluşturulur.
+        ///     Önce sol sonra sağ ortografik kurallar işletilerek kelimenin yüzeyi biçimi oluşturulur.
         /// </summary>
         private void GenerateSurface()
         {
-
             for (int phase = 1; phase <= OrthographyRule.MaxPhaseNum; phase++)
             {
                 ProcessRulesOnAllomorphs(phase);
-            
             }
 
             _surface = ConcatAllomorphSurfaces();
@@ -236,7 +243,7 @@ namespace Nuve.Morphologic.Structure
 
         public IList<string> GetMorphemeIds()
         {
-            var ids = _allomorphs.Select(allomorph => allomorph.Morpheme.Id).ToList();
+            List<string> ids = _allomorphs.Select(allomorph => allomorph.Morpheme.Id).ToList();
             //ids.RemoveAt(0);
             ids.Insert(0, Root.LexicalForm);
             return ids;
@@ -256,22 +263,16 @@ namespace Nuve.Morphologic.Structure
         {
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
-            if (obj.GetType() != this.GetType()) return false;
+            if (obj.GetType() != GetType()) return false;
 
             return Equals((Word) obj);
-        }
-
-        public bool Equals(Word other)
-        {
-
-            return GetHashCode() == other.GetHashCode();
         }
 
         public override int GetHashCode()
         {
             int hashcode = 0;
 
-            foreach (var allomorph in _allomorphs)
+            foreach (Allomorph allomorph in _allomorphs)
             {
                 hashcode += allomorph.Morpheme.GetHashCode();
             }
@@ -280,20 +281,15 @@ namespace Nuve.Morphologic.Structure
         }
 
 
-        public string Analysis
-        {
-            get { return ToString(); }
-        }
-
         /// <summary>
-        /// Returns a new word object which contains only derivational suffixes of this word.
+        ///     Returns a new word object which contains only derivational suffixes of this word.
         /// </summary>
         /// <returns>The stem of this word as a new word object</returns>
         public Word GetStem()
         {
             var stem = new Word(Root);
 
-            foreach (var allomorph in _allomorphs)
+            foreach (Allomorph allomorph in _allomorphs)
             {
                 if (allomorph.Morpheme.Type == MorphemeType.D)
                 {

@@ -51,7 +51,7 @@
             "yedirtiyor",
             "dedirtiyor",
             "deyiver",
-            "yiyiver",
+            "yiyiver"
         };
 
         #endregion
@@ -77,7 +77,7 @@
             "yeyip",
             "diyince",
             "diyiver",
-            "yeyiver",
+            "yeyiver"
         };
 
         #endregion
@@ -101,7 +101,7 @@
             "suymuş",
             "suydu",
             "suysa",
-            "suyken",
+            "suyken"
         };
 
         #endregion
@@ -119,7 +119,7 @@
         #endregion
 
         /// <summary>
-        /// Todo: Bu grup ayrıca çallışılacak
+        ///     Todo: Bu grup ayrıca çallışılacak
         /// </summary>
 
         #region string[] ZamirSoruNe
@@ -151,11 +151,31 @@
 
         #endregion
 
+        /// <summary>
+        ///     todo şapkasız kullanımı da doğru kabul etmişiz. Bunun için de kökleri sözlüğe şapkalı ve şapkasız versiyon
+        ///     olmak üzere iki defa girmişiz.
+        /// </summary>
+
+        #region string[] Şapkalı
+        public static string[] Şapkalı =
+        {
+            "inkar",
+            "inkardır",
+            "inkâr",
+            "inkârdır",
+            "yar",
+            "yâr",
+            "yarim",
+            "yârim",
+            "yârım",
+            "yarım"
+        };
+
         #region string[] GecersizZamirSoruNe
 
         public static string[] GecersizZamirSoruNe =
         {
-            "nede",
+            "nede"
         };
 
         #endregion
@@ -168,7 +188,7 @@
             "gole",
             "alkolü",
             "ampulde",
-            "kabulden",
+            "kabulden"
         };
 
         #endregion
@@ -181,7 +201,7 @@
             "gola",
             "alkolu",
             "ampulda",
-            "kabuldan",
+            "kabuldan"
         };
 
         #endregion
@@ -194,31 +214,10 @@
             "cenge",
             "çelengine",
             "psikologla",
-            "psikoloğa",
+            "psikoloğa"
         };
 
         #endregion
-
-        /// <summary>
-        /// todo şapkasız kullanımı da doğru kabul etmişiz. Bunun için de kökleri sözlüğe şapkalı ve şapkasız versiyon
-        /// olmak üzere iki defa girmişiz. 
-        /// </summary>
-
-        #region string[] Şapkalı
-
-        public static string[] Şapkalı =
-        {
-            "inkar",
-            "inkardır",
-            "inkâr",
-            "inkârdır",
-            "yar",
-            "yâr",
-            "yarim",
-            "yârim",
-            "yârım",
-            "yarım",
-        };
 
         #endregion
     }

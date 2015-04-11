@@ -3,10 +3,12 @@ using Nuve.Orthographic;
 
 namespace Nuve.Condition
 {
-    class StartsWithVowel : ConditionBase
+    internal class StartsWithVowel : ConditionBase
     {
         public StartsWithVowel(string position, string operand, Alphabet alphabet)
-            : base(position, operand, alphabet) { }
+            : base(position, operand, alphabet)
+        {
+        }
 
         public override bool IsTrueFor(Allomorph allomorph)
         {

@@ -4,9 +4,10 @@ using Nuve.Reader;
 
 namespace Nuve.Condition
 {
-    class HasLabel : ConditionBase
+    internal class HasLabel : ConditionBase
     {
         private readonly int _label;
+
         public HasLabel(string position, string operand, Alphabet alphabet)
             : base(position, operand, alphabet)
         {
@@ -14,7 +15,7 @@ namespace Nuve.Condition
         }
 
         public override bool IsTrueFor(Allomorph allomorph)
-        {          
+        {
             Allomorph operand;
             if (TryGetOperandMorpheme(allomorph, out operand))
             {

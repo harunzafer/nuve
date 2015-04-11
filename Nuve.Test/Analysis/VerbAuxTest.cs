@@ -2,7 +2,7 @@
 
 namespace Nuve.Test.Analysis
 {
-    class VerbAuxTest
+    internal class VerbAuxTest
     {
         [TestCase("yayayım", "ya/UNLEM yA/IC_HAL_YONELME_(y)A yUm/EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("yayasın", "ya/UNLEM yA/IC_HAL_YONELME_(y)A sUn/EKFIIL_SAHIS_SEN_sUn")]
@@ -27,12 +27,16 @@ namespace Nuve.Test.Analysis
         }
 
 
-        [TestCase("yayaymışım", "ya/UNLEM yA/IC_HAL_YONELME_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")]
+        [TestCase("yayaymışım", "ya/UNLEM yA/IC_HAL_YONELME_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş yUm/EKFIIL_SAHIS_BEN_(y)Um")
+        ]
         [TestCase("yayaymışsın", "ya/UNLEM yA/IC_HAL_YONELME_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("yayaymış", "ya/UNLEM yA/IC_HAL_YONELME_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş")]
-        [TestCase("yayaymışız", "ya/UNLEM yA/IC_HAL_YONELME_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")]
-        [TestCase("yayaymışsınız", "ya/UNLEM yA/IC_HAL_YONELME_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
-        [TestCase("yayaymışlar", "ya/UNLEM yA/IC_HAL_YONELME_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
+        [TestCase("yayaymışız", "ya/UNLEM yA/IC_HAL_YONELME_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş yUz/EKFIIL_SAHIS_BIZ_(y)Uz")
+        ]
+        [TestCase("yayaymışsınız",
+            "ya/UNLEM yA/IC_HAL_YONELME_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("yayaymışlar", "ya/UNLEM yA/IC_HAL_YONELME_(y)A ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
         public void EkFiilGecmisMisTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
@@ -96,7 +100,6 @@ namespace Nuve.Test.Analysis
         {
             Tester.ContainsAnalysis(token, analysis);
         }
-
 
 
         [TestCase("aramak", "ara/FIIL mAk/FIILIMSI_ISIM_mAk")]
@@ -271,12 +274,12 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("araya", new[] { "ara/FIIL yA/FIILIMSI_ZARF_(y)A", })]
-        [TestCase("ödeye", new[] { "öde/FIIL yA/FIILIMSI_ZARF_(y)A", })]
-        [TestCase("yiye", new[] { "ye/FIIL yA/FIILIMSI_ZARF_(y)A", })]
-        [TestCase("diye", new[] { "de/FIIL yA/FIILIMSI_ZARF_(y)A", })]
-        [TestCase("ola", new[] { "ol/FIIL yA/FIILIMSI_ZARF_(y)A", })]
-        [TestCase("öle", new[] { "öl/FIIL yA/FIILIMSI_ZARF_(y)A", })]
+        [TestCase("araya", new[] {"ara/FIIL yA/FIILIMSI_ZARF_(y)A"})]
+        [TestCase("ödeye", new[] {"öde/FIIL yA/FIILIMSI_ZARF_(y)A"})]
+        [TestCase("yiye", new[] {"ye/FIIL yA/FIILIMSI_ZARF_(y)A"})]
+        [TestCase("diye", new[] {"de/FIIL yA/FIILIMSI_ZARF_(y)A"})]
+        [TestCase("ola", new[] {"ol/FIIL yA/FIILIMSI_ZARF_(y)A"})]
+        [TestCase("öle", new[] {"öl/FIIL yA/FIILIMSI_ZARF_(y)A"})]
         public void FiilimsiZarfATest(string token, string[] analyses)
         {
             Tester.ContainsAnalyses(token, analyses);
@@ -480,110 +483,209 @@ namespace Nuve.Test.Analysis
         [TestCase("geledur", "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur")]
         [TestCase("geledursun", "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur sUn/FC_KIP_EMIR_sUn")]
         [TestCase("geledurdum", "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur DU/FC_ZAMAN_GECMIS_DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("geledurmuşsun", "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur mUş/FC_ZAMAN_GECMIS_mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
+        [TestCase("geledurmuşsun",
+            "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur mUş/FC_ZAMAN_GECMIS_mUş sUn/EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("geledursaydı", "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("geledurmalıydık", "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("geledururmuşlar", "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("geleduracaktım", "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("geleduruyorsanız", "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("geledurmalıydık",
+            "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("geledururmuşlar",
+            "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("geleduracaktım",
+            "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("geleduruyorsanız",
+            "gel/FIIL yAdur/FC_YF_SUREKLILIK_(y)Adur Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
         public void FiilYardımcıAdurTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [TestCase("olagel", "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel")]
-        [TestCase("olagelseydiniz", "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("olagelmiştir", "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
-        [TestCase("olagelecekmişsiniz", "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("olagelseydiniz",
+            "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("olagelmiştir",
+            "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
+        [TestCase("olagelecekmişsiniz",
+            "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
         [TestCase("olagelseydi", "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("olagelmeliydik", "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("olagelirmişler", "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("olagelecektim", "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("olageliyorsanız", "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("olagelmeliydik",
+            "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("olagelirmişler",
+            "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("olagelecektim",
+            "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("olageliyorsanız",
+            "ol/FIIL yAgel/FC_YF_SUREKLILIK_(y)Agel Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
         public void FiilYardımcıAgelTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [TestCase("olagör", "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör")]
-        [TestCase("olagörseydiniz", "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("olagörmüştür", "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
-        [TestCase("olagörecekmişsiniz", "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("olagörseydiniz",
+            "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("olagörmüştür",
+            "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
+        [TestCase("olagörecekmişsiniz",
+            "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
         [TestCase("olagörseydi", "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("olagörmeliydik", "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("olagörürmüşler", "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("olagörecektim", "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("olagörüyorsanız", "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("olagörmeliydik",
+            "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("olagörürmüşler",
+            "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("olagörecektim",
+            "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("olagörüyorsanız",
+            "ol/FIIL yAgör/FC_YF_SUREKLILIK_(y)Agör Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
         public void FiilYardımcıAgörTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [TestCase("olakal", "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal")]
-        [TestCase("olakalsaydınız", "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("olakalmıştır", "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
-        [TestCase("olakalacakmışsınız", "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("olakalsaydınız",
+            "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("olakalmıştır",
+            "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
+        [TestCase("olakalacakmışsınız",
+            "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
         [TestCase("olakalsaydı", "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("olakalmalıydık", "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("olakalırmışlar", "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("olakalacaktım", "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("olakalıyorsanız", "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("olakalmalıydık",
+            "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("olakalırmışlar",
+            "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("olakalacaktım",
+            "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("olakalıyorsanız",
+            "ol/FIIL yAkal/FC_YF_SUREKLILIK_(y)Akal Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
         public void FiilYardımcıAkalTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [TestCase("yapıver", "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver")]
-        [TestCase("yapıverseydiniz", "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("yapıvermiştir", "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
-        [TestCase("yapıverecekmişsiniz", "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("yapıverseydiniz",
+            "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("yapıvermiştir",
+            "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
+        [TestCase("yapıverecekmişsiniz",
+            "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
         [TestCase("yapıverseydi", "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("yapıvermeliydik", "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("yapıverirmişler", "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("yapıverecektim", "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("yapıveriyorsanız", "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("yapıvermeliydik",
+            "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("yapıverirmişler",
+            "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("yapıverecektim",
+            "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("yapıveriyorsanız",
+            "yap/FIIL yUver/FC_YF_TEZLIK_(y)Uver Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
         public void FiilYardımcıUverTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [TestCase("yapayaz", "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz")]
-        [TestCase("yapayazsaydınız", "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("yapayazmıştır", "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
-        [TestCase("yapayazacakmışsınız", "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("yapayazsaydınız",
+            "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")
+        ]
+        [TestCase("yapayazmıştır",
+            "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
+        [TestCase("yapayazacakmışsınız",
+            "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
         [TestCase("yapayazsaydı", "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("yapayazmalıydık", "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("yapayazarmışlar", "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("yapayazacaktım", "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("yapayazıyorsanız", "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("yapayazmalıydık",
+            "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("yapayazarmışlar",
+            "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("yapayazacaktım",
+            "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("yapayazıyorsanız",
+            "yap/FIIL yAyaz/FC_YF_YAKLASMA_(y)Ayaz Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
         public void FiilYardımcıAyazTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [TestCase("yapabil", "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil")]
-        [TestCase("yapabilseydiniz", "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("yapabilmiştir", "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
-        [TestCase("yapabilecekmişsiniz", "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("yapabilseydiniz",
+            "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("yapabilmiştir",
+            "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
+        [TestCase("yapabilecekmişsiniz",
+            "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
         [TestCase("yapabilseydi", "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("yapabilmeliydik", "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("yapabilirmişler", "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("yapabilecektim", "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("yapabiliyorsanız", "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("yapabilmeliydik",
+            "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("yapabilirmişler",
+            "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("yapabilecektim",
+            "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("yapabiliyorsanız",
+            "yap/FIIL yAbil/FC_YF_YETERLILIK_(y)Abil Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
         public void FiilYardımcıYeterlilikTest(string token, string analysis)
         {
             Tester.ContainsAnalysis(token, analysis);
         }
 
         [TestCase("yapama", "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA")]
-        [TestCase("yapamasaydınız", "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz")]
-        [TestCase("yapamamıştır", "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
-        [TestCase("yapamayacakmışsınız", "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz")]
+        [TestCase("yapamasaydınız",
+            "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
+        [TestCase("yapamamıştır",
+            "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA mUş/FC_ZAMAN_GECMIS_mUş DUr/EKFIIL_TANIMLAMA_DUr")]
+        [TestCase("yapamayacakmışsınız",
+            "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK ymUş/EKFIIL_RIVAYET_(y)mUş sUnUz/EKFIIL_SAHIS_SIZ_sUnUz"
+            )]
         [TestCase("yapamasaydı", "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA sA/FC_KIP_DILEK_sA yDU/EKFIIL_HIKAYE_(y)DU")]
-        [TestCase("yapamamalıydık", "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k")]
-        [TestCase("yapamazmışlar", "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr")]
-        [TestCase("yapamayacaktım", "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m")]
-        [TestCase("yapamıyorsanız", "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz")]
+        [TestCase("yapamamalıydık",
+            "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA mAlI/FC_KIP_GEREKLILIK_mAlI yDU/EKFIIL_HIKAYE_(y)DU k/EKFIIL_SAHIS_BIZ_k"
+            )]
+        [TestCase("yapamazmışlar",
+            "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA Ur/FC_ZAMAN_GENIS_(U)r ymUş/EKFIIL_RIVAYET_(y)mUş lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            )]
+        [TestCase("yapamayacaktım",
+            "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA yAcAk/FC_ZAMAN_GELECEK_(y)AcAK yDU/EKFIIL_HIKAYE_(y)DU m/EKFIIL_SAHIS_BEN_m"
+            )]
+        [TestCase("yapamıyorsanız",
+            "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA Uyor/FC_ZAMAN_SIMDIKI_(U)yor ysA/EKFIIL_SART_(y)sA nUz/EKFIIL_SAHIS_SIZ_nUz"
+            )]
         [TestCase("yapamaz", "yap/FIIL yAmA/FC_YF_YETERSIZLIK_(y)AmA Ur/FC_ZAMAN_GENIS_(U)r")]
         public void FiilYardımcıYetersizlikTest(string token, string analysis)
         {

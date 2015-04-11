@@ -6,18 +6,17 @@ using Nuve.Morphologic.Structure;
 
 namespace Nuve.Gui
 {
-
-    class RootReplacer
+    internal class RootReplacer
     {
         public static String[] ReplaceRoots(string root, string[] words)
         {
-            var turkish = Language.Turkish;
+            Language turkish = Language.Turkish;
             var analyzer = new WordAnalyzer(turkish);
             var replacedWords = new List<string>();
             foreach (string word in words)
             {
                 IEnumerable<Word> solutions = analyzer.Analyze(word, true, true);
-                foreach (var solution in solutions)
+                foreach (Word solution in solutions)
                 {
                     string output = solution.GetSurface();
                     solution.Root = turkish.GetRootsHavingSurface(root).First();

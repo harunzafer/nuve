@@ -2,7 +2,7 @@
 
 namespace Nuve.Sentence
 {
-    interface ISentenceBoundaryDetector
+    internal interface ISentenceBoundaryDetector
     {
         IEnumerable<int> GetBoundaryIndexes(string paragraph);
     }

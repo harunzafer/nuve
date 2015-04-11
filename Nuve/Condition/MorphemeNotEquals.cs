@@ -3,10 +3,12 @@ using Nuve.Orthographic;
 
 namespace Nuve.Condition
 {
-    class MorphemeNotEquals : MorphemeEquals
+    internal class MorphemeNotEquals : MorphemeEquals
     {
         public MorphemeNotEquals(string position, string operand, Alphabet alphabet)
-            : base(position, operand, alphabet) { }
+            : base(position, operand, alphabet)
+        {
+        }
 
         public override bool IsTrueFor(Allomorph allomorph)
         {

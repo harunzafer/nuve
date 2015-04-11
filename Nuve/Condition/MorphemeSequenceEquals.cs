@@ -4,18 +4,18 @@ using Nuve.Orthographic;
 
 namespace Nuve.Condition
 {
-    class MorphemeSequenceEquals : ConditionBase
+    internal class MorphemeSequenceEquals : ConditionBase
     {
         private readonly string[] _morphemes;
+
         public MorphemeSequenceEquals(string position, string operand, Alphabet alphabet)
             : base(position, operand, alphabet)
         {
-            _morphemes = Operand.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            _morphemes = Operand.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
         }
 
         public override bool IsTrueFor(Allomorph allomorph)
         {
-
             Allomorph neighbour;
             if (TryGetOperandMorpheme(allomorph, out neighbour))
             {
@@ -45,7 +45,7 @@ namespace Nuve.Condition
 
             if (Position == Position.AfterTarget)
             {
-                for (int i = 0; i < _morphemes.Length ; i++)
+                for (int i = 0; i < _morphemes.Length; i++)
                 {
                     if (_morphemes[i] != neighbour.Morpheme.Id)
                         return false;

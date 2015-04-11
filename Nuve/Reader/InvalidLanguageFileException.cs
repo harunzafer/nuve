@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Nuve.Reader
 {
@@ -24,7 +21,6 @@ namespace Nuve.Reader
         {
             OriginalException = originalException;
             Type = type;
-            
         }
     }
 }

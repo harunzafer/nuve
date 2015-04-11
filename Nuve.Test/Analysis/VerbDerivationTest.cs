@@ -1,6 +1,6 @@
 ﻿namespace Nuve.Test.Analysis
 {
-    class VerbDerivationTest
+    internal class VerbDerivationTest
     {
     }
 }

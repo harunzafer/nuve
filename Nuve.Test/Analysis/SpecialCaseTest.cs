@@ -2,7 +2,7 @@
 
 namespace Nuve.Test.Analysis
 {
-    class SpecialCaseTest
+    internal class SpecialCaseTest
     {
         [TestCase("de", "de/FIIL")]
         [TestCase("ye", "ye/FIIL")]
@@ -78,22 +78,27 @@ namespace Nuve.Test.Analysis
             Tester.HasNoAnalysis(token);
         }
 
-        [TestCase("su", new[] { "su/ISIM", })]
-        [TestCase("suyu", new[] { "su/ISIM sU/IC_SAHIPLIK_O_(s)U", "su/ISIM yU/IC_HAL_BELIRTME_(y)U", })]
-        [TestCase("sulu", new[] { "su/ISIM lU/IY_SIFAT_lU", })]
-        [TestCase("suya", new[] { "su/ISIM yA/IC_HAL_YONELME_(y)A", })]
-        [TestCase("suda", new[] { "su/ISIM DA/IC_HAL_BULUNMA_DA", })]
-        [TestCase("sudan", new[] { "su/ISIM DAn/IC_HAL_AYRILMA_DAn", })]
-        [TestCase("suyun", new[] { "su/ISIM Un/IC_SAHIPLIK_SEN_(U)n", "su/ISIM nUn/IC_HAL_ILGI_(n)Un", })]
-        [TestCase("suyla", new[] { "su/ISIM ylA/IC_HAL_VASITA_(y)lA", })]
-        [TestCase("sular", new[] { "su/ISIM lA/IY_FIIL_lA Ur/FC_ZAMAN_GENIS_(U)r", "su/ISIM lAr/IC_COGUL_lAr", "su/ISIM lAr/EKFIIL_SAHIS_ONLAR_lAr", })]
-        [TestCase("suyum", new[] { "su/ISIM Um/IC_SAHIPLIK_BEN_(U)m", "su/ISIM yUm/EKFIIL_SAHIS_BEN_(y)Um", })]
-        [TestCase("suyumuz", new[] { "su/ISIM UmUz/IC_SAHIPLIK_BIZ_(U)mUz", })]
-        [TestCase("suyumsu", new[] { "su/ISIM UmsU/IY_SIFAT_(U)msU", })]
-        [TestCase("suymuş", new[] { "su/ISIM ymUş/EKFIIL_RIVAYET_(y)mUş", })]
-        [TestCase("suydu", new[] { "su/ISIM yDU/EKFIIL_HIKAYE_(y)DU", })]
-        [TestCase("suysa", new[] { "su/ISIM ysA/EKFIIL_SART_(y)sA", })]
-        [TestCase("suyken", new[] { "su/ISIM yken/EKFIIL_ZAMAN_(y)ken", })]
+        [TestCase("su", new[] {"su/ISIM"})]
+        [TestCase("suyu", new[] {"su/ISIM sU/IC_SAHIPLIK_O_(s)U", "su/ISIM yU/IC_HAL_BELIRTME_(y)U"})]
+        [TestCase("sulu", new[] {"su/ISIM lU/IY_SIFAT_lU"})]
+        [TestCase("suya", new[] {"su/ISIM yA/IC_HAL_YONELME_(y)A"})]
+        [TestCase("suda", new[] {"su/ISIM DA/IC_HAL_BULUNMA_DA"})]
+        [TestCase("sudan", new[] {"su/ISIM DAn/IC_HAL_AYRILMA_DAn"})]
+        [TestCase("suyun", new[] {"su/ISIM Un/IC_SAHIPLIK_SEN_(U)n", "su/ISIM nUn/IC_HAL_ILGI_(n)Un"})]
+        [TestCase("suyla", new[] {"su/ISIM ylA/IC_HAL_VASITA_(y)lA"})]
+        [TestCase("sular",
+            new[]
+            {
+                "su/ISIM lA/IY_FIIL_lA Ur/FC_ZAMAN_GENIS_(U)r", "su/ISIM lAr/IC_COGUL_lAr",
+                "su/ISIM lAr/EKFIIL_SAHIS_ONLAR_lAr"
+            })]
+        [TestCase("suyum", new[] {"su/ISIM Um/IC_SAHIPLIK_BEN_(U)m", "su/ISIM yUm/EKFIIL_SAHIS_BEN_(y)Um"})]
+        [TestCase("suyumuz", new[] {"su/ISIM UmUz/IC_SAHIPLIK_BIZ_(U)mUz"})]
+        [TestCase("suyumsu", new[] {"su/ISIM UmsU/IY_SIFAT_(U)msU"})]
+        [TestCase("suymuş", new[] {"su/ISIM ymUş/EKFIIL_RIVAYET_(y)mUş"})]
+        [TestCase("suydu", new[] {"su/ISIM yDU/EKFIIL_HIKAYE_(y)DU"})]
+        [TestCase("suysa", new[] {"su/ISIM ysA/EKFIIL_SART_(y)sA"})]
+        [TestCase("suyken", new[] {"su/ISIM yken/EKFIIL_ZAMAN_(y)ken"})]
         public void IsimSuTest(string token, string[] analyses)
         {
             Tester.ContainsAnalyses(token, analyses);
@@ -137,6 +142,5 @@ namespace Nuve.Test.Analysis
         {
             Tester.ContainsAnalysis(token, analysis);
         }
-
     }
 }

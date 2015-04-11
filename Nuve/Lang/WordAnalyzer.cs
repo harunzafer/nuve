@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Nuve.Morphologic.Structure;
 
 namespace Nuve.Lang
@@ -15,7 +14,7 @@ namespace Nuve.Lang
         }
 
         /// <summary>
-        /// Bir kelimenin muhtemel tüm çözümlerini döndürür.
+        ///     Bir kelimenin muhtemel tüm çözümlerini döndürür.
         /// </summary>
         /// <param name="token">kelime adayı, analiz edilemezse kelime olarak kabul edilmez.</param>
         /// <param name="checkTransition"> Morfotaktik geçişleri kontrol et. </param>
@@ -27,7 +26,7 @@ namespace Nuve.Lang
         {
             var words = new List<Word>();
             IEnumerable<KeyValuePair<string, Root>> roots = FindPossibleRoots(token);
-            foreach (KeyValuePair<string, Root> pair in roots)
+            foreach (var pair in roots)
             {
                 GetPossibleWords(new Word(pair.Value), token.Remove(0, pair.Key.Length), words, checkTransition);
             }
@@ -104,7 +103,7 @@ namespace Nuve.Lang
         }
 
         /// <summary>
-        /// Verilen bir kelimenin muhtemel tüm eklerini döndürür.
+        ///     Verilen bir kelimenin muhtemel tüm eklerini döndürür.
         /// </summary>
         /// <param name="token">Kökü bulunacak kelime</param>
         /// <returns></returns>
@@ -115,7 +114,7 @@ namespace Nuve.Lang
             {
                 string prefix = token.Substring(0, i + 1);
 
-                var roots = _lang.GetRootsHavingSurface(prefix);
+                IEnumerable<Root> roots = _lang.GetRootsHavingSurface(prefix);
 
                 foreach (Root root in roots)
                 {
@@ -133,16 +132,14 @@ namespace Nuve.Lang
             {
                 string prefix = token.Substring(0, i + 1);
 
-                var suffixes = _lang.GetSuffixesHavingSurface(prefix);
+                IEnumerable<Suffix> suffixes = _lang.GetSuffixesHavingSurface(prefix);
 
                 foreach (Suffix suffix in suffixes)
                 {
                     pairs.Add(new KeyValuePair<string, Suffix>(prefix, suffix));
                 }
-
             }
             return pairs;
         }
-      
     }
 }

@@ -37,7 +37,46 @@ namespace Nuve.Test.NGrams
         private static readonly NGram four_five_one = new NGram("four", "five", "one");
         private static readonly NGram five_one_two = new NGram("five", "one", "two");
 
-        
+        [Test]
+        public void TestExtractAsDictionary()
+        {
+            var extractor = new NGramExtractor(Unigram);
+            IDictionary<NGram, int> actual = extractor.ExtractAsDictionary(Tokens);
+            var expected = new Dictionary<NGram, int>
+            {
+                {one, 2},
+                {two, 2},
+                {three, 2},
+                {four, 2},
+                {five, 1}
+            };
+            CollectionAssert.AreEquivalent(expected, actual);
+
+            extractor = new NGramExtractor(Bigram);
+            actual = extractor.ExtractAsDictionary(Tokens);
+            expected = new Dictionary<NGram, int>
+            {
+                {one_two, 2},
+                {two_three, 2},
+                {three_four, 2},
+                {four_five, 1},
+                {five_one, 1}
+            };
+            CollectionAssert.AreEquivalent(expected, actual);
+
+            extractor = new NGramExtractor(Trigram);
+            actual = extractor.ExtractAsDictionary(Tokens);
+            expected = new Dictionary<NGram, int>
+            {
+                {one_two_three, 2},
+                {two_three_four, 2},
+                {four_five_one, 1},
+                {three_four_five, 1},
+                {five_one_two, 1},
+            };
+            CollectionAssert.AreEquivalent(expected, actual);
+        }
+
 
 // ReSharper restore InconsistentNaming
 
@@ -45,9 +84,9 @@ namespace Nuve.Test.NGrams
         public void TestExtractAsList()
         {
             var extractor = new NGramExtractor(Unigram);
-            
-            
-            var actual = extractor.ExtractAsList(Tokens);
+
+
+            IList<NGram> actual = extractor.ExtractAsList(Tokens);
             var expected = new[] {one, two, three, four, five, one, two, three, four};
             CollectionAssert.AreEqual(expected, actual);
 
@@ -85,27 +124,24 @@ namespace Nuve.Test.NGrams
             actual = extractor.ExtractAsList(Tokens);
             expected = new[]
             {
-                one, one_two, one_two_three, 
-                two, two_three, two_three_four, 
-                three, three_four, three_four_five, 
-                four, four_five, four_five_one, 
-                five, five_one, five_one_two, 
-                one, one_two, one_two_three, 
-                two, two_three, two_three_four, 
-                three, three_four, 
+                one, one_two, one_two_three,
+                two, two_three, two_three_four,
+                three, three_four, three_four_five,
+                four, four_five, four_five_one,
+                five, five_one, five_one_two,
+                one, one_two, one_two_three,
+                two, two_three, two_three_four,
+                three, three_four,
                 four
             };
             CollectionAssert.AreEqual(expected, actual);
-
-            
-            
         }
 
         [Test]
         public void TestExtractAsSet()
         {
             var extractor = new NGramExtractor(Unigram);
-            var actual = extractor.ExtractAsSet(Tokens);
+            ISet<NGram> actual = extractor.ExtractAsSet(Tokens);
             var expected = new[] {one, two, three, four, five};
             CollectionAssert.AreEquivalent(expected, actual);
 
@@ -121,54 +157,11 @@ namespace Nuve.Test.NGrams
         }
 
         [Test]
-        public void TestExtractAsDictionary()
-        {
-            var extractor = new NGramExtractor(Unigram);
-            var actual = extractor.ExtractAsDictionary(Tokens);
-            var expected = new Dictionary<NGram, int>
-            {
-                {one, 2},
-                {two, 2},
-                {three, 2},
-                {four, 2},
-                {five, 1}
-            };
-            CollectionAssert.AreEquivalent(expected, actual);
-
-            extractor = new NGramExtractor(Bigram);
-            actual = extractor.ExtractAsDictionary(Tokens);
-            expected = new Dictionary<NGram, int>
-            {
-                {one_two, 2},
-                {two_three, 2},
-                {three_four, 2},
-                {four_five, 1},
-                {five_one, 1}
-            };
-            CollectionAssert.AreEquivalent(expected, actual);
-
-            extractor = new NGramExtractor(Trigram);
-            actual = extractor.ExtractAsDictionary(Tokens);
-            expected = new Dictionary<NGram, int>
-            {
-                {one_two_three, 2},
-                {two_three_four, 2},
-                {four_five_one, 1},
-                {three_four_five, 1},
-                {five_one_two, 1},
-            };
-            CollectionAssert.AreEquivalent(expected, actual);
-        }
-
-        [Test]
         public void TestExtractLetterNGramsAsList()
         {
             var extractor = new NGramExtractor(Bigram, Trigram);
-            var tokens = "beşiktaş".ToCharArray().Select(x => x.ToString());
-            var actual = extractor.ExtractAsList(tokens);
-
-
-            
+            IEnumerable<string> tokens = "beşiktaş".ToCharArray().Select(x => x.ToString());
+            IList<NGram> actual = extractor.ExtractAsList(tokens);
         }
     }
 }

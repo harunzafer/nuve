@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Nuve.Sentence
 {
-    class SimpleEvaluation
+    internal class SimpleEvaluation
     {
         private readonly int _eosCandidateCount;
 
@@ -13,7 +10,8 @@ namespace Nuve.Sentence
         {
             if (eosCandidateCount <= 0)
             {
-                throw new ArgumentException( "There must be at least one possible end of sentence character (EOS candidate) !");
+                throw new ArgumentException(
+                    "There must be at least one possible end of sentence character (EOS candidate) !");
             }
 
             Hit = hit;
@@ -35,7 +33,7 @@ namespace Nuve.Sentence
 
         public double Error
         {
-            get { return (Missed + FalseAlarm) / (double)_eosCandidateCount; }
+            get { return (Missed + FalseAlarm)/(double) _eosCandidateCount; }
         }
 
         public double Accuracy
@@ -50,20 +48,21 @@ namespace Nuve.Sentence
                 "Hits:\t" + Hit + "\n" +
                 "Missed:\t" + Missed + "\n" +
                 "False alarm\t: " + FalseAlarm + "\n" +
-                "\nAccuracy:\t" + String.Format("{0:0.00}%", Accuracy * 100)
+                "\nAccuracy:\t" + String.Format("{0:0.00}%", Accuracy*100)
                 ;
         }
 
         private bool Equals(SimpleEvaluation other)
         {
-            return Missed == other.Missed && _eosCandidateCount == other._eosCandidateCount && Hit == other.Hit && FalseAlarm == other.FalseAlarm;
+            return Missed == other.Missed && _eosCandidateCount == other._eosCandidateCount && Hit == other.Hit &&
+                   FalseAlarm == other.FalseAlarm;
         }
 
         public override bool Equals(object obj)
         {
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
-            if (obj.GetType() != this.GetType()) return false;
+            if (obj.GetType() != GetType()) return false;
             return Equals((SimpleEvaluation) obj);
         }
 

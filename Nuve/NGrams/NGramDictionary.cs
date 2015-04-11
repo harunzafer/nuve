@@ -34,7 +34,7 @@ namespace Nuve.NGrams
         }
 
         /// <summary>
-        /// returns frequency of the n-gram which consists of nGramTokens
+        ///     returns frequency of the n-gram which consists of nGramTokens
         /// </summary>
         /// <param name="nGramTokens">Tokens of the n-gram</param>
         /// <returns></returns>
@@ -46,7 +46,7 @@ namespace Nuve.NGrams
         }
 
         /// <summary>
-        /// returns requency of the n-gram
+        ///     returns requency of the n-gram
         /// </summary>
         /// <param name="nGram"></param>
         /// <returns></returns>
@@ -71,9 +71,9 @@ namespace Nuve.NGrams
         }
 
         /// <summary>
-        /// String representation of this object. <br />
-        /// It is used to serialize the object.<br />
-        /// This string returned by this method is used as parameter of DeserializeFrom method.
+        ///     String representation of this object. <br />
+        ///     It is used to serialize the object.<br />
+        ///     This string returned by this method is used as parameter of DeserializeFrom method.
         /// </summary>
         /// <returns></returns>
         public override string ToString()
@@ -92,8 +92,8 @@ namespace Nuve.NGrams
         }
 
         /// <summary>
-        /// Creates and returns a new NGramDictionary from a string.<br/>
-        /// This string must be produced by the ToString() method of a NGramDictionary object.
+        ///     Creates and returns a new NGramDictionary from a string.<br />
+        ///     This string must be produced by the ToString() method of a NGramDictionary object.
         /// </summary>
         /// <param name="str">A string produced by the ToString() method of a NGramDictionary object.</param>
         /// <returns>A new NGramDictionary object</returns>

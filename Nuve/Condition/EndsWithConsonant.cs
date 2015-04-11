@@ -3,10 +3,12 @@ using Nuve.Orthographic;
 
 namespace Nuve.Condition
 {
-    class EndsWithConsonant : ConditionBase
+    internal class EndsWithConsonant : ConditionBase
     {
         public EndsWithConsonant(string position, string operand, Alphabet alphabet)
-            : base(position, operand, alphabet) { }
+            : base(position, operand, alphabet)
+        {
+        }
 
         public override bool IsTrueFor(Allomorph allomorph)
         {
@@ -14,5 +16,4 @@ namespace Nuve.Condition
             return neighbourSurface.LastCharEqualsAny(Alphabet.Consonants);
         }
     }
-
 }

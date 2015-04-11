@@ -17,23 +17,13 @@ namespace Nuve.Reader
             _orthography = orthography;
         }
 
-        private class SuffixDictionaryLine
-        {
-            public string Id;
-            public string Lex;
-            public string Type;
-            public string Flags;
-            public string Rules;
-            public string Surfaces;
-        }
-
         public void Read(DataSet ds,
             string tableName,
             out Dictionary<string, Suffix> suffixesById,
             out MorphemeSurfaceDictionary<Suffix> suffixes)
         {
-            var data = ds.Tables[tableName].AsEnumerable();
-            var entries = data.Select(x =>
+            EnumerableRowCollection<DataRow> data = ds.Tables[tableName].AsEnumerable();
+            EnumerableRowCollection<SuffixDictionaryLine> entries = data.Select(x =>
                 new SuffixDictionaryLine
                 {
                     Id = x.Field<string>("id"),
@@ -48,7 +38,7 @@ namespace Nuve.Reader
             suffixesById = new Dictionary<string, Suffix>();
             suffixes = new MorphemeSurfaceDictionary<Suffix>();
 
-            foreach (var entry in entries)
+            foreach (SuffixDictionaryLine entry in entries)
             {
                 AddSuffix(entry, suffixesById, suffixes);
             }
@@ -79,10 +69,20 @@ namespace Nuve.Reader
             var suffix = new Suffix(id, lex, morphemeType, LabelSet.ConvertLabelNamesToIndexes(flags), rules);
             suffixesById.Add(id, suffix);
 
-            foreach (var surface in surfaces)
+            foreach (string surface in surfaces)
             {
                 suffixes.Add(surface, suffix);
             }
+        }
+
+        private class SuffixDictionaryLine
+        {
+            public string Flags;
+            public string Id;
+            public string Lex;
+            public string Rules;
+            public string Surfaces;
+            public string Type;
         }
     }
 }

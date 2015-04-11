@@ -20,19 +20,7 @@ namespace Nuve.Orthographic
         {
             Phase = order;
             Id = id;
-            this._transformations = transformations;
-        }
-
-        public void Process(Allomorph allomorph)
-        {
-            foreach (Transformation transformation in _transformations)
-            {
-                if (transformation.Condition.IsTrue(allomorph))
-                {
-                    transformation.Transform(allomorph);
-                    break;
-                }
-            }
+            _transformations = transformations;
         }
 
         public bool IsLeftRule
@@ -53,6 +41,18 @@ namespace Nuve.Orthographic
         public bool IsDefaultRule
         {
             get { return Phase == 5; }
+        }
+
+        public void Process(Allomorph allomorph)
+        {
+            foreach (Transformation transformation in _transformations)
+            {
+                if (transformation.Condition.IsTrue(allomorph))
+                {
+                    transformation.Transform(allomorph);
+                    break;
+                }
+            }
         }
 
         public override string ToString()

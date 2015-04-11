@@ -8,11 +8,14 @@ namespace Nuve.Sentence
 {
     internal class TokenBasedSentenceSegmenter : SentenceSegmenter
     {
-        private readonly ITokenizer tokenizer;
+        private static readonly string[] Closing = {"\"", "\'", ")"};
+        private static readonly string[] Opening = {"\"", "\'", "("};
+        private static readonly string[] EosCandidateTokens = {".", "?", "!", "...", "\"", "]"};
+
         /// <summary>
-        /// todo: bu liste Türkçe dilinden alınmalı
+        ///     todo: bu liste Türkçe dilinden alınmalı
         /// </summary>
-        private readonly string[] _abvvs = new[]
+        private readonly string[] _abvvs =
         {
             "age.",
             "agm.",
@@ -598,8 +601,10 @@ namespace Nuve.Sentence
             "ü",
             "v",
             "y",
-            "z",
+            "z"
         };
+
+        private readonly ITokenizer tokenizer;
 
         public TokenBasedSentenceSegmenter(ITokenizer tokenizer)
         {
@@ -623,26 +628,21 @@ namespace Nuve.Sentence
                 {
                     if (IsEos(tokens, i))
                     {
-                        indices.Add(index);    
+                        indices.Add(index);
                     }
-                    
                 }
             }
 
             return indices;
         }
 
-        private static readonly string[] Closing = {"\"", "\'", ")"};
-        private static readonly string[] Opening = {"\"", "\'", "("};
-        private static readonly string[] EosCandidateTokens = {".", "?", "!","...","\"","]"};
-
 
         private bool IsEos(IList<string> tokens, int i)
         {
-            if (i + 1 == tokens.Count)//Is last token?
+            if (i + 1 == tokens.Count) //Is last token?
             {
                 return true;
-            }            
+            }
 
             if (i == 0)
             {
@@ -658,12 +658,12 @@ namespace Nuve.Sentence
                 return false;
             }
             int x;
-            
-            if (Int32.TryParse(prev, out x) && curr==".")
+
+            if (Int32.TryParse(prev, out x) && curr == ".")
             {
                 return false;
             }
-            if (prev.Length == 1 && curr==".")//Kısaltma olma ihtimali yüksek
+            if (prev.Length == 1 && curr == ".") //Kısaltma olma ihtimali yüksek
             {
                 return false;
             }
@@ -680,7 +680,7 @@ namespace Nuve.Sentence
                 return false;
             }
             if (curr == "\"" && !EosCandidateTokens.Contains(prev))
-            {             
+            {
                 return false;
             }
 

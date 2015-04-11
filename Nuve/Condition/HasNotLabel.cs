@@ -4,9 +4,10 @@ using Nuve.Reader;
 
 namespace Nuve.Condition
 {
-    class HasNotLabel : HasLabel
+    internal class HasNotLabel : HasLabel
     {
         private readonly int _label;
+
         public HasNotLabel(string position, string operand, Alphabet alphabet)
             : base(position, operand, alphabet)
         {

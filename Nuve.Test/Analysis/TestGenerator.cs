@@ -9,10 +9,10 @@ namespace Nuve.Test.Analysis
     public class TestGenerator
     {
         private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
-        
+
         /// <summary>
-        /// Kelimelerin sadece ilk çözümlerini kullanan bir ContainsAnalysis(token, analysis) testi üretir.
-        /// Kelimelerden birinin çözümünün olmaması halinde exception verir.
+        ///     Kelimelerin sadece ilk çözümlerini kullanan bir ContainsAnalysis(token, analysis) testi üretir.
+        ///     Kelimelerden birinin çözümünün olmaması halinde exception verir.
         /// </summary>
         /// <param name="words"></param>
         /// <param name="testName"></param>
@@ -31,7 +31,7 @@ namespace Nuve.Test.Analysis
                 {
                     Console.WriteLine(word + " çözümlenemedi.");
                 }
-                
+
                 sb.Append(")]").Append("\n");
             }
             sb.AppendFormat("public void {0}Test(string token, string analysis)", testName).AppendLine();
@@ -42,7 +42,7 @@ namespace Nuve.Test.Analysis
         }
 
         /// <summary>
-        /// Kelimenin tüm çözümlerinden partOfAnalysis stringini içeren çözümlerin kullanıldığı testi üretir.
+        ///     Kelimenin tüm çözümlerinden partOfAnalysis stringini içeren çözümlerin kullanıldığı testi üretir.
         /// </summary>
         /// <param name="words"></param>
         /// <param name="testName"></param>
@@ -61,7 +61,6 @@ namespace Nuve.Test.Analysis
                     {
                         sb.AppendFormat("\"{0}\", ", solution);
                     }
-                    
                 }
                 sb.Append("})]").Append("\n");
             }
@@ -81,7 +80,7 @@ namespace Nuve.Test.Analysis
                 sb.AppendFormat("[TestCase(\"{0}\", new [] {{", word);
                 foreach (Word solution in solutions)
                 {
-                        sb.AppendFormat("\"{0}\", ", solution);
+                    sb.AppendFormat("\"{0}\", ", solution);
                 }
                 sb.Append("})]").Append("\n");
             }

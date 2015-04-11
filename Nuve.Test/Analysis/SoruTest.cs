@@ -25,8 +25,7 @@ namespace Nuve.Test.Analysis
             "mıyız",
             "miyiz",
             "muyuz",
-            "müyüz",
-
+            "müyüz"
         };
 
         [TestCase("mı", "mı/SORU")]
@@ -53,6 +52,5 @@ namespace Nuve.Test.Analysis
         {
             Tester.ContainsAnalysis(token, analysis);
         }
-
     }
 }

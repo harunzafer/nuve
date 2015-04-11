@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
 
 namespace Nuve.Tokenizers
 {
     /// <summary>
-    /// This tokenizer splits the text field into tokens, treating whitespace and punctuation as delimiters. 
-    /// If <param name="returnDelims"></param> is false delimiter characters are discarded
+    ///     This tokenizer splits the text field into tokens, treating whitespace and punctuation as delimiters.
+    ///     If
+    ///     <param name="returnDelims"></param>
+    ///     is false delimiter characters are discarded
     /// </summary>
     internal class ClassicTokenizer : RegexTokenizerBase
     {

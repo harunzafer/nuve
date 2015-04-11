@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.OleDb;
 using System.Diagnostics;
 using System.IO;
 using System.Xml;
@@ -16,8 +15,11 @@ namespace Nuve.Reader
 {
     public class LanguageReader
     {
-        private readonly bool _external;
+        private const string Delimiter = "\t";
+
+        public const string DefaultTableName = "sheet";
         private readonly string _dirPath;
+        private readonly bool _external;
         private readonly string _seperator;
         private Orthography _orthography;
 
@@ -37,29 +39,29 @@ namespace Nuve.Reader
 
         public Language Read()
         {
-            Stopwatch sw = new Stopwatch();
+            var sw = new Stopwatch();
             sw.Start();
 
             _orthography = ReadOrthography();
             Debug.Print("orthograpy: " + sw.ElapsedMilliseconds.ToString() + " ms");
             sw.Restart();
 
-            var morphotactics = ReadMorphotactics();
+            Morphotactics morphotactics = ReadMorphotactics();
             Debug.Print("morphotactics: " + sw.ElapsedMilliseconds.ToString() + " ms");
             sw.Restart();
 
-            var roots = ReadRoots();
+            MorphemeSurfaceDictionary<Root> roots = ReadRoots();
             Debug.Print("roots: " + sw.ElapsedMilliseconds.ToString() + " ms");
             sw.Restart();
 
-            var suffixes = ReadSuffixes();
+            Suffixes suffixes = ReadSuffixes();
             Debug.Print("suffixes: " + sw.ElapsedMilliseconds.ToString() + " ms");
             sw.Restart();
 
 
-            var index = _dirPath.LastIndexOf("\\");
+            int index = _dirPath.LastIndexOf("\\");
 
-            var langCode = index > -1 ? _dirPath.Substring(index + 1) : _dirPath;
+            string langCode = index > -1 ? _dirPath.Substring(index + 1) : _dirPath;
 
             return new Language(langCode, morphotactics, roots, suffixes);
         }
@@ -68,10 +70,10 @@ namespace Nuve.Reader
         {
             try
             {
-                var path = _dirPath + _seperator + Resources.OrthographyFileName;
+                string path = _dirPath + _seperator + Resources.OrthographyFileName;
 
                 var xml = new XmlDocument();
-                var reader = GetXmlReader(path);
+                XmlReader reader = GetXmlReader(path);
                 xml.Load(reader);
 
                 return OrthographyReader.Read(xml);
@@ -87,7 +89,7 @@ namespace Nuve.Reader
         {
             try
             {
-                var path = _dirPath + _seperator + Resources.MorphotacticsFileName;
+                string path = _dirPath + _seperator + Resources.MorphotacticsFileName;
 
                 if (_external)
                 {
@@ -97,7 +99,7 @@ namespace Nuve.Reader
                     }
                 }
 
-                var xml = EmbeddedResourceReader.Read(path);
+                Stream xml = EmbeddedResourceReader.Read(path);
                 return MorphotacticsReader.Read(xml, _orthography.Alphabet);
             }
             catch (Exception ex)
@@ -115,7 +117,7 @@ namespace Nuve.Reader
                 var reader = new RootLexiconReader(_orthography);
 
 
-                var rootsPath = _dirPath + _seperator + Resources.InternalMainRootsPath;
+                string rootsPath = _dirPath + _seperator + Resources.InternalMainRootsPath;
 
 
                 if (_external)
@@ -133,10 +135,10 @@ namespace Nuve.Reader
                 reader.AddEntries(EmbeddedTextResourceToDataSet(rootsPath), DefaultTableName, roots);
 
 
-                var namesPath = _dirPath + _seperator + Resources.InternalPersonNamesPath;
+                string namesPath = _dirPath + _seperator + Resources.InternalPersonNamesPath;
                 reader.AddEntries(EmbeddedTextResourceToDataSet(namesPath), DefaultTableName, roots);
 
-                var abbreviationPath = _dirPath + _seperator + Resources.InternalAbbreviationsPath;
+                string abbreviationPath = _dirPath + _seperator + Resources.InternalAbbreviationsPath;
                 reader.AddEntries(EmbeddedTextResourceToDataSet(abbreviationPath), DefaultTableName, roots);
 
                 return roots;
@@ -154,7 +156,7 @@ namespace Nuve.Reader
                 Dictionary<string, Suffix> suffixesById;
                 MorphemeSurfaceDictionary<Suffix> suffixesBySurface;
 
-                var path = _dirPath + _seperator + Resources.InternalSuffixesPath;
+                string path = _dirPath + _seperator + Resources.InternalSuffixesPath;
                 var reader = new SuffixLexiconReader(_orthography);
 
                 if (_external)
@@ -168,7 +170,7 @@ namespace Nuve.Reader
                     return new Suffixes(suffixesById, suffixesBySurface);
                 }
 
-                var dataSet = EmbeddedTextResourceToDataSet(path);
+                DataSet dataSet = EmbeddedTextResourceToDataSet(path);
 
                 reader.Read(dataSet, DefaultTableName, out suffixesById, out suffixesBySurface);
 
@@ -181,13 +183,9 @@ namespace Nuve.Reader
         }
 
 
-        private const string Delimiter = "\t";
-
-        public const string DefaultTableName = "sheet";
-
         private DataSet EmbeddedTextResourceToDataSet(string path)
         {
-            var textStream = EmbeddedResourceReader.Read(path);
+            Stream textStream = EmbeddedResourceReader.Read(path);
             return TextToDataSet.Convert(textStream, DefaultTableName, Delimiter);
         }
 
@@ -205,7 +203,7 @@ namespace Nuve.Reader
             if (!_external)
             {
                 settings.XmlResolver = new EmbeddedXmlResolver();
-                var stream = EmbeddedResourceReader.Read(path);
+                Stream stream = EmbeddedResourceReader.Read(path);
                 reader = XmlReader.Create(stream, settings);
             }
 

@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Nuve.Lang;
 
 namespace Nuve.Stemming
 {
     internal class DictionaryStemmer : IStemmer
     {
         //singleton yapmak gerekiyor!
-        private readonly IDictionary<string, string> dictionary;
 
         private const string DictionaryPath =
             @"C:\Users\hrzafer\Desktop\workspace\Prizma\code\prizma\src\main\resources\stemDict\nuve_stems2.dict";
+
+        private readonly IDictionary<string, string> dictionary;
 
         public DictionaryStemmer()
         {

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <morphology lang="Tr-TR">
   <suffixGroups>
@@ -570,12 +570,18 @@
       <target id="EKFIIL_TANIMLAMA_DUr" />
       <target id="IY_ISIM_lUK">
         <conditions flag="Or">
-          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals" operand="IC_SAHIPLIK_BEN_(U)m, IC_HAL_AYRILMA_DAn" />
-          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals" operand="IC_SAHIPLIK_SEN_(U)n, IC_HAL_AYRILMA_DAn" />
-          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals" operand="IC_SAHIPLIK_O_(s)U, IC_HAL_AYRILMA_DAn" />
-          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals" operand="IC_SAHIPLIK_BIZ_(U)mUz, IC_HAL_AYRILMA_DAn" />
-          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals" operand="IC_SAHIPLIK_SIZ_(U)nUz, IC_HAL_AYRILMA_DAn" />
-          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals" operand="IC_SAHIPLIK_ONLAR_lArI, IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals"
+                     operand="IC_SAHIPLIK_BEN_(U)m, IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals"
+                     operand="IC_SAHIPLIK_SEN_(U)n, IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals"
+                     operand="IC_SAHIPLIK_O_(s)U, IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals"
+                     operand="IC_SAHIPLIK_BIZ_(U)mUz, IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals"
+                     operand="IC_SAHIPLIK_SIZ_(U)nUz, IC_HAL_AYRILMA_DAn" />
+          <condition morpheme="AfterTarget" operator="MorphemeSequenceEquals"
+                     operand="IC_SAHIPLIK_ONLAR_lArI, IC_HAL_AYRILMA_DAn" />
         </conditions>
       </target>
       <target id="IY_ZARF_CA" />
@@ -980,7 +986,8 @@
       <target id="EKFIIL_TANIMLAMA_DUr">
         <conditions flag="Or">
           <condition morpheme="BeforeSource" operator="MorphemeEquals" operand="FY_EDILGEN_Ul_(U)n" />
-          <condition morpheme="BeforeSource" operator="MorphemeSequenceEquals" operand="FY_EDILGEN_Ul_(U)n, FC_YF_YETERLILIK_(y)Abil" />
+          <condition morpheme="BeforeSource" operator="MorphemeSequenceEquals"
+                     operand="FY_EDILGEN_Ul_(U)n, FC_YF_YETERLILIK_(y)Abil" />
         </conditions>
       </target>
     </source>

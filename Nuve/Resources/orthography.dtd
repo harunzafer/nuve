@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <!ELEMENT orthography (alphabet, rules)>
 <!ATTLIST orthography lang (Tr-TR | Tk-TK | Az-AZ) #REQUIRED>
@@ -13,50 +13,50 @@
 
 <!ELEMENT rule (description, transformation*)>
 <!ATTLIST rule
-    id CDATA #REQUIRED
-    phase ( 1 | 2 | 3 | 4 | 5 ) #REQUIRED>
+id CDATA #REQUIRED
+phase ( 1 | 2 | 3 | 4 | 5 ) #REQUIRED>
 <!ELEMENT description (#PCDATA)>
 
 <!ELEMENT transformation (conditions?)>
 <!ATTLIST transformation 
 
-  morpheme ( Previous | This | Next ) #REQUIRED
+morpheme ( Previous | This | Next ) #REQUIRED
   
-  action (
-              Append |
-              DeleteFirstLetter |
-              DeleteFirstVowel | 
-              DeleteLastLetter | 
-              DeleteLastVowel |
-              DoubleLastLetter | 
-              Replace |
-              LexicalToSurface 
-  ) #REQUIRED  
-  operandOne CDATA #IMPLIED
-  operandTwo CDATA #IMPLIED
-  flag CDATA #IMPLIED>
+action (
+Append |
+DeleteFirstLetter |
+DeleteFirstVowel | 
+DeleteLastLetter | 
+DeleteLastVowel |
+DoubleLastLetter | 
+Replace |
+LexicalToSurface 
+) #REQUIRED  
+operandOne CDATA #IMPLIED
+operandTwo CDATA #IMPLIED
+flag CDATA #IMPLIED>
 
 <!ELEMENT conditions (condition+)>
 <!ATTLIST conditions
-  flag ( And | Or ) #REQUIRED>
+flag ( And | Or ) #REQUIRED>
 
 <!ELEMENT condition EMPTY>
 <!ATTLIST condition 
-   morpheme ( Previous | This | Next ) #REQUIRED
-  operator (
-                EndsWithConsonant |
-                EndsWithVowel |
-                FirstLetterEquals |
-                LastLetterEquals |
-                LastVowelEquals |
-                MorphemeEquals |
-                MorphemeNotEquals |
-                HasFlags |
-                HasNotFlags |
-                PenultVowelEquals |
-                StartsWithConsonant |
-                StartsWithVowel | 
-                IsLastMorpheme
+morpheme ( Previous | This | Next ) #REQUIRED
+operator (
+EndsWithConsonant |
+EndsWithVowel |
+FirstLetterEquals |
+LastLetterEquals |
+LastVowelEquals |
+MorphemeEquals |
+MorphemeNotEquals |
+HasFlags |
+HasNotFlags |
+PenultVowelEquals |
+StartsWithConsonant |
+StartsWithVowel | 
+IsLastMorpheme
   
-  ) #REQUIRED
-  operand CDATA #IMPLIED>
+) #REQUIRED
+operand CDATA #IMPLIED>

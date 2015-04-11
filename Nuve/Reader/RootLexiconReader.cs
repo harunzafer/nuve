@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Data;
-using System.Data.OleDb;
 using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
@@ -18,7 +17,7 @@ namespace Nuve.Reader
 
         public void AddEntries(DataSet ds, string tableName, MorphemeSurfaceDictionary<Root> roots)
         {
-            var data = ds.Tables[tableName].AsEnumerable();
+            EnumerableRowCollection<DataRow> data = ds.Tables[tableName].AsEnumerable();
             EnumerableRowCollection<RootLine> entries = data.Select(x =>
                 new RootLine
                 {
@@ -31,24 +30,13 @@ namespace Nuve.Reader
                     Rules = x.Field<string>("rules") ?? "",
                 });
 
-            foreach (var entry in entries)
+            foreach (RootLine entry in entries)
             {
                 if (entry.Active == "")
                 {
                     AddRoots(entry, roots);
                 }
             }
-        }
-
-        private class RootLine
-        {
-            public string Root;
-            public string Surfaces;
-            public string Lex;
-            public string Active;
-            public string Flags;
-            public string Id;
-            public string Rules;
         }
 
 
@@ -85,6 +73,17 @@ namespace Nuve.Reader
             {
                 roots.Add(lexicalForm, root);
             }
+        }
+
+        private class RootLine
+        {
+            public string Active;
+            public string Flags;
+            public string Id;
+            public string Lex;
+            public string Root;
+            public string Rules;
+            public string Surfaces;
         }
     }
 }

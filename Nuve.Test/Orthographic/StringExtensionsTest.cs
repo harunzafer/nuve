@@ -32,7 +32,7 @@ namespace Nuve.Test.Orthographic
         [TestCase("ba", "aeıioöuü", Result = true)]
         [TestCase("ab", "aeıioöuü", Result = false)]
         public bool LastLetterEqualsAnyTest(String str, String letters)
-        {            
+        {
             return str.LastCharEqualsAny(letters);
         }
 
@@ -44,7 +44,7 @@ namespace Nuve.Test.Orthographic
         {
             return str.FirstOccurrenceOfAny(letters);
         }
-           
+
         [TestCase("a", "aeıioöuü", Result = 'a')]
         [TestCase("b", "aeıioöuü", Result = null)]
         [TestCase("ba", "aeıioöuü", Result = 'a')]
@@ -71,7 +71,7 @@ namespace Nuve.Test.Orthographic
         [TestCase("bbba", "aeıioöuü", Result = "bbb")]
         [TestCase("bbb", "aeıioöuü", Result = "bbb")]
         public string DeleteFirstOccurrenceOfAnyTest(String str, String letters)
-        {            
+        {
             return str.DeleteFirstOccurrenceOfAny(letters);
         }
 
@@ -83,13 +83,13 @@ namespace Nuve.Test.Orthographic
         {
             return str.DeleteLastOccurrenceOfAny(letters);
         }
-       
+
         [TestCase("a", Result = "")]
         [TestCase("ab", Result = "b")]
         [TestCase("abc", Result = "bc")]
         [TestCase("abcd", Result = "bcd")]
         public string DeleteFirstCharTest(String str)
-        {            
+        {
             return str.DeleteFirstChar();
         }
 
@@ -106,8 +106,8 @@ namespace Nuve.Test.Orthographic
         [TestCase("babalı", "ba", "ara", Result = "arabalı")]
         [TestCase("babalı", "a", "e", Result = "bebalı")]
         [TestCase("babalı", "lı", "cık", Result = "babacık")]
-        [TestCase("babalı", "da", "ara", Result = "babalı")]                
-        public string ReplaceFirstOccurrenceTest(string str, string oldPattern, string newPattern )
+        [TestCase("babalı", "da", "ara", Result = "babalı")]
+        public string ReplaceFirstOccurrenceTest(string str, string oldPattern, string newPattern)
         {
             return str.ReplaceFirstOccurrence(oldPattern, newPattern);
         }
@@ -131,6 +131,36 @@ namespace Nuve.Test.Orthographic
             return str.RemoveParentheses();
         }
 
+        [TestCase("babali", 0, 3, Result = "bab")]
+        [TestCase("babali", 0, 0, Result = "")]
+        [TestCase("babali", 0, 6, Result = "babali")]
+        [TestCase("babali", 0, 7, ExpectedException = typeof (ArgumentOutOfRangeException))]
+        public string SubstringJavaTest(string str, int start, int end)
+        {
+            return str.SubstringJava(start, end);
+        }
+
+        [TestCase("''abc''", Result = "\"abc\"")]
+        [TestCase("“abc”", Result = "\"abc\"")]
+        [TestCase("«abc»", Result = "\"abc\"")]
+        [TestCase("‘abc’", Result = "\'abc\'")]
+        public string Normalize(string str)
+        {
+            const string doubleQuote = "\"";
+            const string singleQuote = "'";
+            var map = new Dictionary<string, string>
+            {
+                {"''", doubleQuote},
+                {"”", doubleQuote},
+                {"“", doubleQuote},
+                {"»", doubleQuote},
+                {"«", doubleQuote},
+                {"’", singleQuote},
+                {"‘", singleQuote},
+            };
+            return str.Normalize(map);
+        }
+
         [Test]
         public void IsAnyNullOrEmptyTest()
         {
@@ -145,46 +175,12 @@ namespace Nuve.Test.Orthographic
             Assert.IsTrue(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, nullStr));
             Assert.IsTrue(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr, notEmptyStr, nullStr));
             Assert.IsTrue(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr, notEmptyStr, emptyStr));
-            
+
             Assert.IsFalse(StringExtensions.IsAnyNullOrEmpty(notEmptyStr));
             Assert.IsFalse(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr));
             Assert.IsFalse(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr, notEmptyStr));
             Assert.IsFalse(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr, notEmptyStr, notEmptyStr));
             //Assert.IsTrue(StrUtil.IsNullOrEmpty("v")); 
         }
-
-        [TestCase("babali", 0, 3, Result = "bab")]
-        [TestCase("babali", 0, 0, Result = "")]
-        [TestCase("babali", 0, 6, Result = "babali")]
-        [TestCase("babali", 0, 7, ExpectedException = typeof(ArgumentOutOfRangeException))]
-        public string SubstringJavaTest(string str, int start, int end)
-        {
-            return str.SubstringJava(start, end);
-        }
-
-        [TestCase("''abc''" , Result = "\"abc\"")]
-        [TestCase("“abc”"   , Result = "\"abc\"")]
-        [TestCase("«abc»"   , Result = "\"abc\"")]
-        [TestCase("‘abc’"   , Result = "\'abc\'")]
-        public string Normalize(string str)
-        {
-            const string doubleQuote = "\"";
-            const string singleQuote = "'";
-            var map = new Dictionary<string, string>
-            {
-                
-                {"''", doubleQuote}, 
-                {"”",  doubleQuote},
-                {"“",  doubleQuote},
-                {"»",  doubleQuote},
-                {"«",  doubleQuote},
-                {"’",  singleQuote},
-                {"‘",  singleQuote},
-                
-            };
-            return str.Normalize(map);
-        }
-      
-
     }
 }

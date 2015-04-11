@@ -4,8 +4,9 @@ using Nuve.Orthographic;
 
 namespace Nuve.Sentence
 {
-    abstract class SentenceSegmenter
+    internal abstract class SentenceSegmenter
     {
+        public static readonly char[] DefaultEosCandidates = {'.', '!', '?'};
 
         public SentenceSegmenter(char[] eosCandidates)
         {
@@ -17,13 +18,11 @@ namespace Nuve.Sentence
             EosCandidates = DefaultEosCandidates;
         }
 
-        public readonly static char[] DefaultEosCandidates = { '.', '!', '?' };
-
         public char[] EosCandidates { private set; get; }
 
         protected void AddLastIndexAsSentenceBoundary(IList<int> indices, int lastIndex)
         {
-            if (indices.Count!=0 && indices.Last() != lastIndex)
+            if (indices.Count != 0 && indices.Last() != lastIndex)
             {
                 indices.Add(lastIndex);
             }
