@@ -2,7 +2,7 @@
 {
     public class Alphabet
     {
-        public static readonly Alphabet Turkish = new Alphabet(CharSet.TurkishConsonants, CharSet.TurkishVowels);
+        //public static readonly Alphabet Turkish = new Alphabet(CharSet.TurkishConsonants, CharSet.TurkishVowels);
         public readonly string Consonants;
         public readonly string Vowels;
 

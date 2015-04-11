@@ -2,12 +2,12 @@ nuve
 ===
 Nuve is a Natural Language Processing Library for Turkish. Currently it supports:
 
- - Morphologic analysis
+ - Morphologic analysis (33K word per second on a i5 2.8 GHz 64 bit machine)
  - Morphologic generation
  - Stemming
  - Sentence (segmentation) boundary detection
  - N-gram extraction
-
+ 
 Morphologic Analysis is demonstrated here: http://nuvedemo.apphb.com
 
 Morphologic Generation is demonstrated here: http://fiilcek.apphb.com

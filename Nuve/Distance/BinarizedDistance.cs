@@ -7,11 +7,6 @@
     // [a, b, c] vektörü ile [d, e, f] vektörü aynı kapıya çıkar böylece.
     internal abstract class BinarizedDistance : IDistance
     {
-        private int a; //
-        private int b;
-        private int c;
-
-
         public abstract double Measure(string s1, string s2);
     }
 }

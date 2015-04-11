@@ -123,7 +123,6 @@
     <Compile Include="Orthographic\Action\LexicalToSurface.cs" />
     <Compile Include="Orthographic\Action\Replace.cs" />
     <Compile Include="Orthographic\Alphabet.cs" />
-    <Compile Include="Orthographic\CharSet.cs" />
     <Compile Include="Orthographic\Orthography.cs" />
     <Compile Include="Orthographic\OrthographyRule.cs" />
     <Compile Include="Orthographic\StringExtensions.cs" />
