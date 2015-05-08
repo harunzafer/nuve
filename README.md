@@ -71,14 +71,14 @@ Output:
 ####Sentence Segmentation:     
 
 ```c#
- var paragraph = "Prof. Dr. Ahmet Bey 1.6 oranında artış var dedi 2. kez. E-posta adresi ahmet.bilir@prof.dr imiş! Doğru mu?";
- Splitter splitter = new RegexSplitter(RegexSplitter.ClassicPattern);
- var segmenter = new TokenBasedSentenceSegmenter(splitter);
- var sentences = segmenter.GetSentences(paragraph);
- foreach (string sentence in sentences)
- {
-	  Console.WriteLine(sentence);
- }     
+var paragraph = "Prof. Dr. Ahmet Bey 1.6 oranında artış var dedi 2. kez. E-posta adresi ahmet.bilir@prof.dr imiş! Doğru mu?";
+ITokenizer tokenizer = new ClassicTokenizer(true);
+SentenceSegmenter segmenter = new TokenBasedSentenceSegmenter(tokenizer);
+var sentences = segmenter.GetSentences(paragraph);
+foreach (string sentence in sentences)
+{
+	Console.WriteLine(sentence);
+}
 ```
 
 #### N-gram Extraction:     
