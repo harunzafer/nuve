@@ -1150,7 +1150,6 @@ ankesör					ISIM	isim
 anket					ISIM	isim				Fransızca	Hayır				
 anketör					ISIM	isim				Fransızca	Hayır				
 ankiloz					ISIM	isim			tıp	Fransızca	Hayır				
-anla	anlı				FIIL	fiil				Türkçe	Hayır	E		Evet	
 anla	anlı				FIIL	fiil				Türkçe					
 anlam					ISIM	isim				Türkçe	Hayır				
 anlamdaş					SIFAT	sıfat			dil bilgisi	Türkçe	Hayır				
@@ -1344,13 +1343,11 @@ Aralık					OZEL	özel		k'ı	ilçe	Türkçe	Evet
 Aram					OZEL	özel					Evet				
 Arami					OZEL	özel			halk	Arapça	Evet				
 Aramice					ISIM	isim, sıfat			lisan		Evet				
-aran					FIIL	fiil				Türkçe	Hayır		E	Hayır	
 aran					FIIL	fiil				Türkçe					
 aranje					SIFAT	sıfat				Fransızca	Hayır				
 aranjman					ISIM	isim				Fransızca	Hayır				
 aranjör					ISIM	isim			müzik	Fransızca	Hayır				
 arantı					ISIM	isim				Türkçe	Hayır				
-arap	arab				ISIM	isim	YUMUSAMA_pb	bı		Arapça	Hayır				
 arap	arab				ISIM	isim	YUMUSAMA_pb	bı		Arapça	Hayır				
 Arap					OZEL	özel		bı	halk	Arapça	Evet				
 Arapça					ISIM	isim, sıfat			lisan		Evet				
@@ -2822,7 +2819,6 @@ belik	beliğ				ISIM	isim	YUMUSAMA_kğ	ği		Türkçe	Hayır
 belikle	belikli				FIIL	fiil				Türkçe					
 belinle	belinli				FIIL	fiil				Türkçe					
 belir					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Hayır	
-belir					FIIL	fiil				Türkçe					
 belirgi					ISIM	isim			tıp	Türkçe	Hayır				
 belirgin					SIFAT	sıfat				Türkçe	Hayır				
 belirim					ISIM	isim									
@@ -3289,7 +3285,6 @@ bitey					ISIM	isim			bitki bilimi	Türkçe	Hayır
 bitik	bitiğ				SIFAT	sıfat	YUMUSAMA_kğ	ği		Türkçe	Hayır				
 bitim					ISIM	isim									
 bitir					FIIL	fiil, ettirtgen_t				Türkçe	Hayır		E	Evet	
-bitir					FIIL	fiil				Türkçe					
 bitirim					SIFAT	sıfat									
 bitirimhane					ISIM	isim				Tr-Fa	Hayır				
 bitiş					FIIL	fiil				Türkçe					
@@ -10939,7 +10934,7 @@ ilişim					ISIM	isim
 ilişken					ISIM	isim				Türkçe	Hayır				
 ilişki					ISIM	isim				Türkçe	Hayır				
 ilişkin					SIFAT	sıfat				Türkçe	Hayır				
-ilk	ilğ				SIFAT	sıfat	YUMUSAMA_kğ			Türkçe	Hayır				
+ilk					SIFAT	sıfat				Türkçe	Hayır				
 ilkah					ISIM	isim			biyoloji	Arapça	Hayır				
 ilkbahar					ISIM	isim			gök bilimi	Tr-Fa	Hayır				
 ilke					ISIM	isim				Türkçe	Hayır				
@@ -26618,7 +26613,6 @@ yerküre					ISIM	isim			gök bilimi		Hayır
 yerleş					FIIL	fiil				Türkçe	Hayır		E	Hayır	
 yerleş				F	FIIL	fiil				Türkçe					
 yerleşik	yerleşiğ				SIFAT	sıfat	YUMUSAMA_kğ	ği		Türkçe	Hayır				
-yerleşim					ISIM	isim				Türkçe	Hayır				
 yerleşim					ISIM	isim									
 yerleşke					ISIM	isim				Türkçe	Hayır				
 yeröte					ISIM	isim			gök bilimi	Türkçe	Hayır				
@@ -27358,3 +27352,4 @@ değerlendir					FIIL	fiil, ettirgen_dur				Türkçe	Hayır
 ortalama					ZARF	zarf				Türkçe	Hayır				
 yabancı					SIFAT	sıfat				Türkçe	Hayır				
 art					FIIL	fiil									
+böylesine					ZARF	zarf									
