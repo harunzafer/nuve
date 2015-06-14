@@ -2,7 +2,7 @@
 
 namespace Nuve.Tokenizers
 {
-    internal interface ITokenizer
+    public interface ITokenizer
     {
         IList<string> Tokenize(string text);
     }

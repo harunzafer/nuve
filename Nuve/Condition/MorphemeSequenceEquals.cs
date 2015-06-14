@@ -6,12 +6,12 @@ namespace Nuve.Condition
 {
     internal class MorphemeSequenceEquals : ConditionBase
     {
-        private readonly string[] _morphemes;
+        private readonly string[] _sequence;
 
         public MorphemeSequenceEquals(string position, string operand, Alphabet alphabet)
             : base(position, operand, alphabet)
         {
-            _morphemes = Operand.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
+            _sequence = Operand.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
         }
 
         public override bool IsTrueFor(Allomorph allomorph)
@@ -29,9 +29,9 @@ namespace Nuve.Condition
         {
             if (Position == Position.BeforeSource)
             {
-                for (int i = _morphemes.Length - 1; i >= 0; i--)
+                for (int i = _sequence.Length - 1; i >= 0; i--)
                 {
-                    if (_morphemes[i] != neighbour.Morpheme.Id)
+                    if (_sequence[i] != neighbour.Morpheme.Id)
                         return false;
 
                     if (neighbour.HasPrevious)
@@ -45,9 +45,9 @@ namespace Nuve.Condition
 
             if (Position == Position.AfterTarget)
             {
-                for (int i = 0; i < _morphemes.Length; i++)
+                for (int i = 0; i < _sequence.Length; i++)
                 {
-                    if (_morphemes[i] != neighbour.Morpheme.Id)
+                    if (_sequence[i] != neighbour.Morpheme.Id)
                         return false;
 
                     if (neighbour.HasNext)

@@ -29,6 +29,7 @@ namespace Nuve.Lang
             foreach (var pair in roots)
             {
                 GetPossibleWords(new Word(pair.Value), token.Remove(0, pair.Key.Length), words, checkTransition);
+                
             }
 
             if (checkTransitionConditions)
@@ -44,7 +45,7 @@ namespace Nuve.Lang
             return words.Distinct().ToList();
         }
 
-        public void EliminateByOrtography(IList<Word> analyses, string surface)
+        private void EliminateByOrtography(IList<Word> analyses, string surface)
         {
             for (int i = analyses.Count - 1; i >= 0; i--) //Reverse for loop to remove element
             {
@@ -55,12 +56,12 @@ namespace Nuve.Lang
             }
         }
 
-        public bool HasCorrectSurface(Word word, string surface)
+        private bool HasCorrectSurface(Word word, string surface)
         {
             return word.GetSurface() == surface;
         }
 
-        public void EliminateByMorphotactics(IList<Word> analyses)
+        private void EliminateByMorphotactics(IList<Word> analyses)
         {
             for (int i = analyses.Count - 1; i >= 0; i--) //Reverse for loop to remove element
             {
@@ -139,6 +140,7 @@ namespace Nuve.Lang
                     pairs.Add(new KeyValuePair<string, Suffix>(prefix, suffix));
                 }
             }
+
             return pairs;
         }
     }

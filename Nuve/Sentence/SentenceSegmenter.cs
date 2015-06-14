@@ -4,7 +4,7 @@ using Nuve.Orthographic;
 
 namespace Nuve.Sentence
 {
-    internal abstract class SentenceSegmenter
+    public abstract class SentenceSegmenter
     {
         public static readonly char[] DefaultEosCandidates = {'.', '!', '?'};
 

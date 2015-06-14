@@ -9,7 +9,7 @@ namespace Nuve.Tokenizers
     ///     <param name="returnDelims"></param>
     ///     is false delimiter characters are discarded
     /// </summary>
-    internal class ClassicTokenizer : RegexTokenizerBase
+    public class ClassicTokenizer : RegexTokenizerBase
     {
         private const string Pattern = "("
                                        + RegexPattern.WhiteSpace + RegexPattern.Or

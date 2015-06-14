@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<package >
+
+<package>
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
@@ -12,12 +13,16 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>
-		- Quickgraph dependency is removed
-		- Language object creation time is improved dramatically
-		- Turkish dictionary is extended and minor errors are fixed
-		- Analysis time is improved. (24K word per second on a i5 2.8 GHz 64 bit machine)
-	</releaseNotes>
-    <copyright>Copyright 2014</copyright>
+      v 1.3.1
+        - Sentence segmenter API bug is fixed
+
+      v 1.3.0
+        - Quickgraph dependency is removed
+        - Language object creation time is improved dramatically
+        - Turkish dictionary is extended and minor errors are fixed
+        - Analysis time is improved. (24K word per second on a i5 2.8 GHz 64 bit machine)
+    </releaseNotes>
+    <copyright>Copyright 2015</copyright>
     <tags>NLP Turkish Turkic</tags>
   </metadata>
 </package>

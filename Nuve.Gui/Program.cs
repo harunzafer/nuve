@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
+using System.Windows.Forms;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
 using Nuve.NGrams;
 using Nuve.Sentence;
 using Nuve.Stemming;
+using Nuve.Tokenizers;
 
 namespace Nuve.Gui
 {
@@ -23,8 +26,20 @@ namespace Nuve.Gui
         [STAThread]
         private static void Main()
         {
+            //var str = File.ReadAllText(@"C:\Users\harun_000\Desktop\todo");
+
+
+            var lines = File.ReadAllLines(@"C:\Users\harun_000\Desktop\vboxshare\paragraphs-no-punctuation_trimmed.txt", Encoding.UTF8);
+
+            File.WriteAllLines(@"C:\Users\harun_000\Desktop\vboxshare\paragraphs-no-punctuation_trimmed_emptylines_removed.txt", lines.Where(l => l != ""), Encoding.UTF8);
+
+            //File.WriteAllText(@"C:\Users\harun_000\Desktop\vboxshare\tokenized-paragraphs-with-punctuation.txt", Split(text), Encoding.UTF8);
+            
+            //File.WriteAllLines(@"C:\Users\harun_000\Desktop\vboxshare\sentences-no-punctuation-remove-empty-lines.txt", paragraphs.Select(p => Regex.Replace(p, "[^\\p{L}\\p{Nd}' ]", "")), Encoding.UTF8);
+            
+            
             //Benchmarker.TestWithAMillionWords(Analyzer);
-            Benchmarker.TestWithAMillionTokens(Analyzer);
+            //Benchmarker.TestWithAMillionTokens(Analyzer);
 
             //Language tr = Language.Turkish;
 
@@ -55,8 +70,35 @@ namespace Nuve.Gui
 
             //Console.WriteLine(word.GetSurface());
 
+            
+            //Test();
+        }
 
-            Test();
+        public static string Split(string str)
+        {
+            var sb = new StringBuilder(str);
+            Console.WriteLine(sb.Capacity);
+            Console.WriteLine(sb.MaxCapacity);
+            for (int i = 1; i < sb.Length; i+=2)
+            {
+                if (sb[i] == '\n' || sb[i] == '\r')
+                {
+                    continue;
+                }
+
+                if (Char.IsWhiteSpace(sb[i]))
+                {
+                    sb[i] = '_';
+                }
+
+                sb.Insert(i, ' ');
+
+                Console.WriteLine(i);
+                Console.WriteLine(sb.Length);
+                
+            }
+
+            return sb.ToString();
         }
 
         public static void AnaylzeWithCache(int cacheSize)

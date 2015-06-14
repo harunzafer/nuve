@@ -6,7 +6,7 @@ using Nuve.Tokenizers;
 
 namespace Nuve.Sentence
 {
-    internal class TokenBasedSentenceSegmenter : SentenceSegmenter
+    public class TokenBasedSentenceSegmenter : SentenceSegmenter
     {
         private static readonly string[] Closing = {"\"", "\'", ")"};
         private static readonly string[] Opening = {"\"", "\'", "("};
