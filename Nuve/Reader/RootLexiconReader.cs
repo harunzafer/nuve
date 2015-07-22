@@ -56,7 +56,7 @@ namespace Nuve.Reader
             }
 
             Root root;
-            if (type == "KISALTMA" || type == "ALINTI" || type == "NOKTALI" || type == "HARF")
+            if (type == "KISALTMA" || type == "ALINTI" || type == "KISALTMA_NOKTALI" || type == "HARF")
             {
                 root = new Root(type, lex, LabelSet.ConvertLabelNamesToIndexes(flags), _orthography.GetRules(rules),
                     item);

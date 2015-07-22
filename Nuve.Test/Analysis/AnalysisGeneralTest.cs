@@ -252,9 +252,35 @@ namespace Nuve.Test.Analysis
         [TestCase("gelecekdi")]
         [TestCase("arabadı")]
         [TestCase("tuhafdı")]
+        [TestCase("kendilik")]
+        [TestCase("kendiliğim")]
         public void HepsiYanlısTest(string token)
         {
             Tester.HasNoAnalysis(token);
+        }
+
+        [TestCase("yaptırıveremedim")]
+        [TestCase("arttıracağını")]
+        [TestCase("nasılsın")]
+        [TestCase("Keloğlan'a")]
+        [TestCase("hepiniz")]
+        [TestCase("hepimiz")]
+        [TestCase("önceden")]
+        [TestCase("dolayısıyla")]
+        [TestCase("a.ş.")]
+        [TestCase("km")]
+        [TestCase("hepimizin")]
+        [TestCase("böylelikle")]
+        [TestCase("böylesi")]
+        [TestCase("usulü")]
+        [TestCase("kadarlık")]
+        [TestCase("kadardır")]
+        [TestCase("kadarsın")]
+        [TestCase("öyleyim")]
+        [TestCase("şunlardı")]
+        public void ValidWordsTest(string token)
+        {
+            Tester.HasAnalysis(token);
         }
     }
 }

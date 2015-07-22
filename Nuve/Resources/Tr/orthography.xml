@@ -481,7 +481,7 @@
       </description>
       <transformation morpheme="This" action="LexicalToSurface" />
     </rule>
-    <!--
+    
 
     <rule id="KESME_KALDIR" phase="2">
       <description>
@@ -497,7 +497,7 @@
       <transformation morpheme="This" action="Append" operandOne="'" />
     </rule>
 
-    -->
+    
     <!-- Bu kurallar tam olarak neden var?--><!--
     <rule id="ILK_HARF_BUYUT_o" phase="5">
       <description>kâr -> kar </description>

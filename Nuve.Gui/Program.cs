@@ -207,8 +207,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-                "hepimiz","önceden", "dolayısıyla", "km", "a.ş.","hepimizin", "böylelikle", "böylesi", "vb.", "usulü", "artar", "usulsüzlük","hepimize", "kadarki", "kadarlık", "kadardır", "kadarki", "hemhâl", "hemhal", "öyleyim", "kadarsın"
-                , "akşamdan", "şunlardı", "şunlar"
+               "a.ş.", "tar.", "YÖK", "vb.", "vs."
             };
             //string[] testStrings = SoruTest.Soru;
             AnalysisHelper.Analyze(Analyzer, testStrings);

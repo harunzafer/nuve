@@ -410,7 +410,7 @@ Sl.		Slavca		KISALTMA_NOKTALI			Slavca
 Sn.		Sayın		KISALTMA_NOKTALI			Sayın
 sn.		Saniye		KISALTMA_NOKTALI			Saniye
 snt.		Santral		KISALTMA_NOKTALI			Santral
-Sok.		Sokak		KISALTMA_NOKTALI			Sokak
+sok.		Sokak		KISALTMA_NOKTALI			Sokak
 sos.		Sosyoloji		KISALTMA_NOKTALI			Sosyoloji
 SOS				KISALTMA		OKUNUSDAN_YAZILISA	Uluslararası yardım isteme uyarısı (Save Our Souls)
 sp.		Spor		KISALTMA_NOKTALI			Spor
@@ -541,7 +541,7 @@ VDMK				KISALTMA		OKUNUSDAN_YAZILISA	Varlığa Dayalı Menkul Kıymetler
 Vet.		Veteriner		KISALTMA_NOKTALI			Veteriner
 VHF				KISALTMA		OKUNUSDAN_YAZILISA	Çok yüksek frekans (Very High Frequency)
 VIP		viaypi		KISALTMA		OKUNUSDAN_YAZILISA	Çok önemli kişi (Very Important Person)
-vs.		Vesaire		KISALTMA_NOKTALI			Vesaire
+vs.				KISALTMA_NOKTALI		OKUNUSDAN_YAZILISA	Vesaire
 w		vat		KISALTMA		OKUNUSDAN_YAZILISA	Elektrik güç birimi (Watt)
 WAP		vap		KISALTMA		OKUNUSDAN_YAZILISA	Kablosuz uygulama protokolü; İnternet sistemine kablosuz erişim (Wireless Application Protocol)
 WB				KISALTMA		OKUNUSDAN_YAZILISA	Dünya Bankası (World Bank)

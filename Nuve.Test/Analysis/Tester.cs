@@ -66,6 +66,17 @@ namespace Nuve.Test.Analysis
             Assert.AreEqual(0, solutions.Count);
         }
 
+        /// <summary>
+        ///     Bir kelimenin hiç çözümünün olmamasını test eder.
+        ///     Çözümlenememesi gereken kelimeler için kullanılır.
+        /// </summary>
+        /// <param name="token">kelime</param>
+        public static void HasAnalysis(string token)
+        {
+            IList<Word> solutions = Analyzer.Analyze(token);
+            Assert.Greater(solutions.Count, 0);
+        }
+
 
         /// <summary>
         ///     Bir kelimeye ait çözümler içerisinde belirli bir çözümün olmadığını test eder.
@@ -88,7 +99,7 @@ namespace Nuve.Test.Analysis
         // Bu metod yakında kaldırılacak
         public static void TestAnalyses(string token, int count, string[] analyses, bool fullAnalysis = false)
         {
-            IList<Word> solutions = Analyzer.Analyze(token, true, true);
+            IList<Word> solutions = Analyzer.Analyze(token);
             if (fullAnalysis)
             {
                 Assert.AreEqual(count, solutions.Count);
