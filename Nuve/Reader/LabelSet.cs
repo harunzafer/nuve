@@ -44,6 +44,9 @@ namespace Nuve.Reader
                 {"ettirgen_t", 34},
                 {"ettirtgen_t", 35},
                 {"isteş", 36},
+                {"hepimiz", 37},
+                {"güncel", 38},
+                {"şahıs_alır", 39},
             };
 
         public static int ConvertLabelNameToIndex(string label)
@@ -56,6 +59,11 @@ namespace Nuve.Reader
             var labels = new List<int>();
             foreach (string name in propertyNames)
             {
+                if (!map.ContainsKey(name))
+                {
+                    Console.WriteLine("Flag not found: " +name);
+                }
+
                 labels.Add(map[name]);
             }
             return labels;

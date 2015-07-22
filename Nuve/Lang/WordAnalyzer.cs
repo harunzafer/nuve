@@ -51,6 +51,7 @@ namespace Nuve.Lang
             {
                 if (!HasCorrectSurface(analyses[i], surface))
                 {
+                    
                     analyses.RemoveAt(i);
                 }
             }

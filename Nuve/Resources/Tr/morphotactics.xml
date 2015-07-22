@@ -213,6 +213,37 @@
 
 
     <source id="ZARF">
+
+      <target id="EKFIIL_SAHIS_BEN_(y)Um">
+        <conditions flag="And">
+          <condition morpheme="Source" operator="HasFlags" operand="şahıs_alır" />
+        </conditions>
+      </target>
+
+      <target id="EKFIIL_SAHIS_SEN_sUn">
+        <conditions flag="And">
+          <condition morpheme="Source" operator="HasFlags" operand="şahıs_alır" />
+        </conditions>
+      </target>
+
+      <target id="EKFIIL_SAHIS_BIZ_(y)Uz">
+        <conditions flag="And">
+          <condition morpheme="Source" operator="HasFlags" operand="şahıs_alır" />
+        </conditions>
+      </target>
+
+      <target id="EKFIIL_SAHIS_SIZ_sUnUz">
+        <conditions flag="And">
+          <condition morpheme="Source" operator="HasFlags" operand="şahıs_alır" />
+        </conditions>
+      </target>
+
+      <target id="EKFIIL_SAHIS_ONLAR_lAr">
+        <conditions flag="And">
+          <condition morpheme="Source" operator="HasFlags" operand="şahıs_alır" />
+        </conditions>
+      </target>
+
       <target id="EKFIIL_TANIMLAMA_DUr">
         <conditions flag="And">
           <condition morpheme="Source" operator="HasFlags" operand="ekfiil_alır" />
@@ -391,7 +422,7 @@
       <targetGroup id="SORU_BAGLAC" />
     </source>
 
-    <source id="NOKTALI">
+    <source id="KISALTMA_NOKTALI">
       <targetGroup id="ISIM_HAL" />
       <targetGroup id="SORU_BAGLAC" />
     </source>
@@ -599,7 +630,18 @@
     </source>
 
     <source id="ZAMIR_BELIRSIZLIK">
-      <target id="IC_SAHIPLIK_O_(s)U" />
+      <target id="IC_SAHIPLIK_O_(s)U" >
+        <conditions flag="Or">
+          <condition morpheme="Source" operator="HasNotFlags" operand="hepimiz" />
+        </conditions>
+      </target>
+      
+      <target id="IC_HAL_ILGI_(n)Un" >
+        <conditions flag="Or">
+          <condition morpheme="Source" operator="HasFlags" operand="hepimiz" />
+        </conditions>
+      </target>
+      
       <target id="IC_SAHIPLIK_ONLAR_lArI" />
       <target id="SAYI_ULESTIRME_(ş)Ar">
         <conditions flag="Or">
@@ -615,6 +657,7 @@
 
     <source id="ZAMIR_COGUL_lAr">
       <targetGroup id="ISIM_HAL" />
+      <targetGroup id="EKFIIL_ZAMAN" />
       <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
       <target id="EKFIIL_SAHIS_SIZ_sUnUz" />
       <target id="IY_ZARF_CA" />

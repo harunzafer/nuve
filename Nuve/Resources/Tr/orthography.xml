@@ -260,6 +260,11 @@
       <transformation morpheme="This" action="Replace" operandOne="á" operandTwo="a" flag="all" />
     </rule>
 
+    <rule id="OZEL_INCELME_SAPKALI_A" phase="5">
+      <description>	saat => saate özel durumu için yerleştirilen á karakteri sonradan â olur. </description>
+      <transformation morpheme="This" action="Replace" operandOne="á" operandTwo="â" flag="all" />
+    </rule>
+
     <rule id="OZEL_INCELME_O" phase="5">
       <description> gol-e, alkol-lü özel durumu için yerleştirilen ó karakteri sonradan o olur. </description>
       <transformation morpheme="This" action="Replace" operandOne="ó" operandTwo="o" flag="all" />
@@ -470,12 +475,13 @@
     </rule>
 
 
-    <!--<rule id="OKUNUSDAN_YAZILISA" phase="5">
+   <rule id="OKUNUSDAN_YAZILISA" phase="5">
       <description>
-        Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini
+        Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini 
       </description>
       <transformation morpheme="This" action="LexicalToSurface" />
     </rule>
+    <!--
 
     <rule id="KESME_KALDIR" phase="2">
       <description>
@@ -491,7 +497,8 @@
       <transformation morpheme="This" action="Append" operandOne="'" />
     </rule>
 
-    --><!-- Bu kurallar tam olarak neden var?--><!--
+    -->
+    <!-- Bu kurallar tam olarak neden var?--><!--
     <rule id="ILK_HARF_BUYUT_o" phase="5">
       <description>kâr -> kar </description>
       <transformation morpheme="This" action="Replace" operandOne="o" operandTwo="O" flag="first" />
