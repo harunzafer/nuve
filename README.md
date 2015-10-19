@@ -61,9 +61,11 @@ word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
 word.AddSuffix(tr.GetSuffix("IC_HAL_AYRILMA_DAn"));
 
 Console.WriteLine(word.GetSurface()); //prints "kitabımdakilerden"
+```
 
-// Use the public bool AddSuffix(Suffix suffix, Language language)
-// in order to make sure that the word is still valid after adding the suffix
+Use the `public bool AddSuffix(Suffix suffix, Language language)` in order to make sure that the word is still valid after adding the suffix
+
+```c#
 Root root = tr.GetRootsHavingSurface("kitap").First();
 
 var word = new Word(root);
