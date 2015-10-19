@@ -15,7 +15,6 @@ namespace Nuve.Lang
     {
         public static readonly Language Turkish;
         private readonly string _code;
-        private readonly Morphotactics _morphotactics;
         private readonly MorphemeSurfaceDictionary<Root> _roots;
         private readonly Suffixes _suffixes;
 
@@ -37,20 +36,14 @@ namespace Nuve.Lang
             Suffixes suffixes)
         {
             _code = code;
-            _morphotactics = morphotactics;
+            Morphotactics = morphotactics;
             _roots = roots;
             _suffixes = suffixes;
         }
 
-        internal Morphotactics Morphotactics
-        {
-            get { return _morphotactics; }
-        }
+        internal Morphotactics Morphotactics { get; }
 
-        public IEnumerable<Suffix> AllSuffixes
-        {
-            get { return _suffixes.SuffixesById.Values; }
-        }
+        public IEnumerable<Suffix> AllSuffixes => _suffixes.SuffixesById.Values;
 
         /// <summary>
         ///     Returns the immutable Suffix object having given id

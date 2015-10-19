@@ -805,11 +805,13 @@
       <targetGroup id="SORU_BAGLAC" />
     </source>
 
+    <!--
     <source id="ZAMAN_ki">
       <copy id="IC_AITLIK_ki" />
       <targetGroup id="SORU_BAGLAC" />
     </source>
-
+    -->
+    
     <source id="EKFIIL_TANIMLAMA_DUr">
       <target id="EKFIIL_SAHIS_ONLAR_lAr" />
       <target id="BAGLAC_dA" />
