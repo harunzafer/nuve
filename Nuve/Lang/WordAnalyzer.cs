@@ -80,7 +80,7 @@ namespace Nuve.Lang
         {
             if (restOfWord.Length == 0)
             {
-                var newPossibleWord = new Word(word);
+                var newPossibleWord = Word.CopyOf(word);
                 words.Add(newPossibleWord);
                 return;
             }

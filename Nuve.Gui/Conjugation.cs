@@ -59,13 +59,15 @@ namespace Nuve.Gui
 
         public string Conjugate(Root verbRoot)
         {
-            var copy = new Word(verb) {Root = verbRoot};
+            var copy = Word.CopyOf(verb);
+            copy.Root = verbRoot;
             return copy.GetSurface();
         }
 
         public string Conjugate(Root verbRoot, bool negative, bool question)
         {
-            var copy = new Word(verb) {Root = verbRoot};
+            var copy = Word.CopyOf(verb);
+            copy.Root = verbRoot;
             if (negative)
             {
                 copy.AddSuffixAfterRoot(Negative);

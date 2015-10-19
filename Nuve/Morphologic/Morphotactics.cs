@@ -16,22 +16,21 @@ namespace Nuve.Morphologic
         public bool HasTransition(string previousMorphemeId, string nextMorphemeId)
         {
             return _graph.ContainsEdge(previousMorphemeId, nextMorphemeId);
-
-            //Transition<string> transition;
-            //bool edgeExists = _graph.TryGetEdge(previousMorphemeId, nextMorphemeId, out transition);
-            //if (edgeExists && !transition.Conditions.IsTrue(word[i]))
-            //{
-            //    return false;
-            //}
         }
-
+        
         public bool IsValid(Word word)
         {
             for (int i = 0; i < word.AllomorphCount - 1; i++)
             {
                 Transition<string> transition;
                 bool edgeExists = _graph.TryGetEdge(word[i].Morpheme.Id, word[i + 1].Morpheme.Id, out transition);
-                if (edgeExists && !transition.Conditions.IsTrue(word[i]))
+
+                if (!edgeExists)
+                {
+                    return false;
+                }
+
+                if (!transition.Conditions.IsTrue(word[i]))
                 {
                     return false;
                 }

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using NUnit.Framework;
 using Nuve.Orthographic;
+using NUnit.Framework;
 
-namespace Nuve.Test.Orthographic
+namespace Nuve.Test.Generation
 {
     [TestFixture]
     public class StringExtensionsTest

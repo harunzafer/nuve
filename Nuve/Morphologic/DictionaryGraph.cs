@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Nuve.Morphologic
 {
@@ -30,7 +31,7 @@ namespace Nuve.Morphologic
             }
             else
             {
-                Console.WriteLine(@"Duplicate key: " + key);
+                Debug.Print("Duplicate key: " + key);                
             }
         }
 

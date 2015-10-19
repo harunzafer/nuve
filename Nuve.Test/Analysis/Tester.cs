@@ -36,7 +36,7 @@ namespace Nuve.Test.Analysis
             IList<Word> words = Analyzer.Analyze(token);
             foreach (string expectedAnalysis in expectedAnalyses)
             {
-                int matchingAnalysisCount = words.Count(w => w.Analysis == expectedAnalysis);
+                int matchingAnalysisCount = words.Count(w => w.Analysis.Equals(expectedAnalysis));
                 Assert.AreEqual(1, matchingAnalysisCount);
             }
         }

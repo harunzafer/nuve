@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using Nuve.Lang;
+using Nuve.Morphologic.Structure;
 using Nuve.NGrams;
 using Nuve.Sentence;
 using Nuve.Stemming;
@@ -83,18 +85,13 @@ namespace Nuve.Gui
             //    solution.GetStem().GetSurface()); //Stemming
             //}
 
-            ////Morphologic Generation
-            //Root root = tr.GetRootsHavingSurface("kitap").First();
 
-            //var word = new Word(root);
-            //word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
-            //word.AddSuffix(tr.GetSuffix("IC_SAHIPLIK_BEN_(U)m"));
-            //word.AddSuffix(tr.GetSuffix("IC_HAL_BULUNMA_DA"));
-            //word.AddSuffix(tr.GetSuffix("IC_AITLIK_ki"));
-            //word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
-            //word.AddSuffix(tr.GetSuffix("IC_HAL_AYRILMA_DAn"));
+            var root = Language.Turkish.GetRootsHavingSurface("f").First();
+            Word word = new Word(root);
 
-            //Console.WriteLine(word.GetSurface());
+            Console.WriteLine(root);
+            Console.WriteLine(word);
+            Console.WriteLine(word.GetSurface());
 
 
             Test();
@@ -207,7 +204,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-               "a.ş.", "tar.", "YÖK", "vb.", "vs."
+               "a", "b" ,"a.ş.", "tar.", "YÖK", "vb.", "vs."
             };
             //string[] testStrings = SoruTest.Soru;
             AnalysisHelper.Analyze(Analyzer, testStrings);

@@ -15,7 +15,7 @@ namespace Nuve.Morphologic.Structure
     ///     değişir
     ///     <para />
     /// </summary>
-    [DebuggerDisplay("{morpheme.LexicalForm}=>{Surface}")]
+    [DebuggerDisplay("{Morpheme.LexicalForm}=>{Surface}")]
     public class Allomorph
     {
         private readonly Morpheme _morpheme;
@@ -38,10 +38,7 @@ namespace Nuve.Morphologic.Structure
         ///     Her <see cref="Allomorph" /> nesnesi içerisinde bir Morpheme nesnesi barındırır.
         ///     <para />
         /// </summary>
-        public Morpheme Morpheme
-        {
-            get { return _morpheme; }
-        }
+        public Morpheme Morpheme => _morpheme;
 
         /// <summary>
         ///     Allomorph'un yüzey biçimi
@@ -55,10 +52,7 @@ namespace Nuve.Morphologic.Structure
         /// <summary>
         ///     Soldaki yani bir önceki Allomorph'u döndürür.
         /// </summary>
-        public Allomorph Previous
-        {
-            get { return _node.Previous != null ? _node.Previous.Value : null; }
-        }
+        public Allomorph Previous => _node.Previous?.Value;
 
 
         public Allomorph First
@@ -90,10 +84,7 @@ namespace Nuve.Morphologic.Structure
         /// <summary>
         ///     Sağdaki yani bir sonraki Allomorph.
         /// </summary>
-        public Allomorph Next
-        {
-            get { return _node.Next != null ? _node.Next.Value : null; }
-        }
+        public Allomorph Next => _node.Next?.Value;
 
 
         /// <summary>
@@ -103,10 +94,7 @@ namespace Nuve.Morphologic.Structure
         /// <value>
         ///     <c>true</c> Morfemin solunda bir morfem varsa; yoksa, <c>false</c>.
         /// </value>
-        public bool HasPrevious
-        {
-            get { return Previous != null; }
-        }
+        public bool HasPrevious => Previous != null;
 
         /// <summary>
         ///     Bu morfemden sonra gelen bir morfem var mı? </para>
@@ -115,20 +103,11 @@ namespace Nuve.Morphologic.Structure
         /// <value>
         ///     <c>true</c> Morfemin sağında bir morfem varsa; yoksa, <c>false</c>.
         /// </value>
-        public bool HasNext
-        {
-            get { return Next != null; }
-        }
+        public bool HasNext => Next != null;
 
-        public bool IsFirst
-        {
-            get { return HasPrevious; }
-        }
+        public bool IsFirst => HasPrevious;
 
-        public bool IsLast
-        {
-            get { return HasNext; }
-        }
+        public bool IsLast => HasNext;
 
         /// <summary>
         ///     Allomorph'lar bir linked list halinde bulunurlar Word sınıfı içerisinde

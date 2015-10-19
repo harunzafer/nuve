@@ -11,8 +11,8 @@ namespace Nuve.Reader
 {
     internal static class MorphotacticsReader
     {
-        private static IEnumerable<SuffixGroupElement> SUFFIX_GROUP_ELEMENTS;
-        private static IEnumerable<TransitionSetElement> TRANSITION_SET_ELEMENTS;
+        private static IEnumerable<SuffixGroupElement> _suffixGroupElements;
+        private static IEnumerable<TransitionSetElement> _transitionSetElements;
         //private static readonly AdjacencyGraph<string, Transition<string>> Graph = new AdjacencyGraph<string, Transition<string>>(false);
         //private static readonly IGraph<string> Graph = new QuickGraph<string>();
         private static readonly IGraph<string> Graph = new DictionaryGraph();
@@ -21,7 +21,7 @@ namespace Nuve.Reader
         public static Morphotactics Read(Stream xml, Alphabet alphabet)
         {
             _alphabet = alphabet;
-            XDocument doc = null;
+            XDocument doc;
             try
             {
                 doc = XDocument.Load(xml);
@@ -33,8 +33,8 @@ namespace Nuve.Reader
             }
 
 
-            SUFFIX_GROUP_ELEMENTS = GetSuffixGroupElements(doc);
-            TRANSITION_SET_ELEMENTS = GetTransitionSetElements(doc);
+            _suffixGroupElements = GetSuffixGroupElements(doc);
+            _transitionSetElements = GetTransitionSetElements(doc);
 
             BuildGraph();
 
@@ -67,7 +67,7 @@ namespace Nuve.Reader
 
         private static void BuildGraph()
         {
-            foreach (TransitionSetElement transitionSetElement in TRANSITION_SET_ELEMENTS)
+            foreach (TransitionSetElement transitionSetElement in _transitionSetElements)
             {
                 AddTransitions(transitionSetElement);
             }
@@ -218,7 +218,7 @@ namespace Nuve.Reader
         {
             var transitions = new List<Transition<string>>();
             string groupId = groupElement.Attribute("id").Value;
-            SuffixGroupElement group = SUFFIX_GROUP_ELEMENTS.First(x => x.Id == groupId);
+            SuffixGroupElement group = _suffixGroupElements.First(x => x.Id == groupId);
             foreach (XElement suffix in group.Suffixes)
             {
                 //Graph.AddVertex(suffix.Value);

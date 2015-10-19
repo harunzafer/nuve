@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Nuve.Lang;
 using Nuve.Orthographic;
 
 namespace Nuve.Morphologic.Structure
@@ -20,14 +21,30 @@ namespace Nuve.Morphologic.Structure
         /// </summary>
         /// <param name="root">Kelimenin kökü</param>
         public Word(Root root)
-        {
+        {            
             Root = root;
+        }
+
+        public static Word CopyOf(Word word)
+        {
+            Root root= word.Root;
+            Word copy = new Word(root);
+
+            IEnumerator<Allomorph> it = word._allomorphs.GetEnumerator();
+            it.MoveNext(); //skip root
+            while (it.MoveNext())
+            {
+                copy.AddSuffix((Suffix)it.Current.Morpheme);
+            }
+
+            return copy;
         }
 
         /// <summary>
         ///     Bir kelimeden yeni bir kelime nesnesi oluşturur. Kopyalama (clone) amacıyla kullanılır.
         /// </summary>
         /// <param name="source">Kopyalanacak kelime</param>
+        [Obsolete("This constructor is deprecated, to copy a word use of \"static Word CopyOf(Word word)\" instead.", true)]
         public Word(Word source)
         {
             Root = source.Root;
@@ -66,10 +83,7 @@ namespace Nuve.Morphologic.Structure
         }
 
 
-        public int AllomorphCount
-        {
-            get { return _allomorphs.Count; }
-        }
+        public int AllomorphCount => _allomorphs.Count;
 
         public Root Root
         {
@@ -87,15 +101,9 @@ namespace Nuve.Morphologic.Structure
             }
         }
 
-        public Allomorph Last
-        {
-            get { return _allomorphs.Last.Value; }
-        }
+        public Allomorph Last => _allomorphs.Last.Value;
 
-        public string Analysis
-        {
-            get { return ToString(); }
-        }
+        public string Analysis => ToString();
 
         // For IEnumerable<Allomorph>
         public IEnumerator<Allomorph> GetEnumerator()
@@ -108,12 +116,7 @@ namespace Nuve.Morphologic.Structure
         {
             return GetEnumerator();
         }
-
-        public bool Equals(Word other)
-        {
-            return GetHashCode() == other.GetHashCode();
-        }
-
+      
         /// <summary>
         ///     Tüm allomorph'ların yüzeylerini lexical (sözlük) biçimine geri alır.
         /// </summary>
@@ -135,6 +138,21 @@ namespace Nuve.Morphologic.Structure
             var allomorph = new Allomorph(suffix);
             _allomorphs.AddLast(allomorph);
             allomorph.SetNode(_allomorphs.Last);
+        }
+
+        /// <summary>
+        ///     Kelimenin sonuna yeni bir ek ekler.
+        /// </summary>
+        /// <param name="suffix">Eklenecek ek.</param>
+        public bool AddSuffix(Suffix suffix, Language language)
+        {
+            AddSuffix(suffix);
+            if (!language.Morphotactics.IsValid(this))
+            {
+                RemoveLastSuffix();
+                return false;
+            }
+            return true;
         }
 
 
@@ -257,27 +275,36 @@ namespace Nuve.Morphologic.Structure
                 sb.Append(allomorph.Morpheme.TaggedForm).Append(" ");
             }
             return sb.ToString().TrimEnd();
-        }
+        }    
 
+       
         public override bool Equals(object obj)
         {
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
-            if (obj.GetType() != GetType()) return false;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((Word)obj);
+        }
 
-            return Equals((Word) obj);
+        public bool Equals(Word other)
+        {
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
+            return GetHashCode() == other.GetHashCode();
         }
 
         public override int GetHashCode()
         {
-            int hashcode = 0;
-
-            foreach (Allomorph allomorph in _allomorphs)
+            int sum = 0;
+            unchecked
             {
-                hashcode += allomorph.Morpheme.GetHashCode();
+                foreach (var allomorph in _allomorphs)
+                {
+                    sum += allomorph.Morpheme.Id.GetHashCode();
+                }
+                    
             }
-
-            return hashcode;
+            return sum;
         }
 
 

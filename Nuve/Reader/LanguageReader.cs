@@ -43,23 +43,23 @@ namespace Nuve.Reader
             sw.Start();
 
             _orthography = ReadOrthography();
-            Debug.Print("orthograpy: " + sw.ElapsedMilliseconds.ToString() + " ms");
+            Debug.Print($"orthograpy: {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
             Morphotactics morphotactics = ReadMorphotactics();
-            Debug.Print("morphotactics: " + sw.ElapsedMilliseconds.ToString() + " ms");
+            Debug.Print($"morphotactics: {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
             MorphemeSurfaceDictionary<Root> roots = ReadRoots();
-            Debug.Print("roots: " + sw.ElapsedMilliseconds.ToString() + " ms");
+            Debug.Print($"roots: {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
             Suffixes suffixes = ReadSuffixes();
-            Debug.Print("suffixes: " + sw.ElapsedMilliseconds.ToString() + " ms");
+            Debug.Print($"suffixes: {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
 
-            int index = _dirPath.LastIndexOf("\\");
+            int index = _dirPath.LastIndexOf("\\", StringComparison.Ordinal);
 
             string langCode = index > -1 ? _dirPath.Substring(index + 1) : _dirPath;
 
