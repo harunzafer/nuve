@@ -39,6 +39,20 @@ namespace Nuve.Test.Generation
         }
 
         [Test]
+        public void TestStrictGeneration2()
+        {
+            var root = Tr.GetRootsHavingSurface("gel").First();
+            var word = new Word(root);
+            var copy = Word.CopyOf(word);
+
+            word.AddSuffix(Tr.GetSuffix("IC_COGUL_lAr"), Tr);
+            
+            Assert.True(copy.Equals(word));
+            Assert.True(word.Equals(copy));
+
+        }
+
+        [Test]
         public void TestCopyOf()
         {
             var root = Tr.GetRootsHavingSurface("kitap").First();

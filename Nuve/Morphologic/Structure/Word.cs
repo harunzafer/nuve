@@ -130,9 +130,9 @@ namespace Nuve.Morphologic.Structure
         }
 
         /// <summary>
-        ///     Kelimenin sonuna yeni bir ek ekler.
+        /// Appends the given suffix to this word.
         /// </summary>
-        /// <param name="suffix">Eklenecek ek.</param>
+        /// <param name="suffix">The suffix to be appended</param>
         public void AddSuffix(Suffix suffix)
         {
             var allomorph = new Allomorph(suffix);
@@ -141,9 +141,11 @@ namespace Nuve.Morphologic.Structure
         }
 
         /// <summary>
-        ///     Kelimenin sonuna yeni bir ek ekler.
+        /// Appends the given suffix to this word and returns true if this operation is valid for the given language.
+        /// Otherwise does not append the suffix and returns false.
         /// </summary>
-        /// <param name="suffix">Eklenecek ek.</param>
+        /// <param name="suffix">The suffix to be appended</param>
+        /// <param name="language">The language for which the validity check is performed</param>
         public bool AddSuffix(Suffix suffix, Language language)
         {
             AddSuffix(suffix);

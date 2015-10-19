@@ -86,8 +86,16 @@ namespace Nuve.Gui
             //}
 
 
-            var root = Language.Turkish.GetRootsHavingSurface("f").First();
+            var tr = Language.Turkish;
+            var root = tr.GetRootsHavingSurface("gel").First();
             Word word = new Word(root);
+
+            if(!word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"), tr))
+            {
+                Console.WriteLine("Adding the suffix IC_COGUL_lAr after a verb is not valid!");
+                Console.WriteLine(word.GetSurface()); //prints just gel "gel"
+            }
+
 
             Console.WriteLine(root);
             Console.WriteLine(word);
