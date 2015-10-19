@@ -66,10 +66,10 @@ Console.WriteLine(word.GetSurface()); //prints "kitabımdakilerden"
 Use the `public bool AddSuffix(Suffix suffix, Language language)` in order to make sure that the word is still valid after adding the suffix
 
 ```c#
-Root root = tr.GetRootsHavingSurface("kitap").First();
+Root root = tr.GetRootsHavingSurface("gel").First(); //A Turkish verb root 
 
 var word = new Word(root);
-if(!word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"), tr))
+if(!word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"), tr)) //Plural suffix can not be appended to verbs!
 {
     Console.WriteLine("Adding the suffix IC_COGUL_lAr after a verb is not valid!");
     Console.WriteLine(word.GetSurface()); //prints "gel"
