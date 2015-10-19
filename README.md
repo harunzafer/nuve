@@ -69,7 +69,9 @@ Use the `public bool AddSuffix(Suffix suffix, Language language)` in order to ma
 Root root = tr.GetRootsHavingSurface("gel").First(); //A Turkish verb root 
 
 var word = new Word(root);
-if(!word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"), tr)) //Plural suffix can not be appended to verbs!
+
+//In Turkish the plural suffix "IC_COGUL_lAr" can not be appended to verbs!
+if(!word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"), tr))
 {
     Console.WriteLine("Adding the suffix IC_COGUL_lAr after a verb is not valid!");
     Console.WriteLine(word.GetSurface()); //prints "gel"
