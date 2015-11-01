@@ -62,8 +62,12 @@ word.AddSuffix(tr.GetSuffix("IC_HAL_AYRILMA_DAn"));
 
 Console.WriteLine(word.GetSurface()); //prints "kitabımdakilerden"
 ```
+Output:
+```
+	kitaplarımdakilerden
+```
 
-Use the `public bool AddSuffix(Suffix suffix, Language language)` in order to make sure that the word is still valid after adding the suffix
+Use the `public bool AddSuffix(Suffix suffix, Language language)` method in order to make sure that the word is still valid (for Turkish) after adding the suffix.
 
 ```c#
 Root root = tr.GetRootsHavingSurface("gel").First(); //A Turkish verb root 
@@ -79,10 +83,7 @@ if(!word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"), tr))
 
 ```
 
-Output:
-```
-	kitaplarımdakilerden
-```
+
 
 ####Sentence Segmentation:     
 
@@ -124,6 +125,3 @@ In Visual Studio open [Package Manager Console] (http://docs.nuget.org/docs/star
   
 
     PM> Install-Package Nuve
-
-
-
