@@ -71,7 +71,7 @@ namespace Nuve.Reader
 
             foreach (string surface in surfaces)
             {
-                suffixes.Add(surface, suffix);
+                suffixes.Add(surface.Replace('_', ' '), suffix);
             }
         }
 

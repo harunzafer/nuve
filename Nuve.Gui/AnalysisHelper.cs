@@ -13,10 +13,10 @@ namespace Nuve.Gui
     {
         public static void Analyze(WordAnalyzer analyzer, IEnumerable<string> words)
         {
-            foreach (string test in words)
+            foreach (string word in words)
             {
-                IList<Word> solutions = analyzer.Analyze(test);
-                Console.WriteLine("\n{0} için {1} çözüm bulundu:", test, solutions.Count);
+                IList<Word> solutions = analyzer.Analyze(word);
+                Console.WriteLine("\n{0} için {1} çözüm bulundu:", word, solutions.Count);
                 foreach (Word solution in solutions)
                 {
                     Console.WriteLine("\t{0}\n", solution);

@@ -474,7 +474,6 @@
       </transformation>
     </rule>
 
-
    <rule id="OKUNUSDAN_YAZILISA" phase="5">
       <description>
         Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini 
@@ -482,21 +481,26 @@
       <transformation morpheme="This" action="LexicalToSurface" />
     </rule>
     
-
-    <rule id="KESME_KALDIR" phase="2">
+    <rule id="KESME_KALDIR" phase="1">
       <description>
-        Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini
+        Üretimin başında kesme işareti yokmuş gibi hareket edilir.
       </description>
       <transformation morpheme="This" action="DeleteFirstLetter" />
     </rule>
 
     <rule id="KESME_EKLE" phase="5">
       <description>
-        Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini
+        Üretimin sonunda kesme işareti olması gereken yere eklenir.
       </description>
       <transformation morpheme="This" action="Append" operandOne="'" />
     </rule>
-
+    
+    <rule id="ALTTIRE_KALDIR" phase="5">
+      <description>
+        Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini
+      </description>
+      <transformation morpheme="This" action="Replace" operandOne="_" operandTwo=" " flag="all"/>
+    </rule>
     
     <!-- Bu kurallar tam olarak neden var?--><!--
     <rule id="ILK_HARF_BUYUT_o" phase="5">

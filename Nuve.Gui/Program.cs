@@ -24,6 +24,30 @@ namespace Nuve.Gui
         [STAThread]
         private static void Main()
         {
+            
+            NGramExtractor extractor = new NGramExtractor(3);
+            string str1 = "one two three four five";
+            string str2 = "three four five six seven";
+
+            var grams1 = extractor.ExtractAsList(str1.Split(null));
+            var grams2 = extractor.ExtractAsList(str2.Split(null));
+           
+
+            for (int i = 0; i < grams1.Count; i++)
+            {
+                if (Equals(grams1[i], grams2[i]))
+                {
+                    return;
+                }
+            }
+
+            var intersect = grams1.Intersect(grams2);
+
+            foreach (var nGram in intersect)
+            {
+                Console.WriteLine(nGram);
+            }
+
             //var lines = File.ReadAllLines(@"C:\Users\harun_000\Desktop\workspace\corpus\unigrams.txt",
             //    Encoding.UTF8);
 
@@ -86,20 +110,20 @@ namespace Nuve.Gui
             //}
 
 
-            var tr = Language.Turkish;
-            var root = tr.GetRootsHavingSurface("gel").First();
-            Word word = new Word(root);
+            //var tr = Language.Turkish;
+            //var root = tr.GetRootsHavingSurface("gel").First();
+            //Word word = new Word(root);
 
-            if(!word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"), tr))
-            {
-                Console.WriteLine("Adding the suffix IC_COGUL_lAr after a verb is not valid!");
-                Console.WriteLine(word.GetSurface()); //prints just gel "gel"
-            }
+            //if(!word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"), tr))
+            //{
+            //    Console.WriteLine("Adding the suffix IC_COGUL_lAr after a verb is not valid!");
+            //    Console.WriteLine(word.GetSurface()); //prints just gel "gel"
+            //}
 
 
-            Console.WriteLine(root);
-            Console.WriteLine(word);
-            Console.WriteLine(word.GetSurface());
+            //Console.WriteLine(root);
+            //Console.WriteLine(word);
+            //Console.WriteLine(word.GetSurface());
 
 
             Test();
@@ -212,7 +236,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-               "a", "b" ,"a.ş.", "tar.", "YÖK", "vb.", "vs."
+               "sen de", "ben de", "o da", "kalem de", "kitap da", "orada da", "evde de",  "gelsen de",  "kalsam da",
             };
             //string[] testStrings = SoruTest.Soru;
             AnalysisHelper.Analyze(Analyzer, testStrings);

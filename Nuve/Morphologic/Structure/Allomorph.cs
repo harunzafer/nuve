@@ -123,6 +123,7 @@ namespace Nuve.Morphologic.Structure
             _node = node;
         }
 
+
         public string GetSurface(Position location)
         {
             if (location == Position.Next)

@@ -150,7 +150,7 @@
     </suffixGroup>
 
     <suffixGroup name="SORU_BAGLAC">
-      <!--<suffix>SORU_mU</suffix>-->
+      <suffix>SORU_mU</suffix>
       <suffix>BAGLAC_dA</suffix>
     </suffixGroup>
   </suffixGroups>
@@ -344,7 +344,7 @@
       <target id="BAGLAC_dA" />
     </source>
 
-    <!-- <source id="SORU_mU">
+     <source id="SORU_mU">
       <target id="EKFIIL_SAHIS_BEN_(y)Um">
         <conditions flag="And">
           <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="FC_ZAMAN_GECMIS_DU"/>
@@ -380,7 +380,7 @@
       <target id="EKFIIL_HIKAYE_(y)DU"/>
       <target id="EKFIIL_RIVAYET_(y)mUş"/>
       <target id="EKFIIL_TANIMLAMA_DUr"/>
-    </source> -->
+    </source> 
 
     <source id="SORU">
       <target id="EKFIIL_SAHIS_BEN_(y)Um" />
@@ -881,7 +881,7 @@
     <!-- Ekfiil Şahıs Ekleri 2 -->
     <source id="EKFIIL_SAHIS_BEN_m">
       <target id="BAGLAC_dA" />
-      <target id=" ">
+      <target id="SORU_mU">
         <conditions flag="Or">
           <condition morpheme="BeforeSource" operator="MorphemeNotEquals" operand="EKFIIL_HIKAYE_(y)DU" />
         </conditions>

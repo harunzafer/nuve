@@ -29,8 +29,7 @@ namespace Nuve.Lang
             IEnumerable<KeyValuePair<string, Root>> roots = FindPossibleRoots(token);
             foreach (var pair in roots)
             {
-                GetPossibleWords(new Word(pair.Value), token.Remove(0, pair.Key.Length), words, checkTransition);
-                
+                GetPossibleWords(new Word(pair.Value), token.Remove(0, pair.Key.Length), words, checkTransition);                
             }
 
             if (checkTransitionConditions)
@@ -52,7 +51,7 @@ namespace Nuve.Lang
             {
                 if (!HasCorrectSurface(analyses[i], surface))
                 {
-                    Debug.Print("Eliminated by orth:" + analyses[i]);
+                    Debug.Print($"Eliminated by orthography. expected:{surface} actual:{analyses[i].GetSurface()} solution:{analyses[i]}");
                     analyses.RemoveAt(i);
                 }
             }

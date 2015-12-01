@@ -46,5 +46,19 @@ namespace Nuve.Test.Analysis
         {
             Tester.ContainsAnalysis(token, analysis);
         }
+
+        [TestCase("sen de", "sen/ZAMIR_SAHIS_SEN _dA/BAGLAC_dA")]
+        [TestCase("ben de", "ben/ZAMIR_SAHIS_BEN _dA/BAGLAC_dA")]
+        [TestCase("o da", "o/ZAMIR_SAHIS_O _dA/BAGLAC_dA")]
+        [TestCase("kalem de", "kale/ISIM Um/IC_SAHIPLIK_BEN_(U)m _dA/BAGLAC_dA")]
+        [TestCase("kitap da", "kitap/ISIM _dA/BAGLAC_dA")]
+        [TestCase("orada da", "ora/ZAMIR_ISARET_YER DA/IC_HAL_BULUNMA_DA _dA/BAGLAC_dA")]
+        [TestCase("evde de", "ev/ISIM DA/IC_HAL_BULUNMA_DA _dA/BAGLAC_dA")]
+        [TestCase("gelsen de", "gel/FIIL sA/FC_KIP_DILEK_sA n/EKFIIL_SAHIS_SEN_n _dA/BAGLAC_dA")]
+        [TestCase("kalsam da", "kal/ISIM ysA/EKFIIL_SART_(y)sA m/EKFIIL_SAHIS_BEN_m _dA/BAGLAC_dA")]
+        public void BaglacDeDaTest(string token, string analysis)
+        {
+            Tester.ContainsAnalysis(token, analysis);
+        }
     }
 }
