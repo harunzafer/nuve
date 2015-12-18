@@ -6,12 +6,12 @@ namespace Nuve.Condition
 {
     internal class HasLabel : ConditionBase
     {
-        private readonly int _label;
+        private readonly string _label;
 
         public HasLabel(string position, string operand, Alphabet alphabet)
             : base(position, operand, alphabet)
         {
-            _label = LabelSet.ConvertLabelNameToIndex(operand);
+            _label = operand;
         }
 
         public override bool IsTrueFor(Allomorph allomorph)

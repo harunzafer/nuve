@@ -104,7 +104,6 @@
     <Compile Include="Morphologic\Morphotactics.cs" />
     <Compile Include="Morphologic\Structure\Allomorph.cs" />
     <Compile Include="Morphologic\Structure\Morpheme.cs" />
-    <Compile Include="Morphologic\Structure\MorphemeFlags.cs" />
     <Compile Include="Morphologic\Structure\Root.cs" />
     <Compile Include="Morphologic\Structure\Suffix.cs" />
     <Compile Include="Morphologic\Structure\Word.cs" />
@@ -134,11 +133,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Reader\EmbeddedResourceReader.cs" />
-    <Compile Include="Reader\LabelSet.cs" />
     <Compile Include="Reader\MorphotacticsReader.cs" />
     <Compile Include="Reader\EmbeddedXmlResolver.cs" />
     <Compile Include="Reader\OrthographyReader.cs" />
-    <Compile Include="Reader\PropertySet.cs" />
     <Compile Include="Reader\RootLexiconReader.cs" />
     <Compile Include="Reader\TextToDataset.cs" />
     <Compile Include="SampleClass.cs" />

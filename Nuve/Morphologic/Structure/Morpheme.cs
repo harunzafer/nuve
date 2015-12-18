@@ -34,7 +34,7 @@ namespace Nuve.Morphologic.Structure
 
         private readonly string _id;
 
-        private readonly List<int> _labels;
+        private readonly HashSet<string> _labels;
         private readonly string _lexicalForm;
         private readonly List<OrthographyRule> _rules;
         private readonly MorphemeType _type;
@@ -46,7 +46,7 @@ namespace Nuve.Morphologic.Structure
         /// <param name="lexicalForm">Morfemin sölük (lexicon) biçimi</param>
         /// <param name="type">Morfem'in tür bilgisini tutar. 2 ya da 3 karakterden oluşur.</param>
         /// <param name="rules">Morfem'in sahip olduğu Ortografi kurallarını tutar. 0 veya n tane olabilir.</param>
-        protected Morpheme(string id, string lexicalForm, MorphemeType type, List<int> labels,
+        protected Morpheme(string id, string lexicalForm, MorphemeType type, HashSet<string> labels,
             List<OrthographyRule> rules)
         {
             _id = id;
@@ -106,9 +106,9 @@ namespace Nuve.Morphologic.Structure
             get { return _rules; }
         }
 
-        internal bool HasLabel(int labelIndex)
+        internal bool HasLabel(string label)
         {
-            return _labels.Any(label => labelIndex == label);
+            return _labels.Contains(label);
         }
 
 

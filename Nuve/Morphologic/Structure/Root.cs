@@ -14,12 +14,12 @@ namespace Nuve.Morphologic.Structure
         /// <param name="rules">Morfem'in sahip olduğu Ortografi kurallarını tutar. 0 veya n tane olabilir.</param>
         private readonly string _surface; // yani sözlük hali
 
-        public Root(string id, string lexicalForm, List<int> labels, List<OrthographyRule> rules)
+        public Root(string id, string lexicalForm, HashSet<string> labels, List<OrthographyRule> rules)
             : base(id, lexicalForm, MorphemeType.Root, labels, rules)
         {
         }
 
-        public Root(string id, string lexicalForm, List<int> labels, List<OrthographyRule> rules, string surface)
+        public Root(string id, string lexicalForm, HashSet<string> labels, List<OrthographyRule> rules, string surface)
             : base(id, lexicalForm, MorphemeType.Root, labels, rules)
         {
             _surface = surface;

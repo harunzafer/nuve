@@ -12,7 +12,7 @@ namespace Nuve.Morphologic.Structure
         /// <param name="type">Morfem'in tür bilgisini tutar. 2 ya da 3 karakterden oluşur.</param>
         /// <param name="lexicalForm">Morfemin sölük (lexicon) biçimi</param>
         /// <param name="rules">Morfem'in sahip olduğu Ortografi kurallarını tutar. 0 veya n tane olabilir.</param>
-        public Suffix(string id, string lexicalForm, MorphemeType type, List<int> labels, List<OrthographyRule> rules)
+        public Suffix(string id, string lexicalForm, MorphemeType type, HashSet<string> labels, List<OrthographyRule> rules)
             : base(id, lexicalForm, type, labels, rules)
         {
         }

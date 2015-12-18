@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using Nuve.Morphologic.Structure;
@@ -52,6 +53,7 @@ namespace Nuve.Lang
                 if (!HasCorrectSurface(analyses[i], surface))
                 {
                     Debug.Print($"Eliminated by orthography. expected:{surface} actual:{analyses[i].GetSurface()} solution:{analyses[i]}");
+                    Console.WriteLine($"Eliminated by orthography. expected:{surface} actual:{analyses[i].GetSurface()} solution:{analyses[i]}");
                     analyses.RemoveAt(i);
                 }
             }
@@ -69,6 +71,7 @@ namespace Nuve.Lang
                 if (!_lang.Morphotactics.IsValid(analyses[i]))
                 {
                     Debug.Print("Eliminated by morph:" + analyses[i]);
+                    Console.WriteLine("Eliminated by morph:" + analyses[i]);
                     analyses.RemoveAt(i);
                 }
             }

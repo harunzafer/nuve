@@ -177,7 +177,7 @@
       <target id="EKFIIL_TANIMLAMA_DUr" />
       <target id="IC_AITLIK_ki">
         <conditions flag="Or">
-          <condition morpheme="Source" operator="HasFlags" operand="zaman" />
+          <condition morpheme="Source" operator="HasFlags" operand="zaman2" />
         </conditions>
       </target>
       <targetGroup id="SORU_BAGLAC" />

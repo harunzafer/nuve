@@ -4,9 +4,11 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Diagnostics;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
 using Nuve.NGrams;
+using Nuve.Reader;
 using Nuve.Sentence;
 using Nuve.Stemming;
 
@@ -24,29 +26,44 @@ namespace Nuve.Gui
         [STAThread]
         private static void Main()
         {
-            
-            NGramExtractor extractor = new NGramExtractor(3);
-            string str1 = "one two three four five";
-            string str2 = "three four five six seven";
 
-            var grams1 = extractor.ExtractAsList(str1.Split(null));
-            var grams2 = extractor.ExtractAsList(str2.Split(null));
-           
+            var language = new LanguageReader(@"C:\Users\harun_000\Dropbox\nuve\nuve-studio\lang\tr").Read();
+            var analyzer = new WordAnalyzer(language);
+            AnalysisHelper.Analyze(analyzer, new []{"bugünkü"});
 
-            for (int i = 0; i < grams1.Count; i++)
-            {
-                if (Equals(grams1[i], grams2[i]))
-                {
-                    return;
-                }
-            }
 
-            var intersect = grams1.Intersect(grams2);
+            //Benchmarker.TestWithAMillionTokens(Analyzer);
+            //Benchmarker.TestWithAMillionWords(Analyzer);
 
-            foreach (var nGram in intersect)
-            {
-                Console.WriteLine(nGram);
-            }
+            //var keys = new[] {"keymey1", "keymey2", "keymey3", };
+
+            //List<string> list = new List<string>(keys);
+            //HashSet<string> set = new HashSet<string>(keys);
+
+            //int times = 1000000;
+
+
+            //Stopwatch sw = Stopwatch.StartNew();
+            //for(int i=0; i<times; i++)
+            //{
+            //    list.Contains("keymey6");
+            //}
+
+            //sw.Stop();
+
+            //Console.WriteLine("list: " + sw.ElapsedMilliseconds);
+
+            //sw.Restart();
+
+            //for (int i = 0; i < times; i++)
+            //{
+            //    set.Contains("keymey6");
+            //}
+
+            //sw.Stop();
+
+            //Console.WriteLine("set: " + sw.ElapsedMilliseconds);
+
 
             //var lines = File.ReadAllLines(@"C:\Users\harun_000\Desktop\workspace\corpus\unigrams.txt",
             //    Encoding.UTF8);
@@ -126,7 +143,7 @@ namespace Nuve.Gui
             //Console.WriteLine(word.GetSurface());
 
 
-            Test();
+            //Test();
         }
 
         public static string Split(string str)
@@ -236,7 +253,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-               "sen de", "ben de", "o da", "kalem de", "kitap da", "orada da", "evde de",  "gelsen de",  "kalsam da",
+               "bugünkü", "ben de", "o da", "kalem de", "kitap da", "orada da", "evde de",  "gelsen de",  "kalsam da",
             };
             //string[] testStrings = SoruTest.Soru;
             AnalysisHelper.Analyze(Analyzer, testStrings);

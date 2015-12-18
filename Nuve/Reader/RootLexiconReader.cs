@@ -3,6 +3,7 @@ using System.Data;
 using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
+using System.Collections.Generic;
 
 namespace Nuve.Reader
 {
@@ -26,7 +27,7 @@ namespace Nuve.Reader
                     Lex = x.Field<string>("lex"),
                     Active = x.Field<string>("active") ?? "",
                     Id = x.Field<string>("Id"),
-                    Flags = x.Field<string>("flags") ?? "",
+                    Labels = x.Field<string>("flags") ?? "",
                     Rules = x.Field<string>("rules") ?? "",
                 });
 
@@ -45,7 +46,7 @@ namespace Nuve.Reader
             string item = entry.Root;
             string[] surfaces = entry.Surfaces.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
             string lex = entry.Lex;
-            string[] flags = entry.Flags.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
+            string[] labels = entry.Labels.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
             string type = entry.Id;
             string[] rules = entry.Rules.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
 
@@ -58,12 +59,12 @@ namespace Nuve.Reader
             Root root;
             if (type == "KISALTMA" || type == "ALINTI" || type == "KISALTMA_NOKTALI" || type == "HARF")
             {
-                root = new Root(type, lex, LabelSet.ConvertLabelNamesToIndexes(flags), _orthography.GetRules(rules),
+                root = new Root(type, lex, new HashSet<string>(labels), _orthography.GetRules(rules),
                     item);
             }
             else
             {
-                root = new Root(type, lex, LabelSet.ConvertLabelNamesToIndexes(flags), _orthography.GetRules(rules));
+                root = new Root(type, lex, new HashSet<string>(labels), _orthography.GetRules(rules));
             }
 
             roots.Add(item, root); // kelimeyi asıl yüzeyi ile ekliyoruz
@@ -78,7 +79,7 @@ namespace Nuve.Reader
         private class RootLine
         {
             public string Active;
-            public string Flags;
+            public string Labels;
             public string Id;
             public string Lex;
             public string Root;

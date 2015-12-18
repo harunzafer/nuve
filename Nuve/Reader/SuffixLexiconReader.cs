@@ -29,7 +29,7 @@ namespace Nuve.Reader
                     Id = x.Field<string>("id"),
                     Lex = x.Field<string>("lexicalForm"),
                     Type = x.Field<string>("type"),
-                    Flags = x.Field<string>("flags") ?? "",
+                    Labels = x.Field<string>("flags") ?? "",
                     Rules = x.Field<string>("rules") ?? "",
                     Surfaces = x.Field<string>("surfaces"),
                 });
@@ -59,14 +59,14 @@ namespace Nuve.Reader
                 Console.WriteLine("Invalid Morpheme Type: " + entry.Type);
             }
 
-            string[] flags = entry.Flags.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
+            string[] labels = entry.Labels.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
             string[] rulesToken = entry.Rules.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
             Debug.Assert(entry.Surfaces != null, "entry.Surfaces != null");
             var surfaces =
                 new List<string>(entry.Surfaces.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries));
 
             List<OrthographyRule> rules = _orthography.GetRules(rulesToken);
-            var suffix = new Suffix(id, lex, morphemeType, LabelSet.ConvertLabelNamesToIndexes(flags), rules);
+            var suffix = new Suffix(id, lex, morphemeType, new HashSet<string>(labels), rules);
             suffixesById.Add(id, suffix);
 
             foreach (string surface in surfaces)
@@ -77,7 +77,7 @@ namespace Nuve.Reader
 
         private class SuffixDictionaryLine
         {
-            public string Flags;
+            public string Labels;
             public string Id;
             public string Lex;
             public string Rules;

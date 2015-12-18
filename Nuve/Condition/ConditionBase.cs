@@ -75,10 +75,10 @@ namespace Nuve.Condition
 
         public abstract bool IsTrueFor(Allomorph allomorph);
 
-        protected List<int> ParseLabels(string operand)
+        protected HashSet<string> ParseLabels(string operand)
         {
             string[] labels = operand.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
-            return LabelSet.ConvertLabelNamesToIndexes(labels);
+            return new HashSet<string>(labels);
         }
 
         public override string ToString()
