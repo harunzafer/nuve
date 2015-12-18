@@ -11,7 +11,7 @@ namespace Nuve.Orthographic
         private readonly ConditionContainer _conditionContainer;
         private readonly Position _location;
 
-        public Transformation(BaseAction action, String location, ConditionContainer conditionContainer)
+        public Transformation(BaseAction action, string location, ConditionContainer conditionContainer)
         {
             _action = action;
             _conditionContainer = conditionContainer;
@@ -33,7 +33,7 @@ namespace Nuve.Orthographic
 
         public override string ToString()
         {
-            return string.Format("Transform: {0} Condition: {1}", _action, _conditionContainer);
+            return $"Transform: {_action} Condition: {_conditionContainer}";
         }
     }
 }

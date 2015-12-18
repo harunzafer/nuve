@@ -9,103 +9,104 @@ using Nuve.Orthographic;
 
 namespace Nuve.Reader
 {
-    internal static class MorphotacticsReader
+    internal class MorphotacticsReader
     {
-        private static IEnumerable<SuffixGroupElement> _suffixGroupElements;
-        private static IEnumerable<TransitionSetElement> _transitionSetElements;
-        //private static readonly AdjacencyGraph<string, Transition<string>> Graph = new AdjacencyGraph<string, Transition<string>>(false);
-        //private static readonly IGraph<string> Graph = new QuickGraph<string>();
-        private static readonly IGraph<string> Graph = new DictionaryGraph();
-        private static Alphabet _alphabet;
+        private readonly Alphabet _alphabet;
+        private readonly IGraph<string> _graph = new DictionaryGraph();
+        private readonly IEnumerable<SuffixGroupElement> _suffixGroupElements;
+        private readonly IEnumerable<TransitionSetElement> _transitionSetElements;
+        private readonly XDocument _xDocument;
 
-        public static Morphotactics Read(Stream xml, Alphabet alphabet)
+        private MorphotacticsReader(Stream xml, Alphabet alphabet)
         {
             _alphabet = alphabet;
-            XDocument doc;
+
             try
             {
-                doc = XDocument.Load(xml);
+                _xDocument = XDocument.Load(xml);
             }
-
             catch (XmlException ex)
             {
                 throw new XmlException("Invalid morphotactics XML: " + ex.Message);
             }
 
-
-            _suffixGroupElements = GetSuffixGroupElements(doc);
-            _transitionSetElements = GetTransitionSetElements(doc);
+            _suffixGroupElements = GetSuffixGroupElements();
+            _transitionSetElements = GetTransitionSetElements();
 
             BuildGraph();
-
-            return new Morphotactics(Graph);
         }
 
-        private static IEnumerable<TransitionSetElement> GetTransitionSetElements(XDocument doc)
+        public static Morphotactics Read(Stream xml, Alphabet alphabet)
         {
-            return doc.Descendants("source").
+            var reader = new MorphotacticsReader(xml, alphabet);
+            return new Morphotactics(reader._graph);
+        }
+
+        private IEnumerable<TransitionSetElement> GetTransitionSetElements()
+        {
+            return _xDocument.Descendants("source").
                 Select(ts => new TransitionSetElement
                 {
                     Id = ts.Attribute("id").Value,
                     Copies = ts.Descendants("copy"),
                     TargetGroups = ts.Descendants("targetGroup"),
-                    Targets = ts.Descendants("target"),
+                    Targets = ts.Descendants("target")
                 }
                 );
         }
 
-        private static IEnumerable<SuffixGroupElement> GetSuffixGroupElements(XDocument doc)
+        private IEnumerable<SuffixGroupElement> GetSuffixGroupElements()
         {
-            return doc.Descendants("suffixGroup").
+            return _xDocument.Descendants("suffixGroup").
                 Select(sg => new SuffixGroupElement
                 {
                     Id = sg.Attribute("name").Value,
-                    Suffixes = sg.Elements("suffix"),
+                    Suffixes = sg.Elements("suffix")
                 }
                 );
         }
 
-        private static void BuildGraph()
+        private void BuildGraph()
         {
-            foreach (TransitionSetElement transitionSetElement in _transitionSetElements)
+            foreach (var transitionSetElement in _transitionSetElements)
             {
                 AddTransitions(transitionSetElement);
             }
         }
 
-        private static void AddTransitions(TransitionSetElement transitionSetElement)
+        private void AddTransitions(TransitionSetElement transitionSetElement)
         {
-            string sourceId = transitionSetElement.Id;
-            //Graph.AddVertex(sourceId);
+            var sourceId = transitionSetElement.Id;
+            //_graph.AddVertex(sourceId);
 
-            IEnumerable<Transition<string>> copyTransitions = GetCopyTransitions(sourceId, transitionSetElement.Copies);
-            Graph.AddEdges(copyTransitions);
+            var copyTransitions = GetCopyTransitions(sourceId, transitionSetElement.Copies);
+            _graph.AddEdges(copyTransitions);
 
-            IEnumerable<Transition<string>> groupTransitions = GetGroupTransitions(sourceId,
+            var groupTransitions = GetGroupTransitions(sourceId,
                 transitionSetElement.TargetGroups);
-            Graph.AddEdges(groupTransitions);
+            _graph.AddEdges(groupTransitions);
 
-            IEnumerable<Transition<string>> singleTransitions = GetSingleTransitions(sourceId,
+            var singleTransitions = GetSingleTransitions(sourceId,
                 transitionSetElement.Targets);
-            Graph.AddEdges(singleTransitions);
+            _graph.AddEdges(singleTransitions);
         }
 
-        private static IEnumerable<Transition<string>> GetSingleTransitions(string sourceId,
+        private IEnumerable<Transition<string>> GetSingleTransitions(string sourceId,
             IEnumerable<XElement> singleElements)
         {
             var transitions = new List<Transition<string>>();
-            foreach (XElement singleElement in singleElements)
+            foreach (var singleElement in singleElements)
             {
-                string targetId = singleElement.Attribute("id").Value;
-                ConditionContainer conditions = GetConditionContainer(singleElement);
-                //Graph.AddVertex(targetId);
+                var targetId = singleElement.Attribute("id").Value;
+                var conditions = GetConditionContainer(singleElement);
+                //_graph.AddVertex(targetId);
                 transitions.Add(new Transition<string>(sourceId, targetId, conditions));
             }
 
             return transitions;
         }
 
-        private static ConditionContainer GetConditionContainer(XElement singleElement)
+        private ConditionContainer GetConditionContainer(XElement singleElement)
         {
             XElement conditionsElement;
             //try
@@ -127,26 +128,26 @@ namespace Nuve.Reader
             }
 
 
-            string flag = conditionsElement.Attribute("flag").Value;
+            var flag = conditionsElement.Attribute("flag").Value;
             return new ConditionContainer(GetConditions(conditionsElement.Descendants("condition")), flag);
         }
 
-        private static IList<ConditionBase> GetConditions(IEnumerable<XElement> conditionElements)
+        private IList<ConditionBase> GetConditions(IEnumerable<XElement> conditionElements)
         {
             IList<ConditionBase> conditions = new List<ConditionBase>();
-            foreach (XElement conditionElement in conditionElements)
+            foreach (var conditionElement in conditionElements)
             {
                 conditions.Add(GetCondition(conditionElement));
             }
             return conditions;
         }
 
-        private static ConditionBase GetCondition(XElement conditionElement)
+        private ConditionBase GetCondition(XElement conditionElement)
         {
-            string name = conditionElement.Attribute("operator").Value;
-            string morphemeLocation = conditionElement.Attribute("morpheme").Value;
-            XAttribute attribute = conditionElement.Attribute("operand");
-            string operand = "";
+            var name = conditionElement.Attribute("operator").Value;
+            var morphemeLocation = conditionElement.Attribute("morpheme").Value;
+            var attribute = conditionElement.Attribute("operand");
+            var operand = "";
             if (attribute != null)
             {
                 operand = attribute.Value;
@@ -154,12 +155,12 @@ namespace Nuve.Reader
             return ConditionFactory.Create(name, morphemeLocation, operand, _alphabet);
         }
 
-        private static IEnumerable<Transition<string>> GetGroupTransitions(string sourceId,
+        private IEnumerable<Transition<string>> GetGroupTransitions(string sourceId,
             IEnumerable<XElement> groupElements)
         {
             var transitions = new List<Transition<string>>();
 
-            foreach (XElement groupElement in groupElements)
+            foreach (var groupElement in groupElements)
             {
                 transitions.AddRange(GetGroupTransitions(sourceId, groupElement));
             }
@@ -167,12 +168,12 @@ namespace Nuve.Reader
             return transitions;
         }
 
-        private static IEnumerable<Transition<string>> GetCopyTransitions(string sourceId,
+        private IEnumerable<Transition<string>> GetCopyTransitions(string sourceId,
             IEnumerable<XElement> copyElements)
         {
             var transitions = new List<Transition<string>>();
 
-            foreach (XElement copyElement in copyElements)
+            foreach (var copyElement in copyElements)
             {
                 transitions.AddRange(GetCopyTransitions(sourceId, copyElement));
             }
@@ -180,32 +181,32 @@ namespace Nuve.Reader
             return transitions;
         }
 
-        private static IEnumerable<Transition<string>> GetCopyTransitions(string sourceId, XElement copyElement)
+        private IEnumerable<Transition<string>> GetCopyTransitions(string sourceId, XElement copyElement)
         {
             var transitions = new List<Transition<string>>();
-            string copyId = copyElement.Attribute("id").Value;
+            var copyId = copyElement.Attribute("id").Value;
 
             IEnumerable<Transition<string>> list;
-            Graph.TryGetOutEdges(copyId, out list);
+            _graph.TryGetOutEdges(copyId, out list);
 
             foreach (var transition in list)
             {
                 transitions.Add(new Transition<string>(sourceId, transition.Target /*, transition.Conditions*/));
             }
 
-            IEnumerable<XElement> removeElements = copyElement.Descendants("removeTarget");
+            var removeElements = copyElement.Descendants("removeTarget");
 
-            foreach (XElement removeElement in removeElements)
+            foreach (var removeElement in removeElements)
             {
-                string removeId = removeElement.Attribute("id").Value;
+                var removeId = removeElement.Attribute("id").Value;
                 transitions.RemoveAll(x => x.Target == removeId);
             }
 
-            IEnumerable<XElement> replaceElements = copyElement.Descendants("replaceTarget");
-            foreach (XElement replaceElement in replaceElements)
+            var replaceElements = copyElement.Descendants("replaceTarget");
+            foreach (var replaceElement in replaceElements)
             {
-                string oldId = replaceElement.Attribute("old").Value;
-                string newId = replaceElement.Attribute("new").Value;
+                var oldId = replaceElement.Attribute("old").Value;
+                var newId = replaceElement.Attribute("new").Value;
                 transitions.RemoveAll(x => x.Target == oldId);
                 transitions.Add(new Transition<string>(sourceId, newId));
             }
@@ -214,30 +215,30 @@ namespace Nuve.Reader
         }
 
 
-        private static IEnumerable<Transition<string>> GetGroupTransitions(string sourceId, XElement groupElement)
+        private IEnumerable<Transition<string>> GetGroupTransitions(string sourceId, XElement groupElement)
         {
             var transitions = new List<Transition<string>>();
-            string groupId = groupElement.Attribute("id").Value;
-            SuffixGroupElement group = _suffixGroupElements.First(x => x.Id == groupId);
-            foreach (XElement suffix in group.Suffixes)
+            var groupId = groupElement.Attribute("id").Value;
+            var group = _suffixGroupElements.First(x => x.Id == groupId);
+            foreach (var suffix in group.Suffixes)
             {
-                //Graph.AddVertex(suffix.Value);
+                //_graph.AddVertex(suffix.Value);
                 transitions.Add(new Transition<string>(sourceId, suffix.Value));
             }
 
-            IEnumerable<XElement> removeElements = groupElement.Descendants("removeTarget");
+            var removeElements = groupElement.Descendants("removeTarget");
 
-            foreach (XElement removeElement in removeElements)
+            foreach (var removeElement in removeElements)
             {
-                string removeId = removeElement.Attribute("id").Value;
+                var removeId = removeElement.Attribute("id").Value;
                 transitions.RemoveAll(x => x.Target == removeId);
             }
 
-            IEnumerable<XElement> replaceElements = groupElement.Descendants("replaceTarget");
-            foreach (XElement replaceElement in replaceElements)
+            var replaceElements = groupElement.Descendants("replaceTarget");
+            foreach (var replaceElement in replaceElements)
             {
-                string oldId = replaceElement.Attribute("old").Value;
-                string newId = replaceElement.Attribute("new").Value;
+                var oldId = replaceElement.Attribute("old").Value;
+                var newId = replaceElement.Attribute("new").Value;
                 transitions.RemoveAll(x => x.Target == oldId);
                 transitions.Add(new Transition<string>(sourceId, newId));
             }
