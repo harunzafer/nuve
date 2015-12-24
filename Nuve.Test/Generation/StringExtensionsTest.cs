@@ -8,8 +8,40 @@ namespace Nuve.Test.Generation
     [TestFixture]
     public class StringExtensionsTest
     {
-        [TestCase(null, "", Result = false)]
-        [TestCase(null, "test", Result = false)]
+        [TestCase(null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("")]
+        public void ThrowIfNullTest(string str)
+        {
+            str.ThrowIfNull();
+        }
+
+        [TestCase("", ExpectedException = typeof (ArgumentException))]
+        [TestCase("a")]
+        public void ThrowIfEmpty(string str)
+        {
+            str.ThrowIfEmpty();
+        }
+
+        [TestCase(null, "", "", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", null, "", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", "", null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", "", "")]
+        public void ThrowIfNullAnyTest(params string[] strings)
+        {
+            StringExtensions.ThrowIfNullAny(strings);
+        }
+
+        [TestCase(null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", Result = true)]
+        [TestCase("a", Result = false)]
+        public bool IsEmptyTest(string str)
+        {
+            return str.IsEmpty();
+        }
+
+        [TestCase(null, "abc", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("abc", null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase(null, null, ExpectedException = typeof (ArgumentNullException))]
         [TestCase("", "", Result = false)]
         [TestCase("", "aeıioöuü", Result = false)]
         [TestCase("test", "", Result = false)]
@@ -17,13 +49,14 @@ namespace Nuve.Test.Generation
         [TestCase("b", "aeıioöuü", Result = false)]
         [TestCase("ba", "aeıioöuü", Result = false)]
         [TestCase("ab", "aeıioöuü", Result = true)]
-        public bool FirstLetterEqualsAnyTest(String str, String letters)
+        public bool FirstLetterEqualsAnyTest(string str, string letters)
         {
             return str.FirstCharEqualsAny(letters);
         }
 
-        [TestCase(null, "", Result = false)]
-        [TestCase(null, "test", Result = false)]
+        [TestCase(null, "abc", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("abc", null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase(null, null, ExpectedException = typeof (ArgumentNullException))]
         [TestCase("", "", Result = false)]
         [TestCase("", "aeıioöuü", Result = false)]
         [TestCase("test", "", Result = false)]
@@ -31,106 +64,142 @@ namespace Nuve.Test.Generation
         [TestCase("b", "aeıioöuü", Result = false)]
         [TestCase("ba", "aeıioöuü", Result = true)]
         [TestCase("ab", "aeıioöuü", Result = false)]
-        public bool LastLetterEqualsAnyTest(String str, String letters)
+        public bool LastLetterEqualsAnyTest(string str, string letters)
         {
             return str.LastCharEqualsAny(letters);
         }
 
+        [TestCase(null, "abc", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("abc", null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase(null, null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", "", Result = null)]
+        [TestCase("abc", "", Result = null)]
+        [TestCase("", "abc", Result = null)]
         [TestCase("deneme", "aeıioöuü", Result = 'e')]
         [TestCase("pçtk", "aeıioöuü", Result = null)]
         [TestCase("bbböb", "aeıioöuü", Result = 'ö')]
         [TestCase("bbbbbü", "aeıioöuü", Result = 'ü')]
-        public char? FirstOccurrenceOfAnyTest(String str, String letters)
+        public char? FirstOccurrenceOfAnyTest(string str, string letters)
         {
             return str.FirstOccurrenceOfAny(letters);
         }
 
+        [TestCase(null, "abc", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("abc", null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase(null, null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", "", Result = null)]
+        [TestCase("abc", "", Result = null)]
+        [TestCase("", "abc", Result = null)]
         [TestCase("a", "aeıioöuü", Result = 'a')]
         [TestCase("b", "aeıioöuü", Result = null)]
         [TestCase("ba", "aeıioöuü", Result = 'a')]
         [TestCase("ab", "aeıioöuü", Result = 'a')]
         [TestCase("babalü", "aeıioöuü", Result = 'ü')]
-        public char? LastOccurrenceOfAnyTest(String str, String letters)
+        public char? LastOccurrenceOfAnyTest(string str, string letters)
         {
             return str.LastOccurrenceOfAny(letters);
         }
 
-
+        [TestCase(null, "abc", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("abc", null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase(null, null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", "", Result = null)]
+        [TestCase("abc", "", Result = null)]
+        [TestCase("", "abc", Result = null)]
         [TestCase("babeli", "aeıioöuü", Result = 'e')]
         [TestCase("babo", "aeıioöuü", Result = 'a')]
         [TestCase("boba", "aeıioöuü", Result = 'o')]
         [TestCase("ba", "aeıioöuü", Result = null)]
         [TestCase("ae", "aeıioöuü", Result = 'a')]
-        public char? PenultimateOccurrenceOfAnyTest(String str, String letters)
+        public char? PenultimateOccurrenceOfAnyTest(string str, string letters)
         {
             return str.PenultimateOccurrenceOfAny(letters);
         }
 
+        [TestCase(null, "abc", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("abc", null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase(null, null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", "", Result = "")]
+        [TestCase("abc", "", Result = "abc")]
+        [TestCase("", "abc", Result = "")]
         [TestCase("babeli", "aeıioöuü", Result = "bbeli")]
         [TestCase("bab", "aeıioöuü", Result = "bb")]
         [TestCase("bbba", "aeıioöuü", Result = "bbb")]
         [TestCase("bbb", "aeıioöuü", Result = "bbb")]
-        public string DeleteFirstOccurrenceOfAnyTest(String str, String letters)
+        public string DeleteFirstOccurrenceOfAnyTest(string str, string letters)
         {
             return str.DeleteFirstOccurrenceOfAny(letters);
         }
 
+        [TestCase(null, "abc", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("abc", null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase(null, null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", "", Result = "")]
+        [TestCase("abc", "", Result = "abc")]
+        [TestCase("", "abc", Result = "")]
         [TestCase("babeli", "aeıioöuü", Result = "babel")]
         [TestCase("bab", "aeıioöuü", Result = "bb")]
         [TestCase("bbba", "aeıioöuü", Result = "bbb")]
         [TestCase("bbb", "aeıioöuü", Result = "bbb")]
-        public string DeleteLastOccurrenceOfAnyTest(String str, String letters)
+        public string DeleteLastOccurrenceOfAnyTest(string str, string letters)
         {
             return str.DeleteLastOccurrenceOfAny(letters);
         }
 
+        [TestCase(null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", ExpectedException = typeof (ArgumentException))]
         [TestCase("a", Result = "")]
         [TestCase("ab", Result = "b")]
         [TestCase("abc", Result = "bc")]
         [TestCase("abcd", Result = "bcd")]
-        public string DeleteFirstCharTest(String str)
+        public string DeleteFirstCharTest(string str)
         {
             return str.DeleteFirstChar();
         }
 
+        [TestCase(null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", ExpectedException = typeof (ArgumentException))]
         [TestCase("a", Result = "")]
         [TestCase("ab", Result = "a")]
         [TestCase("abc", Result = "ab")]
         [TestCase("abcd", Result = "abc")]
-        public string DeleteLastCharTest(String str)
+        public string DeleteLastCharTest(string str)
         {
             return str.DeleteLastChar();
         }
 
-
+        [TestCase(null, "", "", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", null, "", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", "", null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", "abc", "def", Result = "")]
+        [TestCase("abcdef", "", "def", ExpectedException = typeof (ArgumentException))]
+        [TestCase("balıba", "ba", "", Result = "lıba")]
         [TestCase("babalı", "ba", "ara", Result = "arabalı")]
         [TestCase("babalı", "a", "e", Result = "bebalı")]
-        [TestCase("babalı", "lı", "cık", Result = "babacık")]
-        [TestCase("babalı", "da", "ara", Result = "babalı")]
+        [TestCase("balıba", "ba", "da", Result = "dalıba")]
+        [TestCase("balıba", "ba", "ca", Result = "calıba")]
         public string ReplaceFirstOccurrenceTest(string str, string oldPattern, string newPattern)
         {
             return str.ReplaceFirstOccurrence(oldPattern, newPattern);
         }
 
+        [TestCase(null, "", "", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", null, "", ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", "", null, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", "abc", "def", Result = "")]
+        [TestCase("abcdef", "", "def", ExpectedException = typeof (ArgumentException))]
+        [TestCase("balıba", "ba", "", Result = "balı")]
         [TestCase("babalı", "ba", "ara", Result = "baaralı")]
         [TestCase("babalı", "a", "e", Result = "babelı")]
-        [TestCase("babalı", "lı", "cık", Result = "babacık")]
-        [TestCase("babalı", "da", "ara", Result = "babalı")]
+        [TestCase("balıba", "ba", "da", Result = "balıda")]
+        [TestCase("balıba", "ba", "ca", Result = "balıca")]
         public string ReplaceLastOccurrenceTest(string str, string oldPattern, string newPattern)
         {
             return str.ReplaceLastOccurrence(oldPattern, newPattern);
         }
 
-        [TestCase("", Result = "")]
-        [TestCase("(", Result = "")]
-        [TestCase("()", Result = "")]
-        [TestCase("()()(())", Result = "")]
-        [TestCase("((a)(b)(cd))", Result = "abcd")]
-        public string RemoveParenthesesTest(String str)
-        {
-            return str.RemoveParentheses();
-        }
-
+        [TestCase(null, 0, 3, ExpectedException = typeof (ArgumentNullException))]
+        [TestCase("", 0, 0, Result = "")]
         [TestCase("babali", 0, 3, Result = "bab")]
         [TestCase("babali", 0, 0, Result = "")]
         [TestCase("babali", 0, 6, Result = "babali")]
@@ -140,11 +209,22 @@ namespace Nuve.Test.Generation
             return str.SubstringJava(start, end);
         }
 
+        [TestCase("", Result = "")]
+        [TestCase("(", Result = "")]
+        [TestCase(")", Result = "")]
+        [TestCase("()", Result = "")]
+        [TestCase("()()(())", Result = "")]
+        [TestCase("((a)(b)(cd))", Result = "abcd")]
+        public string RemoveParenthesesTest(string str)
+        {
+            return str.RemoveParentheses();
+        }
+
         [TestCase("''abc''", Result = "\"abc\"")]
         [TestCase("“abc”", Result = "\"abc\"")]
         [TestCase("«abc»", Result = "\"abc\"")]
         [TestCase("‘abc’", Result = "\'abc\'")]
-        public string Normalize(string str)
+        public string NormalizeTest(string str)
         {
             const string doubleQuote = "\"";
             const string singleQuote = "'";
@@ -156,31 +236,9 @@ namespace Nuve.Test.Generation
                 {"»", doubleQuote},
                 {"«", doubleQuote},
                 {"’", singleQuote},
-                {"‘", singleQuote},
+                {"‘", singleQuote}
             };
             return str.Normalize(map);
-        }
-
-        [Test]
-        public void IsAnyNullOrEmptyTest()
-        {
-            string nullStr = null;
-            string emptyStr = string.Empty;
-            string notEmptyStr = "something";
-            Assert.IsTrue(StringExtensions.IsAnyNullOrEmpty(nullStr));
-            Assert.IsTrue(StringExtensions.IsAnyNullOrEmpty(nullStr, nullStr));
-            Assert.IsTrue(StringExtensions.IsAnyNullOrEmpty(emptyStr, nullStr));
-            Assert.IsTrue(StringExtensions.IsAnyNullOrEmpty(emptyStr, emptyStr));
-            Assert.IsTrue(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, emptyStr));
-            Assert.IsTrue(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, nullStr));
-            Assert.IsTrue(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr, notEmptyStr, nullStr));
-            Assert.IsTrue(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr, notEmptyStr, emptyStr));
-
-            Assert.IsFalse(StringExtensions.IsAnyNullOrEmpty(notEmptyStr));
-            Assert.IsFalse(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr));
-            Assert.IsFalse(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr, notEmptyStr));
-            Assert.IsFalse(StringExtensions.IsAnyNullOrEmpty(notEmptyStr, notEmptyStr, notEmptyStr, notEmptyStr));
-            //Assert.IsTrue(StrUtil.IsNullOrEmpty("v")); 
         }
     }
 }

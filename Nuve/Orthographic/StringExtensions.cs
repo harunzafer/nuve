@@ -9,73 +9,93 @@ namespace Nuve.Orthographic
 {
     public static class StringExtensions
     {
-        private const string DoubleQuote = "\"";
-        private const string SingleQuote = "'";
-
-        public static readonly IDictionary<string, string> DefaultNormalizationMap = new Dictionary<string, string>
+        /// <summary>
+        ///     Throws an ArgumentNullException if this string is null
+        /// </summary>
+        public static void ThrowIfNull(this string str)
         {
-            {"''", DoubleQuote},
-            {"”", DoubleQuote},
-            {"“", DoubleQuote},
-            {"»", DoubleQuote},
-            {"«", DoubleQuote},
-            {"’", SingleQuote},
-            {"‘", SingleQuote},
-            {"…", "..."},
-        };
-
-        internal static void ThrowIfNullOrEmpty(this string str)
-        {
-            // Handle null argument.
             if (str == null)
             {
-                throw new ArgumentNullException("str");
+                throw new ArgumentNullException(nameof(str));
             }
-            // Handle invalid argument.
+        }
+
+        /// <summary>
+        ///     Throws an ArgumentException if this string is empty
+        /// </summary>
+        internal static void ThrowIfEmpty(this string str)
+        {
             if (str.Length == 0)
             {
-                throw new ArgumentException("Zero-length string invalid", "str");
+                throw new ArgumentException(@"Input string can not be empty", nameof(str));
             }
         }
 
-        internal static string MakeEmptyIfNull(this string str)
+        /// <summary>
+        ///     Throws an ArgumentNullException if any of the strings in the specified array is null
+        /// </summary>
+        public static void ThrowIfNullAny(params string[] strings)
         {
-            // Handle null argument.
-            if (str == null)
+            foreach (var str in strings)
             {
-                return "";
+                str.ThrowIfNull();
             }
-
-            return str;
         }
 
+        /// <summary>
+        ///     Indicates whether this string is empty.
+        ///     Throws an ArgumentNullException if this string is null.
+        /// </summary>
+        public static bool IsEmpty(this string str)
+        {
+            str.ThrowIfNull();
+            return str.Length == 0;
+        }
+
+        /// <summary>
+        ///     Indicates whether the first character of this string is equal to any character in the specified string.
+        /// </summary>
         public static bool FirstCharEqualsAny(this string str, string letters)
         {
-            if (string.IsNullOrEmpty(str))
+            ThrowIfNullAny(str, letters);
+
+            if (str.Length == 0)
             {
                 return false;
             }
 
-            char first = str[0];
+            var first = str[0];
 
             return letters.IndexOf(first) > -1;
         }
 
+        /// <summary>
+        ///     Indicates whether the last character of this string is equal to any character in the specified string.
+        /// </summary>
         public static bool LastCharEqualsAny(this string str, string letters)
         {
-            if (string.IsNullOrEmpty(str))
+            ThrowIfNullAny(str, letters);
+
+            if (str.Length == 0)
             {
                 return false;
             }
 
-            char last = str[str.Length - 1];
+            var last = str[str.Length - 1];
 
             return letters.IndexOf(last) > -1;
         }
 
+
+        /// <summary>
+        ///     Returns the character in the specified string that occurres first in this string.
+        ///     Returns null if no character in the specified string is found this string.
+        /// </summary>
         public static char? FirstOccurrenceOfAny(this string str, string letters)
         {
-            int index = str.IndexOfAny(letters.ToArray());
+            ThrowIfNullAny(str, letters);
+
+            var index = str.IndexOfAny(letters.ToArray());
 
             if (index == -1)
             {
@@ -85,9 +105,15 @@ namespace Nuve.Orthographic
             return str[index];
         }
 
+        /// <summary>
+        ///     Returns the character in the specified string that occurres last in this string.
+        ///     Returns null if no character in the specified string is found this string.
+        /// </summary>
         public static char? LastOccurrenceOfAny(this string str, string letters)
         {
-            int index = str.LastIndexOfAny(letters.ToArray());
+            ThrowIfNullAny(str, letters);
+
+            var index = str.LastIndexOfAny(letters.ToArray());
 
             if (index == -1)
             {
@@ -97,10 +123,15 @@ namespace Nuve.Orthographic
             return str[index];
         }
 
-        //Sondan bir önceki
+        /// <summary>
+        ///     Returns the character in the specified string that occurres next to last in this string.
+        ///     Returns null if no such character is found.
+        /// </summary>
         public static char? PenultimateOccurrenceOfAny(this string str, string letters)
         {
-            int index = str.LastIndexOfAny(letters.ToArray());
+            ThrowIfNullAny(str, letters);
+
+            var index = str.LastIndexOfAny(letters.ToArray());
             if (index == -1)
             {
                 return null;
@@ -116,11 +147,13 @@ namespace Nuve.Orthographic
             return str[index];
         }
 
+        /// <summary>
+        /// </summary>
         public static string DeleteFirstOccurrenceOfAny(this string str, string letters)
         {
-            str.ThrowIfNullOrEmpty();
+            ThrowIfNullAny(str, letters);
 
-            int index = str.IndexOfAny(letters.ToArray());
+            var index = str.IndexOfAny(letters.ToArray());
 
             if (index == -1)
             {
@@ -132,9 +165,9 @@ namespace Nuve.Orthographic
 
         public static string DeleteLastOccurrenceOfAny(this string str, string letters)
         {
-            str.ThrowIfNullOrEmpty();
+            ThrowIfNullAny(str, letters);
 
-            int index = str.LastIndexOfAny(letters.ToArray());
+            var index = str.LastIndexOfAny(letters.ToArray());
 
             if (index == -1)
             {
@@ -144,104 +177,102 @@ namespace Nuve.Orthographic
             return str.Remove(index, 1);
         }
 
+
         public static string DeleteFirstChar(this string str)
         {
-            str.ThrowIfNullOrEmpty();
+            str.ThrowIfNull();
+
+            str.ThrowIfEmpty();
+
             return str.Substring(1, str.Length - 1);
         }
 
+
         public static string DeleteLastChar(this string str)
         {
-            str.ThrowIfNullOrEmpty();
+            str.ThrowIfNull();
+
+            str.ThrowIfEmpty();
+
             return str.Remove(str.Length - 1);
         }
 
         public static string ReplaceFirstOccurrence(this string str, string oldPattern, string newPattern)
         {
-            int index = str.IndexOf(oldPattern, StringComparison.Ordinal);
+            ThrowIfNullAny(str, oldPattern, newPattern);
+            oldPattern.ThrowIfEmpty();
+
+            var index = str.IndexOf(oldPattern, StringComparison.Ordinal);
             if (index == -1)
             {
                 return str;
             }
-            string result = str.Remove(index, oldPattern.Length).Insert(index, newPattern);
+            var result = str.Remove(index, oldPattern.Length).Insert(index, newPattern);
             return result;
         }
 
         public static string ReplaceLastOccurrence(this string str, string oldPattern, string newPattern)
         {
-            int index = str.LastIndexOf(oldPattern, StringComparison.Ordinal);
+            ThrowIfNullAny(str, oldPattern, newPattern);
+            oldPattern.ThrowIfEmpty();
+
+            var index = str.LastIndexOf(oldPattern, StringComparison.Ordinal);
             if (index == -1)
             {
                 return str;
             }
-            string result = str.Remove(index, oldPattern.Length).Insert(index, newPattern);
+            var result = str.Remove(index, oldPattern.Length).Insert(index, newPattern);
             return result;
         }
 
-        public static string RemoveParentheses(this string str)
+        /// <summary>
+        /// Provides the same functionality with the substring method of Java
+        /// </summary>
+        public static string SubstringJava(this string s, int start, int end)
         {
+            s.ThrowIfNull();
+            return s.Substring(start, end - start);
+        }
+
+        /// <summary>
+        ///     Removes all the '(' and ')' characters in this string.
+        /// </summary>
+        internal static string RemoveParentheses(this string str)
+        {
+            str.ThrowIfNull();
             var rgx = new Regex(@"(\(|\))");
             return rgx.Replace(str, "");
         }
 
-        public static bool IsAnyNullOrEmpty(params string[] strings)
+        /// <summary>
+        /// String'in ilk harfini Turkish culture'a göre büyük harf yapar
+        /// </summary>
+        internal static string UppercaseFirst(this string str)
         {
-            for (int i = 0; i < strings.Length; i++)
-            {
-                if (String.IsNullOrEmpty(strings[i]))
-                {
-                    return true;
-                }
-            }
+            str.ThrowIfNull();
+            str.ThrowIfEmpty();
 
-            return false;
-        }
-
-        //String'in ilk harfini büyütür
-        public static string UppercaseFirst(this string str)
-        {
-            if (String.IsNullOrEmpty(str))
-            {
-                return String.Empty;
-            }
-
-            char[] a = str.ToCharArray();
-            a[0] = Char.ToUpper(a[0], new CultureInfo("tr-TR"));
+            var a = str.ToCharArray();
+            a[0] = char.ToUpper(a[0], new CultureInfo("tr-TR"));
             return new string(a);
         }
-
-        public static string SubstringJava(this string s, int start, int end)
-        {
-            return s.Substring(start, end - start);
-        }
-
-        public static IList<string> ToAnalyses(this IEnumerable<Word> words)
-        {
-            //IList<string> analyses = new List<string>();
-            //foreach (Word word in words)
-            //{
-            //    analyses.AddSequence(word.Analysis);
-            //}
-            //return analyses;
-            return words.Select(word => word.Analysis).ToList();
-        }
-
+        
         /// <summary>
         ///     Replaces each key of the map with corresponding value
         /// </summary>
-        /// <param name="s"></param>
-        /// <param name="map"></param>
-        /// <returns></returns>
-        public static string Normalize(this string s, IDictionary<string, string> map)
+        internal static string Normalize(this string s, IDictionary<string, string> map)
         {
-            foreach (string key in map.Keys)
+            foreach (var key in map.Keys)
             {
                 s = s.Replace(key, map[key]);
             }
             return s;
         }
 
-        public static int RomanNumeralToArabic(this string number)
+        /// <summary>
+        ///  Converts  number from Roman form to Arabic form
+        /// </summary>
+        internal static int RomanNumeralToArabic(this string number)
         {
             if (number == string.Empty) return 0;
             if (number.StartsWith("M")) return 1000 + RomanNumeralToArabic(number.Remove(0, 1));
@@ -257,7 +288,8 @@ namespace Nuve.Orthographic
             if (number.StartsWith("V")) return 5 + RomanNumeralToArabic(number.Remove(0, 1));
             if (number.StartsWith("IV")) return 4 + RomanNumeralToArabic(number.Remove(0, 2));
             if (number.StartsWith("I")) return 1 + RomanNumeralToArabic(number.Remove(0, 1));
-            return -1; // Not a valid roman number
+
+            throw new ArgumentException($"Not a valid Roman numeral: {number}");
         }
     }
 }
