@@ -8,6 +8,7 @@ using System.Diagnostics;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
 using Nuve.NGrams;
+using Nuve.Orthographic;
 using Nuve.Reader;
 using Nuve.Sentence;
 using Nuve.Stemming;
@@ -20,17 +21,20 @@ namespace Nuve.Gui
         private const string UntaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalized.txt";
         private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
 
+        [Conditional("TRACE")]
+        public static void Msg(string msg)
+        {
+            Console.WriteLine(msg);
+        }
+
         /// <summary>
         ///     The main entry point for the application.
         /// </summary>
         [STAThread]
         private static void Main()
         {
-
-            var language = new LanguageReader(@"C:\Users\harun_000\Dropbox\nuve\nuve-studio\lang\tr").Read();
-            var analyzer = new WordAnalyzer(language);
-            AnalysisHelper.Analyze(analyzer, new []{"bugünkü"});
-
+            //Console.WriteLine(Trace.Listeners.Count);
+            //Console.WriteLine(Debug.Listeners.Count);
 
             //Benchmarker.TestWithAMillionTokens(Analyzer);
             //Benchmarker.TestWithAMillionWords(Analyzer);

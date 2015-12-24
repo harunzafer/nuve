@@ -11,6 +11,8 @@ namespace Nuve.Orthographic.Action
             {
                 case "Append":
                     return new Append(alphabet, operandOne, operandTwo, flag);
+                case "Prepend":
+                    return new Prepend(alphabet, operandOne, operandTwo, flag);
                 case "DeleteFirstLetter":
                     return new DeleteFirstLetter(alphabet, operandOne, operandTwo, flag);
                 case "DeleteFirstVowel":
@@ -26,7 +28,7 @@ namespace Nuve.Orthographic.Action
                 case "LexicalToSurface":
                     return new LexicalToSurface(alphabet, operandOne, operandTwo, flag);
                 default:
-                    throw new ArgumentException("What the hack is that action:" + name);
+                    throw new ArgumentException($"Invalid action type: {name}");
             }
         }
     }

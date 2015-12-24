@@ -24,6 +24,7 @@ morpheme ( Previous | This | Next ) #REQUIRED
   
 action (
 Append |
+Prepend |
 DeleteFirstLetter |
 DeleteFirstVowel | 
 DeleteLastLetter | 

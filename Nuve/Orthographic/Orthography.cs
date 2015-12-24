@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Text;
 
 namespace Nuve.Orthographic
@@ -6,6 +8,8 @@ namespace Nuve.Orthographic
     internal class Orthography
     {
         private readonly IDictionary<string, OrthographyRule> _rules = new Dictionary<string, OrthographyRule>();
+
+        private static readonly TraceSource _trace = new TraceSource("Orthography");
 
         internal Orthography(Alphabet alphabet, IEnumerable<OrthographyRule> rules)
         {
@@ -18,21 +22,14 @@ namespace Nuve.Orthographic
 
         public Alphabet Alphabet { get; }
 
-        public OrthographyRule GetRule(string id)
-        {
-            OrthographyRule ortographyRule;
-            return _rules.TryGetValue(id, out ortographyRule) ? ortographyRule : null;
-        }
-
         public List<OrthographyRule> GetRules(IEnumerable<string> ids)
         {
             var orthographyRules = new List<OrthographyRule>();
-            foreach (string id in ids)
+            foreach (string id in ids.Distinct())
             {
-                //int id = Convert.ToInt32(rule.Value);
                 if (GetRule(id) == null)
                 {
-                    //Console.WriteLine("Warning: Undefined orthograpy rule:" + id);
+                    _trace.TraceEvent(TraceEventType.Warning, 0, $"Undefined rule id: {id}");
                 }
                 else
                 {
@@ -40,6 +37,12 @@ namespace Nuve.Orthographic
                 }
             }
             return orthographyRules;
+        }
+
+        public OrthographyRule GetRule(string id)
+        {
+            OrthographyRule ortographyRule;
+            return _rules.TryGetValue(id, out ortographyRule) ? ortographyRule : null;
         }
 
         public string GetRuleNames()

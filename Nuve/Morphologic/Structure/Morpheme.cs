@@ -32,12 +32,8 @@ namespace Nuve.Morphologic.Structure
         /// </value>
         protected readonly bool HasRule;
 
-        private readonly string _id;
-
         private readonly HashSet<string> _labels;
-        private readonly string _lexicalForm;
         private readonly List<OrthographyRule> _rules;
-        private readonly MorphemeType _type;
 
         /// <summary>
         ///     Yeni, immutable bir <see cref="Morpheme" /> nesnesi oluşturur.
@@ -49,9 +45,9 @@ namespace Nuve.Morphologic.Structure
         protected Morpheme(string id, string lexicalForm, MorphemeType type, HashSet<string> labels,
             List<OrthographyRule> rules)
         {
-            _id = id;
-            _lexicalForm = lexicalForm;
-            _type = type;
+            Id = id;
+            LexicalForm = lexicalForm;
+            Type = type;
             _labels = labels;
             _rules = rules;
             HasRule = _rules.Any();
@@ -68,25 +64,16 @@ namespace Nuve.Morphologic.Structure
         ///     Morfem <see cref="Root" /> ise Root'un tipini (root.Phase) döndürür
         ///     <para />
         /// </example>
-        public string Id
-        {
-            get { return _id; }
-        }
+        public string Id { get; }
 
         /// <summary>
         ///     Morfemin sölük (lexicon) biçimi
         ///     <para />
         ///     Örneğin çoğul ekinin sözlük biçimi lAr şeklindedir.
         /// </summary>
-        public string LexicalForm
-        {
-            get { return _lexicalForm; }
-        }
+        public string LexicalForm { get; }
 
-        public MorphemeType Type
-        {
-            get { return _type; }
-        }
+        public MorphemeType Type { get; }
 
         /// <summary>
         ///     Morfemin sözlük biçimini id ile taglenmiş olarak döndürür.
