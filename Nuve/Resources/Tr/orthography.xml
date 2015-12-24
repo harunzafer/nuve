@@ -500,28 +500,7 @@
         Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini
       </description>
       <transformation morpheme="This" action="Replace" operandOne="_" operandTwo=" " flag="all"/>
-    </rule>
-    
-    <!-- Bu kurallar tam olarak neden var?--><!--
-    <rule id="ILK_HARF_BUYUT_o" phase="5">
-      <description>kâr -> kar </description>
-      <transformation morpheme="This" action="Replace" operandOne="o" operandTwo="O" flag="first" />
-    </rule>
-
-    <rule id="ILK_HARF_BUYUT_ö" phase="5">
-      <description>kâr -> kar </description>
-      <transformation morpheme="This" action="Replace" operandOne="ö" operandTwo="Ö" flag="first" />
-    </rule>
-
-    <rule id="ILK_HARF_BUYUT_a" phase="5">
-      <description>kâr -> kar </description>
-      <transformation morpheme="This" action="Replace" operandOne="a" operandTwo="A" flag="first" />
-    </rule>
-
-    <rule id="ILK_HARF_BUYUT_u" phase="5">
-      <description>kâr -> kar </description>
-      <transformation morpheme="This" action="Replace" operandOne="u" operandTwo="U" flag="first" />
-    </rule>-->
+    </rule>   
 
   </rules>
 </orthography>

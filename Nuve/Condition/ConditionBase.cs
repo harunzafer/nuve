@@ -69,7 +69,7 @@ namespace Nuve.Condition
                     return false;
 
                 default:
-                    throw new ArgumentException("Invalid Argument : " + Position);
+                    throw new ArgumentException($"Invalid Argument : {Position}");
             }
         }
 

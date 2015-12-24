@@ -152,8 +152,7 @@ namespace Nuve.Morphologic.Structure
         protected string GetPreviousSurface()
         {
             var sb = new StringBuilder();
-            Allomorph temp = Previous;
-            sb.Append(Previous.Surface);
+            Allomorph temp = this;
             while (temp.HasPrevious)
             {
                 temp = temp.Previous;
@@ -169,8 +168,7 @@ namespace Nuve.Morphologic.Structure
         protected string GetNextSurface()
         {
             var sb = new StringBuilder();
-            Allomorph temp = Next;
-            sb.Append(Next.Surface);
+            Allomorph temp = this;
             while (temp.HasNext)
             {
                 temp = temp.Next;

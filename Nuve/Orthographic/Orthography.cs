@@ -9,7 +9,7 @@ namespace Nuve.Orthographic
     {
         private readonly IDictionary<string, OrthographyRule> _rules = new Dictionary<string, OrthographyRule>();
 
-        private static readonly TraceSource _trace = new TraceSource("Orthography");
+        private static readonly TraceSource Trace = new TraceSource("Orthography");
 
         internal Orthography(Alphabet alphabet, IEnumerable<OrthographyRule> rules)
         {
@@ -29,7 +29,7 @@ namespace Nuve.Orthographic
             {
                 if (GetRule(id) == null)
                 {
-                    _trace.TraceEvent(TraceEventType.Warning, 0, $"Undefined rule id: {id}");
+                    Trace.TraceEvent(TraceEventType.Warning, 0, $"Undefined rule id: {id}");
                 }
                 else
                 {

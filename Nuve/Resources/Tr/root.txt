@@ -18299,7 +18299,7 @@ oduncul					ISIM	isim				Türkçe	Hayır
 odyometre					ISIM	isim				Fransızca	Hayır				
 odyovizüel					SIFAT	sıfat				Fransızca	Hayır				
 of					UNLEM	ünlem				Türkçe	Hayır				
-Of		of			OZEL	özel	ILK_HARF_BUYUT_o		ilçe	Türkçe	Evet				
+Of					OZEL	özel			ilçe	Türkçe	Evet				
 ofis					ISIM	isim				Fransızca	Hayır				
 ofla	oflu				FIIL	fiil				Türkçe					
 oflaz					SIFAT	sıfat				Türkçe	Hayır				
@@ -26568,7 +26568,6 @@ yemyeşil					SIFAT	sıfat				Türkçe	Hayır
 yen					ISIM	isim				Türkçe	Hayır				
 yen			Japon para birimi.	F	ISIM	isim				İngilizce	Hayır				
 yen					FIIL	fiil, genis_Ar		er		Türkçe	Hayır		E	Evet	
-yen			Yemekler yenmiş		FIIL	fiil		ir		Türkçe	Hayır		E	Hayır	
 yenge					ISIM	isim				Türkçe	Hayır				
 yengeç	yengec				ISIM	isim	YUMUSAMA_çc	ci	hayvan bilimi	Türkçe	Hayır				
 Yengeç					OZEL	özel		ç'i	gök bilimi/burç	Türkçe	Evet				
@@ -27395,3 +27394,4 @@ meyal					IKILEME	ikileme
 arttırım					ISIM	isim									
 salım					ISIM	isim									
 pin					ISIM	isim									
+satın					ISIM	isim									

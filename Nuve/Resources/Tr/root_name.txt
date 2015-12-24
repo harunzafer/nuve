@@ -12,7 +12,7 @@ Abbaz			E		OZEL	özel, ad		PE	Yüzgeç, yüzücü.
 Abdi			E		OZEL	özel, ad		AR	Kulluk ve itaat eden.
 Abdullah			E		OZEL	özel, ad		AR	Allah'ın ku­lu. Peygamber(s.a.s)'in en sevdiği isimlerden aynı zamanda babasının adıdır.
 Abdülmelik			E		OZEL	özel, ad		AR	Her şey üzerinde tasarruf ve hükmeden tek hükümdar Allah'ın kulu. el-Melik, Allah'ın isimlerindendir.
-Abdurrahman			E		OZEL	özel, ad		AR	"Rahman'ın kulu. Rahman; dünyada her canlıya, mü'min-kafir ayırdelmeksizin herkese merhamet eden. Allah'ın isimlerindendir. Abdurrahman İbn Avf"
+Abdurrahman			E		OZEL	özel, ad		AR	Rahman'ın kulu. Rahman; dünyada her canlıya, mü'min-kafir ayırdelmeksizin herkese merhamet eden. Allah'ın isimlerindendir. Abdurrahman İbn Avf
 Abdurrauf			E		OZEL	özel, ad		AR	Rauf olan Allah'ın kulu.(bkz. er-Rauf).
 Abdussabur			E		OZEL	özel, ad		AR	Sonsuz sabır ve genişlik sahibi Allah'ın kulu. Allah'ın isimlerinden,(bkz. es-Sabur).
 Abdüddar			E		OZEL	özel, ad		AR	Zararlı şeyleri ve sebeblerini bir hikmete mebni olarak yaratan Allah'ın kulu. ed-Dar. Allah'ın isimlerindendir.
@@ -23,7 +23,7 @@ Abdülalîm			E		OZEL	özel, ad		AR	Alim ve mükemmel bilgiyi uhdesinde bulun­d
 Abdülazim			E		OZEL	özel, ad		AR	Azamet ve büyüklük sahibi Allah'ın kulu.Allah'ın isimlerinden,(bkz. el-Azim).
 Abdülaziz			E		OZEL	özel, ad		AR	Büyük ve aziz olan, izzet ve şeref sahibi Allah'ın kulu.(bkz. Aziz). Aziz Allah'ın isimlerindendir.Sultan Abdülaziz
 Abdülbaki			E		OZEL	özel, ad		AR	Sonsuz, ebedi olan ve ölmenin kendisi için sözkonusu olmadığı. Allah'ın kulu-Allah'ın isimlerinden,(bkz. Baki).
-Abdülbari			E		OZEL	özel, ad		AR	"Yaratan, yaratıcı Allah'ın kulu. Bari ismi, Allah'ın isimlerindendir. ""Abd"" takısı al­madan kullanılmaz."
+Abdülbari			E		OZEL	özel, ad		AR	Yaratan, yaratıcı Allah'ın kulu. Bari ismi, Allah'ın isimlerindendir. "Abd" takısı al­madan kullanılmaz.
 Abdülbâsıt			E		OZEL	özel, ad		AR	Genişlik, ferahlık ve kolaylık verici olan Allah'ın kulu.Allah'ın isimlerinden(bkz. el-Basıt).
 Abdülbasir			E		OZEL	özel, ad		AR	Her şeyi görüp gözeten ve gizliliğin kendisi için söz konusu olmadığı yüce Allah'ın kulu. -(bkz. el-Basir).
 Abdülbedi			E		OZEL	özel, ad		AR	Allah'ın isimlerinden.- Bedi'nin kulu.(bkz. el-Bedi).
@@ -38,28 +38,28 @@ Abdülevvel			E		OZEL	özel, ad		AR	Herşe-yin evveli, ilk olan, varlığının 
 Abdülezel			E		OZEL	özel, ad		AR	Ezelden beri var olan varlığı için başlangıç söz konusu olmayan Allah'ın kulu.
 Abdülferid			E		OZEL	özel, ad		AR	Tek, eş­siz, eşi olmayan, kıyas kabul etmez, üstün olan. Allah'ın kulu.(bkz. Ferid).
 Abdülfettah			E		OZEL	özel, ad		AR	Zafer kazanmış, üstün gelmiş, fetheden-açan, kullarınının kapalı-müşkil işle­rini açan Allah'ın kulu.(bkz. Fettah). Allah'ın isimlerindendir.
-Abdülgaffar			E		OZEL	özel, ad		AR	"Kulla­rının günahlarını affeden Allah'ın ku­lu. -(bkz. Gaffar). Allah'ın isimlerindendir. ""Abd"" takısı almadan kullanıl­maz."
-Abdülgafur			E		OZEL	özel, ad		AR	"Kulları­nın günahlarını tekrar tekrar bağışla­yıcı olan Allah'ın kulu. -(bkz. Gafur). ""Abd"" takısı almadan kullanılmaz."
+Abdülgaffar			E		OZEL	özel, ad		AR	Kulla­rının günahlarını affeden Allah'ın ku­lu. -(bkz. Gaffar). Allah'ın isimlerindendir. "Abd" takısı almadan kullanıl­maz.
+Abdülgafur			E		OZEL	özel, ad		AR	Kulları­nın günahlarını tekrar tekrar bağışla­yıcı olan Allah'ın kulu. -(bkz. Gafur). "Abd" takısı almadan kullanılmaz.
 Abdülgani			E		OZEL	özel, ad		AR	Zengin, varlıklı, bol, doygun olan Allah'ın ku­lu.- Allah'ın isimlerinden,(bkz. Ga­ni).
 Abdülhabir			E		OZEL	özel, ad		AR	Her şe­yin iç yüzünden, gizli ve saklılıklarından haberdar olan Allah'ın kulu.(bkz. el-Habir). Allah'ın isimlerinden.
 Abdülhâdi			E		OZEL	özel, ad		AR	Hidayet eden, doğru yolu gösteren Allah'ın kulu.Allah'ın isimlerinden,(bkz. Hadi).
 Abdülhafız			E		OZEL	özel, ad		AR	Herşeyi bütün ayrıntı ve inceliğiyle kayıtlayıp tutan ve dilediği zamana kadar bela ve afetlerden koruyan Allah'ın kulu. -(bkz. el-Hafız). Allah'ın isimlerinden.
 Abdülhak			E		OZEL	özel, ad		AR	Hak ve ger­çek olan, varlığı hiç değişmeden du­ran Allah'ın kulu.Hak, Esmau'l-Hüsna'dandır.
 Abdülhakem			E		OZEL	özel, ad		AR	Bütün iş­lerin kendisine döndürüldüğü, onun adalet ve kararına baş vurulduğu yüce Hakem Allah'ın kulu. -(bkz. el-Ha-kem). Allah'ın isimlerinden.
-Abdülhakîm			E		OZEL	özel, ad		AR	"Her şe­ye hükmeden Allah'ın kulu.- Hakim, Allah'ın isimlerindendir. ""Abd"" takısı almadan kullanılmaz."
-Abdülhalik			E		OZEL	özel, ad		AR	"Yaratan, yoktan vareden, yaratıcı Allah'ın ku­lu.Halik, Allah'ın isimlerinden. ""Abd"" takısı almadan kullanılmaz."
+Abdülhakîm			E		OZEL	özel, ad		AR	Her şe­ye hükmeden Allah'ın kulu.- Hakim, Allah'ın isimlerindendir. "Abd" takısı almadan kullanılmaz.
+Abdülhalik			E		OZEL	özel, ad		AR	Yaratan, yoktan vareden, yaratıcı Allah'ın ku­lu.Halik, Allah'ın isimlerinden. "Abd" takısı almadan kullanılmaz.
 Abdülhalim			E		OZEL	özel, ad		AR	Tabiatı yavaş olan, yumuşak huylu, hikmetli Allah'ın kulu. -(bkz. Halim). Allah'ın isimlerinden.
-Abdülhamid			E		OZEL	özel, ad		AR	"Hamdolunmuş, övülmüş, bütün varlığın di­liyle övülmüş Allah'ın kulu.Hamid; Allah'ın isimlerindendir.(bkz. Ha­mid).- Türk dil kuralları açısından ""d/t"" olarak kullanılır."
-Abdülhasib			E		OZEL	özel, ad		AR	"Bütün varlıkların takdir edilen hayatları bo­yunca yaptıkları bütün işlerin ayrıntı­larıyla hesabını en iyi bilen Hasib'in kulu.Hasib; Allahın isimlerinden­dir."
+Abdülhamid			E		OZEL	özel, ad		AR	Hamdolunmuş, övülmüş, bütün varlığın di­liyle övülmüş Allah'ın kulu.Hamid; Allah'ın isimlerindendir.(bkz. Ha­mid).- Türk dil kuralları açısından "d/t" olarak kullanılır.
+Abdülhasib			E		OZEL	özel, ad		AR	Bütün varlıkların takdir edilen hayatları bo­yunca yaptıkları bütün işlerin ayrıntı­larıyla hesabını en iyi bilen Hasib'in kulu.Hasib; Allahın isimlerinden­dir.
 Abdülhay			E		OZEL	özel, ad		AR	Daima diri olan, ebedi hayat sahibi, her şeye gü­cü yeten Cenab-ı Allah'ın kulu. -(bkz. el-Hay). Allah'ın isimlerinden.
-Abdülkadir			E		OZEL	özel, ad		AR	"Bitmez tükenmez kuvvet sahibi olan, her şeyi yapmaya gücü yeten Allah'ın kulu.-Kadir; Allah'ın isimlerindendir.(bkz. Kadir)."
+Abdülkadir			E		OZEL	özel, ad		AR	Bitmez tükenmez kuvvet sahibi olan, her şeyi yapmaya gücü yeten Allah'ın kulu.-Kadir; Allah'ın isimlerindendir.(bkz. Kadir).
 Abdülkaviy			E		OZEL	özel, ad		AR	Sonsuz güç ve kuvvet sahibi Allah'ın kulu. -Kaviy kelimesi Esmau'l-Hüsna'dandır.(bkz. el-Kaviyy).
 Abdülkayyum			E		OZEL	özel, ad		AR	Bu isim her şeyin bir varlık olarak durabilmesi için neye ihtiyacı varsa onu veren, gökleri, yeri ve her şeyi tutan, baki, kaim Allah'ın kulu.Kayyum, Allah'ın isimlerindendi.(bkz. el-Kayyum).
-Abdülkebir			E		OZEL	özel, ad		AR	"Kebir'in, büyüklük ve Azamette eşsiz olan Allah'ın kulu.Kebir; Allah'ın isimlerindendi.(bkz. el-Kebir)."
-Abdülkerim			E		OZEL	özel, ad		AR	"Keremi bol, cömert olan Aziz ve Celil Allah'ın kulu.Kerim; Allah'ın isimle -rindendir.(bkz. Kerim)."
-Abdüllatif			E		OZEL	özel, ad		AR	"Latif, gü­zel, yumuşak, hoş, nazik olan bütün olayların ve eşyanın inceliklerini bi­len Allah'ın kulu.el-Latif; Allah'ın isimlerindendi.(bkz. Latif)."
+Abdülkebir			E		OZEL	özel, ad		AR	Kebir'in, büyüklük ve Azamette eşsiz olan Allah'ın kulu.Kebir; Allah'ın isimlerindendi.(bkz. el-Kebir).
+Abdülkerim			E		OZEL	özel, ad		AR	Keremi bol, cömert olan Aziz ve Celil Allah'ın kulu.Kerim; Allah'ın isimle -rindendir.(bkz. Kerim).
+Abdüllatif			E		OZEL	özel, ad		AR	Latif, gü­zel, yumuşak, hoş, nazik olan bütün olayların ve eşyanın inceliklerini bi­len Allah'ın kulu.el-Latif; Allah'ın isimlerindendi.(bkz. Latif).
 Abdülmacid			E		OZEL	özel, ad		AR	Kadru şanı büyük, cömertlik ve keremi bol olan, Allah'ın kulu.Macid kelimesi, Allah'ın isimlerindendi.(bkz. el-Ma-cid).
-Abdülmalik			E		OZEL	özel, ad		AR	"Sahip olan, her şeyin mülkiyetinin sahibi olan Allah'ın kulu.Malik; Allah'ın isimlerindendi. ""Abd"" takısı almadan kullanılmaz."
+Abdülmalik			E		OZEL	özel, ad		AR	Sahip olan, her şeyin mülkiyetinin sahibi olan Allah'ın kulu.Malik; Allah'ın isimlerindendi. "Abd" takısı almadan kullanılmaz.
 Abdülmecid			E		OZEL	özel, ad		AR	Şanı bü­yük ve yüksek olan, şan ve onur sahi­bi yüce Allah'ın kulu.Mecid kelime­si Allah'ın 99 isminden biridir. Sultan Abdülmecid Han
 Abdülmennan			E		OZEL	özel, ad		AR	Çok ihsan eden, ihsanı bol olan Allah'ın kulu.Mennan kelimesi, Allah'ın sıfatlarındandır.
 Abdülmesih			E		OZEL	özel, ad		AR	Hastala­ra şifa veren, mesih İsa'nın kulu.-(bkz. Mesih). İsim olarak kullanıl­maz.
@@ -75,8 +75,8 @@ Abdülvahid			E		OZEL	özel, ad		AR	Tek ve eşsiz olan, zatında sıfatlarında,
 Abdülvali			E		OZEL	özel, ad		AR	Bütün alemleri ve meydana gelen bütün olayları tedbir ve idare eden Allah'ın kulu.Vali, Esmau'l-Hüsna'dandır.(bkz. el-Vali).
 Abdülvâris			E		OZEL	özel, ad		AR	Gerçek servet ve zenginliklerin mutlak sahibi. Bütün zenginliklerin son ve asıl sahi­bi olan yüce Allah'ın kulu.Varis ke­limesi Allah'ın isimlerindendir.(bkz. el-Varis).
 Abdülvâsi			E		OZEL	özel, ad		AR	Vasi'nin kulu.Genişlik sahibi ve müsade edici, darlık, fakirlik ve sıkıntıdan münez­zeh olan Allah'ın kulu.Vasi kelime­si, Allah'ın isimlerindendir.(bkz. el-Vasi).
-Abdülvedud			E		OZEL	özel, ad		AR	"Vedud'un kulu.- Allah'ın isimlerinden. Vedud; iyi amel sahibi kullarını se­ven, onlara rahmet ve rızasını yönel­ten, sevilmeye ve sayılmaya, dostluğu kazanılmaya yegane layık olan yüce Allah anlamındadır."
-Abdülvehhab			E		OZEL	özel, ad		AR	"Çok çeşitli nimetleri daima bağışlayan Allah'ın kulu. Vehhab, Allah'ın isimle-rindendir.""Abd"" takısı almadan kul­lanılmaz."
+Abdülvedud			E		OZEL	özel, ad		AR	Vedud'un kulu.- Allah'ın isimlerinden. Vedud; iyi amel sahibi kullarını se­ven, onlara rahmet ve rızasını yönel­ten, sevilmeye ve sayılmaya, dostluğu kazanılmaya yegane layık olan yüce Allah anlamındadır.
+Abdülvehhab			E		OZEL	özel, ad		AR	Çok çeşitli nimetleri daima bağışlayan Allah'ın kulu. Vehhab, Allah'ın isimle-rindendir."Abd" takısı almadan kul­lanılmaz.
 Abdülvekil			E		OZEL	özel, ad		AR	Kendisi­ne tevekkül edilen, kudretiyle kulları­nın işlerini halleden, onlara yardımcı olan yüce Allah'ın kulu.Vekil. Allah'ın isimlerindendir.(bkz. el-Vekil).
 Abdülveli			E		OZEL	özel, ad		AR	Kendisine iman edenlerin dostu ve yardımcısı. Yarattıklarına mütevelli ve nazar edi­ci olan Allah'ın kulu.el-Veliyy keli­mesi Allah'ın isimlerindendir.(bkz. el-Veli).
 Abdünnafi			E		OZEL	özel, ad		AR	Yararlı şeyleri ve sebeplerini kudretiyle yara­tan Allah'ın kulu.Nafı kelimesi, Allah'ın isimlerindendir.(bkz. en-Nafı).
@@ -86,13 +86,13 @@ Abdürrafi			E		OZEL	özel, ad		AR	Rafı'nin kulu.(bkz. er-Rafi). Allah'ın isim
 Abdürrahim			E		OZEL	özel, ad		AR	Merha­metli, esirgeyen, koruyan, acıyan, ahirette mümin kullarına merhamet eden Allah'ın kulu.- er-Rahim, Allah'ın isimlerindendir.
 Abdürrauf			E		OZEL	özel, ad		AR	Çok lütuf, şevkat ve rahmet eden. Onları belli nimetlerle dengeli yaşatan, seviyelendiren Allah'ın kulu.(bkz. Rauf).
 Abdürreşid			E		OZEL	özel, ad		AR	Allah'ın isimlerinden. Reşid'in kulu.-(bkz. er-Reşid).
-Abdürrezzak			E		OZEL	özel, ad		AR	"Bütün mahlukların rızkını veren Allah'ın ku­lu.Rezzak, Allah'ın isimlerindendir. ""Abd"" takısı almadan kullanılmaz."
-Abdüssamed			E		OZEL	özel, ad		AR	"Kimse­ye hiçbir şeye muhtaç olmayan, Allah'ın kulu.Samed, Allah'ın isimle­rindendir. ""Abd"" takısı almadan kul­lanılmaz. Türk dil kuralı açısından ""d/t"" olarak kullanılır."
-Abdüsselam			E		OZEL	özel, ad		AR	"Barış, rahatlık, selamete çıkaran, selam eden, zevalsiz ebedi olan Allah'ın ku­lu.es-Selam kelimesi, Allah'ın isim­lerindendir. ""Abd"" takısı almadan kullanılamaz."
+Abdürrezzak			E		OZEL	özel, ad		AR	Bütün mahlukların rızkını veren Allah'ın ku­lu.Rezzak, Allah'ın isimlerindendir. "Abd" takısı almadan kullanılmaz.
+Abdüssamed			E		OZEL	özel, ad		AR	Kimse­ye hiçbir şeye muhtaç olmayan, Allah'ın kulu.Samed, Allah'ın isimle­rindendir. "Abd" takısı almadan kul­lanılmaz. Türk dil kuralı açısından "d/t" olarak kullanılır.
+Abdüsselam			E		OZEL	özel, ad		AR	Barış, rahatlık, selamete çıkaran, selam eden, zevalsiz ebedi olan Allah'ın ku­lu.es-Selam kelimesi, Allah'ın isim­lerindendir. "Abd" takısı almadan kullanılamaz.
 Abdüssemi			E		OZEL	özel, ad		AR	Her şey­den arınmış olarak bütün sesleri, söz­leri ve kelimeleri işitip ayırdeden yü­ce Allah'ın kulu.(bkz. es-Semi').
 Abdüssettar			E		OZEL	özel, ad		AR	Günah­ları örten, gizleyen Allah'ın kulu.
 Abdüşşahid			E		OZEL	özel, ad		AR	Şahid'in kulu. Görünen ve görünmeyen eşya­nın hepsini görücü ve tasarruf edici olan ve her şeyi müşahade altında bu­lunduran Allah'ın kulu.Şahid, Allah'ın isimlerindendir.(bkz. eş-Şahid).
-Abdüşşekûr			E		OZEL	özel, ad		AR	"Emrine uyan, yasaklarından sakınan kullarını seven ve çok ikramda bulunan Allah'ın kulu.Şekür, Allah'ın isimle­rindendir. ""Abd"" takısı almadan kullanılmaz."
+Abdüşşekûr			E		OZEL	özel, ad		AR	Emrine uyan, yasaklarından sakınan kullarını seven ve çok ikramda bulunan Allah'ın kulu.Şekür, Allah'ın isimle­rindendir. "Abd" takısı almadan kullanılmaz.
 Abdüzzahir			E		OZEL	özel, ad		AR	Varlık ve birliği sonsuz sayıda eserler ve delil­lerle belli olan Allah'ın kulu.ez-Za­hir, Allah'ın isimlerindendir.(bkz. ez-Zahir).
 Abendam			K		OZEL	özel, ad		PE	Güzel vü­cutlu, güzellik.
 Aber			E		OZEL	özel, ad		AR	Hz. Nuh'un erkek torunu.
@@ -126,11 +126,11 @@ Acunalp			E		OZEL	özel, ad		TR	Dünyayı kap­sayan, dünyayı fetheden.
 Acunman			E		OZEL	özel, ad		TR	Dünyaca ta­nınmış, ünlü.
 Açangül			K		OZEL	özel, ad		TR	Çiçek. 
 Açelya			K		OZEL	özel, ad		YU	Kokusuz, fundagillerden çeşitli renklerde çiçek­ler açan bir bitki.
-Açıl			K		OZEL	özel, ad		TR	"Açılmak eylemin­den emir; serpil"
+Açıl			K		OZEL	özel, ad		TR	Açılmak eylemin­den emir; serpil
 Açılay			K		OZEL	özel, ad		TR	Ayın dolunay halinde olmaya başlaması
 Adahan			E		OZEL	özel, ad		TR	Adanın haki­mi, yöneticisi.
 Adal			E		OZEL	özel, ad		TR	Adın yayılsın, ün kazan manasında.
-Adaleddin 			E		OZEL	özel, ad		AR	"Dinin adaleti- Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Adaleddin 			E		OZEL	özel, ad		AR	Dinin adaleti- Türk dil kuralı açısından "d/t" olarak kullanılır.
 Adalet			U		OZEL	özel, ad		AR	Hakka riayctkarlık, hak tanırlık, haklılık, doğruluk. 
 Adanır			U		OZEL	özel, ad		TR	Şanlı, şöhretli
 Âdem			E		OZEL	özel, ad		AF	Allah'ın yarat­tığı ilk insan, insan soyunun atası ve ilk peygamberi. 
@@ -156,11 +156,11 @@ Afra			K		OZEL	özel, ad		AR	Ayın onüçüncü gecesi.
 Afşar			E		OZEL	özel, ad		TR	Oğuz Türkleri­nin 24 boyundan biri. Türkiye, Iran, Azerbaycan ve Afganistan'da dağınık olarak yaşamaktadırlar. 
 Afşin			E		OZEL	özel, ad		TR	Zırh, silah. Afşin bey
 Aftabe			K		OZEL	özel, ad		PE	Su kabı. 
-Afuv			E		OZEL	özel, ad		AR	"Daima affeden, merhametli. Esmaü'l-Hüsna'dandır. ""Abd"" takısı alarak kullanılır."
+Afuv			E		OZEL	özel, ad		AR	Daima affeden, merhametli. Esmaü'l-Hüsna'dandır. "Abd" takısı alarak kullanılır.
 Agâh			E		OZEL	özel, ad		PE	Bilgili, haberli, uyanık, afif. Vakıf olmuş, malumatlı. Agah Efendi
 Ager			E		OZEL	özel, ad		TR	Temiz, doğru kimse
 Agra			E		OZEL	özel, ad		AR	Çok sevimli, çok yakışıklı.
-Ağa			E		OZEL	özel, ad		TR	"Yaşlanma manası­na gelen ""ağmak""tan. Büyük, efendi. Büyük kardeş, ağabey. "
+Ağa			E		OZEL	özel, ad		TR	Yaşlanma manası­na gelen "ağmak"tan. Büyük, efendi. Büyük kardeş, ağabey. 
 Ağahan			E		OZEL	özel, ad		TR	Nizari İsmaili imamlara verilen unvan. Doğu Türk-çesinde ağabey anlamında da kulla­nılmıştır. Türk kökenli Kaçarların onur unvanıydı. Ağa Han
 Ağan			K		OZEL	özel, ad		TR	Akanyıldız, ağma
 Ağaner			E		OZEL	özel, ad		TR	Saf, temiz, duru insan.
@@ -172,7 +172,7 @@ Ahavi			E		OZEL	özel, ad		AR	Kardeşçe, dostça. Kardeş gibi.
 Ahbarî			E		OZEL	özel, ad		AR	Haber veren, ri­vayet eden.
 Ahdî			E		OZEL	özel, ad		AR	Ahd, and icabı ve­ya ahd ve ahda müteallik. Ahdî, Türk tezkire yazan ve Divan şairi(Bağdat 1593).
 Ahenk			K		OZEL	özel, ad		PE	Uygun, uyum düzen, armoni. 
-Ahfa			U		OZEL	özel, ad		AR	"Kalb, ruh, sır, hafi, ah-fa şeklinde sıralanan ""Ietafet-i hamse"" sonuncusuna verilen ad.- Erkek ve kadın adı olarak kullanılır."
+Ahfa			U		OZEL	özel, ad		AR	Kalb, ruh, sır, hafi, ah-fa şeklinde sıralanan "Ietafet-i hamse" sonuncusuna verilen ad.- Erkek ve kadın adı olarak kullanılır.
 Ahfaz			E		OZEL	özel, ad		AR	Belleği çok kuvvetli. 
 Ahfeş			E		OZEL	özel, ad		AR	Küçük gözlü, zayıf bakışlı. 
 Ahî			E		OZEL	özel, ad		AR	Ahi ocağına mensup olan kimse. 
@@ -268,7 +268,7 @@ Aksuna			K		OZEL	özel, ad		TR	Ak renkli ya­ban ördeği.
 Aksuner			E		OZEL	özel, ad		TR	Doğan cin­sinden bir nevi av kuşu.Aksungur b. Abdullah. Melikşah zamanında Halep'in hakimliğini, yöneticiliğini yapan Türk Emiri.
 Aksungur			E		OZEL	özel, ad		TR	Doğan cin­sinden bir nevi av kuşu.Aksungur b. Abdullah. Melikşah zamanında Halep'in hakimliğini, yöneticiliğini yapan Türk Emiri.
 Aksüyek			E		OZEL	özel, ad		TR	Eski Türk­lerde soylu anlamında kullanılırdı.
-Akşemseddin			E		OZEL	özel, ad		TA	"Dinin güneşi.- Türk din bilgini ve hekim.(Şam 1389-Göynük 1459). Fatih'in hocasıdır. İstanbul'un fethinde bulun­du. Ünlü sahabi komutan Eba Eyyub el-Ensari'nin mezarını bulduğu söyle­nir. Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Akşemseddin			E		OZEL	özel, ad		TA	Dinin güneşi.- Türk din bilgini ve hekim.(Şam 1389-Göynük 1459). Fatih'in hocasıdır. İstanbul'un fethinde bulun­du. Ünlü sahabi komutan Eba Eyyub el-Ensari'nin mezarını bulduğu söyle­nir. Türk dil kuralına göre "d/t" olarak kullanılır.
 Akşın			U		OZEL	özel, ad		TR	Az ak, akımsı.
 Akşit			E		OZEL	özel, ad		TR	Kutlu uğurlu. 
 Aktaç			E		OZEL	özel, ad		TR	Beyaz taç.
@@ -284,7 +284,7 @@ Akyıl			U		OZEL	özel, ad		TR	Temiz, güzel se­ne.Erkek ve kadın adı olarak 
 Akyıldız			U		OZEL	özel, ad		TR	Akşama doğru doğan parlak yıldız. Çoban yıldızı, sa­bah yıldızı.
 Akyiğit			E		OZEL	özel, ad		TR	#NAME?
 Akyol			E		OZEL	özel, ad		TR	Dürüst, doğru ve iyi yol.
-Alaaddin			E		OZEL	özel, ad		AR	"Dini yücelt­mek için din uğruna çalışan kimse. Alaaddin Keykubad(1192-1237) Anadolu Selçuklu Sultanı.Türk dil kuralları açısından ""d/t"" olarak kullanılır."
+Alaaddin			E		OZEL	özel, ad		AR	Dini yücelt­mek için din uğruna çalışan kimse. Alaaddin Keykubad(1192-1237) Anadolu Selçuklu Sultanı.Türk dil kuralları açısından "d/t" olarak kullanılır.
 Alacan			E		OZEL	özel, ad		TR	(bkz. Akan).
 Alagün			K		OZEL	özel, ad		TR	Yazın güneş buluta girdiği zamanki gölgeli hava.
 Alamet			K		OZEL	özel, ad		AR	İşaret, iz, ni­şan. 
@@ -311,7 +311,7 @@ Alişan			E		OZEL	özel, ad		AF	Şan ve şerefi yüce ve yüksek olan çok değe
 Ali			E		OZEL	özel, ad		AR	Yüce, ulu, yüksek. 
 Alihan			E		OZEL	özel, ad		AT	Yüce han.
 Alican			E		OZEL	özel, ad		AF	Ali ve can isimlerinin bir araya gelmesinden meydana gelmiştir. -(bkz. Ali ve Can).
-Alicengiz			E		OZEL	özel, ad		AT	"Akla gel­mez, şeytanca, beklenmedik ve umul­madık tarzda anlamlan ile ""Alicengiz oyunu"" deyiminde geçer."
+Alicengiz			E		OZEL	özel, ad		AT	Akla gel­mez, şeytanca, beklenmedik ve umul­madık tarzda anlamlan ile "Alicengiz oyunu" deyiminde geçer.
 Aligüher			E		OZEL	özel, ad		AF	Yaratılışı ve mayası yüce ve değerli olan.
 Alikadir			E		OZEL	özel, ad		AR	Yüksek kıymette olan, çok kıymetli, çok takdir edilen, çok saygıdeğer. 
 Âlim			E		OZEL	özel, ad		AR	Çok okumuş, bilgin.,
@@ -325,7 +325,7 @@ Alkan			E		OZEL	özel, ad		TR	Kırmızı kan. Alkan bey
 Alkım			E		OZEL	özel, ad		TR	Gökkuşağı. Al­kım(Uluğ Bahadır) Türk Arkeolog.
 Alkın			E		OZEL	özel, ad		TR	Sevdalı, aşık, vurgun. 
 Alkur			E		OZEL	özel, ad		TR	Hep, bütün, herkes.
-Alp		alp	E		OZEL	özel, ad	D_ILK_HARF_BUYUT_a	TR	Eski Türklerde kahraman, yiğit, cesur, bahadır, pehli­van. 
+Alp			E		OZEL	özel, ad		TR	Eski Türklerde kahraman, yiğit, cesur, bahadır, pehli­van. 
 Alpagu			E		OZEL	özel, ad		TR	Tek başına düşmana saldıran yiğit. 
 Alpağan			E		OZEL	özel, ad		TR	Cesur, yiğit, kahraman.
 Alpak			E		OZEL	özel, ad		TR	Dürüst, kahra­man, yiğit.
@@ -370,7 +370,7 @@ Amine			K		OZEL	özel, ad		AR	Gönlü emin, kal­binde korku olmayan.Peygamber'i
 Âmir			E		OZEL	özel, ad		AR	Mamur eden, şen­lendiren. 
 Âmire			K		OZEL	özel, ad		AR	Mamur eden, şen­lendiren. 
 Ammar			E		OZEL	özel, ad		AR	Memur eden. 
-Amr			E		OZEL	özel, ad	D_ILK_HARF_BUYUT_a	AR	Uzun yaşamak, uzun ömürlü olmak. Amr b. Madikerib
+Amr			E		OZEL	özel, ad		AR	Uzun yaşamak, uzun ömürlü olmak. Amr b. Madikerib
 Amre			K		OZEL	özel, ad		AR	Uzun yaşamak, uzun ömürlü olmak. Amr b. Madikerib
 Amuz			E		OZEL	özel, ad		PE	Bilen, öğrenmiş, öğreten.
 Anber			K		OZEL	özel, ad		AR	Ada balığının bağırsaklarında toplanan yumuşak, yapışkan ve misk gibi kokan, kül ren­ginde madde. 
@@ -433,7 +433,7 @@ Arüsek			K		OZEL	özel, ad		PE	Gelin, kü­çük gelin.
 Arzık			E		OZEL	özel, ad		TR	Dindar, sofu.
 Arzu			K		OZEL	özel, ad		AR	İstek, bahşiş. 
 Arzuman			K		OZEL	özel, ad		AR	İstek, bahşiş. 
-As		as	E		OZEL	özel, ad	D_ILK_HARF_BUYUT_a	AR	Mersin ağacı. 
+As			E		OZEL	özel, ad		AR	Mersin ağacı. 
 Âsaf			E		OZEL	özel, ad		AR	Vezir. 
 Asal			E		OZEL	özel, ad		TR	Başlıca, esaslı, te­mel.
 Asalet			E		OZEL	özel, ad		AR	Soy temizliği, soyluluk.
@@ -471,8 +471,8 @@ Ataç			E		OZEL	özel, ad		TR	Atalardan gelen, atalarla ilgili olan.
 Ataergin			E		OZEL	özel, ad		TR	Baba. 
 Atahan			E		OZEL	özel, ad		TR	Baba. 
 Atakan			E		OZEL	özel, ad		TR	Düşünmek­sizin her işe sokulan adam. 
-Atalay			E		OZEL	özel, ad		TR	"(bkz. ""Ata""). Ünlü, namlı, şöhretli. Atalay Mah­mut, Türk güreşçi. Balkan, Avrupa, Dünya ve Meksika Olimpiyatları şampiyonu oldu(1968)."
-Ataman			E		OZEL	özel, ad		TR	"(bkz. ""Ata"").Ata kişi, başkan, önder. "
+Atalay			E		OZEL	özel, ad		TR	(bkz. "Ata"). Ünlü, namlı, şöhretli. Atalay Mah­mut, Türk güreşçi. Balkan, Avrupa, Dünya ve Meksika Olimpiyatları şampiyonu oldu(1968).
+Ataman			E		OZEL	özel, ad		TR	(bkz. "Ata").Ata kişi, başkan, önder. 
 Ataner			E		OZEL	özel, ad		TR	Baba. 
 Atasagun			U		OZEL	özel, ad		TR	Eski Türkler­de hekimlere verilen isim.
 Atasan			E		OZEL	özel, ad		TR	Baba. 
@@ -508,7 +508,7 @@ Avniye			K		OZEL	özel, ad		AR	Yeniçeriler ta­rafından ve daha sonra Sultan M
 Avnullah			E		OZEL	özel, ad		AR	Allah'ın yar­dımı.Birleşik isim.
 Avşar			K		OZEL	özel, ad		TR	Oğuzların önemli bir kolu. Büyük Selçuklu Devleti'nin kurulması ve yakındoğunun Türkleşmesinde büyük rol oyna­mışlardır.
 Avvad			E		OZEL	özel, ad		AR	Ud çalan, udçu. Avvad(Tevfik Yusuf): Lübnanlı yazar, gazeteci. Diplomat.
-Ay		ay	E		OZEL	özel, ad	D_ILK_HARF_BUYUT_a	TR	Yılın on iki bölü­münden biri. 
+Ay			E		OZEL	özel, ad		TR	Yılın on iki bölü­münden biri. 
 Ayaba			E		OZEL	özel, ad		TR	Muhammed Tapar'ın oğlu. Büyük Selçuklu Sultanı Sancar'ı Oğuzların elinden tutsaklık­tan kurtarıp tahtına oturttu. Selçuklu­ları istila etmek isteyen Harizm Şah­lan uzun süre engelledi.
 Ayalp			E		OZEL	özel, ad		TR	Ay kadar parlak ve güzel, yiğit.
 Ayana			E		OZEL	özel, ad		TR	#NAME?
@@ -615,7 +615,7 @@ Ayzer			U		OZEL	özel, ad		AF	Altın renginde ay.
 Azad			E		OZEL	özel, ad		PE	l. Hür, serbest. 
 Azade			K		OZEL	özel, ad		PE	l. Hür, serbest. 
 Azam			E		OZEL	özel, ad		AR	En büyük, daha büyük, ulu. İmam-ı Azam Ebu Hanife
-Azameddin			E		OZEL	özel, ad		AR	"Dinin ulu­luğu, emaneti.Türk dil kuralı açısın­dan ""d/t"" olarak kullanılır."
+Azameddin			E		OZEL	özel, ad		AR	Dinin ulu­luğu, emaneti.Türk dil kuralı açısın­dan "d/t" olarak kullanılır.
 Azamet			E		OZEL	özel, ad		AR	Büyüklük, ulu­luk.
 Âzer			E		OZEL	özel, ad		PE	Ateş. İbra­him(a.s)'in babası olduğu söylenir.
 Azim			E		OZEL	özel, ad		AR	Büyük, ulu, ce­sim, iri, muhteşem. 
@@ -623,7 +623,7 @@ Azime			K		OZEL	özel, ad		AR	Kesin kararlılık, niyet, sebat.
 Azimet			K		OZEL	özel, ad		AR	Kuvvetli bir iradeye dayanan karar, yemin anlamı­na gelmektedir. 
 Aziz			E		OZEL	özel, ad		AR	Muhterem, sayın. 
 Azize			K		OZEL	özel, ad		AR	Muhterem, sayın. 
-Azizî			E		OZEL	özel, ad		AR	"Aziz'e ait.XVI. yy.'da yaşamış Türk şairi. ""Yedikuleli Azizi' lakabıyla tanınır. Asıl adı Mus­tafa'dır."
+Azizî			E		OZEL	özel, ad		AR	Aziz'e ait.XVI. yy.'da yaşamış Türk şairi. "Yedikuleli Azizi' lakabıyla tanınır. Asıl adı Mus­tafa'dır.
 Azmi			E		OZEL	özel, ad		AR	Kasıt, niyetlilik ka­rar. 
 Azmidil			K		OZEL	özel, ad		AF	Gönül yüceliği.
 Azmiye			K		OZEL	özel, ad		AR	Kasıt, niyetlilik ka­rar. 
@@ -648,10 +648,10 @@ Bağışcan			E		OZEL	özel, ad		TR	Bağışlanan şey, ihsan.
 Bağışhan			E		OZEL	özel, ad		TR	Bağışlanan şey, ihsan. 
 Bağlam			U		OZEL	özel, ad		TR	Cinsleri ayrı ya da birbirlerine yakın olan şeylerin bir arada bağlanmışı, demet, deste. 
 Baha			E		OZEL	özel, ad		AR	Güzellik, zariflik. 
-Bahaddin			E		OZEL	özel, ad		AR	"Dinin güzelligi. Dinin değerlisi.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Bahaddin			E		OZEL	özel, ad		AR	Dinin güzelligi. Dinin değerlisi.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Bahadır			E		OZEL	özel, ad		PE	Cesur, yiğit, bağatur. Timur soyundan Hindistan'da hükümdarlık yapmış Türk lider.
 Bahadırhan			E		OZEL	özel, ad		TR	Cesur, yiğit, bağatur. Timur soyundan Hindistan'da hükümdarlık yapmış Türk lider.
-Bahaeddin			E		OZEL	özel, ad		AR	"Dinin güzelligi. Dinin değerlisi.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Bahaeddin			E		OZEL	özel, ad		AR	Dinin güzelligi. Dinin değerlisi.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Bahamra			U		OZEL	özel, ad		AR	Irak'ta bir yer. -Erkek ve kadın adı olarak kullanılır.
 Bahar			K		OZEL	özel, ad		PE	Kışla yaz arasındaki mevsim. 22 Mart'la Haziran arası, ilkyaz. 
 Bahaullah			E		OZEL	özel, ad		AR	#NAME?
@@ -671,7 +671,7 @@ Bahtışen			K		OZEL	özel, ad		AF	Talihi, kaderi, kısmeti şen.(bkz. İkbal).
 Bahtiyar			U		OZEL	özel, ad		AF	.Bahtlı, talihli. 
 Bakanay			U		OZEL	özel, ad		TR	. – Gökyüzünde duran ay, açık seçik.Erkek ve kadın adı olarak kullanılır.
 Bakır			E		OZEL	özel, ad		PE	l. İnceleyen, tetkik edip açıklayan. 
-Baki			E		OZEL	özel, ad		AR	"Allah'ın isimlerindendir. Genellikle ""abd"" takısı alarak kullanılır,(bkz. Abdülbaki). Kalıcı, sürekli, devamlı. Varlığının sonu olmayan. Ölümsüz. "
+Baki			E		OZEL	özel, ad		AR	Allah'ın isimlerindendir. Genellikle "abd" takısı alarak kullanılır,(bkz. Abdülbaki). Kalıcı, sürekli, devamlı. Varlığının sonu olmayan. Ölümsüz. 
 Bakinaz			K		OZEL	özel, ad		PE	Sürekli nazlanan, çok nazlı.
 Bakiye			K		OZEL	özel, ad		AR	Şehvetli kadın. İsim olarak kullanılmaması uygundur.
 Bakiye			K		OZEL	özel, ad		AR	Ağlayan kadın. Hüzünlü kadın.
@@ -847,7 +847,7 @@ Behra			K		OZEL	özel, ad		PE	l. Onun için ondan dolayı.
 Behram			E		OZEL	özel, ad		PE	Merih yıldızı. 
 Behramşah			E		OZEL	özel, ad		PE	Merih yıldızı. 
 Behrem			K		OZEL	özel, ad		AR	Asfur çiçeği kırmızı gül.
-Behzad			E		OZEL	özel, ad		AR	"Ressam, minyatürcü.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Behzad			E		OZEL	özel, ad		AR	Ressam, minyatürcü.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Bekata			E		OZEL	özel, ad		TR	İleri gelen, saygın. Soylu, isim yapmış sülaleden.
 Bekbars			E		OZEL	özel, ad		TR	İleri gelen, saygın. Soylu, isim yapmış sülaleden.
 Bekdemir			E		OZEL	özel, ad		TR	İleri gelen, saygın. Soylu, isim yapmış sülaleden.
@@ -882,7 +882,7 @@ Bera			E		OZEL	özel, ad		AR	Fazilet.
 Berat			U		OZEL	özel, ad		AR	.Resmi belge, imtiyaz belgesi. 
 Berca			U		OZEL	özel, ad		PE	.Yerinde tam doğru ve münasip.Kadın ve erkek adı olarak kullanılabilir.
 Berceste			K		OZEL	özel, ad		PE	Seçilmiş, beğenilmiş. 
-Bercis			K		OZEL	özel, ad		AR	"""Müşteri"" denilen yıldız, Jüpiter gezegeni. "
+Bercis			K		OZEL	özel, ad		AR	"Müşteri" denilen yıldız, Jüpiter gezegeni. 
 Berçin			K		OZEL	özel, ad		PE	Toplayıcı.
 Bereket			K		OZEL	özel, ad		AR	Bolluk. 
 Beren			E		OZEL	özel, ad		TR	Güçlü, kuvvetli, akıllı.
@@ -930,7 +930,7 @@ Besamet			K		OZEL	özel, ad		AR	Güleryüzlülük, şenlik.
 Besim			E		OZEL	özel, ad		AR	Güleryüzlü, güleç adam.
 Besime			K		OZEL	özel, ad		AR	Güleryüzlü, güleç adam.
 Beste			K		OZEL	özel, ad		PE	Kapalı, bağlı, bitiştirilmiş bağlanmış. 
-Beşareddin			E		OZEL	özel, ad		AR	"Dinin müjdesi. Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Beşareddin			E		OZEL	özel, ad		AR	Dinin müjdesi. Türk dil kuralına göre "d/t" olarak kullanılır.
 Beşaret			K		OZEL	özel, ad		AR	Müjde, muştu, iyi haber. 
 Beşir			E		OZEL	özel, ad		AR	Müjde getiren müjdeci. 
 Beşire			K		OZEL	özel, ad		AR	Müjde getiren, müjdeci. 
@@ -1080,7 +1080,7 @@ Burçak			U		OZEL	özel, ad		TR	.Baklagillerden, taneleri yemiş olarak kullanı
 Burçhan			E		OZEL	özel, ad		TR	Süryanice Burgus kelimesinin Arapçalaştınlmış hali. 
 Burçin			K		OZEL	özel, ad		TR	Dişi geyik.
 Burhan			E		OZEL	özel, ad		AR	Delil hüccet. 
-Burhaneddin			E		OZEL	özel, ad		AR	"Dinin delili. Burhaneddin Mahmud b. Taceddin el-Buhari(Öl. 1149). Hanefi fıkıh alimi. Önemli yapıtı. el-Muhit el-Buhari'dir.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Burhaneddin			E		OZEL	özel, ad		AR	Dinin delili. Burhaneddin Mahmud b. Taceddin el-Buhari(Öl. 1149). Hanefi fıkıh alimi. Önemli yapıtı. el-Muhit el-Buhari'dir.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Burkan			E		OZEL	özel, ad		AR	Yanardağ, volkan.
 Burkan			E		OZEL	özel, ad		TR	.Uygur Türklerinin Budaya verdikleri ad.İsim olarak kullanılmaz.
 Burkhan			E		OZEL	özel, ad		TR	.Put, heykel, Buda heykeli.İsim olarak kullanılması yanlıştır.
@@ -1104,8 +1104,8 @@ Câbir			E		OZEL	özel, ad		AR	Cebreden, zorlayan.
 Câbire			K		OZEL	özel, ad		AR	Cebreden, zorlayan. 
 Cabiye			K		OZEL	özel, ad		AR	Hazine(bkz. Semahat). 
 Cafer			E		OZEL	özel, ad		AR	Küçük akarsı. Çay. Cafer b. Muhammed
-Cahid			E		OZEL	özel, ad		AR	"Cehdeden, elinden geldiği kadar çalışan. Bu kelime Kur'an-ı Kerim'de ""cihad et"". ""Allah yolunda savaşa çık"" anlamında kullanılmıştır.Dil kuralında ""d/t"" olarak kullanılmaktadır."
-Cahide			K		OZEL	özel, ad		Ka.	"Cehdeden, elinden geldiği kadar çalışan. Bu kelime Kur'an-ı Kerim'de ""cihad et"". ""Allah yolunda savaşa çık"" anlamında kullanılmıştır.Dil kuralında ""d/t"" olarak kullanılmaktadır."
+Cahid			E		OZEL	özel, ad		AR	Cehdeden, elinden geldiği kadar çalışan. Bu kelime Kur'an-ı Kerim'de "cihad et". "Allah yolunda savaşa çık" anlamında kullanılmıştır.Dil kuralında "d/t" olarak kullanılmaktadır.
+Cahide			K		OZEL	özel, ad		Ka.	Cehdeden, elinden geldiği kadar çalışan. Bu kelime Kur'an-ı Kerim'de "cihad et". "Allah yolunda savaşa çık" anlamında kullanılmıştır.Dil kuralında "d/t" olarak kullanılmaktadır.
 Cahiz			E		OZEL	özel, ad		AR	Gözü pek, yürekli, cesur kimse. 
 Caiz			E		OZEL	özel, ad		AR	Geçer. 
 Caize			K		OZEL	özel, ad		AR	Armağan, hediye. 
@@ -1139,7 +1139,7 @@ Cangiray			U		OZEL	özel, ad		TR	Kuvvetli, kudretli. Kırım hanları tarafında
 Cangül			K		OZEL	özel, ad		TR	Gül gibi canlı. 
 Cangün			E		OZEL	özel, ad		TR	Doğduğu gün çok sevinilen kimse.
 Cangür			E		OZEL	özel, ad		TR	Canlı, neşeli kimse.
-Canib			E		OZEL	özel, ad		AR	"Ön taraf, cihet. -Türk dil kuralına göre ""b/p"" olarak kullanılır."
+Canib			E		OZEL	özel, ad		AR	Ön taraf, cihet. -Türk dil kuralına göre "b/p" olarak kullanılır.
 Canipek			K		OZEL	özel, ad		TR	Yumuşak huylu(kimse).
 Cankan			E		OZEL	özel, ad		TR	Soyu temiz, asil kimse.
 Cankut			E		OZEL	özel, ad		TR	Kişinin mutluluğu talihi, şansı, uğuru. 
@@ -1170,13 +1170,13 @@ Cazim			E		OZEL	özel, ad		AR	Kesin.
 Cebbar			E		OZEL	özel, ad		AR	Cebreden, zorlayıcı. 
 Cebe			E		OZEL	özel, ad		AR	Zırh. 
 Cebel			E		OZEL	özel, ad		AR	Dağ. 
-Ceberut			E		OZEL	özel, ad		IB	"İbranice ""kudret"" anlamına gelmektedir. Yeni Eflatuncu filozoflar ile işraki felsefesine tabi olan mutasavvıflara verilen ad."
+Ceberut			E		OZEL	özel, ad		IB	İbranice "kudret" anlamına gelmektedir. Yeni Eflatuncu filozoflar ile işraki felsefesine tabi olan mutasavvıflara verilen ad.
 Cebir			E		OZEL	özel, ad		AR	Zorlamak. 
 Cebire			K		OZEL	özel, ad		AR	Zorlamak. 
 Cebrail			E		OZEL	özel, ad		AR	Peygamberlere vahiy getiren dört büyük melekten biri. 
 Cedis			E		OZEL	özel, ad		AR	Arabistanın yerli kabilelerinden birinin adı.
 Cehdi			E		OZEL	özel, ad		AR	Uğraşan, çalışan. Çaba ve gayret gösteren.
-Cehid			E		OZEL	özel, ad		AR	"Çalışma, çabalama, uğraşma.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Cehid			E		OZEL	özel, ad		AR	Çalışma, çabalama, uğraşma.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Cehm			E		OZEL	özel, ad		AR	Cehm b. Safvan
 Cehven			U		OZEL	özel, ad		AR	.Kurtuba'da yerleşmiş, birçok alim, fakih, vezir yetiştirmiş meşhur bir Arap ailesi.Erkek ve kadın adı olarak kullanılır.
 Celadet			U		OZEL	özel, ad		AR	.Gözüpeklik. 
@@ -1198,7 +1198,7 @@ Ceminur			K		OZEL	özel, ad		AR	Işık, nur topluluğu, çok nurlu, aydınlık k
 Cemre			E		OZEL	özel, ad		AR	Ateş. 
 Cemşasb			E		OZEL	özel, ad		PE	Hz. Süleyman. 
 Cemşid			E		OZEL	özel, ad		PE	Cemşasb'ın babası.
-Cenab			E		OZEL	özel, ad		AR	"Yanmanasına gelir. Şeref, onur ve büyüklük terimi olarak kullanılır. Hazret, Cenab-ı Hakk, Cenab-ı Halik, Allah.Dil kuralı açısından ""b/p"" olarak kullanılmaktadır."
+Cenab			E		OZEL	özel, ad		AR	Yanmanasına gelir. Şeref, onur ve büyüklük terimi olarak kullanılır. Hazret, Cenab-ı Hakk, Cenab-ı Halik, Allah.Dil kuralı açısından "b/p" olarak kullanılmaktadır.
 Cenan			K		OZEL	özel, ad		AR	Kalb, yürek, gönül.
 Cengaver			E		OZEL	özel, ad		PE	Savaşçı, silahşor. Savaşı seven, savaşkan, dövüşken.
 Cengel			E		OZEL	özel, ad		PE	Orman.
@@ -1207,7 +1207,7 @@ Cengiz			E		OZEL	özel, ad		TR	Cengiz Han. Moğol İmparatorluğu'nun kurucusu, 
 Cenk			E		OZEL	özel, ad		PE	Harp, savaş, kavga.İsim olarak kullanılması uygun değildir. Hz. Peygamberin değiştirdiği isimlerden birisi.
 Cenker			E		OZEL	özel, ad		FT	İyi savaşan, savaşçı.
 Cennet			K		OZEL	özel, ad		AR	Uçmak. 
-Ceren			K		OZEL	özel, ad		TR	"Halk ağzında ""ceylan"" anlamına gelir."
+Ceren			K		OZEL	özel, ad		TR	Halk ağzında "ceylan" anlamına gelir.
 Cerib			U		OZEL	özel, ad		AR	.Hububat için kullanılan bir ölçek.Erkek ve kadın adı olarak kullanılır.
 Cerir			E		OZEL	özel, ad		AR	İp, halat. Yular anlamında. Sahabeden bu ismi taşıyanlar vardır.
 Cerit			E		OZEL	özel, ad		AR	Verimsiz çorak yer. 
@@ -1377,12 +1377,12 @@ Daman			E		OZEL	özel, ad		PE	Etek.
 Damla			K		OZEL	özel, ad		TR	Bir sıvıdan ayrılarak düşen parça halinde, küçük miktar, katre. 
 Dana			E		OZEL	özel, ad		PE	Bilen, bilici, bilgin.
 Daniş			E		OZEL	özel, ad		PE	Bilim, bilgi, ilim. Ehl-i daniş
-Daniyal			E		OZEL	özel, ad		IB	"Ben-i İsrail peygamberlerinden biri. ""Tanrı benim yargıcımdır"" anlamına gelir. İki tane Daniyal vardır"
+Daniyal			E		OZEL	özel, ad		IB	Ben-i İsrail peygamberlerinden biri. "Tanrı benim yargıcımdır" anlamına gelir. İki tane Daniyal vardır
 Darcan			E		OZEL	özel, ad		TR	Aceleci, sıkıntılı. 
 Darekutni			E		OZEL	özel, ad		AR	Ebu'l-Hasen Ali b. Ömer. Tanınmış muhaddislerdendir(917-995) yıllan arasında yaşamış 80 yaşında Bağdat'ta vefat etmiştir. Hadis sahasında kıymetli eserleri vardır.
 Darga			E		OZEL	özel, ad		TR	Başkan, lider.
 Darimî			E		OZEL	özel, ad		AR	Ebu Muhammed b. Abdurrahman. Hadis bilgini. Müslim ve Ebu İsa hadislerini Darimi'den aldıklarını söylerler. En meşhur eseri Camiu's-Sahih'dir.
-Davud			E		OZEL	özel, ad		IB	"Kendisine kitap olarak Zebur'un gönderildiği büyük peygamberlerden biri. Kur'an-ı Kerim'de 16 yerde ismi geçer.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Davud			E		OZEL	özel, ad		IB	Kendisine kitap olarak Zebur'un gönderildiği büyük peygamberlerden biri. Kur'an-ı Kerim'de 16 yerde ismi geçer.Türk dil kuralına göre "d/t" olarak kullanılır.
 Dede			E		OZEL	özel, ad		TR	.Ana ve babanın babası. 
 Define			K		OZEL	özel, ad		AR	Yere gömülmüş, kıymetli eşya. 
 Defne			K		OZEL	özel, ad		YU	Akdeniz ikliminde yetişen, yapraklan sert ve üst yüzleri parlak açık sarı çiçek ve güzel kokan defnegillerden bir ağaç.
@@ -1435,7 +1435,7 @@ Deste			K		OZEL	özel, ad		PE	Demet, tutam, takım.
 Destegül			K		OZEL	özel, ad		PE	Gül demeti, destesi.
 Deva			U		OZEL	özel, ad		AR	.İlaç. Çare, tedbir. – Erkek ve kadın adı olarak kullanılır.
 Devan			E		OZEL	özel, ad		PE	Koşan, seğirten, hızlı yürüyen. 
-Devleddin			E		OZEL	özel, ad		AR	"Dinin mutluluğu, uğuru, büyüklüğü.Türk dil kuralı açısından ""d/t"" olarak kullanı­lır."
+Devleddin			E		OZEL	özel, ad		AR	Dinin mutluluğu, uğuru, büyüklüğü.Türk dil kuralı açısından "d/t" olarak kullanı­lır.
 Devlet			U		OZEL	özel, ad		AR	.Bir hükümet dairesinde teşkilatlandırılmış olan siyasi topluluk.Erkek ve kadın adı olarak kullanılır. Devlet Giray
 Devletşah			E		OZEL	özel, ad		PE	XV. yy. yetişen en tanınmış İran edebiyatçısı.
 Devran			E		OZEL	özel, ad		AR	Dünya, felek. 
@@ -1587,7 +1587,7 @@ Edgü			E		OZEL	özel, ad		TR	İyi.
 Edgüalp			E		OZEL	özel, ad		TR	İyi yiğit.
 Edgüer			E		OZEL	özel, ad		TR	İyi.
 Edgükan			E		OZEL	özel, ad		TR	İyi.
-Edhem			E		OZEL	özel, ad		AR	"Karayağız at. -Türk dil kuralı açısından ""d/t"" olarak kullanılır. İbrahim Edhem"
+Edhem			E		OZEL	özel, ad		AR	Karayağız at. -Türk dil kuralı açısından "d/t" olarak kullanılır. İbrahim Edhem
 Edib			E		OZEL	özel, ad		AR	Edepli, terbiyeli, zarif, nazik. 
 Edibe			K		OZEL	özel, ad		AR	Edepli, terbiyeli, zarif, nazik. 
 Edim			E		OZEL	özel, ad		AR	Fiil, amel.
@@ -1620,10 +1620,10 @@ Efruz			U		OZEL	özel, ad		PE	Şule, parıltı.
 Efsane			K		OZEL	özel, ad		PE	Asılsız hikaye. 
 Efser			U		OZEL	özel, ad		PE	.Taç. 
 Efsun			K		OZEL	özel, ad		PE	Efsun, büyü, sihir, gözbağcılık,(bkz. Füsun).
-Efşan			K		OZEL	özel, ad		PE	"Eklendiği kelimelere ""saçan, dağıtan, serpen, silken"" manası verir..Gülefşan"
+Efşan			K		OZEL	özel, ad		PE	Eklendiği kelimelere "saçan, dağıtan, serpen, silken" manası verir..Gülefşan
 Efza			U		OZEL	özel, ad		PE	.Artmak, çoğalmak. -Erkek ve kadın adı olarak kullanılır.
 Ege			U		OZEL	özel, ad		TR	Bir çocuğu koruyan, işlerine bakan ve her halinden sorumlu olan. 
-Egemen			E		OZEL	özel, ad		TR	"Hakim, hüküm süren karşılığı olarak kullanılan bu kelime, hem kök, hem de ek olarak yanlıştır. Türkçe'de ne ""eğe"" kökü, ne de ""man-men"" şeklinde isim yapım eki vardır."
+Egemen			E		OZEL	özel, ad		TR	Hakim, hüküm süren karşılığı olarak kullanılan bu kelime, hem kök, hem de ek olarak yanlıştır. Türkçe'de ne "eğe" kökü, ne de "man-men" şeklinde isim yapım eki vardır.
 Egenur			K		OZEL	özel, ad		TR	Bir çocuğu koruyan, işlerine bakan ve her halinden sorumlu olan. 
 Egesel			E		OZEL	özel, ad		TR	Bir çocuğu koruyan, işlerine bakan ve her halinden sorumlu olan. 
 Eğilmez			E		OZEL	özel, ad		TR	Başkalarının baskısını ve üstünlüğünü kabul etmeyen, baş eğmeyen.
@@ -1676,7 +1676,7 @@ Emirhan			E		OZEL	özel, ad		AT	Bir kavmin, bir şehrin başı.
 Emrah			E		OZEL	özel, ad		TR	Anadolu saz şairlerinden.
 Emran			E		OZEL	özel, ad		AR	Kürkler, hayvan derileri.
 Emre			E		OZEL	özel, ad		TR	Aşık. Mübtela. Vurgun.
-Emreddin			E		OZEL	özel, ad		AR	"Dinin emrettiği.Türk dil kuralları açısından ""d/t"" olarak kullanılır."
+Emreddin			E		OZEL	özel, ad		AR	Dinin emrettiği.Türk dil kuralları açısından "d/t" olarak kullanılır.
 Emri			E		OZEL	özel, ad		AR	Emirle ilgili.
 Emriye			K		OZEL	özel, ad		AR	Emirle ilgili.
 Emrullah			E		OZEL	özel, ad		AR	Allah'ın emri.
@@ -1770,7 +1770,7 @@ Erensoy			E		OZEL	özel, ad		TR	Yetişen, ulaşan, vasıl olan.
 Erensu			E		OZEL	özel, ad		TR	Yetişen, ulaşan, vasıl olan. 
 Erentürk			E		OZEL	özel, ad		TR	Eren-türk.
 Erer			E		OZEL	özel, ad		TR	Ulaşır, kavuşur.
-Eretna			E		OZEL	özel, ad		TR	"XIV. yy. Orta Anadolu'da Sivas ve Kayseri'de beylik kuran bir zat. Aslen Uygur Türkleri'nden olup Küçük Asya'da Anadolu Selçuklularına ait yerleri idarelerine almış olan İlhanlıların emirlerinden biri. Adil yönelimi sayesinde halkın övgüsünü almış ve kendisine ""köse peygamber"" lakabı verilmiştir."
+Eretna			E		OZEL	özel, ad		TR	XIV. yy. Orta Anadolu'da Sivas ve Kayseri'de beylik kuran bir zat. Aslen Uygur Türkleri'nden olup Küçük Asya'da Anadolu Selçuklularına ait yerleri idarelerine almış olan İlhanlıların emirlerinden biri. Adil yönelimi sayesinde halkın övgüsünü almış ve kendisine "köse peygamber" lakabı verilmiştir.
 Erez			E		OZEL	özel, ad		AR	Acıbadem ağacı.
 Erginer			E		OZEL	özel, ad		TR	Olgun erkek.
 Ergalip			E		OZEL	özel, ad		TA	Üstün, yenen kimse.
@@ -1841,7 +1841,7 @@ Ermiye			E		OZEL	özel, ad		AR	Dolu yağdıran kasırga.
 Ernoyan			E		OZEL	özel, ad		TR	Yiğit başkomutan.
 Eroğuz			E		OZEL	özel, ad		TR	Yiğit kimse.
 Erokay			E		OZEL	özel, ad		TR	Seçkin, beğenilen erkek.
-Erol			E		OZEL	özel, ad		TR	"Erkek ol.""Er"" ve ""ol"" kelimelerinden birleşik isim."
+Erol			E		OZEL	özel, ad		TR	Erkek ol."Er" ve "ol" kelimelerinden birleşik isim.
 Eronat			E		OZEL	özel, ad		TR	Dürüst, güvenilir, iyi erkek.
 Erozan			E		OZEL	özel, ad		TR	Erkek ozan, şair.
 Eröz			E		OZEL	özel, ad		TR	Özü erkek, yiğit olan.
@@ -1924,7 +1924,7 @@ Eşlem			E		OZEL	özel, ad		AR	En selamatli, en emin, en doğru yol.
 Eşraf			E		OZEL	özel, ad		AR	Şerefli, saygın kimseler. 
 Eşref			E		OZEL	özel, ad		AR	Daha şerefli, çok onurlu, çok aziz, pek muhterem. Eşrefi
 Etem			E		OZEL	özel, ad		AR	Daha tam daha noksansız, mükemmel. -(bkz. Ekmel).
-Ethem			E		OZEL	özel, ad		AR	"Karayağız at. -Türk dil kuralı açısından ""d/t"" olarak kullanılır. İbrahim Edhem"
+Ethem			E		OZEL	özel, ad		AR	Karayağız at. -Türk dil kuralı açısından "d/t" olarak kullanılır. İbrahim Edhem
 Evcan			E		OZEL	özel, ad		TR	Evdeki insan evcimen.
 Evcimen			E		OZEL	özel, ad		TR	Evine, ailesine bağlı. Ev işlerinde becerikli.
 Evdegül			K		OZEL	özel, ad		TR	Güzel kız.
@@ -1936,7 +1936,7 @@ Evliya			E		OZEL	özel, ad		AR	Veliler.
 Evnur			K		OZEL	özel, ad		TR	Güzel kız.
 Evra			K		OZEL	özel, ad		PE	Hisar.
 Evren			E		OZEL	özel, ad		TR	Büyük yılan, ejderha. 
-Evrensel			E		OZEL	özel, ad		TR	"Alemşümül karşılığı olarak.Fransızca ""Universal'e benzetilerek kullanılır."
+Evrensel			E		OZEL	özel, ad		TR	Alemşümül karşılığı olarak.Fransızca "Universal'e benzetilerek kullanılır.
 Evvah			E		OZEL	özel, ad		AR	Çok ah eden. 
 Evvel			U		OZEL	özel, ad		AR	İlk başlangıç, ilkin. 
 Eygül			U		OZEL	özel, ad		TR	İyi.Erkek ve kadın adı olarak kullanılır.
@@ -1965,7 +1965,7 @@ Fahime			K		OZEL	özel, ad		AR	Akıllı, anlayışlı, kavrayışlı.
 Fahir			E		OZEL	özel, ad		AR	Övünülecek, iftihar edilecek. 
 Fahire			K		OZEL	özel, ad		AR	Övünülecek, iftihar edilecek. 
 Fahreddin			E		OZEL	özel, ad		AR	Dinin övdüğü, diniyle övünen. Dinin seçkini. Fahreddin Razi
-Fahri			E		OZEL	özel, ad		AR	"Bir karşılık beklemeden yalnızca şeref ve iftihar vesilesi olarak kabul edilen iş.(İş, sıfat, unvan). Fahri aza, fahri üye; maaşsız, ücretsiz veya müessese için gurur kaynağı olan kişi."
+Fahri			E		OZEL	özel, ad		AR	Bir karşılık beklemeden yalnızca şeref ve iftihar vesilesi olarak kabul edilen iş.(İş, sıfat, unvan). Fahri aza, fahri üye; maaşsız, ücretsiz veya müessese için gurur kaynağı olan kişi.
 Fahriyye			K		OZEL	özel, ad		AR	(bkz. Fahri). İslami edebiyatla, şairlerin kendi vasıflarından, faziletlerinden ve şairlik kuvvetlerinden bahsettikleri şiirler. Daha çok kasidelerin bir bölümü bu şekildedir.
 Fahrunnisa			K		OZEL	özel, ad		AR	(bkz. Fahir).Çok övünen, şanlı, şerefli, onurlu kadın.
 Faik			E		OZEL	özel, ad		AR	Üstün, seçkin, yüksek, ileri. 
@@ -2030,7 +2030,7 @@ Ferhal			K		OZEL	özel, ad		PE	Kıvırcık ve dolaşık olmayan uzun saç.
 Ferhan			U		OZEL	özel, ad		AR	Sevinçli, mesut. 
 Ferhat			E		OZEL	özel, ad		AR	Sevinç, neşe.(bkz. Ferhad).
 Ferhunde			K		OZEL	özel, ad		PE	Mübarek, mesut, meymenetli, kutlu, uğurlu.
-Ferid			E		OZEL	özel, ad		AR	"Tek, eşsiz, eşi olmayan, kıyas kabul etmez, ölçüsüz, üstün.Türk dil kurallarına göre ""d/t"" olarak kullanılır."
+Ferid			E		OZEL	özel, ad		AR	Tek, eşsiz, eşi olmayan, kıyas kabul etmez, ölçüsüz, üstün.Türk dil kurallarına göre "d/t" olarak kullanılır.
 Feride			K		OZEL	özel, ad		AR	(bkz. Ferid). -Kendi reyiyle hareket eden, kibirli, gururlu kimse.
 Feridun			E		OZEL	özel, ad		PE	Sekizinci gök. 
 Feridüddin			E		OZEL	özel, ad		AR	Dinin feridi, tek, eşsiz, kıyas kabul etmez kimse.
@@ -2091,15 +2091,15 @@ Ganim			E		OZEL	özel, ad		AR	Ganimet alan.
 Ganime			K		OZEL	özel, ad		AR	Ganimet alan.
 Ganimet			K		OZEL	özel, ad		AR	Kafirlerle yapılan savaş sonucu ele geçirilen mal, para, silah gibi metalar. İslami usullere göre tasnif edilip, beytülmale, fakirlere, yoksullara ve mücahidlere dağıtılır.
 Ganiye			K		OZEL	özel, ad		AR	Zengin kadın. Zengin kız. 
-Garib			E		OZEL	özel, ad		AR	"Yabancı, acaib. Kimsesiz, memleketinden uzak. Türk dil kuralları açısından ""b/p"" olarak kullanılır."
-Garibe			K		OZEL	özel, ad		AR	"Yabancı, acaib. Kimsesiz, memleketinden uzak. Türk dil kuralları açısından ""b/p"" olarak kullanılır."
+Garib			E		OZEL	özel, ad		AR	Yabancı, acaib. Kimsesiz, memleketinden uzak. Türk dil kuralları açısından "b/p" olarak kullanılır.
+Garibe			K		OZEL	özel, ad		AR	Yabancı, acaib. Kimsesiz, memleketinden uzak. Türk dil kuralları açısından "b/p" olarak kullanılır.
 Gavs			E		OZEL	özel, ad		AR	Suya dalma, dalgıçlık. 
 Gaye			K		OZEL	özel, ad		AR	Maksat, meram. 
 Gayret			U		OZEL	özel, ad		AR	.Çalışma, çabalama. 
 Gaza			E		OZEL	özel, ad		AR	Din uğruna savaş.
 Gazal			E		OZEL	özel, ad		AR	Ceylan. 
 Gazale			K		OZEL	özel, ad		AR	Dişi geyik.
-Gazali			E		OZEL	özel, ad		AR	"İslam aleminin büyük mütefekkirlerinden.Babası ""Gazzal-iplikçi"" sanatçısı olduğu için kendisine Gazali adı verilmiştir."
+Gazali			E		OZEL	özel, ad		AR	İslam aleminin büyük mütefekkirlerinden.Babası "Gazzal-iplikçi" sanatçısı olduğu için kendisine Gazali adı verilmiştir.
 Gazanfer			E		OZEL	özel, ad		AR	İri arslan, şir. 
 Gazel			E		OZEL	özel, ad		AR	Latif. 
 Gazi			E		OZEL	özel, ad		AR	Allah yolunda savaşan kişi. 
@@ -2107,7 +2107,7 @@ Gazir			E		OZEL	özel, ad		AR	Yumuşak, mülayim. Tatlı, nazik, uysal.
 Gazire			K		OZEL	özel, ad		AR	Yumuşak, mülayim. Tatlı, nazik, uysal.
 Gaziyüddin			E		OZEL	özel, ad		AR	Din uğrunda yara alan, yaralanan. Savaşan.
 Gazzal			E		OZEL	özel, ad		AR	İplikçi.
-Gazzali			E		OZEL	özel, ad		AR	"İslam aleminin büyük mütefekkirlerinden.Babası ""Gazzal-iplikçi"" sanatçısı olduğu için kendisine Gazali adı verilmiştir."
+Gazzali			E		OZEL	özel, ad		AR	İslam aleminin büyük mütefekkirlerinden.Babası "Gazzal-iplikçi" sanatçısı olduğu için kendisine Gazali adı verilmiştir.
 Gelincik			K		OZEL	özel, ad		TR	Yazın kırlarda yetişen kırmızı ve büyük çiçekli bitki. 
 Gencal			E		OZEL	özel, ad		TR	Genç kal. -(bkz. Genç).
 Gencay			E		OZEL	özel, ad		TR	Ayın bir haftalık oluncaya kadarki şekli, hilal.
@@ -2261,7 +2261,7 @@ Hacir			E		OZEL	özel, ad		AR	Hicret eden, bir başka yere geçen.
 Haddas			U		OZEL	özel, ad		AR	. Çabuk kavrayan, anlayışlı, kavrayışlı. Erkek ve kadın adı olarak kullanılır.
 Hâdi			E		OZEL	özel, ad		AR	Yenilene yardım eden, yardımcı. 
 Hadic			E		OZEL	özel, ad		AR	Erken doğan oğlan çocuğu.
-Hadice			K		OZEL	özel, ad		AR	"Vakitsiz, erken doğan kız çocuğu.Türk dil kuralı açısından ""d/t"" olarak kullanılır. Hadice"
+Hadice			K		OZEL	özel, ad		AR	Vakitsiz, erken doğan kız çocuğu.Türk dil kuralı açısından "d/t" olarak kullanılır. Hadice
 Hadid			E		OZEL	özel, ad		AR	Keskin. 
 Hadim			E		OZEL	özel, ad		AR	Hizmetkar, yardım eden. Hadim-i Harameyn
 Hâdiye			K		OZEL	özel, ad		AR	Yenilene yardım eden, yardımcı. 
@@ -2311,7 +2311,7 @@ Hamdiye			K		OZEL	özel, ad		AR	Allah'ı övmek.
 Hamdullah			E		OZEL	özel, ad		AR	Allah'ın övgüsü.
 Hami			E		OZEL	özel, ad		AR	Himaye eden, koruyan, koruyucu, sahip çıkan, gözeten.
 Hâmid			E		OZEL	özel, ad		AR	Koru sönmediği halde alevi sönen ateş. 
-Hamid			E		OZEL	özel, ad		AR	"Övülmeye değer.Allah'ın isimlerinden(bkz. Abdülhamid).Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Hamid			E		OZEL	özel, ad		AR	Övülmeye değer.Allah'ın isimlerinden(bkz. Abdülhamid).Türk dil kuralına göre "d/t" olarak kullanılır.
 Hamide			K		OZEL	özel, ad		PE	Koru sönmediği halde alevi sönen ateş. 
 Hamil			U		OZEL	özel, ad		AR	.Yüklü. Gebe. 
 Hamiye			K		OZEL	özel, ad		AR	Himaye eden, koruyan korucu. 
@@ -2330,7 +2330,7 @@ Hanefî			E		OZEL	özel, ad		AR	İmamdı Azam Ebu Hanife'nin mezhebinden olan. H
 Hanım			K		OZEL	özel, ad		TR	Kadınlar için kullanılan saygı sözü. 
 Hanif			E		OZEL	özel, ad		AR	l. Tek Allah'a, Allah'ın birliğine inanan. 
 Hanife			K		OZEL	özel, ad		AR	l. Tek Allah'a, Allah'ın birliğine inanan. 
-Hannan			U		OZEL	özel, ad		AR	"Çok acıyan, çok merhametli. Allah'ın isimlerinden ""abd"" takısı alarak isim yapılır. Abdülhannan."
+Hannan			U		OZEL	özel, ad		AR	Çok acıyan, çok merhametli. Allah'ın isimlerinden "abd" takısı alarak isim yapılır. Abdülhannan.
 Hansa			K		OZEL	özel, ad		AR	Arapların en büyük ünlü hanım şairi. Müslüman olmuştur.
 Hansoy			E		OZEL	özel, ad		TR	(Han sülalesine mensup.
 Hanzade			K		OZEL	özel, ad		PE	Hükümdar çocuğu.
@@ -2369,14 +2369,14 @@ Hasret			K		OZEL	özel, ad		AR	Ele geçirilemeyen veya elden kaçırılan bir ni
 Haşim			E		OZEL	özel, ad		AR	Haşmetli, gösterişli, muhteşem. 
 Haşimî			E		OZEL	özel, ad		AR	Haşime mensup, Haşimilerden olan.
 Haşmeddin			E		OZEL	özel, ad		AR	Dinin büyüklüğü, ihtişamı.
-Haşmet			E		OZEL	özel, ad		AR	"İhtişam, gösterişlilik, heybet, büyüklük.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Haşmet			E		OZEL	özel, ad		AR	İhtişam, gösterişlilik, heybet, büyüklük.Türk dil kuralına göre "d/t" olarak kullanılır.
 Hatem			E		OZEL	özel, ad		AR	Mühür, üstü mühürlü yüzük. 
 Hatır			E		OZEL	özel, ad		AR	Şan ve şeref sahibi. 
 Hatıra			K		OZEL	özel, ad		AR	Hatıra gelen, hatırda kalan şey, andaç.
 Hatırnevaz			K		OZEL	özel, ad		AF	Gönlü okşayan, hatırnaz.
 Hatırsaz			E		OZEL	özel, ad		AF	Gönül yapan, hoşnut eden.
 Hatib			E		OZEL	özel, ad		AR	Hitab eden, söz söyleyen. 
-Hatice			K		OZEL	özel, ad		AR	"Erken doğan kız çocuğu. Hz. Haticetü'l-Kübra; Hz. Peygamber'in ilk eşi ve 6 çocuğunun annesi. Ümmü'l-Mü'minin."
+Hatice			K		OZEL	özel, ad		AR	Erken doğan kız çocuğu. Hz. Haticetü'l-Kübra; Hz. Peygamber'in ilk eşi ve 6 çocuğunun annesi. Ümmü'l-Mü'minin.
 Hâtif			E		OZEL	özel, ad		AR	Kuvvetli, sert ve tiz bir sesle tebliğ veya davet eden kimse. 
 Hâtife			K		OZEL	özel, ad		AR	Kuvvetli, sert ve tiz bir sesle tebliğ veya davet eden kimse. 
 Hatim			E		OZEL	özel, ad		AR	Sona erdiren, bitiren. 
@@ -2399,7 +2399,7 @@ Hayme			K		OZEL	özel, ad		AR	Çadır.
 Hayr			E		OZEL	özel, ad		AR	İyi, faydalı, hayırlı, yarar. Hayru'l-Vera
 Hayran			E		OZEL	özel, ad		AR	Şaşmış, şaşa kalmış, şaşırmış. 
 Hayrat			E		OZEL	özel, ad		AR	Sevap kazanmak için yapılan hayırlı işler, iyilikler. 
-Hayreddin			E		OZEL	özel, ad		AR	"Dinin hayırlı eylediği mübarek kıldığı insan. -Türk dil kuralları açısından ""d/t"" olarak kullanılır."
+Hayreddin			E		OZEL	özel, ad		AR	Dinin hayırlı eylediği mübarek kıldığı insan. -Türk dil kuralları açısından "d/t" olarak kullanılır.
 Hayret			K		OZEL	özel, ad		AR	Şaşma, şaşırma, şaşakalmış, ne yapacağını bilmeme.
 Hayri			E		OZEL	özel, ad		AR	Hayırla, iyilikle ilgili, uğur ve kutluluğa ait.
 Hayriye			K		OZEL	özel, ad		AR	Hayırla, iyilikle ilgili, uğur ve kutluluğa ait.
@@ -2461,7 +2461,7 @@ Hidayeddin			E		OZEL	özel, ad		AR	Dinin gösterdiği doğru yol.
 Hidayet			U		OZEL	özel, ad		AR	.Hak yoluna doğru yola girme. 
 Hidiv			E		OZEL	özel, ad		AR	İmtiyazlı, Mısır valisi veya bu valinin ünvanı.
 Hikem			E		OZEL	özel, ad		AR	Hikmetler.
-Hikmeddin			E		OZEL	özel, ad		AR	"Dinin hikmeti.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Hikmeddin			E		OZEL	özel, ad		AR	Dinin hikmeti.Türk dil kuralına göre "d/t" olarak kullanılır.
 Hikmet			U		OZEL	özel, ad		AR	.Hakimlik, feylesofluk. 
 Hikmetullah			E		OZEL	özel, ad		AR	Ancak Allah'ın bileceği iş. 
 Hilâ			E		OZEL	özel, ad		AR	Hükümdarın taltif etmek istediği kimseye verdiği kıymetli elbise. Hil'at.
@@ -2502,7 +2502,7 @@ Huri			K		OZEL	özel, ad		AR	Cennet kızı.
 Huriser			K		OZEL	özel, ad		AF	Cennet kızlarının başı, hurilerin başı.
 Huriye			K		OZEL	özel, ad		AR	Coşkunluk hallerinde hurilerle buluştuklarına inanan bir tarikat.
 Hurrem			K		OZEL	özel, ad		PE	Şen, sevinçli, güleryüzlü, gönülaçan, taze, hoş. 
-Hurşid			E		OZEL	özel, ad		PE	"Güneş, aftab, mihr, şems.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Hurşid			E		OZEL	özel, ad		PE	Güneş, aftab, mihr, şems.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Husrev			E		OZEL	özel, ad		AR	Hükümdar, padişah.
 Huzur			E		OZEL	özel, ad		AR	Baş dinçliği, gönül rahatlığı, dirlik, erinç.
 Hüccet			E		OZEL	özel, ad		AR	Delil.
@@ -2635,7 +2635,7 @@ Itri			E		OZEL	özel, ad		AR	Itrî(Buharizâde Mustafa Efendi). Türk besteci, h
 İksir			U		OZEL	özel, ad		AR	.Ortaçağ kimyacılarının olağanüstü etkili güçte varsaydıkları cisim. 
 İktidaullah			E		OZEL	özel, ad		AR	Allah'a tabi olma, uyma.
 İlbaşı			E		OZEL	özel, ad		TR	Selçuklular'da köy yöneticisi.
-İlbey			E		OZEL	özel, ad		TR	"Bir müddet ""vali"" karşılığında resmen kullanılan uydurma kelime."
+İlbey			E		OZEL	özel, ad		TR	Bir müddet "vali" karşılığında resmen kullanılan uydurma kelime.
 İlbeyi			E		OZEL	özel, ad		TR	Eski Türkler'de ve Osmanlılarda bazı oymak beyleri ve ileri gelenler için kullanılan ünvan.
 İlbilge			E		OZEL	özel, ad		TR	Bir ülkenin tanınmış saygın, bilgin kişisi.
 İlcan			E		OZEL	özel, ad		TR	Ülkenin canı, sevdiği kişisi.
@@ -2700,10 +2700,10 @@ Itri			E		OZEL	özel, ad		AR	Itrî(Buharizâde Mustafa Efendi). Türk besteci, h
 İltikaullah			U		OZEL	özel, ad		AR	Allah'a kavuşma, hidayete erme.
 İlyas			E		OZEL	özel, ad		IB	Yağmurlara hükmeden İsrail peygamberi. Kur'an-ı Kerim'de 3 yerde adı geçen peygamberin ismidir. Hızır(a.s
 İmad			E		OZEL	özel, ad		AR	Direk, kolon.
-İmadeddin			U		OZEL	özel, ad		AR	".Dinin direği. Daha çok unvan olarak kullanılır. -Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+İmadeddin			U		OZEL	özel, ad		AR	.Dinin direği. Daha çok unvan olarak kullanılır. -Türk dil kuralı açısından "d/t" olarak kullanılır.
 İmam			E		OZEL	özel, ad		AR	Namazda kendisine uyulan kimse. 
 İmâr			E		OZEL	özel, ad		AR	Şenlendirme, bayındırma.
-İmareddin			E		OZEL	özel, ad		AR	"Dini alanda yenilik yapan, dinin yönlendirdiği kimse.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+İmareddin			E		OZEL	özel, ad		AR	Dini alanda yenilik yapan, dinin yönlendirdiği kimse.Türk dil kuralı açısından "d/t" olarak kullanılır.
 İmdâd			E		OZEL	özel, ad		AR	Yardım eden. 
 İmer			U		OZEL	özel, ad		TR	Çok zengin, varlıklı. -Erkek ve kadın adı olarak kullanılır.
 İmge			U		OZEL	özel, ad		TR	Hayal karşılığı olarak kullanılan ve Fransızca İmaj kelimesine benzetilerek uydurulan kelime.
@@ -2766,7 +2766,7 @@ Itri			E		OZEL	özel, ad		AR	Itrî(Buharizâde Mustafa Efendi). Türk besteci, h
 İsase			K		OZEL	özel, ad		AR	Göz ucuyla bakma. 
 İsfendiyar			E		OZEL	özel, ad		PE	İran mitolojisinde adı geçen hükümdarın adı.
 İsfid			U		OZEL	özel, ad		PE	Ak, beyaz renkli. 
-İshak			E		OZEL	özel, ad		IB	"İbranice ""Gülme"" anlamına geldiği söylenir. "
+İshak			E		OZEL	özel, ad		IB	İbranice "Gülme" anlamına geldiği söylenir. 
 İskender			E		OZEL	özel, ad		Er.	M.Ö. 356-323 yıllan arasında yaşayan ve 20 yaşında hükümdar olan Makedonya kralı, Aristo'dan ders almıştır. Yunanistan, İran, Anadolu, Suriye, Mısır, Hindistan'ı istila eden hükümdara, Büyük İskender lakabı takılmıştır. 33 yaşında ölmüştür.
 İslâm			E		OZEL	özel, ad		AR	Muhammed(s.a.s)'e nazil olan ve kendisi tarafından insanlığa tebliğ edilen din, Allah'ın en son dini. 
 İsmâh			E		OZEL	özel, ad		AR	Semahatli, cömert kılma. 
@@ -2825,7 +2825,7 @@ Kadir			E		OZEL	özel, ad		AR	Değer, kıymet, itibar.
 Kadirbillah			E		OZEL	özel, ad		AR	Allah'la güçlenen. Gücünü Allah'tan alan. 
 Kadire			K		OZEL	özel, ad		AR	Güçlü kuvvetli.
 Kadirşah			E		OZEL	özel, ad		AF	Güçlü, kuvvetli hükümdar, padişah. 
-Kadreddin			E		OZEL	özel, ad		AR	"Dinin kudreti, gücü.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Kadreddin			E		OZEL	özel, ad		AR	Dinin kudreti, gücü.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Kadri			E		OZEL	özel, ad		AR	Değer, itibar. 
 Kadrican			E		OZEL	özel, ad		AF	Değerli, itibarlı, can, ruh.Kadri ve Can isimlerinden meydana gelen birleşik isim.
 Kadrihan			E		OZEL	özel, ad		AT	Değerli hükümdar, yönetici.
@@ -3270,8 +3270,8 @@ Makbule			K		OZEL	özel, ad		AR	Kabul olunmuş, alınmış, alınan. Beğenilen,
 Makrun			U		OZEL	özel, ad		AR	Ulaşmış, kavuşmuş, yakın.Erkek ve kadın adı olarak kullanılır.
 Maksud			E		OZEL	özel, ad		AR	Kasdolunan, istenilen şey, istek. Maksad, niyet, murat. 
 Maksude			K		OZEL	özel, ad		AR	Kasdolunan, istenilen şey, istek. Maksad, niyet, murat. 
-Maksum			E		OZEL	özel, ad		AR	"Ayrılmış, bölünmüş. Kısmet. Rızk-ı Maksum; Allah tarafından takdir edilmiş rızık."
-Maksume			K		OZEL	özel, ad		AR	"Ayrılmış, bölünmüş. Kısmet. Rızk-ı Maksum; Allah tarafından takdir edilmiş rızık."
+Maksum			E		OZEL	özel, ad		AR	Ayrılmış, bölünmüş. Kısmet. Rızk-ı Maksum; Allah tarafından takdir edilmiş rızık.
+Maksume			K		OZEL	özel, ad		AR	Ayrılmış, bölünmüş. Kısmet. Rızk-ı Maksum; Allah tarafından takdir edilmiş rızık.
 Maksur			E		OZEL	özel, ad		AR	Kasrolunmuş, kısaltılmış, kasılmış. 
 Maksure			K		OZEL	özel, ad		AR	Kasrolunmuş, kısaltılmış, kasılmış. 
 Makul			E		OZEL	özel, ad		AR	Akla uygun bulunan. Akıl ile bilinir, akılla kanıtlanan. Oldukça akıllı, sözü akla yakın.
@@ -3320,11 +3320,11 @@ Mebrure			K		OZEL	özel, ad		AR	Beğenilmiş, hayırlı, yararlı.
 Mebsude			K		OZEL	özel, ad		AR	Açılmış, yayılmış. Uzun uzadıya anlatılan.
 Mebsut			E		OZEL	özel, ad		AR	Açılmış, yayılmış. Uzun uzadıya anlatılan.
 Mebşure			K		OZEL	özel, ad		AR	Yüzü beyaz, gösterişli güzel kadın.
-Mecdi			E		OZEL	özel, ad		AR	"Çok ulu, yüce, şan ve şeref sahibi. Allah'ın sıfatlarından. Türk dil kuralı açısından ""d/t"" olarak kullanılır. Abdülmecid, Allah'ın(Mecid'in) kulu.."
+Mecdi			E		OZEL	özel, ad		AR	Çok ulu, yüce, şan ve şeref sahibi. Allah'ın sıfatlarından. Türk dil kuralı açısından "d/t" olarak kullanılır. Abdülmecid, Allah'ın(Mecid'in) kulu..
 Mecdide			K		OZEL	özel, ad		AR	Rızkı bol, nasibi açık, bahtiyar.
 Mecerre			U		OZEL	özel, ad		AR	Samanyolu. 
-Mecid			E		OZEL	özel, ad		AR	"Çok ulu, yüce, şan ve şeref sahibi. Allah'ın sıfatlarından. Türk dil kuralı açısından ""d/t"" olarak kullanılır. Abdülmecid, Allah'ın(Mecid'in) kulu.."
-Meciddin			E		OZEL	özel, ad		AR	"Dinin ululuğu, büyüklüğü.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Mecid			E		OZEL	özel, ad		AR	Çok ulu, yüce, şan ve şeref sahibi. Allah'ın sıfatlarından. Türk dil kuralı açısından "d/t" olarak kullanılır. Abdülmecid, Allah'ın(Mecid'in) kulu..
+Meciddin			E		OZEL	özel, ad		AR	Dinin ululuğu, büyüklüğü.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Mecide			K		OZEL	özel, ad		AR	Büyük ulu. Şan ve şeref sahibi.
 Mecnun			E		OZEL	özel, ad		AR	Cin tutmuş, cinlenmiş. 
 Mecra			U		OZEL	özel, ad		AR	.Suyun aktığı yatak, su yolu. Bir işin gidiş yolu. Bedendeki ahlatın alıştığı yol. Erkek ve kadın adı olarak kullanılır.
@@ -3442,8 +3442,8 @@ Meserret			K		OZEL	özel, ad		AR	Sevinçler. Şenlik, sevinç.
 Mesih			E		OZEL	özel, ad		AR	Üzerine yağ sürülmüş. 
 Mesrur			U		OZEL	özel, ad		AR	Sevinçli, memnun, sevinmiş meramına ermiş.Erkek ve kadın adı olarak kullanılır.
 Mesrure			K		OZEL	özel, ad		AR	Sevinçli, memnun, sevinmiş meramına ermiş.Erkek ve kadın adı olarak kullanılır.
-Mesud			E		OZEL	özel, ad		AR	"Saadetli, bahtlı, bahtiyar, kutlu.Türk dil kurallarına göre ""d/t"" olarak kullanılır."
-Mesude			K		OZEL	özel, ad		AR	"Saadetli, bahtlı, bahtiyar, kutlu.Türk dil kurallarına göre ""d/t"" olarak kullanılır."
+Mesud			E		OZEL	özel, ad		AR	Saadetli, bahtlı, bahtiyar, kutlu.Türk dil kurallarına göre "d/t" olarak kullanılır.
+Mesude			K		OZEL	özel, ad		AR	Saadetli, bahtlı, bahtiyar, kutlu.Türk dil kurallarına göre "d/t" olarak kullanılır.
 Meşhed			E		OZEL	özel, ad		AR	Bir adamın şehit olduğu veya bir şehidin gömüldüğü yer. İran'da ziyaretgah olan meşhur şehir. Hz. Peygamber(s.a.s)'in isimlerinden.
 Meşhur			E		OZEL	özel, ad		AR	Ünlü, argın, tanınmış.
 Meşhure			K		OZEL	özel, ad		AR	Ünlü, argın, tanınmış.
@@ -3455,8 +3455,8 @@ Methiye			K		OZEL	özel, ad		AR	Birini övmek maksadıyla yazılmış eser, kaid
 Metin			E		OZEL	özel, ad		AR	Metanetli, sağlam, dayanıklı. 
 Metiner			E		OZEL	özel, ad		TR	Metanetli, sağlam, dayanıklı. 
 Meva			K		OZEL	özel, ad		AR	Sığınılacak yer, yurt, mesken.
-Mevcud			E		OZEL	özel, ad		AR	"Var olan, bulunan. Hazır olan, hazır bulunan. -Türk dil kuralı açısından ""d/t"" olarak kullanılır."
-Mevcude			K		OZEL	özel, ad		AR	"Var olan, bulunan. Hazır olan, hazır bulunan. -Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Mevcud			E		OZEL	özel, ad		AR	Var olan, bulunan. Hazır olan, hazır bulunan. -Türk dil kuralı açısından "d/t" olarak kullanılır.
+Mevcude			K		OZEL	özel, ad		AR	Var olan, bulunan. Hazır olan, hazır bulunan. -Türk dil kuralı açısından "d/t" olarak kullanılır.
 Mevdut			E		OZEL	özel, ad		AR	Sevilmiş, sevilen. Gaznelilerin bir hükümdarı.
 Meveddet			K		OZEL	özel, ad		AR	Sevgi, muhabbet. Dostluk.
 Mevhibe			K		OZEL	özel, ad		AR	Vergi, ihsan, bağış.
@@ -3471,9 +3471,9 @@ Meymun			E		OZEL	özel, ad		AR	Uğurlu, bereketli, kutlu.
 Meymune			K		OZEL	özel, ad		AR	Uğurlu, bereketli, kutlu.
 Meysur			E		OZEL	özel, ad		AR	Kolaylanmış, kolaylaştırılmış şeyler.
 Meysure			K		OZEL	özel, ad		AR	Kolaylanmış, kolaylaştırılmış şeyler.
-Mezid			E		OZEL	özel, ad		AR	"Artmış, artırıl­mış, büyümüş.Türk dil kuralı açı­sından ""d/t"" olarak kullanılır."
+Mezid			E		OZEL	özel, ad		AR	Artmış, artırıl­mış, büyümüş.Türk dil kuralı açı­sından "d/t" olarak kullanılır.
 Meziyet			K		OZEL	özel, ad		AR	Bir kişiyi başkalarından ayıran ve yücelten va­sıf, üstünlük, değerlilik yüksek karak­ter.
-Midhat			E		OZEL	özel, ad		AR	"Övme.Türk dil kuralı açısından ""d/t"" değişmesiyle kullanılır."
+Midhat			E		OZEL	özel, ad		AR	Övme.Türk dil kuralı açısından "d/t" değişmesiyle kullanılır.
 Miftah			E		OZEL	özel, ad		AR	Anahtar. 
 Mihin			E		OZEL	özel, ad		PE	Büyük, ulu.
 Mihine			K		OZEL	özel, ad		PE	Büyük, ulu.
@@ -3532,7 +3532,7 @@ Muhbir			E		OZEL	özel, ad		AR	Haber veren, haberci.
 Muhdin			E		OZEL	özel, ad		AR	(bkz. Hz. Peygamberin isimlerinden).
 Muhib			E		OZEL	özel, ad		AR	Seven, sevgi besleyen, dost. 
 Muhibe			K		OZEL	özel, ad		AR	Seven, sevgi besleyen, dost. 
-Muhiddin			E		OZEL	özel, ad		AR	"Dini saran, çevreleyen.Türk dil kuralları açısından ""d/t"" olarak kullanılır."
+Muhiddin			E		OZEL	özel, ad		AR	Dini saran, çevreleyen.Türk dil kuralları açısından "d/t" olarak kullanılır.
 Muhlis			E		OZEL	özel, ad		AR	Halis, katıksız. Dostluğu, samimiliği ve her hali içten gönülden olan.
 Muhlise			K		OZEL	özel, ad		AR	Halis, katıksız. Dostluğu, samimiliği ve her hali içten gönülden olan.
 Muhsin			E		OZEL	özel, ad		AR	İhsan eden, iyilikte, bağışta bulunan.
@@ -3560,12 +3560,12 @@ Mungar			E		OZEL	özel, ad		TR	Eli açık, cömert.
 Munis			E		OZEL	özel, ad		AR	Ünsiyetli alışılan, yadırganmaz, alışılmış. Cana yakın sevimli. İnsandan kaçmayan.
 Munise			K		OZEL	özel, ad		AR	Ünsiyetli alışılan, yadırganmaz, alışılmış. Cana yakın sevimli. İnsandan kaçmayan.
 Munteka			E		OZEL	özel, ad		AR	(bkz. Hz. Peygamberin isimlerinden).
-Murad			E		OZEL	özel, ad		AR	"Arzu, istek, dilek. Maksat meram. Türk dil kuralı açısından ""d/t"" olarak kullanılır."
-Muradiye			K		OZEL	özel, ad		AR	"Arzu, istek, dilek. Maksat meram. Türk dil kuralı açısından ""d/t"" olarak kullanılır."
-Murathan			E		OZEL	özel, ad		AR	"Arzu, istek, dilek. Maksat meram. Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Murad			E		OZEL	özel, ad		AR	Arzu, istek, dilek. Maksat meram. Türk dil kuralı açısından "d/t" olarak kullanılır.
+Muradiye			K		OZEL	özel, ad		AR	Arzu, istek, dilek. Maksat meram. Türk dil kuralı açısından "d/t" olarak kullanılır.
+Murathan			E		OZEL	özel, ad		AR	Arzu, istek, dilek. Maksat meram. Türk dil kuralı açısından "d/t" olarak kullanılır.
 Murtaza			E		OZEL	özel, ad		AR	İrtiza edilmiş, beğenilmiş seçilmiş. Güzide. 
 Mus'ab			E		OZEL	özel, ad		AR	Zor. Güçlü, dayanıklı. Ashabdan ünlü şehid Mus'ab b. Umeyr'in adıdır.
-Musa			E		OZEL	özel, ad		AR	"Vasiyet edilmiş. Vasi nasbolunmuş, vasiyeti yerine getirmekle vazifelendirilmiş. Tavsiye olunmuş. Sina yarımadısında, Eymen vadisinde Tur dağında Allah'ın lütfuna mazhar olarak, kavmine ""on emir"" adı altında Allah'ın şeriatını bildiren peygamber. Büyük kitaplardan Tevrat ona indirilmiştir."
+Musa			E		OZEL	özel, ad		AR	Vasiyet edilmiş. Vasi nasbolunmuş, vasiyeti yerine getirmekle vazifelendirilmiş. Tavsiye olunmuş. Sina yarımadısında, Eymen vadisinde Tur dağında Allah'ın lütfuna mazhar olarak, kavmine "on emir" adı altında Allah'ın şeriatını bildiren peygamber. Büyük kitaplardan Tevrat ona indirilmiştir.
 Musaddık			E		OZEL	özel, ad		AR	Gerçekliğini ve geçerliliğini resmi yazı ile bildiren. Tasdik eden.
 Muslih			E		OZEL	özel, ad		AR	İslah eden, iyileştiren, düzeltici, arabulucu. Barıştıran. Bu kelime Kur'an'da birkaç defa zikredilmiştir.
 Muslihiddin			E		OZEL	özel, ad		AR	Dinin salahı için çalışan.
@@ -3632,7 +3632,7 @@ Müferrec			E		OZEL	özel, ad		AR	Meydanı olan, geniş.
 Müferrih			U		OZEL	özel, ad		AR	.Ferahlık veren, iç açan.Erkek ve kadın adı olarak kullanılır.
 Müfid			E		OZEL	özel, ad		AR	İfade eden, anlatan, manalı. 
 Müfide			K		OZEL	özel, ad		AR	İfade eden, anlatan, manalı. 
-Müfiz			E		OZEL	özel, ad		AR	"Feyizlendiren, feyiz veren. Allah'ın isimlerinden. -""Abd"" takısı alarak kullanılır. Abdulmufiz."
+Müfiz			E		OZEL	özel, ad		AR	Feyizlendiren, feyiz veren. Allah'ın isimlerinden. -"Abd" takısı alarak kullanılır. Abdulmufiz.
 Müftehir			E		OZEL	özel, ad		AR	İftihar eden, övünen. Şanlı, şerefli. 
 Müge			K		OZEL	özel, ad		FR	İnci çiçeği.
 Müheyya			K		OZEL	özel, ad		AR	Hazır.
@@ -3701,7 +3701,7 @@ Müveddet			K		OZEL	özel, ad		AR	Sevgi, muhabbet, dostluk.
 Müvellâ			U		OZEL	özel, ad		AR	Bir davanın veya anlaşmazlığın halli, bir işin araştırılması konusuna şeriatça vazifelendirilmiş şahıs.Erkek ve kadın adı olarak kullanılır.
 Müyesser			K		OZEL	özel, ad		AR	Kolayı bulunup yapılan, kolay gelen, kolaylıkla olan.
 Müzahir			E		OZEL	özel, ad		AR	Zahir olan, arka çıkan, yardım eden, koruyan.
-Müzdâd			E		OZEL	özel, ad		AR	"Ziyadeleşmiş, artmış, çoğalmış.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Müzdâd			E		OZEL	özel, ad		AR	Ziyadeleşmiş, artmış, çoğalmış.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Müzehher			K		OZEL	özel, ad		AR	Çiçekli, çiçeklenmiş, çiçek açmış. -(bkz. Zühre).
 Müzekkir			E		OZEL	özel, ad		AR	Zikreden hatıra getiren anan. Zikreden ibadet eden.Hz. Peygamberin isimlerinden.
 Müzemmil			E		OZEL	özel, ad		AR	Bir şeye sarılmış sargılanmış. 
@@ -3721,7 +3721,7 @@ Nâdir			E		OZEL	özel, ad		AR	Seyrek, az, ender bulunur.
 Nâdire			K		OZEL	özel, ad		AR	Seyrek, az, ender bulunur.
 Nadiye			K		OZEL	özel, ad		AR	Bağırıp, çağıran, seslenen. 
 Nâferiz			E		OZEL	özel, ad		PE	Göbek düşüren. 
-Nafi			E		OZEL	özel, ad		AR	"Yararlı, kârlı. Şifalı, hayır ve fayda verici şeyler yaratan Allah.Esmaü'l-Hüsna'dandır. ""Abd"" takısı alarak kullanılır."
+Nafi			E		OZEL	özel, ad		AR	Yararlı, kârlı. Şifalı, hayır ve fayda verici şeyler yaratan Allah.Esmaü'l-Hüsna'dandır. "Abd" takısı alarak kullanılır.
 Nâfia			K		OZEL	özel, ad		AR	Bayındırlık işleri.
 Nafih			E		OZEL	özel, ad		AR	Üfleyen, üfleyici.
 Nafile			K		OZEL	özel, ad		AR	Mal, ganimet, ihsan bağış.
@@ -3729,8 +3729,8 @@ Nafiz			E		OZEL	özel, ad		AR	Delen, delip geçen. İçeriye giren, işleyen.
 Nafize			K		OZEL	özel, ad		AR	Delen, delip geçen. İçeriye giren, işleyen. 
 Nâgehan			K		OZEL	özel, ad		PE	Ansızın, birdenbire.
 Nağme			K		OZEL	özel, ad		AR	Ahenk güzel ses.(bkz. Ezgi).
-Nahid			E		OZEL	özel, ad		PE	"Venüs(zühre) gezegeni.ARapça'da) Yeni yetişen kız.Türk dil kuralına göre ""d/t"" olarak kullanılır."
-Nahide			K		OZEL	özel, ad		PE	"Venüs(zühre) gezegeni.ARapça'da) Yeni yetişen kız.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Nahid			E		OZEL	özel, ad		PE	Venüs(zühre) gezegeni.ARapça'da) Yeni yetişen kız.Türk dil kuralına göre "d/t" olarak kullanılır.
+Nahide			K		OZEL	özel, ad		PE	Venüs(zühre) gezegeni.ARapça'da) Yeni yetişen kız.Türk dil kuralına göre "d/t" olarak kullanılır.
 Nahire			K		OZEL	özel, ad		AR	Ayın ilk günü ya da son gecesi.
 Naib			E		OZEL	özel, ad		AR	Vekil, birinin yerine geçen, kadı vekili, Şeriata göre hükmeden hakim. 
 Naibe			K		OZEL	özel, ad		AR	Vekil, birinin yerine geçen.
@@ -3765,11 +3765,11 @@ Narin			K		OZEL	özel, ad		PE	İnce, zarif yapılı, nazik. Zayıf çelimsiz.
 Nariye			K		OZEL	özel, ad		AR	Ateşle ilgili, cin peri.İsim olarak kullanılmaz.
 Nâsıh			E		OZEL	özel, ad		AR	Nasihat eden, öğüt veren.Nasıh-ı Emin
 Nâsıha			K		OZEL	özel, ad		AR	Nasihat eden, öğüt veren.Nasıh-ı Emin
-Nâsır			E		OZEL	özel, ad		AR	"Yardımcı, yardım eden(muin). ""Abd"" takısı alarak kullanılırsa daha iyi olur. Abdünnasır."
-Nasib			E		OZEL	özel, ad		AR	"Pay hisse. Birinin elde ettiği şey. Allah'ın kısmet ettiği şey.Türk dil kuralına göre ""b/p"" olarak kullanılır."
+Nâsır			E		OZEL	özel, ad		AR	Yardımcı, yardım eden(muin). "Abd" takısı alarak kullanılırsa daha iyi olur. Abdünnasır.
+Nasib			E		OZEL	özel, ad		AR	Pay hisse. Birinin elde ettiği şey. Allah'ın kısmet ettiği şey.Türk dil kuralına göre "b/p" olarak kullanılır.
 Nasibe			K		OZEL	özel, ad		AR	Dikili taş. Yollara nişan için dikilen taş.
 Nasr			E		OZEL	özel, ad		AR	Yardım.Üstünlük(zafer).Kur'an-ı Kerim'in 110. suresi. Nasrullah
-Nasruddin			E		OZEL	özel, ad		AR	"(Dine yardımı dokunan.Dilimizde ""Nasreddin"" şeklinde kullanılır."
+Nasruddin			E		OZEL	özel, ad		AR	(Dine yardımı dokunan.Dilimizde "Nasreddin" şeklinde kullanılır.
 Nasrullah			E		OZEL	özel, ad		AR	Allah'ın nusreti, yardımı.
 Nasuh			E		OZEL	özel, ad		AR	Nasihatçı, öğütçü. 
 Nasuhi			E		OZEL	özel, ad		AR	Bozulmaz şekilde tevbe edici.
@@ -3804,7 +3804,7 @@ Nazmiye			K		OZEL	özel, ad		AR	Dizme, tertib etme, sıraya koyma. Sıra, tertip
 Nazra			K		OZEL	özel, ad		AR	Bir tek bakış.
 Nazret			U		OZEL	özel, ad		AR	Tazelik. 
 Neba			U		OZEL	özel, ad		AR	Haber.Erkek ve kadın adı olarak kullanılır.
-Nebahaddin			E		OZEL	özel, ad		AR	"Dinin şanı ve şerefi.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Nebahaddin			E		OZEL	özel, ad		AR	Dinin şanı ve şerefi.Türk dil kuralına göre "d/t" olarak kullanılır.
 Nebâhat			K		OZEL	özel, ad		AR	Şan, şeref, onur. 
 Nebâlet			K		OZEL	özel, ad		AR	Zekilik. 
 Nebi			E		OZEL	özel, ad		AR	Haberci. Peygamber.
@@ -3890,7 +3890,7 @@ Nevbar			K		OZEL	özel, ad		PE	Genç kız.
 Nevbare			K		OZEL	özel, ad		PE	Turfanda yemiş. Taze yeşillik.
 Nevci			E		OZEL	özel, ad		PE	Makam, ahenk ve nasip ile ilgili. Ali Şakir'in lakabı.
 Nevcivan			U		OZEL	özel, ad		PE	Genç, delikanlı.
-Neveda			K		OZEL	özel, ad		PE	"Yeni tavır, yeni eda. ""Nev"" ve ""eda"" kelimelerinden birleşik isim."
+Neveda			K		OZEL	özel, ad		PE	Yeni tavır, yeni eda. "Nev" ve "eda" kelimelerinden birleşik isim.
 Neveser			U		OZEL	özel, ad		PE	.Türk müziğinde birleşik bir makam.Erkek ve kadın adı olarak kullanılır.
 Nevfel			E		OZEL	özel, ad		AR	Deniz.(bkz. Derya). Sahabe isimlerindendir.
 Nevgül			K		OZEL	özel, ad		PE	Yeni açılmış gül.
@@ -3904,7 +3904,7 @@ Nevit			E		OZEL	özel, ad		PE	İyi, sevinçli haber, müjde.
 Nevnihal			K		OZEL	özel, ad		PE	Taze fidan, ağacın taze sürgünü.
 Nevra			K		OZEL	özel, ad		AR	Işıklı olma, parlaklık. 
 Nevred			U		OZEL	özel, ad		PE	.Gezen, dolaşan, yol alan.Erkek ve kadın adı olarak kullanılır.
-Nevreddin			E		OZEL	özel, ad		AR	"Dinin ışığı, aydınlığı.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Nevreddin			E		OZEL	özel, ad		AR	Dinin ışığı, aydınlığı.Türk dil kuralına göre "d/t" olarak kullanılır.
 Nevres			U		OZEL	özel, ad		PE	.Yeni yetişen, yeni biten.Erkek ve kadın adı olarak kullanılır.
 Nevreste			K		OZEL	özel, ad		PE	.Yeni yetişen, yeni biten.
 Nevriye			K		OZEL	özel, ad		AR	Işıkla, parlaklıkla, aydınlıkla ilgili.
@@ -3912,7 +3912,7 @@ Nevruz			K		OZEL	özel, ad		PE	Yeni gün.
 Nevsal			E		OZEL	özel, ad		PE	Yeni yıl.
 Nevsale			K		OZEL	özel, ad		PE	Genç, taze, küçük.
 Nevşah			U		OZEL	özel, ad		PE	Yeni dal. 
-Nevzad			E		OZEL	özel, ad		PE	"Yeni doğmuş. Yeni doğan.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Nevzad			E		OZEL	özel, ad		PE	Yeni doğmuş. Yeni doğan.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Nevzar			U		OZEL	özel, ad		PE	.Yeni ağlayış, ağlaması güzel olan.Erkek ve kadın adı olarak kullanılır.
 Nevzenin			U		OZEL	özel, ad		PE	.Yeni tarz yeni yöntem.Erkek ve kadın adı olarak kullanılır.
 Neyyir			U		OZEL	özel, ad		AR	Nurlu, parlak. Işıklı cisim. Güneş.
@@ -3929,7 +3929,7 @@ Nezzam			E		OZEL	özel, ad		AR	Nizam veren düzenleyen.
 Nida			K		OZEL	özel, ad		AR	Çağırma, bağırma, seslenme. 
 Nigâh			K		OZEL	özel, ad		PE	Bakış, bakma. 
 Nigâr			K		OZEL	özel, ad		PE	Resim. 
-Nihad			E		OZEL	özel, ad		PE	"Tabiat huy, yaratılış, kişilik, bünye.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Nihad			E		OZEL	özel, ad		PE	Tabiat huy, yaratılış, kişilik, bünye.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Nihal			K		OZEL	özel, ad		PE	Sevgili. 
 Nihale			K		OZEL	özel, ad		AR	Yeni yetişmiş, düzgün, fidan. 
 Nihan			K		OZEL	özel, ad		PE	Gizli, saklı. Bulunmayan, görünmeyen.
@@ -4040,13 +4040,13 @@ Nusret			U		OZEL	özel, ad		AR	.Yardım.
 Nusrettin			E		OZEL	özel, ad		AR	Dinin yardım ettiği. 
 Nuşat			E		OZEL	özel, ad		PE	İçkiden sarhoş olmuş, mest olmuş.
 Nuşin			E		OZEL	özel, ad		PE	Tatlı, hoş, güzel.
-Nuşirevan			E		OZEL	özel, ad		AF	"İran'da 531-579 yıllan arasında hükümdarlık etmiş ve doğruluğuyla şöhret bulmuş olan Sasani Şahı, ""adil"" lakabıyla anılır."
+Nuşirevan			E		OZEL	özel, ad		AF	İran'da 531-579 yıllan arasında hükümdarlık etmiş ve doğruluğuyla şöhret bulmuş olan Sasani Şahı, "adil" lakabıyla anılır.
 Nutki			E		OZEL	özel, ad		AR	Söz, lakırdı, konuşma. Nutuk, söylev, söyleyen.
 Nuyan			E		OZEL	özel, ad		PE	Şehzade, prens.
 Nükhet			K		OZEL	özel, ad		AR	Nükteler, herkesin anlayamayacağı ince, zarif, manalı sözler. 
 Nüve			U		OZEL	özel, ad		AR	.Çekirdek.Erkek ve kadın adı olarak kullanılır.
 Nüveyt			U		OZEL	özel, ad		AR	.Çekirdekçik.Erkek ve kadın adı olarak kullanılır.
-Nüvid			U		OZEL	özel, ad		PE	"Müjde, muştu. Hayırlı haber.Erkek ve kadın adı olarak kullanılır. Türk dil kuralı açısından son harf olan ""d/t"" olarak kullanılır."
+Nüvid			U		OZEL	özel, ad		PE	Müjde, muştu. Hayırlı haber.Erkek ve kadın adı olarak kullanılır. Türk dil kuralı açısından son harf olan "d/t" olarak kullanılır.
 Nüvide			K		OZEL	özel, ad		PE	Müjde, muştu. Hayırlı haber. 
 Nüzhet			U		OZEL	özel, ad		AR	.Neşe, eğlence, eğlence yerlerini seyredip gezme. 2, Sevinç, ferahlık.Erkek ve kadın adı olarak kullanılır.
 Oba			E		OZEL	özel, ad		TR	Çadırlarda yaşayan göçebe ailelerin meydana getirdiği topluluk. 
@@ -4201,10 +4201,10 @@ Orsan			E		OZEL	özel, ad		TR	Yüce adı olan.
 Ortaç			E		OZEL	özel, ad		TR	Tepe, ozanların bulunduğu. 
 Ortan			E		OZEL	özel, ad		TR	Ateş renginde kızıl tan.
 Ortunç			E		OZEL	özel, ad		TR	Ateş renginde tunç.
-Oruç			E		OZEL	özel, ad		TR	"İslam'ın beş şartından birisidir. Tan yerinin ağarmasından güneş batana kadar Allah rızası için yiyip içmekten cinsi münasebetten sakınmak. İbadet. Savm. -Oruç Reis; Önceleri Cezayir'de olup daha sonra Osmanlı donanmasına katılan ünlü denizci."
+Oruç			E		OZEL	özel, ad		TR	İslam'ın beş şartından birisidir. Tan yerinin ağarmasından güneş batana kadar Allah rızası için yiyip içmekten cinsi münasebetten sakınmak. İbadet. Savm. -Oruç Reis; Önceleri Cezayir'de olup daha sonra Osmanlı donanmasına katılan ünlü denizci.
 Oruk			E		OZEL	özel, ad		TR	l. Aile, oymak. Göçmen olarak gelip bir yere yerleşen. 
 Orun			E		OZEL	özel, ad		TR	Özel, yer. Önemli bir görevlinin çalıştığı yer, makam. 
-Orus			E		OZEL	özel, ad		TR	"Eski uygur adlarındandır. ""Talih, baht, saadet"" anla­mındadır."
+Orus			E		OZEL	özel, ad		TR	Eski uygur adlarındandır. "Talih, baht, saadet" anla­mındadır.
 Oruz			E		OZEL	özel, ad		TR	Düşün, düşünce.
 Oskan			E		OZEL	özel, ad		TR	Akıllı.
 Oskay			U		OZEL	özel, ad		TR	Neşeli, mutlu.Erkek ve kadın adı olarak kullanılır.
@@ -4284,7 +4284,7 @@ Ozgan			E		OZEL	özel, ad		TR	Öne geçen, kazanan, başarılı.
 Öveç			E		OZEL	özel, ad		TR	2, 3 yaşındaki erkek koyun.
 Övünç			U		OZEL	özel, ad		TR	Övünmeye yol açan, övünülecek şey.Erkek ve kadın adı olarak kullanılır.
 Öymen			E		OZEL	özel, ad		TR	Evcimen, evine bağlı.
-Öz		öz	U		OZEL	özel, ad	D_ILK_HARF_BUYUT_ö	TR	Bir kimsenin betiği, manevi varlığı. 
+Öz			U		OZEL	özel, ad		TR	Bir kimsenin betiği, manevi varlığı. 
 Özak			E		OZEL	özel, ad		TR	Öz ak. Özü temiz, doğru kimse.
 Özakan			E		OZEL	özel, ad		TR	Öz akan.
 Özakay			U		OZEL	özel, ad		TR	Öz akay. Özü temiz kimse.Erkek ve kadın adı olarak kullanılır.
@@ -4641,15 +4641,15 @@ Râciye			K		OZEL	özel, ad		AR	Rica eden, yalvaran.
 Radi			E		OZEL	özel, ad		AR	Boyun eğen, kabul eden, rıza gösteren.
 Radife			K		OZEL	özel, ad		AR	Kıyamette üfürülecek surun ikincisi
 Radiye			K		OZEL	özel, ad		AR	Rıza gösteren, kabul eden, boyun eğen.
-Rafeddin			E		OZEL	özel, ad		AR	"İslam dininin vermiş olduğu acıma, esirgeme duygusu.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Rafeddin			E		OZEL	özel, ad		AR	İslam dininin vermiş olduğu acıma, esirgeme duygusu.Türk dil kuralına göre "d/t" olarak kullanılır.
 Rafet			E		OZEL	özel, ad		AR	Acıma, merhamet etme, esirgeme anlamında. Kur'an-ı Kerim'de Nur suresi 
 Rafız			E		OZEL	özel, ad		AR	Bırakan, salıveren.
 Râfi			E		OZEL	özel, ad		AR	Kaldıran, yücelten, yükselten. Allah'ın isimlerinden,(bkz. Abdürrafi'). Rafi' b. Hadic, sahabeden.
 Rafia			K		OZEL	özel, ad		AR	Her çeşit ayaklık ve destek.
 Rafih			E		OZEL	özel, ad		AR	Rahat ve huzurlu yaşayan.
 Rağbet			K		OZEL	özel, ad		AR	İstek, arzu. İstekle karşılama.
-Rağıb			E		OZEL	özel, ad		AR	"Arzulu, isteyen, rağbet eden.Türk dil kuralına göre ""b/p"" olarak kullanılır."
-Rağibe			K		OZEL	özel, ad		AR	"Arzulu, isteyen, rağbet eden.Türk dil kuralına göre ""b/p"" olarak kullanılır."
+Rağıb			E		OZEL	özel, ad		AR	Arzulu, isteyen, rağbet eden.Türk dil kuralına göre "b/p" olarak kullanılır.
+Rağibe			K		OZEL	özel, ad		AR	Arzulu, isteyen, rağbet eden.Türk dil kuralına göre "b/p" olarak kullanılır.
 Rahatefza			U		OZEL	özel, ad		AF	Rahat artıran. Türk müziğinin bileşik makamlarından.Erkek ve kadın adı olarak kullanılır.
 Rahdan			E		OZEL	özel, ad		PE	Yol bilen.
 Rahe			K		OZEL	özel, ad		AR	Avuç içi, el ayası.
@@ -4707,10 +4707,10 @@ Raşid			E		OZEL	özel, ad		AR	Olgun, ergin, akıllı.
 Raşide			K		OZEL	özel, ad		AR	Olgun, ergin, akıllı. 
 Ratib			E		OZEL	özel, ad		AR	Sıralayan, düzenleyen(kimse). 
 Ratibe			K		OZEL	özel, ad		AR	Sıralayan, düzenleyen(kimse). 
-Rauf			E		OZEL	özel, ad		AR	"Esirgeyen acıyan, çok merhametli.Allah'ın isimlerinden. ""Abd"" takısı alarak kullanılır. -(bkz. Abdürrauf). Kur'an-ı Kerim'de 10'dan fazla yerde geçmektedir."
-Raufe			K		OZEL	özel, ad		AR	"Esirgeyen acıyan, çok merhametli.Allah'ın isimlerinden. ""Abd"" takısı alarak kullanılır. -(bkz. Abdürrauf). Kur'an-ı Kerim'de 10'dan fazla yerde geçmektedir."
+Rauf			E		OZEL	özel, ad		AR	Esirgeyen acıyan, çok merhametli.Allah'ın isimlerinden. "Abd" takısı alarak kullanılır. -(bkz. Abdürrauf). Kur'an-ı Kerim'de 10'dan fazla yerde geçmektedir.
+Raufe			K		OZEL	özel, ad		AR	Esirgeyen acıyan, çok merhametli.Allah'ın isimlerinden. "Abd" takısı alarak kullanılır. -(bkz. Abdürrauf). Kur'an-ı Kerim'de 10'dan fazla yerde geçmektedir.
 Ravend			E		OZEL	özel, ad		PE	Kökleri ve sapları ilaç olarak kullanılan karabuğdaygillerden bir bitki.
-Ravza			K		OZEL	özel, ad		AR	"Çimeni, ağacı bol olan yer, bahçe. Ravza-i Mutahhara; Rasulullah'ın medfun olduğu mekan."
+Ravza			K		OZEL	özel, ad		AR	Çimeni, ağacı bol olan yer, bahçe. Ravza-i Mutahhara; Rasulullah'ın medfun olduğu mekan.
 Rayet			U		OZEL	özel, ad		AR	Bayrak. Sancak. -Erkek ve kadın adı olarak kullanılır.
 Rayiha			K		OZEL	özel, ad		AR	Güzel koku.
 Rayihan			E		OZEL	özel, ad		AF	Han bayrağı, han sancağı.
@@ -4727,7 +4727,7 @@ Refah			K		OZEL	özel, ad		AR	Bolluk, rahatlık, sıkıntı içinde olmamak.
 Refahet			K		OZEL	özel, ad		AR	Bolluk, gürlük.
 Refakat			K		OZEL	özel, ad		AR	Refildik arkadaşlık, yoldaşlık.
 Refet			E		OZEL	özel, ad		AR	Acıma, merhamet etme, esirgeme. Kur'an-ı Kerim'de Nur suresi ayet 2 ve ve Hadid suresi 27. ayette geçmektedir.
-Refettin			E		OZEL	özel, ad		AR	"İslam dininin vermiş olduğu acıma, esirgeme duygusu.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Refettin			E		OZEL	özel, ad		AR	İslam dininin vermiş olduğu acıma, esirgeme duygusu.Türk dil kuralına göre "d/t" olarak kullanılır.
 Refhan			K		OZEL	özel, ad		AR	Varlık içinde yaşayan.
 Refi			E		OZEL	özel, ad		AR	Yüksek, yüce, saygın.
 Refia			K		OZEL	özel, ad		AR	Yüksek, yüce, saygın.
@@ -4799,12 +4799,12 @@ Rıza			E		OZEL	özel, ad		AR	Razılık, razı olma, hoşnutluk, memnuniyet, muv
 Rızkullah			E		OZEL	özel, ad		AR	Allah'ın verdiği nimet. Nimetler veren Allah'ın kulu.
 Riayet			U		OZEL	özel, ad		AR	Gütme, gözetme. 
 Rical			E		OZEL	özel, ad		AR	Erkekler. 
-Rikab			E		OZEL	özel, ad		AR	"Büyük, saygın bir kimsenin huzuru, önü.Türk dil kuralına göre ""b/p"" olarak kullanılır."
+Rikab			E		OZEL	özel, ad		AR	Büyük, saygın bir kimsenin huzuru, önü.Türk dil kuralına göre "b/p" olarak kullanılır.
 Rikkat			K		OZEL	özel, ad		AR	İncelik, naziklik. Sevecenlik, acıma duygusu.
 Rimayet			K		OZEL	özel, ad		AR	Atıcılık, ok, kurşun, gülle gibi şeyleri almada usta.
 Rindan			K		OZEL	özel, ad		PE	Dünya işini boş görenler, alçakgönüllüler, kalenderler.
 Risale			K		OZEL	özel, ad		AR	Mektup. 
-Risaleddin			E		OZEL	özel, ad		AR	"Dinin elçisi, peygamberi.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Risaleddin			E		OZEL	özel, ad		AR	Dinin elçisi, peygamberi.Türk dil kuralına göre "d/t" olarak kullanılır.
 Risalet			U		OZEL	özel, ad		AR	Elçilik. Peygamberlik.
 Riva			U		OZEL	özel, ad		AR	Suya kanmışlar.Erkek ve kadın adı olarak kullanılır.
 Riyaset			U		OZEL	özel, ad		AR	Reislik, başlık, baş olma, başkanlık.Erkek ve kadın adı olarak kullanılır.
@@ -4815,7 +4815,7 @@ Ruhani			E		OZEL	özel, ad		PE	Ruhla ilgili. Gözle görülmeyen.
 Ruhcan			E		OZEL	özel, ad		TR	Ruh ve can isimlerinden bileşik isim.
 Ruhfeza			K		OZEL	özel, ad		TR	Yükselen ruh, yüksek ruh.
 Ruhi			E		OZEL	özel, ad		AR	Ruhsal, ruhla ilgili.
-Ruhiddin			E		OZEL	özel, ad		AR	"Dinin ruhu, özü.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Ruhiddin			E		OZEL	özel, ad		AR	Dinin ruhu, özü.Türk dil kuralına göre "d/t" olarak kullanılır.
 Ruhinur			K		OZEL	özel, ad		FA	Nurlu, aydınlık yüzlü.
 Ruhişen			K		OZEL	özel, ad		AF	Şen, neşeli, canlı kimse.
 Ruhiye			K		OZEL	özel, ad		AR	Ruhsal, ruhla ilgili.
@@ -4837,7 +4837,7 @@ Ruzi			E		OZEL	özel, ad		PE	Gündüze ait, gündüzle ilgili.
 Ruziye			K		OZEL	özel, ad		PE	Gündüze ait, gündüzle ilgili.
 Rücum			E		OZEL	özel, ad		AR	Akan yıldız.
 Rüçhan			E		OZEL	özel, ad		AR	Üstünlük, üstün olma.
-Rükneddin			E		OZEL	özel, ad		AR	"Dinin temel direği.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Rükneddin			E		OZEL	özel, ad		AR	Dinin temel direği.Türk dil kuralına göre "d/t" olarak kullanılır.
 Rükni			E		OZEL	özel, ad		AR	l. Bir şeyin en sağlam yanı. 
 Rükûnet			K		OZEL	özel, ad		AR	Ağırbaşlılık, gururluluk.
 Rüstem			E		OZEL	özel, ad		PE	Yiğit, kahraman. İran'ın ünlü pehlivanı ve savaşçısı.
@@ -4852,12 +4852,12 @@ Rüya			K		OZEL	özel, ad		AR	Uyku sırasında görülen şey, düş.
 Rüyet			U		OZEL	özel, ad		AR	Görme, seyretme, bakma, görüş. Basiret, isabetli düşünme hassası. Kalp gözüyle manevi alemi görme, müşahade.Erkek ve kadın adı olarak kullanılır.
 Rüzgâr			E		OZEL	özel, ad		PE	Zaman, devir. 
 Saad			E		OZEL	özel, ad		AR	Mutluluk, kutluluk.
-Saadeddin			E		OZEL	özel, ad		AR	"Dinin uğurlu ve kutlu kişisi. Türk dil kuralı açısından ""d/t"" olarak kullanılır."
-Saadettin			E		OZEL	özel, ad		AR	"Dinin uğurlu ve kutlu kişisi. Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Saadeddin			E		OZEL	özel, ad		AR	Dinin uğurlu ve kutlu kişisi. Türk dil kuralı açısından "d/t" olarak kullanılır.
+Saadettin			E		OZEL	özel, ad		AR	Dinin uğurlu ve kutlu kişisi. Türk dil kuralı açısından "d/t" olarak kullanılır.
 Saadet			K		OZEL	özel, ad		AR	Mutluluk, kutluluk, bahtiyarlık.
 Saba			E		OZEL	özel, ad		AR	Gündoğusundan esen hafif rüzgar. Türk müziğinin en eski makamlarından.
 Sabah			U		OZEL	özel, ad		AR	Gündüzün ilk saatleri, günün başlangıcı.Erkek ve kadın adı olarak kullanılır.
-Sabahaddin			E		OZEL	özel, ad		AR	"Dinin güzelliği.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Sabahaddin			E		OZEL	özel, ad		AR	Dinin güzelliği.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Sabâhat			K		OZEL	özel, ad		AR	Güzellik, letafet.
 Sabahnur			K		OZEL	özel, ad		AR	Sabah ışığı, aydınlığı.
 Sabbar			U		OZEL	özel, ad		AR	Çok sabırlı. 
@@ -4882,11 +4882,11 @@ Sada			K		OZEL	özel, ad		AR	Ses, yankı.
 Sadak			E		OZEL	özel, ad		TR	Ok koymaya yarayan meşin torba. 
 Sadakat			U		OZEL	özel, ad		AR	Dostluk, içten bağlılık, doğruluk, vefalılık.Erkek ve kadın adı olarak kullanılır.
 Sadberk			K		OZEL	özel, ad		PE	Yüz yapraklı, katmerli. 
-Sadeddin			E		OZEL	özel, ad		AR	"Dinin uğurlu ve kutlu kişisi.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Sadeddin			E		OZEL	özel, ad		AR	Dinin uğurlu ve kutlu kişisi.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Sadedil			K		OZEL	özel, ad		AF	Temiz yürekli. 
 Sadegül			K		OZEL	özel, ad		AF	Bir gül kadar sade, temiz ve güzel.
 Sâderu			E		OZEL	özel, ad		AF	Genç delikanlı.
-Sadeyn			U		OZEL	özel, ad		AR	".""İki uğurlular"". "
+Sadeyn			U		OZEL	özel, ad		AR	."İki uğurlular". 
 Sâdık			E		OZEL	özel, ad		AR	Doğru gerçek hakiki, yalan olmayan, sahte olmayan. Sadakatli, samimi, bağlı.
 Sâdıka			K		OZEL	özel, ad		AR	Doğru gerçek hakiki, yalan olmayan, sahte olmayan. Sadakatli, samimi, bağlı.
 Sâdır			E		OZEL	özel, ad		AR	Hayrette kalan, şaşıran.
@@ -4944,7 +4944,7 @@ Sahra			K		OZEL	özel, ad		AR	Kır, ova, çöl.
 Sahre			E		OZEL	özel, ad		AR	Kaya. Kütle.
 Sahretullah			E		OZEL	özel, ad		AR	Beytü'l-Makdis'de Beni İsrail peygamberlerinin ibadet ettikleri meşhur kaya. Hz. Peygamber(s.a.s) Miraç gecesinde semaya buradan çıkmıştır.
 Sahur			E		OZEL	özel, ad		AR	Gece uyanıklığı, uykusuzluk. 
-Saib			E		OZEL	özel, ad		AR	"Hedefe doğru ulaşan. İsabetli olan, doğru olan, hata etmeyen.Türk dil kuralı açısından ""b/p"" olarak kullanılır."
+Saib			E		OZEL	özel, ad		AR	Hedefe doğru ulaşan. İsabetli olan, doğru olan, hata etmeyen.Türk dil kuralı açısından "b/p" olarak kullanılır.
 Said			E		OZEL	özel, ad		AR	Mübarek, kutlu, uğurlu. Mübarek, mesut. Sevap kazanmış, Allah katında makbul tutulmuş. Sahabe isimlerinden
 Saide			K		OZEL	özel, ad		AR	Mübarek, kutlu, uğurlu. Mübarek, mesut. Sevap kazanmış, Allah katında makbul tutulmuş. Sahabe isimlerinden
 Saik			E		OZEL	özel, ad		AR	Sevk eden, götüren. Süren sürücü.
@@ -4962,7 +4962,7 @@ Sakine			K		OZEL	özel, ad		AR	Hareketsiz, kımıltısız, durgun. Sessiz.
 Sakman			E		OZEL	özel, ad		TR	Uyanık, akıllı kimse. 
 Salabet			U		OZEL	özel, ad		AR	Peklik, katılık, sağlamlık. 
 Salah			E		OZEL	özel, ad		AR	Düzelme, iyileşme, iyilik. 
-Salahaddin			E		OZEL	özel, ad		AR	"Dinine bağlı kimse.Türk dil kuralına göre ""d/t"" olarak kullanılmakladır."
+Salahaddin			E		OZEL	özel, ad		AR	Dinine bağlı kimse.Türk dil kuralına göre "d/t" olarak kullanılmakladır.
 Salar			E		OZEL	özel, ad		PE	Baş, kumandan, başbuğ, önder.
 Salât			E		OZEL	özel, ad		AR	Namaz.
 Salcan			E		OZEL	özel, ad		TR	Baş, kumandan, başbuğ, önder.
@@ -4985,7 +4985,7 @@ Salur			E		OZEL	özel, ad		TR	Kılıç.
 Salvecâr			E		OZEL	özel, ad		AR	Çevgan, cirit oynanılan eğri sopa.
 Samahat			K		OZEL	özel, ad		AR	Cömertlik, el açıklığı, iyilikseverlik,(bkz. Semahat).
 Saman			E		OZEL	özel, ad		PE	Zenginlik. Rahat, dinç. 
-Samed			E		OZEL	özel, ad		AR	"Ezeli, ebedi ve yüce olan ve hiç kimseye veya şeye ihtiyacı olmayan, mutlak malik olan yüce Allah.Allah'ın isimlerindendir. ""abd"" takısı almadan kullanılmaz. Abdüssamed."
+Samed			E		OZEL	özel, ad		AR	Ezeli, ebedi ve yüce olan ve hiç kimseye veya şeye ihtiyacı olmayan, mutlak malik olan yüce Allah.Allah'ın isimlerindendir. "abd" takısı almadan kullanılmaz. Abdüssamed.
 Sâmi			E		OZEL	özel, ad		AR	İşiten, duyan dinleyen. Dinleyici. 
 Sâmia			K		OZEL	özel, ad		AR	İşitme duygusu, hissi.
 Sâmih			E		OZEL	özel, ad		AR	Cömert, eli açık.
@@ -5090,11 +5090,11 @@ Saykut			E		OZEL	özel, ad		TR	Uğurlu, kutlu, saygıdeğer kimse.
 Sayman			E		OZEL	özel, ad		TR	Hesap işleriyle uğraşan kimse.
 Sayraç			U		OZEL	özel, ad		TR	Öten, cıvıldayan, şakıyan.Erkek ve kadın adı olarak kullanılır.
 Sayrak			U		OZEL	özel, ad		TR	Öten, cıvıldayan, şakıyan.Erkek ve kadın adı olarak kullanılır.
-Sayyad			E		OZEL	özel, ad		AR	"Avcı.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Sayyad			E		OZEL	özel, ad		AR	Avcı.Türk dil kuralına göre "d/t" olarak kullanılır.
 Sazak			E		OZEL	özel, ad		TR	Kuvvetli ve soğuk esen yel. Soğuk yelle birlikte yoğun hafif kar. 
 Sazan			E		OZEL	özel, ad		TR	Göllerde ve sazlık yerlerde yaşayan bir tatlısu balığı.
 Sâzkâr			E		OZEL	özel, ad		PE	Uygun, münasip. 
-Seba			K		OZEL	özel, ad		AR	"Yedi. İslam öncesi Sami ve Arap kavimleri yedi sayısının kutsal bir nitelik taşıdığına inanırlardı, ""yedi"" sayısı."
+Seba			K		OZEL	özel, ad		AR	Yedi. İslam öncesi Sami ve Arap kavimleri yedi sayısının kutsal bir nitelik taşıdığına inanırlardı, "yedi" sayısı.
 Sebahat			K		OZEL	özel, ad		AR	Güzellik, letafet.
 Sebat			E		OZEL	özel, ad		AR	Değişmeyen, kımıldamayan. 
 Sebati			E		OZEL	özel, ad		AR	Sebatlık, sözünde kararında durma. Sebatlı, sözünde duran.
@@ -5116,7 +5116,7 @@ Seçkin			E		OZEL	özel, ad		TR	Seçilmiş, ayrılmış benzerlerinden üstün o
 Seçkiner			E		OZEL	özel, ad		TR	Seçilmiş, ayrılmış benzerlerinden üstün olduğu için ayrılmış, mümtaz, güzide.
 Seda			K		OZEL	özel, ad		AR	Ses. Yankı.
 Sedacet			K		OZEL	özel, ad		AR	Sadelik.
-Sedad			E		OZEL	özel, ad		AR	"Doğruluk, hak. Doğru ve haklı.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Sedad			E		OZEL	özel, ad		AR	Doğruluk, hak. Doğru ve haklı.Türk dil kuralına göre "d/t" olarak kullanılır.
 Sedef			K		OZEL	özel, ad		AR	Bazı deniz hayvanlarının(midye, istiridye gibi) sert, beyaz ve parlak kabuğu. 
 Seden			K		OZEL	özel, ad		TR	Uyanık, tetikte, gözü açık olan.
 Sedid			E		OZEL	özel, ad		AR	Doğru hak.(bkz. Sedad).
@@ -5138,10 +5138,10 @@ Sehle			K		OZEL	özel, ad		AR	Yumuşak.
 Sehran			E		OZEL	özel, ad		AR	Geceleri uyanık duran.
 Sekime			K		OZEL	özel, ad		AR	Dayanıklılık, dayanma, karşı koyma.
 Sekine			K		OZEL	özel, ad		AR	Sakin olma, sükunet. Huzur, gönül rahatlığı.
-Selahaddin			E		OZEL	özel, ad		AR	"Dinine bağlı kimse.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Selahaddin			E		OZEL	özel, ad		AR	Dinine bağlı kimse.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Selam			E		OZEL	özel, ad		AR	İnsanların birbirleriyle karşılaştıklarında kullandıkları yakınlık dostluk, saygı ifade eden söz, yaptıkları işaret veya hareket. 
 Selame			K		OZEL	özel, ad		AR	İnsanların birbirleriyle karşılaştıklarında kullandıkları yakınlık dostluk, saygı ifade eden söz, yaptıkları işaret veya hareket. 
-Selameddin			E		OZEL	özel, ad		AR	"Dinin kurtuluşu.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Selameddin			E		OZEL	özel, ad		AR	Dinin kurtuluşu.Türk dil kuralına göre "d/t" olarak kullanılır.
 Selamet			U		OZEL	özel, ad		AR	Esenlik. Her türlü korku, tasa ve tehlikeden uzak, güvenlik içinde olma. Kurtulma, kurtuluş.Erkek ve kadın adı olarak kullanılır.
 Selami			E		OZEL	özel, ad		AR	İyilik, barış ve rahatlıkla ilgili.
 Selamullah			E		OZEL	özel, ad		AR	Allah'ın selamı.
@@ -5212,7 +5212,7 @@ Seniye			K		OZEL	özel, ad		AR	Yüksek, yüce, ali, bülend.
 Sepid			E		OZEL	özel, ad		PE	Beyaz, ak, beyza.
 Sepide			K		OZEL	özel, ad		PE	Tan vakti.
 Sera			K		OZEL	özel, ad		PE	Saray. Büyük konak. Köşk.
-Serab			K		OZEL	özel, ad		PE	"Çöllük arazide, ışık kırılması sonucu görülen aldatıcı gerçek olmayan hayal, ılgım, salgım.Türk dili açısından ""b/p"" olarak kullanılır."
+Serab			K		OZEL	özel, ad		PE	Çöllük arazide, ışık kırılması sonucu görülen aldatıcı gerçek olmayan hayal, ılgım, salgım.Türk dili açısından "b/p" olarak kullanılır.
 Serâçe			K		OZEL	özel, ad		PE	Saraycık, küçük saray, konak.
 Seralp			E		OZEL	özel, ad		TR	Baş yiğit.
 Seran			K		OZEL	özel, ad		AR	Işıklı, parlak.
@@ -5229,7 +5229,7 @@ Serdinç			E		OZEL	özel, ad		FT	Başı dinç, sakin, rahat, huzurlu.
 Seren			E		OZEL	özel, ad		TR	Uzun, kalın ve silindir şekilli çam kerestesi. Yelkenlilerde ana direğe dik şekilde tutturulan ve yelken germeye yarayan ağaç. Seren yapılan köknar kerestesi. 
 Serengül			K		OZEL	özel, ad		TR	(bkz. Serendil).Baş gül. Güllerin birincisi.
 Sergen			E		OZEL	özel, ad		TR	Laf. 
-Serhad			E		OZEL	özel, ad		FA	"Hudut, sınır, sınırbaşı; iki devlet arasındaki sınır boyu.Türk dil kuralına göre ""d/t"" getirilerek de kullanılır."
+Serhad			E		OZEL	özel, ad		FA	Hudut, sınır, sınırbaşı; iki devlet arasındaki sınır boyu.Türk dil kuralına göre "d/t" getirilerek de kullanılır.
 Serhan			E		OZEL	özel, ad		AR	Kurt, canavar. 
 Serhenk			E		OZEL	özel, ad		PE	Çavuş. 
 Serhun			E		OZEL	özel, ad		PE	Asil kan, soylu kan.
@@ -5241,7 +5241,7 @@ Serkan			E		OZEL	özel, ad		FT	Soylu kan, başkan.
 Serkız			K		OZEL	özel, ad		FT	Baş kız, kızların, güzellerin başı.
 Serkut			E		OZEL	özel, ad		PE	Mutlu, talihli, kutlu insan.
 Serma			K		OZEL	özel, ad		PE	Soğuk kış.
-Sermed			E		OZEL	özel, ad		AR	"Ebedilik, ebediyet, sonsuzluk.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Sermed			E		OZEL	özel, ad		AR	Ebedilik, ebediyet, sonsuzluk.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Sermelek			K		OZEL	özel, ad		PE	Meleklerin başı, melek kadar güzel ve iyi.
 Sermin			K		OZEL	özel, ad		TR	Nermin, Şermin gibi adlara benzetilerek yapılmıştır.
 Sernaz			K		OZEL	özel, ad		PE	Çok nazlı.
@@ -5293,14 +5293,14 @@ Sevnur			K		OZEL	özel, ad		TR	Sevgi nuru, ışığı, aygınlığı.
 Sevtap			K		OZEL	özel, ad		TR	Tapılacak kadar sevgi duyulan.
 Sevüktekin			E		OZEL	özel, ad		TR	Çok sevilen, tek tutulan.
 Seyahât			E		OZEL	özel, ad		AR	Seyahat, gezi. 
-Seyfeddin			E		OZEL	özel, ad		AR	"Dini koruyan, dinin kılıcı.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Seyfeddin			E		OZEL	özel, ad		AR	Dini koruyan, dinin kılıcı.Türk dil kuralına göre "d/t" olarak kullanılır.
 Seyfi			E		OZEL	özel, ad		AR	Kılıçla ilgili kılıç şeklinde. 
 Seyfiye			K		OZEL	özel, ad		AR	Kılıçla ilgili kılıç şeklinde. 
 Seyfullah			E		OZEL	özel, ad		AR	Allah'ın kılıcı.Ali(r.a
 Seyhan			U		OZEL	özel, ad		AR	Ürdün'ün ötesinde Hz. Musa'nın mezarının bulunduğu şehir. 
 Seyhun			U		OZEL	özel, ad		TR	Ürdün'ün ötesinde Hz. Musa'nın mezarının bulunduğu şehir. 
 Seyidhan			E		OZEL	özel, ad		AR	Hanların başı, önderi.
-Seylâb			E		OZEL	özel, ad		PE	"Sel, sel suyu. -Türk dil kuralına göre ""b/p"" olarak kullanılır."
+Seylâb			E		OZEL	özel, ad		PE	Sel, sel suyu. -Türk dil kuralına göre "b/p" olarak kullanılır.
 Seylan			U		OZEL	özel, ad		AR	Akma, akış.Erkek ve kadın adı olarak kullanılır.
 Seyran			U		OZEL	özel, ad		AR	Gezme, bakıp seyretme.Erkek ve kadın adı olarak kullanılır.
 Seyyâl			K		OZEL	özel, ad		AR	Akan, akıcı, akışkan.
@@ -5330,7 +5330,7 @@ Sıdar			E		OZEL	özel, ad		TR	Dayanıklı.
 Sıddık			E		OZEL	özel, ad		AR	Çok doğru olan, hiç yalan söylemeyen. Hakikati kabul eden ve onaylayan kişi. 
 Sıdıka			K		OZEL	özel, ad		AR	Çok doğru, yalan söylemeyen. Hz. Aişe ve Hz. Meryem'in lakabı.
 Sıdk			E		OZEL	özel, ad		AR	Doğruluk, gerçeklik. 
-Sıdkı			E		OZEL	özel, ad		AR	"İç, yürek temizli-ğiyle, doğrulukla ilgili.Türk dil kuralı açısından ""d/t"" olarak kullanılır."
+Sıdkı			E		OZEL	özel, ad		AR	İç, yürek temizli-ğiyle, doğrulukla ilgili.Türk dil kuralı açısından "d/t" olarak kullanılır.
 Sıdkiye			K		OZEL	özel, ad		AR	İç yürek temizliğiyle doğrulukla ilgili,(bkz. Sıdıka).
 Sıla			U		OZEL	özel, ad		AR	.Doğup büyüdüğü yere gidip ayrı kaldığı yakınlarına kavuşma.Erkek ve kadın adı olarak kullanılır.
 Sıngın			E		OZEL	özel, ad		TR	Kırık, dökük. 
@@ -5362,7 +5362,7 @@ Sinem			K		OZEL	özel, ad		FT	Gönlüm, yüreğim, çok sevdiğim.
 Sipar			K		OZEL	özel, ad		PE	Feda eden, veren. 
 Sipâs			U		OZEL	özel, ad		PE	.Şükretme, dua etme.Erkek ve kadın adı olarak kullanılır.
 Sirac			E		OZEL	özel, ad		PE	Işık meşale, kandil, çerağ. 
-Siraceddin			E		OZEL	özel, ad		AR	"Dinin  kandili, dinin verdiği aydınlık, ışık, ışıklandıran, aydınlatan.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Siraceddin			E		OZEL	özel, ad		AR	Dinin  kandili, dinin verdiği aydınlık, ışık, ışıklandıran, aydınlatan.Türk dil kuralına göre "d/t" olarak kullanılır.
 Siren			K		OZEL	özel, ad		TR	Mitolojide geçen, denizde kayalar üzerinde gemicilere şarkılar söyleyen, belden aşağısı balık biçiminde kadın, deniz kızı.
 Siret			E		OZEL	özel, ad		AR	Bir kimsenin manevi durumu, hal ve hareketleri, tabiatı ahlak ve karakteri. Hal ve gidiş. Hal tercümesi.Hz. Muhammed'in hal tercümesi.
 Sirfiraz			K		OZEL	özel, ad		PE	Başını yukarı kaldıran yükselten, benzerlerinden üstün olan. Aslı Serfıraz'dır.
@@ -5413,9 +5413,9 @@ Suad			U		OZEL	özel, ad		AR	Mutlulukla, saadetle ilgili, mutlu. Sa'd isminin m�
 Sualp			E		OZEL	özel, ad		TR	Güçlü, yiğit asker.
 Suavi			E		OZEL	özel, ad		AR	Herkesin işine koşan, yardım eden.
 Suay			U		OZEL	özel, ad		TR	Suya düşen ay.Erkek ve kadın adı olarak kullanılır.
-Subahi			E		OZEL	özel, ad		AR	"Sabah vakti, şafak ile ilgili.Türk dil kuralına göre ""b/p"" olarak kullanılır."
-Subhi			E		OZEL	özel, ad		AR	"Sabah vakti, şafak ile ilgili.Türk dil kuralına göre ""b/p"" olarak kullanılır."
-Subhiye			K		OZEL	özel, ad		AR	"Sabah vakti, şafak ile ilgili.Türk dil kuralına göre ""b/p"" olarak kullanılır."
+Subahi			E		OZEL	özel, ad		AR	Sabah vakti, şafak ile ilgili.Türk dil kuralına göre "b/p" olarak kullanılır.
+Subhi			E		OZEL	özel, ad		AR	Sabah vakti, şafak ile ilgili.Türk dil kuralına göre "b/p" olarak kullanılır.
+Subhiye			K		OZEL	özel, ad		AR	Sabah vakti, şafak ile ilgili.Türk dil kuralına göre "b/p" olarak kullanılır.
 Subutay			E		OZEL	özel, ad		TR	Cengiz Han'ın ünlü Moğol generalinin adı.
 Suca			E		OZEL	özel, ad		TR	Uzun düzgün boy.
 Sudan			K		OZEL	özel, ad		TR	Su gibi güzel, parlak.
@@ -5475,7 +5475,7 @@ Sükâr			E		OZEL	özel, ad		TR	Asker soyundan gelen, yiğit yürekli asker.
 Sükeyne			K		OZEL	özel, ad		AR	Sessiz, sakin, ağırbaşlı, onurlu. Hz. Hüseyin(r.a
 Sükûti			E		OZEL	özel, ad		AR	Susmayı seven, az konuşan.
 Sülasi			E		OZEL	özel, ad		AR	Üçlü, üç şeyden meydana gelen.
-Süleyman			E		OZEL	özel, ad		AR	"İbranice ""huzur, sükun"". "
+Süleyman			E		OZEL	özel, ad		AR	İbranice "huzur, sükun". 
 Sülünay			K		OZEL	özel, ad		TR	Ay gibi güzel, uzun boylu, endamlı.
 Sülünbike			K		OZEL	özel, ad		TR	Sülün gibi boylu endamlı kadın.
 Sülvan			E		OZEL	özel, ad		AR	Yüreğe ferahlık veren ruh, iç açıcı ilaç.
@@ -5502,7 +5502,7 @@ Süveyda			K		OZEL	özel, ad		AR	Kalbin ortasında var kabul edilen siyah nokta.
 Süzen			E		OZEL	özel, ad		PE	Topluca yapılan av.
 Süzülay			K		OZEL	özel, ad		TR	Gökte süzülen ay.
 Şaban			E		OZEL	özel, ad		AR	Aralık, fasıla. 
-Şabeddin			E		OZEL	özel, ad		AR	"Din topluluğu, cemaati.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Şabeddin			E		OZEL	özel, ad		AR	Din topluluğu, cemaati.Türk dil kuralına göre "d/t" olarak kullanılır.
 Şâdâb			E		OZEL	özel, ad		PE	Suya kanmış, sulu, taze.
 Şâdân			K		OZEL	özel, ad		PE	Keyifli, neşeli, sevinçli.
 Şadi			E		OZEL	özel, ad		PE	Sevinç, mutluluk.
@@ -5515,7 +5515,7 @@ Süzülay			K		OZEL	özel, ad		TR	Gökte süzülen ay.
 Şafaknur			K		OZEL	özel, ad		AR	Şafak aydınlığı.
 Şafi			E		OZEL	özel, ad		AR	Suçlunun bağışlanması için araya girip yalvaran kimse. 
 Şah			E		OZEL	özel, ad		PE	Hükümdar.Birleşik isimlerdeve 
-Şahabeddin			E		OZEL	özel, ad		AR	"Dinin yıldızı, tanıklığı, belirtisi, işareti. Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Şahabeddin			E		OZEL	özel, ad		AR	Dinin yıldızı, tanıklığı, belirtisi, işareti. Türk dil kuralına göre "d/t" olarak kullanılır.
 Şahadet			U		OZEL	özel, ad		AR	.Şahitlik etme, şahitlik, tanıklık, Kelime-i şehadet. 
 Şahamet			E		OZEL	özel, ad		AR	Şişmanlık, topluluk.
 Şâhân			E		OZEL	özel, ad		PE	Şahlar. 
@@ -5557,7 +5557,7 @@ Süzülay			K		OZEL	özel, ad		TR	Gökte süzülen ay.
 Şahvar			E		OZEL	özel, ad		PE	Şaha, hükümdara yakışacak surette. 
 Şahvelet			E		OZEL	özel, ad		FA	Hükümdar çocuğu.
 Şâhzâde			E		OZEL	özel, ad		PE	Şehzade, şah oğlu, hükümdar çocuğu.
-Şahzat			E		OZEL	özel, ad		FA	"Saygıdeğer kimse.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Şahzat			E		OZEL	özel, ad		FA	Saygıdeğer kimse.Türk dil kuralına göre "d/t" olarak kullanılır.
 Şaik			E		OZEL	özel, ad		AR	İstekli, hevesli.
 Şair			E		OZEL	özel, ad		AR	Şiir yazan kimse, ozan.
 Şaire			K		OZEL	özel, ad		AR	Kadın şair, daha çok unvan olarak kullanılır.
@@ -5589,7 +5589,7 @@ Süzülay			K		OZEL	özel, ad		TR	Gökte süzülen ay.
 Şazi			E		OZEL	özel, ad		PE	Sevinç, mutluluk.
 Şazimet			K		OZEL	özel, ad		AR	Kimseye benzemeyen, farklı, tek, eşsiz.
 Şaziye			K		OZEL	özel, ad		AR	Memnunluk, sevinç, gönül ferahlığı. 
-Şebab			E		OZEL	özel, ad		AR	"Gençlik, tazelik. -Türk dil kuralına göre ""b/p"" olarak kullanılır."
+Şebab			E		OZEL	özel, ad		AR	Gençlik, tazelik. -Türk dil kuralına göre "b/p" olarak kullanılır.
 Şebefruz			U		OZEL	özel, ad		PE	Geceyi aydınlatan.Erkek ve kadın adı olarak kullanılır.
 Şebhan			E		OZEL	özel, ad		PE	Gece öten bir cins bülbül.
 Şebib			E		OZEL	özel, ad		AR	Gençlik, tazelik.
@@ -5600,7 +5600,7 @@ Süzülay			K		OZEL	özel, ad		TR	Gökte süzülen ay.
 Şecaat			E		OZEL	özel, ad		AR	Yiğitlik, cesurluk, korkusuzluk, kalb metinliği.
 Şeci			E		OZEL	özel, ad		AR	Cesur, yürekli, yiğit.
 Şecia			K		OZEL	özel, ad		AR	Cesur, yürekli, yiğit.
-Şefaaddin			E		OZEL	özel, ad		AR	"Dinin, Allah ile kul arasınadaki aracılığı, dinin şefaati.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Şefaaddin			E		OZEL	özel, ad		AR	Dinin, Allah ile kul arasınadaki aracılığı, dinin şefaati.Türk dil kuralına göre "d/t" olarak kullanılır.
 Şefaat			U		OZEL	özel, ad		AR	Birinin suçunun bağışlanması ya da dileğinin yerine getirilmesi için o kimseyle başkası arasında yapılan aracılık, dua.Erkek ve kadın adı olarak kullanılır.
 Şefaati			E		OZEL	özel, ad		AR	Şefaatle ilgili.
 Şefakat			K		OZEL	özel, ad		AR	Şefkat, acıyarak ve esirgeyerek sevme.
@@ -5629,9 +5629,9 @@ Süzülay			K		OZEL	özel, ad		TR	Gökte süzülen ay.
 Şehrinaz			K		OZEL	özel, ad		PE	Türk müziğinin en eski makamlarından.
 Şehriyar			U		OZEL	özel, ad		PE	.Padişah, hükümdar.Erkek ve kadın adı olarak kullanılır.
 Şehrud			E		OZEL	özel, ad		PE	Büyük çay, nehir.
-Şehzat			E		OZEL	özel, ad		PE	"Saygıdeğer kimse.Türk dil kuralına göre ""d/t"" olarak kullanılır."
-Şekib			E		OZEL	özel, ad		PE	"Sabır, tahammüllü, dayanıklı.Türk dil kuralına göre ""b/p"" olarak kullanılır."
-Şekibe			K		OZEL	özel, ad		AR	"Sabır, tahammüllü, dayanıklı.Türk dil kuralına göre ""b/p"" olarak kullanılır."
+Şehzat			E		OZEL	özel, ad		PE	Saygıdeğer kimse.Türk dil kuralına göre "d/t" olarak kullanılır.
+Şekib			E		OZEL	özel, ad		PE	Sabır, tahammüllü, dayanıklı.Türk dil kuralına göre "b/p" olarak kullanılır.
+Şekibe			K		OZEL	özel, ad		AR	Sabır, tahammüllü, dayanıklı.Türk dil kuralına göre "b/p" olarak kullanılır.
 Şekûr			E		OZEL	özel, ad		AR	Şükreden, şükredici. Allah'ın isimlerinden,(bkz. Abdüşşekûr).
 Şekûre			K		OZEL	özel, ad		AR	Çok şükreden, şükredici, değer bilen.
 Şelale			K		OZEL	özel, ad		AR	Büyük bir akarsuyun yüksekten düşmesiyle meydana gelen büyük çağlayan, çavlan.
@@ -5642,7 +5642,7 @@ Süzülay			K		OZEL	özel, ad		TR	Gökte süzülen ay.
 Şemime			K		OZEL	özel, ad		AR	Güzel kokulu şey.
 Şeminur			K		OZEL	özel, ad		AR	Mum ışığı, mum aydınlığı.
 Şems			E		OZEL	özel, ad		AR	Güneş.
-Şemseddin			E		OZEL	özel, ad		AR	"Dinin güneşi, dinin insanlara verdiği aydınlık.Türk dil kuralına göre ""d/t"" olarak kullanılır(Şemsettin)."
+Şemseddin			E		OZEL	özel, ad		AR	Dinin güneşi, dinin insanlara verdiği aydınlık.Türk dil kuralına göre "d/t" olarak kullanılır(Şemsettin).
 Şemsi			E		OZEL	özel, ad		AR	Güneşe ait, güneşle ilgili.
 Şemsifer			U		OZEL	özel, ad		AF	Güneşin aydınlığı, parlaklığı.Erkek ve kadın adı olarak kullanılır.
 Şemsinisa			K		OZEL	özel, ad		FA	Kadınların güneşi. Güneş gibi kadın.
@@ -5670,8 +5670,8 @@ Süzülay			K		OZEL	özel, ad		TR	Gökte süzülen ay.
 Şensoy			E		OZEL	özel, ad		FT	Neşeli soydan gelen kimse.
 Şentürk			E		OZEL	özel, ad		FT	Neşeli, canlı, mutlu türk.
 Şenyaşar			E		OZEL	özel, ad		FT	Yaşamı, neşeli mutlu geçen kimse.
-Şenyurt			E		OZEL	özel, ad		FT	"Neşeli, mutlu insanların yurdu; ülkesinde yaşayan."
-Şerafeddin			E		OZEL	özel, ad		AR	"Dinin şereflisi, büyüğü.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Şenyurt			E		OZEL	özel, ad		FT	Neşeli, mutlu insanların yurdu; ülkesinde yaşayan.
+Şerafeddin			E		OZEL	özel, ad		AR	Dinin şereflisi, büyüğü.Türk dil kuralına göre "d/t" olarak kullanılır.
 Şerafet			E		OZEL	özel, ad		AR	Şerefli olma hali. Soydanlık, asalet. Hz. Muhammed(s.a.s)'in soyundan olma.
 Şerare			K		OZEL	özel, ad		AR	Kıvılcım.
 Şeref			E		OZEL	özel, ad		AR	Yücelik, ululuk, izzet, seçkinlik. İyi ahlak ve faziletler sonucu meydana gelen manevi yücelik. 
@@ -5738,7 +5738,7 @@ Tabiye			K		OZEL	özel, ad		AR	Yerli yerine koyup hazırlama, düzenleme.
 Tabnak			K		OZEL	özel, ad		PE	Parlak.
 Tacal			E		OZEL	özel, ad		TR	Üstün ol, baş ol.
 Tacaver			E		OZEL	özel, ad		PE	Padişah, hükümdar.
-Taceddin			E		OZEL	özel, ad		AR	"Dinin tacı. Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Taceddin			E		OZEL	özel, ad		AR	Dinin tacı. Türk dil kuralına göre "d/t" olarak kullanılır.
 Tacıser			K		OZEL	özel, ad		AR	Baş tacı, en çok sevilen, sayılan.
 Taci			E		OZEL	özel, ad		AR	Taçla ilgili.
 Tacik			E		OZEL	özel, ad		PE	İran ve Türkistan'da yaşayan İran asıllı, Farsça konuşan halktan olan kimse.
@@ -5760,14 +5760,14 @@ Tahir			E		OZEL	özel, ad		AR	Temiz, pak.
 Tahire			K		OZEL	özel, ad		AR	Temiz, pak. 
 Tahiyye			K		OZEL	özel, ad		AR	Allah ömür versin demek. Selam verme, hayır dua etmek. 
 Tahrim			E		OZEL	özel, ad		AR	Haram kılma, kılınma. 
-Tahrime			K		OZEL	özel, ad		AR	"Namaza başlarken ""Allahu ekber"" deme."
+Tahrime			K		OZEL	özel, ad		AR	Namaza başlarken "Allahu ekber" deme.
 Tahsin			E		OZEL	özel, ad		AR	Güzel bulma, beğenme. Aferin deme alkışlama.
 Tahsir			E		OZEL	özel, ad		AR	Hasret bırakma, bırakılma. Hasret etme, edilme.
 Tahur			E		OZEL	özel, ad		AR	Pek temiz, temizleyici.
 Tahzir			E		OZEL	özel, ad		AR	Yeşil renk verme.
 Tahzire			K		OZEL	özel, ad		AR	Yeşil renk verme.
-Taib			E		OZEL	özel, ad		AR	"Tevbe eden. Günahlarından dolayı pişmanlık duyup Allah'tan af dileyen, müslüman.- Türk dil kuralına göre ""b/p"" olarak kullanılır."
-Taibe			K		OZEL	özel, ad		AR	"Tevbe eden. Günahlarından dolayı pişmanlık duyup Allah'tan af dileyen, müslüman.- Türk dil kuralına göre ""b/p"" olarak kullanılır."
+Taib			E		OZEL	özel, ad		AR	Tevbe eden. Günahlarından dolayı pişmanlık duyup Allah'tan af dileyen, müslüman.- Türk dil kuralına göre "b/p" olarak kullanılır.
+Taibe			K		OZEL	özel, ad		AR	Tevbe eden. Günahlarından dolayı pişmanlık duyup Allah'tan af dileyen, müslüman.- Türk dil kuralına göre "b/p" olarak kullanılır.
 Taif			E		OZEL	özel, ad		AR	Tavaf eden. Dönen, dolaşan.
 Taife			K		OZEL	özel, ad		AR	Bölük, takım, güruh, fırka. Kavim, kabile. Tayfa.
 Tail			E		OZEL	özel, ad		AR	Fayda, yarar.
@@ -5794,8 +5794,8 @@ Talayman			E		OZEL	özel, ad		TR	Deniz adamı, denizci.
 Talaz			E		OZEL	özel, ad		TR	Kasırga, fırtına.
 Talha			E		OZEL	özel, ad		AR	Zamk ağacı. 
 Talia			K		OZEL	özel, ad		AR	Tulu eden, öncü. 
-Talib			E		OZEL	özel, ad		AR	"Talep eden arayan, isteyen; istekli. "
-Talibe			K		OZEL	özel, ad		AR	"Talep eden arayan, isteyen; istekli. "
+Talib			E		OZEL	özel, ad		AR	Talep eden arayan, isteyen; istekli. 
+Talibe			K		OZEL	özel, ad		AR	Talep eden arayan, isteyen; istekli. 
 Talih			E		OZEL	özel, ad		AR	Şans, talih, kader.
 Taliha			K		OZEL	özel, ad		AR	Şans, talih, kader.
 Talik			E		OZEL	özel, ad		AR	Güleryüzlü. 
@@ -6011,7 +6011,7 @@ Tevekkül			E		OZEL	özel, ad		AR	Her şeyi Allah'a bırakarak, yargıya boyun e
 Tevfik			E		OZEL	özel, ad		AR	Uydurma, uygun düşürme. 
 Tevfika			K		OZEL	özel, ad		AR	Uydurma, uygun düşürme. 
 Tevhid			E		OZEL	özel, ad		AR	Birkaç şeyi bir araya getirme. 
-Tevhiddin			E		OZEL	özel, ad		AR	"Dinin birliği, birleştiriciliği.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Tevhiddin			E		OZEL	özel, ad		AR	Dinin birliği, birleştiriciliği.Türk dil kuralına göre "d/t" olarak kullanılır.
 Tevhide			K		OZEL	özel, ad		AR	Birkaç şeyi bir araya getirme. 
 Tevil			E		OZEL	özel, ad		AR	Durum, biçim. Süs.
 Tevile			K		OZEL	özel, ad		AR	Durum, biçim. Süs.
@@ -6420,7 +6420,7 @@ Usman			E		OZEL	özel, ad		TR	Akıllı, zeki kimse.
 Usum			E		OZEL	özel, ad		TR	Akıllı.
 Usun			U		OZEL	özel, ad		TR	Hüzün.Erkek ve kadın adı olarak kullanılır.
 Usunbike			K		OZEL	özel, ad		TR	Hüzünlü hanım.
-Utarid			U		OZEL	özel, ad		AR	"Merkür. Erkek ve kadın adı olarak kullanılır.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Utarid			U		OZEL	özel, ad		AR	Merkür. Erkek ve kadın adı olarak kullanılır.Türk dil kuralına göre "d/t" olarak kullanılır.
 Utbe			E		OZEL	özel, ad		AR	Meşhur sahabelerden bazılarının ismi.
 Utkan			E		OZEL	özel, ad		TR	Zafer kazanmış, muzaffer. 
 Utku			U		OZEL	özel, ad		TR	Birçok emek ve tehlikelerden sonra ulaşılan, mutlu sonuç, zafer.Erkek ve kadın adı olarak kullanılır.
@@ -6438,7 +6438,7 @@ Uygur			U		OZEL	özel, ad		TR	Orta Asya'da büyük devlet ve uygarlık kurmuş, 
 Uyguralp			E		OZEL	özel, ad		TR	Uygar yiğit. Uygur'a mensup kişi.
 Uysal			U		OZEL	özel, ad		TR	Yumuşak başlı, uyumlu, boyun eğen. Terbiyeli.Erkek ve kadın adı olarak kullanılır.
 Uyun			U		OZEL	özel, ad		AR	Gözler. Pınarlar, kaynaklar.Erkek ve kadın adı olarak kullanılır.
-Uz		uz	U		OZEL	özel, ad	D_ILK_HARF_BUYUT_u	TR	İyi, güzel. Uygun, doğru. 
+Uz			U		OZEL	özel, ad		TR	İyi, güzel. Uygun, doğru. 
 Uzalp			E		OZEL	özel, ad		TR	İyi, temiz, akıllı, anlayışlı yiğit.
 Uzay			U		OZEL	özel, ad		TR	Bütün varlıkların içinde bulunduğu sonsuz boşluk.Erkek ve kadın adı olarak kullanılır.
 Uzbay			E		OZEL	özel, ad		TR	İyi, becerikli, temiz, akıllı ve saygın kişi.
@@ -6461,8 +6461,8 @@ Uztekin			E		OZEL	özel, ad		TR	Uztekin.
 Übab			E		OZEL	özel, ad		AR	Şiddetli, taşkın sel suyu.
 Übabe			K		OZEL	özel, ad		AR	Şiddetli, taşkın sel suyu.
 Übey			E		OZEL	özel, ad		AR	Sahabedendir. Übey b. Ka'b.
-Übeyd			E		OZEL	özel, ad		AR	"Köle, kölecik, kul.- Türk dil kuralına göre ""d/t"" olarak kullanılır."
-Übeyde			U		OZEL	özel, ad		AR	"Köle, kölecik, kul.- Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Übeyd			E		OZEL	özel, ad		AR	Köle, kölecik, kul.- Türk dil kuralına göre "d/t" olarak kullanılır.
+Übeyde			U		OZEL	özel, ad		AR	Köle, kölecik, kul.- Türk dil kuralına göre "d/t" olarak kullanılır.
 Übeydullah			E		OZEL	özel, ad		AR	Allah'ın kulu.
 Übhet			E		OZEL	özel, ad		AR	Büyüklük, ululuk.
 Üçel			U		OZEL	özel, ad		TR	Yüce, yüksek. 
@@ -6556,7 +6556,7 @@ Vabil			E		OZEL	özel, ad		AR	İri damlalı yağmur.
 Vabile			K		OZEL	özel, ad		AR	İri damlalı yağmur.
 Vacib			E		OZEL	özel, ad		AR	Dini(şer'i) bakımdan terkedilmesi doğru ve uygun olmayan, kesinlik bakımından farzdan sonra gelen. 
 Vacibe			K		OZEL	özel, ad		AR	Yapılması gerekli olan.
-Vacid			E		OZEL	özel, ad		AR	"Yaratan, meydana çıkaran.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Vacid			E		OZEL	özel, ad		AR	Yaratan, meydana çıkaran.Türk dil kuralına göre "d/t" olarak kullanılır.
 Vacide			K		OZEL	özel, ad		AR	Meydana getirici, yaratıcı. 
 Vafe			U		OZEL	özel, ad		PE	Nasip, kısmet. 
 Vafi			E		OZEL	özel, ad		AR	Yeter, tam. Sözünde duran, sözünün eri.
@@ -6565,15 +6565,15 @@ Vafir			E		OZEL	özel, ad		AR	Çok, bol.
 Vafire			K		OZEL	özel, ad		AR	Çok, bol.
 Vafiye			K		OZEL	özel, ad		AR	Yeter, tam. Sözünde duran, sözünün eri.
 Vaha			U		OZEL	özel, ad		AR	Çöllerin su bulunan kesimlerinde oluşan bitkili alan.Erkek ve kadın adı olarak kullanılır.
-Vahab			E		OZEL	özel, ad		AR	"Bağışlayan, ihsan eden.Türk dil kuralına göre ""b/p"" olarak kullanılır. ""Abd"" takısı alarak kullanılırsa daha iyi olur"
+Vahab			E		OZEL	özel, ad		AR	Bağışlayan, ihsan eden.Türk dil kuralına göre "b/p" olarak kullanılır. "Abd" takısı alarak kullanılırsa daha iyi olur
 Vahat			E		OZEL	özel, ad		AR	Çöl ortasında suyu ve yeşilliği olan yerler. Vahalar.
-Vahdeddin			E		OZEL	özel, ad		AR	"Dinin tekliği, birliği.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Vahdeddin			E		OZEL	özel, ad		AR	Dinin tekliği, birliği.Türk dil kuralına göre "d/t" olarak kullanılır.
 Vahdet			E		OZEL	özel, ad		AR	Yalnızlık, teklik, birlik. 
-Vahib			E		OZEL	özel, ad		AR	"Bağışlayan, bağışlayıcı.Türk dil kuralına göre ""b/p"" olarak kullanılır."
-Vahibe			K		OZEL	özel, ad		AR	"Bağışlayan, bağışlayıcı.Türk dil kuralına göre ""b/p"" olarak kullanılır."
-Vahid			E		OZEL	özel, ad		AR	"Bir, tek, yalnız. Allah'ın sıfatlarındandır.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Vahib			E		OZEL	özel, ad		AR	Bağışlayan, bağışlayıcı.Türk dil kuralına göre "b/p" olarak kullanılır.
+Vahibe			K		OZEL	özel, ad		AR	Bağışlayan, bağışlayıcı.Türk dil kuralına göre "b/p" olarak kullanılır.
+Vahid			E		OZEL	özel, ad		AR	Bir, tek, yalnız. Allah'ın sıfatlarındandır.Türk dil kuralına göre "d/t" olarak kullanılır.
 Vahiddin			E		OZEL	özel, ad		AR	Tek din, dinin tekliği.
-Vahide			K		OZEL	özel, ad		AR	"Bir, tek, yalnız. Allah'ın sıfatlarındandır.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Vahide			K		OZEL	özel, ad		AR	Bir, tek, yalnız. Allah'ın sıfatlarındandır.Türk dil kuralına göre "d/t" olarak kullanılır.
 Vaid			E		OZEL	özel, ad		AR	Birini iyiliğe sevk ve kötülükten uzaklaştırmak için korkutma, yıldırma.
 Vail			E		OZEL	özel, ad		AR	Sığınan, kurtulan. Sahabe adlarındandır
 Vaiz			E		OZEL	özel, ad		AR	Dinsel öğütlerde bulunan kimse.
@@ -6616,7 +6616,7 @@ Vassale			K		OZEL	özel, ad		AR	(Eski) yazma eserlerin kenarlı kısmına kağı
 Vatan			E		OZEL	özel, ad		AR	Yurt, ülke.
 Vazah			E		OZEL	özel, ad		AR	Beyaz, güzel yüzlü adam.
 Vazahat			K		OZEL	özel, ad		AR	Vazıhlık, açıklık.
-Vecaheddin			E		OZEL	özel, ad		AR	"Dinin yüceliği, onuru.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Vecaheddin			E		OZEL	özel, ad		AR	Dinin yüceliği, onuru.Türk dil kuralına göre "d/t" olarak kullanılır.
 Vecahet			K		OZEL	özel, ad		AR	Güzel yüzlülük, gösterişlilik, güzel yüz. 
 Vecazet			K		OZEL	özel, ad		AR	Sözün, veciz kısa oluşu.
 Vecdet			E		OZEL	özel, ad		AR	Zenginlik, varsallık.
@@ -6637,8 +6637,8 @@ Vedat			E		OZEL	özel, ad		AR	Sevgi, dostluk.
 Vedi			E		OZEL	özel, ad		AR	Başkasının malını saklamakla görevli kimse.
 Vedia			K		OZEL	özel, ad		AR	Saklanılması, korunması için birine ya da bir yere bırakılan emanet.
 Vediatullah			U		OZEL	özel, ad		AR	Allah'ın emaneti, dini. Kadınlar da Allah'ın emaneti olarak nitelenmişlerdir.
-Vedid			E		OZEL	özel, ad		AR	"Dost, sevgisi çok olan.Türk dil kuralına göre ""d/t"" olarak kullanılır."
-Vedide			K		OZEL	özel, ad		AR	"Dost, sevgisi çok olan.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Vedid			E		OZEL	özel, ad		AR	Dost, sevgisi çok olan.Türk dil kuralına göre "d/t" olarak kullanılır.
+Vedide			K		OZEL	özel, ad		AR	Dost, sevgisi çok olan.Türk dil kuralına göre "d/t" olarak kullanılır.
 Vedud			E		OZEL	özel, ad		AR	Çok muhabbetli, çok şefkatli. 
 Vefa			E		OZEL	özel, ad		AR	Sözünü yerine getirme, sözünde durma, borcunu ödeme. 
 Vefai			E		OZEL	özel, ad		TR	Vefa ile ilgili.
@@ -6712,7 +6712,7 @@ Yaban			E		OZEL	özel, ad		PE	Yabancı.
 Yabangülü			K		OZEL	özel, ad		PE	Kır gülü. Bozkır çiçeği. 
 Yabar			E		OZEL	özel, ad		TR	Güzel koku, misk.
 Yabende			U		OZEL	özel, ad		PE	Bulucu, bulan. Keşfeden.Erkek ve kadın adı olarak kullanılır.
-Yabgu			E		OZEL	özel, ad		TR	"Eski Türk devletlerinde ""hükümdar"" anlamında kullanılan bir unvan."
+Yabgu			E		OZEL	özel, ad		TR	Eski Türk devletlerinde "hükümdar" anlamında kullanılan bir unvan.
 Yade			K		OZEL	özel, ad		PE	Hatıra.
 Yadigâr			U		OZEL	özel, ad		PE	Bir kimseyi ya da bir olayı anımsatan kimse. Bırakılan anı.Erkek ve kadın adı olarak kullanılır.
 Yafes			E		OZEL	özel, ad		AR	Hz. Nuh(a.s
@@ -6732,7 +6732,7 @@ Yağmurca			E		OZEL	özel, ad		TR	Bir tür geyik. Dağ keçisi.
 Yahşi			E		OZEL	özel, ad		TR	İyi, güzel, çok güzel. 
 Yahşibay			E		OZEL	özel, ad		TR	İyi tanınan, saygın kimse.
 Yahşihan			E		OZEL	özel, ad		TR	Genç, güzel hükümdar.
-Yahya			E		OZEL	özel, ad		IB	"'Allah lütufkardır"" anlamında. Kur'an-ı Kerim'de 5 yerde ismi geçen ve Zekeriyya(a.s"
+Yahya			E		OZEL	özel, ad		IB	'Allah lütufkardır" anlamında. Kur'an-ı Kerim'de 5 yerde ismi geçen ve Zekeriyya(a.s
 Yakazan			K		OZEL	özel, ad		AR	Uyanık, gözü açık.
 Yaktın			E		OZEL	özel, ad		PE	Kabak. Kavun, karvpuz, hıyar gibi toprakta uzanıp, yetişen bitki.
 Yakub			E		OZEL	özel, ad		AR	Erkek keklik. 
@@ -6790,9 +6790,9 @@ Yasemin			K		OZEL	özel, ad		PE	Zeytingillerden, güzel kokulu ve ekseriya beyaz
 Yaser			E		OZEL	özel, ad		AR	Bolluk, varlık, zenginlik, varlıklılık.
 Yasin			E		OZEL	özel, ad		AR	Kur'an-ı Kerim'in 3
 Yasun			E		OZEL	özel, ad		TR	Tarz, üslup, töre. 
-Yaşa			E		OZEL	özel, ad		TR	"Sevinç memnuniyet, beğenme ve alkış ifade eder; yaşasın, ömrü çok olsun, aferin."
+Yaşa			E		OZEL	özel, ad		TR	Sevinç memnuniyet, beğenme ve alkış ifade eder; yaşasın, ömrü çok olsun, aferin.
 Yaşam			U		OZEL	özel, ad		TR	Doğumdan ölüme kadar geçen süre, hayat.Erkek ve kadın adı olarak kullanılır.
-Yaşanur			U		OZEL	özel, ad		TR	"Sevinç memnuniyet, beğenme ve alkış ifade eder; yaşasın, ömrü çok olsun, aferin."
+Yaşanur			U		OZEL	özel, ad		TR	Sevinç memnuniyet, beğenme ve alkış ifade eder; yaşasın, ömrü çok olsun, aferin.
 Yaşar			U		OZEL	özel, ad		TR	Doğan çocuğun uzun ömürlü olması dileğiyle konulan adlardır.Erkek ve kadın adı olarak kullanılır.
 Yaşık			E		OZEL	özel, ad		TR	Işık, parıltı, parlaklık.
 Yaşıl			E		OZEL	özel, ad		TR	Yeşil. 
@@ -6838,7 +6838,7 @@ Yeksare			K		OZEL	özel, ad		PE	Yalnız başına.
 Yekser			E		OZEL	özel, ad		PE	Yalnız başına. 
 Yekta			E		OZEL	özel, ad		PE	Tek, yalnız. 
 Yelal			E		OZEL	özel, ad		TR	Rüzgar, yel, esinti.
-Yeldâ			K		OZEL	özel, ad		PE	"Uzun ve siyah şey. Şeb-i yelda; uzun gece."
+Yeldâ			K		OZEL	özel, ad		PE	Uzun ve siyah şey. Şeb-i yelda; uzun gece.
 Yeldan			E		OZEL	özel, ad		TR	Hızlı, süratli.
 Yelen			E		OZEL	özel, ad		TR	Arzu, istek. 
 Yeler			E		OZEL	özel, ad		TR	Yel gibi hızlı, çabuk kimse.
@@ -6952,8 +6952,8 @@ Zâhid			E		OZEL	özel, ad		AR	Zühd sahibi, şüpheli şeyleri bile terkederek 
 Zahide			K		OZEL	özel, ad		AR	Zühd sahibi, şüpheli şeyleri bile terkederek günahtan kaçan, Allah korkusuyla dünya nimetlerinden el çeken(kimse) muttaki.
 Zâhir			E		OZEL	özel, ad		AR	Parlak, parlak yıldız. Allah'ın isimlerindendir. Kur'an-ı Kerim'de Hadid suresi 
 Zâhire			K		OZEL	özel, ad		AR	Parlak, parlak yıldız. Allah'ın isimlerindendir. Kur'an-ı Kerim'de Hadid suresi 
-Zaid			E		OZEL	özel, ad		AR	"Artan, artıran. -Türk dil kuralına göre ""d/t"" olarak kullanılır."
-Zaide			K		OZEL	özel, ad		AR	"Artan, artıran. -Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Zaid			E		OZEL	özel, ad		AR	Artan, artıran. -Türk dil kuralına göre "d/t" olarak kullanılır.
+Zaide			K		OZEL	özel, ad		AR	Artan, artıran. -Türk dil kuralına göre "d/t" olarak kullanılır.
 Zaik			E		OZEL	özel, ad		AR	Tad alan, tadıcı, tadan.
 Zaika			K		OZEL	özel, ad		AR	Tad alan, tadıcı, tadan.
 Zaim			E		OZEL	özel, ad		AR	Kefil. 
@@ -7044,7 +7044,7 @@ Zivekar			E		OZEL	özel, ad		AR	Vekarlı. Vakar dolu. Vakar sahibi.
 Ziver			U		OZEL	özel, ad		PE	Süs, bezek.Erkek ve kadın adı olarak kullanılır.
 Ziverbey			U		OZEL	özel, ad		TR	Süs, bezek.Erkek ve kadın adı olarak kullanılır.
 Ziya			E		OZEL	özel, ad		AR	Aydınlık, parlaklık, nur, ışık.
-Ziyad			E		OZEL	özel, ad		TR	"Fazlalık, çokluk.Türk dil kuralına göre ""d/t"" olarak kullanılır. Ziyat."
+Ziyad			E		OZEL	özel, ad		TR	Fazlalık, çokluk.Türk dil kuralına göre "d/t" olarak kullanılır. Ziyat.
 Ziyaeddin			E		OZEL	özel, ad		AR	Dinin ışığı, aydınlığı.
 Ziynet			K		OZEL	özel, ad		TR	Süs, bezek.
 Ziyneti			K		OZEL	özel, ad		AR	Süsle, bezekle ilgili
@@ -7057,8 +7057,8 @@ Zuhuri			E		OZEL	özel, ad		AR	Orta oyununda komik rolünü yapan kimse.
 Zübeyde			K		OZEL	özel, ad		AR	Öz, asıl, cevher.
 Zübeyir			E		OZEL	özel, ad		AR	Yazılı, küçük şey.
 Zübeyr			E		OZEL	özel, ad		AR	Yazılı, küçük şey.
-Zühdi			E		OZEL	özel, ad		AR	"Her türlü zevke karşı koyarak kendini ibadete veren.Türk dil kuralına göre ""d/t"" olarak kullanılır."
-Zühdiye			K		OZEL	özel, ad		AR	"Her türlü zevke karşı koyarak kendini ibadete veren.Türk dil kuralına göre ""d/t"" olarak kullanılır."
+Zühdi			E		OZEL	özel, ad		AR	Her türlü zevke karşı koyarak kendini ibadete veren.Türk dil kuralına göre "d/t" olarak kullanılır.
+Zühdiye			K		OZEL	özel, ad		AR	Her türlü zevke karşı koyarak kendini ibadete veren.Türk dil kuralına göre "d/t" olarak kullanılır.
 Züheyr			E		OZEL	özel, ad		AR	Küçük çiçek, çiçekcik. 
 Zühre			K		OZEL	özel, ad		AR	Çoban yıldızı, venüs.
 Zülal			K		OZEL	özel, ad		AR	Hafif, saf ve tatlı su.

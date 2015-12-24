@@ -147,7 +147,7 @@ namespace Nuve.Gui
             //Console.WriteLine(word.GetSurface());
 
 
-            //Test();
+            Test();
         }
 
         public static string Split(string str)
@@ -257,7 +257,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-               "bugünkü", "ben de", "o da", "kalem de", "kitap da", "orada da", "evde de",  "gelsen de",  "kalsam da",
+               "of", "Of", "Öz", "öz"
             };
             //string[] testStrings = SoruTest.Soru;
             AnalysisHelper.Analyze(Analyzer, testStrings);
