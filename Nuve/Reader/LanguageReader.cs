@@ -23,6 +23,8 @@ namespace Nuve.Reader
         private readonly string _seperator;
         private Orthography _orthography;
 
+        private readonly TraceSource _trace = new TraceSource("LanguageReader");
+
         public LanguageReader(string dirPath) : this(dirPath, true)
         {
         }
@@ -40,19 +42,20 @@ namespace Nuve.Reader
             sw.Start();
 
             _orthography = ReadOrthography();
-            Debug.Print($"orthograpy: {sw.ElapsedMilliseconds} ms");
+
+            _trace.TraceInformation($"orthograpy: {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
             var morphotactics = ReadMorphotactics();
-            Debug.Print($"morphotactics: {sw.ElapsedMilliseconds} ms");
+            _trace.TraceInformation($"morphotactics: {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
             var roots = ReadRoots();
-            Debug.Print($"roots: {sw.ElapsedMilliseconds} ms");
+            _trace.TraceInformation($"roots: {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
             var suffixes = ReadSuffixes();
-            Debug.Print($"suffixes: {sw.ElapsedMilliseconds} ms");
+            _trace.TraceInformation($"suffixes: {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
 

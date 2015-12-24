@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace Nuve.Morphologic
@@ -9,30 +8,31 @@ namespace Nuve.Morphologic
         private const string Delim = "+";
         private readonly Dictionary<string, Transition<string>> _dict = new Dictionary<string, Transition<string>>();
 
+        private readonly TraceSource _trace = new TraceSource("DictionaryGraph");
+
         public bool ContainsEdge(string source, string target)
         {
-            string key = GetKey(source, target);
+            var key = GetKey(source, target);
             return _dict.ContainsKey(key);
         }
 
         public bool TryGetEdge(string source, string target, out Transition<string> edge)
         {
-            string key = GetKey(source, target);
+            var key = GetKey(source, target);
             return _dict.TryGetValue(key, out edge);
         }
 
         public void AddEdge(Transition<string> edge)
         {
-            string key = GetKey(edge.Source, edge.Target);
+            var key = GetKey(edge.Source, edge.Target);
 
             if (!_dict.ContainsKey(key))
             {
                 _dict[key] = edge;
+                return;
             }
-            else
-            {
-                Debug.Print("Duplicate key: " + key);                
-            }
+
+            _trace.TraceEvent(TraceEventType.Warning, 1, $"Duplicate key: {key}");
         }
 
         public bool TryGetOutEdges(string source, out IEnumerable<Transition<string>> outEdges)

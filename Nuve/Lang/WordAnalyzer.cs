@@ -9,6 +9,7 @@ namespace Nuve.Lang
     public class WordAnalyzer
     {
         private readonly Language _lang;
+        private readonly TraceSource _trace = new TraceSource("WordAnalyzer");
 
         public WordAnalyzer(Language language)
         {
@@ -52,7 +53,7 @@ namespace Nuve.Lang
             {
                 if (!HasCorrectSurface(analyses[i], surface))
                 {
-                    Debug.Print($"Eliminated by orthography. expected:{surface} actual:{analyses[i].GetSurface()} solution:{analyses[i]}");
+                    _trace.TraceEvent(TraceEventType.Verbose, 11, $"Eliminated by orthography. expected:{surface} actual:{analyses[i].GetSurface()} solution:{analyses[i]}");
                     analyses.RemoveAt(i);
                 }
             }
@@ -69,7 +70,7 @@ namespace Nuve.Lang
             {
                 if (!_lang.Morphotactics.IsValid(analyses[i]))
                 {
-                    Debug.Print("Eliminated by morph:" + analyses[i]);
+                    _trace.TraceEvent(TraceEventType.Verbose, 11, $"Eliminated by morph: {analyses[i]}");
                     analyses.RemoveAt(i);
                 }
             }
