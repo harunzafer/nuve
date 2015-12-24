@@ -97,7 +97,7 @@ namespace Nuve.Lang
             foreach (var pair in possibleFirstSuffixes)
             {
                 //Burada değişiklik yaptık, şimdilik sorun yok
-                if (!_lang.Morphotactics.HasTransition(word.Last.Morpheme.Id, pair.Value.Id) && checkTransition)
+                if (!_lang.Morphotactics.HasTransition(word.Last.Morpheme.GraphId, pair.Value.GraphId) && checkTransition)
                 {
                     continue;
                 }

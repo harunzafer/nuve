@@ -10,133 +10,62 @@ namespace Nuve.Morphologic.Structure
         D,
         O,
         Root
-    };
+    }
 
-    /// <summary>
-    ///     Bir kelimenin en küçük yapı taşı olan morfemi temsil eden abstract class.
-    ///     <para />
-    ///     Root ve Suffix sınıfları bu sınıftan türerler.
-    ///     <para />
-    ///     Word sınıfı her biri içerisinde bir Morphmeme tutan bir Allomorph dizisi şeklinde düşünülür.
-    ///     <para />
-    ///     Morpheme sınıfı immutable'dır.
-    ///     <para />
-    /// </summary>
     public abstract class Morpheme
     {
-        /// <summary>
-        ///     Morfem'in herhangi bir ortografi kuralı olup olmadığına bakar.
-        /// </summary>
-        /// <value>
-        ///     <c>true</c> Eğer bir ya da daha fazla kural varsa; hiç kural yoksa, <c>false</c>.
-        /// </value>
         protected readonly bool HasRule;
 
-        private readonly HashSet<string> _labels;
-        private readonly List<OrthographyRule> _rules;
-
-        /// <summary>
-        ///     Yeni, immutable bir <see cref="Morpheme" /> nesnesi oluşturur.
-        /// </summary>
-        /// <param name="id"> </param>
-        /// <param name="lexicalForm">Morfemin sölük (lexicon) biçimi</param>
-        /// <param name="type">Morfem'in tür bilgisini tutar. 2 ya da 3 karakterden oluşur.</param>
-        /// <param name="rules">Morfem'in sahip olduğu Ortografi kurallarını tutar. 0 veya n tane olabilir.</param>
-        protected Morpheme(string id, string lexicalForm, MorphemeType type, HashSet<string> labels,
-            List<OrthographyRule> rules)
+        protected Morpheme(string lexicalForm, MorphemeType type, HashSet<string> labels, List<OrthographyRule> rules)
         {
-            Id = id;
             LexicalForm = lexicalForm;
             Type = type;
-            _labels = labels;
-            _rules = rules;
-            HasRule = _rules.Any();
+            Labels = labels;
+            Rules = rules;
+            HasRule = Rules.Any();
         }
 
-        /// <summary>
-        ///     Morfem için biricik (unique) olan Id değeri
-        ///     <para />
-        /// </summary>
-        /// <example>
-        ///     Morfem <see cref="Suffix" /> ise sistemde her suffix için biricik (unique) tanımlanmış olan id değerini
-        ///     döndürür. Mesela çoğul eki için IC_COGUL_lAr gibi.
-        ///     <para />
-        ///     Morfem <see cref="Root" /> ise Root'un tipini (root.Phase) döndürür
-        ///     <para />
-        /// </example>
-        public string Id { get; }
+        internal HashSet<string> Labels { get; }
 
-        /// <summary>
-        ///     Morfemin sölük (lexicon) biçimi
-        ///     <para />
-        ///     Örneğin çoğul ekinin sözlük biçimi lAr şeklindedir.
-        /// </summary>
+        internal List<OrthographyRule> Rules { get; }
+
+        public abstract string Id { get; }
+
+        public abstract string GraphId { get; }
+
         public string LexicalForm { get; }
 
         public MorphemeType Type { get; }
 
-        /// <summary>
-        ///     Morfemin sözlük biçimini id ile taglenmiş olarak döndürür.
-        ///     Mesela lAr/IC_COGUL_lAr gibi.
-        /// </summary>
-        public string TaggedForm
-        {
-            get { return LexicalForm + "/" + Id; }
-        }
-
-        /// <summary>
-        ///     Morfem'in sahip olduğu Ortografi kurallarını tutar. 0 veya n tane olabilir.
-        ///     <para />
-        /// </summary>
-        internal List<OrthographyRule> Rules
-        {
-            get { return _rules; }
-        }
-
         internal bool HasLabel(string label)
         {
-            return _labels.Contains(label);
+            return Labels.Contains(label);
         }
-
 
         internal bool ContainsRule(string id)
         {
-            return _rules.Any(rule => rule.Id == id);
+            return Rules.Any(rule => rule.Id == id);
         }
 
-        /// <summary>
-        ///     Morfemden önce gelen morfemlerin yüzey biçiminden (leftSurface) etkilenen ortografik kuralları işletir.
-        ///     <para />
-        /// </summary>
-        /// <param name="surface">Ortografik kurallar işletilerek değişime uğrayacak olan o anki yüzey biçimi</param>
-        /// <param name="leftSurface">Bir önceki morfemin o anki yüzey biçimi</param>
-        /// <returns>İşletilen kurallar neticesine değişen yüzeyin son hali</returns>
         internal void ProcessRules(int phase, Allomorph allomorph)
         {
             if (HasRule)
-                foreach (OrthographyRule rule in Rules)
+                foreach (var rule in Rules)
                 {
                     if (rule.Phase == phase)
                         rule.Process(allomorph);
                 }
         }
 
-
-        ///// <summary>
-        ///// Morfemden sonra gelen morfemlerin yüzey biçiminden (rightSurface) etkilenen ortografik kuralları işletir.<para/>
-        ///// </summary>
-        ///// <param name="surface">Ortografik kurallar işletilerek değişime uğrayacak olan o anki yüzey biçimi</param>
-        ///// <param name="rightSurface">Bir sonraki morfemin o anki yüzey biçimi</param>
-        ///// <returns>İşletilen kurallar neticesine değişen yüzeyin son hali</returns>
-        //internal abstract string ProcessRightRules(string surface, SurfacePart rightSurface);
-
-
-        ////Bu sadece kökler için geçerli bir kural tipi
-        //internal abstract string ProcessSelfRules(string surface);
-
-        public override string ToString()
+        public string ToDebugString()
         {
             return LexicalForm + " Rule count:" + Rules.Count;
         }
+
+        public string TaggedForm
+        {
+            get { return LexicalForm + "/" + Id; }
+        }
+
     }
 }

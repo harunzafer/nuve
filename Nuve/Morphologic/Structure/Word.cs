@@ -269,17 +269,27 @@ namespace Nuve.Morphologic.Structure
             return ids;
         }
 
+        public static Word FromString(string str)
+        {
+            var morphemes = str.Split(null);
+      
+
+            return null;
+        }
+
         public override string ToString()
         {
             var sb = new StringBuilder();
             foreach (Allomorph allomorph in _allomorphs)
             {
-                sb.Append(allomorph.Morpheme.TaggedForm).Append(" ");
+                sb.Append(allomorph.Morpheme.Id).Append(" ");
             }
             return sb.ToString().TrimEnd();
-        }    
+        }
 
-       
+        //ToJSON
+        //FromJSON
+
         public override bool Equals(object obj)
         {
             if (ReferenceEquals(null, obj)) return false;

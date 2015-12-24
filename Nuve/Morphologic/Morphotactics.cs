@@ -23,7 +23,7 @@ namespace Nuve.Morphologic
             for (int i = 0; i < word.AllomorphCount - 1; i++)
             {
                 Transition<string> transition;
-                bool edgeExists = _graph.TryGetEdge(word[i].Morpheme.Id, word[i + 1].Morpheme.Id, out transition);
+                bool edgeExists = _graph.TryGetEdge(word[i].Morpheme.GraphId, word[i + 1].Morpheme.GraphId, out transition);
 
                 if (!edgeExists)
                 {

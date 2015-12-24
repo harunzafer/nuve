@@ -257,7 +257,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-               "of", "Of", "Öz", "öz"
+               "benim"
             };
             //string[] testStrings = SoruTest.Soru;
             AnalysisHelper.Analyze(Analyzer, testStrings);

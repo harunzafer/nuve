@@ -28,7 +28,7 @@ namespace Nuve.Gui
             IEnumerable<Root> roots = Language.Turkish.GetRootsHavingSurface(verbRoot);
             foreach (Root root in roots)
             {
-                if (root.Id == "FIIL")
+                if (root.Pos == "FIIL")
                 {
                     return root;
                 }

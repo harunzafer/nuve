@@ -61,6 +61,11 @@ namespace Nuve.Lang
             return null;
         }
 
+        public Root GetRoot(string lex, string pos)
+        {
+            return null;
+        }
+
         /// <summary>
         ///     Returns the roots having the specified surface. For example if
         ///     the surface is "ara", for Language.Turkish this method returns
