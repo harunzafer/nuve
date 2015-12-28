@@ -34,8 +34,8 @@ namespace Nuve.Gui
         [STAThread]
         private static void Main()
         {
-            Benchmarker.TestWithAMillionTokens(Analyzer);
-            Benchmarker.TestWithAMillionWords(Analyzer);
+            //Benchmarker.TestWithAMillionTokens(Analyzer);
+            //Benchmarker.TestWithAMillionWords(Analyzer);
 
             //Console.WriteLine(Language.Turkish.GetRoot("kitap","ISIM").DebugInfo);
 
@@ -110,7 +110,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-               "abdiaciz", "abdiacize", "abdiacizde"
+                "addi", "hemhâl", "a", "hemhâli"
             };
             //string[] testStrings = SoruTest.Soru;
             AnalysisHelper.Analyze(Analyzer, testStrings);

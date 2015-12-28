@@ -21,7 +21,7 @@ namespace Nuve.Gui
                 foreach (Word solution in solutions)
                 {
                     Console.WriteLine($"\t{solution}\n");
-                    Console.WriteLine($"\t{solution.ToString(WordFormat.MyFormat)}\n");
+                    //Console.WriteLine($"\t{solution.ToString(WordFormat.MyFormat)}\n");
                 }
             }
         }

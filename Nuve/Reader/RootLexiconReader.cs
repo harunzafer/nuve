@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
+using System.Linq;
+using System.Text.RegularExpressions;
 using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
@@ -53,7 +55,12 @@ namespace Nuve.Reader
             var lex = entry.Lex;
             var labels = entry.Labels.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
             var type = entry.Id;
-            var rules = entry.Rules.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
+            var rules = entry.Rules.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries).ToList();
+
+            if (Regex.IsMatch(lex, @"\p{L}[2-9]"))
+            {
+                rules.Add("DROP_ID_DIGIT");
+            }
 
 
             if (string.IsNullOrEmpty(entry.Lex))

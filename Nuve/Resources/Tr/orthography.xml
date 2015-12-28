@@ -260,8 +260,8 @@
       <transformation morpheme="This" action="Replace" operandOne="á" operandTwo="a" flag="all" />
     </rule>
 
-    <rule id="OZEL_INCELME_SAPKALI_A" phase="5">
-      <description>	saat => saate özel durumu için yerleştirilen á karakteri sonradan â olur. </description>
+    <rule id="INCELME_SAPKA_A" phase="5">
+      <description>yâr -> yâre özel durumu için yerleştirilen á karakteri sonradan â olur.</description>
       <transformation morpheme="This" action="Replace" operandOne="á" operandTwo="â" flag="all" />
     </rule>
 
@@ -275,10 +275,7 @@
       <transformation morpheme="This" action="Replace" operandOne="ú" operandTwo="u" flag="all" />
     </rule>
 
-    <rule id="INCELME_SAPKA_A" phase="5">
-      <description>yâr -> yâre </description>
-      <transformation morpheme="This" action="Replace" operandOne="á" operandTwo="â" flag="all" />
-    </rule>
+    
 
     <rule id="OZEL_BIZ_lIm" phase="2">
       <description>
