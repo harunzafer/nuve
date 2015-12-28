@@ -109,11 +109,12 @@ namespace Nuve.Reader
             }
         }
 
-        private MorphemeSurfaceDictionary<Root> ReadRoots()
+        private MorphemeContainer<Root> ReadRoots()
         {
             try
             {
-                var roots = new MorphemeSurfaceDictionary<Root>();
+                var rootsBySurface = new MorphemeSurfaceDictionary<Root>();
+                var rootsById = new Dictionary<string, Root>();
                 var reader = new RootLexiconReader(_orthography);
 
 
@@ -124,24 +125,24 @@ namespace Nuve.Reader
                 {
                     using (var stream = new FileStream(rootsPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                     {
-                        reader.AddEntries(TextToDataSet.Convert(stream, DefaultTableName, Delimiter), DefaultTableName,
-                            roots);
+                        var ds = TextToDataSet.Convert(stream, DefaultTableName, Delimiter);
+                        reader.AddEntries(ds, DefaultTableName, rootsById, rootsBySurface);
                     }
 
-                    return roots;
+                    return new MorphemeContainer<Root>(rootsById, rootsBySurface);
                 }
 
 
-                reader.AddEntries(EmbeddedTextResourceToDataSet(rootsPath), DefaultTableName, roots);
+                reader.AddEntries(EmbeddedTextResourceToDataSet(rootsPath), DefaultTableName, rootsById, rootsBySurface);
 
 
                 var namesPath = _dirPath + _seperator + Resources.InternalPersonNamesPath;
-                reader.AddEntries(EmbeddedTextResourceToDataSet(namesPath), DefaultTableName, roots);
+                reader.AddEntries(EmbeddedTextResourceToDataSet(namesPath), DefaultTableName, rootsById, rootsBySurface);
 
                 var abbreviationPath = _dirPath + _seperator + Resources.InternalAbbreviationsPath;
-                reader.AddEntries(EmbeddedTextResourceToDataSet(abbreviationPath), DefaultTableName, roots);
+                reader.AddEntries(EmbeddedTextResourceToDataSet(abbreviationPath), DefaultTableName, rootsById, rootsBySurface);
 
-                return roots;
+                return new MorphemeContainer<Root>(rootsById, rootsBySurface);
             }
             catch (Exception ex)
             {
@@ -149,13 +150,10 @@ namespace Nuve.Reader
             }
         }
 
-        private Suffixes ReadSuffixes()
+        private MorphemeContainer<Suffix> ReadSuffixes()
         {
             try
             {
-                Dictionary<string, Suffix> suffixesById;
-                MorphemeSurfaceDictionary<Suffix> suffixesBySurface;
-
                 var path = _dirPath + _seperator + Resources.InternalSuffixesPath;
                 var reader = new SuffixLexiconReader(_orthography);
 
@@ -163,18 +161,13 @@ namespace Nuve.Reader
                 {
                     using (var stream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
                     {
-                        reader.Read(TextToDataSet.Convert(stream, DefaultTableName, Delimiter), DefaultTableName,
-                            out suffixesById, out suffixesBySurface);
+                        return reader.Read(TextToDataSet.Convert(stream, DefaultTableName, Delimiter), DefaultTableName);
                     }
-
-                    return new Suffixes(suffixesById, suffixesBySurface);
                 }
 
                 var dataSet = EmbeddedTextResourceToDataSet(path);
 
-                reader.Read(dataSet, DefaultTableName, out suffixesById, out suffixesBySurface);
-
-                return new Suffixes(suffixesById, suffixesBySurface);
+                return reader.Read(dataSet, DefaultTableName);
             }
             catch (Exception ex)
             {

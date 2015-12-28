@@ -57,15 +57,6 @@ namespace Nuve.Morphologic.Structure
                 }
         }
 
-        public string ToDebugString()
-        {
-            return LexicalForm + " Rule count:" + Rules.Count;
-        }
-
-        public string TaggedForm
-        {
-            get { return LexicalForm + "/" + Id; }
-        }
-
+        internal string DebugInfo => Id + " Rule count:" + Rules.Count;
     }
 }

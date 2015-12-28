@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Nuve.Lang;
+using Nuve.Morphologic.Format;
 using Nuve.Orthographic;
 
 namespace Nuve.Morphologic.Structure
@@ -268,14 +269,7 @@ namespace Nuve.Morphologic.Structure
             ids.Insert(0, Root.LexicalForm);
             return ids;
         }
-
-        public static Word FromString(string str)
-        {
-            var morphemes = str.Split(null);
-      
-
-            return null;
-        }
+        
 
         public override string ToString()
         {
@@ -286,6 +280,13 @@ namespace Nuve.Morphologic.Structure
             }
             return sb.ToString().TrimEnd();
         }
+
+        public string ToString(WordFormat format)
+        {
+            return format.Format(this);
+        }
+
+
 
         //ToJSON
         //FromJSON

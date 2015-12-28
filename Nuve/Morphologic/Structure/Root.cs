@@ -50,7 +50,7 @@ namespace Nuve.Morphologic.Structure
 
         public override string ToString()
         {
-            return LexicalForm + "/" + Id + " " + Rules.Count;
+            return Id;
         }
     }
 }

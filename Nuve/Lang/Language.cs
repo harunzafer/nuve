@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
+using Nuve.Orthographic;
 using Nuve.Reader;
 
 namespace Nuve.Lang
@@ -14,9 +15,6 @@ namespace Nuve.Lang
     public sealed class Language
     {
         public static readonly Language Turkish;
-        private readonly string _code;
-        private readonly MorphemeSurfaceDictionary<Root> _roots;
-        private readonly Suffixes _suffixes;
 
         static Language()
         {
@@ -32,28 +30,36 @@ namespace Nuve.Lang
 
         internal Language(string code,
             Morphotactics morphotactics,
-            MorphemeSurfaceDictionary<Root> roots,
-            Suffixes suffixes)
+            MorphemeContainer<Root> roots,
+            MorphemeContainer<Suffix> suffixes)
         {
-            _code = code;
+            Code = code;
             Morphotactics = morphotactics;
-            _roots = roots;
-            _suffixes = suffixes;
+            Roots = roots;
+            Suffixes = suffixes;
         }
+
+        /// <summary>
+        ///     The name is a combination of an ISO 639 two-letter lowercase culture code associated with a language and an ISO
+        ///     3166 two-letter uppercase subculture code associated with a country or region.
+        ///     https://msdn.microsoft.com/en-us/library/756hydy4%28v=vs.100%29.aspx
+        ///     http://timtrott.co.uk/culture-codes/
+        /// </summary>
+        public string Code { get; }
+
+        private MorphemeContainer<Suffix> Suffixes { get; }
+        private MorphemeContainer<Root> Roots { get; }
 
         internal Morphotactics Morphotactics { get; }
 
-        public IEnumerable<Suffix> AllSuffixes => _suffixes.SuffixesById.Values;
-
         /// <summary>
         ///     Returns the immutable Suffix object having given id
+        /// ddd
         /// </summary>
-        /// <param name="id">unique id of the Suffix</param>
-        /// <returns>Returns the Suffix or null if no Suffix with the id exists</returns>
         public Suffix GetSuffix(string id)
         {
             Suffix suffix;
-            if (_suffixes.SuffixesById.TryGetValue(id, out suffix))
+            if (Suffixes.ById.TryGetValue(id, out suffix))
             {
                 return suffix;
             }
@@ -61,8 +67,26 @@ namespace Nuve.Lang
             return null;
         }
 
+        public Root GetRoot(string rootId)
+        {
+            rootId.ThrowIfNull();
+            var tokens = rootId.Split('/');
+            if (tokens.Length != 2)
+            {
+                throw new ArgumentException($"Invalid root id \"{rootId}\". A valid root ID shoul be in the form of lex/pos. Ex: kitap/NOUN");
+            }
+
+            return GetRoot(tokens[0], tokens[1]);
+        }
+
         public Root GetRoot(string lex, string pos)
         {
+            Root root;
+            var rootId = lex + "/" + pos;
+            if (Roots.ById.TryGetValue(rootId, out root))
+            {
+                return root;
+            }
             return null;
         }
 
@@ -75,7 +99,7 @@ namespace Nuve.Lang
         /// <returns>Returns an empty list if no root has the specified surface</returns>
         public IEnumerable<Root> GetRootsHavingSurface(string surface)
         {
-            return _roots.Get(surface);
+            return Roots.BySurface.Get(surface);
         }
 
 
@@ -88,12 +112,50 @@ namespace Nuve.Lang
         /// <returns>Returns an empty list if no suffix has the specified surface</returns>
         public IEnumerable<Suffix> GetSuffixesHavingSurface(string surface)
         {
-            return _suffixes.SuffixesBySurface.Get(surface);
+            return Suffixes.BySurface.Get(surface);
         }
 
         public override string ToString()
         {
-            return _code;
+            return Code;
         }
+
+        public Word Generate(params string[] morphemes)
+        {
+            StringExtensions.ThrowIfNullAny(morphemes);
+
+            var root = GetRoot(morphemes[0]);
+
+            if (root == null)
+            {
+                return null;
+            }
+
+            var word = new Word(root);
+            for (var i = 1; i < morphemes.Length; i++)
+            {
+                var suffix = GetSuffix(morphemes[i]);
+                if (suffix == null)
+                {
+                    return null;
+                }
+                word.AddSuffix(suffix);
+            }
+
+            return word;
+
+
+        }
+
+        public Word GetWord(string analysis)
+        {
+            analysis.ThrowIfNull();
+            analysis.ThrowIfEmpty();
+
+            var tokens = analysis.Split(' ');
+
+            return Generate(tokens);
+        }
+
     }
 }

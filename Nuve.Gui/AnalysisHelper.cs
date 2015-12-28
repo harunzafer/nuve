@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using Nuve.Lang;
+using Nuve.Morphologic.Format;
 using Nuve.Morphologic.Structure;
 
 namespace Nuve.Gui
@@ -19,7 +20,8 @@ namespace Nuve.Gui
                 Console.WriteLine("\n{0} için {1} çözüm bulundu:", word, solutions.Count);
                 foreach (Word solution in solutions)
                 {
-                    Console.WriteLine("\t{0}\n", solution);
+                    Console.WriteLine($"\t{solution}\n");
+                    Console.WriteLine($"\t{solution.ToString(WordFormat.MyFormat)}\n");
                 }
             }
         }

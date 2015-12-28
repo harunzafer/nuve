@@ -85,8 +85,11 @@
     <Compile Include="Distance\IDistance.cs" />
     <Compile Include="Distance\JaccardDistance.cs" />
     <Compile Include="Distance\LevenshteinDistance.cs" />
+    <Compile Include="Lang\LanguageFactory.cs" />
+    <Compile Include="Morphologic\Format\MyFormat.cs" />
     <Compile Include="Morphologic\MorphemeSurfaceDictionary.cs" />
-    <Compile Include="Morphologic\Suffixes.cs" />
+    <Compile Include="Morphologic\MorphemeContainer.cs" />
+    <Compile Include="Morphologic\Format\WordFormat.cs" />
     <Compile Include="Orthographic\Action\Prepend.cs" />
     <Compile Include="Reader\InvalidLanguageFileException.cs" />
     <Compile Include="Reader\LanguageReader.cs" />
@@ -183,6 +186,7 @@
     <EmbeddedResource Include="Resources\Tr\root.txt" />
     <EmbeddedResource Include="Resources\Tr\suffix.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

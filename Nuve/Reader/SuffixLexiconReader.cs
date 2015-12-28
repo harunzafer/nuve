@@ -11,16 +11,16 @@ namespace Nuve.Reader
     internal class SuffixLexiconReader
     {
         private readonly Orthography _orthography;
+        private static readonly TraceSource Trace = new TraceSource("SuffixLexiconReader");
 
         public SuffixLexiconReader(Orthography orthography)
         {
             _orthography = orthography;
         }
 
-        public void Read(DataSet ds,
-            string tableName,
-            out Dictionary<string, Suffix> suffixesById,
-            out MorphemeSurfaceDictionary<Suffix> suffixes)
+        public MorphemeContainer<Suffix> Read(DataSet ds,
+            string tableName
+            )
         {
             EnumerableRowCollection<DataRow> data = ds.Tables[tableName].AsEnumerable();
             EnumerableRowCollection<SuffixDictionaryLine> entries = data.Select(x =>
@@ -34,14 +34,15 @@ namespace Nuve.Reader
                     Surfaces = x.Field<string>("surfaces"),
                 });
 
-
-            suffixesById = new Dictionary<string, Suffix>();
-            suffixes = new MorphemeSurfaceDictionary<Suffix>();
+            var suffixesById = new Dictionary<string, Suffix>();
+            var suffixesBySurface = new MorphemeSurfaceDictionary<Suffix>();
 
             foreach (SuffixDictionaryLine entry in entries)
             {
-                AddSuffix(entry, suffixesById, suffixes);
+                AddSuffix(entry, suffixesById, suffixesBySurface);
             }
+
+            return new MorphemeContainer<Suffix>(suffixesById, suffixesBySurface);
         }
 
 
@@ -56,7 +57,7 @@ namespace Nuve.Reader
             if (!Enum.TryParse(entry.Type, out morphemeType))
             {
                 morphemeType = MorphemeType.O;
-                Console.WriteLine("Invalid Morpheme Type: " + entry.Type);
+                Trace.TraceEvent(TraceEventType.Error, 0, $"Invalid Morpheme Type: {entry.Type}");
             }
 
             string[] labels = entry.Labels.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
@@ -67,7 +68,14 @@ namespace Nuve.Reader
 
             List<OrthographyRule> rules = _orthography.GetRules(rulesToken);
             var suffix = new Suffix(id, lex, morphemeType, new HashSet<string>(labels), rules);
-            suffixesById.Add(id, suffix);
+            if (suffixesById.ContainsKey(id))
+            {
+                Trace.TraceEvent(TraceEventType.Warning, 0, $"Duplicate suffix: {id}");
+            }
+            else
+            {
+                suffixesById.Add(id, suffix);
+            }
 
             foreach (string surface in surfaces)
             {

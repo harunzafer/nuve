@@ -177,74 +177,9 @@ namespace Nuve.Morphologic.Structure
             return sb.ToString();
         }
 
-
-        /// <summary>
-        ///     Eğer morfemden sonra gelen bir morfem var ise ilk kuralları işlet
-        /// </summary>
-        private void ProcessFirstRules()
-        {
-            if (HasNext)
-                _morpheme.ProcessRules(1, this);
-        }
-
-        /// <summary>
-        ///     Eğer morfemden önce gelen bir morfem var ise Previous kuralları işlet
-        /// </summary>
-        private void ProcessPrevRules()
-        {
-            if (HasPrevious)
-                _morpheme.ProcessRules(2, this);
-        }
-
-        /// <summary>
-        ///     Eğer morfemden sonra gelen bir morfem var ise Next türündeki ortografik kuralları işlet.
-        /// </summary>
-        private void ProcessNextRules()
-        {
-            if (HasNext)
-                _morpheme.ProcessRules(3, this);
-        }
-
-        /// <summary>
-        ///     Eğer morfemden sonra ek gelmiyorsa bu kural işletilir.
-        ///     Bu kuralın Condition'ı olmaz.
-        /// </summary>
-        private void ProcessSelfRules()
-        {
-            if (!HasNext)
-                _morpheme.ProcessRules(4, this);
-        }
-
-        /// <summary>
-        ///     Diğer kuralların işletilmesinden sonra, son ve koşulsuz olarak bu kural işletilir.
-        ///     Genelde özel karakterleri silmek için kullanılır.
-        /// </summary>
-        private void ProcessDefaultRules()
-        {
-            _morpheme.ProcessRules(5, this);
-        }
-
-
         internal void ProcessRules(int phase)
         {
-            switch (phase)
-            {
-                case 1:
-                    ProcessFirstRules();
-                    break;
-                case 2:
-                    ProcessPrevRules();
-                    break;
-                case 3:
-                    ProcessNextRules();
-                    break;
-                case 4:
-                    ProcessSelfRules();
-                    break;
-                case 5:
-                    ProcessDefaultRules();
-                    break;
-            }
+            _morpheme.ProcessRules(phase, this);
         }
 
 

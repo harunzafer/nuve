@@ -24,7 +24,7 @@ Abdal					OZEL	özel			tarih/oymak ismi	Arapça	Evet
 abdest					ISIM	isim			din bilgisi	Farsça	Hayır				
 abdestbozan					ISIM	isim			hayvan bilimi	Fa-Tr	Hayır				
 abdesthane					ISIM	isim				Farsça	Hayır				
-abdiaciz		abdiâciz			ISIM	isim, şapkasız	SAPKA_DUSUR_A			Arapça	Hayır				
+abdiaciz		abdiâciz2			ISIM	isim, şapkasız	SAPKA_DUSUR_A, DROP_ID_DIGIT			Arapça	Hayır				
 abdiâciz					ISIM	isim, şapkalı				Arapça	Hayır				
 abdülleziz					ISIM	isim			bitki bilimi	Arapça	Hayır				
 abe					UNLEM	ünlem				Türkçe	Hayır				

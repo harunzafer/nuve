@@ -500,7 +500,12 @@
         Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini
       </description>
       <transformation morpheme="This" action="Replace" operandOne="_" operandTwo=" " flag="all"/>
-    </rule>   
+    </rule>
+
+    <rule id="DROP_ID_DIGIT" phase="1">
+      <description> Remove the numeric character at the end of the lexical form </description>
+      <transformation morpheme="This" action="DeleteLastLetter"/>
+    </rule>
 
   </rules>
 </orthography>
