@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using Nuve.Morphologic.Structure;
@@ -28,10 +27,10 @@ namespace Nuve.Lang
             bool checkOrthography = true, bool checkTransitionConditions = true)
         {
             var words = new List<Word>();
-            IEnumerable<KeyValuePair<string, Root>> roots = FindPossibleMorphemes<Root>(token);
+            IEnumerable<SurfaceMorphemePair<Root>> roots = FindPossibleMorphemes<Root>(token);
             foreach (var pair in roots)
             {
-                GetPossibleWords(new Word(pair.Value), token.Remove(0, pair.Key.Length), words, checkTransition);                
+                GetPossibleWords(new Word(pair.Morpheme), token.Remove(0, pair.Surface.Length), words, checkTransition);
             }
 
             if (checkTransitionConditions)
@@ -47,35 +46,22 @@ namespace Nuve.Lang
             return words.Distinct().ToList();
         }
 
-        private void EliminateByOrtography(IList<Word> analyses, string surface)
+        private IList<SurfaceMorphemePair<T>> FindPossibleMorphemes<T>(string token) where T : Morpheme
         {
-            for (int i = analyses.Count - 1; i >= 0; i--) //Reverse for loop to remove element
+            var pairs = new List<SurfaceMorphemePair<T>>();
+            for (var i = 0; i < token.Length; i++)
             {
-                if (!HasCorrectSurface(analyses[i], surface))
+                var prefix = token.Substring(0, i + 1);
+
+                var morphemes = _lang.GetMorphemesHavingSurface<T>(prefix);
+
+                foreach (var morpheme in morphemes)
                 {
-                    _trace.TraceEvent(TraceEventType.Verbose, 11, $"Eliminated by orthography. expected:{surface} actual:{analyses[i].GetSurface()} solution:{analyses[i]}");
-                    analyses.RemoveAt(i);
+                    pairs.Add(new SurfaceMorphemePair<T>(prefix, morpheme));
                 }
             }
+            return pairs;
         }
-
-        private bool HasCorrectSurface(Word word, string surface)
-        {
-            return word.GetSurface() == surface;
-        }
-
-        private void EliminateByMorphotactics(IList<Word> analyses)
-        {
-            for (int i = analyses.Count - 1; i >= 0; i--) //Reverse for loop to remove element
-            {
-                if (!_lang.Morphotactics.IsValid(analyses[i]))
-                {
-                    _trace.TraceEvent(TraceEventType.Verbose, 11, $"Eliminated by morph: {analyses[i]}");
-                    analyses.RemoveAt(i);
-                }
-            }
-        }
-
 
         private void GetPossibleWords(Word word, string restOfWord, IList<Word> words, bool checkTransition)
         {
@@ -86,82 +72,67 @@ namespace Nuve.Lang
                 return;
             }
 
-            var possibleSuffixes = FindPossibleMorphemes<Suffix>(restOfWord);
+            var suffixes = FindPossibleMorphemes<Suffix>(restOfWord);
 
-            if (possibleSuffixes.Count == 0)
+            if (suffixes.Count == 0)
             {
                 return;
             }
 
-            foreach (var pair in possibleSuffixes)
+            foreach (var suffix in suffixes)
             {
-
-                if (!_lang.Morphotactics.HasTransition(word.Last.Morpheme.GraphId, pair.Value.GraphId) && checkTransition)
+                if (!_lang.Morphotactics.HasTransition(word.Last.Morpheme.GraphId, suffix.Morpheme.GraphId) &&
+                    checkTransition)
                 {
                     continue;
                 }
-                word.AddSuffix(pair.Value);
-                GetPossibleWords(word, restOfWord.Remove(0, pair.Key.Length), words, checkTransition);
+                word.AddSuffix(suffix.Morpheme);
+                GetPossibleWords(word, restOfWord.Remove(0, suffix.Surface.Length), words, checkTransition);
                 word.RemoveLastSuffix();
             }
         }
 
-        private IList<KeyValuePair<string, T>>  FindPossibleMorphemes<T>(string token) where T : Morpheme
+        private void EliminateByMorphotactics(IList<Word> analyses)
         {
-            var pairs = new List<KeyValuePair<string, T>>();
-            for (int i = 0; i < token.Length; i++)
+            for (var i = analyses.Count - 1; i >= 0; i--) //Reverse for loop to remove element
             {
-                string prefix = token.Substring(0, i + 1);
-
-                IEnumerable<T> morphemes = _lang.GetMorphemesHavingSurface<T>(prefix);
-
-                foreach (T morpheme in morphemes)
+                if (!_lang.Morphotactics.IsValid(analyses[i]))
                 {
-                    pairs.Add(new KeyValuePair<string, T>(prefix, morpheme));
+                    _trace.TraceEvent(TraceEventType.Verbose, 11, $"Eliminated by morph: {analyses[i]}");
+                    analyses.RemoveAt(i);
                 }
             }
-            return pairs;
         }
 
-        /// <summary>
-        ///     Verilen bir kelimenin muhtemel tüm eklerini döndürür.
-        /// </summary>
-        /// <param name="token">Kökü bulunacak kelime</param>
-        /// <returns></returns>
-        private IEnumerable<KeyValuePair<string, Root>> FindPossibleRoots(string token)
+
+        private void EliminateByOrtography(IList<Word> analyses, string surface)
         {
-            var pairs = new List<KeyValuePair<string, Root>>();
-            for (int i = 0; i < token.Length; i++)
+            for (var i = analyses.Count - 1; i >= 0; i--) //Reverse for loop to remove element
             {
-                string prefix = token.Substring(0, i + 1);
-
-                IEnumerable<Root> roots = _lang.GetRootsHavingSurface(prefix);
-
-                foreach (Root root in roots)
+                if (!HasCorrectSurface(analyses[i], surface))
                 {
-                    pairs.Add(new KeyValuePair<string, Root>(prefix, root));
+                    _trace.TraceEvent(TraceEventType.Verbose, 11,
+                        $"Eliminated by orthography. expected:{surface} actual:{analyses[i].GetSurface()} solution:{analyses[i]}");
+                    analyses.RemoveAt(i);
                 }
             }
-            return pairs;
         }
 
-        private IList<KeyValuePair<string, Suffix>> GetPossibleFirstSuffixes(string token)
+        private bool HasCorrectSurface(Word word, string surface)
         {
-            var pairs = new List<KeyValuePair<string, Suffix>>();
+            return word.GetSurface() == surface;
+        }
 
-            for (int i = 0; i < token.Length; i++)
+        private class SurfaceMorphemePair<T> where T : Morpheme
+        {
+            public SurfaceMorphemePair(string surface, T morpheme)
             {
-                string prefix = token.Substring(0, i + 1);
-
-                IEnumerable<Suffix> suffixes = _lang.GetSuffixesHavingSurface(prefix);
-
-                foreach (Suffix suffix in suffixes)
-                {
-                    pairs.Add(new KeyValuePair<string, Suffix>(prefix, suffix));
-                }
+                Surface = surface;
+                Morpheme = morpheme;
             }
 
-            return pairs;
+            public string Surface { get; }
+            public T Morpheme { get; }
         }
     }
 }
