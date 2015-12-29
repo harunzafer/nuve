@@ -28,7 +28,7 @@ namespace Nuve.Lang
             bool checkOrthography = true, bool checkTransitionConditions = true)
         {
             var words = new List<Word>();
-            IEnumerable<KeyValuePair<string, Root>> roots = FindPossibleRoots(token);
+            IEnumerable<KeyValuePair<string, Root>> roots = FindPossibleMorphemes<Root>(token);
             foreach (var pair in roots)
             {
                 GetPossibleWords(new Word(pair.Value), token.Remove(0, pair.Key.Length), words, checkTransition);                
@@ -86,17 +86,16 @@ namespace Nuve.Lang
                 return;
             }
 
-            IList<KeyValuePair<string, Suffix>> possibleFirstSuffixes = GetPossibleFirstSuffixes(restOfWord);
+            var possibleSuffixes = FindPossibleMorphemes<Suffix>(restOfWord);
 
-
-            if (possibleFirstSuffixes.Count == 0)
+            if (possibleSuffixes.Count == 0)
             {
                 return;
             }
 
-            foreach (var pair in possibleFirstSuffixes)
+            foreach (var pair in possibleSuffixes)
             {
-                //Burada değişiklik yaptık, şimdilik sorun yok
+
                 if (!_lang.Morphotactics.HasTransition(word.Last.Morpheme.GraphId, pair.Value.GraphId) && checkTransition)
                 {
                     continue;
@@ -105,6 +104,23 @@ namespace Nuve.Lang
                 GetPossibleWords(word, restOfWord.Remove(0, pair.Key.Length), words, checkTransition);
                 word.RemoveLastSuffix();
             }
+        }
+
+        private IList<KeyValuePair<string, T>>  FindPossibleMorphemes<T>(string token) where T : Morpheme
+        {
+            var pairs = new List<KeyValuePair<string, T>>();
+            for (int i = 0; i < token.Length; i++)
+            {
+                string prefix = token.Substring(0, i + 1);
+
+                IEnumerable<T> morphemes = _lang.GetMorphemesHavingSurface<T>(prefix);
+
+                foreach (T morpheme in morphemes)
+                {
+                    pairs.Add(new KeyValuePair<string, T>(prefix, morpheme));
+                }
+            }
+            return pairs;
         }
 
         /// <summary>

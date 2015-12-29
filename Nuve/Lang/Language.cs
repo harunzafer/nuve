@@ -90,6 +90,16 @@ namespace Nuve.Lang
             return null;
         }
 
+
+        internal IEnumerable<T> GetMorphemesHavingSurface<T>(string surface) where T : Morpheme
+        {
+            if (typeof (T) == typeof (Root))
+            {
+                return Roots.BySurface.Get(surface) as IEnumerable<T>;
+            }
+            return Suffixes.BySurface.Get(surface) as IEnumerable<T>;
+        }
+
         /// <summary>
         ///     Returns the roots having the specified surface. For example if
         ///     the surface is "ara", for Language.Turkish this method returns
