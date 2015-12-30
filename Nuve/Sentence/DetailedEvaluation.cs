@@ -93,11 +93,11 @@ namespace Nuve.Sentence
         {
             unchecked
             {
-                int hashCode = (_misses != null ? _misses.GetHashCode() : 0);
-                hashCode = (hashCode*397) ^ (_hits != null ? _hits.GetHashCode() : 0);
-                hashCode = (hashCode*397) ^ (_falseAlarms != null ? _falseAlarms.GetHashCode() : 0);
+                int hashCode = _misses?.GetHashCode() ?? 0;
+                hashCode = (hashCode*397) ^ (_hits?.GetHashCode() ?? 0);
+                hashCode = (hashCode*397) ^ (_falseAlarms?.GetHashCode() ?? 0);
                 hashCode = (hashCode*397) ^ _eosCandidateCount;
-                hashCode = (hashCode*397) ^ (_paragraph != null ? _paragraph.GetHashCode() : 0);
+                hashCode = (hashCode*397) ^ (_paragraph?.GetHashCode() ?? 0);
                 return hashCode;
             }
         }

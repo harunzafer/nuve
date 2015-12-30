@@ -5,40 +5,40 @@ namespace Nuve.Condition
 {
     internal static class ConditionFactory
     {
-        public static ConditionBase Create(string name, string morphemeLocation, string operand, Alphabet alphabet)
+        public static ConditionBase Create(string name, string morphemePosition, string operand, Alphabet alphabet)
         {
             switch (name)
             {
                 case "EndsWithConsonant":
-                    return new EndsWithConsonant(morphemeLocation, operand, alphabet);
+                    return new EndsWithConsonant(morphemePosition, operand, alphabet);
                 case "EndsWithVowel":
-                    return new EndsWithVowel(morphemeLocation, operand, alphabet);
+                    return new EndsWithVowel(morphemePosition, operand, alphabet);
                 case "FirstLetterEquals":
-                    return new FirstLetterEquals(morphemeLocation, operand, alphabet);
+                    return new FirstLetterEquals(morphemePosition, operand, alphabet);
                 case "LastLetterEquals":
-                    return new LastLetterEquals(morphemeLocation, operand, alphabet);
+                    return new LastLetterEquals(morphemePosition, operand, alphabet);
                 case "LastVowelEquals":
-                    return new LastVowelEquals(morphemeLocation, operand, alphabet);
+                    return new LastVowelEquals(morphemePosition, operand, alphabet);
                 case "MorphemeEquals":
-                    return new MorphemeEquals(morphemeLocation, operand, alphabet);
+                    return new MorphemeEquals(morphemePosition, operand, alphabet);
                 case "MorphemeExists":
-                    return new MorphemeExists(morphemeLocation, operand, alphabet);
+                    return new MorphemeExists(morphemePosition, operand, alphabet);
                 case "MorphemeNotEquals":
-                    return new MorphemeNotEquals(morphemeLocation, operand, alphabet);
+                    return new MorphemeNotEquals(morphemePosition, operand, alphabet);
                 case "MorphemeSequenceEquals":
-                    return new MorphemeSequenceEquals(morphemeLocation, operand, alphabet);
+                    return new MorphemeSequenceEquals(morphemePosition, operand, alphabet);
                 case "PenultVowelEquals":
-                    return new PenultVowelEquals(morphemeLocation, operand, alphabet);
+                    return new PenultVowelEquals(morphemePosition, operand, alphabet);
                 case "StartsWithConsonant":
-                    return new StartsWithConsonant(morphemeLocation, operand, alphabet);
+                    return new StartsWithConsonant(morphemePosition, operand, alphabet);
                 case "StartsWithVowel":
-                    return new StartsWithVowel(morphemeLocation, operand, alphabet);
+                    return new StartsWithVowel(morphemePosition, operand, alphabet);
                 case "HasFlags":
-                    return new HasLabel(morphemeLocation, operand, alphabet);
+                    return new HasLabel(morphemePosition, operand, alphabet);
                 case "HasNotFlags":
-                    return new HasNotLabel(morphemeLocation, operand, alphabet);
+                    return new HasNotLabel(morphemePosition, operand, alphabet);
                 case "IsLastMorpheme":
-                    return new IsLastMorpheme(morphemeLocation, operand, alphabet);
+                    return new IsLastMorpheme(morphemePosition, operand, alphabet);
                 default:
                     throw new ArgumentException("Invalid Condition: " + name);
             }

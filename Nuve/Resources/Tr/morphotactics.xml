@@ -60,9 +60,7 @@
       <suffix>FC_ZAMAN_GECMIS_DU</suffix>
       <suffix>FC_ZAMAN_GECMIS_mUş</suffix>
       <suffix>FC_ZAMAN_GELECEK_(y)AcAK</suffix>
-      <suffix>FC_ZAMAN_GENIS_(A)r</suffix>
       <suffix>FC_ZAMAN_GENIS_(U)r</suffix>
-      <suffix>FC_ZAMAN_GENIS_OLUMUSUZ_mAz</suffix>
       <suffix>FC_ZAMAN_SIMDIKI_(U)yor</suffix>
     </suffixGroup>
 
@@ -110,11 +108,6 @@
       <!--<suffix>FY_DONUSUM_(U)m</suffix>-->
       <suffix>FY_DONUSUM_mAcA</suffix>
       <suffix>FY_TANIMLAMA_(y)UcU</suffix>
-    </suffixGroup>
-
-    <suffixGroup name="FY_SIFAT">
-      <!--<suffix>FY_DONUSUM_(U)k</suffix>-->
-      <suffix>FY_DONUSUM_(U)lU</suffix>
     </suffixGroup>
 
     <suffixGroup name="FY_FIIL">
@@ -200,7 +193,6 @@
           <condition morpheme="Source" operator="HasFlags" operand="azlık" />
         </conditions>
       </target>
-      <targetGroup id="SORU_BAGLAC" />
     </source>
 
     <source id="UNLEM">
@@ -283,7 +275,7 @@
     </source>
 
 
-    <source id="FIIL">
+    <source id="FIIL" >
       <targetGroup id="FIIL_KIP" />
       <targetGroup id="FIIL_ZAMAN" />
       <targetGroup id="FIILIMSI_ISIM" />
@@ -308,7 +300,6 @@
       </targetGroup>
       <targetGroup id="FIIL_YARDIMCI" />
       <targetGroup id="FY_ISIM" />
-      <targetGroup id="FY_SIFAT" />
       <target id="FY_EDILGEN_Ul_(U)n" />
       <target id="FY_ETTIRGEN_DUr_(U)t">
         <conditions flag="And">
@@ -323,8 +314,10 @@
       </target>
       <target id="FY_OLUMSUZLUK_mA" />
       <target id="BAGLAC_dA" />
+      <target id="FC_KIP_EMIR_0" empty="true" />
     </source>
 
+    <source id="FC_KIP_EMIR_0"/>
 
     <source id="FY_ETTIRGEN_DUr_(U)t">
       <copy id="FIIL">
@@ -398,6 +391,7 @@
       <target id="IC_COGUL_lAr" />
       <target id="IC_SAHIPLIK_O_(s)U" />
       <target id="EKFIIL_TANIMLAMA_DUr" />
+      <target id="IY_ISIM_lUK" />
       <targetGroup id="SORU_BAGLAC" />
     </source>
 
@@ -964,8 +958,9 @@
 
     <source id="FC_KIP_ISTEK_(y)A">
       <targetGroup id="EKFIIL_SAHIS">
-        <replaceTarget old="EKFIIL_SAHIS_BIZ_(y)Uz" new="EKFIIL_SAHIS_BIZ_k" />
+        <removeTarget id="EKFIIL_SAHIS_BIZ_(y)Uz"/>
       </targetGroup>
+      <target id="EKFIIL_SAHIS_BIZ_k" />
       <target id="EKFIIL_HIKAYE_(y)DU" />
       <target id="EKFIIL_RIVAYET_(y)mUş" />
       <targetGroup id="SORU_BAGLAC" />
@@ -1035,6 +1030,7 @@
                      operand="FY_EDILGEN_Ul_(U)n, FC_YF_YETERLILIK_(y)Abil" />
         </conditions>
       </target>
+      <target id="EKFIIL_SAHIS_BEN_m" />
     </source>
 
     <!-- Yardımcı Fiil Ekleri -->
@@ -1048,7 +1044,6 @@
         <removeTarget id="FIILIMSI_ZARF_sIzIn" />
       </targetGroup>
       <targetGroup id="FY_ISIM" />
-      <targetGroup id="FY_SIFAT" />
       <target id="FC_YF_YETERLILIK_(y)Abil" />
       <target id="FY_EDILGEN_Ul_(U)n" />
       <target id="FY_OLUMSUZLUK_mA" />
@@ -1085,7 +1080,6 @@
 
     <source id="FC_YF_YETERSIZLIK_(y)AmA">
       <copy id="FC_YF_SUREKLILIK_(y)Adur" />
-      <target id="FC_YF_YETERLILIK_(y)Abil" />
       <target id="EKFIIL_SAHIS_BEN_m" />
       <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
       <target id="IC_HAL_AYRILMA_DAn" />
@@ -1109,10 +1103,8 @@
       <copy id="FIILIMSI_ISIM_(y)Uş">
         <removeTarget id="IY_SIFAT_sAl" />
       </copy>
-      <target id="IY_ISIM_CU" />
       <target id="FIILIMSI_ZARF_CAsInA" />
       <target id="IY_ISIM_lUK" />
-      <target id="EKFIIL_TANIMLAMA_DUr" />
     </source>
 
     <source id="FIILIMSI_ISIM_mAk">
@@ -1246,9 +1238,11 @@
         <removeTarget id="FY_ETTIRGEN_DUr_(U)t" />
         <removeTarget id="FY_ETTIRTGEN_t_DUr" />
         <removeTarget id="FY_EDILGEN_Ul_(U)n" />
+        <removeTarget id="FC_ZAMAN_GENIS_(U)r" />
       </copy>
-      <target id="EKFIIL_SAHIS_BEN_m" />
+      <!--<target id="EKFIIL_SAHIS_BEN_m" />-->
       <target id="EKFIIL_SAHIS_BIZ_(y)Uz" />
+      <target id="FC_ZAMAN_GENIS_(U)r" empty="true"/>
     </source>
 
     <source id="FY_DONUSUM_mAcA">

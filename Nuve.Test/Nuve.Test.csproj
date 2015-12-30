@@ -79,6 +79,8 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Distance\DistanceTest.cs" />
     <Compile Include="Distance\DistanceTester.cs" />
+    <Compile Include="Mock\MockRoot.cs" />
+    <Compile Include="Mock\MockSuffix.cs" />
     <Compile Include="NGrams\NGramModelTest.cs" />
     <Compile Include="NGrams\NGramDictionaryTest.cs" />
     <Compile Include="NGrams\NGramExtractorTest.cs" />

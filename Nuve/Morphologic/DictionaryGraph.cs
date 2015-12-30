@@ -1,73 +1,112 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
+using Nuve.Morphologic.Structure;
 
 namespace Nuve.Morphologic
 {
-    internal class DictionaryGraph : IGraph<string>
+    internal class DictionaryGraph : IGraph
     {
-        private const string Delim = "+";
-        private readonly Dictionary<string, Transition<string>> _dict = new Dictionary<string, Transition<string>>();
+        private Dictionary<string, Vertex> Vertices { get; } = new Dictionary<string, Vertex>();
 
         private readonly TraceSource _trace = new TraceSource("DictionaryGraph");
 
-        public bool ContainsEdge(string source, string target)
+        public void AddVertex(Vertex vertex)
         {
-            var key = GetKey(source, target);
-            return _dict.ContainsKey(key);
-        }
-
-        public bool TryGetEdge(string source, string target, out Transition<string> edge)
-        {
-            var key = GetKey(source, target);
-            return _dict.TryGetValue(key, out edge);
-        }
-
-        public void AddEdge(Transition<string> edge)
-        {
-            var key = GetKey(edge.Source, edge.Target);
-
-            if (!_dict.ContainsKey(key))
+            if (Vertices.ContainsKey(vertex.Id))
             {
-                _dict[key] = edge;
+                _trace.TraceEvent(TraceEventType.Error, 1, $"Vertex is already in the graph: {vertex.Id}");
+                return;
+            }
+            Vertices.Add(vertex.Id, vertex);
+        }
+
+        public void AddVertices(IEnumerable<Vertex> vertices)
+        {
+            foreach (Vertex vertex in vertices)
+            {
+                AddVertex(vertex);
+            }
+        }
+
+        public void AddEdges(IEnumerable<Transition> transitions)
+        {
+            foreach (var transition in transitions)
+            {
+                AddEdge(transition);
+            }
+        }
+
+        public void AddEdge(Transition transition)
+        {
+            if (!Vertices.ContainsKey(transition.Source))
+            {
+                _trace.TraceEvent(TraceEventType.Error, 1, $"Transition source not found: {transition.Source}");
                 return;
             }
 
-            _trace.TraceEvent(TraceEventType.Warning, 1, $"Duplicate key: {key}");
-        }
-
-        public bool TryGetOutEdges(string source, out IEnumerable<Transition<string>> outEdges)
-        {
-            var list = new List<Transition<string>>();
-            outEdges = null;
-
-            foreach (var d in _dict)
+            if (!Vertices.ContainsKey(transition.Target))
             {
-                if (d.Key.StartsWith(source + Delim))
-                {
-                    list.Add(d.Value);
-                }
+                _trace.TraceEvent(TraceEventType.Error, 1, $"Transition target not found: {transition.Target}");
+                return;
             }
 
-            if (list.Count > 0)
+            Vertices[transition.Source].AddTransition(transition);
+        }
+
+
+        public IEnumerable<Transition> GetTransitions(string source)
+        {
+            if (Vertices.ContainsKey(source))
             {
-                outEdges = list;
-                return true;
+                return Vertices[source].Transitions;
+            }
+
+            return new List<Transition>();
+        }
+
+
+        public IEnumerable<Transition> GetEmptyTransitions(string source)
+        {
+            if (Vertices.ContainsKey(source))
+            {
+                return Vertices[source].EmptyStringTransitions;
+            }
+
+            return new List<Transition>();
+        }
+
+        public bool ContainsTransition(string source, string target)
+        {
+            if (Vertices.ContainsKey(source))
+            {
+                return Vertices[source].ContainsTransition(target);
             }
 
             return false;
         }
 
-        public void AddEdges(IEnumerable<Transition<string>> edges)
+        public bool TryGetTransition(string source, string target, out Transition transition)
         {
-            foreach (var t in edges)
+            transition = null;
+
+            if (Vertices.ContainsKey(source) )
             {
-                AddEdge(t);
+                return Vertices[source].TryGetTransition(target, out transition);
             }
+
+            return false;
         }
 
-        private string GetKey(string source, string target)
+       
+
+        public bool IsTerminal(string source)
         {
-            return source + Delim + target;
+            if (Vertices.ContainsKey(source))
+            {
+                return Vertices[source].IsTerminal;
+            }
+            return false;
         }
+
     }
 }

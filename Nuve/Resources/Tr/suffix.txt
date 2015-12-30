@@ -29,6 +29,7 @@ EKFIIL_ZAMAN_(y)ken	yken	NI	I	EF	EK_FIIL_ZAMAN		DUSME_UNSUZ, 	ken, yken, 		IMEK_
 EKFIIL_SART_(y)sA	ysA	NI	I	EF	EK_FIIL_ZAMAN		DUSME_UNSUZ, DONUSUM_A, 	se, sa, yse, ysa, 		IMEK_SART_SE	VVI_XCOND	gelmişse, tembelse, baktıysa, bulursa, sildiyse, doğruysa		Emir, şart ve istek kiplerinin "şart"ı yoktur.
 EKFIIL_RIVAYET_(y)mUş	ymUş	NI	I	EF	EK_FIIL_ZAMAN		DUSME_UNSUZ, DONUSUM_U, 	ymüş, ymuş, ymış, ymiş, mış, miş, muş, müş, 		IMEK_RIVAYET_MIS	VVI_XDUBT	yapmışmış, gitmişmiş, tembelmiş, hastaydı, gelseymiş, baksaymış, okurmuş, görsünmüş, oradaymış		Emir kipinin rivayeti yoktur.
 EKFIIL_HIKAYE_(y)DU	yDU	NI	I	EF	EK_FIIL_ZAMAN		DUSME_UNSUZ, DONUSUM_U, DONUSUM_D, 	ydu, ydü, ydı, ydi, dı, di, du, dü, tı, ti, tu, tü, 		IMEK_HIKAYE_DI	VVI_XPAST	yapsaydı, gelmişti, tembeldi, bekleseydi, yazsındı, oradaydı, verirdi, buluyordu, görürdü, bakmıştı, sevmişti, çözmüştü, sormuştu 		Emir kipinin hikâyesi yoktur.
+FC_KIP_EMIR_0		NI	I	EF	Kip									
 FC_KIP_EMIR_(y)Un	yUn	NI	I	FC	Kip		DUSME_UNSUZ, DONUSUM_U, 	ın, in, un, ün, yın, yin, yun, yün, 		FIIL_EMIR_SIZ_IN		gelin, yapın, bulun, görün, anlayın, bekleyin, okuyun		
 FC_KIP_EMIR_(y)UnUz	yUnUz	NI	I	FC	Kip		DUSME_UNSUZ, DONUSUM_U, 	ınız, iniz, unuz, ünüz, yınız, yiniz, yunuz, yünüz, 		FIIL_EMIR_SIZRESMI_INIZ		bakınız, geliniz, bulunuz, görünüz, anlayınız, bekleyiniz, okuyunuz		
 FC_KIP_EMIR_sUn	sUn	NI	I	FC	Kip		DONUSUM_U, 	sın, sin, sun, sün, 		FIIL_EMIR_O_SIN		gelsin, yapsın, okusun, görsün		

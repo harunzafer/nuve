@@ -275,7 +275,6 @@
       <transformation morpheme="This" action="Replace" operandOne="ú" operandTwo="u" flag="all" />
     </rule>
 
-    
 
     <rule id="OZEL_BIZ_lIm" phase="2">
       <description>
@@ -357,6 +356,12 @@
       <transformation morpheme="This" action="Replace" operandOne="U" operandTwo="A" flag="all">
         <conditions flag="Or">
           <condition morpheme="Previous" operator="HasFlags" operand="genis_Ar" />
+        </conditions>
+      </transformation>
+      <transformation morpheme="This" action="Replace" operandOne="Ur" operandTwo="" flag="all">
+        <conditions flag="And">
+          <condition morpheme="Previous" operator="MorphemeEquals" operand="FY_OLUMSUZLUK_mA" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="EKFIIL_SAHIS_BEN_m" />
         </conditions>
       </transformation>
       <transformation morpheme="This" action="Replace" operandOne="Ur" operandTwo="z" flag="all">
@@ -471,13 +476,13 @@
       </transformation>
     </rule>
 
-   <rule id="OKUNUSDAN_YAZILISA" phase="5">
+    <rule id="OKUNUSDAN_YAZILISA" phase="5">
       <description>
-        Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini 
+        Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini
       </description>
       <transformation morpheme="This" action="LexicalToSurface" />
     </rule>
-    
+
     <rule id="KESME_KALDIR" phase="1">
       <description>
         Üretimin başında kesme işareti yokmuş gibi hareket edilir.
@@ -491,17 +496,17 @@
       </description>
       <transformation morpheme="This" action="Append" operandOne="'" />
     </rule>
-    
+
     <rule id="ALTTIRE_KALDIR" phase="5">
       <description>
         Alıntı ve kısaltma türündeki kelimelerin okunuşu olan lexical biçimini
       </description>
-      <transformation morpheme="This" action="Replace" operandOne="_" operandTwo=" " flag="all"/>
+      <transformation morpheme="This" action="Replace" operandOne="_" operandTwo=" " flag="all" />
     </rule>
 
     <rule id="DROP_ID_DIGIT" phase="1">
       <description> Remove the numeric character at the end of the lexical form </description>
-      <transformation morpheme="This" action="DeleteLastLetter"/>
+      <transformation morpheme="This" action="DeleteLastLetter" />
     </rule>
 
   </rules>

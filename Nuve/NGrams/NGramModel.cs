@@ -48,7 +48,7 @@ namespace Nuve.NGrams
 
             for (int i = 0; i < extractor.MaxNGramSize - 1; i++)
             {
-                string index = (i).ToString();
+                string index = i.ToString();
                 tokens.Insert(0, Start.Insert(2, index));
             }
 

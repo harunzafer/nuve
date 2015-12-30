@@ -92,17 +92,11 @@ namespace Nuve.Reader
 
             var actionName = transformNode.Attributes["action"].InnerText;
 
-            var operandOne = transformNode.Attributes["operandOne"] != null
-                ? transformNode.Attributes["operandOne"].InnerText
-                : "";
+            var operandOne = transformNode.Attributes["operandOne"]?.InnerText ?? "";
 
-            var operandTwo = transformNode.Attributes["operandTwo"] != null
-                ? transformNode.Attributes["operandTwo"].InnerText
-                : "";
+            var operandTwo = transformNode.Attributes["operandTwo"]?.InnerText ?? "";
 
-            var flag = transformNode.Attributes["flag"] != null
-                ? transformNode.Attributes["flag"].InnerText
-                : "";
+            var flag = transformNode.Attributes["flag"]?.InnerText ?? "";
 
             var action = ActionFactory.Create(actionName, _alphabet, operandOne, operandTwo, flag);
 

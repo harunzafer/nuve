@@ -46,6 +46,16 @@ namespace Nuve.Gui
             Test();
         }
 
+        class Person
+        {
+            public string name;
+
+            public Person(string name)
+            {
+                this.name = name;
+            }
+        }
+            
         public static string Split(string str)
         {
             var sb = new StringBuilder(str);
@@ -110,7 +120,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-                "addi", "hemhâl", "a", "hemhâli"
+                "gelmem", "hemhâl", "a", "hemhâli"
             };
             //string[] testStrings = SoruTest.Soru;
             AnalysisHelper.Analyze(Analyzer, testStrings);

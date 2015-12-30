@@ -117,9 +117,7 @@ namespace Nuve.Reader
                 var rootsById = new Dictionary<string, Root>();
                 var reader = new RootLexiconReader(_orthography);
 
-
                 var rootsPath = _dirPath + _seperator + Resources.InternalMainRootsPath;
-
 
                 if (_external)
                 {
@@ -132,9 +130,7 @@ namespace Nuve.Reader
                     return new MorphemeContainer<Root>(rootsById, rootsBySurface);
                 }
 
-
                 reader.AddEntries(EmbeddedTextResourceToDataSet(rootsPath), DefaultTableName, rootsById, rootsBySurface);
-
 
                 var namesPath = _dirPath + _seperator + Resources.InternalPersonNamesPath;
                 reader.AddEntries(EmbeddedTextResourceToDataSet(namesPath), DefaultTableName, rootsById, rootsBySurface);

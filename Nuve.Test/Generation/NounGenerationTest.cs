@@ -4,6 +4,7 @@ using System.Linq;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
+using Nuve.Test.Mock;
 using NUnit.Framework;
 
 namespace Nuve.Test.Generation
@@ -74,8 +75,7 @@ namespace Nuve.Test.Generation
             Assert.Throws<ArgumentException>(() => Tr.GetRoot(""));
             Assert.Throws<ArgumentNullException>(() => Tr.GetRoot(null));
             Assert.Null(Tr.GetRoot("undefined/ISIM"));
-            Assert.AreEqual(Tr.GetRoot("kitap/ISIM"),
-                new Root("ISIM", "kitap", new HashSet<string>(), new List<OrthographyRule>()));
+            Assert.AreEqual(Tr.GetRoot("kitap/ISIM"), new MockRoot("ISIM", "kitap"));
 
             //public Root GetRoot(string lex, string pos)
             Assert.Null(Tr.GetRoot(null, "ISIM"));
@@ -84,8 +84,7 @@ namespace Nuve.Test.Generation
             Assert.Null(Tr.GetRoot("", ""));
             Assert.Null(Tr.GetRoot("undefined", "ISIM"));
             Assert.Null(Tr.GetRoot("kitap", "undefined"));
-            Assert.AreEqual(Tr.GetRoot("kitap", "ISIM"),
-                new Root("ISIM", "kitap", new HashSet<string>(), new List<OrthographyRule>()));
+            Assert.AreEqual(Tr.GetRoot("kitap", "ISIM"), new MockRoot("ISIM", "kitap"));
         }
 
         [Test]

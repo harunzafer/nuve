@@ -27,7 +27,7 @@ namespace Nuve.Lang
             bool checkOrthography = true, bool checkTransitionConditions = true)
         {
             var words = new List<Word>();
-            IEnumerable<SurfaceMorphemePair<Root>> roots = FindPossibleMorphemes<Root>(token);
+            IEnumerable<SurfaceMorphemePair<Root>> roots = FindPossibleRoots(token);
             foreach (var pair in roots)
             {
                 GetPossibleWords(new Word(pair.Morpheme), token.Remove(0, pair.Surface.Length), words, checkTransition);
@@ -46,46 +46,69 @@ namespace Nuve.Lang
             return words.Distinct().ToList();
         }
 
-        private IList<SurfaceMorphemePair<T>> FindPossibleMorphemes<T>(string token) where T : Morpheme
+        private IList<SurfaceMorphemePair<Root>> FindPossibleRoots(string token)
         {
-            var pairs = new List<SurfaceMorphemePair<T>>();
+            var pairs = new List<SurfaceMorphemePair<Root>>();
             for (var i = 0; i < token.Length; i++)
             {
                 var prefix = token.Substring(0, i + 1);
 
-                var morphemes = _lang.GetMorphemesHavingSurface<T>(prefix);
+                var morphemes = _lang.GetRootsHavingSurface(prefix);
 
                 foreach (var morpheme in morphemes)
                 {
-                    pairs.Add(new SurfaceMorphemePair<T>(prefix, morpheme));
+                    pairs.Add(new SurfaceMorphemePair<Root>(prefix, morpheme));
                 }
             }
             return pairs;
         }
 
+        private IList<SurfaceMorphemePair<Suffix>> FindPossibleSuffixes(Morpheme last, string token)
+        {
+            var pairs = new List<SurfaceMorphemePair<Suffix>>();
+            for (var i = 0; i < token.Length; i++)
+            {
+                var prefix = token.Substring(0, i + 1);
+
+                var morphemes = _lang.GetSuffixesHavingSurface(prefix);
+
+                foreach (var morpheme in morphemes)
+                {
+                    if (_lang.Morphotactics.HasTransition(last, morpheme))
+                    {
+                        pairs.Add(new SurfaceMorphemePair<Suffix>(prefix, morpheme));
+                    }
+                }
+            }
+
+            var empties = _lang.Morphotactics.GetMorphemesWithEmptyTransitions(last);
+            foreach (var emptyId in empties)
+            {
+                pairs.Add(new SurfaceMorphemePair<Suffix>("", _lang.GetSuffix(emptyId)));
+            }
+
+            return pairs;
+        }
+       
         private void GetPossibleWords(Word word, string restOfWord, IList<Word> words, bool checkTransition)
         {
-            if (restOfWord.Length == 0)
+            if (restOfWord.Length == 0 && _lang.Morphotactics.IsTerminal(word.Last.Morpheme))
             {
                 var newPossibleWord = Word.CopyOf(word);
                 words.Add(newPossibleWord);
                 return;
             }
 
-            var suffixes = FindPossibleMorphemes<Suffix>(restOfWord);
+            var suffixes = FindPossibleSuffixes(word.Last.Morpheme, restOfWord);
 
             if (suffixes.Count == 0)
             {
                 return;
-            }
+            }            
 
             foreach (var suffix in suffixes)
             {
-                if (!_lang.Morphotactics.HasTransition(word.Last.Morpheme.GraphId, suffix.Morpheme.GraphId) &&
-                    checkTransition)
-                {
-                    continue;
-                }
+                
                 word.AddSuffix(suffix.Morpheme);
                 GetPossibleWords(word, restOfWord.Remove(0, suffix.Surface.Length), words, checkTransition);
                 word.RemoveLastSuffix();

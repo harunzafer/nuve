@@ -42,7 +42,7 @@ namespace Nuve.Morphologic
         /// <param name="surface">kök yüzeyi</param>
         /// <param name="morphemes">kök yüzeyine karşılık gelen kökler</param>
         /// <returns>True if there is any morpheme for the given surface</returns>
-        public IEnumerable<T> Get(string surface)
+        internal IEnumerable<T> Get(string surface)
         {
             List<T> morphemes;
             if (_dictionary.TryGetValue(surface, out morphemes))

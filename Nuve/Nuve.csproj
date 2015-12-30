@@ -90,6 +90,7 @@
     <Compile Include="Morphologic\MorphemeSurfaceDictionary.cs" />
     <Compile Include="Morphologic\MorphemeContainer.cs" />
     <Compile Include="Morphologic\Format\WordFormat.cs" />
+    <Compile Include="Morphologic\Vertex.cs" />
     <Compile Include="Orthographic\Action\Prepend.cs" />
     <Compile Include="Reader\InvalidLanguageFileException.cs" />
     <Compile Include="Reader\LanguageReader.cs" />
