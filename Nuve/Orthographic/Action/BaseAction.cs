@@ -19,7 +19,16 @@ namespace Nuve.Orthographic.Action
             Flag = flag;
         }
 
-        public abstract void Do(Allomorph allomorph, Position position);
+        public void Do(Allomorph allomorph, Position position)
+        {
+            Allomorph operand;
+            if (TryGetOperandMorpheme(allomorph, out operand, position))
+            {
+                Do(operand);
+            }
+        }
+
+        protected abstract void Do(Allomorph allomorph);
 
         protected bool TryGetOperandMorpheme(Allomorph allomorph, out Allomorph operand, Position position)
             // out parameter for result

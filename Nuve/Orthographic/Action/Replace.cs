@@ -1,5 +1,4 @@
-﻿using Nuve.Condition;
-using Nuve.Morphologic.Structure;
+﻿using Nuve.Morphologic.Structure;
 
 namespace Nuve.Orthographic.Action
 {
@@ -10,13 +9,9 @@ namespace Nuve.Orthographic.Action
         {
         }
 
-        public override void Do(Allomorph allomorph, Position position)
+        protected override void Do(Allomorph allomorph)
         {
-            Allomorph operand;
-            if (TryGetOperandMorpheme(allomorph, out operand, position))
-            {
-                operand.Surface = _Replace(operand.Surface);
-            }
+            allomorph.Surface = _Replace(allomorph.Surface);
         }
 
         private string _Replace(string str)

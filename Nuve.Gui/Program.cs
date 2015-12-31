@@ -120,7 +120,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-                "gelmem", "hemhâl", "a", "hemhâli"
+                "yapmam", "gitmem", "a", "demem"
             };
             //string[] testStrings = SoruTest.Soru;
             AnalysisHelper.Analyze(Analyzer, testStrings);

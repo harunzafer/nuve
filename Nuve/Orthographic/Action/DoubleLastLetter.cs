@@ -1,5 +1,4 @@
-﻿using Nuve.Condition;
-using Nuve.Morphologic.Structure;
+﻿using Nuve.Morphologic.Structure;
 
 namespace Nuve.Orthographic.Action
 {
@@ -10,9 +9,9 @@ namespace Nuve.Orthographic.Action
         {
         }
 
-        public override void Do(Allomorph allomorph, Position position)
+        protected override void Do(Allomorph allomorph)
         {
-            char last = allomorph.Surface[allomorph.Surface.Length - 1];
+            var last = allomorph.Surface[allomorph.Surface.Length - 1];
             allomorph.Surface += last;
         }
     }

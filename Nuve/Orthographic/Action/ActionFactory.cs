@@ -13,6 +13,8 @@ namespace Nuve.Orthographic.Action
                     return new Append(alphabet, operandOne, operandTwo, flag);
                 case "Prepend":
                     return new Prepend(alphabet, operandOne, operandTwo, flag);
+                case "DeleteSurface":
+                    return new DeleteSurface(alphabet, operandOne, operandTwo, flag);
                 case "DeleteFirstLetter":
                     return new DeleteFirstLetter(alphabet, operandOne, operandTwo, flag);
                 case "DeleteFirstVowel":

@@ -348,22 +348,34 @@
 
     <!-- Bu 2 kural geniş zaman eki için -->
 
+    <rule id="GZ_OLUMSUZ" phase="2">
+      <description> Olumsuzluk ekinden sonra gelen geniş zaman ekinden sonra 1. tekil şahıs eki geliyorsa, geniş
+      zaman ekinin yüzeyi düşer</description>
+      <transformation morpheme="This" action="DeleteSurface">
+        <conditions flag="And">
+          <condition morpheme="Previous" operator="MorphemeEquals" operand="FY_OLUMSUZLUK_mA" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="EKFIIL_SAHIS_BEN_(y)Um" />
+        </conditions>
+      </transformation>      
+    </rule>
+      
+
     <rule id="OZEL_GZ" phase="2">
       <description>
         Genis zaman ekinden önce gelen morfemde (fiilde) S_OZEL_GZ kuralı var ise Ur => Ar olur.
         Önceki ek olumsuzluk eki ise Ur => z olur.
       </description>
+      <transformation morpheme="Next" action="Replace" operandOne="yUm" operandTwo="m" flag="all">
+        <conditions flag="And">
+          <condition morpheme="Previous" operator="MorphemeEquals" operand="FY_OLUMSUZLUK_mA" />
+          <condition morpheme="Next" operator="MorphemeEquals" operand="EKFIIL_SAHIS_BEN_(y)Um" />
+        </conditions>
+      </transformation>
       <transformation morpheme="This" action="Replace" operandOne="U" operandTwo="A" flag="all">
         <conditions flag="Or">
           <condition morpheme="Previous" operator="HasFlags" operand="genis_Ar" />
         </conditions>
-      </transformation>
-      <transformation morpheme="This" action="Replace" operandOne="Ur" operandTwo="" flag="all">
-        <conditions flag="And">
-          <condition morpheme="Previous" operator="MorphemeEquals" operand="FY_OLUMSUZLUK_mA" />
-          <condition morpheme="Next" operator="MorphemeEquals" operand="EKFIIL_SAHIS_BEN_m" />
-        </conditions>
-      </transformation>
+      </transformation>      
       <transformation morpheme="This" action="Replace" operandOne="Ur" operandTwo="z" flag="all">
         <conditions flag="Or">
           <condition morpheme="Previous" operator="MorphemeEquals" operand="FY_OLUMSUZLUK_mA" />

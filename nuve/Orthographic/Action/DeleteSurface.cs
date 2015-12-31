@@ -2,16 +2,16 @@
 
 namespace Nuve.Orthographic.Action
 {
-    internal class DeleteLastVowel : BaseAction
+    internal class DeleteSurface : BaseAction
     {
-        public DeleteLastVowel(Alphabet alphabet, string operandOne, string operandTwo, string flag)
+        public DeleteSurface(Alphabet alphabet, string operandOne, string operandTwo, string flag)
             : base(alphabet, operandOne, operandTwo, flag)
         {
         }
 
         protected override void Do(Allomorph allomorph)
         {
-            allomorph.Surface = allomorph.Surface.DeleteLastOccurrenceOfAny(Alphabet.Vowels);
+            allomorph.Surface = "";
         }
     }
 }

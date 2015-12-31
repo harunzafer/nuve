@@ -242,7 +242,7 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
-        [TestCase("yapmam", "yap/FIIL FY_OLUMSUZLUK_mA EKFIIL_SAHIS_BEN_m")]
+        [TestCase("yapmam", "yap/FIIL FY_OLUMSUZLUK_mA FC_ZAMAN_GENIS_(U)r EKFIIL_SAHIS_BEN_(y)Um")]
         [TestCase("yapmazsın", "yap/FIIL FY_OLUMSUZLUK_mA FC_ZAMAN_GENIS_(U)r EKFIIL_SAHIS_SEN_sUn")]
         [TestCase("yapmaz", "yap/FIIL FY_OLUMSUZLUK_mA FC_ZAMAN_GENIS_(U)r")]
         [TestCase("yapmayız", "yap/FIIL FY_OLUMSUZLUK_mA EKFIIL_SAHIS_BIZ_(y)Uz")]

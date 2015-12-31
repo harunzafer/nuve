@@ -1030,7 +1030,7 @@
                      operand="FY_EDILGEN_Ul_(U)n, FC_YF_YETERLILIK_(y)Abil" />
         </conditions>
       </target>
-      <target id="EKFIIL_SAHIS_BEN_m" />
+      <!--<target id="EKFIIL_SAHIS_BEN_m" />-->
     </source>
 
     <!-- Yardımcı Fiil Ekleri -->

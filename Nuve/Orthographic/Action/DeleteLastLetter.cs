@@ -1,5 +1,4 @@
-﻿using Nuve.Condition;
-using Nuve.Morphologic.Structure;
+﻿using Nuve.Morphologic.Structure;
 
 namespace Nuve.Orthographic.Action
 {
@@ -10,21 +9,9 @@ namespace Nuve.Orthographic.Action
         {
         }
 
-        public override void Do(Allomorph allomorph, Position position)
+        protected override void Do(Allomorph allomorph)
         {
-            Allomorph neighbour = allomorph;
-            switch (position)
-            {
-                case Position.Next:
-                    neighbour = allomorph.Next;
-                    break;
-
-                case Position.Previous:
-                    neighbour = allomorph.Previous;
-                    break;
-            }
-
-            neighbour.Surface = neighbour.Surface.DeleteLastChar();
+            allomorph.Surface = allomorph.Surface.DeleteLastChar();
         }
     }
 }
