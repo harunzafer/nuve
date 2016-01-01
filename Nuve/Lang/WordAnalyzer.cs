@@ -15,22 +15,18 @@ namespace Nuve.Lang
             _lang = language;
         }
 
-        /// <summary>
-        ///     Bir kelimenin muhtemel tüm çözümlerini döndürür.
-        /// </summary>
-        /// <param name="token">kelime adayı, analiz edilemezse kelime olarak kabul edilmez.</param>
-        /// <param name="checkTransition"> Morfotaktik geçişleri kontrol et. </param>
-        /// <param name="checkOrthography"> Ortografik kuralları işlet ve kontrol et.</param>
-        /// <param name="checkTransitionConditions">Morfotaktik geçiş koşullarını kontrol et. </param>
-        /// <returns></returns>
-        public IList<Word> Analyze(string token, bool checkTransition = true,
-            bool checkOrthography = true, bool checkTransitionConditions = true)
+        public IList<Word> Analyze(string token)
+        {
+            return Analyze(token, true, true);
+        }
+
+        internal IList<Word> Analyze(string token, bool checkOrthography, bool checkTransitionConditions)
         {
             var words = new List<Word>();
             IEnumerable<SurfaceMorphemePair<Root>> roots = FindPossibleRoots(token);
             foreach (var pair in roots)
             {
-                GetPossibleWords(new Word(pair.Morpheme), token.Remove(0, pair.Surface.Length), words, checkTransition);
+                GetPossibleWords(new Word(pair.Morpheme), token.Remove(0, pair.Surface.Length), words);
             }
 
             if (checkTransitionConditions)
@@ -90,28 +86,21 @@ namespace Nuve.Lang
             return pairs;
         }
        
-        private void GetPossibleWords(Word word, string restOfWord, IList<Word> words, bool checkTransition)
+        private void GetPossibleWords(Word word, string restOfWord, IList<Word> words)
         {
+            var suffixes = FindPossibleSuffixes(word.Last.Morpheme, restOfWord);
+
+            foreach (var suffix in suffixes)
+            {
+                word.AddSuffix(suffix.Morpheme);
+                GetPossibleWords(word, restOfWord.Remove(0, suffix.Surface.Length), words);
+                word.RemoveLastSuffix();
+            }
+
             if (restOfWord.Length == 0 && _lang.Morphotactics.IsTerminal(word.Last.Morpheme))
             {
                 var newPossibleWord = Word.CopyOf(word);
                 words.Add(newPossibleWord);
-                return;
-            }
-
-            var suffixes = FindPossibleSuffixes(word.Last.Morpheme, restOfWord);
-
-            if (suffixes.Count == 0)
-            {
-                return;
-            }            
-
-            foreach (var suffix in suffixes)
-            {
-                
-                word.AddSuffix(suffix.Morpheme);
-                GetPossibleWords(word, restOfWord.Remove(0, suffix.Surface.Length), words, checkTransition);
-                word.RemoveLastSuffix();
             }
         }
 

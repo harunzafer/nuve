@@ -37,25 +37,9 @@ namespace Nuve.Gui
             //Benchmarker.TestWithAMillionTokens(Analyzer);
             //Benchmarker.TestWithAMillionWords(Analyzer);
 
-            //Console.WriteLine(Language.Turkish.GetRoot("kitap","ISIM").DebugInfo);
-
-            //var word = Language.Turkish.GetWord("küçük/SIFAT IY_ISIM_KUCULTME_CUK");
-
-            //Console.WriteLine(word.GetSurface());
-
             Test();
         }
-
-        class Person
-        {
-            public string name;
-
-            public Person(string name)
-            {
-                this.name = name;
-            }
-        }
-            
+       
         public static string Split(string str)
         {
             var sb = new StringBuilder(str);
@@ -120,7 +104,7 @@ namespace Nuve.Gui
         {
             string[] testStrings =
             {
-                "yapmam", "gitmem", "a", "demem"
+                "gel", "gitmem", "a", "demem"
             };
             //string[] testStrings = SoruTest.Soru;
             AnalysisHelper.Analyze(Analyzer, testStrings);
