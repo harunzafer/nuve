@@ -39,7 +39,22 @@ namespace Nuve.Gui
 
             Test();
         }
-       
+
+        public static void Test()
+        {
+            string[] testStrings =
+            {
+                "gel", "gitmem", "a", "demem"
+            };
+            
+            AnalysisHelper.Analyze(Analyzer, testStrings);
+
+            //string test = TestGenerator.GenerateContainsAnalysisTest(SpecialCase.Şapkalı, "Şapkalı");
+            //string test = TestGenerator.GenerateContainsAnalysesTest(VerbAux.FiilimsiZarfArak, "FiilimsiZarfArak", "FIILIMSI_ZARF_(y)ArAk");
+            //Console.WriteLine(test);
+
+        }
+
         public static string Split(string str)
         {
             var sb = new StringBuilder(str);
@@ -100,20 +115,7 @@ namespace Nuve.Gui
             }
         }
 
-        public static void Test()
-        {
-            string[] testStrings =
-            {
-                "gel", "gitmem", "a", "demem"
-            };
-            //string[] testStrings = SoruTest.Soru;
-            AnalysisHelper.Analyze(Analyzer, testStrings);
-
-            //string test = TestGenerator.GenerateContainsAnalysisTest(SpecialCase.Şapkalı, "Şapkalı");
-            //string test = TestGenerator.GenerateContainsAnalysesTest(VerbAux.FiilimsiZarfArak, "FiilimsiZarfArak", "FIILIMSI_ZARF_(y)ArAk");
-            //Console.WriteLine(test);
-
-        }
+       
 
         private static void StemFirst500()
         {

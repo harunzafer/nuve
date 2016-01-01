@@ -32,13 +32,16 @@ namespace Nuve.Orthographic
         }
 
         /// <summary>
-        ///     Throws an ArgumentNullException if any of the strings in the specified array is null
+        ///     Throws an ArgumentNullException if any of the objects in the specified array is null
         /// </summary>
-        public static void ThrowIfNullAny(params string[] strings)
+        public static void ThrowIfNullAny(params object[] objects)
         {
-            foreach (var str in strings)
+            foreach (var o in objects)
             {
-                str.ThrowIfNull();
+                if (o == null)
+                {
+                    throw new ArgumentNullException(nameof(o));
+                }
             }
         }
 
@@ -95,7 +98,7 @@ namespace Nuve.Orthographic
         {
             ThrowIfNullAny(str, letters);
 
-            var index = str.IndexOfAny(letters.ToArray());
+            var index = str.IndexOfAny(letters.ToCharArray());
 
             if (index == -1)
             {
@@ -113,7 +116,7 @@ namespace Nuve.Orthographic
         {
             ThrowIfNullAny(str, letters);
 
-            var index = str.LastIndexOfAny(letters.ToArray());
+            var index = str.LastIndexOfAny(letters.ToCharArray());
 
             if (index == -1)
             {
@@ -131,13 +134,13 @@ namespace Nuve.Orthographic
         {
             ThrowIfNullAny(str, letters);
 
-            var index = str.LastIndexOfAny(letters.ToArray());
+            var index = str.LastIndexOfAny(letters.ToCharArray());
             if (index == -1)
             {
                 return null;
             }
 
-            index = str.Substring(0, index).LastIndexOfAny(letters.ToArray());
+            index = str.Substring(0, index).LastIndexOfAny(letters.ToCharArray());
 
             if (index == -1)
             {
@@ -153,7 +156,7 @@ namespace Nuve.Orthographic
         {
             ThrowIfNullAny(str, letters);
 
-            var index = str.IndexOfAny(letters.ToArray());
+            var index = str.IndexOfAny(letters.ToCharArray());
 
             if (index == -1)
             {
@@ -167,7 +170,7 @@ namespace Nuve.Orthographic
         {
             ThrowIfNullAny(str, letters);
 
-            var index = str.LastIndexOfAny(letters.ToArray());
+            var index = str.LastIndexOfAny(letters.ToCharArray());
 
             if (index == -1)
             {
