@@ -8,8 +8,9 @@ namespace Nuve.Gui
     internal class Conjugator
     {
         private const string Filename = @"C:\Users\hrzafer\Dropbox\aNewHope\conjugationData.xlsx";
-        private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
-        private static readonly List<Conjugation> Conjugations = ConjugationReader.Read(Filename, "Sheet1", Analyzer);
+        //private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
+
+        private static readonly List<Conjugation> Conjugations = ConjugationReader.Read(Filename, "Sheet1", Conjugation.Turkish);
 
         public static List<string> Conjugate(string verbRoot, bool negative, bool question)
         {
@@ -25,7 +26,7 @@ namespace Nuve.Gui
 
         private static Root GetVerbRoot(string verbRoot)
         {
-            IEnumerable<Root> roots = Language.Turkish.GetRootsHavingSurface(verbRoot);
+            IEnumerable<Root> roots = Conjugation.Turkish.GetRootsHavingSurface(verbRoot);
             foreach (Root root in roots)
             {
                 if (root.Pos == "FIIL")

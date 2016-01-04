@@ -8,7 +8,7 @@ namespace Nuve.Test.Analysis
 {
     public class TestGenerator
     {
-        private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
+        private static readonly Language Language = LanguageFactory.Create(LanguageType.Turkish);
 
         /// <summary>
         ///     Kelimelerin sadece ilk çözümlerini kullanan bir ContainsAnalysis(token, analysis) testi üretir.
@@ -22,7 +22,7 @@ namespace Nuve.Test.Analysis
             var sb = new StringBuilder("");
             foreach (string word in words)
             {
-                IList<Word> solutions = Analyzer.Analyze(word);
+                IList<Word> solutions = Language.Analyze(word);
                 try
                 {
                     sb.AppendFormat("[TestCase(\"{0}\", \"{1}\"", word, solutions[0]);
@@ -53,7 +53,7 @@ namespace Nuve.Test.Analysis
             var sb = new StringBuilder("");
             foreach (string word in words)
             {
-                IList<Word> solutions = Analyzer.Analyze(word);
+                IList<Word> solutions = Language.Analyze(word);
                 sb.AppendFormat("[TestCase(\"{0}\", new [] {{", word);
                 foreach (Word solution in solutions)
                 {
@@ -76,7 +76,7 @@ namespace Nuve.Test.Analysis
             var sb = new StringBuilder("");
             foreach (string word in words)
             {
-                IList<Word> solutions = Analyzer.Analyze(word);
+                IList<Word> solutions = Language.Analyze(word);
                 sb.AppendFormat("[TestCase(\"{0}\", new [] {{", word);
                 foreach (Word solution in solutions)
                 {
@@ -97,7 +97,7 @@ namespace Nuve.Test.Analysis
 
             foreach (string word in words)
             {
-                IList<Word> solutions = Analyzer.Analyze(word);
+                IList<Word> solutions = Language.Analyze(word);
                 if (solutions.Count != 0)
                 {
                     throw new ArgumentException(word + " has a solution: " + solutions[0]);
@@ -119,7 +119,7 @@ namespace Nuve.Test.Analysis
 
             foreach (string word in words)
             {
-                IList<Word> solutions = Analyzer.Analyze(word);
+                IList<Word> solutions = Language.Analyze(word);
                 if (solutions.Count != 0)
                 {
                     throw new ArgumentException(word + " has a solution: " + solutions[0]);

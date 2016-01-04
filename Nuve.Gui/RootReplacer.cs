@@ -8,14 +8,14 @@ namespace Nuve.Gui
 {
     internal class RootReplacer
     {
-        public static String[] ReplaceRoots(string root, string[] words)
+        public static string[] ReplaceRoots(string root, string[] words)
         {
-            Language turkish = Language.Turkish;
-            var analyzer = new WordAnalyzer(turkish);
+            Language turkish = LanguageFactory.Create(LanguageType.Turkish);
+            
             var replacedWords = new List<string>();
             foreach (string word in words)
             {
-                IEnumerable<Word> solutions = analyzer.Analyze(word, true, true);
+                IEnumerable<Word> solutions = turkish.Analyze(word);
                 foreach (Word solution in solutions)
                 {
                     string output = solution.GetSurface();

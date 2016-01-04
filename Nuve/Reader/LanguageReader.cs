@@ -43,19 +43,19 @@ namespace Nuve.Reader
 
             _orthography = ReadOrthography();
 
-            _trace.TraceInformation($"orthograpy: {sw.ElapsedMilliseconds} ms");
+            _trace.TraceInformation($"{_dirPath} orthography loading time is {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
             var morphotactics = ReadMorphotactics();
-            _trace.TraceInformation($"morphotactics: {sw.ElapsedMilliseconds} ms");
+            _trace.TraceInformation($"{_dirPath} morphotactics loading time is {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
             var roots = ReadRoots();
-            _trace.TraceInformation($"roots: {sw.ElapsedMilliseconds} ms");
+            _trace.TraceInformation($"{_dirPath} roots loading time is {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
             var suffixes = ReadSuffixes();
-            _trace.TraceInformation($"suffixes: {sw.ElapsedMilliseconds} ms");
+            _trace.TraceInformation($"{_dirPath} suffixes loading time is {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
 

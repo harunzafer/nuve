@@ -36,8 +36,10 @@ namespace Nuve.Gui
 
     internal class Conjugation
     {
-        private static readonly Suffix Negative = Language.Turkish.GetSuffix("FY_OLUMSUZLUK_mA");
-        private static Suffix SORU = Language.Turkish.GetSuffix("SORU_mU");
+        public static readonly Language Turkish = LanguageFactory.Create(LanguageType.Turkish);
+
+        private static readonly Suffix Negative = Turkish.GetSuffix("FY_OLUMSUZLUK_mA");
+        private static Suffix SORU = Turkish.GetSuffix("SORU_mU");
         private readonly Word verb;
 
         public Conjugation(Word verb, FirstTense firstTense, SecondTense secondTense, Person person)

@@ -8,7 +8,7 @@ namespace Nuve.Test.Analysis
 {
     internal class Tester
     {
-        private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
+        private static readonly Language Language = LanguageFactory.Create(LanguageType.Turkish);
 
         /// <summary>
         ///     Bir kelimenin çözümleri içerisinde aranan çözümün bir ve yalnız bir adet
@@ -33,7 +33,7 @@ namespace Nuve.Test.Analysis
         /// <param name="expectedAnalyses">aranan çözümler</param>
         public static void ContainsAnalyses(string token, string[] expectedAnalyses)
         {
-            IList<Word> words = Analyzer.Analyze(token);
+            IList<Word> words = Language.Analyze(token);
             foreach (string expectedAnalysis in expectedAnalyses)
             {
                 int matchingAnalysisCount = words.Count(w => w.Analysis.Equals(expectedAnalysis));
@@ -49,7 +49,7 @@ namespace Nuve.Test.Analysis
         /// <param name="expectedAnalyses">aranan ve olması gereken çözümlerin tamamı</param>
         public static void AllAnalysesEqual(string token, IList<string> expectedAnalyses)
         {
-            IList<Word> words = Analyzer.Analyze(token);
+            IList<Word> words = Language.Analyze(token);
             IList<string> actualAnalyses = words.Select(word => word.Analysis).ToList();
             bool equalIgnoreOrder = actualAnalyses.OrderBy(t => t).SequenceEqual(expectedAnalyses.OrderBy(t => t));
             Assert.True(equalIgnoreOrder);
@@ -62,7 +62,7 @@ namespace Nuve.Test.Analysis
         /// <param name="token">kelime</param>
         public static void HasNoAnalysis(string token)
         {
-            IList<Word> solutions = Analyzer.Analyze(token);
+            IList<Word> solutions = Language.Analyze(token);
             Assert.AreEqual(0, solutions.Count);
         }
 
@@ -73,7 +73,7 @@ namespace Nuve.Test.Analysis
         /// <param name="token">kelime</param>
         public static void HasAnalysis(string token)
         {
-            IList<Word> solutions = Analyzer.Analyze(token);
+            IList<Word> solutions = Language.Analyze(token);
             Assert.Greater(solutions.Count, 0);
         }
 
@@ -89,7 +89,7 @@ namespace Nuve.Test.Analysis
         //[Test]
         public static void AnalysisNotExist(string token, string rootOfAnalysis)
         {
-            IList<Word> words = Analyzer.Analyze(token);
+            IList<Word> words = Language.Analyze(token);
 
             int matchingAnalysisCount = words.Count(w => w.Analysis.StartsWith(rootOfAnalysis));
 
@@ -99,7 +99,7 @@ namespace Nuve.Test.Analysis
         // Bu metod yakında kaldırılacak
         public static void TestAnalyses(string token, int count, string[] analyses, bool fullAnalysis = false)
         {
-            IList<Word> solutions = Analyzer.Analyze(token);
+            IList<Word> solutions = Language.Analyze(token);
             if (fullAnalysis)
             {
                 Assert.AreEqual(count, solutions.Count);

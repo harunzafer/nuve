@@ -18,13 +18,9 @@ Use cases for the above tasks are as follows:
 #### Morphologic Analysis and Stemming
 
 ```c#
-Language tr = Language.Turkish;
+Language tr = LanguageFactory.Create(LanguageType.Turkish);
 
-//Analysis
-var analyzer = new WordAnalyzer(tr);
-
-//Morphologic Analysis and stemming
-IList<Word> solutions = analyzer.Analyze("deneme");
+IList<Word> solutions = tr.Analyze("yolsuzu");
 
 foreach (var solution in solutions)
 {
@@ -37,34 +33,32 @@ foreach (var solution in solutions)
 Output:
 
 ```
-	de/FIIL Ul/FY_EDILGEN_Ul_(U)n yAmA/FC_YF_YETERSIZLIK_(y)AmA
-	original:deneme stem:deneme
-	
-	dene/FIIL mA/FIILIMSI_ISIM_mA
-	original:deneme stem:deneme
+	yol/ISIM IY_SIFAT_sUz IC_SAHIPLIK_O_(s)U
+	original:yolsuzu stem:yolsuz root:yol/ISIM
 
-	dene/FIIL mA/FY_OLUMSUZLUK_mA
-	original:deneme stem:deneme
+	yol/ISIM IY_SIFAT_sUz IC_HAL_BELIRTME_(y)U
+	original:yolsuzu stem:yolsuz root:yol/ISIM
 ```
 
 ####Morphologic Generation
 
 ```c#
-Root root = tr.GetRootsHavingSurface("kitap").First();
 
-var word = new Word(root);
-word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
-word.AddSuffix(tr.GetSuffix("IC_SAHIPLIK_BEN_(U)m"));
-word.AddSuffix(tr.GetSuffix("IC_HAL_BULUNMA_DA"));
-word.AddSuffix(tr.GetSuffix("IC_AITLIK_ki"));
-word.AddSuffix(tr.GetSuffix("IC_COGUL_lAr"));
-word.AddSuffix(tr.GetSuffix("IC_HAL_AYRILMA_DAn"));
+	//Method 1: Specify the ids of the morphemes that constitute the word
+	var word1 = tr.Generate("kitap/ISIM", "IC_COGUL_lAr", "IC_SAHIPLIK_BEN_(U)m",
+    "IC_HAL_BULUNMA_DA","IC_AITLIK_ki", "IC_COGUL_lAr", "IC_HAL_AYRILMA_DAn");
 
-Console.WriteLine(word.GetSurface()); //prints "kitabımdakilerden"
+	//Method 2: Specify the string representation of the analysis of the word.
+	string analysis = "kitap/ISIM IC_COGUL_lAr IC_SAHIPLIK_BEN_(U)m";
+	var word2 = tr.GetWord(analysis);
+
+	Console.WriteLine(word1.GetSurface());
+	Console.WriteLine(word2.GetSurface());
 ```
 Output:
 ```
 	kitaplarımdakilerden
+	kitaplarım
 ```
 
 Use the `public bool AddSuffix(Suffix suffix, Language language)` method in order to make sure that the word is still valid (for Turkish) after adding the suffix.

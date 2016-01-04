@@ -14,7 +14,7 @@
 
         public override string ToString()
         {
-            return string.Format("Vowels: {0}, Consonants: {1}", Vowels, Consonants);
+            return $"Vowels: {Vowels}, Consonants: {Consonants}";
         }
     }
 }

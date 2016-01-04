@@ -1,18 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Diagnostics;
 using Nuve.Lang;
-using Nuve.Morphologic.Format;
-using Nuve.Morphologic.Structure;
-using Nuve.NGrams;
-using Nuve.Orthographic;
-using Nuve.Reader;
 using Nuve.Sentence;
-using Nuve.Stemming;
 
 namespace Nuve.Gui
 {
@@ -20,7 +13,7 @@ namespace Nuve.Gui
     {
         private const string TaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcSentencedNormalized.txt";
         private const string UntaggedInput = @"C:\Users\hrzafer\Dropbox\nuve\corpus\tcNormalized.txt";
-        private static readonly WordAnalyzer Analyzer = new WordAnalyzer(Language.Turkish);
+        private static readonly Language Turkish = LanguageFactory.Create(LanguageType.Turkish);
 
         [Conditional("TRACE")]
         public static void Msg(string msg)
@@ -34,10 +27,34 @@ namespace Nuve.Gui
         [STAThread]
         private static void Main()
         {
+            var tr = LanguageFactory.Create(LanguageType.Turkish);
+            var solutions = tr.Analyze("yolsuzu");
+
             //Benchmarker.TestWithAMillionTokens(Analyzer);
             //Benchmarker.TestWithAMillionWords(Analyzer);
 
-            Test();
+            foreach (var solution in solutions)
+            {
+                Console.WriteLine("\t{0}", solution);
+                Console.WriteLine("\toriginal:{0} stem:{1} root:{2}\n",
+                    solution.GetSurface(),
+                    solution.GetStem().GetSurface(),
+                    solution.Root); //Stemming
+            }
+
+            //Method 1: Specify the ids of the morphemes that constitute the word
+            var word1 = tr.Generate("kitap/ISIM", "IC_COGUL_lAr", "IC_SAHIPLIK_BEN_(U)m",
+                "IC_HAL_BULUNMA_DA","IC_AITLIK_ki", "IC_COGUL_lAr", "IC_HAL_AYRILMA_DAn");
+
+            //Method 2: Specify the string representation of the analysis of the word.
+            string analysis = "kitap/ISIM IC_COGUL_lAr IC_SAHIPLIK_BEN_(U)m";
+            var word2 = tr.GetWord(analysis);
+
+            Console.WriteLine(word1.GetSurface());
+            Console.WriteLine(word2.GetSurface());
+
+
+            //Test();
         }
 
         public static void Test()
@@ -46,13 +63,12 @@ namespace Nuve.Gui
             {
                 "gel", "gitmem", "a", "demem"
             };
-            
-            AnalysisHelper.Analyze(Analyzer, testStrings);
+
+            AnalysisHelper.Analyze(Turkish, testStrings);
 
             //string test = TestGenerator.GenerateContainsAnalysisTest(SpecialCase.Şapkalı, "Şapkalı");
             //string test = TestGenerator.GenerateContainsAnalysesTest(VerbAux.FiilimsiZarfArak, "FiilimsiZarfArak", "FIILIMSI_ZARF_(y)ArAk");
             //Console.WriteLine(test);
-
         }
 
         public static string Split(string str)
@@ -81,7 +97,6 @@ namespace Nuve.Gui
             return sb.ToString();
         }
 
-      
 
         public static void ToSortedFile(IDictionary<string, int> map, string path)
         {
@@ -115,7 +130,6 @@ namespace Nuve.Gui
             }
         }
 
-       
 
         private static void StemFirst500()
         {
@@ -144,8 +158,5 @@ namespace Nuve.Gui
 
             File.WriteAllLines(@"C:\Users\hrzafer\Desktop\workspace\Damla\code\suggestion\kalem_stems.txt", words);
         }
-
-        
-        
     }
 }

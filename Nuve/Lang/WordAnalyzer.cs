@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using Nuve.Morphologic.Structure;
@@ -10,10 +11,17 @@ namespace Nuve.Lang
         private readonly Language _lang;
         private readonly TraceSource _trace = new TraceSource("WordAnalyzer");
 
+        /// <summary>
+        ///     Creates a new word analyzer of the specified languge.
+        /// </summary>
+        /// <param name="source">Kopyalanacak kelime</param>
+        [Obsolete("This constructor is deprecated and will not be available in near future, use of \"Language.Analyze(string token)\" instead.", false)]
         public WordAnalyzer(Language language)
         {
             _lang = language;
         }
+
+        
 
         public IList<Word> Analyze(string token)
         {

@@ -3,31 +3,22 @@ using System.Collections.Generic;
 using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
-using Nuve.Reader;
 
 namespace Nuve.Lang
 {
     /// <summary>
-    ///     Language sınıfı bir dile ait gerekli bilgiyi barındırır. WordAnalyzer sınıfı bu sınıftaki bilgileri
-    ///     barındırdığı algoritma ile kullanarak kelimeleri analiz eder. Bu sınıfa ileride kelimelerin frekans
-    ///     bilgisi gibi istatiksel veriler de eklenebilir.
+    ///     Enum for supported languages in Nüve.
+    /// </summary>
+    public enum LanguageType
+    {
+        Turkish
+    }
+
+    /// <summary>
+    ///     Represents a language which is supported by Nüve.
     /// </summary>
     public sealed class Language
     {
-        public static readonly Language Turkish;
-
-        static Language()
-        {
-            try
-            {
-                Turkish = new LanguageReader("Tr", false).Read();
-            }
-            catch (InvalidLanguageFileException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-        }
-
         internal Language(string code,
             Morphotactics morphotactics,
             MorphemeContainer<Root> roots,
@@ -37,7 +28,16 @@ namespace Nuve.Lang
             Morphotactics = morphotactics;
             Roots = roots;
             Suffixes = suffixes;
+            Analyzer = new WordAnalyzer(this);
+            Type = LanguageType.Turkish;
         }
+
+        /// <summary>
+        ///     Type (name) of this language object.
+        /// </summary>
+        public LanguageType Type { get; }
+
+        private WordAnalyzer Analyzer { get; }
 
         /// <summary>
         ///     The name is a combination of an ISO 639 two-letter lowercase culture code associated with a language and an ISO
@@ -45,7 +45,7 @@ namespace Nuve.Lang
         ///     https://msdn.microsoft.com/en-us/library/756hydy4%28v=vs.100%29.aspx
         ///     http://timtrott.co.uk/culture-codes/
         /// </summary>
-        public string Code { get; }
+        internal string Code { get; }
 
         private MorphemeContainer<Suffix> Suffixes { get; }
         private MorphemeContainer<Root> Roots { get; }
@@ -53,8 +53,26 @@ namespace Nuve.Lang
         internal Morphotactics Morphotactics { get; }
 
         /// <summary>
-        ///     Returns the immutable Suffix object having given id
-        /// ddd
+        ///     Returns all suffixes defined in this language.
+        /// </summary>
+        public IEnumerable<Suffix> AllSuffixes => Suffixes.ById.Values;
+
+        /// <summary>
+        ///     Returns all roots defined in this languages
+        /// </summary>
+        public IEnumerable<Root> AllRoots => Roots.ById.Values;
+
+        /// <summary>
+        ///     Analyzes a token in the context of this language and returns all possible solutions.
+        /// </summary>
+        public IList<Word> Analyze(string token)
+        {
+            return Analyzer.Analyze(token);
+        }
+
+        /// <summary>
+        ///     Returns the Suffix object having specified id in this language.
+        ///     Returns null if the suffix is not found.
         /// </summary>
         public Suffix GetSuffix(string id)
         {
@@ -67,18 +85,29 @@ namespace Nuve.Lang
             return null;
         }
 
+        /// <summary>
+        ///     Returns the Root object having specified id in this language.
+        ///     Id of a root is defined with its lexical form and part-of-speech tag such as "lex/POS".
+        ///     Returns null if the suffix is not found.
+        /// </summary>
         public Root GetRoot(string rootId)
         {
             rootId.ThrowIfNull();
             var tokens = rootId.Split('/');
             if (tokens.Length != 2)
             {
-                throw new ArgumentException($"Invalid root id \"{rootId}\". A valid root ID shoul be in the form of lex/pos. Ex: kitap/NOUN");
+                throw new ArgumentException(
+                    $"Invalid root id \"{rootId}\". A valid root ID shoul be in the form of lex/pos. Ex: kitap/NOUN");
             }
 
             return GetRoot(tokens[0], tokens[1]);
         }
 
+        /// <summary>
+        ///     Returns the Root object having specified lexical form and part-of-speech in this language.
+        ///     lexical form and part-of-speech defines a uniqe id for a root such as "lex/POS".
+        ///     Returns null if the suffix is not found.
+        /// </summary>
         public Root GetRoot(string lex, string pos)
         {
             Root root;
@@ -89,7 +118,6 @@ namespace Nuve.Lang
             }
             return null;
         }
-
 
         internal IEnumerable<T> GetMorphemesHavingSurface<T>(string surface) where T : Morpheme
         {
@@ -130,6 +158,9 @@ namespace Nuve.Lang
             return Code;
         }
 
+        /// <summary>
+        ///     Creates and returns a word with the specified "morpheme id" sequence
+        /// </summary>
         public Word Generate(params string[] morphemes)
         {
             StringExtensions.ThrowIfNullAny(morphemes);
@@ -153,19 +184,19 @@ namespace Nuve.Lang
             }
 
             return word;
-
-
         }
 
+        /// <summary>
+        ///     Creates and returns a word with the specified string represenation of its analysis
+        ///     A word object's analysis can be obtainded as a string with word.ToString() method.
+        /// </summary>
         public Word GetWord(string analysis)
         {
             analysis.ThrowIfNull();
             analysis.ThrowIfEmpty();
 
             var tokens = analysis.Split(' ');
-
             return Generate(tokens);
         }
-
     }
 }

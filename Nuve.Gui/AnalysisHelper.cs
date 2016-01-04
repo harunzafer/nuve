@@ -12,11 +12,11 @@ namespace Nuve.Gui
 {
     internal class AnalysisHelper
     {
-        public static void Analyze(WordAnalyzer analyzer, IEnumerable<string> words)
+        public static void Analyze(Language language, IEnumerable<string> words)
         {
             foreach (string word in words)
             {
-                IList<Word> solutions = analyzer.Analyze(word);
+                IList<Word> solutions = language.Analyze(word);
                 Console.WriteLine("\n{0} için {1} çözüm bulundu:", word, solutions.Count);
                 foreach (Word solution in solutions)
                 {

@@ -9,11 +9,8 @@ namespace Nuve.Gui
 {
     internal class ConjugationReader
     {
-        private static WordAnalyzer ANALYZER;
-
-        public static List<Conjugation> Read(string filename, string sheetname, WordAnalyzer analyzer)
+        public static List<Conjugation> Read(string filename, string sheetname, Language language)
         {
-            ANALYZER = analyzer;
             string connectionString = string.Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0}; " +
                                                     "Extended Properties=Excel 12.0;", filename);
 
@@ -38,16 +35,16 @@ namespace Nuve.Gui
             var conjugations = new List<Conjugation>();
             foreach (ConjugationLine entry in entries)
             {
-                Conjugation conjugation = GetConjugation(entry);
+                Conjugation conjugation = GetConjugation(entry, language);
                 conjugations.Add(conjugation);
             }
 
             return conjugations;
         }
 
-        private static Conjugation GetConjugation(ConjugationLine entry)
+        private static Conjugation GetConjugation(ConjugationLine entry, Language language)
         {
-            Word verb = GetSolution(entry);
+            Word verb = GetSolution(entry, language);
             FirstTense firstTense = GetFirstTense(entry.FirstTense);
             SecondTense secondTense = GetSecondTense(entry.SecondTense);
             Person person = GetPerson(entry.Person);
@@ -85,9 +82,9 @@ namespace Nuve.Gui
         }
 
 
-        private static Word GetSolution(ConjugationLine entry)
+        private static Word GetSolution(ConjugationLine entry, Language language)
         {
-            foreach (Word solution in ANALYZER.Analyze(entry.Verb))
+            foreach (Word solution in language.Analyze(entry.Verb))
             {
                 if (solution.ToString() == entry.Solution)
                 {
