@@ -2,7 +2,7 @@ nuve
 ===
 Nuve is a Natural Language Processing Library for Turkish. Currently it supports:
 
- - Morphologic analysis (45K word per second on a i5 2.8 GHz 64 bit machine)
+ - Morphologic analysis (35K word per second on a i5 2.8 GHz 64 bit machine)
  - Morphologic generation
  - Stemming
  - Sentence (segmentation) boundary detection
@@ -44,16 +44,16 @@ Output:
 
 ```c#
 
-	//Method 1: Specify the ids of the morphemes that constitute the word
-	var word1 = tr.Generate("kitap/ISIM", "IC_COGUL_lAr", "IC_SAHIPLIK_BEN_(U)m",
-    "IC_HAL_BULUNMA_DA","IC_AITLIK_ki", "IC_COGUL_lAr", "IC_HAL_AYRILMA_DAn");
+//Method 1: Specify the ids of the morphemes that constitute the word
+var word1 = tr.Generate("kitap/ISIM", "IC_COGUL_lAr", "IC_SAHIPLIK_BEN_(U)m",
+"IC_HAL_BULUNMA_DA","IC_AITLIK_ki", "IC_COGUL_lAr", "IC_HAL_AYRILMA_DAn");
 
-	//Method 2: Specify the string representation of the analysis of the word.
-	string analysis = "kitap/ISIM IC_COGUL_lAr IC_SAHIPLIK_BEN_(U)m";
-	var word2 = tr.GetWord(analysis);
+//Method 2: Specify the string representation of the analysis of the word.
+string analysis = "kitap/ISIM IC_COGUL_lAr IC_SAHIPLIK_BEN_(U)m";
+var word2 = tr.GetWord(analysis);
 
-	Console.WriteLine(word1.GetSurface());
-	Console.WriteLine(word2.GetSurface());
+Console.WriteLine(word1.GetSurface());
+Console.WriteLine(word2.GetSurface());
 ```
 Output:
 ```
