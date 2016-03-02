@@ -6,5 +6,6 @@ namespace Nuve
 {
     public class SampleClass
     {
+
     }
 }
