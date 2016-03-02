@@ -108,9 +108,9 @@ namespace Nuve.Gui
 
         public static void EvaluateSbd(SentenceSegmenter segmenter)
         {
-            var taggedParagraphs = File.ReadAllLines(TaggedInput);
-            var evaluations = segmenter.Evaluate(taggedParagraphs);
-            SentenceSegmenterEvaluator.GetTotalReport(evaluations, printFalseAlarms: true);
+            //var taggedParagraphs = File.ReadAllLines(TaggedInput);
+            //var evaluations = segmenter.Evaluate(taggedParagraphs);
+            //SentenceSegmenterEvaluator.GetTotalReport(evaluations, printFalseAlarms: true);
         }
 
         public static void PrintSentences(SentenceSegmenter segmenter, IEnumerable<string> paragraphs)

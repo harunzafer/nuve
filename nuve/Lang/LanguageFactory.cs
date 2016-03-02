@@ -7,7 +7,7 @@ using Nuve.Reader;
 
 namespace Nuve.Lang
 {
-    class LanguageFactory
+    public class LanguageFactory
     {
         public static Language Create(LanguageType type)
         {

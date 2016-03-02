@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("Nuve.Test"), InternalsVisibleTo("Nuve.Gui")]
+[assembly: InternalsVisibleTo("Nuve.Test")]
 
 namespace Nuve
 {
