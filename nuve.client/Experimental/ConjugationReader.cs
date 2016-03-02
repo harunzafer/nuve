@@ -5,7 +5,7 @@ using System.Data.OleDb;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
 
-namespace Nuve.Gui
+namespace Nuve.Client.Experimental
 {
     internal class ConjugationReader
     {

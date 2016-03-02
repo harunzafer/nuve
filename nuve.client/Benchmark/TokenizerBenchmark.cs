@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 using Nuve.Tokenizers;
 
-namespace Nuve.Gui.Benchmark
+namespace Nuve.Client.Benchmark
 {
     internal class TokenizerBenchmark
     {

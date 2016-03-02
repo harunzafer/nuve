@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Nuve.Morphologic.Structure;
 
-namespace Nuve.Gui
+namespace Nuve.Client.Experimental
 {
     internal class Cache
     {

@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Nuve.Lang;
 using Nuve.Morphologic.Structure;
 
-namespace Nuve.Gui
+namespace Nuve.Client.Experimental
 {
     internal class RootReplacer
     {

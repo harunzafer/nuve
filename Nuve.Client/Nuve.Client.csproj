@@ -46,11 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnalysisHelper.cs" />
+    <Compile Include="Benchmark\Benchmarker.cs" />
+    <Compile Include="Benchmark\TokenizerBenchmark.cs" />
+    <Compile Include="Experimental\Cache.cs" />
+    <Compile Include="Experimental\Conjugation.cs" />
+    <Compile Include="Experimental\ConjugationReader.cs" />
+    <Compile Include="Experimental\ConjugationSuffix.cs" />
+    <Compile Include="Experimental\Conjugator.cs" />
+    <Compile Include="Experimental\RootReplacer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nuve\Nuve.csproj">
+      <Project>{bcc4c1c8-5f64-4a5c-9079-0272498745c2}</Project>
+      <Name>Nuve</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\aMillionTokens.txt" />
+    <Content Include="Resources\aMillionWords.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

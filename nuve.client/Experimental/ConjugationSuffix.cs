@@ -1,4 +1,4 @@
-﻿namespace Nuve.Gui
+﻿namespace Nuve.Client.Experimental
 {
     internal class ConjugationSuffix
     {

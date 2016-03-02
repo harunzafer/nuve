@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using Nuve.Lang;
-using Nuve.Morphologic.Format;
 using Nuve.Morphologic.Structure;
 
-namespace Nuve.Gui
+namespace Nuve.Client
 {
     internal class AnalysisHelper
     {

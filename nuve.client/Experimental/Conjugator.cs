@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Nuve.Lang;
 using Nuve.Morphologic.Structure;
 
-namespace Nuve.Gui
+namespace Nuve.Client.Experimental
 {
     internal class Conjugator
     {

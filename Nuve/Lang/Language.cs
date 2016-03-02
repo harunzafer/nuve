@@ -36,7 +36,7 @@ namespace Nuve.Lang
         ///     Type (name) of this language object.
         /// </summary>
         public LanguageType Type { get; }
-
+       
         private WordAnalyzer Analyzer { get; }
 
         /// <summary>
