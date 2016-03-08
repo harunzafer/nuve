@@ -278,6 +278,7 @@ namespace Nuve.Orthographic
         internal static int RomanNumeralToArabic(this string number)
         {
             if (number == string.Empty) return 0;
+
             if (number.StartsWith("M")) return 1000 + RomanNumeralToArabic(number.Remove(0, 1));
             if (number.StartsWith("CM")) return 900 + RomanNumeralToArabic(number.Remove(0, 2));
             if (number.StartsWith("D")) return 500 + RomanNumeralToArabic(number.Remove(0, 1));
@@ -292,7 +293,9 @@ namespace Nuve.Orthographic
             if (number.StartsWith("IV")) return 4 + RomanNumeralToArabic(number.Remove(0, 2));
             if (number.StartsWith("I")) return 1 + RomanNumeralToArabic(number.Remove(0, 1));
 
-            throw new ArgumentException($"Not a valid Roman numeral: {number}");
+            return -1;
+
+            //throw new ArgumentException($"Not a valid Roman numeral: {number}");
         }
     }
 }

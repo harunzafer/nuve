@@ -659,7 +659,7 @@ namespace Nuve.Sentence
             }
             int x;
 
-            if (Int32.TryParse(prev, out x) && curr == ".")
+            if (int.TryParse(prev, out x) && curr == ".")
             {
                 return false;
             }
@@ -688,12 +688,13 @@ namespace Nuve.Sentence
             {
                 if (i + 2 < tokens.Count)
                 {
-                    if (Char.IsLower(tokens[i + 2][0]))
+                    if (char.IsLower(tokens[i + 2][0]))
                     {
                         return false;
                     }
                 }
             }
+
             if (prev.RomanNumeralToArabic() > 0)
             {
                 return false;
