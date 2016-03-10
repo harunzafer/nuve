@@ -22,12 +22,14 @@ namespace Nuve.Lang
         internal Language(string code,
             Morphotactics morphotactics,
             MorphemeContainer<Root> roots,
-            MorphemeContainer<Suffix> suffixes)
+            MorphemeContainer<Suffix> suffixes,
+            Orthography orthography)
         {
             Code = code;
             Morphotactics = morphotactics;
             Roots = roots;
             Suffixes = suffixes;
+            Orthography = orthography;
             Analyzer = new WordAnalyzer(this);
             Type = LanguageType.Turkish;
         }
@@ -36,7 +38,7 @@ namespace Nuve.Lang
         ///     Type (name) of this language object.
         /// </summary>
         public LanguageType Type { get; }
-       
+
         private WordAnalyzer Analyzer { get; }
 
         /// <summary>
@@ -48,6 +50,9 @@ namespace Nuve.Lang
         internal string Code { get; }
 
         private MorphemeContainer<Suffix> Suffixes { get; }
+
+        internal Orthography Orthography { get; }
+
         private MorphemeContainer<Root> Roots { get; }
 
         internal Morphotactics Morphotactics { get; }

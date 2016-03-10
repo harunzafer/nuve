@@ -7,7 +7,7 @@ namespace Nuve.Client
 {
     public class Program
     {
-        private static readonly Language Turkish = LanguageFactory.Create(LanguageType.Turkish);
+        private static readonly Language Turkish = LanguageContainer.Get(LanguageType.Turkish);
 
         private static void Main(string[] args)
         {
@@ -15,15 +15,15 @@ namespace Nuve.Client
             //Benchmarker.TestWithAMillionWords(Turkish.Analyze);
             //GitHubReadmeExamples();
 
-            //AnalysisHelper.Analyze(Turkish, new[] { "eşkali", "eşkâli" });
+            AnalysisHelper.Analyze(Turkish, new[] { "saat", "eşkâli" });
 
-            SentenceSegmentation();
+            //SentenceSegmentation();
         }
 
 
         private static void GitHubReadmeExamples()
         {
-            var tr = LanguageFactory.Create(LanguageType.Turkish);
+            var tr = LanguageContainer.Get(LanguageType.Turkish);
             var solutions = tr.Analyze("yolsuzu");
 
             foreach (var solution in solutions)

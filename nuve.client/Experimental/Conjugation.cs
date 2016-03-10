@@ -36,7 +36,7 @@ namespace Nuve.Client.Experimental
 
     internal class Conjugation
     {
-        public static readonly Language Turkish = LanguageFactory.Create(LanguageType.Turkish);
+        public static readonly Language Turkish = LanguageContainer.Get(LanguageType.Turkish);
 
         private static readonly Suffix Negative = Turkish.GetSuffix("FY_OLUMSUZLUK_mA");
         private static Suffix SORU = Turkish.GetSuffix("SORU_mU");

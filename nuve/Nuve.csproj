@@ -85,7 +85,7 @@
     <Compile Include="Distance\IDistance.cs" />
     <Compile Include="Distance\JaccardDistance.cs" />
     <Compile Include="Distance\LevenshteinDistance.cs" />
-    <Compile Include="Lang\LanguageFactory.cs" />
+    <Compile Include="Lang\LanguageContainer.cs" />
     <Compile Include="Morphologic\Format\MyFormat.cs" />
     <Compile Include="Morphologic\MorphemeSurfaceDictionary.cs" />
     <Compile Include="Morphologic\MorphemeContainer.cs" />
@@ -93,6 +93,7 @@
     <Compile Include="Morphologic\Vertex.cs" />
     <Compile Include="Orthographic\Action\DeleteSurface.cs" />
     <Compile Include="Orthographic\Action\Prepend.cs" />
+    <Compile Include="Orthographic\SearchReplace\SearchReplaceRule.cs" />
     <Compile Include="Reader\InvalidLanguageFileException.cs" />
     <Compile Include="Reader\LanguageReader.cs" />
     <Compile Include="Morphologic\DictionaryGraph.cs" />

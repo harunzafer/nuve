@@ -23,10 +23,19 @@ namespace Nuve.Morphologic.Structure
         /// <summary>
         ///     Creates a new Word object with the specified Root object.
         /// </summary>
+        public Word(Language language, Root root)
+        {
+            Language = language;
+            Root = root;
+        }
+
         public Word(Root root)
         {
             Root = root;
         }
+
+        public Language Language { get; }
+
 
         /// <summary>
         ///     Returns the Allomorph at the specified index position.
@@ -119,7 +128,7 @@ namespace Nuve.Morphologic.Structure
         public static Word CopyOf(Word word)
         {
             var root = word.Root;
-            var copy = new Word(root);
+            var copy = new Word(word.Language, root);
 
             IEnumerator<Allomorph> it = word._allomorphs.GetEnumerator();
             it.MoveNext(); //skip root
@@ -226,6 +235,7 @@ namespace Nuve.Morphologic.Structure
             if (_surface != string.Empty)
                 return _surface;
             GenerateSurface();
+            SearchAndReplaceSurface();
             return _surface;
         }
 
@@ -255,6 +265,14 @@ namespace Nuve.Morphologic.Structure
             _surface = ConcatAllomorphSurfaces();
         }
 
+        private void SearchAndReplaceSurface()
+        {
+            if (Language != null)
+            {
+                _surface = Language.Orthography.ProcessSearchReplaceRules(_surface);
+            }
+        }
+
         private string ConcatAllomorphSurfaces()
         {
             var sb = new StringBuilder("");
@@ -273,7 +291,7 @@ namespace Nuve.Morphologic.Structure
                 allomorph.ProcessRules(phase);
             }
         }
-        
+
         //todo: WordFormatter
         public string GetLexicalForm()
         {

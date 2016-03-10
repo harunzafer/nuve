@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Xml;
 using Nuve.Condition;
 using Nuve.Orthographic;
 using Nuve.Orthographic.Action;
+using Nuve.Orthographic.SearchReplace;
 
 namespace Nuve.Reader
 {
@@ -11,12 +13,14 @@ namespace Nuve.Reader
         private readonly Alphabet _alphabet;
         private readonly IEnumerable<OrthographyRule> _rules;
         private readonly XmlDocument _xml;
+        private readonly List<SearchReplaceRule> _srrules = new List<SearchReplaceRule>();
 
         private OrthographyReader(XmlDocument xml)
         {
             _xml = xml;
             _alphabet = ReadAlphabet();
             _rules = ReadRules();
+            ReadSearchReplaceRules();
         }
 
         public static Orthography Read(XmlDocument xml)
@@ -27,7 +31,18 @@ namespace Nuve.Reader
 
         private Orthography Get()
         {
-            return new Orthography(_alphabet, _rules);
+            return new Orthography(_alphabet, _rules, _srrules);
+        }
+
+        private void ReadSearchReplaceRules()
+        {
+            var nodes =  _xml.GetElementsByTagName("srrule");
+            foreach (XmlNode node in nodes)
+            {
+                var old = node.Attributes?["old"].InnerText;
+                var @new = node.Attributes?["new"].InnerText;
+                _srrules.Add(new SearchReplaceRule(old, @new));
+            }
         }
 
         private Alphabet ReadAlphabet()

@@ -34,7 +34,7 @@ namespace Nuve.Lang
             IEnumerable<SurfaceMorphemePair<Root>> roots = FindPossibleRoots(token);
             foreach (var pair in roots)
             {
-                GetPossibleWords(new Word(pair.Morpheme), token.Remove(0, pair.Surface.Length), words);
+                GetPossibleWords(new Word(_lang, pair.Morpheme), token.Remove(0, pair.Surface.Length), words);
             }
 
             if (checkTransitionConditions)

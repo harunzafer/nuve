@@ -9,7 +9,7 @@ namespace Nuve.Client.Experimental
     {
         public static string[] ReplaceRoots(string root, string[] words)
         {
-            Language turkish = LanguageFactory.Create(LanguageType.Turkish);
+            Language turkish = LanguageContainer.Get(LanguageType.Turkish);
             
             var replacedWords = new List<string>();
             foreach (string word in words)

@@ -2,18 +2,21 @@
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using Nuve.Orthographic.SearchReplace;
 
 namespace Nuve.Orthographic
 {
     internal class Orthography
     {
         private readonly IDictionary<string, OrthographyRule> _rules = new Dictionary<string, OrthographyRule>();
+        private readonly IEnumerable<SearchReplaceRule> _searchReplaces = new List<SearchReplaceRule>();
 
         private static readonly TraceSource Trace = new TraceSource("Orthography");
 
-        internal Orthography(Alphabet alphabet, IEnumerable<OrthographyRule> rules)
+        internal Orthography(Alphabet alphabet, IEnumerable<OrthographyRule> rules, IEnumerable<SearchReplaceRule> searchReplaces)
         {
             Alphabet = alphabet;
+            this._searchReplaces = searchReplaces;
             foreach (OrthographyRule rule in rules)
             {
                 _rules.Add(rule.Id, rule);
@@ -53,6 +56,11 @@ namespace Nuve.Orthographic
                 sb.Append(rule.Value);
             }
             return sb.ToString();
+        }
+
+        public string ProcessSearchReplaceRules(string surface)
+        {
+            return _searchReplaces.Aggregate(surface, (current, rule) => rule.Replace(current));
         }
     }
 }
