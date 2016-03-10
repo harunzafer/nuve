@@ -229,7 +229,7 @@ namespace Nuve.Morphologic.Structure
             return _surface;
         }
 
-        internal IList<string> GetSurfacesAfterEachPhase()
+        public IList<string> GetSurfacesAfterEachPhase()
         {
             var surfaces = new List<string>();
 
@@ -273,9 +273,9 @@ namespace Nuve.Morphologic.Structure
                 allomorph.ProcessRules(phase);
             }
         }
-
+        
         //todo: WordFormatter
-        internal string GetLexicalForm()
+        public string GetLexicalForm()
         {
             var sb = new StringBuilder();
             foreach (var allomorph in _allomorphs)
@@ -286,7 +286,7 @@ namespace Nuve.Morphologic.Structure
         }
 
         //todo: WordFormatter
-        internal IList<string> GetMorphemeIds()
+        public IList<string> GetMorphemeIds()
         {
             var ids = _allomorphs.Select(allomorph => allomorph.Morpheme.Id).ToList();
             //ids.RemoveAt(0);
