@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Nuve.Client.Benchmark;
 using Nuve.Lang;
+using Nuve.Sentence;
+using Nuve.Tokenizers;
 
 namespace Nuve.Client
 {
@@ -12,14 +9,19 @@ namespace Nuve.Client
     {
         private static readonly Language Turkish = LanguageFactory.Create(LanguageType.Turkish);
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //Benchmarker.TestWithAMillionTokens(Turkish.Analyze);
             //Benchmarker.TestWithAMillionWords(Turkish.Analyze);
-            GitHubReadmeExamples();
-        }   
+            //GitHubReadmeExamples();
 
-        static void GitHubReadmeExamples()
+            //AnalysisHelper.Analyze(Turkish, new[] { "eşkali", "eşkâli" });
+
+            SentenceSegmentation();
+        }
+
+
+        private static void GitHubReadmeExamples()
         {
             var tr = LanguageFactory.Create(LanguageType.Turkish);
             var solutions = tr.Analyze("yolsuzu");
@@ -38,11 +40,33 @@ namespace Nuve.Client
                 "IC_HAL_BULUNMA_DA", "IC_AITLIK_ki", "IC_COGUL_lAr", "IC_HAL_AYRILMA_DAn");
 
             //Method 2: Specify the string representation of the analysis of the word.
-            string analysis = "kitap/ISIM IC_COGUL_lAr IC_SAHIPLIK_BEN_(U)m";
+            var analysis = "kitap/ISIM IC_COGUL_lAr IC_SAHIPLIK_BEN_(U)m";
             var word2 = tr.GetWord(analysis);
 
             Console.WriteLine(word1.GetSurface());
             Console.WriteLine(word2.GetSurface());
+        }
+
+        private static void AnalysisAndStemming()
+        {
+            
+        }
+
+        private static void Generation()
+        {
+            
+        }
+
+        private static void SentenceSegmentation()
+        {
+            var paragraph = "Prof. Dr. Ahmet Bey 1.6 oranında artış var dedi 2. kez. E-posta adresi ahmet.bilir@prof.dr imiş! Doğru mu?";
+            ITokenizer tokenizer = new ClassicTokenizer(true);
+            SentenceSegmenter segmenter = new TokenBasedSentenceSegmenter(tokenizer);
+            var sentences = segmenter.GetSentences(paragraph);
+            foreach (string sentence in sentences)
+            {
+                Console.WriteLine(sentence);
+            }
         }
     }
 }
