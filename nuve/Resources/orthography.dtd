@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
-<!ELEMENT orthography (alphabet, rules)>
+<!ELEMENT orthography (alphabet, search-replace, rules)>
 <!ATTLIST orthography lang (Tr-TR | Tk-TK | Az-AZ) #REQUIRED>
 
 <!ELEMENT alphabet (consonants, vowels)>
@@ -8,6 +8,12 @@
 <!ELEMENT consonants (#PCDATA)>
 
 <!ELEMENT vowels (#PCDATA)>
+
+<!ELEMENT search-replace (sr)+>
+<!ELEMENT sr EMPTY>
+<!ATTLIST sr
+  search CDATA #REQUIRED
+  replace CDATA #REQUIRED>
 
 <!ELEMENT rules (rule)+>
 

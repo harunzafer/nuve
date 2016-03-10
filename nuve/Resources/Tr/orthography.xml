@@ -9,6 +9,13 @@
     <vowels>áaâeéıîioóöúûuüUAI</vowels>
   </alphabet>
 
+  <search-replace>
+    <sr search="" replace=""/>
+    <sr search="" replace=""/>
+    <sr search="" replace=""/>
+    <sr search="" replace=""/>
+  </search-replace>
+
   <!-- operandOne ve operandTwo string tipinde -->
 
   <rules>
