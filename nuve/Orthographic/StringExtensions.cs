@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Text.RegularExpressions;
-using Nuve.Morphologic.Structure;
 
 namespace Nuve.Orthographic
 {
@@ -34,15 +32,31 @@ namespace Nuve.Orthographic
         /// <summary>
         ///     Throws an ArgumentNullException if any of the objects in the specified array is null
         /// </summary>
-        public static void ThrowIfNullAny(params object[] objects)
+        public static void ThrowIfNullAny(params string[] strings)
         {
-            foreach (var o in objects)
+            foreach (var str in strings)
             {
-                if (o == null)
+                if (str == null)
                 {
-                    throw new ArgumentNullException(nameof(o));
+                    throw new ArgumentNullException(nameof(str));
                 }
             }
+        }
+
+        /// <summary>
+        ///     Returns the index of firt string that contains a whitespace
+        /// </summary>
+        public static int ContainsWhitespaceAny(params string[] strings)
+        {
+            for (var i = 0; i < strings.Length; i++)
+            {
+                if (strings[i].IndexOfAny(new[] {' ', '\n', '\r', '\t'}) > -1)
+                {
+                    return i;
+                }
+            }
+
+            return -1;
         }
 
         /// <summary>
@@ -229,7 +243,7 @@ namespace Nuve.Orthographic
         }
 
         /// <summary>
-        /// Provides the same functionality with the substring method of Java
+        ///     Provides the same functionality with the substring method of Java
         /// </summary>
         public static string SubstringJava(this string s, int start, int end)
         {
@@ -248,7 +262,7 @@ namespace Nuve.Orthographic
         }
 
         /// <summary>
-        /// String'in ilk harfini Turkish culture'a göre büyük harf yapar
+        ///     String'in ilk harfini Turkish culture'a göre büyük harf yapar
         /// </summary>
         internal static string UppercaseFirst(this string str)
         {
@@ -259,7 +273,7 @@ namespace Nuve.Orthographic
             a[0] = char.ToUpper(a[0], new CultureInfo("tr-TR"));
             return new string(a);
         }
-        
+
         /// <summary>
         ///     Replaces each key of the map with corresponding value
         /// </summary>
@@ -273,7 +287,7 @@ namespace Nuve.Orthographic
         }
 
         /// <summary>
-        ///  Converts  number from Roman form to Arabic form
+        ///     Converts  number from Roman form to Arabic form
         /// </summary>
         internal static int RomanNumeralToArabic(this string number)
         {
