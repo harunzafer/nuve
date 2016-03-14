@@ -50,6 +50,7 @@ namespace Nuve.Test.Tokenizers
                 {
                     "Please", "email", "john.doe@foo.com", "by", "03", "09", "re", "m37", "xq"
                 })]
+        [TestCase("çığöşü abc", Result = new object[] { "çığöşü", "abc" })]
         public IList<string> TestNuveTokenizerReturnDelimsFalse(string text)
         {
             var tokenizer = new NuveTokenizer();
@@ -102,11 +103,12 @@ namespace Nuve.Test.Tokenizers
                     ":", " ",
                     "m37", "-", "xq", "."
                 })]
+        [TestCase("çığöşü abc", Result = new object[] { "çığöşü", " " ,"abc" })]
         public IList<string> TestNuveTokenizerReturnDelimsTrue(string text)
         {
             var tokenizer = new NuveTokenizer(true);
             IList<string> tokens = tokenizer.Tokenize(text);
-            int length = String.Join("", tokens).Length;
+            int length = string.Join("", tokens).Length;
             Assert.AreEqual(length, text.Length);
             return tokens;
         }
