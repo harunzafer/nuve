@@ -9,6 +9,10 @@
     <vowels>áaâeéıîioóöúûuüUAI</vowels>
   </alphabet>
 
+  <srrules>
+    <srrule old="aa" new="bb"/>
+  </srrules>
+
   <!-- operandOne ve operandTwo string tipinde -->
 
   <rules>
