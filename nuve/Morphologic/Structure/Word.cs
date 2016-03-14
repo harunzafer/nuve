@@ -232,8 +232,7 @@ namespace Nuve.Morphologic.Structure
         /// </summary>
         public string GetSurface()
         {
-            if (_surface != string.Empty)
-                return _surface;
+            ResetSurface();
             GenerateSurface();
             SearchAndReplaceSurface();
             return _surface;

@@ -31,6 +31,15 @@ namespace Nuve.Test.Generation
             StringExtensions.ThrowIfNullAny(strings);
         }
 
+        [TestCase("abc", "def", "", Result = -1)]
+        [TestCase("abc ", "def", "", Result = 0)]
+        [TestCase("abc", "de\nf", "", Result = 1)]
+        [TestCase("abc", "def", "\t", Result = 2)]
+        public int ContainsWhitespaceAnyTest(params string[] strings)
+        {
+            return StringExtensions.ContainsWhitespaceAny(strings);
+        }
+
         [TestCase(null, ExpectedException = typeof (ArgumentNullException))]
         [TestCase("", Result = true)]
         [TestCase("a", Result = false)]
