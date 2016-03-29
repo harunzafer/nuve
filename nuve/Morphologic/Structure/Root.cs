@@ -6,7 +6,7 @@ namespace Nuve.Morphologic.Structure
 {
     public class Root : Morpheme, IEquatable<Root>
     {
-        public Root(string pos, string lexicalForm, HashSet<string> labels, List<OrthographyRule> rules)
+        public Root(string pos, string lexicalForm, ISet<string> labels, List<OrthographyRule> rules)
             : base(lexicalForm, MorphemeType.Root, labels, rules)
         {
             Id = lexicalForm + "/" + pos;
@@ -14,7 +14,7 @@ namespace Nuve.Morphologic.Structure
             Pos = pos;
         }
 
-        public Root(string id, string lexicalForm, HashSet<string> labels, List<OrthographyRule> rules, string surface)
+        public Root(string id, string lexicalForm, ISet<string> labels, List<OrthographyRule> rules, string surface)
             : this(id, lexicalForm, labels, rules)
         {
             Surface = surface;

@@ -14,14 +14,10 @@ namespace Nuve.Lang
         /// <summary>
         ///     Creates a new word analyzer of the specified languge.
         /// </summary>
-        /// <param name="source">Kopyalanacak kelime</param>
-        [Obsolete("This constructor is deprecated and will not be available in near future, use of \"Language.Analyze(string token)\" instead.", false)]
-        public WordAnalyzer(Language language)
+        internal WordAnalyzer(Language language)
         {
             _lang = language;
         }
-
-        
 
         public IList<Word> Analyze(string token)
         {
