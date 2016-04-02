@@ -17,21 +17,24 @@ namespace Nuve.Test
             var newTr = MutableLanguage.CopyFrom(tr);
 
             var entry = new RootEntry(
-                lex:"başa gel", 
-                pos:"FIIL",
-                primarySurface:"başa gel",
-                surfaces: new []{"başa gel"},
-                labels: new []{"cverb"},
+                lex: "başa gel",
+                pos: "FIIL",
+                primarySurface: "başa gel",
+                surfaces: new[] {"başa gel"},
+                labels: new[] {"cverb"},
                 rules: Enumerable.Empty<string>());
 
             Assert.True(newTr.TryAdd(entry));
 
-            var solutions = newTr.Analyze("başa gelen");
+            var solutions = tr.Analyze("başa gelen");
 
-            Assert.AreEqual(1, solutions.Count);
+            Assert.AreEqual(0, solutions.Count);
 
-            Assert.AreEqual("başa gel/FIIL FIILIMSI_SIFAT_(y)An", solutions[0].Analysis);
+            var solutionsExtendedTr = newTr.Analyze("başa gelen");
 
+            Assert.AreEqual(1, solutionsExtendedTr.Count);
+
+            Assert.AreEqual("başa gel/FIIL FIILIMSI_SIFAT_(y)An", solutionsExtendedTr[0].Analysis);
         }
     }
 }

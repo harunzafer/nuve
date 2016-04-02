@@ -1,4 +1,6 @@
-﻿using Nuve.Morphologic;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
 
@@ -17,10 +19,12 @@ namespace Nuve.Lang
 
         public static MutableLanguage CopyFrom(Language language)
         {
-            return new MutableLanguage(language.Code, 
-                language.Orthography, 
-                language.Morphotactics, 
-                language.Roots, 
+            var roots = MorphemeContainer<Root>.CopyOf(language.Roots);
+
+            return new MutableLanguage(language.Code,
+                language.Orthography,
+                language.Morphotactics,
+                roots,
                 language.Suffixes);
         }
 

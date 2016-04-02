@@ -18,5 +18,13 @@ namespace Nuve.Morphologic
             BySurface = morphemesBySurface;
         }
 
+        internal static MorphemeContainer<T> CopyOf(MorphemeContainer<T> container)
+        {
+            var byId = new Dictionary<string, T>(container.ById);
+
+            var bySurface = MorphemeSurfaceDictionary<T>.CopyOf(container.BySurface);
+
+            return new MorphemeContainer<T>(byId, bySurface);
+        }
     }
 }
