@@ -31,7 +31,7 @@ namespace Nuve.Reader
                     Surfaces = x.Field<string>("surfaces") ?? "",
                     Lex = x.Field<string>("lex"),
                     Active = x.Field<string>("active") ?? "",
-                    Id = x.Field<string>("Id"),
+                    Pos = x.Field<string>("Id"),
                     Labels = x.Field<string>("flags") ?? "",
                     Rules = x.Field<string>("rules") ?? ""
                 });
@@ -50,11 +50,11 @@ namespace Nuve.Reader
         private void AddRoots(RootLine entry, Dictionary<string, Root> rootsById,
             MorphemeSurfaceDictionary<Root> rootsBySurface)
         {
-            var item = entry.Root;
+            var mainSurface = entry.Root;
             var surfaces = entry.Surfaces.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
             var lex = entry.Lex;
             var labels = entry.Labels.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
-            var type = entry.Id;
+            var pos = entry.Pos;
             var rules = entry.Rules.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries).ToList();
 
             if (Regex.IsMatch(lex, @"\p{L}[2-9]"))
@@ -65,21 +65,21 @@ namespace Nuve.Reader
 
             if (string.IsNullOrEmpty(entry.Lex))
             {
-                lex = item;
+                lex = mainSurface;
             }
 
             Root root;
-            if (type == "KISALTMA" || type == "ALINTI" || type == "KISALTMA_NOKTALI" || type == "HARF")
+            if (pos == "KISALTMA" || pos == "ALINTI" || pos == "KISALTMA_NOKTALI" || pos == "HARF")
             {
-                root = new Root(type, lex, new HashSet<string>(labels), _orthography.GetRules(rules),
-                    item);
+                root = new Root(pos, lex, new HashSet<string>(labels), _orthography.GetRules(rules),
+                    mainSurface);
             }
             else
             {
-                root = new Root(type, lex, new HashSet<string>(labels), _orthography.GetRules(rules));
+                root = new Root(pos, lex, new HashSet<string>(labels), _orthography.GetRules(rules));
             }
 
-            var id = lex + "/" + type;
+            var id = lex + "/" + pos;
 
             if (!rootsById.ContainsKey(id))
             {
@@ -90,7 +90,7 @@ namespace Nuve.Reader
                 Trace.TraceEvent(TraceEventType.Warning, 0, $"Duplicate root: {id}");
             }
 
-            rootsBySurface.Add(item, root); // kelimeyi asıl yüzeyi ile ekliyoruz
+            rootsBySurface.Add(mainSurface, root); // kelimeyi asıl yüzeyi ile ekliyoruz
 
             //eğer fazladan yüzeyi var ise onunla da ekliyoruz.
             foreach (var lexicalForm in surfaces)
@@ -102,7 +102,7 @@ namespace Nuve.Reader
         private class RootLine
         {
             public string Active;
-            public string Id;
+            public string Pos;
             public string Labels;
             public string Lex;
             public string Root;

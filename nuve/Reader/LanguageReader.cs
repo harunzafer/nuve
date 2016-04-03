@@ -63,7 +63,7 @@ namespace Nuve.Reader
 
             var langCode = index > -1 ? _dirPath.Substring(index + 1) : _dirPath;
 
-            return new Language(langCode, morphotactics, roots, suffixes, _orthography);
+            return new Language(langCode, _orthography, morphotactics, roots, suffixes);
         }
 
         private Orthography ReadOrthography()

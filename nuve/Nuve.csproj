@@ -86,6 +86,8 @@
     <Compile Include="Distance\JaccardDistance.cs" />
     <Compile Include="Distance\LevenshteinDistance.cs" />
     <Compile Include="Lang\LanguageContainer.cs" />
+    <Compile Include="Lang\MutableLanguage.cs" />
+    <Compile Include="Lang\RootEntry.cs" />
     <Compile Include="Morphologic\Format\MyFormat.cs" />
     <Compile Include="Morphologic\MorphemeSurfaceDictionary.cs" />
     <Compile Include="Morphologic\MorphemeContainer.cs" />

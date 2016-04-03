@@ -76,11 +76,11 @@
     <Compile Include="Analysis\VerbConjugationTest.cs" />
     <Compile Include="Analysis\VerbDerivation.cs" />
     <Compile Include="Analysis\VerbDerivationTest.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Distance\DistanceTest.cs" />
     <Compile Include="Distance\DistanceTester.cs" />
     <Compile Include="Mock\MockRoot.cs" />
     <Compile Include="Mock\MockSuffix.cs" />
+    <Compile Include="MutableLanguageTest.cs" />
     <Compile Include="NGrams\NGramModelTest.cs" />
     <Compile Include="NGrams\NGramDictionaryTest.cs" />
     <Compile Include="NGrams\NGramExtractorTest.cs" />
@@ -97,9 +97,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Nuve\Nuve.csproj">
       <Project>{bcc4c1c8-5f64-4a5c-9079-0272498745c2}</Project>

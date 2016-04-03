@@ -16,7 +16,7 @@ namespace Nuve.Morphologic.Structure
     {
         protected readonly bool HasRule;
 
-        protected Morpheme(string lexicalForm, MorphemeType type, HashSet<string> labels, List<OrthographyRule> rules)
+        protected Morpheme(string lexicalForm, MorphemeType type, ISet<string> labels, List<OrthographyRule> rules)
         {
             LexicalForm = lexicalForm;
             Type = type;
@@ -25,7 +25,7 @@ namespace Nuve.Morphologic.Structure
             HasRule = Rules.Any();
         }
 
-        internal HashSet<string> Labels { get; }
+        internal ISet<string> Labels { get; }
 
         internal List<OrthographyRule> Rules { get; }
 

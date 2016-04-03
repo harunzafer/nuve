@@ -17,15 +17,17 @@ namespace Nuve.Lang
     /// <summary>
     ///     Represents a language which is supported by Nüve.
     /// </summary>
-    public sealed class Language
+    public class Language
     {
         internal Language(string code,
+            Orthography orthography,
             Morphotactics morphotactics,
             MorphemeContainer<Root> roots,
             MorphemeContainer<Suffix> suffixes,
             Orthography orthography)
         {
             Code = code;
+            Orthography = orthography;
             Morphotactics = morphotactics;
             Roots = roots;
             Suffixes = suffixes;
@@ -49,13 +51,13 @@ namespace Nuve.Lang
         /// </summary>
         internal string Code { get; }
 
-        private MorphemeContainer<Suffix> Suffixes { get; }
-
         internal Orthography Orthography { get; }
 
-        private MorphemeContainer<Root> Roots { get; }
-
         internal Morphotactics Morphotactics { get; }
+
+        internal MorphemeContainer<Suffix> Suffixes { get; }
+        internal MorphemeContainer<Root> Roots { get; }
+
 
         /// <summary>
         ///     Returns all suffixes defined in this language.

@@ -19,6 +19,11 @@ namespace Nuve.Morphologic
             _dictionary = new Dictionary<string, List<T>>();
         }
 
+        private MorphemeSurfaceDictionary(IDictionary<string, List<T>> dictionary)
+        {
+            _dictionary = dictionary;
+        }
+
         /// <summary>
         ///     Adds a surface morpheme pair to the dictionary
         /// </summary>
@@ -76,6 +81,12 @@ namespace Nuve.Morphologic
                 sb.Append("\n");
             }
             File.WriteAllText(fileName, sb.ToString());
+        }
+
+        internal static MorphemeSurfaceDictionary<T> CopyOf(MorphemeSurfaceDictionary<T> dictionary)
+        {
+            var copy = new Dictionary<string, List<T>>(dictionary._dictionary);
+            return new MorphemeSurfaceDictionary<T>(copy);
         }
     }
 }
