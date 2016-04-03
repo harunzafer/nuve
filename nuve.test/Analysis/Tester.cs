@@ -8,7 +8,7 @@ namespace Nuve.Test.Analysis
 {
     internal class Tester
     {
-        private static readonly Language Language = LanguageContainer.Get(LanguageType.Turkish);
+        private static readonly Language Language = LanguageFactory.Create(LanguageType.Turkish);
 
         /// <summary>
         ///     Bir kelimenin çözümleri içerisinde aranan çözümün bir ve yalnız bir adet

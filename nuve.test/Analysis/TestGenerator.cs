@@ -8,7 +8,7 @@ namespace Nuve.Test.Analysis
 {
     public class TestGenerator
     {
-        private static readonly Language Language = LanguageContainer.Get(LanguageType.Turkish);
+        private static readonly Language Language = LanguageFactory.Create(LanguageType.Turkish);
 
         /// <summary>
         ///     Kelimelerin sadece ilk çözümlerini kullanan bir ContainsAnalysis(token, analysis) testi üretir.

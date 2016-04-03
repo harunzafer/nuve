@@ -10,7 +10,7 @@
   </alphabet>
 
   <srrules>
-    <srrule old="aa" new="bb"/>
+    <!--<srrule old="aa" new="bb"/>-->
   </srrules>
 
   <!-- operandOne ve operandTwo string tipinde -->

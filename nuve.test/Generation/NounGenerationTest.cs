@@ -12,7 +12,7 @@ namespace Nuve.Test.Generation
     [TestFixture]
     internal class NounGenerationTest
     {
-        private static readonly Language Tr = LanguageContainer.Get(LanguageType.Turkish);
+        private static readonly Language Tr = LanguageFactory.Create(LanguageType.Turkish);
 
         [TestCase(null, ExpectedException = typeof (ArgumentNullException))]
         [TestCase("", ExpectedException = typeof (ArgumentException))]

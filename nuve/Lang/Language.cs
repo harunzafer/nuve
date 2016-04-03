@@ -23,15 +23,13 @@ namespace Nuve.Lang
             Orthography orthography,
             Morphotactics morphotactics,
             MorphemeContainer<Root> roots,
-            MorphemeContainer<Suffix> suffixes,
-            Orthography orthography)
+            MorphemeContainer<Suffix> suffixes)
         {
             Code = code;
             Orthography = orthography;
             Morphotactics = morphotactics;
             Roots = roots;
             Suffixes = suffixes;
-            Orthography = orthography;
             Analyzer = new WordAnalyzer(this);
             Type = LanguageType.Turkish;
         }
@@ -52,7 +50,6 @@ namespace Nuve.Lang
         internal string Code { get; }
 
         internal Orthography Orthography { get; }
-
         internal Morphotactics Morphotactics { get; }
 
         internal MorphemeContainer<Suffix> Suffixes { get; }
@@ -128,7 +125,7 @@ namespace Nuve.Lang
 
         internal IEnumerable<T> GetMorphemesHavingSurface<T>(string surface) where T : Morpheme
         {
-            if (typeof (T) == typeof (Root))
+            if (typeof(T) == typeof(Root))
             {
                 return Roots.BySurface.Get(surface) as IEnumerable<T>;
             }
@@ -172,7 +169,7 @@ namespace Nuve.Lang
         {
             StringExtensions.ThrowIfNullAny(morphemes);
 
-            var index  = StringExtensions.ContainsWhitespaceAny(morphemes);
+            var index = StringExtensions.ContainsWhitespaceAny(morphemes);
 
             if (index >= 0)
             {

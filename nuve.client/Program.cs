@@ -7,7 +7,7 @@ namespace Nuve.Client
 {
     public class Program
     {
-        private static readonly Language Turkish = LanguageContainer.Get(LanguageType.Turkish);
+        private static readonly Language Turkish = LanguageFactory.Create(LanguageType.Turkish);
 
         private static void Main(string[] args)
         {
@@ -23,7 +23,7 @@ namespace Nuve.Client
 
         private static void GitHubReadmeExamples()
         {
-            var tr = LanguageContainer.Get(LanguageType.Turkish);
+            var tr = LanguageFactory.Create(LanguageType.Turkish);
             var solutions = tr.Analyze("yolsuzu");
 
             foreach (var solution in solutions)

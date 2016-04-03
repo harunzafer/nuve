@@ -9,7 +9,7 @@
 
 <!ELEMENT vowels (#PCDATA)>
 
-<!ELEMENT srrules (srrule)+>
+<!ELEMENT srrules (srrule)*>
 <!ELEMENT srrule EMPTY>
 <!ATTLIST srrule
   old CDATA #REQUIRED
