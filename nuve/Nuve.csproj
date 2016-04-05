@@ -86,6 +86,7 @@
     <Compile Include="Distance\JaccardDistance.cs" />
     <Compile Include="Distance\LevenshteinDistance.cs" />
     <Compile Include="Lang\LanguageFactory.cs" />
+    <Compile Include="Lang\LanguageType.cs" />
     <Compile Include="Lang\MutableLanguage.cs" />
     <Compile Include="Lang\RootEntry.cs" />
     <Compile Include="Morphologic\Format\MyFormat.cs" />
@@ -180,16 +181,16 @@
     <EmbeddedResource Include="Resources\orthography.dtd" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Tr\root_abbrv.txt" />
-    <EmbeddedResource Include="Resources\Tr\morphotactics.xml">
+    <EmbeddedResource Include="Resources\tr_TR\root_abbrv.txt" />
+    <EmbeddedResource Include="Resources\tr_TR\morphotactics.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Tr\root_name.txt" />
-    <EmbeddedResource Include="Resources\Tr\orthography.xml">
+    <EmbeddedResource Include="Resources\tr_TR\root_name.txt" />
+    <EmbeddedResource Include="Resources\tr_TR\orthography.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Tr\root.txt" />
-    <EmbeddedResource Include="Resources\Tr\suffix.txt" />
+    <EmbeddedResource Include="Resources\tr_TR\root.txt" />
+    <EmbeddedResource Include="Resources\tr_TR\suffix.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
