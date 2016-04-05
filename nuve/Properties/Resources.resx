@@ -147,9 +147,6 @@
   <data name="SolutionFrequency_SetProbability_ExceptionMessage" xml:space="preserve">
     <value>probability must be in range [0-1]</value>
   </data>
-  <data name="langCodeLength" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="MaxPhaseNum" xml:space="preserve">
     <value>5</value>
   </data>

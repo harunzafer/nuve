@@ -22,18 +22,35 @@ namespace Nuve.Reader
         private readonly bool _external;
         private readonly string _seperator;
         private Orthography _orthography;
-
+        private readonly LanguageType _languageType;
         private readonly TraceSource _trace = new TraceSource("LanguageReader");
 
-        public LanguageReader(string dirPath) : this(dirPath, true)
+
+        /// <summary>
+        /// Reads external language files and creates a Language object
+        /// </summary>
+        /// <param name="dirPath"></param>
+        public LanguageReader(string dirPath)
         {
+            _dirPath = dirPath;
+
+            var dirName = GetDirectoryName(dirPath);
+            _languageType = GetLangType(dirName);
+
+            _external = true;
+            _seperator = "/";
         }
 
-        internal LanguageReader(string langCode, bool external)
+
+        /// <summary>
+        /// internal embedded resource reader
+        /// </summary>
+        internal LanguageReader(LanguageType type)
         {
-            _dirPath = langCode;
-            _external = external;
-            _seperator = external ? "/" : ".";
+            _dirPath = type.ResourcePath;
+            _external = false;
+            _seperator = ".";
+            _languageType = type;
         }
 
         public Language Read()
@@ -58,27 +75,41 @@ namespace Nuve.Reader
             _trace.TraceInformation($"{_dirPath} suffixes loading time is {sw.ElapsedMilliseconds} ms");
             sw.Restart();
 
+            return new Language(_languageType, _orthography, morphotactics, roots, suffixes);
+        }
 
-            var index = _dirPath.LastIndexOf("\\", StringComparison.Ordinal);
+        private string GetDirectoryName(string dirPath)
+        {
+            var index = dirPath.LastIndexOf("\\", StringComparison.Ordinal);
 
-            var langCode = index > -1 ? _dirPath.Substring(index + 1) : _dirPath;
+            return index > -1 ? _dirPath.Substring(index + 1) : _dirPath;
+        }
 
-            return new Language(langCode, _orthography, morphotactics, roots, suffixes);
+        private LanguageType GetLangType(string str)
+        {
+            var tokens = str.Split('-');
+            if (tokens.Length > 1)
+            {
+                return new LanguageType(tokens[0], tokens[1]);
+            }
+            return new LanguageType(tokens[0], "??");
         }
 
         private Orthography ReadOrthography()
         {
+            var path = _dirPath + _seperator + Resources.OrthographyFileName;
             try
             {
-                var path = _dirPath + _seperator + Resources.OrthographyFileName;
-
                 var xml = new XmlDocument();
                 var reader = GetXmlReader(path);
                 xml.Load(reader);
 
                 return OrthographyReader.Read(xml);
             }
-
+            catch (FileNotFoundException ex)
+            {
+                throw new InvalidLanguageFileException(ex, Type.Orthograpy, $"Orthograpy file not found at {path} ");
+            }
             catch (Exception ex)
             {
                 throw new InvalidLanguageFileException(ex, Type.Orthograpy, "Invalid language file for orthograpy: ");

@@ -9,29 +9,28 @@ namespace Nuve.Lang
     /// <summary>
     ///     Enum for supported languages in Nüve.
     /// </summary>
-    public enum LanguageType
-    {
-        Turkish
-    }
+    //public enum LanguageType
+    //{
+    //    Turkish
+    //}
 
     /// <summary>
     ///     Represents a language which is supported by Nüve.
     /// </summary>
     public class Language
     {
-        internal Language(string code,
+        internal Language(LanguageType type,
             Orthography orthography,
             Morphotactics morphotactics,
             MorphemeContainer<Root> roots,
             MorphemeContainer<Suffix> suffixes)
         {
-            Code = code;
+            Type = type;
             Orthography = orthography;
             Morphotactics = morphotactics;
             Roots = roots;
             Suffixes = suffixes;
             Analyzer = new WordAnalyzer(this);
-            Type = LanguageType.Turkish;
         }
 
         /// <summary>
@@ -40,14 +39,6 @@ namespace Nuve.Lang
         public LanguageType Type { get; }
        
         private WordAnalyzer Analyzer { get; }
-
-        /// <summary>
-        ///     The name is a combination of an ISO 639 two-letter lowercase culture code associated with a language and an ISO
-        ///     3166 two-letter uppercase subculture code associated with a country or region.
-        ///     https://msdn.microsoft.com/en-us/library/756hydy4%28v=vs.100%29.aspx
-        ///     http://timtrott.co.uk/culture-codes/
-        /// </summary>
-        internal string Code { get; }
 
         internal Orthography Orthography { get; }
         internal Morphotactics Morphotactics { get; }
@@ -159,7 +150,7 @@ namespace Nuve.Lang
 
         public override string ToString()
         {
-            return Code;
+            return Type.CultureCode;
         }
 
         /// <summary>

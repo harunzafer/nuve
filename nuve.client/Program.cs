@@ -1,5 +1,6 @@
 ﻿using System;
 using Nuve.Lang;
+using Nuve.Reader;
 using Nuve.Sentence;
 using Nuve.Tokenizers;
 
@@ -7,7 +8,7 @@ namespace Nuve.Client
 {
     public class Program
     {
-        private static readonly Language Turkish = LanguageFactory.Create(LanguageType.Turkish);
+        //private static readonly Language Turkish = LanguageFactory.Create(LanguageType.Turkish);
 
         private static void Main(string[] args)
         {
@@ -17,7 +18,9 @@ namespace Nuve.Client
 
             //AnalysisHelper.Analyze(Turkish, new[] { "eşkali", "eşkâli" });
 
-            SentenceSegmentation();
+            //SentenceSegmentation();
+
+            ExternalLanguageReading();
         }
 
 
@@ -55,6 +58,22 @@ namespace Nuve.Client
         private static void Generation()
         {
             
+        }
+
+        private static void ExternalLanguageReading()
+        {
+            var tr = new LanguageReader(@"C:\Users\harun_000\Dropbox\nuve\nuve-studio\lang\tr-TR").Read();
+            var solutions = tr.Analyze("yolsuzu");
+            Console.WriteLine(tr.Type.CultureCode);
+
+            foreach (var solution in solutions)
+            {
+                Console.WriteLine("\t{0}", solution);
+                Console.WriteLine("\toriginal:{0} stem:{1} root:{2}\n",
+                    solution.GetSurface(),
+                    solution.GetStem().GetSurface(),
+                    solution.Root); //Stemming
+            }
         }
 
         private static void SentenceSegmentation()

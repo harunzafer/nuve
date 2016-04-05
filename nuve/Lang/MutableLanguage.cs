@@ -8,12 +8,12 @@ namespace Nuve.Lang
 {
     public class MutableLanguage : Language
     {
-        private MutableLanguage(string code,
+        private MutableLanguage(LanguageType type,
             Orthography orthography,
             Morphotactics morphotactics,
             MorphemeContainer<Root> roots,
             MorphemeContainer<Suffix> suffixes)
-            : base(code, orthography, morphotactics, roots, suffixes)
+            : base(type, orthography, morphotactics, roots, suffixes)
         {
         }
 
@@ -21,7 +21,7 @@ namespace Nuve.Lang
         {
             var roots = MorphemeContainer<Root>.CopyOf(language.Roots);
 
-            return new MutableLanguage(language.Code,
+            return new MutableLanguage(language.Type,
                 language.Orthography,
                 language.Morphotactics,
                 roots,

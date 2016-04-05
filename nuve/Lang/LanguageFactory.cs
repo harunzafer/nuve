@@ -13,13 +13,12 @@ namespace Nuve.Lang
 
         private static Language CreateInstance(LanguageType type)
         {
-            switch (type)
+            if (type.CultureCode == LanguageType.Turkish.CultureCode)
             {
-                case LanguageType.Turkish:
-                    return new LanguageReader("Tr", false).Read();
-                default:
-                    throw new ArgumentException($"Language is not supported: {type}");
+                return new LanguageReader(type).Read();
             }
+
+            throw new ArgumentException($"Language is not supported: {type}");
         }
 
         public static Language Create(LanguageType type)
