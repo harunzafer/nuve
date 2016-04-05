@@ -8,7 +8,7 @@ namespace Nuve.Client
 {
     public class Program
     {
-        //private static readonly Language Turkish = LanguageFactory.Create(LanguageType.Turkish);
+        private static readonly Language Turkish = LanguageFactory.Create(LanguageType.Turkish);
 
         private static void Main(string[] args)
         {
