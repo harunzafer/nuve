@@ -6,7 +6,7 @@ using Nuve.Orthographic;
 
 namespace Nuve.Lang
 {
-    internal class MutableLanguage : Language
+    public class MutableLanguage : Language
     {
         private MutableLanguage(string code,
             Orthography orthography,
