@@ -150,7 +150,7 @@ namespace Nuve.Lang
 
         public override string ToString()
         {
-            return string.IsNullOrEmpty(Type.CountryCode) ? Type.Code : Type.CultureCode;
+            return Type.CountryCode=="??" ? Type.Code : Type.CultureCode;
         }
 
         /// <summary>
