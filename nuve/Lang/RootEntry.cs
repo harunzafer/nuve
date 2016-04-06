@@ -4,15 +4,14 @@ namespace Nuve.Lang
 {
     public class RootEntry
     {
-        public RootEntry(string lex, string pos, string primarySurface, 
-            IEnumerable<string> surfaces, 
-            IEnumerable<string> labels, 
+        public RootEntry(string lex, string pos,
+            IEnumerable<string> surfaces,
+            IEnumerable<string> labels,
             IEnumerable<string> rules)
         {
             Lex = lex;
             Pos = pos;
-            PrimarySurface = primarySurface;
-            Surfaces = new HashSet<string>(surfaces);
+            Surfaces = new SortedSet<string>(surfaces);
             Labels = new HashSet<string>(labels);
             Rules = new HashSet<string>(rules);
             Id = lex + "/" + pos;
@@ -21,7 +20,6 @@ namespace Nuve.Lang
         public string Lex { get; }
         public string Pos { get; }
         public string Id { get; }
-        public string PrimarySurface { get; }
 
         public ISet<string> Surfaces { get; }
         public ISet<string> Labels { get; }

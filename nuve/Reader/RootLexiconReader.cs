@@ -51,7 +51,9 @@ namespace Nuve.Reader
             MorphemeSurfaceDictionary<Root> rootsBySurface)
         {
             var mainSurface = entry.Root;
-            var surfaces = entry.Surfaces.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
+            var surfaces = new List<string> {mainSurface};
+            surfaces.AddRange(entry.Surfaces.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries));
+            
             var lex = entry.Lex;
             var labels = entry.Labels.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries);
             var pos = entry.Pos;
@@ -62,22 +64,15 @@ namespace Nuve.Reader
                 rules.Add("DROP_ID_DIGIT");
             }
 
-
             if (string.IsNullOrEmpty(entry.Lex))
             {
                 lex = mainSurface;
             }
 
-            Root root;
-            if (pos == "KISALTMA" || pos == "ALINTI" || pos == "KISALTMA_NOKTALI" || pos == "HARF")
-            {
-                root = new Root(pos, lex, new HashSet<string>(labels), _orthography.GetRules(rules),
-                    mainSurface);
-            }
-            else
-            {
-                root = new Root(pos, lex, new HashSet<string>(labels), _orthography.GetRules(rules));
-            }
+            var root = new Root(pos, lex, 
+                new SortedSet<string>(surfaces), 
+                new HashSet<string>(labels),
+                _orthography.GetRules(rules));
 
             var id = lex + "/" + pos;
 
@@ -90,9 +85,6 @@ namespace Nuve.Reader
                 Trace.TraceEvent(TraceEventType.Warning, 0, $"Duplicate root: {id}");
             }
 
-            rootsBySurface.Add(mainSurface, root); // kelimeyi asıl yüzeyi ile ekliyoruz
-
-            //eğer fazladan yüzeyi var ise onunla da ekliyoruz.
             foreach (var lexicalForm in surfaces)
             {
                 rootsBySurface.Add(lexicalForm, root);

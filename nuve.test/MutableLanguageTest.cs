@@ -19,7 +19,6 @@ namespace Nuve.Test
             var entry = new RootEntry(
                 lex: "başa gel",
                 pos: "FIIL",
-                primarySurface: "başa gel",
                 surfaces: new[] {"başa gel"},
                 labels: new[] {"cverb"},
                 rules: Enumerable.Empty<string>());

@@ -16,24 +16,32 @@ namespace Nuve.Morphologic.Structure
     {
         protected readonly bool HasRule;
 
-        protected Morpheme(string lexicalForm, MorphemeType type, ISet<string> labels, List<OrthographyRule> rules)
+        protected Morpheme(
+            string lexicalForm,
+            ISet<string> surfaces,
+            MorphemeType type,
+            ISet<string> labels,
+            IList<OrthographyRule> rules)
         {
             LexicalForm = lexicalForm;
             Type = type;
             Labels = labels;
             Rules = rules;
+            Surfaces = surfaces;
             HasRule = Rules.Any();
         }
 
         internal ISet<string> Labels { get; }
 
-        internal List<OrthographyRule> Rules { get; }
+        internal IList<OrthographyRule> Rules { get; }
 
         public abstract string Id { get; }
 
         public abstract string GraphId { get; }
 
         public string LexicalForm { get; }
+
+        public ISet<string> Surfaces { get; }
 
         public MorphemeType Type { get; }
 

@@ -6,8 +6,14 @@ namespace Nuve.Morphologic.Structure
 {
     public class Suffix : Morpheme, IEquatable<Suffix>
     {
-        public Suffix(string id, string lexicalForm, MorphemeType type, HashSet<string> labels, List<OrthographyRule> rules)
-            : base(lexicalForm, type, labels, rules)
+        public Suffix(
+            string id,
+            string lexicalForm,
+            ISet<string> surfaces,
+            MorphemeType type,
+            ISet<string> labels,
+            IList<OrthographyRule> rules)
+            : base(lexicalForm, surfaces, type, labels, rules)
         {
             Id = id;
             GraphId = id;
@@ -18,7 +24,7 @@ namespace Nuve.Morphologic.Structure
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
-            return Equals((Suffix)obj);
+            return Equals((Suffix) obj);
         }
 
         public bool Equals(Suffix other)
