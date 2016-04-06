@@ -44,7 +44,7 @@ namespace Nuve.Lang
         {
             var rules = Orthography.GetRules(entry.Rules);
 
-            var root = new Root(entry.Pos, entry.Lex, entry.Labels, rules, entry.PrimarySurface);
+            var root = new Root(entry.Pos, entry.Lex, entry.Surfaces, entry.Labels, rules);
 
             Roots.ById.Add(entry.Id, root);
 

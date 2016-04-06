@@ -1,4 +1,5 @@
-﻿using Nuve.Morphologic.Structure;
+﻿using System.Linq;
+using Nuve.Morphologic.Structure;
 
 namespace Nuve.Orthographic.Action
 {
@@ -11,7 +12,7 @@ namespace Nuve.Orthographic.Action
 
         protected override void Do(Allomorph allomorph)
         {
-            allomorph.Surface = ((Root) allomorph.Morpheme).Surface;
+            allomorph.Surface = ((Root) allomorph.Morpheme).Surfaces.First();
         }
     }
 }

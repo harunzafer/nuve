@@ -7,7 +7,7 @@ namespace Nuve.Test.Mock
     internal class MockSuffix : Suffix
     {
         public MockSuffix(string id, string lexicalForm)
-            : base(id, lexicalForm, MorphemeType.I, new HashSet<string>(), new List<OrthographyRule>())
+            : base(id, lexicalForm, new SortedSet<string>(), MorphemeType.I, new HashSet<string>(), new List<OrthographyRule>())
         {
         }
     }

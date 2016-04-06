@@ -7,7 +7,7 @@ namespace Nuve.Test.Mock
     internal class MockRoot : Root
     {
         public MockRoot(string pos, string lexicalForm)
-            : base(pos, lexicalForm, new HashSet<string>(), new List<OrthographyRule>())
+            : base(pos, lexicalForm, new SortedSet<string>(), new HashSet<string>(), new List<OrthographyRule>())
         {
         }
     }
