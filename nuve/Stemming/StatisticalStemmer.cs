@@ -35,7 +35,7 @@ namespace Nuve.Stemming
 
             for (int i = 0; i < solutions.Count; i++)
             {
-                double p = model.GetSentenceProbability(solutions[i].GetMorphemeIds());
+                double p = model.GetSentenceProbability(solutions[i].GetSequenceIds());
                 //Console.WriteLine(solutions[i] + "\t" + p);
 
                 if (p > max)

@@ -12,7 +12,7 @@ namespace Nuve.Morphologic.Format
             {
                 sb.Append(allomorph.Surface)
                     .Append("/")
-                    .Append(allomorph.Morpheme.GraphId)
+                    .Append(allomorph.Morpheme.SequenceId)
                     .Append(" ");
             }
             return sb.ToString().TrimEnd();
