@@ -16,18 +16,18 @@ namespace Nuve.Morphologic
 
         internal bool IsTerminal(Morpheme morpheme)
         {
-            return _graph.IsTerminal(morpheme.GraphId);
+            return _graph.IsTerminal(morpheme.SequenceId);
         }
 
         internal IEnumerable<string> GetMorphemesWithEmptyTransitions(Morpheme prev)
         {
-            return _graph.GetEmptyTransitions(prev.GraphId).Select(t => t.Target);
+            return _graph.GetEmptyTransitions(prev.SequenceId).Select(t => t.Target);
         }
 
 
         internal bool HasTransition(Morpheme prev, Morpheme next)
         {
-            return _graph.ContainsTransition(prev.GraphId, next.GraphId);
+            return _graph.ContainsTransition(prev.SequenceId, next.SequenceId);
         }
         
         internal bool IsValid(Word word)
@@ -35,7 +35,7 @@ namespace Nuve.Morphologic
             for (int i = 0; i < word.AllomorphCount - 1; i++)
             {
                 Transition transition;
-                bool edgeExists = _graph.TryGetTransition(word[i].Morpheme.GraphId, word[i + 1].Morpheme.GraphId, out transition);
+                bool edgeExists = _graph.TryGetTransition(word[i].Morpheme.SequenceId, word[i + 1].Morpheme.SequenceId, out transition);
 
                 if (!edgeExists)
                 {

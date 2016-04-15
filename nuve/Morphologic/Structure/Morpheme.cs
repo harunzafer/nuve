@@ -37,7 +37,7 @@ namespace Nuve.Morphologic.Structure
 
         public abstract string Id { get; }
 
-        public abstract string GraphId { get; }
+        public abstract string SequenceId { get; }
 
         public string LexicalForm { get; }
 

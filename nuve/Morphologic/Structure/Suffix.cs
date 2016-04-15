@@ -16,22 +16,25 @@ namespace Nuve.Morphologic.Structure
             : base(lexicalForm, surfaces, type, labels, rules)
         {
             Id = id;
-            GraphId = id;
+            SequenceId = id;
         }
 
-        public override bool Equals(object obj)
-        {
-            if (ReferenceEquals(null, obj)) return false;
-            if (ReferenceEquals(this, obj)) return true;
-            if (obj.GetType() != this.GetType()) return false;
-            return Equals((Suffix) obj);
-        }
+        public override string Id { get; }
+        public override string SequenceId { get; }
 
         public bool Equals(Suffix other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
             return GetHashCode() == other.GetHashCode();
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != GetType()) return false;
+            return Equals((Suffix) obj);
         }
 
         public override int GetHashCode()
@@ -43,8 +46,5 @@ namespace Nuve.Morphologic.Structure
         {
             return Id;
         }
-
-        public override string Id { get; }
-        public override string GraphId { get; }
     }
 }

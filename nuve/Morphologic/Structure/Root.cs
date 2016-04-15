@@ -7,23 +7,22 @@ namespace Nuve.Morphologic.Structure
     public class Root : Morpheme, IEquatable<Root>
     {
         public Root(
-            string pos, 
-            string lexicalForm, 
-            ISet<string> surfaces , 
-            ISet<string> labels, 
+            string pos,
+            string lexicalForm,
+            ISet<string> surfaces,
+            ISet<string> labels,
             IList<OrthographyRule> rules)
             : base(lexicalForm, surfaces, MorphemeType.Root, labels, rules)
         {
             Id = lexicalForm + "/" + pos;
-            GraphId = pos;
+            SequenceId = pos;
             Pos = pos;
         }
+        
+        public override string Id { get; }
+        public override string SequenceId { get; }
 
         public string Pos { get; }
-
-        public override string Id { get; }
-
-        public override string GraphId { get; }
 
         public bool Equals(Root other)
         {

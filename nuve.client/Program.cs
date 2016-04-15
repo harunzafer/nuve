@@ -14,13 +14,14 @@ namespace Nuve.Client
         {
             //Benchmarker.TestWithAMillionTokens(Turkish.Analyze);
             //Benchmarker.TestWithAMillionWords(Turkish.Analyze);
-            //GitHubReadmeExamples();
+            
+            GitHubReadmeExamples();
 
             //AnalysisHelper.Analyze(Turkish, new[] { "eşkali", "eşkâli" });
 
             //SentenceSegmentation();
 
-            ExternalLanguageReading();
+            //ExternalLanguageReading();
         }
 
 

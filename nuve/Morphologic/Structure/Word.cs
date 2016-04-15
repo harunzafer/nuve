@@ -284,13 +284,13 @@ namespace Nuve.Morphologic.Structure
             return sb.ToString().TrimEnd();
         }
 
-        //todo: WordFormatter
-        public IList<string> GetMorphemeIds()
+        /// <summary>
+        /// Returns the type of root morheme and ids of suffixes as a collection.
+        /// For kitap/ISIM ım/IC_SAHIPLIK_BEN_(U)m, returns { ISIM, IC_SAHIPLIK_BEN_(U)m }
+        /// </summary>
+        public IList<string> GetSequenceIds()
         {
-            var ids = _allomorphs.Select(allomorph => allomorph.Morpheme.Id).ToList();
-            //ids.RemoveAt(0);
-            ids.Insert(0, Root.LexicalForm);
-            return ids;
+            return _allomorphs.Select(allomorph => allomorph.Morpheme.SequenceId).ToList();
         }
 
         /// <summary>
