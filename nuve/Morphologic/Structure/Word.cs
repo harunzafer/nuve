@@ -306,10 +306,7 @@ namespace Nuve.Morphologic.Structure
         /// Returns the type of root morheme and ids of suffixes as a collection.
         /// For kitap/ISIM ım/IC_SAHIPLIK_BEN_(U)m, returns { ISIM, IC_SAHIPLIK_BEN_(U)m }
         /// </summary>
-        public IList<string> GetSequenceIds()
-        {
-            return _allomorphs.Select(allomorph => allomorph.Morpheme.SequenceId).ToList();
-        }
+        public IList<string> MorphemeSequence => _allomorphs.Select(allomorph => allomorph.Morpheme.SequenceId).ToList();
 
         /// <summary>
         ///     Retuns the string representation of this Word
