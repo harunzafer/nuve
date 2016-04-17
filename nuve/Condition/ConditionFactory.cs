@@ -39,6 +39,8 @@ namespace Nuve.Condition
                     return new HasNotLabel(morphemePosition, operand, alphabet);
                 case "IsLastMorpheme":
                     return new IsLastMorpheme(morphemePosition, operand, alphabet);
+                case "IsFirstMorpheme":
+                    return new IsFirstMorpheme(morphemePosition, operand, alphabet);
                 default:
                     throw new ArgumentException("Invalid Condition: " + name);
             }
