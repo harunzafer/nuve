@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<orthography lang="Tr-TR">
+
+  <alphabet>
+    <consonants>bcçdfgğhjklmnprsştvyýzDCSKYÇP</consonants>
+    <vowels>áaâeéıîioóöúûuüUAI</vowels>
+  </alphabet>
+
+
+  <!-- operandOne ve operandTwo string tipinde -->
+
+  <rules>
+    <rule id="DONUSUM_A" phase="2">
+      <description>Önceki ekin son sesli harfi kalın ise A => a değilse A => e </description>
+      <transformation morpheme="This" action="Replace" operandOne="A" operandTwo="a" flag="all">
+        <conditions flag="Or">
+          <condition morpheme="Previous" operator="LastVowelEquals" operand="aıouâû" />
+        </conditions>
+      </transformation>
+      <transformation morpheme="This" action="Replace" operandOne="A" operandTwo="e" flag="all" />
+    </rule>
+	
+	  <rule id="DONUSUM_D" phase="2">
+      <description>Önceki ek sert sessiz ile bitirosa D => t değilse D => d</description>
+      <transformation morpheme="This" action="Replace" operandOne="D" operandTwo="t" flag="all">
+        <conditions flag="Or">
+          <condition morpheme="Previous" operator="LastLetterEquals" operand="pçtkşsfh" />
+        </conditions>
+      </transformation>
+      <transformation morpheme="This" action="Replace" operandOne="D" operandTwo="d" flag="all" />
+    </rule>
+	
+	<rule id="DONUSUM_U" phase="2">
+      <description>Önceki ekin son sesli harfine göre  U => ı, i, u veya ü olur </description>
+      <transformation morpheme="This" action="Replace" operandOne="U" operandTwo="ı" flag="all">
+        <conditions flag="Or">
+          <condition morpheme="Previous" operator="LastVowelEquals" operand="aıâ" />
+        </conditions>
+      </transformation>
+      <transformation morpheme="This" action="Replace" operandOne="U" operandTwo="i" flag="all">
+        <conditions flag="Or">
+          <condition morpheme="Previous" operator="LastVowelEquals" operand="eiéáî" />
+        </conditions>
+      </transformation>
+      <transformation morpheme="This" action="Replace" operandOne="U" operandTwo="u" flag="all">
+        <conditions flag="Or">
+          <condition morpheme="Previous" operator="LastVowelEquals" operand="ouû" />
+        </conditions>
+      </transformation>
+      <transformation morpheme="This" action="Replace" operandOne="U" operandTwo="ü" flag="all" />
+    </rule>
+
+    <rule id="DUSME_UNLU" phase="2">
+      <description>Önce gelen ek ünlü ile bitiyorsa bu ekin başındaki ünlüyü düşür</description>
+      <transformation morpheme="This" action="DeleteFirstLetter">
+        <conditions flag="Or">
+          <condition morpheme="Previous" operator="EndsWithVowel" />
+        </conditions>
+      </transformation>
+    </rule>
+
+   <rule id="YUMUSAMA_td" phase="3">
+      <description>	Sonraki ek ünlü ile başlıyorsa sondaki t => d'ye yumuşar 	</description>
+      <transformation morpheme="This" action="Replace" operandOne="t" operandTwo="d" flag="last">
+        <conditions flag="Or">
+          <condition morpheme="Next" operator="StartsWithVowel" />
+        </conditions>
+      </transformation>
+    </rule>
+
+     <rule id="YUMUSAMA_pb" phase="3">
+      <description>	Sonraki ek ünlü ile başlıyorsa sondaki p => b'ye yumuşar </description>
+      <transformation morpheme="This" action="Replace" operandOne="p" operandTwo="b" flag="last">
+        <conditions flag="Or">
+          <condition morpheme="Next" operator="StartsWithVowel" />
+        </conditions>
+      </transformation>
+    </rule>
+
+    <rule id="ZAMAN_kü" phase="1">
+      <description>
+        Yalnızca dün, gün ve bugün kelimelerinden sonra ki eki kü halini alır
+      </description>
+      <transformation morpheme="Next" action="Replace" operandOne="i" operandTwo="ü" flag="first">
+        <conditions flag="Or">
+          <condition morpheme="Next" operator="MorphemeEquals" operand="IC_AITLIK_ki" />
+        </conditions>
+      </transformation>
+    </rule>
+
+   
+
+  </rules>
+</orthography>

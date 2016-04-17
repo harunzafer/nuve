@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.IO;
+using System.Text;
 using System.Xml;
 using System.Xml.Schema;
 using Nuve.Lang;
@@ -24,6 +25,19 @@ namespace Nuve.Reader
         private Orthography _orthography;
         private readonly LanguageType _languageType;
         private readonly TraceSource _trace = new TraceSource("LanguageReader");
+
+        public Language Parse(LanguageData data)
+        {
+            _orthography = ParseOrthography(data.OrthographyXml);
+
+            var morphotactics = ParseMorphotactics(data.MorphotacticsXml);
+
+            var roots = ParseRoots(data.RootTxt);
+
+            var suffixes = ParseSuffixes(data.SuffixTxt);
+
+            return new Language(data.Type, _orthography, morphotactics, roots, suffixes);
+        }
 
 
         /// <summary>
@@ -95,6 +109,13 @@ namespace Nuve.Reader
             return new LanguageType(tokens[0], "??");
         }
 
+        private Orthography ParseOrthography(string dataXml)
+        {
+            var xml = new XmlDocument();
+            xml.LoadXml(dataXml);
+            return OrthographyReader.Read(xml);
+        }
+
         private Orthography ReadOrthography()
         {
             var path = _dirPath + _seperator + Resources.OrthographyFileName;
@@ -115,6 +136,19 @@ namespace Nuve.Reader
                 throw new InvalidLanguageFileException(ex, Type.Orthograpy, "Invalid language file for orthograpy: ");
             }
         }
+
+        private MemoryStream GenerateStreamFromString(string value)
+        {
+            return new MemoryStream(Encoding.UTF8.GetBytes(value ?? ""));
+        }
+
+        private Morphotactics ParseMorphotactics(string dataXml)
+        {
+            var xml = new XmlDocument();
+            xml.LoadXml(dataXml);
+            return MorphotacticsReader.Read(GenerateStreamFromString(dataXml), _orthography.Alphabet);
+        }
+
 
         private Morphotactics ReadMorphotactics()
         {
@@ -137,6 +171,45 @@ namespace Nuve.Reader
             {
                 throw new InvalidLanguageFileException(ex, Type.Morphotactics,
                     "Invalid language file for Morphotactics: ");
+            }
+        }
+
+        private MorphemeContainer<Root> ParseRoots(string dataTxt)
+        {
+            try
+            {
+                var rootsBySurface = new MorphemeSurfaceDictionary<Root>();
+                var rootsById = new Dictionary<string, Root>();
+                var reader = new RootLexiconReader(_orthography);
+
+                using (var stream = GenerateStreamFromString(dataTxt))
+                {
+                    var ds = TextToDataSet.Convert(stream, DefaultTableName, Delimiter);
+                    reader.AddEntries(ds, DefaultTableName, rootsById, rootsBySurface);
+                }
+
+                return new MorphemeContainer<Root>(rootsById, rootsBySurface);
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidLanguageFileException(ex, Type.Roots, "Invalid language file for roots: ");
+            }
+        }
+
+        private MorphemeContainer<Suffix> ParseSuffixes(string dataTxt)
+        {
+            try
+            {
+                var reader = new SuffixLexiconReader(_orthography);
+
+                using (var stream = GenerateStreamFromString(dataTxt))
+                {
+                    return reader.Read(TextToDataSet.Convert(stream, DefaultTableName, Delimiter), DefaultTableName);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidLanguageFileException(ex, Type.Suffixes, "Invalid language file for suffixes: ");
             }
         }
 
@@ -167,7 +240,8 @@ namespace Nuve.Reader
                 reader.AddEntries(EmbeddedTextResourceToDataSet(namesPath), DefaultTableName, rootsById, rootsBySurface);
 
                 var abbreviationPath = _dirPath + _seperator + Resources.InternalAbbreviationsPath;
-                reader.AddEntries(EmbeddedTextResourceToDataSet(abbreviationPath), DefaultTableName, rootsById, rootsBySurface);
+                reader.AddEntries(EmbeddedTextResourceToDataSet(abbreviationPath), DefaultTableName, rootsById,
+                    rootsBySurface);
 
                 return new MorphemeContainer<Root>(rootsById, rootsBySurface);
             }

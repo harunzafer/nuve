@@ -24,7 +24,6 @@ namespace Nuve.Morphologic
             return _graph.GetEmptyTransitions(prev.SequenceId).Select(t => t.Target);
         }
 
-
         internal bool HasTransition(Morpheme prev, Morpheme next)
         {
             return _graph.ContainsTransition(prev.SequenceId, next.SequenceId);

@@ -1,0 +1,6 @@
+root	surfaces	lex	active	Id	flags	rules
+gel				FIIL	fiil	
+git	gid			FIIL	fiil, genis_Ar	YUMUSAMA_td, 
+kalem				ISIM	isim	
+kitap	kitab			ISIM	isim	YUMUSAMA_pb
+bugün				ISIM	isim, zaman	ZAMAN_kü

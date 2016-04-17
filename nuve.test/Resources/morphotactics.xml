@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<morphology lang="Tr-TR">
+
+  <graph>
+
+    <source id="ISIM">
+      <target id="IC_COGUL_lAr" />
+      <target id="IC_SAHIPLIK_BEN_(U)m" />
+      <target id="IC_SAHIPLIK_SEN_(U)n" />
+      <target id="IC_AITLIK_ki">
+        <conditions flag="Or">
+          <condition morpheme="Source" operator="HasFlags" operand="zaman" />
+        </conditions>
+      </target>
+    </source>
+
+    <source id="FIIL" terminal="false">
+      <target id="FY_OLUMSUZLUK_mA" />
+      <target id="FC_ZAMAN_GECMIS_DU" />
+      <target id="FC_KIP_EMIR_0" empty="true" />
+    </source>
+
+
+    <source id="IC_COGUL_lAr">
+      <target id="IC_SAHIPLIK_BEN_(U)m" />
+      <target id="IC_SAHIPLIK_SEN_(U)n" />
+    </source>
+
+    <source id="FY_OLUMSUZLUK_mA">
+      <target id="FC_ZAMAN_GECMIS_DU" />
+    </source>
+
+    <source id="IC_SAHIPLIK_BEN_(U)m" />
+    <source id="IC_SAHIPLIK_SEN_(U)n" />
+    <source id="IC_AITLIK_ki" />
+    <source id="FC_ZAMAN_GECMIS_DU" />
+    <source id="FC_KIP_EMIR_0" />
+
+  </graph>
+
+</morphology>
