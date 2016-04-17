@@ -1,6 +1,5 @@
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
-using Nuve.Reader;
 
 namespace Nuve.Condition
 {

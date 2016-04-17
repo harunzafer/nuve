@@ -59,7 +59,9 @@ PenultVowelEquals |
 StartsWithConsonant |
 StartsWithVowel | 
 IsLastMorpheme |
-IsFirstMorpheme
+IsFirstMorpheme |
+IsNotLastMorpheme |
+IsNotFirstMorpheme
   
 ) #REQUIRED
 operand CDATA #IMPLIED>
