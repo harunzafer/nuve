@@ -69,6 +69,8 @@
     <Compile Include="Condition\HasNotLabel.cs" />
     <Compile Include="Condition\IsFirstMorpheme.cs" />
     <Compile Include="Condition\IsLastMorpheme.cs" />
+    <Compile Include="Condition\IsNotFirstMorpheme.cs" />
+    <Compile Include="Condition\IsNotLastMorpheme.cs" />
     <Compile Include="Condition\LastLetterEquals.cs" />
     <Compile Include="Condition\LastVowelEquals.cs" />
     <Compile Include="Condition\MorphemeEquals.cs" />

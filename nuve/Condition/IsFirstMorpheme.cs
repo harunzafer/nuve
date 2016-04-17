@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Nuve.Morphologic.Structure;
+﻿using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
 
 namespace Nuve.Condition
 {
-    internal class IsFirstMorpheme : ConditionBase
+    public class IsFirstMorpheme : ConditionBase
     {
-        public IsFirstMorpheme(string position, string operand, Alphabet alphabet) : base(position, operand, alphabet)
+        public IsFirstMorpheme(string position, string operand, Alphabet alphabet)
+            : base(position, operand, alphabet)
         {
         }
 

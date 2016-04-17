@@ -3,7 +3,7 @@ using Nuve.Orthographic;
 
 namespace Nuve.Condition
 {
-    internal class IsLastMorpheme : ConditionBase
+    public class IsLastMorpheme : ConditionBase
     {
         public IsLastMorpheme(string position, string operand, Alphabet alphabet)
             : base(position, operand, alphabet)
