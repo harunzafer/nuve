@@ -58,7 +58,8 @@ HasNotFlags |
 PenultVowelEquals |
 StartsWithConsonant |
 StartsWithVowel | 
-IsLastMorpheme
+IsLastMorpheme |
+IsFirstMorpheme
   
 ) #REQUIRED
 operand CDATA #IMPLIED>
