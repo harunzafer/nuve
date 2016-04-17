@@ -88,6 +88,12 @@
     <Compile Include="Generation\NounGenerationTest.cs" />
     <Compile Include="Generation\StringExtensionsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reader\LanguageReaderParseTest.cs" />
     <Compile Include="Segmentation\SentenceSegmentationTest.cs" />
     <Compile Include="Tokenizers\ClassicTokenizerTest.cs" />
     <Compile Include="Tokenizers\NuveTokenizerTest.cs" />
@@ -97,12 +103,29 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Nuve\Nuve.csproj">
       <Project>{bcc4c1c8-5f64-4a5c-9079-0272498745c2}</Project>
       <Name>Nuve</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\morphotactics.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orthography.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\root.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suffix.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

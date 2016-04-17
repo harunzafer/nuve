@@ -98,6 +98,7 @@
     <Compile Include="Orthographic\Action\Prepend.cs" />
     <Compile Include="Orthographic\SearchReplace\SearchReplaceRule.cs" />
     <Compile Include="Reader\InvalidLanguageFileException.cs" />
+    <Compile Include="Reader\LanguageData.cs" />
     <Compile Include="Reader\LanguageReader.cs" />
     <Compile Include="Morphologic\DictionaryGraph.cs" />
     <Compile Include="Morphologic\IGraph.cs" />
