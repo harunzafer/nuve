@@ -384,6 +384,9 @@
       <target id="EKFIIL_RIVAYET_(y)mUş" />
       <target id="EKFIIL_TANIMLAMA_DUr" />
     </source>
+    
+    <source id="EDAT"/>
+    <source id="BAGLAC"/>
 
     <source id="EDAT_GIBI">
       <targetGroup id="EKFIIL_ZAMAN" />
