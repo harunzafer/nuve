@@ -47,6 +47,22 @@ namespace Nuve.Test.Analysis
             Tester.ContainsAnalysis(token, analysis);
         }
 
+        [TestCase("evet", "evet/EDAT")]
+        [TestCase("için", "için/EDAT")]
+        public void EdatTest(string token, string analysis)
+        {
+            Tester.ContainsAnalysis(token, analysis);
+        }
+
+        [TestCase("eğer", "eğer/BAGLAC")]
+        [TestCase("madem", "madem/BAGLAC")]
+        [TestCase("de", "de/BAGLAC")]
+        [TestCase("da", "da/BAGLAC")]
+        public void BaglacTest(string token, string analysis)
+        {
+            Tester.ContainsAnalysis(token, analysis);
+        }
+
         [TestCase("sen de", "sen/ZAMIR_SAHIS_SEN BAGLAC_dA")]
         [TestCase("ben de", "ben/ZAMIR_SAHIS_BEN BAGLAC_dA")]
         [TestCase("o da", "o/ZAMIR_SAHIS_O BAGLAC_dA")]
