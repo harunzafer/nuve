@@ -160,12 +160,16 @@ namespace Nuve.Lang
         {
             StringExtensions.ThrowIfNullAny(morphemes);
 
+<<<<<<< HEAD
             var index = StringExtensions.ContainsWhitespaceAny(morphemes);
+=======
+            //var index  = StringExtensions.ContainsWhitespaceAny(morphemes);
+>>>>>>> master
 
-            if (index >= 0)
-            {
-                throw new ArgumentException($"Morpheme identifier can not contain whitespace: \"{morphemes[index]}\"");
-            }
+            //if (index >= 0)
+            //{
+            //    throw new ArgumentException($"Morpheme identifier can not contain whitespace: \"{morphemes[index]}\"");
+            //}
 
             var root = GetRoot(morphemes[0]);
 
