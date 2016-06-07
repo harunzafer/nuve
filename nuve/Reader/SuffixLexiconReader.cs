@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
+using Nuve.Immutables;
 using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
@@ -67,7 +68,7 @@ namespace Nuve.Reader
                 new List<string>(entry.Surfaces.Split(new[] {',', ' '}, StringSplitOptions.RemoveEmptyEntries));
 
             List<OrthographyRule> rules = _orthography.GetRules(rulesToken);
-            var suffix = new Suffix(id, lex, new SortedSet<string>(surfaces), morphemeType, new HashSet<string>(labels), rules);
+            var suffix = new Suffix(id, lex, new ImmutableSortedSet<string>(surfaces), morphemeType, new ImmutableHashSet<string>(labels), rules);
             if (suffixesById.ContainsKey(id))
             {
                 Trace.TraceEvent(TraceEventType.Warning, 0, $"Duplicate suffix: {id}");

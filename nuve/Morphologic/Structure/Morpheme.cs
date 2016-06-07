@@ -31,19 +31,20 @@ namespace Nuve.Morphologic.Structure
             HasRule = Rules.Any();
         }
 
-        internal ISet<string> Labels { get; }
-
-        internal IList<OrthographyRule> Rules { get; }
-
-        public abstract string Id { get; }
-
-        public abstract string SequenceId { get; }
-
         public string LexicalForm { get; }
 
         public ISet<string> Surfaces { get; }
 
         public MorphemeType Type { get; }
+
+        public ISet<string> Labels { get; }
+
+        public IEnumerable<OrthographyRule> Rules { get; }
+
+        public abstract string Id { get; }
+
+        public abstract string SequenceId { get; }
+        
 
         internal bool HasLabel(string label)
         {
@@ -65,6 +66,10 @@ namespace Nuve.Morphologic.Structure
                 }
         }
 
-        internal string DebugInfo => Id + " Rule count:" + Rules.Count;
+        public override string ToString()
+        {
+            return Id + " Rule count:" + Rules.Count();
+        }
+
     }
 }

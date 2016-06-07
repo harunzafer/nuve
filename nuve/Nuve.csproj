@@ -88,6 +88,8 @@
     <Compile Include="Distance\IDistance.cs" />
     <Compile Include="Distance\JaccardDistance.cs" />
     <Compile Include="Distance\LevenshteinDistance.cs" />
+    <Compile Include="Immutables\ImmutableHashSet.cs" />
+    <Compile Include="Immutables\ImmutableSortedSet.cs" />
     <Compile Include="Lang\LanguageFactory.cs" />
     <Compile Include="Lang\LanguageType.cs" />
     <Compile Include="Lang\MutableLanguage.cs" />

@@ -4,6 +4,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Nuve.Immutables;
 using Nuve.Morphologic;
 using Nuve.Morphologic.Structure;
 using Nuve.Orthographic;
@@ -70,8 +71,8 @@ namespace Nuve.Reader
             }
 
             var root = new Root(pos, lex, 
-                new SortedSet<string>(surfaces), 
-                new HashSet<string>(labels),
+                new ImmutableSortedSet<string>(surfaces), 
+                new ImmutableHashSet<string>(labels),
                 _orthography.GetRules(rules));
 
             var id = lex + "/" + pos;
