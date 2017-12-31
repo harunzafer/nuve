@@ -240,6 +240,7 @@ namespace Nuve.Morphologic.Structure
 
         public IList<string> GetSurfacesAfterEachPhase()
         {
+            ResetSurface();
             var surfaces = new List<string>();
 
             for (var phase = 1; phase <= OrthographyRule.MaxPhaseNum; phase++)

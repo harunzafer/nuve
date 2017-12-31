@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Nuve.Lang;
 using Nuve.Reader;
 using Nuve.Sentence;
@@ -14,10 +15,14 @@ namespace Nuve.Client
         {
             //Benchmarker.TestWithAMillionTokens(Turkish.Analyze);
             //Benchmarker.TestWithAMillionWords(Turkish.Analyze);
-            
-            GitHubReadmeExamples();
 
-            AnalysisHelper.Analyze(Turkish, new[] { "saat", "eşkâli" });
+            //GitHubReadmeExamples();
+
+            AnalysisHelper.Analyze(Turkish, new[] { "su", "eşkâli" });
+
+            //Generation();
+
+            //AnalysisAndStemming();
 
             //SentenceSegmentation();
 
@@ -53,12 +58,25 @@ namespace Nuve.Client
 
         private static void AnalysisAndStemming()
         {
-            
+            var tr = LanguageFactory.Create(LanguageType.Turkish);
+            var stems = tr.Analyze("ehemmiyetsiz").Select(s=> s.Root.LexicalForm).ToList();
+
+            foreach (var stem in stems)
+            {
+                Console.WriteLine("\t{0}", stem);
+            }
+
         }
 
         private static void Generation()
         {
-            
+            var tr = LanguageFactory.Create(LanguageType.Turkish);
+            var solutions = tr.Analyze("suyu");       
+            var surfaces = solutions[0].GetSurfacesAfterEachPhase();
+            foreach(var surface in surfaces)
+            {
+                Console.WriteLine(surface);
+            }
         }
 
         private static void ExternalLanguageReading()

@@ -28,9 +28,9 @@ namespace Nuve.Reader
             var entries = data.Select(x =>
                 new RootLine
                 {
-                    Root = x.Field<string>("root"),
+                    Root = x.Field<string>("root").Trim(),
                     Surfaces = x.Field<string>("surfaces") ?? "",
-                    Lex = x.Field<string>("lex"),
+                    Lex = x.Field<string>("lex").Trim(),
                     Active = x.Field<string>("active") ?? "",
                     Pos = x.Field<string>("Id"),
                     Labels = x.Field<string>("flags") ?? "",

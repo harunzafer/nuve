@@ -192,7 +192,7 @@ namespace Nuve.Reader
             }
             catch (Exception ex)
             {
-                throw new InvalidLanguageFileException(ex, Type.Roots, "Invalid language file for roots: ");
+                throw new InvalidLanguageFileException(ex, Type.Roots, "Invalid language file for roots: " + _languageType);
             }
         }
 
