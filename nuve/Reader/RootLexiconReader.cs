@@ -29,12 +29,12 @@ namespace Nuve.Reader
                 new RootLine
                 {
                     Root = x.Field<string>("root").Trim(),
-                    Surfaces = x.Field<string>("surfaces") ?? "",
+                    Surfaces = x.Field<string>("surfaces")?.Trim() ?? "",
                     Lex = x.Field<string>("lex").Trim(),
-                    Active = x.Field<string>("active") ?? "",
-                    Pos = x.Field<string>("Id"),
-                    Labels = x.Field<string>("flags") ?? "",
-                    Rules = x.Field<string>("rules") ?? ""
+                    Active = x.Field<string>("active")?.Trim() ?? "",
+                    Pos = x.Field<string>("Id")?.Trim(),
+                    Labels = x.Field<string>("flags")?.Trim() ?? "",
+                    Rules = x.Field<string>("rules")?.Trim() ?? ""
                 });
 
 

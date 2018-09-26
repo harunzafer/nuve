@@ -27,12 +27,12 @@ namespace Nuve.Reader
             EnumerableRowCollection<SuffixDictionaryLine> entries = data.Select(x =>
                 new SuffixDictionaryLine
                 {
-                    Id = x.Field<string>("id"),
-                    Lex = x.Field<string>("lexicalForm"),
-                    Type = x.Field<string>("type"),
-                    Labels = x.Field<string>("flags") ?? "",
-                    Rules = x.Field<string>("rules") ?? "",
-                    Surfaces = x.Field<string>("surfaces"),
+                    Id = x.Field<string>("id")?.Trim(),
+                    Lex = x.Field<string>("lexicalForm")?.Trim(),
+                    Type = x.Field<string>("type")?.Trim(),
+                    Labels = x.Field<string>("flags")?.Trim() ?? "",
+                    Rules = x.Field<string>("rules")?.Trim() ?? "",
+                    Surfaces = x.Field<string>("surfaces")?.Trim(),
                 });
 
             var suffixesById = new Dictionary<string, Suffix>();
