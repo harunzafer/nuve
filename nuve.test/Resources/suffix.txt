@@ -1,8 +1,0 @@
-id	lexicalForm	type	Grup	flags	rules	surfaces	Örnekler
-IC_COGUL_lAr	lAr	I			DONUSUM_A, 	lar, ler	kitaplar, kalemler
-IC_SAHIPLIK_BEN_(U)m	Um	I	ISIM_SAHIPLIK		DONUSUM_U, DUSME_UNLU, 	ım, im, um, üm, m 	kalemim, kitabım, köyüm, okulum, günlüğüm, masam
-IC_SAHIPLIK_SEN_(U)n	Un	I	ISIM_SAHIPLIK		DONUSUM_U, DUSME_UNLU, 	ın, in, un, ün, n	kalemin, kitabın, köyün, okulun, günlüğün, masan
-FC_ZAMAN_GECMIS_DU	DU	D	FIIL_ZAMAN		DONUSUM_D, DONUSUM_U, 	dı, di, du, dü, tı, ti, tu, tü	sardı, geldi, sordu, gördü, gitti, kaçtı, buldu, söktü
-FY_OLUMSUZLUK_mA	mA	D			DONUSUM_A, 	ma, me, mı, mi, mu, mü	gelme, kalma
-IC_AITLIK_ki	ki	I			OZEL_N	ki, kü	
-FC_KIP_EMIR_0		I					gel, git

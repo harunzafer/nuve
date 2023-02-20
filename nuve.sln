@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuve", "nuve\nuve.csproj", "{FA49A7CE-BCC9-413D-A77A-5DAD1F3B88E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuve.client", "nuve.client\nuve.client.csproj", "{374F9B84-C59C-404E-87BF-9678B483C968}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nuve.test", "nuve.test\nuve.test.csproj", "{7661B479-FEE4-41C8-B51A-898CA5717152}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA49A7CE-BCC9-413D-A77A-5DAD1F3B88E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA49A7CE-BCC9-413D-A77A-5DAD1F3B88E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA49A7CE-BCC9-413D-A77A-5DAD1F3B88E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA49A7CE-BCC9-413D-A77A-5DAD1F3B88E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{374F9B84-C59C-404E-87BF-9678B483C968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374F9B84-C59C-404E-87BF-9678B483C968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374F9B84-C59C-404E-87BF-9678B483C968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374F9B84-C59C-404E-87BF-9678B483C968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7661B479-FEE4-41C8-B51A-898CA5717152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7661B479-FEE4-41C8-B51A-898CA5717152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7661B479-FEE4-41C8-B51A-898CA5717152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7661B479-FEE4-41C8-B51A-898CA5717152}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
