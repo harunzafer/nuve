@@ -1,8 +1,5 @@
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-using System.IO;
 using System.Text;
 using System.Xml;
 using System.Xml.Schema;
@@ -70,9 +67,6 @@ namespace Nuve.Reader
         {
             var sw = new Stopwatch();
             sw.Start();
-
-            System.Console.WriteLine("here" + System.AppDomain.CurrentDomain.BaseDirectory);
-
 
             _orthography = ReadOrthography();
 
