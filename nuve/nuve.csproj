@@ -5,5 +5,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\tr_TR\root_abbrv.txt" />
+    <EmbeddedResource Include="Resources\tr_TR\morphotactics.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\tr_TR\root_name.txt" />
+    <EmbeddedResource Include="Resources\tr_TR\orthography.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\tr_TR\root.txt" />
+    <EmbeddedResource Include="Resources\tr_TR\suffix.txt" />
+</ItemGroup>
 
 </Project>
